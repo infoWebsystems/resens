@@ -1,0 +1,156 @@
+{% comment %} Construct block order {% endcomment %}
+{% assign block_order = blocks | split: "," %}
+
+{% liquid 
+  assign image_stretch = false
+
+  assign crop_setting = settings.product-grid
+  if crop_setting == "square"
+    assign image_crop = "aspect-ratio--square"
+    assign image_stretch = true
+  elsif crop_setting == "tall"
+    assign image_crop = "aspect-ratio--tall"
+    assign image_stretch = true
+  elsif crop_setting == "wide"
+    assign image_crop = "aspect-ratio--wide"
+    assign image_stretch = true
+  else
+    assign image_crop = false
+    assign image_stretch = false
+  endif
+
+  assign alignment_class = 'text-align--' | append: settings.product_card_text_alignment
+
+  for block in section.blocks
+    if block.type == "product_card_title"
+      assign title_font = 'product-grid--title-font-' | append: block.settings.product_card_title__font
+    endif
+
+    if block.type == "product_card_price"
+      assign price_font = 'product-grid--price-font-' | append: block.settings.product_card_price__font
+    endif
+
+    if block.type == "product_card_vendor"
+      assign vendor_font = 'product-grid--vendor-font-' | append: block.settings.product_card_vendor__font
+    endif
+
+    if block.type == "product_card_image"
+      assign quick_shop_overlay_enabled = block.settings.enable_quick_shop
+      assign disable_quick_shop_mobile = block.settings.disable_quick_shop_mobile
+    endif
+  endfor
+
+  assign has_variants = false
+  if product.variants.size > 1
+    assign has_variants = true
+  endif
+
+  if has_variants
+    assign current_variant = product.selected_or_first_available_variant
+    assign product_price = current_variant.price
+    assign product_compare_at_price = current_variant.compare_at_price
+  else 
+    assign product_price = product.price
+    assign product_compare_at_price = product.compare_at_price
+  endif
+%}
+
+<div
+  class="grid-view-item {{ alignment_class }}"
+  data-product-available="{{ product.available }}"
+  data-product-variants-size="{{ product.variants.size }}"
+  data-product-id="{{ product.variants.first.id }}"
+  data-product-url="{{ product.url | within: collection }}"
+>
+  {%- for block in block_order -%}
+    {%- case block -%}
+    {%- when 'product_card_image' -%}
+      <div class="grid-view-item-image" data-block-type="product_card_image"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_image","type":"product_card_image"}'{% endif %}>
+
+        {% if enable_badges %}
+          {% if product_compare_at_price > product_price and product.available %}
+            {%- render 'badge' with 'sale', product_compare_at_price: product_compare_at_price, product_price: product_price -%}
+          {% endif %}
+
+          {% unless product.available %}
+            {%- render 'badge' with 'sold-out' -%}
+          {% endunless %}
+        {% endif %}
+
+        {% if settings.hover-effect and product.media.size > 1 %}
+          <div class="reveal">
+        {% endif %}
+
+        <a href="{{ product.url | within: collection }}" title="{{product.title}}" class="grid__image grid__image__match" tabindex="-1">
+          {% if image_crop %}<div class="aspect-ratio {{ image_crop }}">{% endif %}
+            {% assign image = product.media[0].preview_image %}
+            {% render 'responsive-image' with image, alt: image.alt, allow_stretch: image_stretch, blur: false %}
+
+            {% if settings.hover-effect and product.media.size > 1 %}
+              <div class="hidden">
+                {% assign image = product.media[1].preview_image %}
+                {% render 'responsive-image' with image, alt: image.alt, allow_stretch: image_stretch, blur: false %}
+              </div>
+            {% endif %}
+          {% if image_crop %}</div>{% endif %}
+        </a>
+
+        <div class="product-card-image--bottom-wrapper">
+          {% if quick_shop_overlay_enabled %}
+            <div class="quick-add-wrapper{% if product.variants.size == 1 %} is-singular{% endif %}">
+              {% if product.variants.size > 1 and product.available %}
+                  <a class="quick-add-button-variants quick-add-button-variants-desktop" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.view_options' | t }}</a>
+                  <a class="quick-add-button-variants quick-add-button-variants-mobile{% if disable_quick_shop_mobile %} quick-shop-hidden{% endif %}" tabindex="0" href="{{ product.url | within: collection }}"><span>{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon', iconSize: 16 %}</span></a>
+              {% elsif product.available %}
+                {% form 'product', product, id: "CollectionAddToCartForm" %}
+                  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                  <button class="quick-add-button quick-add-button-desktop" type="submit" tabindex="0">{{ 'products.product.add_to_cart' | t }}</button>
+                  <button class="quick-add-button quick-add-button-mobile{% if disable_quick_shop_mobile %} quick-shop-hidden{% endif %}" type="submit" tabindex="0"><span>{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon', iconSize: 16 %}</span></button>
+                {% endform %}
+              {% else %}
+                <a class="sold-out-button sold-out-button-desktop" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.sold_out' | t }}</a>
+                <a class="sold-out-button sold-out-button-mobile{% if disable_quick_shop_mobile %} quick-shop-hidden{% endif %}" tabindex="0" href="{{ product.url | within: collection }}"><span>{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon', iconSize: 16 %}</span></a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if settings.hover-effect and product.media.size > 1 %}
+          </div>
+        {% endif %}
+
+      </div>
+
+    {%- when 'product_card_title' -%}
+
+      <div class="product-grid--title {{ title_font }}" data-block-type="product_card_title"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_title","type":"product_card_title"}'{% endif %}>
+        <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+      </div>
+
+    {%- when 'product_card_price' -%}
+
+      <div class="product-grid--price {{ price_font }}" data-block-type="product_card_price"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_price","type":"product_card_price"}'{% endif %}>
+        {%- render 'product-grid-item-price', product: product, collection: collection -%}
+      </div>
+
+    {%- when 'product_card_vendor' -%}
+      <div class="product-grid--vendor {{ vendor_font }}" data-block-type="product_card_vendor"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_vendor","type":"product_card_vendor"}'{% endif %}>{{ product.vendor }}</div>
+
+    {%- when 'product_card_quick_shop' -%}
+
+      <div class="quick-add-wrapper quick-shop--block{% if product.variants.size == 1 %} is-singular{% endif %}">
+        {% if product.variants.size > 1 and product.available %}
+            <a class="quick-add-button-variants quick-add-button-variants-desktop" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.view_options' | t }}</a>
+        {% elsif product.available %}
+          {% form 'product', product, id: "CollectionAddToCartForm" %}
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+            <button class="quick-add-button quick-add-button-desktop" type="submit" tabindex="0">{{ 'products.product.add_to_cart' | t }}</button>
+          {% endform %}
+        {% else %}
+          <a class="sold-out-button sold-out-button-desktop" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.sold_out' | t }}</a>
+        {% endif %}
+      </div>
+
+    {%- endcase -%}
+  {%- endfor -%}
+</div>

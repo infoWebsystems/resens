@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "main": {
+      "type": "template--article",
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": true,
+        "blog_show_date": true
+      }
+    },
+    "9d393ac7-9597-4549-8ebb-968e14caed7a": {
+      "type": "text--rich-text",
+      "blocks": {
+        "28ddc8d0-6e32-4aa9-944c-e146a5d279fe": {
+          "type": "button",
+          "settings": {
+            "button_link": "\/blogs\/news",
+            "button_text": "Back to blog"
+          }
+        }
+      },
+      "block_order": [
+        "28ddc8d0-6e32-4aa9-944c-e146a5d279fe"
+      ],
+      "settings": {
+        "colors": "light",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "e2dfdb67-5375-4fe3-a635-d480f7c4340c": {
+      "type": "blog--blog-posts",
+      "blocks": {
+        "template--14795084857414__e2dfdb67-5375-4fe3-a635-d480f7c4340c-1688743276c47a2ce9-0": {
+          "type": "blog",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--14795084857414__e2dfdb67-5375-4fe3-a635-d480f7c4340c-1688743276c47a2ce9-0"
+      ],
+      "settings": {
+        "colors": "white",
+        "title": "Featured articles",
+        "richtext": "",
+        "blog_show_date": true,
+        "post_limit": 3
+      }
+    },
+    "896be2bc-9b66-4268-9f0b-82d56aa51156": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "article-news-info-cols-0": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "wide"
+          }
+        },
+        "article-news-info-cols-1": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "article-news-info-cols-0",
+        "article-news-info-cols-1"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9d393ac7-9597-4549-8ebb-968e14caed7a",
+    "e2dfdb67-5375-4fe3-a635-d480f7c4340c",
+    "896be2bc-9b66-4268-9f0b-82d56aa51156"
+  ]
+}

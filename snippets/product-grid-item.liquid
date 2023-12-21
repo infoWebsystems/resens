@@ -1,0 +1,27 @@
+{% comment %}
+  Set the default grid_item_width if no variable is set
+{% endcomment %}
+
+{% case section.settings.items_per_row %}
+{% when 2 %}
+  {% capture grid_item_width %}large--one-half medium--one-half small--one-half{% endcapture %}
+{% when 3 %}
+  {% capture grid_item_width %}large--one-third medium--one-half small--one-whole{% endcapture %}
+{% when 4 %}
+  {% capture grid_item_width %}large--one-quarter medium--one-half small--one-half{% endcapture %}
+{% when 5 %}
+  {% capture grid_item_width %}large--one-fifth medium--one-half small--one-half{% endcapture %}
+{% endcase %}
+
+{% comment %} Construct product card layout {% endcomment %}
+{%- capture product_card_blocks -%}
+  {%- for block in blocks -%}
+    {%- if block.type contains "product_card_" -%}
+      {{ block.type }},
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+<div class="grid__item {{ grid_item_width }}">
+	{% render 'grid-view-item', product: product, collection: collection, blocks: product_card_blocks, enable_badges: settings.show_badges %}
+</div>

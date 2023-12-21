@@ -1,0 +1,226 @@
+{
+  "wrapper": "div.collection-wrapper.wrapper",
+  "sections": {
+    "image-with-text-overlay": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image_height": "original",
+        "bg_image_overlay_opacity": 10,
+        "parallax": false,
+        "title": "{{ collection.title }}",
+        "text": "",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": ""
+      }
+    },
+    "collage-builder-00": {
+      "type": "collage-builder",
+      "blocks": {
+        "collage-builder-block-00": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "heading_size": 30,
+            "desktop_position": "md-min-align-bottom md-min-justify-center",
+            "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "collage-builder-block-01": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "heading_size": 30,
+            "desktop_position": "md-min-align-bottom md-min-justify-center",
+            "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "collage-builder-block-02": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "heading_size": 30,
+            "desktop_position": "md-min-align-bottom md-min-justify-center",
+            "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "collage-builder-block-03": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "heading_size": 30,
+            "desktop_position": "md-min-align-bottom md-min-justify-center",
+            "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "collage-builder-block-00",
+        "collage-builder-block-01",
+        "collage-builder-block-02",
+        "collage-builder-block-03"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "4",
+        "height_1": "3",
+        "width_2": "4",
+        "height_2": "3",
+        "width_3": "4",
+        "height_3": "3",
+        "width_4": "4",
+        "height_4": "3",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
+    "collection-header-spotlight": {
+      "type": "template--collection--header",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "settings": {
+      }
+    },
+    "product-grid": {
+      "type": "template--collection",
+      "blocks": {
+        "product_card_image": {
+          "type": "product_card_image",
+          "settings": {
+          }
+        },
+        "product_card_title": {
+          "type": "product_card_title",
+          "settings": {
+            "product_card_title__font": "body"
+          }
+        },
+        "product_card_price": {
+          "type": "product_card_price",
+          "settings": {
+            "product_card_price__font": "body"
+          }
+        },
+        "product_card_quick_shop": {
+          "type": "product_card_quick_shop",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product_card_image",
+        "product_card_title",
+        "product_card_price",
+        "product_card_quick_shop"
+      ],
+      "settings": {
+        "products-per-page": 10,
+        "desktop-products-per-row": 3,
+        "mobile-products-per-row": "1",
+        "pagination_options": "pagination_default",
+        "desktop_position": "topbar",
+        "enable_collection_title": false,
+        "enable_collection_description": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "collage-builder-01": {
+      "type": "collage-builder",
+      "blocks": {
+        "collage-builder-block-00": {
+          "type": "image",
+          "settings": {
+            "heading_size": 28,
+            "button_label": "",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "mobile_position": "md-max-align-center md-max-justify-left"
+          }
+        },
+        "collage-builder-block-01": {
+          "type": "image",
+          "settings": {
+            "heading_size": 28,
+            "button_label": "",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "mobile_position": "md-max-align-center md-max-justify-left"
+          }
+        }
+      },
+      "block_order": [
+        "collage-builder-block-00",
+        "collage-builder-block-01"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "2",
+        "height_1": "4",
+        "width_2": "2",
+        "height_2": "4",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
+    "blog-posts": {
+      "type": "blog--blog-posts",
+      "blocks": {
+        "blog-posts-0": {
+          "type": "blog",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "blog-posts-0"
+      ],
+      "settings": {
+        "colors": "white",
+        "richtext": "",
+        "blog_show_date": true,
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "image-with-text-overlay",
+    "collage-builder-00",
+    "collection-header-spotlight",
+    "product-grid",
+    "collage-builder-01",
+    "blog-posts"
+  ]
+}

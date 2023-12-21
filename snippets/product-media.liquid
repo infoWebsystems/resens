@@ -1,0 +1,189 @@
+
+{% comment %}
+Media for product page and featured product sections
+Parameters:
+* style: 'full_width' | 'left' | 'right' | 'bottom'
+{% endcomment %}
+
+{{ 'plyr.min.css' | asset_url | stylesheet_tag }}
+{{ 'shopify-model-viewer-ui.min.css' | asset_url | stylesheet_tag }}
+
+{% assign crop_setting = settings.product-grid %}
+{% assign image_crop = nil %}
+{% if crop_setting == "square" %}
+    {% assign image_crop = "aspect-ratio--square" %}
+{% elsif crop_setting == "tall" %}
+    {% assign image_crop = "aspect-ratio--tall" %}
+{% elsif crop_setting == "wide" %}
+    {% assign image_crop = "aspect-ratio--wide" %}
+{% endif %}
+
+<div class="product-images-container">
+  <div class="product-medias{% if style != 'full_width' %} product-medias__with-thumbnails product-medias__with-thumbnails--{{ style }}{% else %} product-medias__fullsize{% endif %}">
+    <div class="product-medias__main">
+
+      {% comment %}Full size medias will go here{% endcomment %}
+      {% if product.media.size > 0 %}
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="media in product.media" ref="mediaTargets" {% if style != 'full_width' %}v-bind:class="{ 'product-medias__primary': media === activeMedia }"{% endif %}>
+              <div{% if image_crop %} class="aspect-ratio quick-view-media {{ image_crop }}"{% endif %} v-if="media.media_type !== 'image'" style="position: relative">
+                <img
+                  src="#"
+                  v-responsive="media.preview_image.src"
+                  v-bind:alt="media.alt"
+                  v-cloak
+                />
+                <button
+                  type="button"
+                  class="product-medias__icon"
+                  tabindex="0"
+                  v-if="media.media_type !== 'image'"
+                  v-on:click="onMediaActivate"
+                  v-bind:data-media-id="media.id"
+                  aria-label="product-media-button"
+                  v-cloak
+                >
+                  <svg v-if="media.media_type === 'video' || media.media_type === 'external_video'" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.906 4.53702C6.81491 4.48301 6.71114 4.45407 6.60524 4.45315C6.49934 4.45222 6.39508 4.47934 6.30306 4.53175C6.21104 4.58417 6.13452 4.66 6.0813 4.75155C6.02807 4.84311 6.00002 4.94712 6 5.05302V18.947C6.00002 19.0529 6.02807 19.1569 6.0813 19.2485C6.13452 19.34 6.21104 19.4159 6.30306 19.4683C6.39508 19.5207 6.49934 19.5478 6.60524 19.5469C6.71114 19.546 6.81491 19.517 6.906 19.463L18.629 12.516C18.7185 12.4629 18.7927 12.3874 18.8442 12.2969C18.8957 12.2064 18.9228 12.1041 18.9228 12C18.9228 11.8959 18.8957 11.7936 18.8442 11.7031C18.7927 11.6127 18.7185 11.5371 18.629 11.484L6.906 4.53702Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg v-if="media.media_type === 'model'" width="30" height="30" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5 7.35296V16.647C21.5001 16.7541 21.4714 16.8593 21.4171 16.9516C21.3627 17.0439 21.2847 17.12 21.191 17.172L12.791 21.838C12.702 21.8873 12.6018 21.9133 12.5 21.9133C12.3982 21.9133 12.298 21.8873 12.209 21.838L3.809 17.172C3.71532 17.12 3.63725 17.0439 3.58292 16.9516C3.52858 16.8593 3.49995 16.7541 3.5 16.647V7.35296C3.50013 7.24601 3.52884 7.14103 3.58317 7.0489C3.6375 6.95677 3.71547 6.88083 3.809 6.82896L12.209 2.16196C12.298 2.11258 12.3982 2.08667 12.5 2.08667C12.6018 2.08667 12.702 2.11258 12.791 2.16196L21.191 6.82896C21.2845 6.88083 21.3625 6.95677 21.4168 7.0489C21.4712 7.14103 21.4999 7.24601 21.5 7.35296Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.02734 7.29408L12.2073 11.8381C12.2965 11.8876 12.3968 11.9136 12.4988 11.9136C12.6009 11.9136 12.7012 11.8876 12.7903 11.8381L20.9993 7.27808M12.4993 21.0001V12.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div{% if image_crop %} class="aspect-ratio quick-view-media {{ image_crop }}"{% endif %} v-if="media.media_type === 'image'">
+                <div
+                  class="product-medias__media"
+                  data-media-type="image"
+                  v-bind:data-media-id="media.id"
+                >
+                  <a
+                    v-bind:href="media.src"
+                    v-bind:data-pswp-width="media.width"
+                    v-bind:data-pswp-height="media.height"
+                    target="_blank"
+                  >
+                    <img
+                      v-bind:src="media.src"
+                      v-bind:alt="media.alt ? media.alt : product.title"
+                      v-bind:width="media.width"
+                      v-bind:height="media.height"
+                      sizes="(min-width: 1200px) calc((1200px - 10rem) / 2), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+                      v-cloak
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="button-wrap" v-if="firstOrActiveModel">
+                <button
+                  type="button"
+                  aria-label="{{ 'products.product.view_in_space_label' | t }}"
+                  class="btn product-medias__view-in-space"
+                  data-shopify-xr
+                  v-bind:data-shopify-model3d-id="firstOrActiveModel ? firstOrActiveModel.id : ''"
+                  data-shopify-title="{{ product.title | escape }}"
+                  data-shopify-xr-hidden
+                >
+                  {% render 'theme-icon' with icon: 'cube', iconAttributes: 'aria-hidden="true"', iconSize: settings.typography-body-font-size %}
+                  {{ 'products.product.view_in_space' | t }}
+                </button>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-pagination{% if product.media.size == 1 %} hidden{% endif %}"></div>
+        </div>
+      {% else %}
+        {{ 'product-1' | placeholder_svg_tag: 'icon icon--placeholder' }}
+      {% endif %}
+
+      <noscript>
+        {% comment %}Big image when JS is not there to show media{% endcomment %}
+        {% if product.media.size > 0 %}
+          <img src="{{ product.media[0].preview_image | img_url: '1000x' }}" alt="{{ product.media[0].alt }}" loading="lazy" />
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'icon icon--placeholder' }}
+        {% endif %}
+      </noscript>
+    </div>
+
+    {% if product.media.size > 1 %}
+
+      <div
+        v-show="!isMobile"
+        class="product-medias__thumbnails"
+      >
+        {% for media in product.media %}
+
+            {% comment %}
+            If this media is assigned to any variant that is available, keep showing the thumbnail.
+            EVERY variant with this media needs to be unavailable for it to be hidden.
+            {% endcomment %}
+            {% assign hideThumb = false %}
+            {% assign mediaHasVariant = false %}
+
+            {% if hide_out_of_stock_variants %}
+              {% assign hideThumb = true %}
+              {% for variant in product.variants %}
+                {% if variant.featured_media.id == media.id %}
+                  {% assign mediaHasVariant = true %}
+                  {% if variant.available %}
+                    {% assign hideThumb = false %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+
+            {% unless hideThumb and mediaHasVariant %}
+              <a
+                href="#"
+                v-on:click="onMediaActivate"
+                v-on:keydown="onMediaActivate"
+                class="product-medias__thumbnail"
+                data-media-id="{{ media.id }}"
+                {%- assign found = false -%}
+                {%- for variant in product.variants -%}
+                  {%- if found == false and variant.featured_media.id == media.id -%}
+                    data-variant-id="{{ variant.id }}"
+                    {%- assign found = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              >
+                {% if media.media_type == 'model' %}
+                  <div class="product-medias__emblem">
+                    {% render 'theme-icon' with icon: 'cube', iconSize: 20 %}
+                  </div>
+                {% elsif media.media_type == 'video' or media.media_type == 'external_video' %}
+                  <div class="product-medias__emblem">
+                    {% render 'theme-icon' with icon: 'play', iconSize: 20 %}
+                  </div>
+                {% endif %}
+
+                {% capture props %}
+                  data-image-id="{{ media.id }}"
+                  data-max-width="{{ media.preview_image.width }}"
+                {% endcapture %}
+                {% capture styles %}max-width: {{ media.preview_image.width }}px;{% endcapture %}
+                {% capture class %}
+                  product-medias__thumbnail__image product-medias__thumbnail--{{ media.media_type }} fadeIn wow
+                {% endcapture %}
+                {% capture thumbalt %}
+                  {% if media.media_type == 'video' or media.media_type == 'external_video' %}
+                    {{ 'products.product.video_thumbnail_alt' | t: imageAlt: media.alt | escape }}
+                  {% elsif media.media_type == 'model' %}
+                    {{ 'products.product.model_thumbnail_alt' | t: imageAlt: media.alt | escape }}
+                  {% else %}
+                    {{ media.alt }}
+                  {% endif %}
+                {% endcapture %}
+                {% render 'responsive-image' with media.preview_image, class: class, alt: thumbalt | escape, default_size: '300x', props: props, blur: false, styles: styles %}
+              </a>
+            {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{% comment %}
+  Renders a sale badge or sold-out badge for a product
+
+  Accepts:
+	- badge: {string} The type of badge to render. Can be 'sale' or 'sold-out'
+  	- product_compare_at_price: {number} The highest compare at price of any variants of the product in the currency's subunit (product.product_compare_at_price)
+  	- product_price: {number} The lowest price of any variants of the product in the currency's subunit (product.price)
+
+  Usage:
+    {%- render 'badge', product_compare_at_price: product.product_compare_at_price, product_price: product.price -%}
+{% endcomment %}
+
+{%- if badge == 'sale' -%}
+	{%- if product_compare_at_price and product_price -%}
+		{% case settings.discount_badge_type %}
+			{% when 'hide' %}
+				<div class="sale-badge badge">{{ 'products.product.sale' | t }}</div>
+
+			{% when 'percentage' %}
+				<div class="sale-badge badge">{{ product_compare_at_price | minus: product_price | times: 100.0 | divided_by: product_compare_at_price | money_without_currency | times: 100 | remove: '.0' | prepend: "-" | append: '%' }}</div>
+
+			{% when 'value' %}
+				<div class="sale-badge badge">{{ product_compare_at_price | minus: product_price | money | prepend: "-" }}</div>
+		{% endcase %}
+	{%- endif -%}
+{%- elsif badge == 'sold-out' -%}
+	<div class="sold-out-badge badge">{{ 'products.product.sold_out' | t }}</div>
+{%- endif -%}

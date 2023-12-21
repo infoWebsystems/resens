@@ -1,0 +1,56 @@
+{% assign permalinkURL = '' %}
+{% assign shareTitle = '' %}
+{% assign shareImage = '' %}
+{% if template contains 'article' %}
+
+    {% capture permalinkURL %}{{ shop.url }}{{ article.url }}{% endcapture %}
+    {% capture shareTitle %}{{ article.title }}{% endcapture %}
+    {% if article.featured_image %}
+      {% capture shareImage %}{{ article.featured_image | img_url: '1200x' }}{% endcapture %}
+    {% elsif settings.share_image %}
+      {% capture shareImage %}{{ settings.share_image | img_url: '1200x' }}{% endcapture %}
+    {% endif %}
+
+{% elsif template contains 'product' %}
+
+    {% capture permalinkURL %}{{ shop.url }}{{ product.url }}{% endcapture %}
+    {% capture shareTitle %}{{ product.title }}{% endcapture %}
+    {% if product.media.size > 0 %}
+      {% capture shareImage %}{{ product.media[0].preview_image | product_img_url: '1200x' }}{% endcapture %}
+    {% elsif settings.share_image %}
+      {% capture shareImage %}{{ settings.share_image | img_url: '1200x' }}{% endcapture %}
+    {% endif %}
+
+{% endif %}
+
+<div id="sharing" class="social-sharing" data-permalink="{{ permalinkURL }}">
+
+  <div class="label-font">{{ settings.social_sharing_title }}</div>
+
+  {% if settings.share_facebook %}
+  <a href="//www.facebook.com/sharer.php?u={{ permalinkURL }}" target="_blank" rel="noopener" aria-label="Share on Facebook">
+    <div class="sharing-button"><div aria-hidden="true" class="sharing-button__icon">
+      {% render 'theme-icon' with icon: 'facebook' %}
+      </div>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if settings.share_twitter %}
+  <a href="//twitter.com/share?url={{ permalinkURL }}&amp;text={{ shareTitle | escape }}" target="_blank" rel="noopener" aria-label="Share on Twitter">
+    <div class="sharing-button"><div aria-hidden="true" class="sharing-button__icon">
+      {% render 'theme-icon' with icon: 'twitter' %}
+      </div>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if settings.share_pinterest and shareImage %}
+  <a href="//pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media={{ shareImage | escape }}&amp;description={{ product.title | escape }}" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+    <div class="sharing-button"><div aria-hidden="true" class="sharing-button__icon">
+      {% render 'theme-icon' with icon: 'pinterest' %}
+      </div>
+    </div>
+  </a>
+  {% endif %}
+</div>

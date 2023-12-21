@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "template--product-recently-used-grid",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

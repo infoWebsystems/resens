@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "e635abf7-4793-4302-96d6-07b26f4e2ef3": {
+      "type": "advanced-layout--custom-html",
+      "blocks": {
+        "template--14795084824646__e635abf7-4793-4302-96d6-07b26f4e2ef3-1688037069fb3d1424-0": {
+          "type": "html",
+          "settings": {
+            "code": "<div style=\"text-align:center; padding: 30px 0;\"><div class=\"wrapper-padded\"><\/div><\/div>",
+            "width": "100%"
+          }
+        }
+      },
+      "block_order": [
+        "template--14795084824646__e635abf7-4793-4302-96d6-07b26f4e2ef3-1688037069fb3d1424-0"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "template--article",
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": true,
+        "blog_show_date": false
+      }
+    }
+  },
+  "order": [
+    "e635abf7-4793-4302-96d6-07b26f4e2ef3",
+    "main"
+  ]
+}

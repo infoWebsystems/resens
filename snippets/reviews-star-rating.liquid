@@ -1,0 +1,62 @@
+{% if rating_product.metafields.reviews.rating.value == blank %}
+  {% assign no_reviews = true %}
+{% endif %}
+{% assign empty_star_color = settings.color_body_text | color_modify: 'alpha', 0.15 %}
+
+{% if no_reviews %}
+  <div class="reviews-star-rating{% if classes %} {{ classes }}{% endif %}">
+    <div class="reviews-star-rating__stars" role="img" aria-label="{{ 'products.product.no_reviews' | t }}">
+      {% for i in (1..5) %}
+        {% render 'theme-icon' with icon: 'star-filled', iconColor: empty_star_color, iconSize: star_size %}
+      {% endfor %}
+    </div>
+    <span>
+      {{ no_reviews_label }}
+    </span>
+  </div>
+{% else %}
+  {% liquid
+    assign rating_value = rating_product.metafields.reviews.rating.value.rating
+    assign rating_value_rounded = rating_value | round: 1
+    assign rating_max = rating_product.metafields.reviews.rating.value.scale_max
+    assign rating_decimal = 0
+    assign decimal = rating_value | modulo: 1
+    if decimal >= 0.3 and decimal <= 0.7
+      assign rating_decimal = 0.5
+    elsif decimal > 0.7
+      assign rating_decimal = 1
+    endif
+
+    assign full_stars = rating_value | floor | plus: rating_decimal | floor
+    assign empty_stars = rating_max | round | minus: full_stars
+    if rating_decimal == 0.5
+      assign empty_stars = empty_stars | minus: 1
+    endif
+  %}
+
+  <div class="reviews-star-rating{% if classes %} {{ classes }}{% endif %}" data-reviews-link>
+    <div class="reviews-star-rating__stars" role="img" aria-label="{{ 'products.product.reviews_rating' | t: value: rating_value_rounded, max: rating_max }}">
+      {% if full_stars > 0 %}
+        {% for i in (1..full_stars) %}
+          {% render 'theme-icon' with icon: 'star-filled', iconColor: star_color, iconSize: star_size %}
+        {% endfor %}
+      {% endif %}
+
+      {% if rating_decimal == 0.5 %}
+        {% render 'theme-icon' with icon: 'star-half-filled', iconColor: star_color, iconSize: star_size %}
+      {% endif %}
+
+      {% if empty_stars > 0 %}
+        {% for i in (1..empty_stars) %}
+          {% render 'theme-icon' with icon: 'star-filled', iconColor: empty_star_color, iconSize: star_size %}
+        {% endfor %}
+      {% endif %}
+    </div>
+    <span class="reviews-star-rating__value-reviews">
+      {% if show_numerical_value %}
+        {{ rating_value_rounded }} - 
+      {% endif %}
+        {{ rating_product.metafields.reviews.rating_count }} {{ 'products.product.reviews' | t }}
+    </span>
+  </div>
+{% endif %}

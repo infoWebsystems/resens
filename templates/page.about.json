@@ -1,0 +1,395 @@
+{
+  "sections": {
+    "94a50e02-c7cb-4f8e-8809-f281c98044d2": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 0,
+        "parallax": false,
+        "text": "",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 50,
+        "text--text-size": 24,
+        "link": "",
+        "button_label": ""
+      }
+    },
+    "main": {
+      "type": "template--page",
+      "disabled": true,
+      "settings": {
+        "page_title_enabled": true,
+        "page_width": "narrow"
+      }
+    },
+    "63d055aa-9706-43b0-b3c8-49b4a2e53ef9": {
+      "type": "text--rich-text",
+      "blocks": {
+        "a52c67a4-24a0-4020-93a2-4b06cdc1c155": {
+          "type": "richtext",
+          "settings": {
+            "text_size": 20
+          }
+        }
+      },
+      "block_order": [
+        "a52c67a4-24a0-4020-93a2-4b06cdc1c155"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "left"
+      }
+    },
+    "33dd17bc-338f-4bf8-860d-044c9b3a8f5d": {
+      "type": "collage-builder",
+      "blocks": {
+        "template--14773137178694__33dd17bc-338f-4bf8-860d-044c9b3a8f5d-1686321770f98f078e-5": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "heading_size": 30,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__33dd17bc-338f-4bf8-860d-044c9b3a8f5d-1686321770f98f078e-5"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "full",
+        "width_1": "1",
+        "height_1": "6",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "6",
+        "block_alignment": "center"
+      }
+    },
+    "410e0db0-6d01-4d70-8356-6c6849fcdadc": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-0": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        },
+        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-1": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        },
+        "b8b1f231-a59c-4b75-9a90-a5badf60b192": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        },
+        "4e0dc6d9-55a1-44c4-9305-dfad1ed65478": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-0",
+        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-1",
+        "b8b1f231-a59c-4b75-9a90-a5badf60b192",
+        "4e0dc6d9-55a1-44c4-9305-dfad1ed65478"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "Meet the team",
+        "description": "<p>Showcase your talented team<\/p>",
+        "columns_per_row": 4,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "8e700b4c-da55-45f7-9f69-8263da89d7a8": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-0": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        },
+        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        },
+        "63cc8e24-38f9-49c8-af78-5c6b3961c78c": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        },
+        "537c5daf-2647-4d9a-9244-83f6ef7c9203": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-0",
+        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1",
+        "63cc8e24-38f9-49c8-af78-5c6b3961c78c",
+        "537c5daf-2647-4d9a-9244-83f6ef7c9203"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 4,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "aad2a20b-3385-48aa-9079-393f0f4a6ad5": {
+      "type": "collage-builder",
+      "blocks": {
+        "template--14773137178694__aad2a20b-3385-48aa-9079-393f0f4a6ad5-1686321770f98f078e-5": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "heading_size": 18,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__aad2a20b-3385-48aa-9079-393f0f4a6ad5-1686321770f98f078e-5"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "full",
+        "width_1": "1",
+        "height_1": "6",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "6",
+        "block_alignment": "center"
+      }
+    },
+    "e6a03a56-ff97-4d48-99d0-0b9156a3b02d": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-0": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        },
+        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-1": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        },
+        "59287d78-99ec-44b1-a130-3306b031be63": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        },
+        "db95411e-77ab-45e4-aa83-e8c3775c3288": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-0",
+        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-1",
+        "59287d78-99ec-44b1-a130-3306b031be63",
+        "db95411e-77ab-45e4-aa83-e8c3775c3288"
+      ],
+      "settings": {
+        "colors": "white",
+        "columns_per_row": 4,
+        "text_alignment": "left",
+        "vertical_alignment": "top"
+      }
+    },
+    "58a12040-d534-4682-b1b7-5479f4052864": {
+      "type": "store-information--map",
+      "settings": {
+        "colors": "white",
+        "layout": "right"
+      }
+    },
+    "f33a0dde-7961-4114-a8ff-6e5c2a459969": {
+      "type": "section--contact-form",
+      "blocks": {
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-0": {
+          "type": "name_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-1": {
+          "type": "email_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-2": {
+          "type": "tel_input",
+          "settings": {
+            "required": true,
+            "input_width": "full"
+          }
+        },
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-3": {
+          "type": "message_input",
+          "settings": {
+            "required": true,
+            "input_width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-0",
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-1",
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-2",
+        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-3"
+      ],
+      "settings": {
+        "section_color_scheme": "white",
+        "form_width": "narrow"
+      }
+    },
+    "16c77c63-79ef-4e35-be30-ea87725968de": {
+      "type": "image--logo-list",
+      "blocks": {
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-2": {
+          "type": "logo_image",
+          "settings": {
+          }
+        },
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-0": {
+          "type": "logo_image",
+          "settings": {
+          }
+        },
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-3": {
+          "type": "logo_image",
+          "settings": {
+          }
+        },
+        "28ae0150-769d-4d17-a6c3-751dcfe6f0b2": {
+          "type": "logo_image",
+          "settings": {
+          }
+        },
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-1": {
+          "type": "logo_image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-2",
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-0",
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-3",
+        "28ae0150-769d-4d17-a6c3-751dcfe6f0b2",
+        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-1"
+      ],
+      "settings": {
+        "colors": "light",
+        "width": 100,
+        "title": "Contact us through our socials"
+      }
+    },
+    "744d98e2-004e-44b9-a03d-ecb59f18bc52": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        },
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        },
+        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0",
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1",
+        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 3,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    }
+  },
+  "order": [
+    "94a50e02-c7cb-4f8e-8809-f281c98044d2",
+    "main",
+    "63d055aa-9706-43b0-b3c8-49b4a2e53ef9",
+    "33dd17bc-338f-4bf8-860d-044c9b3a8f5d",
+    "410e0db0-6d01-4d70-8356-6c6849fcdadc",
+    "8e700b4c-da55-45f7-9f69-8263da89d7a8",
+    "aad2a20b-3385-48aa-9079-393f0f4a6ad5",
+    "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
+    "58a12040-d534-4682-b1b7-5479f4052864",
+    "f33a0dde-7961-4114-a8ff-6e5c2a459969",
+    "16c77c63-79ef-4e35-be30-ea87725968de",
+    "744d98e2-004e-44b9-a03d-ecb59f18bc52"
+  ]
+}

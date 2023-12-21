@@ -1,0 +1,281 @@
+{
+  "sections": {
+    "af74e87e-1556-4a47-b50d-86b13100ed8a": {
+      "type": "collage-builder",
+      "blocks": {
+        "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1": {
+          "type": "image",
+          "settings": {
+            "heading": "Contact us",
+            "heading_size": 40,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "full",
+        "width_1": "1",
+        "height_1": "6",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
+    "1645633383c94b2bb2": {
+      "type": "accordion",
+      "blocks": {
+        "16456333831a200dc8-0": {
+          "type": "tab_content",
+          "settings": {
+          }
+        },
+        "16456333831a200dc8-1": {
+          "type": "tab_content",
+          "settings": {
+          }
+        },
+        "16456333831a200dc8-2": {
+          "type": "tab_content",
+          "settings": {
+          }
+        },
+        "b8952142-22e1-4b16-b9bd-9e42747928c9": {
+          "type": "tab_content",
+          "settings": {
+          }
+        },
+        "a379cb7a-ba34-48da-b0af-2b0379b8db62": {
+          "type": "tab_content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16456333831a200dc8-0",
+        "16456333831a200dc8-1",
+        "16456333831a200dc8-2",
+        "b8952142-22e1-4b16-b9bd-9e42747928c9",
+        "a379cb7a-ba34-48da-b0af-2b0379b8db62"
+      ],
+      "settings": {
+        "colors": "white",
+        "faq_icon": "caret"
+      }
+    },
+    "164563343647211871": {
+      "type": "text--rich-text",
+      "blocks": {
+        "6a2f6ce0-606a-4133-b01a-ee3926268a9e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Still got Q's?"
+          }
+        },
+        "9f90cfb3-0430-4b6c-90df-8309138e865a": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Direct your customers towards an FAQs page or somewhere they can find out more information<\/p>",
+            "text_size": 14
+          }
+        },
+        "c1f278da-fb1a-46ad-9d1f-1e169afa696c": {
+          "type": "button",
+          "settings": {
+            "button_text": "See FAQs"
+          }
+        }
+      },
+      "block_order": [
+        "6a2f6ce0-606a-4133-b01a-ee3926268a9e",
+        "9f90cfb3-0430-4b6c-90df-8309138e865a",
+        "c1f278da-fb1a-46ad-9d1f-1e169afa696c"
+      ],
+      "settings": {
+        "colors": "light",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a": {
+      "type": "section--contact-form",
+      "blocks": {
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-0": {
+          "type": "name_input",
+          "settings": {
+            "required": true,
+            "input_width": "full"
+          }
+        },
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-1": {
+          "type": "email_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "f03adfd7-1474-4f7a-a28a-c0c1430bd42d": {
+          "type": "tel_input",
+          "settings": {
+            "required": false,
+            "input_width": "partial"
+          }
+        },
+        "fbb2a872-0770-4f56-913c-b7853e33a9c0": {
+          "type": "custom_input",
+          "settings": {
+            "required": false,
+            "input_width": "full"
+          }
+        },
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-3": {
+          "type": "message_input",
+          "settings": {
+            "required": false,
+            "input_width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-0",
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-1",
+        "f03adfd7-1474-4f7a-a28a-c0c1430bd42d",
+        "fbb2a872-0770-4f56-913c-b7853e33a9c0",
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-3"
+      ],
+      "settings": {
+        "section_color_scheme": "white",
+        "form_width": "narrow"
+      }
+    },
+    "728a0242-0170-4e0a-b7f1-3633abd8a200": {
+      "type": "text--rich-text",
+      "blocks": {
+        "f68de724-df68-4ed1-9b69-bfdb40d1f552": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find us on instagram"
+          }
+        },
+        "3ba6d5ff-4566-4d96-8d8b-52c42e2ca699": {
+          "type": "button",
+          "settings": {
+            "button_text": "Follow us"
+          }
+        }
+      },
+      "block_order": [
+        "f68de724-df68-4ed1-9b69-bfdb40d1f552",
+        "3ba6d5ff-4566-4d96-8d8b-52c42e2ca699"
+      ],
+      "settings": {
+        "colors": "light",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "16292070946a646e48": {
+      "type": "image--gallery",
+      "blocks": {
+        "16292070946a646e48-2": {
+          "type": "image",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "title": "Heading",
+            "subheading": "Subheading",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": true
+          }
+        },
+        "16292070946a646e48-1": {
+          "type": "image",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "title": "Heading",
+            "subheading": "Subheading",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": true
+          }
+        },
+        "16292070946a646e48-0": {
+          "type": "image",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "title": "Heading",
+            "subheading": "Subheading",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": true
+          }
+        },
+        "3a856712-4c09-43a7-8bd1-8e9d920e9093": {
+          "type": "image",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "title": "Heading",
+            "subheading": "Subheading",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "16292070946a646e48-2",
+        "16292070946a646e48-1",
+        "16292070946a646e48-0",
+        "3a856712-4c09-43a7-8bd1-8e9d920e9093"
+      ],
+      "settings": {
+        "colors": "light",
+        "title": "",
+        "richtext": "",
+        "remove-spacing": true,
+        "full-width": false,
+        "section-width": "full",
+        "content-position": "hover"
+      }
+    },
+    "1645634969fb497783": {
+      "type": "newsletter--newsletter",
+      "settings": {
+        "colors": "light",
+        "newsletter_description": "<p>Get priority access to events and exclusive offers<\/p>"
+      }
+    },
+    "f9008be2-cc52-4777-becc-c975f680a054": {
+      "type": "store-information--map",
+      "settings": {
+        "colors": "white",
+        "layout": "right"
+      }
+    }
+  },
+  "order": [
+    "af74e87e-1556-4a47-b50d-86b13100ed8a",
+    "1645633383c94b2bb2",
+    "164563343647211871",
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a",
+    "728a0242-0170-4e0a-b7f1-3633abd8a200",
+    "16292070946a646e48",
+    "1645634969fb497783",
+    "f9008be2-cc52-4777-becc-c975f680a054"
+  ]
+}

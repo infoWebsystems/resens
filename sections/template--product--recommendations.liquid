@@ -1,0 +1,254 @@
+<link rel="preload" href="{{ 'section-product-recommendations.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<link rel="preload" href="{{ 'section-product-recommendations.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript>{{ 'section-product-recommendations.min.css' | asset_url | stylesheet_tag }}</noscript>
+
+{% comment %} Construct product card layout {% endcomment %}
+{%- capture product_card_blocks -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type contains "product_card_" -%}
+      {{ block.type }},
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{% assign image_block = section.blocks | where: "type", "product_card_image" | first %}
+{% assign title_block = section.blocks | where: "type", "product_card_title" | first %}
+{% assign price_block = section.blocks | where: "type", "product_card_price" | first %}
+{% assign vendor_block = section.blocks | where: "type", "product_card_vendor" | first %}
+
+<product-recommendations
+  class="product-recommendations"
+  data-recommendations-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8"
+  data-wetheme-section-type="template--product--recommendations"
+  data-wetheme-section-id="{{ section.id }}"
+>
+
+  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+    <div class="product-page-related-products product-sticker-stop">
+      <div class="wrapper-padded">
+
+        {% unless section.settings.product_recommendations_heading == blank %}
+          <div class="sitewide--title-wrapper">
+            <h2 class="page--title">{{ section.settings.product_recommendations_heading }}</h2>
+          </div>
+        {% endunless %}
+
+        <div class="swiper-container product-recommendations__slideshow">
+            <div class="swiper-wrapper">
+                {%- for product in recommendations.products -%}
+                    {% comment %}
+                        Check if the product is on sale and set a variable to be used below.
+                    {% endcomment %}
+                    {% assign on_sale = false %}
+                    {% if product.compare_at_price > product.price %}
+                        {% assign on_sale = true %}
+                    {% endif %}
+
+                    {% comment %}
+                        Check if the product is sold out and set a variable to be used below.
+                    {% endcomment %}
+                    {% assign sold_out = true %}
+                    {% if product.available %}
+                        {% assign sold_out = false %}
+                    {% endif %}
+
+                    <div class="grid__item swiper-slide">
+                        <div class="grid-view-item">
+                          {% render 'grid-view-item', product: product, collection: null, blocks: product_card_blocks, enable_badges: settings.show_badges %}
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+        <div class="swiper-button--prev">
+          {% render 'theme-icon', icon: 'chevron_left' %}
+        </div>
+        <div class="swiper-button--next">
+          {% render 'theme-icon', icon: 'chevron_right' %}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+</product-recommendations>
+
+<safe-load-scripts class="hidden">
+  <script src="{{ 'component-product-recommendations.js' | asset_url }}" defer="defer" type="module" data-flow-load-key="product-recommendations"></script>
+</safe-load-scripts>
+
+
+{% schema %}
+{
+	"name": "t:sections.template--product--recommendations.name",
+	"settings": [
+		{
+			"type": "paragraph",
+			"content": "t:sections.template--product--recommendations.settings.paragraph-0.content"
+		},
+		{
+			"type": "text",
+			"id": "product_recommendations_heading",
+			"label": "t:all.Heading",
+			"default": "You may also like"
+		}
+	],
+	"blocks": [
+		{
+			"type": "product_card_image",
+			"name": "t:all.Product_image",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "t:all.To_change_your_product_image_size_go_to_Theme_settings__Product_card__Grid_image_size"
+				},
+				{
+					"type": "header",
+					"content": "t:all.Quick_shop_button"
+				},
+				{
+					"type": "checkbox",
+					"id": "enable_quick_shop",
+					"label": "t:all.Enable",
+					"default": false
+				},
+				{
+					"type": "checkbox",
+					"id": "disable_quick_shop_mobile",
+					"label": "t:all.Disable_on_mobile",
+					"default": true
+				},
+				{
+					"type": "paragraph",
+					"content": "t:all.Quick_shop_button_will_show_as_icon_on_smaller_screens"
+				}
+			]
+		},
+		{
+			"type": "product_card_title",
+			"name": "t:all.Title",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "radio",
+					"id": "product_card_title__font",
+					"label": "t:all.Font",
+					"options": [
+						{
+							"value": "heading",
+							"label": "t:all.Heading"
+						},
+						{
+							"value": "body",
+							"label": "t:all.Body"
+						}
+					],
+					"default": "body"
+				}
+			]
+		},
+		{
+			"type": "product_card_price",
+			"name": "t:all.Price",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "radio",
+					"id": "product_card_price__font",
+					"label": "t:all.Font",
+					"options": [
+						{
+							"value": "heading",
+							"label": "t:all.Heading"
+						},
+						{
+							"value": "body",
+							"label": "t:all.Body"
+						}
+					],
+					"default": "body"
+				}
+			]
+		},
+		{
+			"type": "product_card_vendor",
+			"name": "t:all.Product_vendor",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "t:all.This_is_used_to_set_the_order_and_placement_of_the_product_vendor_within_the_product_cards_in_your_collection_product_list_"
+				},
+				{
+					"type": "radio",
+					"id": "product_card_vendor__font",
+					"label": "t:all.Font",
+					"options": [
+						{
+							"value": "heading",
+							"label": "t:all.Heading"
+						},
+						{
+							"value": "body",
+							"label": "t:all.Body"
+						}
+					],
+					"default": "body"
+				}
+			]
+		},
+		{
+			"type": "product_card_quick_shop",
+			"name": "t:sections.template--product--recommendations.blocks.product_card_quick_shop.name",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "t:sections.template--product--recommendations.blocks.product_card_quick_shop.settings.paragraph-0.content"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "t:sections.template--product--recommendations.presets.name",
+			"category": {
+				"en": "Products",
+				"de": "Produkte",
+				"es": "Productos",
+				"fr": "Produits",
+				"pt-PT": "Produtos"
+			},
+			"settings": {
+				"product_recommendations_heading": "You may also like"
+			},
+			"blocks": [
+				{
+					"type": "product_card_image",
+					"settings": {}
+				},
+				{
+					"type": "product_card_title",
+					"settings": {}
+				},
+				{
+					"type": "product_card_price",
+					"settings": {}
+				},
+				{
+					"type": "product_card_vendor",
+					"settings": {}
+				},
+				{
+					"type": "product_card_quick_shop",
+					"settings": {}
+				}
+			]
+		}
+	],
+	"enabled_on": {
+		"templates": [
+			"product"
+		]
+	}
+}
+{% endschema %}

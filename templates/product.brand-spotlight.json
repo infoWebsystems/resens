@@ -1,0 +1,467 @@
+{
+  "sections": {
+    "product-form": {
+      "type": "template--product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_font": "h1",
+            "margin_bottom": 0
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_font": "h3",
+            "shipping_policy": false,
+            "tax_included": false,
+            "margin_bottom": 20
+          }
+        },
+        "f0f0e917-92a5-4957-a68e-2d0bb38d7819": {
+          "type": "separator",
+          "settings": {
+            "margin_bottom": 40
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "show_variant_labels": true,
+            "hide_out_of_stock_variants": false,
+            "variant_style": "swatches",
+            "thumbnail_changes_variant": false,
+            "size_guide_page": "",
+            "size_option_name": "Size",
+            "margin_bottom": 20
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "margin_bottom": 40
+          }
+        },
+        "a7717974-ed85-4cde-80ef-4751178acf57": {
+          "type": "text-with-icon",
+          "settings": {
+            "link": "",
+            "margin_bottom": 10
+          }
+        },
+        "2f3ddc8d-6514-403d-a884-88c9a0294300": {
+          "type": "stock-level-indicator",
+          "settings": {
+            "stock-level-indicator-style": "classic",
+            "bar-indicator-color": "standard",
+            "stock_indicator_animation": true,
+            "stock-range": 20,
+            "show-stock-count": false,
+            "stock-level-notice": "always",
+            "margin_bottom": 40
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_smart_checkout": true,
+            "enable_gift_card_recipient_form": true,
+            "margin_bottom": 20
+          }
+        },
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2": {
+          "type": "product-description",
+          "settings": {
+            "collapsible_tab": false,
+            "icon": "none",
+            "heading": "Description",
+            "open_close_icon": "plus_minus",
+            "margin_bottom": 20
+          }
+        },
+        "b0c19132-8e54-4664-b8ce-0a8c7f1f7737": {
+          "type": "collapsible-tab",
+          "settings": {
+            "icon": "none",
+            "open_close_icon": "caret",
+            "page": "",
+            "open_by_default": false,
+            "margin_bottom": 0
+          }
+        },
+        "9c341458-2d2c-4317-a2cc-346e220f53e0": {
+          "type": "collapsible-tab",
+          "settings": {
+            "icon": "none",
+            "open_close_icon": "caret",
+            "page": "",
+            "open_by_default": false,
+            "margin_bottom": 0
+          }
+        },
+        "b3864090-4f25-4db2-bddb-c549e9472be6": {
+          "type": "collapsible-tab",
+          "settings": {
+            "icon": "none",
+            "open_close_icon": "caret",
+            "page": "",
+            "open_by_default": false,
+            "margin_bottom": 40
+          }
+        },
+        "fbfe241f-1b44-41cd-ae22-e866bdad9aaf": {
+          "type": "cross-sells",
+          "settings": {
+            "title": "You may also like...",
+            "collapsible_tab": false,
+            "icon": "none",
+            "open_close_icon": "plus_minus",
+            "margin_bottom": 20
+          }
+        },
+        "4fdb087c-4728-4785-b270-a71a092b7898": {
+          "type": "social_sharing",
+          "settings": {
+            "margin_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
+        "options",
+        "quantity",
+        "a7717974-ed85-4cde-80ef-4751178acf57",
+        "2f3ddc8d-6514-403d-a884-88c9a0294300",
+        "buy_buttons",
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
+        "b0c19132-8e54-4664-b8ce-0a8c7f1f7737",
+        "9c341458-2d2c-4317-a2cc-346e220f53e0",
+        "b3864090-4f25-4db2-bddb-c549e9472be6",
+        "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
+        "4fdb087c-4728-4785-b270-a71a092b7898"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "show_out_of_stock_email": false,
+        "image_size": "medium",
+        "image-display": "thumbnails",
+        "thumbnail_position": "left",
+        "enable_video_loop": true,
+        "app_margin_bottom": 20
+      }
+    },
+    "product-description": {
+      "type": "template--product--description",
+      "disabled": true,
+      "settings": {
+        "enable_readmore": false
+      }
+    },
+    "image-with-text-00": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "light",
+        "text_overlapping_image": true,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "left",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "info-columns-00": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "block-column-00": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "text": "<p>SHARE YOUR STORY<\/p><h2>Info columns<\/h2><p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "block-column-01": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "",
+            "text": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "block-column-02": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "",
+            "text": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-column-00",
+        "block-column-01",
+        "block-column-02"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 3,
+        "text_alignment": "left",
+        "vertical_alignment": "center"
+      }
+    },
+    "testimonials": {
+      "type": "text--testimonials",
+      "blocks": {
+        "block-testimonials-00": {
+          "type": "text",
+          "settings": {
+            "testimonial_text": "<p>Show off incredible feedback from your customers<\/p>",
+            "customer_name": "Helen",
+            "link": "",
+            "stars": 5
+          }
+        },
+        "block-testimonials-01": {
+          "type": "text",
+          "settings": {
+            "testimonial_text": "<p>Show off incredible feedback from your customers<\/p>",
+            "customer_name": "John",
+            "link": "",
+            "stars": 5
+          }
+        },
+        "block-testimonials-02": {
+          "type": "text",
+          "settings": {
+            "testimonial_text": "<p>Show off incredible feedback from your customers<\/p>",
+            "customer_name": "Salome",
+            "link": "",
+            "stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "block-testimonials-00",
+        "block-testimonials-01",
+        "block-testimonials-02"
+      ],
+      "settings": {
+        "colors": "light",
+        "circle_images": true
+      }
+    },
+    "info-columns-01": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "block-column-00": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "",
+            "text": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "block-column-01": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "",
+            "text": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "block-column-02": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "text": "<p>SHARE YOUR STORY<\/p><h2>Info columns<\/h2><p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-column-00",
+        "block-column-01",
+        "block-column-02"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 3,
+        "text_alignment": "left",
+        "vertical_alignment": "center"
+      }
+    },
+    "image-with-text-01": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "white",
+        "text_overlapping_image": true,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "template--product--recommendations",
+      "blocks": {
+        "product_card_image": {
+          "type": "product_card_image",
+          "settings": {
+          }
+        },
+        "product_card_title": {
+          "type": "product_card_title",
+          "settings": {
+            "product_card_title__font": "body"
+          }
+        },
+        "product_card_price": {
+          "type": "product_card_price",
+          "settings": {
+            "product_card_price__font": "body"
+          }
+        },
+        "product_card_quick_shop": {
+          "type": "product_card_quick_shop",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product_card_image",
+        "product_card_title",
+        "product_card_price",
+        "product_card_quick_shop"
+      ],
+      "settings": {
+        "product_recommendations_heading": "You may also like"
+      }
+    },
+    "countdown-timer": {
+      "type": "countdown-timer",
+      "blocks": {
+        "block-countdown-timer-00": {
+          "type": "timer_complete_message",
+          "settings": {
+          }
+        },
+        "block-countdown-timer-01": {
+          "type": "heading",
+          "settings": {
+            "heading": "Countdown timer"
+          }
+        },
+        "block-countdown-timer-02": {
+          "type": "text",
+          "settings": {
+          }
+        },
+        "block-countdown-timer-03": {
+          "type": "countdown_timer",
+          "settings": {
+            "end_date": "",
+            "end_time": "",
+            "hide_when_complete": false,
+            "time_labels": true
+          }
+        },
+        "block-countdown-timer-04": {
+          "type": "button",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "block-countdown-timer-00",
+        "block-countdown-timer-01",
+        "block-countdown-timer-02",
+        "block-countdown-timer-03",
+        "block-countdown-timer-04"
+      ],
+      "settings": {
+        "text_alignment": "center"
+      }
+    },
+    "apps": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "info-columns-02": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "block-column-00": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "wide",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "block-column-01": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "wide",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "block-column-02": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "wide",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "block-column-00",
+        "block-column-01",
+        "block-column-02"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 3,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    }
+  },
+  "order": [
+    "product-form",
+    "product-description",
+    "image-with-text-00",
+    "info-columns-00",
+    "testimonials",
+    "info-columns-01",
+    "image-with-text-01",
+    "product-recommendations",
+    "countdown-timer",
+    "apps",
+    "info-columns-02"
+  ]
+}

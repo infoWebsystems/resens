@@ -1,0 +1,87 @@
+{% comment %} Construct block order {% endcomment %}
+{% assign block_order = blocks | split: "," %}
+
+{% liquid
+  assign crop_setting = settings.product-grid
+
+  if crop_setting == "square" or crop_setting == "tall" or crop_setting == "wide"
+    assign image_crop = "aspect-ratio--" | append: crop_setting
+  else
+    assign image_crop = false
+  endif
+
+  assign alignment_class = 'text-align--' | append: settings.product_card_text_alignment
+
+  for block in section.blocks
+    if block.type == "product_card_image" 
+      assign quick_shop_desktop_enabled = block.settings.enable_quick_shop
+      assign quick_shop_mobile_disabled = block.settings.disable_quick_shop_mobile
+    endif 
+
+    if block.type == "product_card_title"
+      assign title_font = 'product-grid--title-font-' | append: block.settings.product_card_title__font
+    endif
+
+    if block.type == "product_card_price"
+      assign price_font = 'product-grid--price-font-' | append: block.settings.product_card_price__font
+    endif
+
+    if block.type == "product_card_vendor"
+      assign vendor_font = 'product-grid--vendor-font-' | append: block.settings.product_card_vendor__font
+    endif
+
+    assign svg_index = svg_index | default: 1
+  endfor
+%}
+
+<div class="grid-view-item {{ alignment_class }}">
+  {%- for block in block_order -%}
+    {%- case block -%}
+
+      {%- when 'product_card_image' -%}
+        <div class="grid-view-item-image" data-block-type="product_card_image"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_image","type":"product_card_image"}'{% endif %}>
+
+          <a href="/admin/products" class="grid-view-item__link" tabindex="-1">
+            {% if image_crop %}<div class="aspect-ratio {{ image_crop }}">{% endif %}
+              <div class="grid-view-item__image">
+                  {{ 'product-' | append: svg_index | placeholder_svg_tag: 'icon icon--placeholder grid__image' }}
+              </div>
+            {% if image_crop %}</div>{% endif %}
+          </a>
+
+          {% if quick_shop_desktop_enabled %}
+            <div class="product-card-image--bottom-wrapper">
+              <div class="quick-add-wrapper">
+                <a class="quick-add-button-onboarding quick-add-button-onboarding-desktop" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.add_to_cart' | t }}</a>
+                {% unless quick_shop_mobile_disabled %}
+                  <a class="quick-add-button-onboarding quick-add-button-onboarding-mobile" tabindex="0" href="{{ product.url | within: collection }}"><span>{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon', iconSize: 16 %}</span></a>
+                {% endunless %}
+              </div>
+            </div>
+          {% endif %}
+
+        </div>
+
+      {%- when 'product_card_title' -%}
+        <div class="product-grid--title {{ title_font }}" data-block-type="product_card_title"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_title","type":"product_card_title"}'{% endif %}>
+          <a href="/admin/products">{{ 'homepage.onboarding.product_title' | t }}</a>
+        </div>
+
+      {%- when 'product_card_price' -%}
+        <div class="product-grid--price {{ price_font }}" data-block-type="product_card_price"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_price","type":"product_card_price"}'{% endif %}>
+          <a href="/admin/products" tabindex="-1">
+            <span class="money">{{ 1999 | money }}</span>
+          </a>
+        </div>
+
+      {%- when 'product_card_vendor' -%}
+        <div class="product-grid--vendor {{ vendor_font }}" data-block-type="product_card_vendor"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_vendor","type":"product_card_vendor"}'{% endif %}>{{ 'homepage.onboarding.product_vendor' | t }}</div>
+
+      {%- when 'product_card_quick_shop' -%}
+        <div class="product-grid--quick-shop quick-shop--block">
+          <button class="quick-add-button quick-add-button-desktop" type="submit" tabindex="0">{{ 'products.product.add_to_cart' | t }}</button>
+        </div>
+
+    {%- endcase -%}
+  {%- endfor -%}
+</div>

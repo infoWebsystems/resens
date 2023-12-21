@@ -1,0 +1,79 @@
+{% comment %}
+  Accepts the following options:
+  - wrapper_classes: Add Additional classes to icons' ul wrapper
+  - icon_classes: Additional classes to add to the icon
+  - icon_width: The width of the icon
+  - icon_height: The height of the icon
+  - icon_fill: The fill color of the icon
+{% endcomment %}
+
+{% if
+  settings.sm_facebook_link != blank or
+  settings.sm_twitter_link != blank or
+  settings.sm_youtube_link != blank or
+  settings.sm_flickr_link != blank or
+  settings.sm_pinterest_link != blank or
+  settings.sm_instagram_link != blank or
+  settings.sm_tumblr_link != blank or
+  settings.sm_pinterest_link != blank or
+  settings.sm_youtube_link != blank or
+  settings.sm_vimeo_link != blank or
+  settings.sm_flickr_link != blank or
+  settings.sm_snapchat_link != blank or
+  settings.sm_houzz_link != blank or
+  settings.sm_linkedin_link != blank or
+  settings.sm_tiktok_link != blank %}
+
+<ul id="sm-icons" class="clearfix {{ wrapper_classes }}">
+
+  {% if settings.sm_facebook_link != blank %}
+    <li id="sm-facebook"><a href="{{settings.sm_facebook_link}}" target="_blank">{% render 'theme-icon' with icon: 'facebook', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_twitter_link != blank %}
+    <li id="sm-twitter"><a href="{{settings.sm_twitter_link}}" target="_blank">{% render 'theme-icon' with icon: 'twitter', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_instagram_link != blank %}
+    <li id="sm-instagram"><a href="{{settings.sm_instagram_link}}" target="_blank">{% render 'theme-icon' with icon: 'instagram', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_tumblr_link != blank %}
+    <li id="sm-tumblr"><a href="{{settings.sm_tumblr_link}}" target="_blank">{% render 'theme-icon' with icon: 'tumblr', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_pinterest_link != blank %}
+    <li id="sm-pinterest"><a href="{{settings.sm_pinterest_link}}" target="_blank">{% render 'theme-icon' with icon: 'pinterest', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_youtube_link != blank %}
+    <li id="sm-youtube"><a href="{{settings.sm_youtube_link}}" target="_blank">{% render 'theme-icon' with icon: 'youtube', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_vimeo_link != blank %}
+    <li id="sm-vimeo"><a href="{{settings.sm_vimeo_link}}" target="_blank">{% render 'theme-icon' with icon: 'vimeo', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_flickr_link != blank %}
+    <li id="sm-flickr"><a href="{{settings.sm_flickr_link}}" target="_blank">{% render 'theme-icon' with icon: 'flickr', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_snapchat_link != blank %}
+    <li id="sm-snapchat"><a href="{{settings.sm_snapchat_link}}" target="_blank">{% render 'theme-icon' with icon: 'snapchat', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_houzz_link != blank %}
+    <li id="sm-houzz"><a href="{{settings.sm_houzz_link}}" target="_blank">{% render 'theme-icon' with icon: 'houzz', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_linkedin_link != blank %}
+    <li id="sm-linkedin"><a href="{{settings.sm_linkedin_link}}" target="_blank">{% render 'theme-icon' with icon: 'linkedin', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+  {% if settings.sm_tiktok_link != blank %}
+    <li id="sm-tiktok"><a href="{{settings.sm_tiktok_link}}" target="_blank" class="tiktok-wrapper">{% render 'theme-icon' with icon: 'tiktok', iconClasses: icon_classes %}</a></li>
+  {% endif %}
+
+</ul>
+
+{% endif %}

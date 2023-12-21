@@ -1,0 +1,490 @@
+{
+  "sections": {
+    "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
+      "type": "image--slideshow",
+      "blocks": {
+        "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0": {
+          "type": "image",
+          "settings": {
+            "title": "Reveal the secret \nof cellular longevity",
+            "text": "",
+            "first_button_label": "Shop now",
+            "first_button_link": "shopify:\/\/collections\/all",
+            "second_button_label": "",
+            "second_button_link": "",
+            "image": "shopify:\/\/shop_images\/beautiful-still-life-with-herbal-medicine_5_1.png",
+            "desktop-caption-heading-size": 64,
+            "desktop-caption-body-text-size": 18,
+            "text_position": "center_left",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 22,
+            "caption-text": "#ffffff",
+            "button-text": "#070606",
+            "button-background": "#e7dadf",
+            "hover-button-background": "#d6e2ff"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_height": "full_screen",
+        "mobile_height": "full_screen",
+        "slide_navigation_style": "bars",
+        "slide_transition_delay": 7
+      }
+    },
+    "b4aa8931-1a4b-45b0-be73-a34e8c206af7": {
+      "type": "collection--collection-list",
+      "blocks": {
+        "template--16567602479262__b4aa8931-1a4b-45b0-be73-a34e8c206af7-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage",
+            "collection_img": "shopify:\/\/shop_images\/beautiful-still-life-with-herbal-medicine_5_1.png",
+            "subheading": "Set of products",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "template--16567602479262__b4aa8931-1a4b-45b0-be73-a34e8c206af7-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage",
+            "collection_img": "shopify:\/\/shop_images\/selfcare-products-arrangement_1.png",
+            "subheading": "Set of products",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16567602479262__b4aa8931-1a4b-45b0-be73-a34e8c206af7-featured_collection-1",
+        "template--16567602479262__b4aa8931-1a4b-45b0-be73-a34e8c206af7-featured_collection-2"
+      ],
+      "settings": {
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "items-per-row": 2,
+        "fill-the-area": false,
+        "remove-spacing": false,
+        "section-width": "full",
+        "content-position": "below-image"
+      }
+    },
+    "3c4d9433-fe83-4e4a-afa6-63c348fea245": {
+      "type": "collection--featured-collection",
+      "blocks": {
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_image-1": {
+          "type": "product_card_image",
+          "settings": {
+            "enable_quick_shop": false,
+            "disable_quick_shop_mobile": true
+          }
+        },
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_title-1": {
+          "type": "product_card_title",
+          "settings": {
+            "product_card_title__font": "body"
+          }
+        },
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_price-1": {
+          "type": "product_card_price",
+          "settings": {
+            "product_card_price__font": "body"
+          }
+        },
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_quick_shop-1": {
+          "type": "product_card_quick_shop",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_image-1",
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_title-1",
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_price-1",
+        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_quick_shop-1"
+      ],
+      "settings": {
+        "rows": 1,
+        "grid-desktop": 4,
+        "grid-mobile": "2",
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "collection": "stick-cream",
+        "show_view_all": false
+      }
+    },
+    "35b28867-77fd-4573-8212-101b3b8e2245": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner.png",
+        "image_height": "50vw",
+        "bg_image_overlay_opacity": 0,
+        "parallax": false,
+        "title": "Professional skin  cleansing kit",
+        "text": "Add a large image with text overlay to give focus to your chosen product, collection, or blog post",
+        "colors": "dark",
+        "textPosition": "right",
+        "textAlignment": "right",
+        "heading--text-size": 48,
+        "text--text-size": 20,
+        "link": "shopify:\/\/collections",
+        "button_label": "Shop now",
+        "button-text": "#000000",
+        "button-background": "#d6e2ff",
+        "hover-button-text": "#070606",
+        "hover-button-background": "#e7dadf"
+      }
+    },
+    "50b03afc-6c7a-4252-94c2-7579c9d3b3ee": {
+      "type": "collage-builder",
+      "blocks": {
+        "83447c73-f480-4c7d-8508-249f594f3aa3": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/selfcare-products-and-flower-arrangement_1_2.png",
+            "heading": "Up yo 15% off for  Professional skin cleansing",
+            "heading_size": 32,
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-center md-max-justify-left",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "0d4c44b0-cb7c-43dc-829a-743dfa47a878": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "heading": "Up yo 15% off for  Professional skin cleansing",
+            "heading_size": 32,
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-center md-max-justify-left",
+            "text_color": "#ffffff",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#616161"
+          }
+        }
+      },
+      "block_order": [
+        "83447c73-f480-4c7d-8508-249f594f3aa3",
+        "0d4c44b0-cb7c-43dc-829a-743dfa47a878"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "full",
+        "width_1": "2",
+        "height_1": "3",
+        "width_2": "2",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "6",
+        "block_alignment": "center"
+      }
+    },
+    "e8654ad7-b205-46a1-b672-af13dcfa8fe9": {
+      "type": "collection--featured-collection",
+      "blocks": {
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_image-1": {
+          "type": "product_card_image",
+          "settings": {
+            "enable_quick_shop": false,
+            "disable_quick_shop_mobile": true
+          }
+        },
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_title-1": {
+          "type": "product_card_title",
+          "settings": {
+            "product_card_title__font": "body"
+          }
+        },
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_price-1": {
+          "type": "product_card_price",
+          "settings": {
+            "product_card_price__font": "body"
+          }
+        },
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_quick_shop-1": {
+          "type": "product_card_quick_shop",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_image-1",
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_title-1",
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_price-1",
+        "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_quick_shop-1"
+      ],
+      "settings": {
+        "rows": 2,
+        "grid-desktop": 4,
+        "grid-mobile": "2",
+        "colors": "white",
+        "title": "BEST SELLINGS",
+        "richtext": "",
+        "collection": "bestselling",
+        "show_view_all": false
+      }
+    },
+    "cf965c26-6ea8-499a-8a05-a4e350ede58a": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "white",
+        "image": "shopify:\/\/shop_images\/Image_with_text_2890x_b42898d8-c2d8-4ac4-ad68-7a6dbe559d53.webp",
+        "text_overlapping_image": true,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "left",
+        "title": "MEET THE FOUNDER",
+        "text": "<p>Imogen Grey, founder of Re[Sense], shares her origin story, future vision, and what she loves most about our cosmetics.<\/p>",
+        "button_label": "READ MORE",
+        "button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "8e9e36da-191e-4c8c-ba3a-8a307b84bae9": {
+      "type": "collage-builder",
+      "blocks": {
+        "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-text-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Include text details",
+            "heading_size": 28,
+            "text": "The MIDI Introductory Kit contains mini versions of the products, which are ideal for the first acquaintance with Esthederm Institute, or as a universal travel kit that is very convenient to take with you on a trip.",
+            "text_alignment": "left",
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949"
+          }
+        },
+        "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-image-1": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/collection-of-aluminum-products-packaging_2.png",
+            "heading": "",
+            "heading_size": 30,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-top md-max-justify-left",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "da5b3af5-5d95-44e2-b098-f4b3a39403f9": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Frame_19.png",
+            "heading": "",
+            "heading_size": 16,
+            "button_label": "FOR MORNING ROUTINE",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-center",
+            "mobile_position": "md-max-align-top md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#fefefe",
+            "button_background_color": "#c4c4c4",
+            "button_hover_color": "#fefefe",
+            "button_hover_background_color": "#c4c4c4",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "9cf4de3c-89e3-446e-b378-f839c160f721": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Frame_19.png",
+            "heading": "",
+            "heading_size": 38,
+            "button_label": "FOR DAILY ROUTINE",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-center",
+            "mobile_position": "md-max-align-top md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#fefefe",
+            "button_background_color": "#c4c4c4",
+            "button_hover_color": "#fefefe",
+            "button_hover_background_color": "#c4c4c4",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-text-1",
+        "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-image-1",
+        "da5b3af5-5d95-44e2-b098-f4b3a39403f9",
+        "9cf4de3c-89e3-446e-b378-f839c160f721"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "1",
+        "height_1": "6",
+        "width_2": "2",
+        "height_2": "2",
+        "width_3": "4",
+        "height_3": "3",
+        "width_4": "4",
+        "height_4": "3",
+        "width_5": "4",
+        "height_5": "6",
+        "width_6": "4",
+        "height_6": "6",
+        "block_alignment": "center"
+      }
+    },
+    "12a25ae5-a869-4fec-9751-deb411052883": {
+      "type": "featured-menu",
+      "blocks": {
+        "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-1": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Cosmetics for face",
+            "menu_item_color": "#000000",
+            "menu_item_link": "shopify:\/\/collections\/cosmetics-for-face",
+            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+          }
+        },
+        "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Cosmetics for body",
+            "menu_item_color": "#000000",
+            "menu_item_link": "shopify:\/\/collections\/cosmetics-for-body",
+            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+          }
+        },
+        "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Sun protection care",
+            "menu_item_color": "#000000",
+            "menu_item_link": "shopify:\/\/collections\/sun-protection-care",
+            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+          }
+        },
+        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Anti-aging care",
+            "menu_item_color": "#000000",
+            "menu_item_link": "shopify:\/\/collections\/anti-aging-care",
+            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-1",
+        "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2",
+        "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3",
+        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603"
+      ],
+      "settings": {
+        "colors": "white",
+        "min_height": "50vw",
+        "image_desktop_default": "shopify:\/\/shop_images\/Rectangle_44.png",
+        "menu_position": "center",
+        "alignment_desktop": "center",
+        "alignment_mobile": "center",
+        "menu_items_color": "#262428",
+        "menu_item_size": 32
+      }
+    },
+    "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949": {
+      "type": "blog--blog-posts",
+      "blocks": {
+        "46fa8d12-7387-4c7c-8145-c62ba65f45c5": {
+          "type": "article",
+          "settings": {
+            "blog_post_1": "news\/we-give-away-a-mild-eye-and-lip-makeup-remover",
+            "blog_post_2": "news\/what-is-the-proteome-and-why-will-protecting-it-stop-the-skin-from-aging",
+            "blog_post_3": "news\/we-give-away-a-mild-eye-and-lip-makeup-remover",
+            "blog_post_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "46fa8d12-7387-4c7c-8145-c62ba65f45c5"
+      ],
+      "settings": {
+        "colors": "white",
+        "title": "From the blog",
+        "richtext": "",
+        "blog_show_date": true,
+        "post_limit": 3
+      }
+    },
+    "2702beb3-827b-44e4-991e-9b79a8ccc045": {
+      "type": "store-information--map",
+      "settings": {
+        "colors": "white",
+        "heading": "LOCAL PICKUP AVAILABLE",
+        "address": "<p>Ottawa, 151 O'Connor Street<br\/>Mon - Fri, 8:00am - 6:00pm<br\/>Sat - Sun, 9:00am - 5:00pm<\/p>",
+        "map_address": "80 Spadina Ave, Toronto",
+        "api_key": "",
+        "button_text": "Get directions",
+        "layout": "right",
+        "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"
+      }
+    }
+  },
+  "order": [
+    "660cda54-421a-4cdc-8a22-ae5c8c753ad5",
+    "b4aa8931-1a4b-45b0-be73-a34e8c206af7",
+    "3c4d9433-fe83-4e4a-afa6-63c348fea245",
+    "35b28867-77fd-4573-8212-101b3b8e2245",
+    "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
+    "e8654ad7-b205-46a1-b672-af13dcfa8fe9",
+    "cf965c26-6ea8-499a-8a05-a4e350ede58a",
+    "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
+    "12a25ae5-a869-4fec-9751-deb411052883",
+    "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949",
+    "2702beb3-827b-44e4-991e-9b79a8ccc045"
+  ]
+}
