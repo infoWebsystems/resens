@@ -835,6 +835,10 @@ Testing Cypress integration
               <button type="button" aria-label="{{ 'layout.navigation.menu' | t }}" class="icon-fallback-text site-nav__link js-drawer-open-left-link" aria-controls="NavDrawer" aria-expanded="false">
                 {% render 'theme-icon' with icon: 'hamburger_nav', iconClasses: 'fa-2x', widthUnset: true %}
                 <span class="fallback-text">{{ 'layout.navigation.menu' | t }}</span>
+                {% if section.settings.name_button != blank %}
+                  <span class="button-name">{{section.settings.name_button  }}</span>
+                {% endif %}
+
               </button>
             </div>
           </div>
@@ -851,7 +855,11 @@ Testing Cypress integration
                 <span class="icon-fallback-text">
                   {% render 'theme-icon' with icon: 'search', iconSize: 20 %}
                   <span class="fallback-text">{{ 'layout.header.search' | t }}</span>
+
                 </span>
+                {% if section.settings.name_search != blank %}
+                  <span class="button-name">{{section.settings.name_search  }}</span>
+                {% endif %}
               </a>
               {% endif %}
 
@@ -865,6 +873,9 @@ Testing Cypress integration
                 </span>
                 {% if section.settings.cart-number == 'total' %}
                   <span class="cart-item-count-header--total{% if cart.item_count == 0 %} hide{% endif %}">{{ cart.total_price | money }}</span>
+                {% endif %}
+                {% if section.settings.name_cart != blank %}
+                  <span class="button-name">{{section.settings.name_cart  }}</span>
                 {% endif %}
               </a>
             </div>
@@ -961,6 +972,25 @@ Testing Cypress integration
 	"name": "t:sections.header.name",
 	"class": "header-section",
 	"settings": [
+{
+"type": "text",
+"id": "name_button",
+"label": "Burger-menu title",
+"default": "Shop"
+},
+{
+"type": "text",
+"id": "name_search",
+"label": "Search name",
+"default": "Search"
+},
+{
+"type": "text",
+"id": "name_cart",
+"label": "Cart name",
+"default": "Cart"
+},
+
 		{
 			"type": "checkbox",
 			"id": "sticky_header",

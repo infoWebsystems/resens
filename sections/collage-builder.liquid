@@ -1,6 +1,6 @@
 <link rel="preload" href="{{ 'section-collage-builder.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript>{{ 'section-collage-builder.min.css' | asset_url | stylesheet_tag }}</noscript>
-
+<div class="collage-builder-wrap">
 {% if section.blocks.size > 0 %}
   <section data-wetheme-section-type="collage-builder" data-wetheme-section-id="{{ section.id }}" class="homepage-sections-wrapper--{{ section.settings.color_scheme }}">
 
@@ -349,6 +349,7 @@
               .collage-builder__grid-item--{{ section.id }}--{{ forloop.index }} {
                 padding-bottom: calc(100% / (({{ section.settings[height_setting_id] }})/({{ section.settings[width_setting_id] }})));
               }
+
             }
 
             .collage-builder__text-container--{{ block.id }} {
@@ -373,13 +374,20 @@
         {% endfor %}
       </div>
     </div>
+
   </section>
+	</div>
   <style>
     .collage-builder__grid-container--{{ section.id }} {
       align-items: {{ section.settings.block_alignment }};
     }
   </style>
 {% endif %}
+<style>
+	.collage-builder-wrap{
+		margin: 50px 0;
+	}
+</style>
 
 {% schema %}
 {
