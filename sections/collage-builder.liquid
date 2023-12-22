@@ -31,7 +31,7 @@
             <div class="collage-builder__text-container collage-builder__text-container--{{ block.id }} {{ block.settings.desktop_position }} {{ block.settings.mobile_position }}">
               <div class="collage-builder__text-container--inner">
                 {% if block.settings.heading != blank %}
-                  <h2 class="collage-builder__heading" {{ timer_complete_attrs }}>{{ block.settings.heading }}</h2>
+                  <h2  class="collage-builder__heading" {{ timer_complete_attrs }}>{{ block.settings.heading }}</h2>
                 {% endif %}
                 {% if block.settings.timer_complete_message != blank %}
                   <h2 class="collage-builder__heading hide" {{ timer_complete_attrs }}>{{ block.settings.timer_complete_message }}</h2>
@@ -125,6 +125,9 @@
                     .collage-builder__text-container--{{ block.id }} {
                       text-align: {{ block.settings.desktop_position | split: '-' | last }};
                     }
+					  .collage-builder__text-container--{{ block.id }} .collage-builder__heading  {
+						  margin-top: {{block.settings.h-margin  }}px;
+					  }
                   }
                   @media screen and (max-width: 767px) {
                     .collage-builder__text-container--{{ block.id }} {
@@ -291,7 +294,8 @@
                         {% assign flex_align = 'flex-end' %}
                     {% endcase %}
                     .collage-builder__text-container--{{ block.id }} .collage-builder__timer {
-                      justify-content: {{ flex_align }}
+                      justify-content: {{ flex_align }};
+
                     }
                   {% endif %}
                 </style>
@@ -380,7 +384,9 @@
   <style>
     .collage-builder__grid-container--{{ section.id }} {
       align-items: {{ section.settings.block_alignment }};
+
     }
+
   </style>
 {% endif %}
 <style>
@@ -862,6 +868,16 @@
 					"unit": "t:all.px",
 					"default": 30
 				},
+{
+"type": "range",
+"id": "h-margin",
+"min": 0,
+"max": 40,
+"step": 1,
+"unit": "px",
+"label": "Heading margin top",
+"default": 1
+},
 				{
 					"type": "text",
 					"id": "button_label",

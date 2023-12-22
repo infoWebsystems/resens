@@ -72,15 +72,24 @@ nav:hover{
     div.homepage-slider-container .homepage-featured-content-box .homepage-featured-content-box-inner {
         gap: 35px;
     }
-    div.shopify-section .homepage-sections-wrapper {
-        padding: 80px 0;
-    }
+    /*div.shopify-section .homepage-sections-wrapper {*/
+    /*    padding: 80px 0;*/
+    /*}*/
     .collection-grid a.homepage-featured-box-btn{
         padding: 16px 50px;
     }
     .collection-grid .grid-item__content .grid-item__subheading{
         margin-bottom: 5px;
         margin-top: 7px;
+    }
+    .grid-view-item>div:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    .image-with-text-overlay-wrapper .featured-row__subtext {
+        padding-top: 18px;
+    }
+    .image-with-text-overlay__content-box .homepage-section-btn{
+        padding: 14px 48px;
     }
 }
 @media screen and (min-width: 481px){

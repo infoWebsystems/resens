@@ -187,8 +187,8 @@
 
   @media only screen and (max-width: 767px) {
     .homepage-content--{{ section.id }} h2.homepage-sections--title {
-      font-size: {{ section.settings.heading--text-size | times: 0.8 }}px;
-      line-height: {{ section.settings.heading--text-size | times: 0.8 | plus: 5 }}px;
+      font-size: {{ section.settings.heading--text-size | times: 0.6 }}px;
+      line-height: {{ section.settings.heading--text-size | times: 0.6 | plus: 4 }}px;
     }
 
     .homepage-content--{{ section.id }} .featured-row__subtext {
@@ -339,7 +339,7 @@
 			"type": "range",
 			"id": "heading--text-size",
 			"min": 12,
-			"max": 50,
+			"max": 64,
 			"step": 2,
 			"unit": "t:all.px",
 			"label": "t:all.Heading_size",
