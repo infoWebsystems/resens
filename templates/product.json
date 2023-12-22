@@ -139,6 +139,17 @@
           "settings": {
             "margin_bottom": 20
           }
+        },
+        "daaca9d5-bd8a-4422-82e9-ae3e2768680d": {
+          "type": "star_rating",
+          "settings": {
+            "star_color": "#E68819",
+            "star_size": 16,
+            "show_numerical_value": true,
+            "rating_product": "copy-of-mattifying-balancing-toner",
+            "no_reviews_label": "No reviews",
+            "margin_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -155,7 +166,8 @@
         "9c341458-2d2c-4317-a2cc-346e220f53e0",
         "b3864090-4f25-4db2-bddb-c549e9472be6",
         "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
-        "4fdb087c-4728-4785-b270-a71a092b7898"
+        "4fdb087c-4728-4785-b270-a71a092b7898",
+        "daaca9d5-bd8a-4422-82e9-ae3e2768680d"
       ],
       "settings": {
         "enable_sticky": true,
