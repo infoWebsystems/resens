@@ -46,6 +46,7 @@
         "a7717974-ed85-4cde-80ef-4751178acf57": {
           "type": "text-with-icon",
           "settings": {
+            "icon": "truck",
             "text": "Text with icon",
             "link": "",
             "margin_bottom": 10
@@ -60,6 +61,9 @@
             "stock-range": 20,
             "show-stock-count": false,
             "stock-level-notice": "always",
+            "in-stock-message": "Ready to ship",
+            "low-stock-message": "Selling fast",
+            "out-of-stock-message": "Back in soon",
             "margin_bottom": 40
           }
         },
@@ -85,7 +89,9 @@
           "type": "collapsible-tab",
           "settings": {
             "icon": "none",
+            "heading": "Collapsible tab",
             "open_close_icon": "caret",
+            "text": "<p>Share some information about your product<\/p>",
             "page": "",
             "open_by_default": false,
             "margin_bottom": 0
@@ -95,7 +101,9 @@
           "type": "collapsible-tab",
           "settings": {
             "icon": "none",
+            "heading": "Collapsible tab",
             "open_close_icon": "caret",
+            "text": "<p>Share some information about your product<\/p>",
             "page": "",
             "open_by_default": false,
             "margin_bottom": 0
@@ -105,7 +113,9 @@
           "type": "collapsible-tab",
           "settings": {
             "icon": "none",
+            "heading": "Collapsible tab",
             "open_close_icon": "caret",
+            "text": "<p>Share some information about your product<\/p>",
             "page": "",
             "open_by_default": false,
             "margin_bottom": 40
@@ -115,6 +125,9 @@
           "type": "cross-sells",
           "settings": {
             "title": "You may also like...",
+            "cross_sell_product_1": "",
+            "cross_sell_product_2": "",
+            "cross_sell_product_3": "",
             "collapsible_tab": false,
             "icon": "none",
             "open_close_icon": "plus_minus",
@@ -169,6 +182,8 @@
         "section-width": "full",
         "layout": "right",
         "text_alignment": "left",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "button_label": "",
         "button_link": ""
       }
@@ -258,7 +273,8 @@
       ],
       "settings": {
         "colors": "light",
-        "circle_images": true
+        "circle_images": true,
+        "title": "Testimonials"
       }
     },
     "info-columns-01": {
@@ -328,6 +344,8 @@
         "product_card_image": {
           "type": "product_card_image",
           "settings": {
+            "enable_quick_shop": false,
+            "disable_quick_shop_mobile": true
           }
         },
         "product_card_title": {
@@ -364,6 +382,7 @@
         "block-countdown-timer-00": {
           "type": "timer_complete_message",
           "settings": {
+            "text": ""
           }
         },
         "block-countdown-timer-01": {
@@ -375,6 +394,7 @@
         "block-countdown-timer-02": {
           "type": "text",
           "settings": {
+            "text": "Grab the offer before it's gone"
           }
         },
         "block-countdown-timer-03": {
@@ -389,6 +409,8 @@
         "block-countdown-timer-04": {
           "type": "button",
           "settings": {
+            "label": "Shop now",
+            "link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -400,7 +422,11 @@
         "block-countdown-timer-04"
       ],
       "settings": {
-        "text_alignment": "center"
+        "overlay_color": "#262428",
+        "overlay_opacity": 0,
+        "text_alignment": "center",
+        "text_color": "#262428",
+        "background_color": "#E6E5E7"
       }
     },
     "apps": {
@@ -416,6 +442,8 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "wide",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -424,6 +452,8 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "wide",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -432,6 +462,8 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "wide",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -450,6 +482,28 @@
         "text_alignment": "center",
         "vertical_alignment": "top"
       }
+    },
+    "f6e8390a-f5ac-483b-9e76-303171946f3a": {
+      "type": "text--testimonials",
+      "blocks": {
+        "template--16569068322974__f6e8390a-f5ac-483b-9e76-303171946f3a-text-1": {
+          "type": "text",
+          "settings": {
+            "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+            "customer_name": "John Smith",
+            "link": "",
+            "stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--16569068322974__f6e8390a-f5ac-483b-9e76-303171946f3a-text-1"
+      ],
+      "settings": {
+        "colors": "white",
+        "circle_images": true,
+        "title": "Testimonials"
+      }
     }
   },
   "order": [
@@ -463,6 +517,7 @@
     "product-recommendations",
     "countdown-timer",
     "apps",
-    "info-columns-02"
+    "info-columns-02",
+    "f6e8390a-f5ac-483b-9e76-303171946f3a"
   ]
 }
