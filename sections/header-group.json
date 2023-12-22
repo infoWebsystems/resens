@@ -30,6 +30,9 @@
         "content"
       ],
       "settings": {
+        "name_button": "Shop",
+        "name_search": "Search",
+        "name_cart": "Cart",
         "sticky_header": true,
         "logo": "shopify:\/\/shop_images\/Group_2_1.png",
         "logo-placement": "center",
@@ -37,7 +40,7 @@
         "logo_padding": 30,
         "mobile_social_icons": false,
         "label-enable": false,
-        "cart-style": "shopping-bag",
+        "cart-style": "shopping-cart",
         "cart-number": "quantity",
         "enable_search": true,
         "overlay_header_homepage": true,
