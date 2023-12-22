@@ -140,7 +140,7 @@
         "text": "Add a large image with text overlay to give focus to your chosen product, collection, or blog post",
         "colors": "dark",
         "textPosition": "right",
-        "textAlignment": "right",
+        "textAlignment": "left",
         "heading--text-size": 64,
         "text--text-size": 20,
         "link": "shopify:\/\/collections",
