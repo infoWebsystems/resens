@@ -143,7 +143,7 @@
         "daaca9d5-bd8a-4422-82e9-ae3e2768680d": {
           "type": "star_rating",
           "settings": {
-            "star_color": "#E68819",
+            "star_color": "#e68819",
             "star_size": 16,
             "show_numerical_value": true,
             "rating_product": "copy-of-mattifying-balancing-toner",
@@ -438,7 +438,7 @@
         "overlay_opacity": 0,
         "text_alignment": "center",
         "text_color": "#262428",
-        "background_color": "#E6E5E7"
+        "background_color": "#e6e5e7"
       }
     },
     "apps": {
@@ -516,6 +516,22 @@
         "circle_images": true,
         "title": "Testimonials"
       }
+    },
+    "1703582541785ea29c": {
+      "type": "apps",
+      "blocks": {
+        "93d54964-54a7-4c03-ad9a-d54a135eb461": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "93d54964-54a7-4c03-ad9a-d54a135eb461"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -530,6 +546,7 @@
     "countdown-timer",
     "apps",
     "info-columns-02",
-    "f6e8390a-f5ac-483b-9e76-303171946f3a"
+    "f6e8390a-f5ac-483b-9e76-303171946f3a",
+    "1703582541785ea29c"
   ]
 }
