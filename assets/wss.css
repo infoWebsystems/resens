@@ -61,7 +61,19 @@
 nav:hover{
     color: blue !important;
 }
-
+.jdgm-rev__pic-img.jdgm-rev__pic-img {
+   max-width: 400px;
+}
+.jdgm-row-stars div.jdgm-widget-actions-wrapper a.jdgm-write-rev-link{
+    background-color: #000000;
+    color: #FEFEFE;
+}
+.jdgm-row-stars div.jdgm-widget-actions-wrapper a.jdgm-write-rev-link:hover{
+    background-color: #333333;
+    background: #333333;
+   border-color: #333333;
+    color: #FEFEFE;
+}
 @media (min-width: 990px){
     .mobile-nav-bar--inner, .mobile-nav-bar-wrapper {
         display: block !important;;
