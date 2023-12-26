@@ -186,6 +186,22 @@
         "enable_readmore": false
       }
     },
+    "1703582541785ea29c": {
+      "type": "apps",
+      "blocks": {
+        "93d54964-54a7-4c03-ad9a-d54a135eb461": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "93d54964-54a7-4c03-ad9a-d54a135eb461"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1703582568516c93de": {
       "type": "apps",
       "blocks": {
@@ -532,27 +548,12 @@
         "circle_images": true,
         "title": "Testimonials"
       }
-    },
-    "1703582541785ea29c": {
-      "type": "apps",
-      "blocks": {
-        "93d54964-54a7-4c03-ad9a-d54a135eb461": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "93d54964-54a7-4c03-ad9a-d54a135eb461"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "product-form",
     "product-description",
+    "1703582541785ea29c",
     "1703582568516c93de",
     "image-with-text-00",
     "info-columns-00",
@@ -563,7 +564,6 @@
     "countdown-timer",
     "apps",
     "info-columns-02",
-    "f6e8390a-f5ac-483b-9e76-303171946f3a",
-    "1703582541785ea29c"
+    "f6e8390a-f5ac-483b-9e76-303171946f3a"
   ]
 }
