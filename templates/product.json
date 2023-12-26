@@ -542,6 +542,11 @@
           "settings": {
           }
         },
+        "438f4b12-97ea-4539-ae38-4dbe5eabf036": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
         "01554182-1828-4492-b247-47ad7a8a6bab": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -571,6 +576,7 @@
       },
       "block_order": [
         "93d54964-54a7-4c03-ad9a-d54a135eb461",
+        "438f4b12-97ea-4539-ae38-4dbe5eabf036",
         "01554182-1828-4492-b247-47ad7a8a6bab",
         "0285414c-e001-4b3b-8876-38b86d78e796",
         "63e0e168-c2b6-4eff-8268-263a9a4219e0",
