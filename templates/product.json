@@ -140,15 +140,9 @@
             "margin_bottom": 20
           }
         },
-        "daaca9d5-bd8a-4422-82e9-ae3e2768680d": {
-          "type": "star_rating",
+        "12634054-1617-44bd-a7fc-a2a4eccc599f": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "star_color": "#e68819",
-            "star_size": 16,
-            "show_numerical_value": true,
-            "rating_product": "copy-of-mattifying-balancing-toner",
-            "no_reviews_label": "No reviews",
-            "margin_bottom": 20
           }
         }
       },
@@ -167,7 +161,7 @@
         "b3864090-4f25-4db2-bddb-c549e9472be6",
         "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
         "4fdb087c-4728-4785-b270-a71a092b7898",
-        "daaca9d5-bd8a-4422-82e9-ae3e2768680d"
+        "12634054-1617-44bd-a7fc-a2a4eccc599f"
       ],
       "settings": {
         "enable_sticky": true,
