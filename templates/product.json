@@ -546,11 +546,35 @@
           "settings": {
             "maxwidth": 1080
           }
+        },
+        "0285414c-e001-4b3b-8876-38b86d78e796": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/ugc_media_grid\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "63e0e168-c2b6-4eff-8268-263a9a4219e0": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "d6aa899e-47a9-40b1-bc7a-d76ed2351491": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/medals\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "957f6120-b22c-4548-89ab-0a521b4f3791": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/verified_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "93d54964-54a7-4c03-ad9a-d54a135eb461",
-        "01554182-1828-4492-b247-47ad7a8a6bab"
+        "01554182-1828-4492-b247-47ad7a8a6bab",
+        "0285414c-e001-4b3b-8876-38b86d78e796",
+        "63e0e168-c2b6-4eff-8268-263a9a4219e0",
+        "d6aa899e-47a9-40b1-bc7a-d76ed2351491",
+        "957f6120-b22c-4548-89ab-0a521b4f3791"
       ],
       "settings": {
         "include_margins": true
