@@ -156,13 +156,13 @@ Testing Cypress integration
       <ul class="mobile-nav mobile-nav--main">
         {% assign menu = linklists[section.settings.main_linklist] %}
         {% for link in menu.links %}
-          {% liquid 
+          {% liquid
             assign link-title = link.title | strip | downcase
             assign is-mega-menu = false
 
             assign show_first_promo_image = false
             assign show_second_promo_image = false
-  
+
             for block in section.blocks
               if block.settings.show_promo_1_in_mobile_drawer == true and block.settings.mega_image_1
                 assign show_first_promo_image = true
@@ -228,7 +228,7 @@ Testing Cypress integration
                 {% if is-mega-menu %}
                   <ul class="mobile-promo--block">
                     {% for block in section.blocks %}
-  
+
                       {% liquid
                         assign link-title = link.title | strip | downcase
                         assign block-title = block.settings.mega-menu | strip | downcase
@@ -269,10 +269,10 @@ Testing Cypress integration
                           color: {{ block.settings.overlay_text_color_promo_2 }} !important;
                         }
                       {% endstyle %}
-  
+
                       {% if link-title == block-title %}
                         {% if block.settings.mega_image_1 and block.settings.show_promo_1_in_mobile_drawer %}
-                          {% render 'mega-menu-promo-card' with 
+                          {% render 'mega-menu-promo-card' with
                             promo_wrapper_classes: "mobile-nav__item",
                             promo_block_id: block.id,
                             promo_img: block.settings.mega_image_1,
@@ -284,9 +284,9 @@ Testing Cypress integration
                             promo_link: block.settings.mega_image_link_1
                           %}
                         {% endif %}
-                          
+
                         {% if block.settings.mega_image_2 and block.settings.show_promo_2_in_mobile_drawer %}
-                          {% render 'mega-menu-promo-card' with 
+                          {% render 'mega-menu-promo-card' with
                             promo_wrapper_classes: "mobile-nav__item",
                             promo_block_id: block.id,
                             promo_img: block.settings.mega_image_2,
@@ -398,24 +398,24 @@ Testing Cypress integration
                                     <div class="mega-menu-promo--image{% if image_1_crop %} mega-menu-aspect-ratio {{ image_1_crop }}{% endif %}">
                                   {% endif %}
                                   {% capture img_props %}style="max-width: {{ block.settings.mega_image_1.width }}px"{% endcapture %}
-                        
+
                                   {% if block.settings.mega_image_1.alt != empty %}
                                       {% capture img_alt %}{{ block.settings.mega_image_1.alt }}{% endcapture %}
-                                  {% else %} 
+                                  {% else %}
                                       {% if block.settings.mega_image_header_1 != empty %}
                                           {% capture img_alt %}{{ block.settings.mega_image_header_1 }}{% endcapture %}
                                       {% else %}
                                           {% capture img_alt %}{{ shop.name }}{% endcapture %}
                                       {% endif %}
                                   {% endif %}
-                        
+
                                   {% render 'responsive-image' with block.settings.mega_image_1, allow_stretch: image_1_stretch, alt: img_alt | escape, props: img_props  %}
                                   {% if block.settings.mega_image_link_1 %}
                                     </a>
                                   {% else %}
                                     </div>
                                   {% endif %}
-                        
+
                                   <div class="mega-menu--text">
                                     {% if block.settings.mega_image_header_1 %}
                                       <p class="h4 mega-menu--image-title{% if block.settings.mega_image_subheader_1 != blank %} has-padding{% endif %}{% if block.settings.overlay_text_on_image_promo_1 %} overlay-text-on-image-promo-1{% else %} default-menu-drawer-text-color{% endif %}">
@@ -444,7 +444,7 @@ Testing Cypress integration
                               </div>
                             </li>
                           {% endif %}
-                          
+
                           {% if block.settings.mega_image_2 and block.settings.show_promo_2_in_mobile_drawer %}
                             <li class="mobile-nav__item block-id-{{ block.id }}">
                               <div class="inner mega-menu--image-wrapper">
@@ -455,24 +455,24 @@ Testing Cypress integration
                                     <div class="mega-menu-promo--image{% if image_2_crop %} mega-menu-aspect-ratio {{ image_2_crop }}{% endif %}">
                                   {% endif %}
                                   {% capture img_props %}style="max-width: {{ block.settings.mega_image_2.width }}px"{% endcapture %}
-                        
+
                                   {% if block.settings.mega_image_2.alt != empty %}
                                       {% capture img_alt %}{{ block.settings.mega_image_2.alt }}{% endcapture %}
-                                  {% else %} 
+                                  {% else %}
                                       {% if block.settings.mega_image_header_2 != empty %}
                                           {% capture img_alt %}{{ block.settings.mega_image_header_2 }}{% endcapture %}
                                       {% else %}
                                           {% capture img_alt %}{{ shop.name }}{% endcapture %}
                                       {% endif %}
                                   {% endif %}
-                        
+
                                   {% render 'responsive-image' with block.settings.mega_image_2, allow_stretch: image_2_stretch, alt: img_alt | escape, props: img_props %}
                                   {% if block.settings.mega_image_link_2 %}
                                     </a>
                                   {% else %}
                                     </div>
                                   {% endif %}
-                        
+
                                   <div class="mega-menu--text">
                                     {% if block.settings.mega_image_header_2 %}
                                       <p class="h4 mega-menu--image-title{% if block.settings.mega_image_subheader_2 != blank %} has-padding{% endif %}{% if block.settings.overlay_text_on_image_promo_2 %} overlay-text-on-image-promo-2{% else %} default-menu-drawer-text-color{% endif %}">
@@ -522,7 +522,7 @@ Testing Cypress integration
         {% comment %}
           If customer accounts are enabled, provide login and create account links
         {% endcomment %}
-        {% liquid 
+        {% liquid
           assign social_icons = false
           if settings.sm_facebook_link != blank or settings.sm_twitter_link != blank or settings.sm_youtube_link != blank or settings.sm_flickr_link != blank or settings.sm_pinterest_link != blank or settings.sm_instagram_link != blank or settings.sm_tumblr_link != blank or settings.sm_pinterest_link != blank or settings.sm_youtube_link != blank or settings.sm_vimeo_link != blank or settings.sm_flickr_link != blank or settings.sm_snapchat_link != blank or settings.sm_houzz_link != blank or settings.sm_linkedin_link != blank or settings.sm_tiktok_link != blank
             assign social_icons = true
@@ -682,13 +682,13 @@ Testing Cypress integration
           }
           @media screen and (max-width: 768px) {
             .logo_image {
-              max-width: 300px!important; 
+              max-width: 300px!important;
               width: {{ section.settings.logo.width }}px;
             }
           }
           @media screen and (max-width: 480px) {
             .logo_image {
-              max-width: 100px!important; 
+              max-width: 100px!important;
             }
           }
         </style>
@@ -714,14 +714,14 @@ Testing Cypress integration
         {% if img %}
           <a href="{{ routes.root_url }}" itemprop="url" class="site-header__logo-overlay-image">
             <style>
-              .logo_overlay, 
+              .logo_overlay,
               .logo_hover {
                 max-height: unset!important;
               }
               @media screen and (max-width: 768px) {
                 .logo_overlay,
                 .logo_hover {
-                  max-width: 300px!important; 
+                  max-width: 300px!important;
                 }
                 .logo_overlay {
                   width: {{ img.width }}px;
@@ -733,7 +733,7 @@ Testing Cypress integration
               @media screen and (max-width: 480px) {
                 .logo_overlay,
                 .logo_hover {
-                  max-width: 100px!important; 
+                  max-width: 100px!important;
                 }
               }
             </style>
@@ -863,6 +863,19 @@ Testing Cypress integration
               </a>
               {% endif %}
 
+                   {% if section.settings.enable_wishlist%}
+                            <a href="#swym-wishlist" class="wishlist-button" aria-label="{{ 'section.settings.name_wishlist' | t }}"  aria-expanded="false">
+                              <span class="icon-fallback-text">
+                                {% render 'theme-icon' with icon: 'heart', iconSize: 20 %}
+                                <span class="fallback-text">{{ 'section.settings.name_wishlist ' | t }}</span>
+
+                              </span>
+                              {% if section.settings.name_wishlist != blank %}
+                                <span class="button-name">{{section.settings.name_wishlist }}</span>
+                              {% endif %}
+                            </a>
+                            {% endif %}
+
               <a href="{{ routes.cart_url }}" aria-label="{{ 'layout.cart.title' | t }}" class="{% if settings.ajax_cart_method == 'drawer' %}js-drawer-open-right-link {% endif %}site-nav__link" aria-controls="CartDrawer" aria-expanded="false">
                 <span class="icon-fallback-text">
                   {% render 'theme-icon' with icon: section.settings.cart-style, iconClasses: 'fa-2x' %}
@@ -983,6 +996,12 @@ Testing Cypress integration
 "id": "name_search",
 "label": "Search name",
 "default": "Search"
+},
+{
+"type": "text",
+"id": "name_wishlist",
+"label": "Wishlist name",
+"default": "Wishlist"
 },
 {
 "type": "text",
@@ -1110,6 +1129,12 @@ Testing Cypress integration
 			"label": "t:sections.header.settings.enable_search.label",
 			"default": true
 		},
+		{
+        			"type": "checkbox",
+        			"id": "enable_wishlist",
+        			"label": "t:sections.header.settings.enable_wishlist.label",
+        			"default": true
+        		},
 		{
 			"type": "header",
 			"content": "t:sections.header.settings.header-13.content"

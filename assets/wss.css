@@ -74,6 +74,32 @@ nav:hover{
    border-color: #333333;
     color: #FEFEFE;
 }
+.wishlist-button{
+    display: flex;
+    justify-content: center;
+}
+.wishlist-btn-wrap .swym-add-to-wishlist {
+    background: #D6E2FF !important;
+}
+.wishlist-btn-wrap .swym-add-to-wishlist svg{
+    color: #000000 ;
+}
+.wishlist-btn-wrap button.swym-button.disabled{
+    opacity: 1;
+    background: #D6E2FF !important;
+}
+.wishlist-btn-wrap button.swym-button.disabled svg{
+    fill: #000000;
+}
+ button.swym-button.disabled:hover  svg, button.swym-button:disabled:hover  svg{
+   fill: #000000;
+}
+div.swym-button-bar {
+    margin: 10px 0;
+}
+div.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2 {
+    background: #000000;
+}
 @media (min-width: 990px){
     .mobile-nav-bar--inner, .mobile-nav-bar-wrapper {
         display: block !important;;

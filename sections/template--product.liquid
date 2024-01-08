@@ -74,7 +74,8 @@
     {% assign thumbnail_changes_variant = true %}
   {% endif %}
 
-  <div class="wrapper-padded product-form-vue main-page-container product-section">
+ <div class="wrapper-padded product-form-vue main-page-container product-section">
+
     <wetheme-product-form
       inline-template
       v-bind:initial-variant-id="{{ current_variant.id }}"
@@ -132,7 +133,7 @@
                         <div class="complementary-products hidden {{ spacing_classes }}{% if block.settings.collapsible_tab %} collapsible{% if block.settings.margin_bottom == 0 %} no_margin_bottom{% endif %}{% endif %}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px" {{ block.shopify_attributes }}>
                           {%- render 'complementary-products-block' with title: block.settings.title, products_limit: block.settings.products_limit, collapsible: block.settings.collapsible_tab, open_close_icon: block.settings.open_close_icon, custom_icon: block.settings.custom_icon, icon: block.settings.icon, id: block.id -%}
                         </div>
-                        
+
                       {%- when 'cross-sells' -%}
 
                         {% if block.settings.cross_sell_product_1.available or block.settings.cross_sell_product_2.available or block.settings.cross_sell_product_3.available %}
@@ -149,7 +150,7 @@
                                   else
                                     assign icon = block.settings.icon
                                     assign custom_icon = false
-                                  endif 
+                                  endif
                                 %}
 
                                 <div class="collapsible-tab">
@@ -166,7 +167,7 @@
                                           </span>
                                       </div>
                                   </collapsible-button>
-                              
+
                                   <div class="collapsible-content">
                                       <div class="content rte">
                                         {% render 'cross-sells' with title: blank, cross_sells_products: cross_sells_products, id: block.id %}
@@ -245,14 +246,14 @@
 
                       {%- when 'options' -%}
                         <div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px">
-                          {% render 'product-options' with product: product, 
-                            show_variant_labels: block.settings.show_variant_labels, 
-                            size_option_name: block.settings.size_option_name, 
-                            size_guide_page: block.settings.size_guide_page, 
-                            variant_style: options_block.settings.variant_style, 
-                            section_id: section.id, 
-                            current_variant: current_variant, 
-                            hide_out_of_stock_variants: options_block.settings.hide_out_of_stock_variants, 
+                          {% render 'product-options' with product: product,
+                            show_variant_labels: block.settings.show_variant_labels,
+                            size_option_name: block.settings.size_option_name,
+                            size_guide_page: block.settings.size_guide_page,
+                            variant_style: options_block.settings.variant_style,
+                            section_id: section.id,
+                            current_variant: current_variant,
+                            hide_out_of_stock_variants: options_block.settings.hide_out_of_stock_variants,
                             block_attributes: options_block.shopify_attributes
                           %}
                         </div>
@@ -269,7 +270,7 @@
                                 {% if block.settings.option_name != blank %}
                                   <div class="header label-font">{{ block.settings.option_name }}</div>
                                 {% endif %}
-                          
+
                                 <div class="swatch-items-wrapper">
                                   {% liquid
                                     for linked_product in block.settings.linked_products
@@ -315,7 +316,7 @@
                                 else
                                   assign icon = block.settings.icon
                                   assign custom_icon = false
-                                endif 
+                                endif
                               %}
 
                               {% render 'collapsible-tab', icon: icon, custom_icon: custom_icon, heading: block.settings.heading, content: product.description, open_close_icon: block.settings.open_close_icon, open_by_default: false, heading_classes: 'label-font' %}
@@ -335,9 +336,9 @@
                           else
                             assign icon = block.settings.icon
                             assign custom_icon = false
-                          endif 
+                          endif
                         %}
-                        
+
                         {% assign content = block.settings.text %}
                         {% if block.settings.page.content %}
                           {% assign content = content | append: block.settings.page.content %}
@@ -500,9 +501,9 @@
                             {% else %}
                               {% assign rating_aria_label = "Rating" %}
                             {% endif %}
-      
+
                             {% if block.settings.rating-icon-full %}
-      
+
                               {% liquid
                                 assign rating_decimal = 0
                                 assign decimal = block.settings.rating | modulo: 1
@@ -511,26 +512,26 @@
                                 elsif decimal > 0.7
                                   assign rating_decimal = 1
                                 endif
-      
+
                                 assign full_icons = block.settings.rating | floor | plus: rating_decimal | floor
                                 assign empty_icons = block.settings.rating-max | round | minus: full_icons
                                 if rating_decimal == 0.5
                                   assign empty_icons = empty_icons | minus: 1
                                 endif
-      
+
                                 assign full_alt = block.settings.rating-icon-full.alt | default: "Full icon"
                                 assign empty_alt = block.setting.rating-icon-empty.alt | default: "Empty icon"
                               %}
-      
+
                               <div class="rating-icons" role="img" aria-label="{{ rating_aria_label }} - {{ block.settings.rating }} out of {{ block.settings.rating-max }}">
                                 {% for i in (1..full_icons) %}
                                   <div class="rating-icons__icon" aria-hidden="true">
                                     {% render 'responsive-image' with block.settings.rating-icon-full, alt: full_alt %}
                                   </div>
                                 {% endfor %}
-      
+
                                 {% if block.settings.rating-icon-empty %}
-      
+
                                   {% if rating_decimal == 0.5 %}
                                     <div class="rating-icons__icon rating-icons__icon--half" aria-hidden="true">
                                       <div class="rating-icons__image--full">
@@ -541,14 +542,14 @@
                                       </div>
                                     </div>
                                   {% endif %}
-      
+
                                   {% for i in (1..empty_icons) %}
                                     <div class="rating-icons__icon" aria-hidden="true">
                                       {% render 'responsive-image' with block.settings.rating-icon-empty, alt: empty_alt %}
                                     </div>
                                   {% endfor %}
-      
-                                {% endif %}                          
+
+                                {% endif %}
                               </div>
                             {% else %}
                               <p>{{ block.settings.rating }} / {{ block.settings.rating-max }}</p>
@@ -595,11 +596,11 @@
                         {% endcapture %}
 
                         {%- if icon != 'none' or  block.settings.text != blank -%}
-                          {% render 'text-with-icon' with icon: icon, 
-                            custom_icon: custom_icon, 
-                            text: block.settings.text, 
-                            link: block.settings.link, 
-                            block_attributes: block.shopify_attributes, 
+                          {% render 'text-with-icon' with icon: icon,
+                            custom_icon: custom_icon,
+                            text: block.settings.text,
+                            link: block.settings.link,
+                            block_attributes: block.shopify_attributes,
                             text_classes: 'label-font',
                             classes: classes,
                             attributes: styles
@@ -608,7 +609,7 @@
 
                       {%- when 'stock-level-indicator' -%}
                         <div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px">
-                          {% render 'stock-level-indicator' with 
+                          {% render 'stock-level-indicator' with
                             block_attributes: block.shopify_attributes,
                             stock_product: product,
                             stock_variant: current_variant,
