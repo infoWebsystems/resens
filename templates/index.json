@@ -477,6 +477,26 @@
         "layout": "right",
         "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"
       }
+    },
+    "17047069040e4a9d4f": {
+      "type": "apps",
+      "blocks": {
+        "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "2d8d530c-d887-4c7d-9855-4fd4f97858e6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -490,6 +510,7 @@
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
     "12a25ae5-a869-4fec-9751-deb411052883",
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949",
-    "2702beb3-827b-44e4-991e-9b79a8ccc045"
+    "2702beb3-827b-44e4-991e-9b79a8ccc045",
+    "17047069040e4a9d4f"
   ]
 }
