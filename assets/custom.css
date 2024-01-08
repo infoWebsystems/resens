@@ -1,1 +1,4 @@
-/* Place any CSS overrides in this file. */
+/* Place any CSS overrides in this file. */ 
+.instafeed-overlay{
+  width: 33.333% !important;
+}
