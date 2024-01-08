@@ -484,8 +484,9 @@
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
+            "title": "FOLLOW USON INSTAGRAM",
             "title_color": "",
+            "title_size": 32,
             "alignment": "center",
             "html_area": ""
           }
