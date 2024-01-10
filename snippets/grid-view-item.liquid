@@ -66,45 +66,13 @@
     {%- case block -%}
     {%- when 'product_card_image' -%}
       <div class="grid-view-item-image" data-block-type="product_card_image"{% if request.design_mode %} data-shopify-editor-block='{"id":"product_card_image","type":"product_card_image"}'{% endif %}>
-
-     <div class="wishlist-btn-wrap" style="position: absolute;
-         z-index: 2;
-         right: 10px;
-         top: 10px;
-     }">
-
+     <div class="wishlist-btn-wrap">
          <div class="swym-button-bar swym-wishlist-button-bar">
            <div class="swym-btn-container" data-position="default">
-     <button aria-label="Add to Wishlist" id="swym-quick-view" data-with-epi="true" class="swym-button swym-add-to-wishlist product_{{product.id}}" data-swaction="addToWishlist" data-product-id="{{product.id | json}}" data-variant-id="{{ product.variants[0].id }}" data-product-url="{{ shop.url }}{{ product.url }}">
-     {% render 'theme-icon' with icon: 'heart', iconSize: 20 %}</button>
-      </div>
+             <button   data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}" data-swaction="addToWishlist" data-product-id="{{product.id | json}}" data-variant-id="{{product.variants[0].id}}" data-product-url="{{ shop.url }}{{ product.url }}">
+           </button>
+            </div>
          </div>
-
-
-<script defer>
-  function swymCallbackFn(swat){
-     function swymAttachEvents(){
-       swat.initializeActionButtons("<<Modal Selector>>");
-     }
-     document.addEventListener('quickview:loaded', function(e) {
-       console.log("Quickview Loaded!",e.detail.productId);
-       swymAttachEvents();
-     });
-     document.addEventListener('variant:change', function(event) {
-       var variant_id = event.detail.variant.id;
-       var btn =  document.querySelector("#swym-quick-view");
-       if(btn){
-         btn.setAttribute("data-variant-id", variant_id);
-       }
-       swymAttachEvents();
-     });
-   }
-
-   if(!window.SwymCallbacks){
-     window.SwymCallbacks = [];
-   }
-   window.SwymCallbacks.push(swymCallbackFn);
-</script>
       </div>
         {% if enable_badges %}
           {% if product_compare_at_price > product_price and product.available %}

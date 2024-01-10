@@ -74,15 +74,39 @@ nav:hover{
    border-color: #333333;
     color: #FEFEFE;
 }
+.wishlist-btn-wrap{
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+}
 .wishlist-button{
     display: flex;
     justify-content: center;
 }
-.wishlist-btn-wrap .swym-add-to-wishlist {
+.wishlist-btn-wrap .swym-add-to-wishlist-view-product {
     background: #D6E2FF !important;
 }
 .wishlist-btn-wrap .swym-add-to-wishlist svg{
     color: #000000 ;
+}
+.wishlist-btn-wrap .swym-btn-container .swym-button:after{
+    font-size: 18px;
+    top: 20px;
+    width: 40px;
+}
+.wishlist-btn-wrap  .swym-btn-container .swym-button.swym-added:after {
+    opacity: 1;
+}
+.wishlist-btn-wrap  button.swym-button.disabled:hover, .wishlist-btn-wrap  button.swym-button:disabled:hover {
+    opacity: 1;
+}
+.wishlist-btn-wrap .swym-btn-container[data-position=default] .swym-button{
+    width: 40px;
+    height: 40px;
+}
+.wishlist-btn-wrap div.swym-button-bar{
+    margin: 0;
 }
 .wishlist-btn-wrap button.swym-button.disabled{
     opacity: 1;
