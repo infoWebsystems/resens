@@ -216,12 +216,13 @@
       "type": "image--image-with-text",
       "settings": {
         "colors": "light",
-        "text_overlapping_image": true,
+        "image": "shopify:\/\/shop_images\/front-view-arrangement-of-skin-care-cream_1.png",
+        "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
         "text_alignment": "left",
-        "title": "Share brand or product details",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "title": "About Brand",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br\/>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br\/>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br\/>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <br\/>velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br\/>occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br\/>mollit anim id est laborum.<\/p>",
         "button_label": "",
         "button_link": ""
       }
@@ -309,6 +310,7 @@
         "block-testimonials-01",
         "block-testimonials-02"
       ],
+      "disabled": true,
       "settings": {
         "colors": "light",
         "circle_images": true,
@@ -353,6 +355,7 @@
         "block-column-01",
         "block-column-02"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -364,6 +367,7 @@
     },
     "image-with-text-01": {
       "type": "image--image-with-text",
+      "disabled": true,
       "settings": {
         "colors": "white",
         "text_overlapping_image": true,
@@ -469,6 +473,7 @@
     },
     "apps": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -512,6 +517,7 @@
         "block-column-01",
         "block-column-02"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -526,6 +532,7 @@
       "blocks": {
         "template--16569068322974__f6e8390a-f5ac-483b-9e76-303171946f3a-text-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
             "customer_name": "John Smith",
@@ -537,6 +544,7 @@
       "block_order": [
         "template--16569068322974__f6e8390a-f5ac-483b-9e76-303171946f3a-text-1"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "circle_images": true,
