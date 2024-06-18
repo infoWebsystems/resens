@@ -231,145 +231,6 @@
         "button_link": ""
       }
     },
-    "info-columns-00": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "block-column-00": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "text": "<p>SHARE YOUR STORY<\/p><h2>Info columns<\/h2><p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "block-column-01": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "",
-            "text": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "block-column-02": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "",
-            "text": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "block-column-00",
-        "block-column-01",
-        "block-column-02"
-      ],
-      "disabled": true,
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "",
-        "columns_per_row": 3,
-        "text_alignment": "left",
-        "vertical_alignment": "center"
-      }
-    },
-    "testimonials": {
-      "type": "text--testimonials",
-      "blocks": {
-        "block-testimonials-00": {
-          "type": "text",
-          "settings": {
-            "testimonial_text": "<p>Show off incredible feedback from your customers<\/p>",
-            "customer_name": "Helen",
-            "link": "",
-            "stars": 5
-          }
-        },
-        "block-testimonials-01": {
-          "type": "text",
-          "settings": {
-            "testimonial_text": "<p>Show off incredible feedback from your customers<\/p>",
-            "customer_name": "John",
-            "link": "",
-            "stars": 5
-          }
-        },
-        "block-testimonials-02": {
-          "type": "text",
-          "settings": {
-            "testimonial_text": "<p>Show off incredible feedback from your customers<\/p>",
-            "customer_name": "Salome",
-            "link": "",
-            "stars": 5
-          }
-        }
-      },
-      "block_order": [
-        "block-testimonials-00",
-        "block-testimonials-01",
-        "block-testimonials-02"
-      ],
-      "disabled": true,
-      "settings": {
-        "colors": "light",
-        "circle_images": true,
-        "title": "Testimonials"
-      }
-    },
-    "info-columns-01": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "block-column-00": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "",
-            "text": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "block-column-01": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "",
-            "text": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "block-column-02": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "text": "<p>SHARE YOUR STORY<\/p><h2>Info columns<\/h2><p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "block-column-00",
-        "block-column-01",
-        "block-column-02"
-      ],
-      "disabled": true,
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "",
-        "columns_per_row": 3,
-        "text_alignment": "left",
-        "vertical_alignment": "center"
-      }
-    },
     "image-with-text-01": {
       "type": "image--image-with-text",
       "disabled": true,
@@ -419,6 +280,7 @@
         "product_card_price",
         "product_card_quick_shop"
       ],
+      "disabled": true,
       "settings": {
         "product_recommendations_heading": "You may also like"
       }
@@ -468,6 +330,7 @@
         "block-countdown-timer-03",
         "block-countdown-timer-04"
       ],
+      "disabled": true,
       "settings": {
         "overlay_color": "#262428",
         "overlay_opacity": 0,
@@ -563,9 +426,6 @@
     "1703582568516c93de",
     "1703582541785ea29c",
     "image-with-text-00",
-    "info-columns-00",
-    "testimonials",
-    "info-columns-01",
     "image-with-text-01",
     "product-recommendations",
     "countdown-timer",
