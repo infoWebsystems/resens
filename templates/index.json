@@ -38,6 +38,7 @@
         },
         "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "title": "Reveal the secret \nof cellular longevity",
             "text": "",
