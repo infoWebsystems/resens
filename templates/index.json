@@ -3,6 +3,30 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
+        "image_iQ7EqU": {
+          "type": "image",
+          "settings": {
+            "title": "Make a great \n first impression",
+            "text": "<p>Add images and text to give focus to your chosen product, collection, or blog post.<\/p>",
+            "first_button_label": "Shop now",
+            "first_button_link": "shopify:\/\/collections\/all",
+            "second_button_label": "Learn more",
+            "second_button_link": "",
+            "image": "shopify:\/\/shop_images\/DSC03624.jpg",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#fefefe",
+            "image_overlay_opacity": 0,
+            "caption-text": "#fefefe",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9F9F9F"
+          }
+        },
         "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0": {
           "type": "image",
           "settings": {
@@ -29,6 +53,7 @@
         }
       },
       "block_order": [
+        "image_iQ7EqU",
         "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0"
       ],
       "custom_css": [
