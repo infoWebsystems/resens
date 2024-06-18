@@ -3,6 +3,7 @@
   "sections": {
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "image_height": "original",
         "bg_image_overlay_opacity": 10,
@@ -15,7 +16,11 @@
         "heading--text-size": 26,
         "text--text-size": 18,
         "link": "",
-        "button_label": ""
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "collage-builder": {
@@ -26,8 +31,16 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -36,8 +49,16 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -46,8 +67,16 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -56,8 +85,16 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
         }
@@ -68,6 +105,7 @@
         "collage-builder-block-02",
         "collage-builder-block-03"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "",
@@ -110,16 +148,20 @@
         "product_card_image": {
           "type": "product_card_image",
           "settings": {
+            "enable_quick_shop": false,
+            "disable_quick_shop_mobile": true
           }
         },
         "product_card_title": {
           "type": "product_card_title",
           "settings": {
+            "product_card_title__font": "body"
           }
         },
         "product_card_price": {
           "type": "product_card_price",
           "settings": {
+            "product_card_price__font": "body"
           }
         },
         "product_card_quick_shop": {
