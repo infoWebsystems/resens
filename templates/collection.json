@@ -3,7 +3,6 @@
   "sections": {
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
-      "disabled": true,
       "settings": {
         "image_height": "original",
         "bg_image_overlay_opacity": 10,
