@@ -134,9 +134,9 @@
           "disabled": true,
           "settings": {
             "title": "You may also like...",
-            "cross_sell_product_1": "",
-            "cross_sell_product_2": "",
-            "cross_sell_product_3": "",
+            "cross_sell_product_1": "3action-exosome-boost-cream",
+            "cross_sell_product_2": "3action-exosome-boost-eye-cream",
+            "cross_sell_product_3": "cleanup-emulsion",
             "collapsible_tab": false,
             "icon": "none",
             "open_close_icon": "plus_minus",
@@ -184,22 +184,6 @@
         "enable_readmore": false
       }
     },
-    "1703582541785ea29c": {
-      "type": "apps",
-      "blocks": {
-        "93d54964-54a7-4c03-ad9a-d54a135eb461": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "93d54964-54a7-4c03-ad9a-d54a135eb461"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "1703582568516c93de": {
       "type": "apps",
       "blocks": {
@@ -211,6 +195,22 @@
       },
       "block_order": [
         "8fb0f91b-3508-4098-930d-b48357abd58b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1703582541785ea29c": {
+      "type": "apps",
+      "blocks": {
+        "93d54964-54a7-4c03-ad9a-d54a135eb461": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "93d54964-54a7-4c03-ad9a-d54a135eb461"
       ],
       "settings": {
         "include_margins": true
@@ -560,8 +560,8 @@
   "order": [
     "product-form",
     "product-description",
-    "1703582541785ea29c",
     "1703582568516c93de",
+    "1703582541785ea29c",
     "image-with-text-00",
     "info-columns-00",
     "testimonials",
