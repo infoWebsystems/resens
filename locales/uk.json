@@ -830,5 +830,142 @@
     "general": {
       "opening_soon": "Скоро відкриється..."
     }
+  },
+  "customer": {
+    "activate_account": {
+      "password_confirm": "Підтвердьте пароль",
+      "submit": "Активувати акаунт",
+      "cancel": "Відхилити запрошення"
+    },
+    "addresses": {
+      "title": "Ваші адреси",
+      "default": "За замовчуванням",
+      "add_new": "Додайте нову адресу",
+      "edit_address": "Редагувати адресу",
+      "first_name": "Ім'я",
+      "last_name": "Прізвище",
+      "company": "Компанія",
+      "address1": "Адреса 1",
+      "address2": "Адреса 2",
+      "city": "Місто",
+      "country": "Країна",
+      "province": "Провінція",
+      "zip": "Поштовий індекс",
+      "phone": "Телефон",
+      "set_default": "Встановити як адресу за умовчанням",
+      "add": "Додайте адресу",
+      "update": "Оновити адресу",
+      "cancel": "Скасувати",
+      "edit": "Редагувати",
+      "delete": "Видалити"
+    },
+    "login": {
+      "title": "Логін",
+      "email": "Електронна пошта",
+      "password": "Пароль",
+      "forgot_password": "Забули свій пароль?",
+      "sign_in": "Увійти",
+      "cancel": "Повернутися в магазин",
+      "guest_title": "Продовжуйте як гість",
+      "guest_continue": "Продовжити"
+    },
+    "orders": {
+      "title": "Історія Замовлень",
+      "order_number": "порядок",
+      "date": "Дата",
+      "payment_status": "Статус платежу",
+      "fulfillment_status": "Статус виконання",
+      "total": "Всього",
+      "none": "Ви ще не розмістили жодного замовлення."
+    },
+    "order": {
+      "title": "Замовити {{ name }}",
+      "date": "Розміщено {{ date }}",
+      "cancelled": "Замовлення скасовано {{ date }}",
+      "cancelled_reason": "Причина: {{ reason }}",
+      "billing_address": "Платіжна адреса",
+      "payment_status": "Статус платежу",
+      "shipping_address": "Адреса доставки",
+      "fulfillment_status": "Статус виконання",
+      "discount": "Знижка",
+      "shipping": "Доставка",
+      "tax": "податок",
+      "product": "Продукт",
+      "price": "Ціна",
+      "quantity": "Кількість",
+      "total": "Всього",
+      "fulfilled_at_html": "Виконано {{ date }}",
+      "subtotal": "Проміжний підсумок"
+    },
+    "recover_password": {
+      "title": "Скинути пароль",
+      "email": "Електронна пошта",
+      "submit": "Надіслати",
+      "cancel": "Скасувати",
+      "subtext": "Ми надішлемо вам електронний лист для скидання пароля.",
+      "success": "Ми надіслали вам електронний лист із посиланням для оновлення пароля."
+    },
+    "reset_password": {
+      "title": "Скинути пароль облікового запису",
+      "subtext": "Введіть новий пароль для {{ email }}",
+      "password": "Пароль",
+      "password_confirm": "Підтвердьте пароль",
+      "submit": "Скинути пароль"
+    },
+    "register": {
+      "title": "Створити акаунт",
+      "first_name": "Ім'я",
+      "last_name": "Прізвище",
+      "email": "Електронна пошта",
+      "password": "Пароль",
+      "submit": "Створити",
+      "cancel": "Повернутися в магазин"
+    }
+  },
+  "homepage": {
+    "sections": {
+      "frontpage_title": "Колекція першої сторінки",
+      "featured_title": "Рекомендовані колекції",
+      "news_title": "Останні новини"
+    },
+    "onboarding": {
+      "modal_title": "Майже там...",
+      "no_products_html": "Цей заповнювач відображатиметься, доки ви не додасте продукт до цієї колекції.",
+      "add_product": "Додайте товар",
+      "product_title": "Назва товару",
+      "product_vendor": "Продавець",
+      "no_collections_html": "У вас немає жодної колекції для показу тут. <a href=\"\/admin\/custom_collections\">Додайте кілька колекцій<\/a> , щоб узгодити головну сторінку за замовчуванням.",
+      "add_collection": "Додайте колекцію",
+      "collection_title": "Назва колекції",
+      "no_content": "Цей розділ наразі не містить жодного вмісту. Додайте вміст до цього розділу за допомогою бічної панелі."
+    }
+  },
+  "layout": {
+    "navigation": {
+      "menu": "Навігація"
+    },
+    "drawers": {
+      "browse": "переглядати",
+      "close_menu": "Закрити меню",
+      "close": "Закрити"
+    },
+    "cart": {
+      "title": "кошик",
+      "items_count": {
+        "one": "пункт",
+        "other": "елементи"
+      }
+    },
+    "customer": {
+      "account": "Обліковий запис",
+      "logged_in_as_html": "Ви ввійшли як {{ first_name }}",
+      "log_out": "Вийти",
+      "log_in": "авторизуватися",
+      "create_account": "Створити акаунт"
+    },
+    "header": {
+      "search": "Пошук",
+      "account": "Обліковий запис"
+    }
   }
 }
