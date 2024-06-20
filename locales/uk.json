@@ -60,7 +60,112 @@
             "other": "%{count} елементів"
           }
         },
-        "alternative_payment_currency_total": "Стягується як %{amount_due}"
+        "alternative_payment_currency_total": "Стягується як %{amount_due}",
+        "title": "Підсумок Замовлення",
+        "group_title_label": "Частина \"%{group_title}\"",
+        "order_name_label": "Замовити %{name}",
+        "shopping_cart_label": "Магазинний візок",
+        "discount_title": "Знижка",
+        "discount_title_stacking": {
+          "one": "Знижка",
+          "other": "Знижки"
+        },
+        "discount_order_stacking": {
+          "one": "Замовляйте знижку",
+          "other": "Замовляйте знижки"
+        },
+        "discount_label": "Код на знижку",
+        "discount_not_found": "Не вдалося знайти дійсну знижку, яка відповідає введеному коду",
+        "discount_placeholder": "Код на знижку",
+        "discount_code_applied": "Код знижки застосовано",
+        "gift_card_applied": "Подарункова картка застосована",
+        "enter_shipping_address": "Введіть адресу доставки",
+        "gift_card_title": "Подарункова картка",
+        "gift_card_label": "Подарункова картка",
+        "gift_card_placeholder": "Подарункова картка",
+        "gift_card_and_discount_title": "Код знижки або подарункова карта",
+        "gift_card_and_discount_label": "Код знижки або подарункова карта",
+        "gift_card_and_discount_placeholder": "Код знижки або подарункова карта",
+        "remove_gift_card_label": "Прозора подарункова карта",
+        "remove_discount_label": "Зняти знижку",
+        "return_restocking_fee_label": "Плата за поповнення запасів",
+        "return_shipping_fee_label": "Зворотна доставка",
+        "free_shipping_discount_label": "Безкоштовна доставка",
+        "applied_free_shipping_discount_label": "Прикладний",
+        "apply_discount_button_label": "Застосувати",
+        "applied_discount_message": "%{amount} знижки на загальну вартість замовлення",
+        "discount_has_been_applied": "Знижку застосовано",
+        "discount_has_been_removed": "Знижку видалено",
+        "gift_card_has_been_applied": "Подарункову картку застосовано",
+        "gift_card_has_been_removed": "Подарункову картку видалено",
+        "gift_card_subscriptions_notice": "Подарункові картки застосовуються лише до вашого першого платежу",
+        "discount_already_applied": "До цього замовлення застосована знижка. Ви не можете додати іншу знижку.",
+        "cart_does_not_meet_discount_requirements_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}<\/strong> недійсний для товарів у вашому кошику",
+        "discount_requires_customer_notice": "Введіть інформацію про доставку, щоб застосувати код знижки <strong style=\"text-transform:uppercase\">%{code}<\/strong>",
+        "customer_does_not_meet_discount_requirements_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}<\/strong> вам зараз недоступний",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}<\/strong> недоступний для вашої адреси доставки",
+        "customer_already_used_once_per_customer_discount_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}<\/strong> уже використано",
+        "subtotal_label": "Проміжний підсумок",
+        "shipping_label": "Доставка",
+        "pickup_label": "Самовивіз в магазині",
+        "no_pickup_location": "Самовивіз недоступний для цього замовлення. Виберіть інший спосіб доставки.",
+        "tip_label": "Порада",
+        "calculating_shipping": "Розрахунок…",
+        "calculating": "Розрахунок…",
+        "shipping_default_value": "Розраховується на наступному кроці",
+        "shipping_discount_title": "Знижка на доставку",
+        "shipping_pending_message": "Ще не доступний",
+        "shipping_policy_link": "Вартість доставки",
+        "taxes_label": "податки",
+        "estimated_taxes_label": "Розрахункові податки",
+        "information_estimated_taxes_label": "Податки (приблизно)",
+        "estimated_taxes_finalization_tooltip_content": "Остаточний податок і загальну суму буде підтверджено електронною поштою або текстовим повідомленням після розміщення замовлення.",
+        "order_total_label": "Всього замовлення",
+        "total_savings": "Повна економія",
+        "total_label": "Всього",
+        "total_outstanding_label": "Сума до оплати",
+        "partial_total_label": "Всього",
+        "free_total_label": "безкоштовно",
+        "paid_label": "Платний",
+        "payment_due_label": "Очікуваний платіж",
+        "vat_label_html": "Включаючи %{amount} податків",
+        "duties_included_label": "Усього враховуються податки та збори. Без додаткових оплат при доставці.",
+        "discount_and_gift_card_savings_notice": "Після %{discount_amount} знижок і %{gift_card_amount} подарункових карток",
+        "discount_savings_notice": "Після %{discount_amount} знижок",
+        "gift_card_savings_notice": "Після %{gift_card_amount} у подарункових картках",
+        "cost_table_title": "Підсумок витрат",
+        "description_label": "опис",
+        "price_label": "Ціна",
+        "price_per_item": {
+          "accessibility_label": "%{price} за товар",
+          "label": "%{price}\/шт"
+        },
+        "quantity_label": "Кількість",
+        "product_change_label": "Зміна",
+        "product_image_label": "Зображення продукту",
+        "scroll_order_summary": "Перейдіть до інших елементів",
+        "expand_order_summary_short": "Показати",
+        "collapse_order_summary_short": "Сховати",
+        "expand_order_summary": "Показати зведення замовлення",
+        "collapse_order_summary": "Приховати підсумок замовлення",
+        "original_price": "Оригінальна ціна",
+        "sale_price": "Ціна продажу",
+        "total_updated_label": "Оновлена ​​загальна ціна:",
+        "order_total_updated_label": "Оновлено всього",
+        "total_already_paid_label": "Платний",
+        "unit_price": {
+          "accessible_separator": "пер"
+        },
+        "gift_card_ending": "Подарункова картка закінчується на %{last_characters}",
+        "estimated_tax_label": "Розрахунковий податок",
+        "multiple_shipping_lines_label": "Загальна сума доставки",
+        "recurring_subtotal_label": "Повторюваний проміжний підсумок",
+        "recurring_total_label": "Повторювана сума",
+        "recurring_total_tooltip": "Не включає доставку, податки, мита чи будь-які відповідні знижки.",
+        "confirmation_number_label": "Підтвердження #%{confirmation_number}",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> не можна використати з існуючими знижками.",
+        "percent_off_shipping": "%{percent}% знижка на доставку",
+        "amount_off_shipping": "%{amount} знижки на доставку"
       },
       "shipping": {
         "title": "Доставка",
@@ -647,6 +752,14 @@
         "thank_you_confirmed_order_with_email": "Незабаром ви отримаєте електронний лист із підтвердженням із номером замовлення.",
         "thank_you_confirmed_order_with_phone": "Незабаром ви отримаєте текст підтвердження з номером замовлення.",
         "thank_you_confirmed_order_with_email_and_phone": "Незабаром ви отримаєте електронний лист із підтвердженням із номером замовлення."
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "message": {
+            "other": "Ці товари буде видалено з вашого кошика, оскільки для вашої адреси недоступні способи доставки."
+          },
+          "label": "Без доставки"
+        }
       }
     },
     "notices": {
@@ -857,6 +970,62 @@
     "B2B": {
       "orders": {
         "order_list_column_headers_contact": "контакт"
+      },
+      "draft_order_details": {
+        "payment_status": {
+          "paid": {
+            "title": "Платний",
+            "title_with_date": "Оплачено {{date}}",
+            "description": "Ваше замовлення повністю оплачено."
+          },
+          "refund": {
+            "title": "Повернено",
+            "title_with_date": "Повернено {{date}}",
+            "description_full_refund": "Ви отримали повне відшкодування за це замовлення.",
+            "description_single_refund": "Ви отримали часткове відшкодування за це замовлення.",
+            "description_multiple_refunds": "Ви отримали часткове відшкодування за це замовлення."
+          },
+          "canceled": {
+            "title": "Платіж скасовано",
+            "description": "Вам не стягували плату."
+          },
+          "pay_now": "Платити зараз",
+          "pay_now_accessibility_label": "Сплатіть зараз за замовлення {{orderName}}",
+          "title": "Статус платежу"
+        },
+        "order_timeline": {
+          "expand_events_label": "Показати деталі",
+          "expand_events_accessibility_label": "Показати деталі проекту замовлення",
+          "hide_events_label": "Приховати деталі",
+          "hide_events_accessibility_label": "Приховати деталі проекту замовлення"
+        },
+        "subtitle": "Надіслано {{date}}",
+        "title": "Замовити {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Цей спосіб оплати більше не буде доступний для майбутніх покупок у цьому місці.",
+          "description_with_replacement": "Видалення цього способу оплати вплине на попередні авторизації платежів для цього місця. Замініть його іншим способом оплати, щоб продовжувати отримувати наступні замовлення."
+        },
+        "payment_details": {
+          "order_label": "Замовити {{name}}",
+          "draft_label": "Проект наказу {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Додайте номер замовлення",
+        "add_modal_title": "Додайте номер замовлення",
+        "cancel": "Скасувати",
+        "close_modal_accessibility_label": "Закрити модальний номер замовлення",
+        "discard": "Відкинути",
+        "discard_changes_modal_title": "Скасувати зміни?",
+        "edit_accessibility_label": "Редагувати номер замовлення",
+        "edit_modal_title": "Редагувати номер замовлення",
+        "empty_state": "Без номера замовлення на замовлення",
+        "modal_po_number_input_label": "номер замовлення на замовлення",
+        "modal_po_number_input_max_length_error": "Максимальна кількість символів у номері замовлення на покупку: {{maxLength}} .",
+        "save": "зберегти",
+        "title": "PO № {{poNumber}}"
       }
     },
     "enable_javascript": "Щоб переглянути свій обліковий запис, увімкніть JavaScript у налаштуваннях браузера або увійдіть за допомогою іншого браузера.",
@@ -953,6 +1122,114 @@
             "estimated_delivery": "Приблизно {{date}}"
           }
         }
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Під час видалення цієї адреси виникла проблема. Повторіть спробу або оновіть сторінку."
+      },
+      "addresses_loading_issue": {
+        "description": "Помилка з'єднання. Перевірте підключення до Інтернету та повторіть спробу."
+      },
+      "banner_title": {
+        "one": "Є {{count}} помилка",
+        "other": "Є {{count}} помилок"
+      },
+      "failed_address_creation": {
+        "description": "Виникла проблема зі створенням адреси. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "failed_address_update": {
+        "description": "Під час оновлення адреси виникла проблема. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "load_orders_error": {
+        "title": "Не вдалося завантажити замовлення",
+        "description": "Повторіть спробу або поверніться пізніше.",
+        "retry_button": "Повторіть спробу"
+      },
+      "load_paypal_error": {
+        "description": "Виникла проблема із завантаженням PayPal. Будь ласка спробуйте ще раз."
+      },
+      "logout_everywhere": {
+        "description": "Щось пішло не так під час виходу. Будь ласка спробуйте ще раз."
+      },
+      "no_access": {
+        "back_to_authentication_link": "Увійдіть в інший обліковий запис",
+        "description": "Ви не зареєстровані як клієнт B2B у {{shopName}}",
+        "title": "Немає доступу"
+      },
+      "no_access_to_locations": {
+        "description": "Ви не маєте доступу до жодного місця"
+      },
+      "not_found": {
+        "description": "Перевірте URL-адресу або повторіть спробу через кілька хвилин.",
+        "title": "Виникла проблема із завантаженням цієї сторінки"
+      },
+      "order_not_found": {
+        "description": "Це замовлення не існує або у вас немає дозволу на його перегляд.",
+        "title": "Замовлення не знайдено"
+      },
+      "profile_update_error": {
+        "description": "Під час оновлення вашого профілю виникла проблема. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "retry_action_label": "Повторіть спробу",
+      "load_extension_error": {
+        "title": "Помилка",
+        "description": "Оновіть сторінку або повторіть спробу через кілька хвилин.",
+        "refresh_button": "Оновити сторінку"
+      }
+    },
+    "payment_methods": {
+      "title": "Методи оплати",
+      "add_payment_method_button": "Додати спосіб оплати",
+      "add_payment_method_banner": "Додайте спосіб оплати для швидшої оплати або попередньо авторизованих послуг",
+      "no_payment_methods_banner": "Немає доданих способів оплати",
+      "edit_payment_method_button_accessibility_label": "Змінити {{paymentMethodName}} що закінчується на {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Редагувати {{paymentMethodName}}",
+      "delete_payment_method_button": "Видалити",
+      "delete_payment_method_button_accessibility_label": "Видалити {{paymentMethodName}}",
+      "back_button": "Назад",
+      "back_button_accessibility_label": "Назад до {{paymentMethodStepTitle}}",
+      "default": "За замовчуванням",
+      "generic_card": "картка",
+      "expiration_warning_button_accessibility_label": "Показати попередження про закінчення терміну дії для {{paymentMethodName}} що закінчується на {{lastDigits}}",
+      "expires_soon": "Термін дії цієї картки незабаром закінчується",
+      "expired": "Термін дії цієї картки закінчився",
+      "card_update_consent": "Цей спосіб оплати буде збережено для майбутніх покупок.",
+      "digital_wallet_title": "Цифровий гаманець",
+      "credit_or_debit_card_title": "Кредитна або дебетова картка",
+      "google_pay": {
+        "loading": "Завантаження Google Pay",
+        "errors": {
+          "generic": "Виникла проблема з Google Pay. Повторіть спробу або скористайтеся іншим способом оплати.",
+          "missing_billing_address": "Для Google Pay потрібна платіжна адреса. Будь ласка, додайте один до свого облікового запису."
+        }
+      },
+      "apple_pay": {
+        "loading": "Завантаження Apple Pay",
+        "errors": {
+          "generic": "Виникла проблема з Apple Pay. Повторіть спробу або скористайтеся іншим способом оплати.",
+          "not_available": "Apple Pay недоступна на цьому пристрої.",
+          "missing_billing_address": "Для Apple Pay потрібна платіжна адреса. Будь ласка, додайте один до свого облікового запису."
+        }
+      },
+      "store_credit": {
+        "label": "Кредит магазину",
+        "accesibility_label": "Кредит магазину - {{formattedBalance}}"
+      },
+      "payment_details": {
+        "title": "Деталі способу оплати",
+        "credit_card_details_accessibility_label": "закінчується на {{lastDigits}}",
+        "billing_title": "Платіжна адреса",
+        "card_info_title": "Інформація про картку",
+        "payment_method_expiring_on": "Термін дії закінчується {{expiryDate}}",
+        "payment_method_expired_on": "Термін дії минув {{expiryDate}}",
+        "preauthorized_payments": "Попередньо авторизовані платежі",
+        "close_payment_modal": "Закрити",
+        "close_payment_modal_accessibility_label": "Закрити деталі способу оплати",
+        "payment_method_not_found_error": "Не вдалося знайти спосіб оплати",
+        "payment_details_loading": "Завантаження інформації про спосіб оплати",
+        "pre_authorized_payments": "Попередньо авторизовані платежі",
+        "total_amount_of_subscription_line_items_left": "і ще {{total}}"
       }
     }
   },
