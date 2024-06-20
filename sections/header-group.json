@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "Header",
@@ -35,7 +44,7 @@
         "name_wishlist": "Wishlist",
         "name_cart": "Cart",
         "sticky_header": true,
-        "logo": "shopify:\/\/shop_images\/Group_2_1_1.png",
+        "logo": "shopify:\/\/shop_images\/resens_logo_Artboard_1_2_1.svg",
         "logo-placement": "center",
         "logo_max_width": 100,
         "logo_padding": 30,
@@ -49,7 +58,7 @@
         "overlay_header_collection": true,
         "overlay_header_list_collection": false,
         "overlay_header_contact": false,
-        "overlay_logo": "shopify:\/\/shop_images\/Group_2_1.png",
+        "overlay_logo": "shopify:\/\/shop_images\/resens_logo_Artboard_1_6_1.svg",
         "overlay_opacity": 0,
         "show_currency_selector": true,
         "show_locale_selector": false,
