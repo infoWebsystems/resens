@@ -148,5 +148,26 @@
         }
       }
     }
+  },
+  "customer_accounts": {
+    "navigation_and_structure": {
+      "contact_link": "Зв'яжіться з нами"
+    },
+    "order_details": {
+      "contact": "контакт",
+      "shop_pay": {
+        "learn_more": "Вивчайте більше"
+      }
+    },
+    "B2B": {
+      "orders": {
+        "order_list_column_headers_contact": "контакт"
+      }
+    }
+  },
+  "coming_soon": {
+    "general": {
+      "opening_soon": "Скоро відкриється..."
+    }
   }
 }
