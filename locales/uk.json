@@ -8,4 +8,145 @@
 * ------------------------------------------------------------
 */
 {
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "deferred_payment_info": {
+          "title": "Платіж %{amount_due} має бути сплачено %{due_at}",
+          "description_html": "Якщо у вас є запитання щодо вашого замовлення, %{contact_us}.",
+          "paid_today": "Всього сплачено сьогодні",
+          "due_on_fulfillment_title": "Оплата %{amount_due} має бути сплачена після виконання",
+          "due_on_receipt_title": "Оплата %{amount_due} має бути сплачена після отримання"
+        },
+        "deferred_balance_info": {
+          "title": "Залишок у розмірі {{amount_due}} сплачується {{due_at}}",
+          "due_on_fulfillment_title": "Залишок у розмірі {{amount_due}} сплачується після виконання"
+        },
+        "payment_terms_totals": {
+          "due_today": "Загальний термін оплати сьогодні",
+          "due_later": "Загальна сума до %{due_at}",
+          "due_on_fulfillment": "Загальна сума під час виконання",
+          "due_on_receipt": "Загальна сума під час отримання",
+          "due_later_checkout_to_draft": "Загальна сума сплачується пізніше",
+          "total_paid": "Всього сплачено"
+        },
+        "maximum_discount_code_limit_reached": "Ви досягли максимальної кількості кодів знижки. Видаліть існуючий код, щоб використовувати <strong style=\"text-transform:uppercase\">%{code}<\/strong> .",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> зараз не працює. Зверніться до нас за допомогою.",
+        "due_on_fulfillment": "Підлягає виконанню",
+        "subscriptions": "Підписки",
+        "duties_label": "Обов'язки",
+        "duties_and_taxes_label": "Мита і податки",
+        "error_duties_tooltip": "Це замовлення доставляється з іншої країни, тому під час доставки можуть стягуватися мита та податки.",
+        "may_be_charged_on_delivery": "Може стягуватися під час доставки",
+        "total_updated_label_with_price": "Оновлена ​​загальна ціна: %{totalPrice}",
+        "updated_shipping_method": "Оновлений спосіб доставки: %{shipping_method}",
+        "recurring_payments": "Регулярні платежі",
+        "recurring_total_multiple_label": "Це замовлення передбачає регулярне стягнення плати за кілька елементів.",
+        "deferred_total_due_date_label": "Загальна сума до {{date}}",
+        "full_price": "Повна ціна: %{price}",
+        "custom_discount": "Спеціальна знижка",
+        "expand_component_information": {
+          "one": "Показати %{count} елемент",
+          "other": "Показати %{count} елементів"
+        },
+        "collapse_component_information": {
+          "one": "Сховати %{count} елемент",
+          "other": "Сховати %{count} елементів"
+        },
+        "discount_discovery": {
+          "add_code": "Додайте знижку",
+          "merchandise_quantity_label": {
+            "one": "%{count} елемент",
+            "other": "%{count} елементів"
+          }
+        },
+        "alternative_payment_currency_total": "Стягується як %{amount_due}"
+      },
+      "shipping": {
+        "title": "Доставка",
+        "delivery_title": "Доставка",
+        "shipping_method_title": "Метод доставки",
+        "shipping_method_one_time_purchase_group_title": "Одноразова покупка",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Перша відправка",
+          "other": "Перші поставки"
+        },
+        "shipping_method_subscription_group_title": "Підписка",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Регулярна відправка",
+          "other": "Регулярні відправлення"
+        },
+        "subscription_shipping": "Доставка за підпискою",
+        "subscription_local_delivery": "Місцева доставка за підпискою",
+        "subscription_pickup": "Вивіз підписки",
+        "waiting_on_rate_notice": "Отримання доступних тарифів доставки…",
+        "waiting_on_pickup_location_notice": "Отримання доступних місць отримання…",
+        "no_rates_for_cart_or_destination_notice": "Немає доступних методів доставки для вашого кошика або адреси",
+        "no_pickup_location_notice": "Принаймні один із ваших продуктів недоступний для отримання",
+        "no_rates_for_country_notice": "Для цієї адреси не знайдено тарифів доставки.",
+        "no_rates_contact_notice": "Зв'яжіться з нами для отримання додаткової інформації",
+        "free_rate_label": "безкоштовно",
+        "cheapest_rate_label": "Найдешевший",
+        "please_enter_your_shipping_information_notice": "Введіть інформацію про доставку.",
+        "estimated_delivery_date": {
+          "one": "%{count} робочий день",
+          "other": "%{count} робочих днів"
+        },
+        "estimated_delivery_date_range": "%{minimum} до %{maximum} робочих днів",
+        "estimated_delivery_time": "Орієнтовна доставка %{time}",
+        "estimated_delivery_time_range": "Орієнтовна доставка %{min_time}–%{max_time}",
+        "delivery_today": "Доставка в той же день %{time}",
+        "delivery_tomorrow": "Доставка наступного дня %{time}",
+        "two_day_delivery": "2-денна доставка %{time}",
+        "delivery": "Час доставки}",
+        "arrives_time": "Прибуває %{time}",
+        "arrives_time_range": "Прибуває %{min_time}–%{max_time}",
+        "estimated_time": "Розрахунковий час}",
+        "estimated_time_range": "Приблизно %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "Номер мобільного телефону (обов'язково)",
+        "shipping_line_phone": "Ваш кур'єр може використовувати цей номер, щоб зв'язатися з вами.",
+        "shipping_line_delivery_phone_label": "Номер мобільного телефону",
+        "shipping_line_delivery_phone": "З вами можуть зв’язатися з оновленнями щодо доставки.",
+        "optional_shipping_line_delivery_instructions_label": "Інструкції з доставки (необов'язково)",
+        "shipping_line_delivery_instructions": "Введіть необхідну інформацію, як-от дверні коди або інструкції щодо висадки.",
+        "other_method": {
+          "zero": "Інших методів немає",
+          "one": "%{count} інший метод доступний на",
+          "other": "%{count} інші методи доступні, починаючи з"
+        },
+        "shipping_rate_discounted_amount": "Було: %{original_amount}. Зараз: %{amount}",
+        "local_delivery": "Місцева доставка",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "за %{count} доставки",
+            "other": "для %{count} доставки"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "кожен день",
+              "other": "кожні %{count} днів"
+            },
+            "week": {
+              "one": "кожного тижня",
+              "other": "кожні %{count} тижнів"
+            },
+            "month": {
+              "one": "щомісяця",
+              "other": "кожні %{count} місяців"
+            },
+            "year": {
+              "one": "щороку",
+              "other": "кожні %{count} років"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} за доставку",
+          "prepaid_shipping_price_label": "%{shipping_price} за доставку x %{delivery_interval_count}",
+          "initial_order_discounted": "Спочатку вартість доставки %{discounted_shipping_cost}, потім %{frequency_description}",
+          "prepaid_initial_order_discounted": "Перша вартість доставки %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Перша вартість доставки %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Спочатку вартість доставки %{discounted_shipping_price} %{prepaid_delivery_frequency}, потім %{shipping_price} %{billing_cycle}"
+        }
+      }
+    }
+  }
 }
