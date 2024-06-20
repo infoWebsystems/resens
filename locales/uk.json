@@ -1981,6 +1981,69 @@
         "pre_authorized_payments": "Попередньо авторизовані платежі",
         "total_amount_of_subscription_line_items_left": "і ще {{total}}"
       }
+    },
+    "ui_components": {
+      "january": "січня",
+      "february": "Лютий",
+      "march": "березень",
+      "april": "квітень",
+      "may": "Може",
+      "june": "червень",
+      "july": "липень",
+      "august": "серпень",
+      "september": "Вересень",
+      "october": "жовтень",
+      "november": "Листопад",
+      "december": "Грудень",
+      "monday": "понеділок",
+      "tuesday": "вівторок",
+      "wednesday": "Середа",
+      "thursday": "четвер",
+      "friday": "П'ятниця",
+      "saturday": "Субота",
+      "sunday": "неділя",
+      "mondayAbbreviation": "пн",
+      "tuesdayAbbreviation": "вт",
+      "wednesdayAbbreviation": "ми",
+      "thursdayAbbreviation": "чт",
+      "fridayAbbreviation": "О",
+      "sundayAbbreviation": "Нд",
+      "showNextMonth": "Показати наступний місяць, {{month}} {{year}}",
+      "showPreviousMonth": "Показати попередній місяць, {{month}} {{year}}",
+      "rangeStart": "Початок діапазону",
+      "inRange": "В діапазоні",
+      "rangeEnd": "Кінець діапазону",
+      "autocompleteOptionsAvailable": {
+        "one": "Доступно {{count}} товар",
+        "other": "Доступні товари {{count}}"
+      },
+      "removeItem": "Видалити {{label}}",
+      "removeTag": "Видалити тег",
+      "month": {
+        "one": "місяць",
+        "other": "місяців"
+      }
+    },
+    "profile_preview_bar": {
+      "customize_button": "Налаштувати",
+      "hide_bar": "Приховати панель",
+      "navigate_to_admin": "Перейдіть до адміністратора",
+      "close_preview": "Закрити попередній перегляд",
+      "previewing": "Ви переглядаєте:",
+      "saved_at": "Збережено {{date}} о {{time}}",
+      "viewing": "Ви переглядаєте:",
+      "not_available": "Дані профілю недоступні",
+      "actions_button": "Дії"
+    },
+    "settings": {
+      "title": "Налаштування",
+      "loading_accessibility_message": "Завантаження сторінки налаштувань",
+      "log_out_everywhere": {
+        "title": "Вийти всюди",
+        "description": "Якщо ви втратили пристрій або маєте проблеми з безпекою, вийдіть із будь-якого пристрою, щоб забезпечити безпеку свого облікового запису.",
+        "button": "Вийти всюди",
+        "warning_message": "Ви також вийдете з системи на цьому пристрої."
+      }
     }
   },
   "coming_soon": {
@@ -2218,6 +2281,79 @@
       "name_label": "Ім'я одержувача (необов'язково)",
       "message_label": "Повідомлення (необов'язково)",
       "max_characters": "Макс. {{ max }} символів"
+    }
+  },
+  "sections": {
+    "collection_template": {
+      "apply": "Застосувати",
+      "clear": "ясно",
+      "clear_all": "Очистити все",
+      "empty": "Продукти не знайдено",
+      "from": "Від",
+      "filter_and_sort": "Відфільтрувати та відсортувати",
+      "filter_by_label": "Фільтрувати за",
+      "filter_button": "фільтр",
+      "filters_selected": {
+        "one": "Вибрано {{ count }}",
+        "other": "Вибрано {{ count }}"
+      },
+      "max_price": "Найвища ціна – {{ price }}",
+      "product_count": {
+        "one": "Показано {{ product_count }} із {{ count }} продукту",
+        "other": "Показано {{ product_count }} із {{ count }} продуктів"
+      },
+      "reset": "Скинути",
+      "sort_button": "Сортувати",
+      "sort_by_label": "Сортувати за",
+      "title": "Колекція",
+      "to": "до",
+      "use_fewer_filters_html": "Використовуйте менше фільтрів або <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;\/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">очистіть усі<\/a>"
+    },
+    "events_calendar": {
+      "tbc_text": "Уточнюється"
+    }
+  },
+  "general": {
+    "meta": {
+      "tags": "Позначено тегом \" {{ tags }} \"",
+      "page": "Сторінка {{ page }}"
+    },
+    "404": {
+      "title": "404 Сторінка не знайдена",
+      "subtext_html": "Сторінка, яку ви запитували, не існує. Натисніть <a href=\"\/collections\/all\">тут<\/a> , щоб продовжити покупки."
+    },
+    "breadcrumbs": {
+      "home": "додому",
+      "home_link_title": "Повернутися на першу сторінку"
+    },
+    "newsletter_form": {
+      "submit": "Підпишіться",
+      "confirmation": "Дякуємо за підписку"
+    },
+    "newsletter_form_section": {
+      "header": "Приєднуйтеся до нашого списку розсилки",
+      "header_text": "Адреса електронної пошти:",
+      "newsletter_text": "Введіть адресу електронної пошти",
+      "submit": "Приєднуйтесь",
+      "thanks": "Дякуємо, що приєдналися!"
+    },
+    "search": {
+      "no_results_html": "Ваш пошук \" {{ terms }} \" не дав жодних результатів.",
+      "results_for_html": "Ваш пошук за запитом \" {{ terms }} \" виявив наступне:",
+      "title": "Пошук",
+      "placeholder": "Шукайте в нашому магазині",
+      "submit": "Пошук",
+      "products": "Продукти",
+      "articles": "статті",
+      "suggestions": "Пропозиції",
+      "pages": "сторінки",
+      "collections": "Колекції",
+      "results": "Результати",
+      "view_all": "Переглянути всі результати",
+      "clear": "ясно"
+    },
+    "social": {
+      "share_the_love": "Поділіться любов'ю"
     }
   }
 }
