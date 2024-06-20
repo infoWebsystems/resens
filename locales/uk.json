@@ -1781,7 +1781,32 @@
           "staff": "Помилка персоналу",
           "other": "Інший"
         },
-        "cash_on_delivery": "Накладений платіж (COD)"
+        "cash_on_delivery": "Накладений платіж (COD)",
+        "not_available": "Це замовлення недоступне",
+        "financial_status": {
+          "authorized": "Авторизований",
+          "pending": "В очікуванні",
+          "paid": "Платний",
+          "unpaid": "Неоплачений",
+          "voided": "Анульовано",
+          "partially_paid": "Частково оплачено",
+          "partially_refunded": "Частково відшкодовано",
+          "refunded": "Повернено",
+          "expired": "Термін дії минув"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Виконано",
+          "complete": "Повний",
+          "partial": "Частковий",
+          "unfulfilled": "Нереалізований",
+          "restocked": "Поповнили запаси"
+        },
+        "transaction_status": {
+          "success": "Успіх",
+          "pending": "В очікуванні",
+          "failure": "провал",
+          "error": "Помилка"
+        }
       },
       "cart": {
         "only_n_items_available": "До кошика можна додати лише %{count} %{name}.",
@@ -1825,6 +1850,30 @@
         "add_products": "Звужте вибір до продуктів, які відповідають тегу %{tag}",
         "remove_articles": "Розширте пошук до статей, які не позначені тегом %{tag}",
         "remove_products": "Видалити тег %{tag}"
+      },
+      "customer": {
+        "password_reset_error": "Помилка скидання пароля",
+        "no_account_found": "Обліковий запис із цією електронною адресою не знайдено.",
+        "invalid_credentials": "Неправильна адреса електронної пошти або пароль.",
+        "denylisted_reset_password": "Не вдалося отримати доступ до вашого облікового запису, оскільки поточний пароль не є безпечним. Ви отримаєте електронний лист для оновлення пароля.",
+        "signup_disabled": "Створення облікового запису клієнта вимкнено."
+      },
+      "address": {
+        "updated": "Адресу успішно оновлено.",
+        "error_updating": "Помилка оновлення адреси",
+        "created": "Успішно створено адресу",
+        "error_creating": "Помилка створення адреси.",
+        "deleted": "Адресу успішно видалено",
+        "error_deleting": "Помилка видалення адреси."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Додано %{delta}",
+          "increment_item": "Додано %{delta}",
+          "decrement_item": "Видалено %{delta} від %{total}",
+          "decrement_fulfilled_line_item": "Повернуто %{delta} від %{total}",
+          "decrement_return_line_item": "Видалено %{delta} із повернення"
+        }
       }
     },
     "email_marketing": {
@@ -1939,6 +1988,91 @@
     "sentence": {
       "two_words_connector": " і ",
       "last_word_connector": ", і "
+    },
+    "errors": {
+      "blocked_address": "Це місце не підтримується",
+      "credit_card_session_expired": "Термін авторизації кредитної картки закінчився, введіть платіжну інформацію ще раз. З вашої картки кошти не стягнено.",
+      "empty": "не може бути порожнім",
+      "invalid_email": "має бути дійсною електронною адресою",
+      "discount_disabled": "Цю знижку вимкнено",
+      "discount_expired": "Ця знижка більше не діє",
+      "discount_limit_reached": "Ця знижка досягла ліміту використання",
+      "discount_not_found": "Не вдалося знайти дійсну знижку, яка відповідає введеному коду",
+      "customer_already_used_once_per_customer_discount_notice": "Ця знижка досягла ліміту використання",
+      "gift_card_already_applied": "Код уже застосовано до вашої каси",
+      "gift_card_code_invalid": "Код недійсний",
+      "gift_card_currency_mismatch": "Ваша подарункова картка в %{gift_card_currency}. Зв’яжіться з нами, щоб отримати його повторно в %{checkout_currency}.",
+      "gift_card_depleted": "На цій подарунковій картці не залишилося коштів",
+      "gift_card_disabled": "Подарункова картка вимкнена",
+      "gift_card_expired": "Термін дії подарункової картки закінчився",
+      "invalid": "є недійсним",
+      "bad_domain": "містить недійсне доменне ім’я",
+      "taken": "вже взято",
+      "contains_html_tags": "не може містити теги HTML",
+      "too_short": "занадто короткий (мінімум %{count} символів)",
+      "too_long": "занадто довгий (максимальна кількість символів: %{count})",
+      "password_mismatch": "має відповідати наданому паролю",
+      "contains_spaces": "починається або закінчується пробілами.",
+      "email_domain_invalid": "провайдер не підтримується",
+      "invalid_for_country": "недійсний для %{country}",
+      "invalid_for_country_and_province": "не діє для %{province} і %{country}",
+      "invalid_province_in_country": "не є дійсною провінцією в %{country}",
+      "invalid_state_in_country": "не є дійсним штатом у %{country}",
+      "invalid_region_in_country": "не є дійсним регіоном у %{country}",
+      "less_than_or_equal_to": "має бути менше або дорівнювати %{count}",
+      "not_supported": "не підтримується",
+      "full_name_required": "Введіть ім'я та прізвище",
+      "invalid_for_card_type": "не діє",
+      "invalid_type": "вибачте, ми не приймаємо картки цього типу",
+      "invalid_format": "формат недійсний",
+      "expired": "закінчився",
+      "invalid_start_date_or_issue_number_for_debit": "потрібна дійсна дата початку або номер випуску",
+      "invalid_expiry_year": "не є дійсним роком закінчення",
+      "reset_password_html": "Ця електронна адреса вже пов’язана з обліковим записом. Якщо цей обліковий запис належить вам, ви можете <a href=\"\/account\/login#recover\">скинути пароль<\/a>",
+      "verify_email": "Ми надіслали електронний лист на адресу %{customer_email}, клацніть посилання, щоб підтвердити свою адресу електронної пошти.",
+      "product_not_available": "продукт не опубліковано для цього клієнта.",
+      "shop_404": {
+        "title": "Створіть веб-сайт електронної комерції та продавайте онлайн! Програмне забезпечення електронної комерції від Shopify",
+        "heros": {
+          "store_unavailable": "Вибачте, цей магазин зараз недоступний.",
+          "store_not_exist": "Цей магазин не існує.",
+          "no_storefront": "Цей магазин ще не має сайту."
+        },
+        "links": {
+          "explore_other_stores": "Перегляньте інші магазини",
+          "start_free_trial": "Розпочніть безкоштовну пробну версію"
+        },
+        "owner_ctas": {
+          "header": "Ви власник магазину?",
+          "fix_domain": "Завершіть налаштування нової веб-адреси, перейдіть до %{domain_settings_link}. Натисніть «Підключити домен» і введіть: %{domain}.<br> Якщо у вас виникли проблеми з входом у свій магазин, спробуйте сторінку %{forgot_your_store_link}.",
+          "fix_domain_link_text": "налаштування вашого домену",
+          "forgot_your_store_link_text": "забув свій магазин",
+          "add_storefront": "Ви можете налаштувати свій веб-сайт, додавши канал Інтернет-магазину в %{admin_link}. Якщо у вас виникли проблеми з входом у свій магазин, спробуйте сторінку %{forgot_your_store_link}.",
+          "admin_link_text": "адмін"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Продам особисто",
+            "caption": "Отримайте функції, необхідні для роботи свого роздрібного магазину, незалежно від того, починаєте ви чи розширюєтеся.",
+            "link_text": "Розпочніть безкоштовну пробну версію"
+          },
+          "open_a_store": {
+            "header": "Відкрийте новий магазин Shopify",
+            "caption": "Почніть 3-денну безкоштовну пробну версію, а потім продовжуйте за 1 долар США на місяць протягом наступних 3 місяців.",
+            "link_text": "Зареєструватися зараз"
+          },
+          "editions": {
+            "header": "Перегляньте випуски Shopify",
+            "caption": "З понад 100 оновленнями продукту ви можете бути продуктивнішими, креативнішими та ефективнішими в торгівлі, ніж ви могли собі уявити.",
+            "link_text": "Ознайомтеся з останніми виданнями"
+          },
+          "store_owner": {
+            "header": "Ви власник магазину?",
+            "caption": "Вам важко потрапити у ваш магазин? Спробуйте функцію %{forgot_your_store_link}. Якщо ви хочете повторно активувати свій магазин, зв’яжіться з %{shopify_support_link}.",
+            "shopify_support_link_text": "Підтримка Shopify"
+          }
+        }
+      }
     }
   },
   "customer_accounts": {
