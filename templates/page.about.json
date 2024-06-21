@@ -128,7 +128,7 @@
         "bg_image_overlay_opacity": 70,
         "parallax": true,
         "title": "SCIENTIFICUKRAINIAN DEVELOPMENT:",
-        "text": "<br>•OWNFORMULAS CREATED BY UKRAINIAN DEVELOPERS TAKING INTO ACCOUNT THE NEEDS OFSENSITIVE SKIN <br>•CLINICALLYPROVEN EFFECTIVENESS<br>•INNOVATIVERAW MATERIALS FROM AROUND THE WORLD: EUROPE, JAPAN, KOREA, USA <br>•COMPOSTABLEPACKAGING <br>•RESPECTFOR NATURE, HUMANS AND THE ENVIRONMENT IN GENERAL",
+        "text": "•OWNFORMULAS CREATED BY UKRAINIAN DEVELOPERS TAKING INTO ACCOUNT THE NEEDS OFSENSITIVE SKIN •CLINICALLYPROVEN EFFECTIVENESS•INNOVATIVERAW MATERIALS FROM AROUND THE WORLD: EUROPE, JAPAN, KOREA, USA •COMPOSTABLEPACKAGING •RESPECTFOR NATURE, HUMANS AND THE ENVIRONMENT IN GENERAL",
         "colors": "light",
         "textPosition": "center",
         "textAlignment": "center",
@@ -242,7 +242,7 @@
         "richtext_eqjAWD": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.<\/p>",
+            "text": "<p><strong>BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin <\/strong><\/p><p>MORE – IS NOT BETTER. <br\/>A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are<br\/>adherents of a conscious \"Slow Beauty\" approach, which goes hand in<br\/>hand with the increasingly popular \"Slow Food\" trend. These<br\/>approaches are about:<\/p><p> <\/p><p>•<br\/>mindful consumption<\/p><p>•<br\/>getting the result not at any cost<\/p><p>•<br\/>ethical interaction with the world<\/p><p> <\/p><p>That<br\/>is,<\/p><p>Moderate<br\/>impact on the skin without overstimulation. And if there is one thing in our<br\/>formulas that is abundant, it is anti-inflammatory, moisturizing and soothing<br\/>components.<\/p>",
             "text_size": 14
           }
         }
