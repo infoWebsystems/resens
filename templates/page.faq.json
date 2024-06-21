@@ -142,6 +142,34 @@
             "question": "Why does Hydro Ceramide Cream give the skin a beautiful natural glow?",
             "text": "<p>Due to the presence of Palmitoyl Tetrapeptide-10, which is known as a \"highlighter peptide\".  This peptide creates the effect of crystalline skin while maintaining its transparency by activating the chaperone protein α-crystallin. At the same time, its \"soft polish\" effect helps to distribute light evenly, resulting in a distinct natural glow.<\/p>"
           }
+        },
+        "tab_content_AGywdV": {
+          "type": "tab_content",
+          "settings": {
+            "question": "What line should I choose if my skin is very sensitive?",
+            "text": "<p>If your skin is highly sensitive, it is better to choose the A-Redensity line. This line has two creams: moisturizing and matting, so you can choose a suitable product for your skin type.<\/p>"
+          }
+        },
+        "tab_content_hDKtxM": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_9awhW8": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_mR4HED": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -155,7 +183,11 @@
         "tab_content_pM778L",
         "tab_content_mzyjVU",
         "tab_content_MgR8Cf",
-        "tab_content_Rzyhmh"
+        "tab_content_Rzyhmh",
+        "tab_content_AGywdV",
+        "tab_content_hDKtxM",
+        "tab_content_9awhW8",
+        "tab_content_mR4HED"
       ],
       "settings": {
         "colors": "white",
