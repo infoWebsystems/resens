@@ -24,9 +24,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#fefefe",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "#494949"
           }
@@ -54,6 +54,42 @@
         "width_6": "1",
         "height_6": "4",
         "block_alignment": "center"
+      }
+    },
+    "164563343647211871": {
+      "type": "text--rich-text",
+      "blocks": {
+        "6a2f6ce0-606a-4133-b01a-ee3926268a9e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Still got Q's?"
+          }
+        },
+        "9f90cfb3-0430-4b6c-90df-8309138e865a": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Direct your customers towards an FAQs page or somewhere they can find out more information<\/p>",
+            "text_size": 14
+          }
+        },
+        "c1f278da-fb1a-46ad-9d1f-1e169afa696c": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "button_text": "See FAQs"
+          }
+        }
+      },
+      "block_order": [
+        "6a2f6ce0-606a-4133-b01a-ee3926268a9e",
+        "9f90cfb3-0430-4b6c-90df-8309138e865a",
+        "c1f278da-fb1a-46ad-9d1f-1e169afa696c"
+      ],
+      "settings": {
+        "colors": "light",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "057a50d5-3fee-4ea2-a832-2d38f47b959a": {
@@ -110,6 +146,26 @@
         "form_description": "<p>Have a question, or want a product recommendation? Get in touch.<\/p>"
       }
     },
+    "171895764357c44b9c": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_48Utax": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_48Utax"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1645634969fb497783": {
       "type": "newsletter--newsletter",
       "settings": {
@@ -125,16 +181,17 @@
         "heading": "Our store",
         "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
         "map_address": "80 Spadina Ave, Toronto",
-        "api_key": "AIzaSyBddfh5mE5igBpXjvYJd5AsFevwk4P7FgM",
+        "api_key": "",
         "button_text": "Get directions",
-        "layout": "right",
-        "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"
+        "layout": "right"
       }
     }
   },
   "order": [
     "af74e87e-1556-4a47-b50d-86b13100ed8a",
+    "164563343647211871",
     "057a50d5-3fee-4ea2-a832-2d38f47b959a",
+    "171895764357c44b9c",
     "1645634969fb497783",
     "f9008be2-cc52-4777-becc-c975f680a054"
   ]
