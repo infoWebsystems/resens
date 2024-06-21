@@ -78,7 +78,7 @@
           "settings": {
             "grid_image_size": "square",
             "heading": "SENS",
-            "text": "<p><strong>SENS<\/strong> comes from \"senses\" and<br\/>skin sensitivity. It is not just about caring for sensitive skin, but also about<br\/>reflecting the inner sensitivity of a person, which is often manifested through the condition of<br\/>their skin. In a world<br\/>where every element of life affects our sensibilities, Re[Sens] offers a deep<br\/>360° understanding. This indicates our focus on sensations, the ability to feel<br\/>the world around us.<\/p>",
+            "text": "<p><strong>SENS<\/strong> comes from \"senses\" and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us<\/p>",
             "button_text": "Learn more",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -103,7 +103,7 @@
         "richtext_zCR9aJ": {
           "type": "richtext",
           "settings": {
-            "text": "<p>So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer.<\/p>",
+            "text": "<p>So Re[Sens]<br\/>isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through<br\/>values that define new standards of aesthetic medicine and form the right habits of a responsible consumer.<\/p>",
             "text_size": 14
           }
         }
