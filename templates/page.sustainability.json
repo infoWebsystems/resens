@@ -31,11 +31,19 @@
             "text": "<p>Over 13 years of distribution of cosmetics, many plastic packaging has passed through our company. It was really painful for us that most of it went straight into the ground and polluted the environment.<br\/>When we decided to embark on the path of responsible business, we were limited by the waste disposal system in Ukraine (or its absence) and the plastic used by the manufacturer.<br\/>We realized that only by becoming a sustainable manufacturer ourselves could we be sure that our negative impact on the environment was minimal.<br\/><\/p>",
             "text_size": 14
           }
+        },
+        "richtext_HN6aax": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><em>_________________________________________________________________________________________________________________________________________________<br\/>\"Sustainable marketing should be, first and<br\/>foremost, internal marketing. Only thing we can be sure of is changing<br\/>ourselves!\"<\/em> - Yulia Polyakova and Olga Guzhyk. <\/p><p><em>\"My goal is to make a beautiful product without<br\/>impoverishing the future of my daughters.\"<\/em> - Yulia<br\/>Gagarina.<\/p>",
+            "text_size": 16
+          }
         }
       },
       "block_order": [
         "heading_m8jAyh",
-        "richtext_BX4zqX"
+        "richtext_BX4zqX",
+        "richtext_HN6aax"
       ],
       "settings": {
         "colors": "white",
@@ -43,10 +51,51 @@
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
+    },
+    "image_logo_list_VTEpxB": {
+      "type": "image--logo-list",
+      "blocks": {
+        "logo_image_rE7eEr": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_pXnJki": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_jr8F3L": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_hQKDqQ": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_rE7eEr",
+        "logo_image_pXnJki",
+        "logo_image_jr8F3L",
+        "logo_image_hQKDqQ"
+      ],
+      "settings": {
+        "colors": "light",
+        "width": 150,
+        "title": "As seen in"
+      }
     }
   },
   "order": [
     "main",
-    "text_rich_text_KRj3Vw"
+    "text_rich_text_KRj3Vw",
+    "image_logo_list_VTEpxB"
   ]
 }
