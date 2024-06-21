@@ -15,6 +15,7 @@
         "template--14831909404742__b71609ee-6355-4679-b82d-61ff492ebea0-image-1": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/DSC0362411.jpg",
             "heading": "FAQs",
             "heading_size": 40,
             "h-margin": 1,
@@ -22,12 +23,12 @@
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#262428",
+            "text_color": "#fefefe",
             "button_color": "#E6E5E7",
             "button_background_color": "#262428",
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
+            "overlay_color": "#494949"
           }
         }
       },
@@ -259,7 +260,7 @@
           "type": "tab_content",
           "settings": {
             "question": "Can I use your cosmetics during pregnancy and lactation?",
-            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+            "text": "<p>Yes, our cosmetics can be used during pregnancy and lactation. The formulas of the products do not have a systemic effect, do not enter the bloodstream, so they do not affect the general condition of the body.<\/p>"
           }
         }
       },
