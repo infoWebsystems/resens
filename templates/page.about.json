@@ -1,11 +1,22 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "94a50e02-c7cb-4f8e-8809-f281c98044d2": {
       "type": "image--image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "image_height": "40vw",
         "bg_image_overlay_opacity": 0,
         "parallax": false,
+        "title": "Share your story",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -13,7 +24,11 @@
         "heading--text-size": 50,
         "text--text-size": 24,
         "link": "",
-        "button_label": ""
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "main": {
@@ -30,6 +45,7 @@
         "a52c67a4-24a0-4020-93a2-4b06cdc1c155": {
           "type": "richtext",
           "settings": {
+            "text": "<p>The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles.<\/p>",
             "text_size": 20
           }
         }
@@ -52,10 +68,17 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
             "button_label": "",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center"
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
           }
         }
       },
@@ -89,25 +112,41 @@
         "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-0": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-1": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "b8b1f231-a59c-4b75-9a90-a5badf60b192": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "4e0dc6d9-55a1-44c4-9305-dfad1ed65478": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -132,25 +171,41 @@
         "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-0": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "63cc8e24-38f9-49c8-af78-5c6b3961c78c": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "537c5daf-2647-4d9a-9244-83f6ef7c9203": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square"
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -177,10 +232,17 @@
           "settings": {
             "heading": "",
             "heading_size": 18,
+            "h-margin": 1,
             "button_label": "",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center"
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
           }
         }
       },
@@ -214,25 +276,41 @@
         "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-0": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-1": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "59287d78-99ec-44b1-a130-3306b031be63": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "db95411e-77ab-45e4-aa83-e8c3775c3288": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -244,6 +322,8 @@
       ],
       "settings": {
         "colors": "white",
+        "heading": "Info columns",
+        "description": "<p>Emphasise your messaging<\/p>",
         "columns_per_row": 4,
         "text_alignment": "left",
         "vertical_alignment": "top"
@@ -253,6 +333,11 @@
       "type": "store-information--map",
       "settings": {
         "colors": "white",
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "map_address": "80 Spadina Ave, Toronto",
+        "api_key": "",
+        "button_text": "Get directions",
         "layout": "right"
       }
     },
@@ -296,7 +381,9 @@
       ],
       "settings": {
         "section_color_scheme": "white",
-        "form_width": "narrow"
+        "form_width": "narrow",
+        "form_title": "Contact us",
+        "form_description": "<p>Have a question, or want a product recommendation? Get in touch.<\/p>"
       }
     },
     "16c77c63-79ef-4e35-be30-ea87725968de": {
@@ -305,26 +392,31 @@
         "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-2": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-0": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-3": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "28ae0150-769d-4d17-a6c3-751dcfe6f0b2": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-1": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         }
       },
@@ -347,19 +439,31 @@
         "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "natural"
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
