@@ -111,8 +111,8 @@
         "tab_content_eJaB9R": {
           "type": "tab_content",
           "settings": {
-            "question": "Place your question or heading here",
-            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+            "question": "What is the cost of delivery?",
+            "text": "<p>Delivery by courier in Kyiv is free. Delivery by Nova Poshta - at the<br\/>carrier's rates.<\/p>"
           }
         }
       },
