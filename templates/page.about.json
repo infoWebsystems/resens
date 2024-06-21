@@ -60,53 +60,6 @@
         "text_alignment_mobile": "left"
       }
     },
-    "33dd17bc-338f-4bf8-860d-044c9b3a8f5d": {
-      "type": "collage-builder",
-      "blocks": {
-        "template--14773137178694__33dd17bc-338f-4bf8-860d-044c9b3a8f5d-1686321770f98f078e-5": {
-          "type": "image",
-          "settings": {
-            "heading": "",
-            "heading_size": 30,
-            "h-margin": 1,
-            "button_label": "",
-            "url": "",
-            "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#262428",
-            "button_color": "#E6E5E7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__33dd17bc-338f-4bf8-860d-044c9b3a8f5d-1686321770f98f078e-5"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "white",
-        "title": "",
-        "description": "",
-        "remove_spacing": false,
-        "section_width": "full",
-        "width_1": "1",
-        "height_1": "6",
-        "width_2": "3",
-        "height_2": "3",
-        "width_3": "3",
-        "height_3": "3",
-        "width_4": "2",
-        "height_4": "2",
-        "width_5": "2",
-        "height_5": "2",
-        "width_6": "1",
-        "height_6": "6",
-        "block_alignment": "center"
-      }
-    },
     "8e700b4c-da55-45f7-9f69-8263da89d7a8": {
       "type": "template--product--info-columns",
       "blocks": {
@@ -144,50 +97,25 @@
         "vertical_alignment": "top"
       }
     },
-    "aad2a20b-3385-48aa-9079-393f0f4a6ad5": {
-      "type": "collage-builder",
+    "text_rich_text_MqgUt9": {
+      "type": "text--rich-text",
       "blocks": {
-        "template--14773137178694__aad2a20b-3385-48aa-9079-393f0f4a6ad5-1686321770f98f078e-5": {
-          "type": "image",
+        "richtext_zCR9aJ": {
+          "type": "richtext",
           "settings": {
-            "heading": "",
-            "heading_size": 18,
-            "h-margin": 1,
-            "button_label": "",
-            "url": "",
-            "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#262428",
-            "button_color": "#E6E5E7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
+            "text": "<p>So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer.<\/p>",
+            "text_size": 14
           }
         }
       },
       "block_order": [
-        "template--14773137178694__aad2a20b-3385-48aa-9079-393f0f4a6ad5-1686321770f98f078e-5"
+        "richtext_zCR9aJ"
       ],
       "settings": {
-        "color_scheme": "white",
-        "title": "",
-        "description": "",
-        "remove_spacing": false,
-        "section_width": "full",
-        "width_1": "1",
-        "height_1": "6",
-        "width_2": "3",
-        "height_2": "3",
-        "width_3": "3",
-        "height_3": "3",
-        "width_4": "2",
-        "height_4": "2",
-        "width_5": "2",
-        "height_5": "2",
-        "width_6": "1",
-        "height_6": "6",
-        "block_alignment": "center"
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d": {
@@ -406,9 +334,8 @@
     "94a50e02-c7cb-4f8e-8809-f281c98044d2",
     "main",
     "63d055aa-9706-43b0-b3c8-49b4a2e53ef9",
-    "33dd17bc-338f-4bf8-860d-044c9b3a8f5d",
     "8e700b4c-da55-45f7-9f69-8263da89d7a8",
-    "aad2a20b-3385-48aa-9079-393f0f4a6ad5",
+    "text_rich_text_MqgUt9",
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
     "58a12040-d534-4682-b1b7-5479f4052864",
     "f33a0dde-7961-4114-a8ff-6e5c2a459969",
