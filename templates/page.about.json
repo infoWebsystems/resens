@@ -258,6 +258,54 @@
         "text_alignment_mobile": "center"
       }
     },
+    "744d98e2-004e-44b9-a03d-ecb59f18bc52": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "CO-FOUNDERAND BRAND DEVELOPERYULIA HAHARINA",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "natural",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0",
+        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1",
+        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 3,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
     "58a12040-d534-4682-b1b7-5479f4052864": {
       "type": "store-information--map",
       "settings": {
@@ -361,54 +409,6 @@
         "width": 100,
         "title": "Contact us through our socials"
       }
-    },
-    "744d98e2-004e-44b9-a03d-ecb59f18bc52": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0",
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1",
-        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b"
-      ],
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "",
-        "columns_per_row": 3,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
     }
   },
   "order": [
@@ -421,9 +421,9 @@
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
     "text_rich_text_YTfkgU",
     "text_rich_text_4x6mkn",
+    "744d98e2-004e-44b9-a03d-ecb59f18bc52",
     "58a12040-d534-4682-b1b7-5479f4052864",
     "f33a0dde-7961-4114-a8ff-6e5c2a459969",
-    "16c77c63-79ef-4e35-be30-ea87725968de",
-    "744d98e2-004e-44b9-a03d-ecb59f18bc52"
+    "16c77c63-79ef-4e35-be30-ea87725968de"
   ]
 }
