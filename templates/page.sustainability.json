@@ -571,34 +571,6 @@
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
-        "video_FY9Wfh": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "button_icon_color": "#E6E5E7",
-            "button_background_color": "#262428",
-            "button_icon_hover_color": "#D4D3D4",
-            "button_background_hover_color": "#494949"
-          }
-        },
-        "background_video_XUQWVn": {
-          "type": "background_video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "heading": "Add a video",
-            "heading_size": 30,
-            "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
-            "desktop_position": "md-min-align-bottom md-min-justify-left",
-            "mobile_position": "md-max-align-bottom md-max-justify-left",
-            "text_color": "#262428",
-            "button_color": "#E6E5E7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
-          }
-        },
         "text_pr4QDa": {
           "type": "text",
           "settings": {
@@ -616,55 +588,15 @@
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949"
           }
-        },
-        "image_TRTiLc": {
-          "type": "image",
-          "settings": {
-            "heading": "Link to a collection",
-            "heading_size": 60,
-            "h-margin": 1,
-            "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
-            "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#262428",
-            "button_color": "#E6E5E7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
-          }
-        },
-        "image_ELc3fJ": {
-          "type": "image",
-          "settings": {
-            "heading": "Create a banner promotion",
-            "heading_size": 30,
-            "h-margin": 1,
-            "button_label": "",
-            "url": "",
-            "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#262428",
-            "button_color": "#E6E5E7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
-          }
         }
       },
       "block_order": [
         "image_UhX9tF",
-        "video_FY9Wfh",
-        "background_video_XUQWVn",
-        "text_pr4QDa",
-        "image_TRTiLc",
-        "image_ELc3fJ"
+        "text_pr4QDa"
       ],
       "settings": {
         "color_scheme": "white",
-        "title": "",
+        "title": "МІЦЕЛІЙ",
         "description": "",
         "remove_spacing": false,
         "section_width": "content",
