@@ -15,9 +15,38 @@
         "page_title_enabled": true,
         "page_width": "full-width"
       }
+    },
+    "text_rich_text_KRj3Vw": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_m8jAyh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Re[Sens] - the first sustainable brand in the professional cosmetics industry, which has an unprecedented attitude to packaging in Ukraine and beyond."
+          }
+        },
+        "richtext_BX4zqX": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.<\/p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_m8jAyh",
+        "richtext_BX4zqX"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "text_rich_text_KRj3Vw"
   ]
 }
