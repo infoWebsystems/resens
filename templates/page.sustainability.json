@@ -53,10 +53,18 @@
             "text": "<p><em>\"Sustainable marketing should be, first and<br\/>foremost, internal marketing. Only thing we can be sure of is changing<br\/>ourselves!\"<\/em> - Yulia Polyakova and Olga Guzhyk. <\/p><p><em>\"My goal is to make a beautiful product without<br\/>impoverishing the future of my daughters.\"<\/em> - Yulia<br\/>Gagarina.<\/p>",
             "text_size": 18
           }
+        },
+        "richtext_4zzfAx": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>That's how the idea to produce effectivecosmetics and human health products in a new generation of packaging thatneither increases plastic pollution nor contaminates land and wastewater cameabout. Our goal, strategy, and vision were formed inaccordance with the sustainable development goals that the UN plans toimplement by 2030, namely, to prevent climate warming by more than 1.5°C<\/p>",
+            "text_size": 18
+          }
         }
       },
       "block_order": [
-        "richtext_4x3hfA"
+        "richtext_4x3hfA",
+        "richtext_4zzfAx"
       ],
       "settings": {
         "colors": "white",
