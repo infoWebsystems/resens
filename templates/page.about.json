@@ -230,6 +230,34 @@
         "text_alignment_mobile": "center"
       }
     },
+    "text_rich_text_4x6mkn": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_GFqVqU": {
+          "type": "heading",
+          "settings": {
+            "heading": "PHILOSOPHY OF SLOW BEAUTY"
+          }
+        },
+        "richtext_eqjAWD": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.<\/p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_GFqVqU",
+        "richtext_eqjAWD"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "58a12040-d534-4682-b1b7-5479f4052864": {
       "type": "store-information--map",
       "settings": {
@@ -392,6 +420,7 @@
     "image_image_with_text_overlay_mTBRHr",
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
     "text_rich_text_YTfkgU",
+    "text_rich_text_4x6mkn",
     "58a12040-d534-4682-b1b7-5479f4052864",
     "f33a0dde-7961-4114-a8ff-6e5c2a459969",
     "16c77c63-79ef-4e35-be30-ea87725968de",
