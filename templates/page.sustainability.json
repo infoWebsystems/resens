@@ -276,13 +276,14 @@
         "logo_image_yPPJAj": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5fv88fm3v6_Sea_Turtle_Hol_Chan_Marine_Reserve_WW1105958.jpg",
+            "image": "shopify:\/\/shop_images\/New_Project441.jpg",
             "link": ""
           }
         },
-        "logo_image_8gP8CW": {
+        "logo_image_mDKAKW": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/New_Project312.jpg",
             "link": ""
           }
         },
@@ -301,7 +302,7 @@
       },
       "block_order": [
         "logo_image_yPPJAj",
-        "logo_image_8gP8CW",
+        "logo_image_mDKAKW",
         "logo_image_DfJehL",
         "logo_image_4ct9yK"
       ],
