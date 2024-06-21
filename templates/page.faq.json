@@ -247,6 +247,13 @@
             "question": "What is Slow Beauty?",
             "text": "<p>Slow Beauty is a concept that defines a balanced, sensible approach and understanding of the true physiological needs of the skin. Avoiding excessive stress on sensitive skin is key to Slow Beauty.<br\/>It is important to keep in mind that the skin is a living organ that has its own balanced system of functioning.  Excessive stress can upset this balance and lead to irritation, allergic reactions, dryness, or even contribute to the development of certain skin problems, such as rashes or age spots, etc. In addition, an excessive amount of ingredients can hinder its ability to solve problems on its own. The concept is to provide a tool, not to do instead. Overstimulation is a \"bear favor\" that has its consequences.<br\/>When we prioritize the skin, focusing on its true physiological requirements and needs, we achieve results that go far beyond appearance. <br\/><\/p>"
           }
+        },
+        "tab_content_8RPMpb": {
+          "type": "tab_content",
+          "settings": {
+            "question": "What is sustainable cosmetics?",
+            "text": "<p>Sustainable cosmetics are based on the principles of environmental sustainability and social responsibility. We use renewable materials and minimize the use of plastic, focusing on creating biodegradable or recyclable packaging solutions. Each element of the packaging is carefully designed to preserve the product and minimize the environmental impact. It is about the brand's crucial values that define new standards of aesthetic medicine and form the right habits of a responsible consumer. This is cosmetics that changes the world.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -275,7 +282,8 @@
         "tab_content_MfXjdH",
         "tab_content_WbAizF",
         "tab_content_RCTqAG",
-        "tab_content_6RNC37"
+        "tab_content_6RNC37",
+        "tab_content_8RPMpb"
       ],
       "settings": {
         "colors": "white",
