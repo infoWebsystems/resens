@@ -192,7 +192,7 @@
         "text_static_p3EbhP": {
           "type": "text_static",
           "settings": {
-            "text_static": "<p>your product is.<\/p>",
+            "text_static": "<p>Interested in what carbon footprint you<br\/>leave behind? <\/p>",
             "max_width_desktop": 100,
             "max_width_mobile": 100,
             "text_color": "rgba(0,0,0,0)"
