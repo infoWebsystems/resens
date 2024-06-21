@@ -183,7 +183,7 @@
         "text_dynamic_3Pygdj": {
           "type": "text_dynamic",
           "settings": {
-            "text_dynamic": "amazing,fantastic,bestselling,jaw-dropping",
+            "text_dynamic": "100, 500, 1000",
             "animation_timing": 500,
             "rotation_interval": 5000,
             "text_color": "rgba(0,0,0,0)"
