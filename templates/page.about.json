@@ -77,7 +77,7 @@
         "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC03448.jpg",
+            "image": "shopify:\/\/shop_images\/DSC03450.jpg",
             "grid_image_size": "square",
             "heading": "SENS",
             "text": "<p><strong>SENS<\/strong> comes from \"senses\" and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us<\/p>",
@@ -118,6 +118,28 @@
         "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_overlay_mTBRHr": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC03658.jpg",
+        "image_height": "30vw",
+        "bg_image_overlay_opacity": 70,
+        "parallax": true,
+        "title": "SCIENTIFICUKRAINIAN DEVELOPMENT:",
+        "text": "<br>•        OWNFORMULAS CREATED BY UKRAINIAN DEVELOPERS TAKING INTO ACCOUNT THE NEEDS OFSENSITIVE SKIN <br>•        CLINICALLYPROVEN EFFECTIVENESS<br>•        INNOVATIVERAW MATERIALS FROM AROUND THE WORLD: EUROPE, JAPAN, KOREA, USA <br>•       COMPOSTABLEPACKAGING <br>•        RESPECTFOR NATURE, HUMANS AND THE ENVIRONMENT IN GENERAL",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d": {
@@ -170,6 +192,7 @@
         "59287d78-99ec-44b1-a130-3306b031be63",
         "db95411e-77ab-45e4-aa83-e8c3775c3288"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "Info columns",
@@ -338,6 +361,7 @@
     "63d055aa-9706-43b0-b3c8-49b4a2e53ef9",
     "8e700b4c-da55-45f7-9f69-8263da89d7a8",
     "text_rich_text_MqgUt9",
+    "image_image_with_text_overlay_mTBRHr",
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
     "58a12040-d534-4682-b1b7-5479f4052864",
     "f33a0dde-7961-4114-a8ff-6e5c2a459969",
