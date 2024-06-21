@@ -31,19 +31,32 @@
             "text": "<p>Over 13 years of distribution of cosmetics, many plastic packaging has passed through our company. It was really painful for us that most of it went straight into the ground and polluted the environment.<br\/>When we decided to embark on the path of responsible business, we were limited by the waste disposal system in Ukraine (or its absence) and the plastic used by the manufacturer.<br\/>We realized that only by becoming a sustainable manufacturer ourselves could we be sure that our negative impact on the environment was minimal.<br\/><\/p>",
             "text_size": 14
           }
-        },
-        "richtext_HN6aax": {
-          "type": "richtext",
-          "settings": {
-            "text": "",
-            "text_size": 16
-          }
         }
       },
       "block_order": [
         "heading_m8jAyh",
-        "richtext_BX4zqX",
-        "richtext_HN6aax"
+        "richtext_BX4zqX"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "text_rich_text_bngeLP": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_4x3hfA": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><em>\"Sustainable marketing should be, first and<br\/>foremost, internal marketing. Only thing we can be sure of is changing<br\/>ourselves!\"<\/em> - Yulia Polyakova and Olga Guzhyk. <\/p><p><em>\"My goal is to make a beautiful product without<br\/>impoverishing the future of my daughters.\"<\/em> - Yulia<br\/>Gagarina.<\/p>",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "richtext_4x3hfA"
       ],
       "settings": {
         "colors": "white",
@@ -87,7 +100,7 @@
         "logo_image_hQKDqQ"
       ],
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "width": 150,
         "title": "As seen in"
       }
@@ -96,6 +109,7 @@
   "order": [
     "main",
     "text_rich_text_KRj3Vw",
+    "text_rich_text_bngeLP",
     "image_logo_list_VTEpxB"
   ]
 }
