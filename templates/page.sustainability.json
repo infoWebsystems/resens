@@ -313,6 +313,27 @@
         "width": 240,
         "title": ""
       }
+    },
+    "text_rich_text_YQNdgz": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_himPjd": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br\/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br\/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br\/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br\/><\/p>",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "richtext_himPjd"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
     }
   },
   "order": [
@@ -325,6 +346,7 @@
     "animated_text_3TzTia",
     "text_rich_text_aiRYBj",
     "image_image_with_text_cBwR3y",
-    "image_logo_list_3YXzBG"
+    "image_logo_list_3YXzBG",
+    "text_rich_text_YQNdgz"
   ]
 }
