@@ -265,7 +265,7 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "natural",
-            "heading": "CO-FOUNDERAND BRAND DEVELOPERYULIA HAHARINA",
+            "heading": "CO-FOUNDERAND BRAND DEVELOPER <br>YULIA HAHARINA",
             "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "",
             "button_link": "shopify:\/\/collections\/all"
@@ -275,9 +275,9 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "natural",
-            "heading": "Heading",
+            "heading": "CO-FOUNDER OF THE BRAND DEVELOPER YULIA HAHARINA",
             "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_link": "shopify:\/\/collections\/all"
           }
         },
@@ -285,9 +285,9 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "natural",
-            "heading": "Heading",
+            "heading": "CO-FOUNDERAND BRAND DEVELOPERYULIA HAHARINA",
             "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
+            "button_text": "",
             "button_link": "shopify:\/\/collections\/all"
           }
         }
