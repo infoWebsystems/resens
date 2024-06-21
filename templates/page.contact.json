@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "af74e87e-1556-4a47-b50d-86b13100ed8a": {
@@ -6,12 +15,20 @@
         "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/DSC0362411.jpg",
             "heading": "Contact us",
             "heading_size": 40,
+            "h-margin": 1,
             "button_label": "",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center"
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#fefefe",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#494949"
           }
         }
       },
@@ -39,47 +56,6 @@
         "block_alignment": "center"
       }
     },
-    "1645633383c94b2bb2": {
-      "type": "accordion",
-      "blocks": {
-        "16456333831a200dc8-0": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "16456333831a200dc8-1": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "16456333831a200dc8-2": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "b8952142-22e1-4b16-b9bd-9e42747928c9": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "a379cb7a-ba34-48da-b0af-2b0379b8db62": {
-          "type": "tab_content",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "16456333831a200dc8-0",
-        "16456333831a200dc8-1",
-        "16456333831a200dc8-2",
-        "b8952142-22e1-4b16-b9bd-9e42747928c9",
-        "a379cb7a-ba34-48da-b0af-2b0379b8db62"
-      ],
-      "settings": {
-        "colors": "white",
-        "faq_icon": "caret"
-      }
-    },
     "164563343647211871": {
       "type": "text--rich-text",
       "blocks": {
@@ -99,6 +75,7 @@
         "c1f278da-fb1a-46ad-9d1f-1e169afa696c": {
           "type": "button",
           "settings": {
+            "button_link": "shopify:\/\/collections\/all",
             "button_text": "See FAQs"
           }
         }
@@ -142,6 +119,7 @@
         "fbb2a872-0770-4f56-913c-b7853e33a9c0": {
           "type": "custom_input",
           "settings": {
+            "placeholder": "Order number",
             "required": false,
             "input_width": "full"
           }
@@ -163,7 +141,9 @@
       ],
       "settings": {
         "section_color_scheme": "white",
-        "form_width": "narrow"
+        "form_width": "narrow",
+        "form_title": "Contact us",
+        "form_description": "<p>Have a question, or want a product recommendation? Get in touch.<\/p>"
       }
     },
     "728a0242-0170-4e0a-b7f1-3633abd8a200": {
@@ -178,6 +158,7 @@
         "3ba6d5ff-4566-4d96-8d8b-52c42e2ca699": {
           "type": "button",
           "settings": {
+            "button_link": "shopify:\/\/collections\/all",
             "button_text": "Follow us"
           }
         }
@@ -203,7 +184,9 @@
             "title": "Heading",
             "subheading": "Subheading",
             "overlay-btn-text": "",
-            "show-gradient-overlay": true
+            "show-gradient-overlay": true,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
           }
         },
         "16292070946a646e48-1": {
@@ -213,7 +196,9 @@
             "title": "Heading",
             "subheading": "Subheading",
             "overlay-btn-text": "",
-            "show-gradient-overlay": true
+            "show-gradient-overlay": true,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
           }
         },
         "16292070946a646e48-0": {
@@ -223,7 +208,9 @@
             "title": "Heading",
             "subheading": "Subheading",
             "overlay-btn-text": "",
-            "show-gradient-overlay": true
+            "show-gradient-overlay": true,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
           }
         },
         "3a856712-4c09-43a7-8bd1-8e9d920e9093": {
@@ -233,7 +220,9 @@
             "title": "Heading",
             "subheading": "Subheading",
             "overlay-btn-text": "",
-            "show-gradient-overlay": true
+            "show-gradient-overlay": true,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
           }
         }
       },
@@ -257,6 +246,7 @@
       "type": "newsletter--newsletter",
       "settings": {
         "colors": "light",
+        "newsletter_heading": "Join our Mailing List",
         "newsletter_description": "<p>Get priority access to events and exclusive offers<\/p>"
       }
     },
@@ -264,13 +254,17 @@
       "type": "store-information--map",
       "settings": {
         "colors": "white",
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "map_address": "80 Spadina Ave, Toronto",
+        "api_key": "",
+        "button_text": "Get directions",
         "layout": "right"
       }
     }
   },
   "order": [
     "af74e87e-1556-4a47-b50d-86b13100ed8a",
-    "1645633383c94b2bb2",
     "164563343647211871",
     "057a50d5-3fee-4ea2-a832-2d38f47b959a",
     "728a0242-0170-4e0a-b7f1-3633abd8a200",
