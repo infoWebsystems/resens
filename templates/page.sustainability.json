@@ -269,6 +269,47 @@
         "button_label": "",
         "button_link": ""
       }
+    },
+    "image_logo_list_3YXzBG": {
+      "type": "image--logo-list",
+      "blocks": {
+        "logo_image_yPPJAj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5fv88fm3v6_Sea_Turtle_Hol_Chan_Marine_Reserve_WW1105958.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_8gP8CW": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_DfJehL": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_4ct9yK": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_yPPJAj",
+        "logo_image_8gP8CW",
+        "logo_image_DfJehL",
+        "logo_image_4ct9yK"
+      ],
+      "settings": {
+        "colors": "light",
+        "width": 240,
+        "title": ""
+      }
     }
   },
   "order": [
@@ -280,6 +321,7 @@
     "text_rich_text_9EGRrh",
     "animated_text_3TzTia",
     "text_rich_text_aiRYBj",
-    "image_image_with_text_cBwR3y"
+    "image_image_with_text_cBwR3y",
+    "image_logo_list_3YXzBG"
   ]
 }
