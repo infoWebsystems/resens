@@ -277,8 +277,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/IMG_1215.jpg",
             "grid_image_size": "natural",
-            "heading": "CO-FOUNDER OF THE BRAND <br>  OLGA HUZHYK",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "heading": "CO-FOUNDER OF THE BRAND   OLGA HUZHYK",
+            "text": "<p>Eco-activist, lecturer, organizer of recycling stations in residential complexes.<br\/>Your personal planet is your body. And apart<br\/>from the body, by and large, nothing belongs to a person. And the planet Earth is a gift<br\/>to all of us, to every embodied soul. And we are guests<br\/>here. And we forgot about this. We<br\/>forgot that we areinextricably connected. We are the ones who<br\/>make choices every minute, who create our planet and do things with the<br\/>one that has been given to us. And is there a CREATOR in my actions?\" - this is a question I<br\/>ask myself every day\"<\/p>",
             "button_text": "",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -303,7 +303,7 @@
       "settings": {
         "colors": "white",
         "heading": "",
-        "description": "",
+        "description": "<p>Co-founders of <a href=\"https:\/\/gp-group.com.ua\/\" target=\"_blank\" title=\"https:\/\/gp-group.com.ua\/\"><strong>G&P Group<\/strong><\/a><strong> <\/strong> and<strong> We are from Ukraine <\/strong>(a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights) <\/p><p>Graduates of the University of Cambridge (Institute of Sustainability Leadership) 2023 <\/p>",
         "columns_per_row": 3,
         "text_alignment": "center",
         "vertical_alignment": "top"
