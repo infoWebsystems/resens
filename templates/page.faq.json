@@ -254,6 +254,13 @@
             "question": "What is sustainable cosmetics?",
             "text": "<p>Sustainable cosmetics are based on the principles of environmental sustainability and social responsibility. We use renewable materials and minimize the use of plastic, focusing on creating biodegradable or recyclable packaging solutions. Each element of the packaging is carefully designed to preserve the product and minimize the environmental impact. It is about the brand's crucial values that define new standards of aesthetic medicine and form the right habits of a responsible consumer. This is cosmetics that changes the world.<\/p>"
           }
+        },
+        "tab_content_iGtjx7": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Can I use your cosmetics during pregnancy and lactation?",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -283,7 +290,8 @@
         "tab_content_WbAizF",
         "tab_content_RCTqAG",
         "tab_content_6RNC37",
-        "tab_content_8RPMpb"
+        "tab_content_8RPMpb",
+        "tab_content_iGtjx7"
       ],
       "settings": {
         "colors": "white",
