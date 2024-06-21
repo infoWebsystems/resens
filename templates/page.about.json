@@ -85,6 +85,7 @@
       "block_order": [
         "template--14773137178694__33dd17bc-338f-4bf8-860d-044c9b3a8f5d-1686321770f98f078e-5"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "",
@@ -156,6 +157,7 @@
         "b8b1f231-a59c-4b75-9a90-a5badf60b192",
         "4e0dc6d9-55a1-44c4-9305-dfad1ed65478"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "Meet the team",
