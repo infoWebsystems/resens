@@ -311,10 +311,11 @@
     },
     "58a12040-d534-4682-b1b7-5479f4052864": {
       "type": "store-information--map",
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "Our store",
-        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
         "map_address": "80 Spadina Ave, Toronto",
         "api_key": "",
         "button_text": "Get directions",
@@ -359,6 +360,7 @@
         "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-2",
         "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-3"
       ],
+      "disabled": true,
       "settings": {
         "section_color_scheme": "white",
         "form_width": "narrow",
@@ -407,6 +409,7 @@
         "28ae0150-769d-4d17-a6c3-751dcfe6f0b2",
         "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-1"
       ],
+      "disabled": true,
       "settings": {
         "colors": "light",
         "width": 100,
