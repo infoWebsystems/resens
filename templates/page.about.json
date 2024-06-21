@@ -275,6 +275,7 @@
         "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_1215.jpg",
             "grid_image_size": "natural",
             "heading": "CO-FOUNDER OF THE BRAND <br>  OLGA HUZHYK",
             "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
@@ -285,8 +286,9 @@
         "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_1216.jpg",
             "grid_image_size": "natural",
-            "heading": "CO-FOUNDEROF THE BRAND <br> YULIIA POLIAKOVA",
+            "heading": "CO-FOUNDEROF THE BRAND  YULIIA POLIAKOVA",
             "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "",
             "button_link": "shopify:\/\/collections\/all"
