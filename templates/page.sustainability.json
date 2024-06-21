@@ -201,8 +201,8 @@
         "button_8RqbHN": {
           "type": "button",
           "settings": {
-            "button_url": "shopify:\/\/collections\/all",
-            "button_text": "Shop now",
+            "button_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/",
+            "button_text": "Calculate it with ouronline calculator",
             "color_button_text": "rgba(0,0,0,0)",
             "color_button_background": "rgba(0,0,0,0)",
             "color_hover_button_text": "rgba(0,0,0,0)",
