@@ -374,11 +374,30 @@
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949"
           }
+        },
+        "text_fwERBG": {
+          "type": "text",
+          "settings": {
+            "heading": "Couldmicroplastics get into our bloodstream?",
+            "heading_size": 30,
+            "text": "It is generally believed that once microplastics enter the human body, they will be excreted through the gastrointestinal tract and biliary tract. However, researchers at the Amsterdam University Medical Center have found the presence of microplastics in human blood.\nA recent review by the Mexico National Polytechnic Institute shows that microplastics are transported throughout the body through the bloodstream and have been found in 15 human biological components, such as spleen, liver, colon, lungs, feces, placenta, breast milk, etc. The organs with the highest levels are the colon (28.1 ppm\/g) and liver (4.6 ppm\/g).\nMicroplastics are virtually impossible to clean up once they enter the environment. It simply continues to accumulate, posing a growing threat to our ecosystem and health every day.",
+            "text_alignment": "center",
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-bottom md-min-justify-right",
+            "background_color": "#fefefe",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949"
+          }
         }
       },
       "block_order": [
         "image_D9g8Xa",
-        "text_z7qtMh"
+        "text_z7qtMh",
+        "text_fwERBG"
       ],
       "settings": {
         "color_scheme": "white",
@@ -390,7 +409,7 @@
         "height_1": "3",
         "width_2": "3",
         "height_2": "3",
-        "width_3": "3",
+        "width_3": "1",
         "height_3": "3",
         "width_4": "2",
         "height_4": "2",
