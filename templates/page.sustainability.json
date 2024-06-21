@@ -420,18 +420,69 @@
         "block_alignment": "center"
       }
     },
-    "image_image_with_text_H6K3wf": {
-      "type": "image--image-with-text",
+    "collage_builder_8mTLDK": {
+      "type": "collage-builder",
+      "blocks": {
+        "image_fEXqjT": {
+          "type": "image",
+          "settings": {
+            "heading": "Upload an image",
+            "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-top md-max-justify-left",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_eFngdt": {
+          "type": "text",
+          "settings": {
+            "heading": "The only way to reduce our dependence on oil and stop microplastic pollution is to replace conventional plastic with bio-based and biodegradable materials that leave no microplastics at any stage of the product's life cycle.",
+            "heading_size": 24,
+            "text": "\"Replacing traditional plastics with biodegradable, biobased materials and creating an efficient recycling system for this group of materials is key to a cleaner future; it enables us to reduce our dependence on oil, eliminate microplastic pollution and fight global warming,\" said Suvi Haimi, CEO and co-founder of Sulapac.",
+            "text_alignment": "left",
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "#E6E5E7",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949"
+          }
+        }
+      },
+      "block_order": [
+        "image_fEXqjT",
+        "text_eFngdt"
+      ],
       "settings": {
-        "colors": "light",
-        "text_overlapping_image": false,
-        "section-width": "full",
-        "layout": "left",
-        "text_alignment": "center",
-        "title": "The only way to reduce our dependence on oil and stop microplastic pollution is to replace conventional plastic with bio-based and biodegradable materials that leave no microplastics at any stage of the product's life cycle.",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "button_label": "",
-        "button_link": ""
+        "color_scheme": "white",
+        "title": "ALTERNATIVE TO PLASTIC",
+        "description": "",
+        "remove_spacing": true,
+        "section_width": "content",
+        "width_1": "3",
+        "height_1": "3",
+        "width_2": "1.5",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
       }
     },
     "blog_blog_posts_Rdw7XP": {
@@ -469,7 +520,7 @@
     "image_logo_list_3YXzBG",
     "text_rich_text_YQNdgz",
     "collage_builder_TCnEUA",
-    "image_image_with_text_H6K3wf",
+    "collage_builder_8mTLDK",
     "blog_blog_posts_Rdw7XP"
   ]
 }
