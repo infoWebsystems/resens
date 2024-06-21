@@ -68,7 +68,7 @@
       ],
       "settings": {
         "colors": "white",
-        "section_width": "narrow",
+        "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
