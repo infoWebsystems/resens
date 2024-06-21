@@ -334,6 +334,72 @@
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
+    },
+    "collage_builder_TCnEUA": {
+      "type": "collage-builder",
+      "blocks": {
+        "image_D9g8Xa": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/4.png",
+            "heading": "",
+            "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-top md-max-justify-left",
+            "text_color": "#262428",
+            "button_color": "rgba(0,0,0,0)",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_z7qtMh": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "heading_size": 60,
+            "text": "A study by The University of Newcastle, commissioned by WWF, found that the average person consumes about 2,000 tiny pieces of plastic every week, or about 5 grams, which is the weight of an average credit card!",
+            "text_alignment": "center",
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "#E6E5E7",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949"
+          }
+        }
+      },
+      "block_order": [
+        "image_D9g8Xa",
+        "text_z7qtMh"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "These tiny particles arealready in the oceans, among the pollen carried by bees, and in our lungs.",
+        "description": "",
+        "remove_spacing": true,
+        "section_width": "full",
+        "width_1": "2",
+        "height_1": "3",
+        "width_2": "2",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
     }
   },
   "order": [
@@ -347,6 +413,7 @@
     "text_rich_text_aiRYBj",
     "image_image_with_text_cBwR3y",
     "image_logo_list_3YXzBG",
-    "text_rich_text_YQNdgz"
+    "text_rich_text_YQNdgz",
+    "collage_builder_TCnEUA"
   ]
 }
