@@ -217,6 +217,34 @@
           "type": "tab_content",
           "settings": {
             "question": "From what age is it recommended to use the 3Action Exosome Boost line?",
+            "text": "<p>The 3Action Exosome Boost line is recommended to be used from the moment when the skin requires more intensive care and protection. Usually after 30 and later, when the skin begins to lose collagen and elastin, which leads to the appearance of wrinkles, loss of elasticity and other signs of aging. The exact age may vary depending on individual skin needs and condition. 3Action Exosome Boost contains ingredients that help stimulate the production of your own exosomes, which helps restore and maintain healthy skin, reduce the signs of aging and improve the overall appearance of your skin.<\/p>"
+          }
+        },
+        "tab_content_MfXjdH": {
+          "type": "tab_content",
+          "settings": {
+            "question": "What products should I choose to moisturize my face?",
+            "text": "<p>Soft Hyaluronic Gommage<br\/>CleanUp Hydra Toner<br\/>A-Redensity Hydra Cream<br\/>Hydro Ceramide Cream<br\/><\/p>"
+          }
+        },
+        "tab_content_WbAizF": {
+          "type": "tab_content",
+          "settings": {
+            "question": " What products to use for oily and combination skin?",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_RCTqAG": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_6RNC37": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
             "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
           }
         }
@@ -243,7 +271,11 @@
         "tab_content_ThJHtF",
         "tab_content_AxVjKM",
         "tab_content_7wCJUy",
-        "tab_content_aUMFRj"
+        "tab_content_aUMFRj",
+        "tab_content_MfXjdH",
+        "tab_content_WbAizF",
+        "tab_content_RCTqAG",
+        "tab_content_6RNC37"
       ],
       "settings": {
         "colors": "white",
