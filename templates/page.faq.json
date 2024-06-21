@@ -170,6 +170,41 @@
             "question": "What is the veil film in our deep cleansing products?",
             "text": "<p>The veil film in our deep cleansing products is formed<br\/>by interacting with air to provide gentle and delicate exfoliation, which is<br\/>especially important for sensitive skin. In this way, we physically polish the<br\/>skin only from dirt and dead cells, avoiding excessive exfoliation, which is<br\/>one of the main causes of rashes and irritation<\/p>"
           }
+        },
+        "tab_content_Rg7bfK": {
+          "type": "tab_content",
+          "settings": {
+            "question": "What is sulapac?",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_KaqMje": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_AiFmXL": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_ThJHtF": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_AxVjKM": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -187,7 +222,12 @@
         "tab_content_AGywdV",
         "tab_content_hDKtxM",
         "tab_content_9awhW8",
-        "tab_content_mR4HED"
+        "tab_content_mR4HED",
+        "tab_content_Rg7bfK",
+        "tab_content_KaqMje",
+        "tab_content_AiFmXL",
+        "tab_content_ThJHtF",
+        "tab_content_AxVjKM"
       ],
       "settings": {
         "colors": "white",
