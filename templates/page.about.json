@@ -107,66 +107,6 @@
         "block_alignment": "center"
       }
     },
-    "410e0db0-6d01-4d70-8356-6c6849fcdadc": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-0": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-1": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "b8b1f231-a59c-4b75-9a90-a5badf60b192": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "4e0dc6d9-55a1-44c4-9305-dfad1ed65478": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-0",
-        "template--14773137178694__410e0db0-6d01-4d70-8356-6c6849fcdadc-1686321924a56b1582-1",
-        "b8b1f231-a59c-4b75-9a90-a5badf60b192",
-        "4e0dc6d9-55a1-44c4-9305-dfad1ed65478"
-      ],
-      "disabled": true,
-      "settings": {
-        "colors": "white",
-        "heading": "Meet the team",
-        "description": "<p>Showcase your talented team<\/p>",
-        "columns_per_row": 4,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
-    },
     "8e700b4c-da55-45f7-9f69-8263da89d7a8": {
       "type": "template--product--info-columns",
       "blocks": {
@@ -199,7 +139,7 @@
         "colors": "white",
         "heading": "",
         "description": "",
-        "columns_per_row": 4,
+        "columns_per_row": 2,
         "text_alignment": "center",
         "vertical_alignment": "top"
       }
@@ -467,7 +407,6 @@
     "main",
     "63d055aa-9706-43b0-b3c8-49b4a2e53ef9",
     "33dd17bc-338f-4bf8-860d-044c9b3a8f5d",
-    "410e0db0-6d01-4d70-8356-6c6849fcdadc",
     "8e700b4c-da55-45f7-9f69-8263da89d7a8",
     "aad2a20b-3385-48aa-9079-393f0f4a6ad5",
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
