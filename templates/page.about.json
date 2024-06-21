@@ -175,7 +175,7 @@
           "settings": {
             "grid_image_size": "square",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p><strong>RE<\/strong> name arose at the moment of rethinking, where a<br\/>high-quality healthy product and its packaging do not harm the planet.<\/p><p>We want to convey that the planet<br\/>needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious<br\/>attitude.<\/p><p>These realizations allowed us to<br\/>explore the problem more holistically.<\/p>",
             "button_text": "Learn more",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -189,33 +189,11 @@
             "button_text": "Learn more",
             "button_link": "shopify:\/\/collections\/all"
           }
-        },
-        "63cc8e24-38f9-49c8-af78-5c6b3961c78c": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "537c5daf-2647-4d9a-9244-83f6ef7c9203": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
         }
       },
       "block_order": [
         "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-0",
-        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1",
-        "63cc8e24-38f9-49c8-af78-5c6b3961c78c",
-        "537c5daf-2647-4d9a-9244-83f6ef7c9203"
+        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1"
       ],
       "settings": {
         "colors": "white",
