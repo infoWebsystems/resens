@@ -615,6 +615,71 @@
         "block_alignment": "center"
       }
     },
+    "collage_builder_qWDyjP": {
+      "type": "collage-builder",
+      "blocks": {
+        "image_EbQdbD": {
+          "type": "image",
+          "settings": {
+            "heading": "Upload an image",
+            "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-top md-max-justify-left",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_pbNhih": {
+          "type": "text",
+          "settings": {
+            "heading": "Include text details",
+            "heading_size": 60,
+            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
+            "text_alignment": "left",
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "#E6E5E7",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949"
+          }
+        }
+      },
+      "block_order": [
+        "image_EbQdbD",
+        "text_pbNhih"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "WOOD",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "3",
+        "height_1": "3",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
     "blog_blog_posts_Rdw7XP": {
       "type": "blog--blog-posts",
       "blocks": {
@@ -653,6 +718,7 @@
     "collage_builder_8mTLDK",
     "collage_builder_FRiTe3",
     "collage_builder_EfwcTC",
+    "collage_builder_qWDyjP",
     "blog_blog_posts_Rdw7XP"
   ]
 }
