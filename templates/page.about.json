@@ -202,6 +202,34 @@
         "vertical_alignment": "top"
       }
     },
+    "text_rich_text_YTfkgU": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_NqXwyJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "ECO-RESPONCIBILITY"
+          }
+        },
+        "richtext_RfAyYF": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>THE FIRST<br\/>SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET <\/strong><\/p><p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <\/p><p>We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions. <\/p><p><strong>PURPOSE<\/strong> is to create an effective<br\/>product in packaging of the new generation, that does not increase plastic pollution<br\/>and does not pollute land and wastewater. <\/p><p><strong>VISION<\/strong> is to become a <strong>Zero Net<\/strong><br\/>company within 10 years and minimize carbon footprint in the production cycle.<br\/>We believe that we make  significant impacked on changing even of \"bad habits\" and<br\/>contribute to a sustainable future.<\/p><p> <\/p><p><strong>Re[Sens] –<br\/>your personal contribution to environmental protection<\/strong><\/p><p>38% of innovative compostable<br\/>packaging - for the first time in Ukraine<\/p><p>59% of packaging made from recyclable<br\/>materials<\/p><p>3% of packaging made of plastic, and<br\/>we plan to reduce this to 0% over the next 3 years<\/p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_NqXwyJ",
+        "richtext_RfAyYF"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "58a12040-d534-4682-b1b7-5479f4052864": {
       "type": "store-information--map",
       "settings": {
@@ -363,6 +391,7 @@
     "text_rich_text_MqgUt9",
     "image_image_with_text_overlay_mTBRHr",
     "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
+    "text_rich_text_YTfkgU",
     "58a12040-d534-4682-b1b7-5479f4052864",
     "f33a0dde-7961-4114-a8ff-6e5c2a459969",
     "16c77c63-79ef-4e35-be30-ea87725968de",
