@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "b71609ee-6355-4679-b82d-61ff492ebea0": {
@@ -8,10 +17,17 @@
           "settings": {
             "heading": "FAQs",
             "heading_size": 40,
+            "h-margin": 1,
             "button_label": "",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
-            "mobile_position": "md-max-align-center md-max-justify-center"
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#262428",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
           }
         }
       },
@@ -53,16 +69,22 @@
         "164572426857089649-0": {
           "type": "tab_content",
           "settings": {
+            "question": "What is the manufacturer country of the brand?",
+            "text": "<p>Ukraine<\/p>"
           }
         },
         "164572426857089649-1": {
           "type": "tab_content",
           "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
           }
         },
         "164572426857089649-2": {
           "type": "tab_content",
           "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
           }
         }
       },
@@ -73,212 +95,14 @@
       ],
       "settings": {
         "colors": "white",
+        "title": "Frequently asked questions",
         "faq_icon": "caret"
-      }
-    },
-    "164572438470d85add": {
-      "type": "accordion",
-      "blocks": {
-        "164572438495310fd3-0": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "164572438495310fd3-1": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "164572438495310fd3-2": {
-          "type": "tab_content",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "164572438495310fd3-0",
-        "164572438495310fd3-1",
-        "164572438495310fd3-2"
-      ],
-      "settings": {
-        "colors": "white",
-        "faq_icon": "caret"
-      }
-    },
-    "1645724424d6db0e5a": {
-      "type": "accordion",
-      "blocks": {
-        "164572442464b4aa49-0": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "164572442464b4aa49-1": {
-          "type": "tab_content",
-          "settings": {
-          }
-        },
-        "164572442464b4aa49-2": {
-          "type": "tab_content",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "164572442464b4aa49-0",
-        "164572442464b4aa49-1",
-        "164572442464b4aa49-2"
-      ],
-      "settings": {
-        "colors": "white",
-        "faq_icon": "caret"
-      }
-    },
-    "1645724501b902ee9b": {
-      "type": "text--rich-text",
-      "blocks": {
-        "bc4025b5-129f-46b8-8cae-abfa4c5f4e2a": {
-          "type": "heading",
-          "settings": {
-            "heading": "Still need assistance?"
-          }
-        },
-        "6d07b405-3374-4f17-b28d-17e359b5102b": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>Use this section to direct your customers to your contact form to further assistance<\/p>",
-            "text_size": 14
-          }
-        },
-        "f391f3ae-8651-4404-a582-ed557905006e": {
-          "type": "button",
-          "settings": {
-            "button_text": "Contact us"
-          }
-        }
-      },
-      "block_order": [
-        "bc4025b5-129f-46b8-8cae-abfa4c5f4e2a",
-        "6d07b405-3374-4f17-b28d-17e359b5102b",
-        "f391f3ae-8651-4404-a582-ed557905006e"
-      ],
-      "settings": {
-        "colors": "light",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "0a7925da-021c-4303-a883-f17246eb32f5": {
-      "type": "image--logo-list",
-      "blocks": {
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-0": {
-          "type": "logo_image",
-          "settings": {
-          }
-        },
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-1": {
-          "type": "logo_image",
-          "settings": {
-          }
-        },
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-2": {
-          "type": "logo_image",
-          "settings": {
-          }
-        },
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-3": {
-          "type": "logo_image",
-          "settings": {
-          }
-        },
-        "1d3de4d5-1cd4-4328-8ede-a844b0636851": {
-          "type": "logo_image",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-0",
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-1",
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-2",
-        "template--14795085643846__0a7925da-021c-4303-a883-f17246eb32f5-1687272726bf441aa1-3",
-        "1d3de4d5-1cd4-4328-8ede-a844b0636851"
-      ],
-      "settings": {
-        "colors": "white",
-        "width": 100,
-        "title": "Say hello via our socials"
-      }
-    },
-    "164735127315c846ad": {
-      "type": "image--gallery",
-      "blocks": {
-        "164735127391452ea4-0": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "title": "Heading",
-            "subheading": "Subheading",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": true
-          }
-        },
-        "164735127391452ea4-1": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "title": "Heading",
-            "subheading": "Subheading",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": true
-          }
-        },
-        "164735127391452ea4-2": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "title": "Heading",
-            "subheading": "Subheading",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": true
-          }
-        },
-        "93a09d38-dc11-40f6-b293-f5a8e245fc82": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "title": "Heading",
-            "subheading": "Subheading",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "164735127391452ea4-0",
-        "164735127391452ea4-1",
-        "164735127391452ea4-2",
-        "93a09d38-dc11-40f6-b293-f5a8e245fc82"
-      ],
-      "settings": {
-        "colors": "light",
-        "title": "@your_social_media",
-        "remove-spacing": true,
-        "full-width": false,
-        "section-width": "full",
-        "content-position": "hover"
       }
     }
   },
   "order": [
     "b71609ee-6355-4679-b82d-61ff492ebea0",
     "main",
-    "16457242689a58d7f3",
-    "164572438470d85add",
-    "1645724424d6db0e5a",
-    "1645724501b902ee9b",
-    "0a7925da-021c-4303-a883-f17246eb32f5",
-    "164735127315c846ad"
+    "16457242689a58d7f3"
   ]
 }
