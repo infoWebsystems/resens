@@ -114,6 +114,34 @@
             "question": "What is the cost of delivery?",
             "text": "<p>Delivery by courier in Kyiv is free. Delivery by Nova Poshta - at the<br\/>carrier's rates.<\/p>"
           }
+        },
+        "tab_content_pM778L": {
+          "type": "tab_content",
+          "settings": {
+            "question": "How do Lactobacillus in cosmetic products affect the skin?",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_mzyjVU": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_MgR8Cf": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
+        },
+        "tab_content_Rzyhmh": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Place your question or heading here",
+            "text": "<p>Here you can place an explanation or answer to the question.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -123,7 +151,11 @@
         "tab_content_NW89xr",
         "tab_content_NzLrAw",
         "tab_content_KBDHFd",
-        "tab_content_eJaB9R"
+        "tab_content_eJaB9R",
+        "tab_content_pM778L",
+        "tab_content_mzyjVU",
+        "tab_content_MgR8Cf",
+        "tab_content_Rzyhmh"
       ],
       "settings": {
         "colors": "white",
