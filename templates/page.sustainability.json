@@ -138,6 +138,27 @@
         "mute": false,
         "video_overlay_opacity": 50
       }
+    },
+    "text_rich_text_9EGRrh": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_W3eg7i": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We are a PDO (purpose-driven organization) company in which the ORGANIZATIONAL purpose is the reason for our existence. To put it another way, our purpose answers the question of WHY the company was born. We believe that our activities should benefit everyone, both people and the planet, making them our ultimate beneficiaries. That is, we are focused on impact that generates value that supports the global goals of society and the economy. <br\/>We make decisions that support this goal, even if it may reduce profits or require additional efforts to implement. For us, the financial goal is an intermediate one, as opposed to BAU (business as usual), where profit maximization remains the main goal.<br\/><\/p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_W3eg7i"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
     }
   },
   "order": [
@@ -145,6 +166,7 @@
     "text_rich_text_KRj3Vw",
     "text_rich_text_bngeLP",
     "image_logo_list_VTEpxB",
-    "video_video_7GpWej"
+    "video_video_7GpWej",
+    "text_rich_text_9EGRrh"
   ]
 }
