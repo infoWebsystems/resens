@@ -226,6 +226,34 @@
         "text_size_mobile": 22,
         "text_position_mobile": "left"
       }
+    },
+    "text_rich_text_aiRYBj": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_YcMViT": {
+          "type": "heading",
+          "settings": {
+            "heading": "ECO-RESPONSIBLE PACKAGING"
+          }
+        },
+        "richtext_EiWYGj": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.<\/p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_YcMViT",
+        "richtext_EiWYGj"
+      ],
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
     }
   },
   "order": [
@@ -235,6 +263,7 @@
     "image_logo_list_VTEpxB",
     "video_video_7GpWej",
     "text_rich_text_9EGRrh",
-    "animated_text_3TzTia"
+    "animated_text_3TzTia",
+    "text_rich_text_aiRYBj"
   ]
 }
