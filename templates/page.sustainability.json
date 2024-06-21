@@ -290,12 +290,14 @@
         "logo_image_DfJehL": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/New_Project3124.jpg",
             "link": ""
           }
         },
         "logo_image_4ct9yK": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/New_Project1.jpg",
             "link": ""
           }
         }
