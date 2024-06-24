@@ -816,9 +816,9 @@
         "text_4fiYmn": {
           "type": "text",
           "settings": {
-            "heading": "Include text details",
-            "heading_size": 60,
-            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
+            "heading": "\"Mama, plant a tree\"",
+            "heading_size": 20,
+            "text": "- is the first tree planting project in Ukraine supported by the United Nations. Founded by a group of Ukrainian mothers, the project aims to reduce CO2 emissions and support environmental initiatives.",
             "text_alignment": "left",
             "button_label": "Shop now",
             "url": "shopify:\/\/collections\/all",
