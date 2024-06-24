@@ -553,6 +553,24 @@
     "collage_builder_EfwcTC": {
       "type": "collage-builder",
       "blocks": {
+        "text_pr4QDa": {
+          "type": "text",
+          "settings": {
+            "heading": "Mycelium is not only a natural but also a highly sustainable alternative to traditional plastic packaging.",
+            "heading_size": 19,
+            "text": "The mycelium used for our packaging was also chosen to reduce our environmental impact. It plays an important role in our strategy, as it minimizes our environmental footprint.",
+            "text_alignment": "left",
+            "button_label": "Read more",
+            "url": "shopify:\/\/blogs\/news\/mycelium",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "#e6e5e7",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949"
+          }
+        },
         "image_UhX9tF": {
           "type": "image",
           "settings": {
@@ -570,29 +588,11 @@
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
-        },
-        "text_pr4QDa": {
-          "type": "text",
-          "settings": {
-            "heading": "Include text details",
-            "heading_size": 60,
-            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
-            "text_alignment": "left",
-            "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
-            "desktop_position": "md-min-align-center md-min-justify-left",
-            "background_color": "#e6e5e7",
-            "text_color": "#262428",
-            "button_color": "#e6e5e7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#d4d3d4",
-            "button_hover_background_color": "#494949"
-          }
         }
       },
       "block_order": [
-        "image_UhX9tF",
-        "text_pr4QDa"
+        "text_pr4QDa",
+        "image_UhX9tF"
       ],
       "settings": {
         "color_scheme": "white",
