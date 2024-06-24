@@ -892,7 +892,7 @@
         "colors": "white",
         "title": "From the blog",
         "richtext": "",
-        "blog_show_date": true,
+        "blog_show_date": false,
         "post_limit": 4
       }
     }
