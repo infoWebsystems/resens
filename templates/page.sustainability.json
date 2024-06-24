@@ -875,6 +875,23 @@
         "block_alignment": "center"
       }
     },
+    "advanced_layout_hero_L4EeEN": {
+      "type": "advanced-layout--hero",
+      "settings": {
+        "homepage-hero-featured-content": "homepage-hero-image-selection",
+        "home-page-hero-image": "shopify:\/\/shop_images\/6.jpg",
+        "image_overlay_opacity": 0,
+        "homepage-hero-image-heading": "",
+        "homepage-hero-image-description": "",
+        "text-color": "#fff",
+        "homepage-hero-image-button-label": "",
+        "homepage-hero-image-link": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "homepage-hero-video-autoplay": true,
+        "homepage-hero-video-loop": true,
+        "homepage-hero-video-mute": false
+      }
+    },
     "blog_blog_posts_Rdw7XP": {
       "type": "blog--blog-posts",
       "blocks": {
@@ -917,6 +934,7 @@
     "collage_builder_bt4Kg4",
     "collage_builder_UhgdPM",
     "collage_builder_xTegen",
+    "advanced_layout_hero_L4EeEN",
     "blog_blog_posts_Rdw7XP"
   ]
 }
