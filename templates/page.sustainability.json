@@ -748,6 +748,24 @@
     "collage_builder_UhgdPM": {
       "type": "collage-builder",
       "blocks": {
+        "text_GLfQeh": {
+          "type": "text",
+          "settings": {
+            "heading": "Flowering paper embodies the idea of circularity and responsibility towards nature",
+            "heading_size": 20,
+            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
+            "text_alignment": "left",
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "#e6e5e7",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949"
+          }
+        },
         "image_NkGpdF": {
           "type": "image",
           "settings": {
@@ -765,29 +783,11 @@
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
-        },
-        "text_GLfQeh": {
-          "type": "text",
-          "settings": {
-            "heading": "Include text details",
-            "heading_size": 60,
-            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
-            "text_alignment": "left",
-            "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
-            "desktop_position": "md-min-align-center md-min-justify-left",
-            "background_color": "#e6e5e7",
-            "text_color": "#262428",
-            "button_color": "#e6e5e7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#d4d3d4",
-            "button_hover_background_color": "#494949"
-          }
         }
       },
       "block_order": [
-        "image_NkGpdF",
-        "text_GLfQeh"
+        "text_GLfQeh",
+        "image_NkGpdF"
       ],
       "settings": {
         "color_scheme": "white",
