@@ -755,7 +755,7 @@
             "heading_size": 20,
             "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
             "text_alignment": "left",
-            "button_label": "Shop now",
+            "button_label": "Read more",
             "url": "shopify:\/\/blogs\/news\/flowering-paper",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
