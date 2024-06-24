@@ -534,7 +534,7 @@
         "title": "Aluminum",
         "description": "",
         "remove_spacing": true,
-        "section_width": "full",
+        "section_width": "content",
         "width_1": "1.5",
         "height_1": "3",
         "width_2": "3",
