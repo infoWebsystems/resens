@@ -813,24 +813,6 @@
     "collage_builder_xTegen": {
       "type": "collage-builder",
       "blocks": {
-        "image_hYzkkL": {
-          "type": "image",
-          "settings": {
-            "heading": "Upload an image",
-            "heading_size": 30,
-            "h-margin": 1,
-            "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
-            "desktop_position": "md-min-align-top md-min-justify-left",
-            "mobile_position": "md-max-align-top md-max-justify-left",
-            "text_color": "#262428",
-            "button_color": "#e6e5e7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#d4d3d4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
-          }
-        },
         "text_4fiYmn": {
           "type": "text",
           "settings": {
@@ -848,21 +830,39 @@
             "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949"
           }
+        },
+        "image_hYzkkL": {
+          "type": "image",
+          "settings": {
+            "heading": "Upload an image",
+            "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-top md-min-justify-left",
+            "mobile_position": "md-max-align-top md-max-justify-left",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
         }
       },
       "block_order": [
-        "image_hYzkkL",
-        "text_4fiYmn"
+        "text_4fiYmn",
+        "image_hYzkkL"
       ],
       "settings": {
         "color_scheme": "white",
         "title": "TREES PLANTING",
         "description": "",
-        "remove_spacing": false,
+        "remove_spacing": true,
         "section_width": "content",
         "width_1": "3",
         "height_1": "3",
-        "width_2": "3",
+        "width_2": "1.5",
         "height_2": "3",
         "width_3": "3",
         "height_3": "3",
