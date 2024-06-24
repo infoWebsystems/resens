@@ -704,11 +704,11 @@
         "text_7VF6HK": {
           "type": "text",
           "settings": {
-            "heading": "Include text details",
-            "heading_size": 60,
-            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
+            "heading": "Massive uncontrolled deforestation is a serious problem in the modern world.",
+            "heading_size": 20,
+            "text": "This process leads to the loss of the natural environment, species extinction, and the destruction of biodiversity.",
             "text_alignment": "left",
-            "button_label": "Shop now",
+            "button_label": "Read more",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
