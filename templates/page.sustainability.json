@@ -880,7 +880,7 @@
       "settings": {
         "homepage-hero-featured-content": "homepage-hero-image-selection",
         "home-page-hero-image": "shopify:\/\/shop_images\/6.jpg",
-        "image_overlay_opacity": 25,
+        "image_overlay_opacity": 50,
         "homepage-hero-image-heading": "Greenwashing VS Sustainable",
         "homepage-hero-image-description": "",
         "text-color": "#fff",
