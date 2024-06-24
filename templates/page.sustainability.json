@@ -880,13 +880,13 @@
       "settings": {
         "homepage-hero-featured-content": "homepage-hero-image-selection",
         "home-page-hero-image": "shopify:\/\/shop_images\/6.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 25,
         "homepage-hero-image-heading": "",
         "homepage-hero-image-description": "",
         "text-color": "#fff",
         "homepage-hero-image-button-label": "",
         "homepage-hero-image-link": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "",
         "homepage-hero-video-autoplay": true,
         "homepage-hero-video-loop": true,
         "homepage-hero-video-mute": false
