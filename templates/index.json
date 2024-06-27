@@ -81,8 +81,7 @@
         "template--16567602479262__b4aa8931-1a4b-45b0-be73-a34e8c206af7-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lines-3action-exosome-boost",
-            "collection_img": "shopify:\/\/shop_images\/DSC03658.jpg",
+            "collection": "lines-cleanup",
             "subheading": "By the",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
