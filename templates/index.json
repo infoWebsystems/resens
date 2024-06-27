@@ -289,11 +289,11 @@
       "settings": {
         "rows": 2,
         "grid-desktop": 4,
-        "grid-mobile": "2",
+        "grid-mobile": "1",
         "colors": "white",
         "title": "BEST SELLINGS",
         "richtext": "",
-        "collection": "lines-cleanup",
+        "collection": "bestselling",
         "show_view_all": false
       }
     },
