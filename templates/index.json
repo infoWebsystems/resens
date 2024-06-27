@@ -35,35 +35,10 @@
             "button-background": "#242424",
             "hover-button-background": "#9f9f9f"
           }
-        },
-        "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0": {
-          "type": "image",
-          "settings": {
-            "title": "Reveal the secret of cellular longevity",
-            "text": "",
-            "first_button_label": "Shop now",
-            "first_button_link": "shopify:\/\/collections\/all",
-            "second_button_label": "",
-            "second_button_link": "",
-            "image": "shopify:\/\/shop_images\/DSC03624.jpg",
-            "desktop-caption-heading-size": 64,
-            "desktop-caption-body-text-size": 18,
-            "text_position": "center_left",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 22,
-            "caption-text": "#ffffff",
-            "button-text": "#070606",
-            "button-background": "#e7dadf",
-            "hover-button-background": "#d6e2ff"
-          }
         }
       },
       "block_order": [
-        "image_iQ7EqU",
-        "template--14773137113158__660cda54-421a-4cdc-8a22-ae5c8c753ad5-16820832625ace0e3a-0"
+        "image_iQ7EqU"
       ],
       "custom_css": [
 
