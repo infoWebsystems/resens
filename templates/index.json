@@ -499,18 +499,15 @@
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949": {
       "type": "blog--blog-posts",
       "blocks": {
-        "46fa8d12-7387-4c7c-8145-c62ba65f45c5": {
-          "type": "article",
+        "blog_LcPCgV": {
+          "type": "blog",
           "settings": {
-            "blog_post_1": "news\/we-give-away-a-mild-eye-and-lip-makeup-remover",
-            "blog_post_2": "news\/what-is-the-proteome-and-why-will-protecting-it-stop-the-skin-from-aging",
-            "blog_post_3": "news\/we-give-away-a-mild-eye-and-lip-makeup-remover",
-            "blog_post_4": ""
+            "blog": "news"
           }
         }
       },
       "block_order": [
-        "46fa8d12-7387-4c7c-8145-c62ba65f45c5"
+        "blog_LcPCgV"
       ],
       "settings": {
         "colors": "white",
