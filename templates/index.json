@@ -82,6 +82,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "lines-cleanup",
+            "collection_img": "shopify:\/\/shop_images\/DSC03694.jpg",
             "subheading": "By the",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
@@ -93,7 +94,8 @@
           "type": "featured_collection",
           "settings": {
             "collection": "peeling",
-            "subheading": "Set of products",
+            "collection_img": "shopify:\/\/shop_images\/DSC03658.jpg",
+            "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
             "overlay_font_color": "#262428",
