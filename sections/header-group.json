@@ -39,7 +39,7 @@
         "content"
       ],
       "settings": {
-        "name_button": "Shop",
+        "name_button": "",
         "name_search": "Search",
         "name_wishlist": "Wishlist",
         "name_cart": "Cart",
