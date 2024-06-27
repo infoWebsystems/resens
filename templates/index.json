@@ -83,7 +83,7 @@
           "settings": {
             "collection": "lines-cleanup",
             "collection_img": "shopify:\/\/shop_images\/DSC03694.jpg",
-            "subheading": "By the",
+            "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
             "overlay_font_color": "#262428",
