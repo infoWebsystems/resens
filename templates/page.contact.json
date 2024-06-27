@@ -85,6 +85,7 @@
         "9f90cfb3-0430-4b6c-90df-8309138e865a",
         "c1f278da-fb1a-46ad-9d1f-1e169afa696c"
       ],
+      "disabled": true,
       "settings": {
         "colors": "light",
         "section_width": "narrow",
