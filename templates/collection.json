@@ -13,7 +13,7 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "{{ collection.image }}",
+        "image": "shopify:\/\/shop_images\/DSC0362411.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
