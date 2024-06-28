@@ -468,6 +468,7 @@
         "menu_item_TnMHJH",
         "menu_item_Vq9pL7"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "min_height": "50vw",
@@ -503,17 +504,19 @@
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949": {
       "type": "blog--blog-posts",
       "blocks": {
-        "blog_LcPCgV": {
-          "type": "blog",
+        "article_ekRVbW": {
+          "type": "article",
           "settings": {
-            "blog": "news"
+            "blog_post_1": "news\/greenwashing-vs-sustainable",
+            "blog_post_2": "",
+            "blog_post_3": "",
+            "blog_post_4": ""
           }
         }
       },
       "block_order": [
-        "blog_LcPCgV"
+        "article_ekRVbW"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "title": "FROM THE BLOG",
