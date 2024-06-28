@@ -116,7 +116,7 @@
         "shipping_discount_title": "Знижка на доставку",
         "shipping_pending_message": "Ще не доступний",
         "shipping_policy_link": "Вартість доставки",
-        "taxes_label": "податки",
+        "taxes_label": "Податки",
         "estimated_taxes_label": "Розрахункові податки",
         "information_estimated_taxes_label": "Податки (приблизно)",
         "estimated_taxes_finalization_tooltip_content": "Остаточний податок і загальну суму буде підтверджено електронною поштою або текстовим повідомленням після розміщення замовлення.",
