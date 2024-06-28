@@ -3330,7 +3330,8 @@
       "older_post": "Старіший пост",
       "newer_post": "Новіший пост",
       "tags": "Теги",
-      "read_more": "Читати далі"
+      "read_more": "Читати ще",
+      "comment_meta_html": "{{ author }} в {{ date }}"
     },
     "comments": {
       "title": "Залишити коментар",
