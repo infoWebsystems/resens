@@ -45,7 +45,7 @@
   .image-with-text-overlay-wrapper
     .size-small
     .homepage-featured-content-wrapper {
-    min-height: 30vw;
+    height: 420px;
   }
   .image-with-text-overlay-wrapper
     .size-medium
