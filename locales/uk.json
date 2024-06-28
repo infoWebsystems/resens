@@ -3363,7 +3363,7 @@
       "taxes_included_but_shipping_at_checkout": "Податок входить в вартість доставки і розраховується під час оформлення замовлення",
       "taxes_included_and_shipping_policy_html": "З податком. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Вартість доставки<\/a> розраховується при оформленні замовлення.",
       "update": "Оновити кошик",
-      "checkout": "Оформлення замовлення",
+      "checkout": "Оформити замовлення",
       "empty": "Ваш кошик зараз порожній.",
       "continue_browsing_html": "Продовжуйте переглядати <a href=\"\/collections\/all\">тут<\/a> .",
       "close_cart": "Закрити кошик",
