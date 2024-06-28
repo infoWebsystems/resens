@@ -145,3 +145,7 @@ h6 {
 .slideshow-title-container {
   width: 70% !important;
 }
+
+.drawer#NavDrawer a {
+  font-weight: 400 !important;
+}
