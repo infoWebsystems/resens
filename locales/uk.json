@@ -3029,7 +3029,7 @@
     },
     "orders": {
       "title": "Історія Замовлень",
-      "order_number": "порядок",
+      "order_number": "Замовлення",
       "date": "Дата",
       "payment_status": "Статус платежу",
       "fulfillment_status": "Статус виконання",
