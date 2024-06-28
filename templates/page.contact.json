@@ -184,8 +184,7 @@
         "map_address": "7 Krakivska, office 2, Kyiv, Ukraine",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
-        "layout": "right",
-        "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"
+        "layout": "right"
       }
     }
   },
