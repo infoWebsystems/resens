@@ -3360,7 +3360,7 @@
       "subtotal": "Проміжний підсумок",
       "taxes_and_shipping_at_checkout": "Податки та вартість доставки розраховуються під час оформлення замовлення",
       "taxes_and_shipping_policy_at_checkout_html": "Податки та <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">вартість доставки<\/a> розраховуються під час оформлення замовлення",
-      "taxes_included_but_shipping_at_checkout": "Податок включено, вартість доставки розраховується під час оформлення замовлення",
+      "taxes_included_but_shipping_at_checkout": "Податок входить в вартість доставки і розраховується під час оформлення замовлення",
       "taxes_included_and_shipping_policy_html": "З податком. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Вартість доставки<\/a> розраховується при оформленні замовлення.",
       "update": "Оновити кошик",
       "checkout": "Перевірити",
