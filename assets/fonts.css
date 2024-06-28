@@ -141,3 +141,7 @@ h6 {
   letter-spacing: 0.17em !important;
   text-transform: uppercase !important;
 }
+
+.slideshow-title-container {
+  width: 70% !important;
+}
