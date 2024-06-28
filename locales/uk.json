@@ -3367,7 +3367,8 @@
       "empty": "Ваш кошик зараз порожній.",
       "continue_browsing_html": "Продовжуйте переглядати <a href=\"\/collections\/all\">тут<\/a> .",
       "close_cart": "Закрити кошик",
-      "savings_html": "Ви економите {{ price }}"
+      "savings_html": "Ви економите {{ price }}",
+      "see_more": "Переглянути ще"
     },
     "label": {
       "product": "Продукт",
