@@ -313,7 +313,7 @@
         "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-image-1": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/collection-of-aluminum-products-packaging_2.png",
+            "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
             "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 30,
             "h-margin": 1,
@@ -321,7 +321,7 @@
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#fff",
+            "text_color": "#000000",
             "button_color": "#e6e5e7",
             "button_background_color": "#262428",
             "button_hover_color": "#d4d3d4",
