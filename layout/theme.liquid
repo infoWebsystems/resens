@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
   {%- endunless -%}
 
+  <link rel="preload" href="{{ 'fonts.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="{{ 'theme.min.css' | asset_url }}" as="style" />
   <link rel="preload" href="{{ 'swiper.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <link rel="preload" href="{{ 'photoswipe.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
