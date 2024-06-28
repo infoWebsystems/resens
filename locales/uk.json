@@ -658,10 +658,11 @@
           "weekdays_abbreviation": {
             "monday": "пн",
             "tuesday": "вт",
-            "wednesday": "ми",
+            "wednesday": "ср",
             "thursday": "чт",
-            "friday": "О",
-            "sunday": "Нд"
+            "friday": "пт",
+            "sunday": "Нд",
+            "saturday": "сб"
           },
           "months": {
             "january": "січня",
