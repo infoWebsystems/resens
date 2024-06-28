@@ -91,7 +91,7 @@
         "return_restocking_fee_label": "Плата за поновлення запасів",
         "return_shipping_fee_label": "Зворотня доставка",
         "free_shipping_discount_label": "Безкоштовна доставка",
-        "applied_free_shipping_discount_label": "Прикладний",
+        "applied_free_shipping_discount_label": "Примінений",
         "apply_discount_button_label": "Застосувати",
         "applied_discount_message": "%{amount} знижки на загальну вартість замовлення",
         "discount_has_been_applied": "Знижку застосовано",
