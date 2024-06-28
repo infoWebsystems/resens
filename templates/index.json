@@ -433,13 +433,40 @@
             "menu_item_link": "shopify:\/\/collections\/lines-a-redensity",
             "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
           }
+        },
+        "menu_item_MmnmtT": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_TnMHJH": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_Vq9pL7": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
         }
       },
       "block_order": [
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-1",
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2",
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3",
-        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603"
+        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603",
+        "menu_item_MmnmtT",
+        "menu_item_TnMHJH",
+        "menu_item_Vq9pL7"
       ],
       "settings": {
         "colors": "white",
