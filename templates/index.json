@@ -513,6 +513,7 @@
       "block_order": [
         "blog_LcPCgV"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "title": "FROM THE BLOG",
