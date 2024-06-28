@@ -314,14 +314,14 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
-            "heading": "",
+            "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "",
             "url": "",
-            "desktop_position": "md-min-align-top md-min-justify-left",
-            "mobile_position": "md-max-align-top md-max-justify-left",
-            "text_color": "#262428",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#000000",
             "button_color": "#e6e5e7",
             "button_background_color": "#262428",
             "button_hover_color": "#d4d3d4",
@@ -433,13 +433,40 @@
             "menu_item_link": "shopify:\/\/collections\/lines-a-redensity",
             "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
           }
+        },
+        "menu_item_MmnmtT": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_TnMHJH": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_Vq9pL7": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
         }
       },
       "block_order": [
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-1",
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2",
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3",
-        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603"
+        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603",
+        "menu_item_MmnmtT",
+        "menu_item_TnMHJH",
+        "menu_item_Vq9pL7"
       ],
       "disabled": true,
       "settings": {
@@ -477,15 +504,18 @@
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949": {
       "type": "blog--blog-posts",
       "blocks": {
-        "blog_LcPCgV": {
-          "type": "blog",
+        "article_ekRVbW": {
+          "type": "article",
           "settings": {
-            "blog": "news"
+            "blog_post_1": "news\/greenwashing-vs-sustainable",
+            "blog_post_2": "",
+            "blog_post_3": "",
+            "blog_post_4": ""
           }
         }
       },
       "block_order": [
-        "blog_LcPCgV"
+        "article_ekRVbW"
       ],
       "disabled": true,
       "settings": {
@@ -493,7 +523,7 @@
         "title": "FROM THE BLOG",
         "richtext": "",
         "blog_show_date": true,
-        "post_limit": 3
+        "post_limit": 1
       }
     },
     "2702beb3-827b-44e4-991e-9b79a8ccc045": {
@@ -505,8 +535,7 @@
         "map_address": "7 Krakivska, office 2, Kyiv, Ukraine",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
-        "layout": "right",
-        "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"
+        "layout": "right"
       }
     }
   },
