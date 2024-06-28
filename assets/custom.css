@@ -25,3 +25,7 @@
   color: #000000 !important;
   padding: 16px !important;
 }
+
+.homepage-section-btn:hover {
+  background: #dfe3e8 !important;
+}
