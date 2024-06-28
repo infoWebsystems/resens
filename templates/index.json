@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
@@ -141,16 +132,16 @@
     "35b28867-77fd-4573-8212-101b3b8e2245": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC03349.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_1627.jpg",
         "image_height": "50vw",
         "bg_image_overlay_opacity": 35,
         "parallax": false,
-        "title": "Professional skin  cleansing kit",
-        "text": "Add a large image with text overlay to give focus to your chosen product, collection, or blog post",
+        "title": "Microbiome-friendly skincare strategy for sensitive skin",
+        "text": "",
         "colors": "light",
-        "textPosition": "right",
+        "textPosition": "left",
         "textAlignment": "left",
-        "heading--text-size": 64,
+        "heading--text-size": 26,
         "text--text-size": 20,
         "link": "shopify:\/\/collections",
         "button_label": "Shop now",
@@ -275,6 +266,7 @@
     },
     "cf965c26-6ea8-499a-8a05-a4e350ede58a": {
       "type": "image--image-with-text",
+      "disabled": true,
       "settings": {
         "colors": "white",
         "image": "shopify:\/\/shop_images\/Image_with_text_2890x_b42898d8-c2d8-4ac4-ad68-7a6dbe559d53.webp",
@@ -294,9 +286,9 @@
         "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-text-1": {
           "type": "text",
           "settings": {
-            "heading": "DISCOVER OUR BRAND",
+            "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 28,
-            "text": "The MIDI Introductory Kit contains mini versions of the products, which are ideal for the first acquaintance with Esthederm Institute, or as a universal travel kit that is very convenient to take with you on a trip.",
+            "text": "",
             "text_alignment": "left",
             "button_label": "",
             "url": "",
@@ -312,7 +304,7 @@
         "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-image-1": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/collection-of-aluminum-products-packaging_2.png",
+            "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
             "heading": "",
             "heading_size": 30,
             "h-margin": 1,
@@ -331,11 +323,11 @@
         "da5b3af5-5d95-44e2-b098-f4b3a39403f9": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/R211A-RedensityHydraCream.jpg",
+            "desktop_image": "shopify:\/\/shop_images\/IMG_1632.jpg",
             "heading": "",
             "heading_size": 16,
             "h-margin": 1,
-            "button_label": "FOR MORNING ROUTINE",
+            "button_label": "CLEANSING",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
@@ -350,11 +342,11 @@
         "9cf4de3c-89e3-446e-b378-f839c160f721": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/R2423ActionExosomeBoostEyeCream1.jpg",
+            "desktop_image": "shopify:\/\/shop_images\/IMG_1631.jpg",
             "heading": "",
             "heading_size": 38,
             "h-margin": 1,
-            "button_label": "FOR DAILY ROUTINE",
+            "button_label": "CARE",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
@@ -440,6 +432,7 @@
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3",
         "3e6623f9-7a43-41d7-ab12-f7e4bae5e603"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "min_height": "50vw",
@@ -485,6 +478,7 @@
       "block_order": [
         "blog_LcPCgV"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "title": "FROM THE BLOG",
@@ -497,10 +491,10 @@
       "type": "store-information--map",
       "settings": {
         "colors": "white",
-        "heading": "LOCAL PICKUP AVAILABLE",
-        "address": "<p>Ottawa, 151 O'Connor Street<br\/>Mon - Fri, 8:00am - 6:00pm<br\/>Sat - Sun, 9:00am - 5:00pm<\/p>",
-        "map_address": "80 Spadina Ave, Toronto",
-        "api_key": "AIzaSyBddfh5mE5igBpXjvYJd5AsFevwk4P7FgM",
+        "heading": "Re[Sens]",
+        "address": "<p>Ivana Kavaleridze Street, 1\/43, Kyiv, 02000, Ukraine<\/p>",
+        "map_address": "Ivana Kavaleridze Street, 1\/43, Kyiv, 02000, Ukraine",
+        "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
         "layout": "right",
         "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"

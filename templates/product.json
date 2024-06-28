@@ -50,6 +50,7 @@
         },
         "a7717974-ed85-4cde-80ef-4751178acf57": {
           "type": "text-with-icon",
+          "disabled": true,
           "settings": {
             "icon": "truck",
             "text": "Text with icon",
@@ -218,6 +219,7 @@
     },
     "image-with-text-00": {
       "type": "image--image-with-text",
+      "disabled": true,
       "settings": {
         "colors": "light",
         "image": "shopify:\/\/shop_images\/front-view-arrangement-of-skin-care-cream_1.png",
