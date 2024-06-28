@@ -3155,7 +3155,7 @@
       "on_sale_from_html": "У продажу від {{ price }}",
       "sale": "Розпродаж",
       "unavailable": "Недоступний",
-      "compare_at": "Порівняйте при",
+      "compare_at": "Ціна для порівняння",
       "quantity": "Кількість",
       "add_to_cart": "Додати в кошик",
       "view_options": "Переглянути параметри",
