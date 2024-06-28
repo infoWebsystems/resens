@@ -3038,7 +3038,7 @@
     },
     "order": {
       "title": "Замовити {{ name }}",
-      "date": "Розміщено {{ date }}",
+      "date": "Запланова на {{ date }}",
       "cancelled": "Замовлення скасовано {{ date }}",
       "cancelled_reason": "Причина: {{ reason }}",
       "billing_address": "Платіжна адреса",
@@ -3047,13 +3047,14 @@
       "fulfillment_status": "Статус виконання",
       "discount": "Знижка",
       "shipping": "Доставка",
-      "tax": "податок",
+      "tax": "Податок",
       "product": "Продукт",
       "price": "Ціна",
       "quantity": "Кількість",
       "total": "Всього",
       "fulfilled_at_html": "Виконано {{ date }}",
-      "subtotal": "Проміжний підсумок"
+      "subtotal": "Проміжний підсумок",
+      "sku": "SKU"
     },
     "recover_password": {
       "title": "Скинути пароль",
