@@ -109,7 +109,7 @@
         "shipping_label": "Доставка",
         "pickup_label": "Самовивіз в магазині",
         "no_pickup_location": "Самовивіз недоступний для цього замовлення. Виберіть інший спосіб доставки.",
-        "tip_label": "Порада",
+        "tip_label": "Підказка",
         "calculating_shipping": "Розрахунок…",
         "calculating": "Розрахунок…",
         "shipping_default_value": "Розраховується на наступному кроці",
