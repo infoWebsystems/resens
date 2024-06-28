@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
@@ -305,14 +314,14 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
-            "heading": "",
+            "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "",
             "url": "",
-            "desktop_position": "md-min-align-top md-min-justify-left",
-            "mobile_position": "md-max-align-top md-max-justify-left",
-            "text_color": "#262428",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#000000",
             "button_color": "#e6e5e7",
             "button_background_color": "#262428",
             "button_hover_color": "#d4d3d4",
@@ -328,7 +337,7 @@
             "heading_size": 16,
             "h-margin": 1,
             "button_label": "CLEANSING",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify:\/\/collections\/cleansing-1",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -347,7 +356,7 @@
             "heading_size": 38,
             "h-margin": 1,
             "button_label": "CARE",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify:\/\/collections\/care",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -424,13 +433,40 @@
             "menu_item_link": "shopify:\/\/collections\/lines-a-redensity",
             "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
           }
+        },
+        "menu_item_MmnmtT": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_TnMHJH": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_Vq9pL7": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
         }
       },
       "block_order": [
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-1",
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2",
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3",
-        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603"
+        "3e6623f9-7a43-41d7-ab12-f7e4bae5e603",
+        "menu_item_MmnmtT",
+        "menu_item_TnMHJH",
+        "menu_item_Vq9pL7"
       ],
       "disabled": true,
       "settings": {
@@ -468,15 +504,18 @@
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949": {
       "type": "blog--blog-posts",
       "blocks": {
-        "blog_LcPCgV": {
-          "type": "blog",
+        "article_ekRVbW": {
+          "type": "article",
           "settings": {
-            "blog": "news"
+            "blog_post_1": "news\/greenwashing-vs-sustainable",
+            "blog_post_2": "",
+            "blog_post_3": "",
+            "blog_post_4": ""
           }
         }
       },
       "block_order": [
-        "blog_LcPCgV"
+        "article_ekRVbW"
       ],
       "disabled": true,
       "settings": {
@@ -484,20 +523,19 @@
         "title": "FROM THE BLOG",
         "richtext": "",
         "blog_show_date": true,
-        "post_limit": 3
+        "post_limit": 1
       }
     },
     "2702beb3-827b-44e4-991e-9b79a8ccc045": {
       "type": "store-information--map",
       "settings": {
         "colors": "white",
-        "heading": "Re[Sens]",
-        "address": "<p>Ivana Kavaleridze Street, 1\/43, Kyiv, 02000, Ukraine<\/p>",
-        "map_address": "Ivana Kavaleridze Street, 1\/43, Kyiv, 02000, Ukraine",
+        "heading": "Our Store",
+        "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine<\/p><p>Mon-Fri from 09:00 to 18:00<\/p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com<\/span><\/a><\/p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68<\/span><\/a><\/p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03<\/span><\/a><\/p>",
+        "map_address": "7 Krakivska, office 2, Kyiv, Ukraine",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
-        "layout": "right",
-        "background_image": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.04_1.png"
+        "layout": "right"
       }
     }
   },
