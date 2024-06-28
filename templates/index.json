@@ -295,7 +295,7 @@
         "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-text-1": {
           "type": "text",
           "settings": {
-            "heading": "",
+            "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 28,
             "text": "",
             "text_alignment": "left",
@@ -337,7 +337,7 @@
             "heading_size": 16,
             "h-margin": 1,
             "button_label": "CLEANSING",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify:\/\/collections\/cleansing-1",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -356,7 +356,7 @@
             "heading_size": 38,
             "h-margin": 1,
             "button_label": "CARE",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify:\/\/collections\/care",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -530,7 +530,7 @@
       "type": "store-information--map",
       "settings": {
         "colors": "white",
-        "heading": "LOCAL PICKUP AVAILABLE",
+        "heading": "Our Store",
         "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine<\/p><p>Mon-Fri from 09:00 to 18:00<\/p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com<\/span><\/a><\/p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68<\/span><\/a><\/p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03<\/span><\/a><\/p>",
         "map_address": "7 Krakivska, office 2, Kyiv, Ukraine",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",

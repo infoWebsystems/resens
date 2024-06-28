@@ -162,10 +162,6 @@
 												{% if section.settings.content-position == 'below-image' and block.settings.collection != blank %}
 													</a>
 												{% endif %}
-
-												{% if block.settings.overlay-btn-text != blank and block.settings.collection != blank %}
-													<a href="{{ collection.url }}" class="homepage-featured-box-btn">{{ block.settings.overlay-btn-text }}</a>
-												{% endif %}
 											</div>
 
 										{% if section.settings.content-position != 'below-image' and block.settings.overlay-btn-text == blank and block.settings.collection != blank %}

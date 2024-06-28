@@ -64,7 +64,6 @@ Testing Cypress integration
       <li>
         <a href="{{ routes.search_url }}" class="search-button" aria-label="{{ 'layout.header.search' | t }}">
             {% render 'theme-icon' with icon: 'search', iconSize: 24, iconClasses: 'fa-lg' %}
-            {% if section.settings.label-enable %}<span class="header--supporting-text">{{ 'layout.header.search' | t }}</span>{% endif %}
         </a>
       </li>
     {% endif %}
@@ -74,14 +73,12 @@ Testing Cypress integration
         <li>
           <a href="{{ routes.account_url }}" title="{{ 'layout.customer.account' | t }}" class="account-button">
               {% render 'theme-icon' with icon: 'user', iconClasses: 'fa-lg' %}
-              {% if section.settings.label-enable %}<span class="header--supporting-text">{{ 'layout.header.account' | t }}</span>{% endif %}
           </a>
         </li>
       {% else %}
         <li>
           <a href="{{ routes.account_login_url }}" title="{{ 'layout.customer.log_in' | t }}" class="log-in-button">
               {% render 'theme-icon' with icon: 'user', iconClasses: 'fa-lg' %}
-              {% if section.settings.label-enable %}<span class="header--supporting-text">{{ 'layout.header.account' | t }}</span>{% endif %}
           </a>
         </li>
       {% endif %}
@@ -855,11 +852,7 @@ Testing Cypress integration
                 <span class="icon-fallback-text">
                   {% render 'theme-icon' with icon: 'search', iconSize: 20 %}
                   <span class="fallback-text">{{ 'layout.header.search' | t }}</span>
-
                 </span>
-                {% if section.settings.name_search != blank %}
-                  <span class="button-name">{{section.settings.name_search  }}</span>
-                {% endif %}
               </a>
               {% endif %}
 
@@ -868,11 +861,7 @@ Testing Cypress integration
                               <span class="icon-fallback-text">
                                 {% render 'theme-icon' with icon: 'heart', iconSize: 20 %}
                                 <span class="fallback-text">{{ 'section.settings.name_wishlist ' | t }}</span>
-
                               </span>
-                              {% if section.settings.name_wishlist != blank %}
-                                <span class="button-name">{{section.settings.name_wishlist }}</span>
-                              {% endif %}
                             </a>
                             {% endif %}
 
@@ -886,9 +875,6 @@ Testing Cypress integration
                 </span>
                 {% if section.settings.cart-number == 'total' %}
                   <span class="cart-item-count-header--total{% if cart.item_count == 0 %} hide{% endif %}">{{ cart.total_price | money }}</span>
-                {% endif %}
-                {% if section.settings.name_cart != blank %}
-                  <span class="button-name">{{section.settings.name_cart  }}</span>
                 {% endif %}
               </a>
             </div>

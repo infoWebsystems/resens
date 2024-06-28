@@ -1,19 +1,19 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "wrapper": "div.collection-wrapper.wrapper",
   "sections": {
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC0362411.jpg",
+        "image": "shopify://shop_images/DSC0362411.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
@@ -42,7 +42,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -60,7 +60,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -78,7 +78,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -96,7 +96,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -141,15 +141,11 @@
       "blocks": {
         "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
-      "block_order": [
-        "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67"
-      ],
-      "settings": {
-      }
+      "block_order": ["19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67"],
+      "settings": {}
     },
     "product-grid": {
       "type": "template--collection",
@@ -175,8 +171,7 @@
         },
         "product_card_quick_shop": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -201,7 +196,7 @@
   "order": [
     "image-with-text-overlay",
     "collage-builder",
-    "collection-header-default",
-    "product-grid"
+    "product-grid",
+    "collection-header-default"
   ]
 }
