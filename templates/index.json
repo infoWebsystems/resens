@@ -275,6 +275,7 @@
     },
     "cf965c26-6ea8-499a-8a05-a4e350ede58a": {
       "type": "image--image-with-text",
+      "disabled": true,
       "settings": {
         "colors": "white",
         "image": "shopify:\/\/shop_images\/Image_with_text_2890x_b42898d8-c2d8-4ac4-ad68-7a6dbe559d53.webp",
