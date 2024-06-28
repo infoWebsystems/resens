@@ -1242,11 +1242,11 @@
         }
       },
       "delivery_options": {
-        "free_total_label": "безкоштовно",
-        "ship": "Корабель",
+        "free_total_label": "Безкоштовно",
+        "ship": "Кораблем",
         "ship_to_address": "Відправити за адресою",
         "shipping_address": "Адреса доставки",
-        "pick_up": "Підніміть",
+        "pick_up": "Самовивіз",
         "pick_up_from_store": "Самовивіз в магазині",
         "pick_up_locations": "Розташування магазинів",
         "pick_up_in_one_hour": "Зазвичай готовий через 1 годину",
