@@ -1,1 +1,10 @@
-/* Place any CSS overrides in this file. */ 
+/* Place any CSS overrides in this file. */
+
+.overlay-header:hover {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.overlay-header:hover .site-nav--mobile svg {
+  color: var(--overlay-header-text-color) !important;
+}
