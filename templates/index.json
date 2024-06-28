@@ -530,8 +530,8 @@
       "settings": {
         "colors": "white",
         "heading": "LOCAL PICKUP AVAILABLE",
-        "address": "<p>Ottawa, 151 O'Connor Street<br\/>Mon - Fri, 8:00am - 6:00pm<br\/>Sat - Sun, 9:00am - 5:00pm<\/p>",
-        "map_address": "80 Spadina Ave, Toronto",
+        "address": "<p>Ivana Kavaleridze Street, 1\/43, Kyiv, 02000, Ukraine<\/p>",
+        "map_address": "Ivana Kavaleridze Street, 1\/43, Kyiv, 02000, Ukraine",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
         "layout": "right",
