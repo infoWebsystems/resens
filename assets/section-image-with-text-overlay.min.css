@@ -17,6 +17,15 @@
   justify-content: center;
   transform: translateX(50%);
 }
+@media (max-width: 767px) {
+  .image-with-text-overlay-wrapper .image-with-text-overlay__content-box {
+    display: flex;
+    justify-content: center;
+    transform: translateX(0);
+    transform: translateY(-50%);
+  }
+}
+
 .image-with-text-overlay-wrapper .homepage-featured-content-wrapper {
   display: flex;
   justify-content: center;
