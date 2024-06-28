@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
@@ -328,7 +337,7 @@
             "heading_size": 16,
             "h-margin": 1,
             "button_label": "CLEANSING",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify:\/\/collections\/cleansing-1",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -347,7 +356,7 @@
             "heading_size": 38,
             "h-margin": 1,
             "button_label": "CARE",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify:\/\/collections\/care",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
