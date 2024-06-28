@@ -3117,8 +3117,8 @@
     "cart": {
       "title": "Кошик",
       "items_count": {
-        "one": "пункт",
-        "other": "елементи"
+        "one": "Елемент",
+        "other": "Елементи"
       }
     },
     "customer": {
