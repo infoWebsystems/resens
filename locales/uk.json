@@ -3125,7 +3125,7 @@
       "account": "Обліковий запис",
       "logged_in_as_html": "Ви ввійшли як {{ first_name }}",
       "log_out": "Вийти",
-      "log_in": "авторизуватися",
+      "log_in": "Авторизуватися",
       "create_account": "Створити акаунт"
     },
     "header": {
