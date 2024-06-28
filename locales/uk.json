@@ -1267,7 +1267,7 @@
       "customer_account": {
         "not_user_label": "Не %{first_name}?",
         "have_an_account_label": "Є обліковий запис?",
-        "sign_in_link_label": "авторизуватися",
+        "sign_in_link_label": "Авторизуватися",
         "sign_out_link_label": "Вийти",
         "save_my_information_label": "Збережіть цю інформацію для наступного разу",
         "invalid_address": "Вибрана адреса недійсна. %{update_address_link} або виберіть іншу адресу.",
