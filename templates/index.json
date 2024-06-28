@@ -399,9 +399,9 @@
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-1": {
           "type": "menu_item",
           "settings": {
-            "menu_item_text": "All collections",
+            "menu_item_text": "CleanUP line",
             "menu_item_color": "#000000",
-            "menu_item_link": "shopify:\/\/collections",
+            "menu_item_link": "shopify:\/\/collections\/lines-cleanup",
             "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
           }
         },
@@ -410,7 +410,7 @@
           "settings": {
             "menu_item_text": "Cosmetics for body",
             "menu_item_color": "#000000",
-            "menu_item_link": "shopify:\/\/collections\/cosmetics-for-body",
+            "menu_item_link": "shopify:\/\/collections\/lines-cleanup",
             "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
           }
         },
