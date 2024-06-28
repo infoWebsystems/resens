@@ -69,6 +69,7 @@
         },
         "2f3ddc8d-6514-403d-a884-88c9a0294300": {
           "type": "stock-level-indicator",
+          "disabled": true,
           "settings": {
             "stock-level-indicator-style": "classic",
             "bar-indicator-color": "standard",
