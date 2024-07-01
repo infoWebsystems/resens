@@ -22,7 +22,6 @@
     display: flex;
     justify-content: center;
     transform: translateX(0);
-    transform: translateY(-50%);
   }
 }
 

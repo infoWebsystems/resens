@@ -662,6 +662,7 @@ html input[disabled] {
 }
 .shopify-product-form .shopify-payment-button__button--unbranded {
   margin-top: 10px;
+  display: none;
 }
 .shopify-product-form .shopify-payment-button__button--branded {
   border-radius: var(--alt-btn-border-radius);
