@@ -39,3 +39,7 @@
   .homepage-section-btn:hover {
   background-color: #dfe3e8;
 }
+
+.homepage-featured-content-box-inner .sitewide--title-wrapper h2.homepage-sections--title {
+  font-size: 40px;
+}
