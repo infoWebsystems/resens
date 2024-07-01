@@ -1,12 +1,22 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image": "shopify:\/\/shop_images\/DSC0362411.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
+        "title": "Share your story",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -22,28 +32,96 @@
       }
     },
     "logo-with-text": {
-      "type": "logo-with-text"
+      "type": "logo-with-text",
+      "settings": {
+        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
     },
     "resens-definition": {
-      "type": "resens-definition"
+      "type": "resens-definition",
+      "settings": {
+        "header_1": "Re",
+        "header_2": "Sens",
+        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
+        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
+        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
+      }
     },
     "ukrainian-development": {
-      "type": "ukrainian-development"
+      "type": "ukrainian-development",
+      "blocks": {
+        "list_QNYrLE": {
+          "type": "list",
+          "settings": {
+            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
+          }
+        },
+        "list_fUqXEJ": {
+          "type": "list",
+          "settings": {
+            "list_item": "Clinically proven effectiveness"
+          }
+        },
+        "list_i4eg7A": {
+          "type": "list",
+          "settings": {
+            "list_item": "Innovative raw materials from around the world: europe, japan, korea, usa"
+          }
+        },
+        "list_rWnTab": {
+          "type": "list",
+          "settings": {
+            "list_item": "List item"
+          }
+        },
+        "list_DeNTCm": {
+          "type": "list",
+          "settings": {
+            "list_item": "List item"
+          }
+        },
+        "list_Cdcie7": {
+          "type": "list",
+          "settings": {
+            "list_item": "List item"
+          }
+        }
+      },
+      "block_order": [
+        "list_QNYrLE",
+        "list_fUqXEJ",
+        "list_i4eg7A",
+        "list_rWnTab",
+        "list_DeNTCm",
+        "list_Cdcie7"
+      ],
+      "settings": {
+      }
     },
     "eco-responcibility": {
-      "type": "eco-responcibility"
+      "type": "eco-responcibility",
+      "settings": {
+      }
     },
     "about-facts": {
-      "type": "about-facts"
+      "type": "about-facts",
+      "settings": {
+      }
     },
     "about-philosophy-info": {
-      "type": "about-philosophy-info"
+      "type": "about-philosophy-info",
+      "settings": {
+      }
     },
     "brand-developers": {
-      "type": "brand-developers"
+      "type": "brand-developers",
+      "settings": {
+      }
     },
     "founders-cards": {
-      "type": "founders-cards"
+      "type": "founders-cards",
+      "settings": {
+      }
     }
   },
   "order": [
