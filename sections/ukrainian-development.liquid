@@ -16,12 +16,18 @@
     </h2>
     <div class="facts">
       <ul class="list">
-        <li class="list_item">Own formulas created by ukrainian developers taking into account the needs of sensitive skin
-        </li>
-        <li class="list_item">Clinically proven effectiveness</li>
-        <li class="list_item">Innovative raw materials from around the world: europe, japan, korea, usa</li>
-        <li class="list_item">Compostable packaging</li>
-        <li class="list_item">Respect for nature, humans and the environment in general</li>
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'list' %}
+              <li class="list_item">{{ block.settings.list_item }}</li>
+          {% endcase %}
+        {% endfor %}
+      {% comment %} <li class="list_item">Own formulas created by ukrainian developers taking into account the needs of sensitive skin
+                                        </li>
+                                        <li class="list_item">Clinically proven effectiveness</li>
+                                        <li class="list_item">Innovative raw materials from around the world: europe, japan, korea, usa</li>
+                                        <li class="list_item">Compostable packaging</li>
+                                <li class="list_item">Respect for nature, humans and the environment in general</li> {% endcomment %}
       </ul>
     </div>
   </div>
@@ -35,6 +41,20 @@
         "type": "image_picker",
         "id": "background",
         "label": "Background for this section"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "List Item",
+        "type": "list",
+        "settings": [
+          {
+            "type": "text",
+            "id": "list_item",
+            "label": "List item",
+            "default": "List item"
+          }
+        ]
       }
     ]
   }
