@@ -15,7 +15,7 @@
 .image-with-text-overlay-wrapper .image-with-text-overlay__content-box {
   display: flex;
   justify-content: center;
-  transform: translateX(50%);
+  /* transform: translateX(50%); */
 }
 @media (max-width: 767px) {
   .image-with-text-overlay-wrapper .image-with-text-overlay__content-box {
@@ -153,9 +153,9 @@
 @media screen and (min-width: 481px) {
   .image-with-text-overlay-wrapper--textPosition-left
     .homepage-featured-content-box {
-    position: relative;
-    left: auto;
-    right: 25%;
+    /* position: relative; */
+    /* left: auto; */
+    /* right: 25%; */
   }
   .image-with-text-overlay-wrapper--textPosition-center
     .homepage-featured-content-box {
