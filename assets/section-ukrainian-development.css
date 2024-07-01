@@ -1,0 +1,43 @@
+.ukrainian-development {
+  background: url('./resens-dark-bg.jpg') center center / cover no-repeat;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.ukrainian-development .title {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.ukrainian-development .facts {
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 592px;
+}
+
+.ukrainian-development ul.list {
+  max-width: 592px;
+  margin: 0;
+}
+
+.ukrainian-development .list li {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.ukrainian-development .list li::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+}

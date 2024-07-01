@@ -1,0 +1,21 @@
+.about-facts {
+  background-color: #f4f4f4;
+  padding: 64px 10px;
+}
+
+.about-facts .title {
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.about-facts .cards {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}

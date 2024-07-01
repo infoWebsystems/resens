@@ -1,42 +1,24 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
-    "94a50e02-c7cb-4f8e-8809-f281c98044d2": {
+    "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
-      "disabled": true,
       "settings": {
-        "image_height": "40vw",
-        "bg_image_overlay_opacity": 0,
+        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image_height": "30vw",
+        "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "Share your story",
         "text": "",
         "colors": "light",
         "textPosition": "center",
         "textAlignment": "center",
-        "heading--text-size": 50,
-        "text--text-size": 24,
+        "heading--text-size": 26,
+        "text--text-size": 18,
         "link": "",
         "button_label": "",
         "button-text": "#ffffff",
         "button-background": "#262428",
         "hover-button-text": "#ffffff",
         "hover-button-background": "#494949"
-      }
-    },
-    "main": {
-      "type": "template--page",
-      "disabled": true,
-      "settings": {
-        "page_title_enabled": true,
-        "page_width": "narrow"
       }
     },
     "63d055aa-9706-43b0-b3c8-49b4a2e53ef9": {
@@ -51,15 +33,12 @@
         "a52c67a4-24a0-4020-93a2-4b06cdc1c155": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles.<\/p>",
+            "text": "<p>The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles.</p>",
             "text_size": 20
           }
         }
       },
-      "block_order": [
-        "heading_RdzzHJ",
-        "a52c67a4-24a0-4020-93a2-4b06cdc1c155"
-      ],
+      "block_order": ["heading_RdzzHJ", "a52c67a4-24a0-4020-93a2-4b06cdc1c155"],
       "settings": {
         "colors": "white",
         "section_width": "narrow",
@@ -67,376 +46,29 @@
         "text_alignment_mobile": "left"
       }
     },
-    "8e700b4c-da55-45f7-9f69-8263da89d7a8": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-0": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC03417.jpg",
-            "grid_image_size": "square",
-            "heading": "RE",
-            "text": "<p><strong>RE<\/strong> name arose at the moment of rethinking, where a<br\/>high-quality healthy product and its packaging do not harm the planet.<\/p><p>We want to convey that the planet<br\/>needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious<br\/>attitude.<\/p><p>These realizations allowed us to<br\/>explore the problem more holistically.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC03450.jpg",
-            "grid_image_size": "square",
-            "heading": "SENS",
-            "text": "<p><strong>SENS<\/strong> comes from \"senses\" and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-0",
-        "template--14773137178694__8e700b4c-da55-45f7-9f69-8263da89d7a8-1686321924a56b1582-1"
-      ],
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "",
-        "columns_per_row": 2,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
+    "logo-with-text": {
+      "type": "logo-with-text"
     },
-    "text_rich_text_MqgUt9": {
-      "type": "text--rich-text",
-      "blocks": {
-        "richtext_zCR9aJ": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>So Re[Sens] - isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer.<\/p>",
-            "text_size": 14
-          }
-        }
-      },
-      "block_order": [
-        "richtext_zCR9aJ"
-      ],
-      "settings": {
-        "colors": "white",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
+    "resens-definition": {
+      "type": "resens-definition"
     },
-    "image_image_with_text_overlay_mTBRHr": {
-      "type": "image--image-with-text-overlay",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/DSC03658.jpg",
-        "image_height": "30vw",
-        "bg_image_overlay_opacity": 70,
-        "parallax": true,
-        "title": "SCIENTIFICUKRAINIAN DEVELOPMENT:",
-        "text": "•OWNFORMULAS CREATED BY UKRAINIAN DEVELOPERS TAKING INTO ACCOUNT THE NEEDS OFSENSITIVE SKIN<br>  •CLINICALLYPROVEN EFFECTIVENESS<br>•INNOVATIVERAW MATERIALS FROM AROUND THE WORLD: EUROPE, JAPAN, KOREA, USA <br>•COMPOSTABLEPACKAGING <br>•RESPECTFOR NATURE, HUMANS AND THE ENVIRONMENT IN GENERAL",
-        "colors": "light",
-        "textPosition": "center",
-        "textAlignment": "center",
-        "heading--text-size": 26,
-        "text--text-size": 18,
-        "link": "",
-        "button_label": "",
-        "button-text": "#ffffff",
-        "button-background": "#262428",
-        "hover-button-text": "#ffffff",
-        "hover-button-background": "#494949"
-      }
+    "ukrainian-development": {
+      "type": "ukrainian-development"
     },
-    "e6a03a56-ff97-4d48-99d0-0b9156a3b02d": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-0": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-1": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "59287d78-99ec-44b1-a130-3306b031be63": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "db95411e-77ab-45e4-aa83-e8c3775c3288": {
-          "type": "image_and_text",
-          "settings": {
-            "grid_image_size": "natural",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
-            "button_text": "Learn more",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-0",
-        "template--14773137178694__e6a03a56-ff97-4d48-99d0-0b9156a3b02d-1686321924a56b1582-1",
-        "59287d78-99ec-44b1-a130-3306b031be63",
-        "db95411e-77ab-45e4-aa83-e8c3775c3288"
-      ],
-      "disabled": true,
-      "settings": {
-        "colors": "white",
-        "heading": "Info columns",
-        "description": "<p>Emphasise your messaging<\/p>",
-        "columns_per_row": 4,
-        "text_alignment": "left",
-        "vertical_alignment": "top"
-      }
+    "eco-responcibility": {
+      "type": "eco-responcibility"
     },
-    "text_rich_text_YTfkgU": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_NqXwyJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "ECO-RESPONCIBILITY"
-          }
-        },
-        "richtext_RfAyYF": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p><strong>THE FIRST<br\/>SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET <\/strong><\/p><p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <\/p><p>We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions. <\/p><p><strong>PURPOSE<\/strong> is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater. <\/p><p><strong>VISION<\/strong> is to become a <strong>Zero Net<\/strong> company within 10 years and minimize carbon footprint in the production cycle.<br\/>We believe that we make  significant impacked on changing even of \"bad habits\" and contribute to a sustainable future.<\/p><p><\/p><p><strong>Re[Sens] – your personal contribution to environmental protection<\/strong><\/p><p>38% of innovative compostable packaging - for the first time in Ukraine<\/p><p>59% of packaging made from recyclable materials<\/p><p>3% of packaging made of plastic, and we plan to reduce this to 0% over the next 3 years<\/p>",
-            "text_size": 14
-          }
-        }
-      },
-      "block_order": [
-        "heading_NqXwyJ",
-        "richtext_RfAyYF"
-      ],
-      "settings": {
-        "colors": "white",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "text_rich_text_4x6mkn": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_GFqVqU": {
-          "type": "heading",
-          "settings": {
-            "heading": "PHILOSOPHY OF SLOW BEAUTY"
-          }
-        },
-        "richtext_eqjAWD": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p><strong> BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin <\/strong><\/p><p>MORE – IS NOT BETTER. <br\/>A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are adherents of a conscious \"Slow Beauty\" approach, which goes hand in hand with the increasingly popular \"Slow Food\" trend. These approaches are about:<\/p><p>• mindful consumption<\/p><p>• getting the result not at any cost<\/p><p>• ethical interaction with the world<\/p><p> <\/p><p>That is, <br\/>Moderate impact on the skin without overstimulation. And if there is one thing in our formulas that is abundant, it is anti-inflammatory, moisturizing and soothing components.<\/p>",
-            "text_size": 14
-          }
-        }
-      },
-      "block_order": [
-        "heading_GFqVqU",
-        "richtext_eqjAWD"
-      ],
-      "settings": {
-        "colors": "white",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "744d98e2-004e-44b9-a03d-ecb59f18bc52": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1238.jpg",
-            "grid_image_size": "natural",
-            "heading": "CO-FOUNDERAND BRAND DEVELOPER YULIA HAHARINA",
-            "text": "<p>Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology \"without chemophobia\"<br\/><em>My goal is to make a beautiful product without impoverishing the future of my daughters<\/em><\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1215.jpg",
-            "grid_image_size": "natural",
-            "heading": "CO-FOUNDER OF THE BRAND   OLGA HUZHYK",
-            "text": "<p>Eco-activist, lecturer, organizer of recycling stations in residential complexes.<br\/><em>Your personal planet is your body. And apart from the body, by and large, nothing belongs to a person. And the planet Earth is a gift to all of us, to every embodied soul. And we are guests here. And we forgot about this. We forgot that we areinextricably connected. We are the ones who make choices every minute, who create our planet and do things with the one that has been given to us. And is there a CREATOR in my actions?\" - this is a question I ask myself every day<\/em><\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        },
-        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1216.jpg",
-            "grid_image_size": "natural",
-            "heading": "CO-FOUNDEROF THE BRAND  YULIIA POLIAKOVA",
-            "text": "<p>Mentor in «Misto Dobra»<br\/><em>Creating a business in which the organizational object is the reason for the company's existence andanswers the question, 'Why did we create this business?' - is probably the greatest professional and social realization for me. This is how public organizations<br\/>are usually organized. But if you are also a business that pays taxes and participates in the growth of our country's economy, it is really a great happiness for me!<\/em><\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-0",
-        "template--14773137178694__744d98e2-004e-44b9-a03d-ecb59f18bc52-1686321924a56b1582-1",
-        "2ecdd5ca-7f5d-41e4-955d-06a9d09b406b"
-      ],
-      "settings": {
-        "colors": "white",
-        "heading": "Brand Developers",
-        "description": "<p>Co-founders of <a href=\"https:\/\/gp-group.com.ua\/\" target=\"_blank\" title=\"https:\/\/gp-group.com.ua\/\"><strong>G&P Group<\/strong><\/a><strong> <\/strong> and<strong> We are from Ukraine <\/strong>(a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights) <\/p><p>Graduates of the University of Cambridge (Institute of Sustainability Leadership) 2023 <\/p>",
-        "columns_per_row": 3,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
-    },
-    "58a12040-d534-4682-b1b7-5479f4052864": {
-      "type": "store-information--map",
-      "disabled": true,
-      "settings": {
-        "colors": "white",
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
-        "map_address": "80 Spadina Ave, Toronto",
-        "api_key": "",
-        "button_text": "Get directions",
-        "layout": "right"
-      }
-    },
-    "f33a0dde-7961-4114-a8ff-6e5c2a459969": {
-      "type": "section--contact-form",
-      "blocks": {
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-0": {
-          "type": "name_input",
-          "settings": {
-            "required": true,
-            "input_width": "partial"
-          }
-        },
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-1": {
-          "type": "email_input",
-          "settings": {
-            "required": true,
-            "input_width": "partial"
-          }
-        },
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-2": {
-          "type": "tel_input",
-          "settings": {
-            "required": true,
-            "input_width": "full"
-          }
-        },
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-3": {
-          "type": "message_input",
-          "settings": {
-            "required": true,
-            "input_width": "full"
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-0",
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-1",
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-2",
-        "template--14773137178694__f33a0dde-7961-4114-a8ff-6e5c2a459969-168632303920a5f9ea-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_color_scheme": "white",
-        "form_width": "narrow",
-        "form_title": "Contact us",
-        "form_description": "<p>Have a question, or want a product recommendation? Get in touch.<\/p>"
-      }
-    },
-    "16c77c63-79ef-4e35-be30-ea87725968de": {
-      "type": "image--logo-list",
-      "blocks": {
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-2": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-0": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-3": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "28ae0150-769d-4d17-a6c3-751dcfe6f0b2": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-1": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-2",
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-0",
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-3",
-        "28ae0150-769d-4d17-a6c3-751dcfe6f0b2",
-        "template--14773137178694__16c77c63-79ef-4e35-be30-ea87725968de-1686323103b740650d-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "colors": "light",
-        "width": 100,
-        "title": "Contact us through our socials"
-      }
+    "about-facts": {
+      "type": "about-facts"
     }
   },
   "order": [
-    "94a50e02-c7cb-4f8e-8809-f281c98044d2",
-    "main",
-    "63d055aa-9706-43b0-b3c8-49b4a2e53ef9",
-    "8e700b4c-da55-45f7-9f69-8263da89d7a8",
-    "text_rich_text_MqgUt9",
-    "image_image_with_text_overlay_mTBRHr",
-    "e6a03a56-ff97-4d48-99d0-0b9156a3b02d",
-    "text_rich_text_YTfkgU",
-    "text_rich_text_4x6mkn",
-    "744d98e2-004e-44b9-a03d-ecb59f18bc52",
-    "58a12040-d534-4682-b1b7-5479f4052864",
-    "f33a0dde-7961-4114-a8ff-6e5c2a459969",
-    "16c77c63-79ef-4e35-be30-ea87725968de"
+    "image-with-text-overlay",
+    "logo-with-text",
+    "resens-definition",
+    "ukrainian-development",
+    "eco-responcibility",
+    "about-facts",
+    "63d055aa-9706-43b0-b3c8-49b4a2e53ef9"
   ]
 }

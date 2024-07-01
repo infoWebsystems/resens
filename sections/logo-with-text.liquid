@@ -1,0 +1,19 @@
+<link
+  rel="preload"
+  href="{{ 'section-logo-with-text.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-logo-with-text.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="logo-with-text">
+  <div class="wrapper-padded show-on-scroll">
+    <div class="content">
+      <div class="logo">
+        <img src="{{ 'logo-without-text.png' | asset_url }}" alt="">
+      </div>
+      <div class="description">
+        The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles.
+      </div>
+    </div>
+  </div>
+</div>
