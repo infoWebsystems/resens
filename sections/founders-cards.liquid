@@ -1,0 +1,46 @@
+<link
+  rel="preload"
+  href="{{ 'section-founders-cards.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-founders-cards.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="founders-cards">
+  <div class="wrapper-padded show-on-scroll">
+    <div class="grid">
+      <div class="founder-info">
+        <img
+          class="photo"
+          src="{{ 'founder-photo-1.png' | asset_url }}"
+          alt="founder">
+        <div class="name">Yulia Haharina:</div>
+        <div class="description">“My goal is to make a beautiful product without impoverishing the future of my daughters”
+        </div>
+      </div>
+      <div class="founder-info">
+        <img
+          class="photo"
+          src="{{ 'founder-photo-2.png' | asset_url }}"
+          alt="founder">
+        <div class="name">Olha Huzhyk::</div>
+        <div class="description">“Your personal planet is your body. And apart from the body, by and large, nothin...
+        </div>
+        <div class="read-more">
+          Show more
+        </div>
+      </div>
+      <div class="founder-info">
+        <img
+          class="photo"
+          src="{{ 'founder-photo-3.png' | asset_url }}"
+          alt="founder">
+        <div class="name">Yulia Poliakova:</div>
+        <div class="description">“"Creating a business in which the organizational object is the reason for...
+        </div>
+        <div class="read-more">
+          Show more
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

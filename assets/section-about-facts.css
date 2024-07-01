@@ -16,6 +16,64 @@
 .about-facts .cards {
   margin-top: 48px;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 389px;
   gap: 16px;
+}
+
+.about-facts .card {
+  background-color: goldenrod;
+  padding: 91px 66px;
+  color: #fff;
+}
+
+.about-facts .card-1 {
+  background: url('./about-facts-bg-1.jpg') center center / cover no-repeat;
+}
+
+.about-facts .card-2 {
+  background: url('./about-facts-bg-2.jpg') center center / cover no-repeat;
+}
+
+.about-facts .card-3 {
+  background: url('./about-facts-bg-3.jpg') center center / cover no-repeat;
+}
+
+.about-facts .card .value {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.about-facts .card .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 989px) {
+  .about-facts .card {
+    padding: 30px 50px;
+  }
+  .about-facts .card .value {
+    font-size: 50px;
+  }
+  .about-facts .cards {
+    grid-template-rows: auto;
+  }
+  .about-facts .card .description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-facts .cards {
+    grid-template-columns: 1fr;
+  }
+  .about-facts .title {
+    font-size: 20px;
+  }
 }

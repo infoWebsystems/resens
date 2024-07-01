@@ -48,3 +48,15 @@
   text-transform: uppercase;
   letter-spacing: 0;
 }
+
+@media only screen and (max-width: 989px) {
+  .resens-definition .image {
+    width: 100%;
+  }
+  .resens-definition .definition .title.re {
+    align-self: self-start;
+  }
+  .resens-definition .definition .title.sens {
+    align-self: self-end;
+  }
+}
