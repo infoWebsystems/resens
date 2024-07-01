@@ -5,7 +5,11 @@
   onload="this.onload=null;this.rel='stylesheet'" />
 <noscript>{{ 'section-ukrainian-development.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="ukrainian-development">
+<div class="ukrainian-development" style="background: {% if section.settings.background %}
+  url(' {{ section.settings.background | image_url: width: " 700x" }}') center center / cover no-repeat
+{% else %}
+  green
+{% endif %}">
   <div class="wrapper-padded show-on-scroll">
     <h2 class="title">
       SCIENTIFIC UKRAINIAN DEVELOPMENT
@@ -22,3 +26,16 @@
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Ukrainian Development",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background for this section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,7 +1,6 @@
 {% comment %}
 Testing Cypress integration
 {% endcomment %}
-
 {% assign overlay_opacity = section.settings.overlay_opacity | divided_by: 100.0 %}
 {% assign overlay_bg_color = settings.header-transparent-background %}
 {% assign opaque_color = overlay_bg_color | color_modify: 'alpha', overlay_opacity %}
@@ -19,13 +18,18 @@ Testing Cypress integration
   {% assign collection-overlay = true %}
 {% endif %}
 
+{% assign about-overlay = false %}
+{% if template contains "page.about" %}
+  {% assign about-overlay = true %}
+{% endif %}
+
 {% assign list-collection-overlay = false %}
 {% if section.settings.overlay_header_list_collection and template == 'list-collections' %}
   {% assign list-collection-overlay = true %}
 {% endif %}
 
 {% assign contact-overlay = false %}
-{% if section.settings.overlay_header_contact and template == 'page.contact' %}
+{% if section.settings.overlay_header_contact and template == 'page.contact' or template == 'page.about' %}
   {% assign contact-overlay = true %}
 {% endif %}
 
@@ -124,6 +128,20 @@ Testing Cypress integration
     .locale--mobile {
       padding: 15px;
     }
+  {% endif %}
+
+  {% if about-overlay %}
+    .template-page .overlay-header {
+      background-color: rgba(196, 196, 196, 0.0);
+      position: relative;
+      z-index: 1000;
+      border-bottom: transparent;
+      color: var(--overlay-header-text-color);
+    }
+    .template-page .overlay-header-wrapper,.overlay-header-wrapper, .contact-page .overlay-header-wrapper {
+    max-height: 0px !important;
+    min-height: 0px !important;
+}
   {% endif %}
 {% endstyle %}
 
@@ -785,7 +803,7 @@ Testing Cypress integration
     </div>
   {% endcapture %}
 
-  <header class="site-header {% if section.settings.sticky_header %} {% endif %}{% if section.settings.logo-placement == 'above' %} logo_above{% endif %}{% if collection-overlay or homepage-overlay or list-collection-overlay or contact-overlay %} overlay-header{% endif %}{% if section.settings.dropdown_alignment == 'center' %} dropdown-alignment--center{% endif %}{% if section.settings.overlay_logo %} overlay-logo{% endif %}">
+  <header class="site-header {% if section.settings.sticky_header %} {% endif %}{% if section.settings.logo-placement == 'above' %} logo_above{% endif %}{% if collection-overlay or homepage-overlay or list-collection-overlay or contact-overlay or about-overlay %} overlay-header{% endif %}{% if section.settings.dropdown_alignment == 'center' %} dropdown-alignment--center{% endif %}{% if section.settings.overlay_logo %} overlay-logo{% endif %}">
     <div class="site-header__wrapper site-header__wrapper--logo-{{ section.settings.logo-placement }} site-header__wrapper--{% if top_links != blank %}with{% else %}without{% endif %}-menu">
       <div class="site-header__wrapper__left">
         {% if section.settings.logo-placement == 'left' %}
