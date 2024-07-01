@@ -327,14 +327,16 @@
   align-items: center;
 }
 .homepage-slider-container .homepage-featured-content-box {
-  position: relative;
+  position: absolute;
   background: 0 0;
   top: unset;
-  left: unset;
+  left: 0;
+  bottom: 0;
   transform: none;
   width: fit-content;
   height: fit-content;
   margin: 15px;
+  padding-bottom: 40px;
 }
 .homepage-slider-container
   .homepage-featured-content-box.has-navigation:not(

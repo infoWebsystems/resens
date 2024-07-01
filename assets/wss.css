@@ -1,164 +1,172 @@
-.mobile-nav-bar--inner, .mobile-nav-bar-wrapper {
-    display: block !important;;
+.mobile-nav-bar--inner,
+.mobile-nav-bar-wrapper {
+  display: block !important;
 }
 .site-header {
-    display: none;
+  display: none;
 }
-.button-name{
-    margin-left: 8px;
-    color: var(--overlay-header-text-color);
+.button-name {
+  margin-left: 8px;
+  color: var(--overlay-header-text-color);
 }
-.button-name{
-    margin-left: 8px;
-    color: var(--nav-text-color);
-    transition: color .3 ease-in;
+.button-name {
+  margin-left: 8px;
+  color: var(--nav-text-color);
+  transition: color 0.3 ease-in;
 }
-.sticked  .button-name{
-    transition: color .25s ease;
-    transition-property: background-size,color!important;
-    color: var(--nav-text-color);
+.sticked .button-name {
+  transition: color 0.25s ease;
+  transition-property: background-size, color !important;
+  color: var(--nav-text-color);
 }
-.site-nav--mobile a:hover span{
-    color: var(--nav-text-hover);
+.site-nav--mobile a:hover span {
+  color: var(--nav-text-hover);
 }
-.site-nav--mobile a svg:hover span.icon-fallback-text  svg {
-    color: var(--nav-text-hover);
+.site-nav--mobile a svg:hover span.icon-fallback-text svg {
+  color: var(--nav-text-hover);
 }
-.site-nav__link:focus, .site-nav__link:hover .button-name{
-    color: var(--nav-text-hover)!important;
+.site-nav__link:focus,
+.site-nav__link:hover .button-name {
+  color: var(--nav-text-hover) !important;
 }
-.site-nav__link:focus, .site-nav__link:hover svg{
-    color: var(--nav-text-hover)!important;
-
+/* .site-nav__link:focus,
+.site-nav__link:hover svg {
+  color: var(--nav-text-hover) !important;
+} */
+/* .search-button:focus,
+.search-button:hover svg {
+  color: var(--nav-text-hover) !important;
+} */
+.search-button:focus,
+.search-button:hover .button-name {
+  color: var(--nav-text-hover) !important;
 }
-.search-button:focus, .search-button:hover svg{
-    color: var(--nav-text-hover)!important;
+/* .site-nav--mobile a:hover svg {
+  color: var(--nav-text-hover);
+} */
+.site-nav--mobile a:hover .button-name {
+  color: var(--nav-text-hover);
 }
-.search-button:focus, .search-button:hover .button-name{
-    color: var(--nav-text-hover)!important;
-}
-.site-nav--mobile a:hover svg{
-    color: var(--nav-text-hover);
-}
-.site-nav--mobile a:hover .button-name{
-    color: var(--nav-text-hover);
-}
-
 
 .overlay-header-wrapper .site-nav--mobile .button-name {
-    color: var(--overlay-header-text-color);
-    transition: color .3 ease-in;
+  color: var(--overlay-header-text-color);
+  transition: color 0.3 ease-in;
 }
-.sticked .overlay-header .site-nav--mobile .button-name{
-    color: var(--nav-text-color);
+.sticked .overlay-header .site-nav--mobile .button-name {
+  color: var(--nav-text-color);
 }
-.overlay-header:hover .button-name{
-    color: var(--nav-text-color);
+.overlay-header:hover .button-name {
+  color: var(--nav-text-color);
 }
-.overlay-header:hover .site-nav--mobile svg{
-    color: var(--nav-text-color);
-}
-nav:hover{
-    color: blue !important;
+/* .overlay-header:hover .site-nav--mobile svg {
+  color: var(--nav-text-color);
+} */
+nav:hover {
+  color: blue !important;
 }
 .jdgm-rev__pic-img.jdgm-rev__pic-img {
-   max-width: 400px;
+  max-width: 400px;
 }
-.jdgm-row-stars div.jdgm-widget-actions-wrapper a.jdgm-write-rev-link{
-    background-color: #000000;
-    color: #FEFEFE;
+.jdgm-row-stars div.jdgm-widget-actions-wrapper a.jdgm-write-rev-link {
+  background-color: #000000;
+  color: #fefefe;
 }
-.jdgm-row-stars div.jdgm-widget-actions-wrapper a.jdgm-write-rev-link:hover{
-    background-color: #333333;
-    background: #333333;
-   border-color: #333333;
-    color: #FEFEFE;
+.jdgm-row-stars div.jdgm-widget-actions-wrapper a.jdgm-write-rev-link:hover {
+  background-color: #333333;
+  background: #333333;
+  border-color: #333333;
+  color: #fefefe;
 }
-.wishlist-btn-wrap{
-    position: absolute;
-    z-index: 2;
-    right: 10px;
-    top: 10px;
+.wishlist-btn-wrap {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 10px;
 }
-.wishlist-button{
-    display: flex;
-    justify-content: center;
+.wishlist-button {
+  display: flex;
+  justify-content: center;
 }
 .wishlist-btn-wrap .swym-add-to-wishlist-view-product {
-    background: #D6E2FF !important;
+  background: #d6e2ff !important;
 }
-.wishlist-btn-wrap .swym-add-to-wishlist svg{
-    color: #000000 ;
+.wishlist-btn-wrap .swym-add-to-wishlist svg {
+  color: #000000;
 }
-.wishlist-btn-wrap .swym-btn-container .swym-button:after{
-    font-size: 18px;
-    top: 20px;
-    width: 40px;
+.wishlist-btn-wrap .swym-btn-container .swym-button:after {
+  font-size: 18px;
+  top: 20px;
+  width: 40px;
 }
-.wishlist-btn-wrap  .swym-btn-container .swym-button.swym-added:after {
-    opacity: 1;
+.wishlist-btn-wrap .swym-btn-container .swym-button.swym-added:after {
+  opacity: 1;
 }
-.wishlist-btn-wrap  button.swym-button.disabled:hover, .wishlist-btn-wrap  button.swym-button:disabled:hover {
-    opacity: 1;
+.wishlist-btn-wrap button.swym-button.disabled:hover,
+.wishlist-btn-wrap button.swym-button:disabled:hover {
+  opacity: 1;
 }
-.wishlist-btn-wrap .swym-btn-container[data-position=default] .swym-button{
-    width: 40px;
-    height: 40px;
+.wishlist-btn-wrap .swym-btn-container[data-position='default'] .swym-button {
+  width: 40px;
+  height: 40px;
 }
-.wishlist-btn-wrap div.swym-button-bar{
-    margin: 0;
+.wishlist-btn-wrap div.swym-button-bar {
+  margin: 0;
 }
-.wishlist-btn-wrap button.swym-button.disabled{
-    opacity: 1;
-    background: #D6E2FF !important;
+.wishlist-btn-wrap button.swym-button.disabled {
+  opacity: 1;
+  background: #d6e2ff !important;
 }
-.wishlist-btn-wrap button.swym-button.disabled svg{
-    fill: #000000;
+.wishlist-btn-wrap button.swym-button.disabled svg {
+  fill: #000000;
 }
- button.swym-button.disabled:hover  svg, button.swym-button:disabled:hover  svg{
-   fill: #000000;
+button.swym-button.disabled:hover svg,
+button.swym-button:disabled:hover svg {
+  fill: #000000;
 }
 div.swym-button-bar {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-div.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2 {
-    background: #000000;
+div.swym-ui-components .swym-bg-2,
+.swym-ui-component .swym-bg-2 {
+  background: #000000;
 }
-@media (min-width: 990px){
-    .mobile-nav-bar--inner, .mobile-nav-bar-wrapper {
-        display: block !important;;
-    }
-    nav .wrapper-padded {
-        padding: 0 40px;
-    }
-    div.homepage-slider-container .homepage-featured-content-box .homepage-featured-content-box-inner {
-        gap: 35px;
-    }
-    /*div.shopify-section .homepage-sections-wrapper {*/
-    /*    padding: 80px 0;*/
-    /*}*/
-    .collection-grid a.homepage-featured-box-btn{
-        padding: 16px 50px;
-    }
-    .collection-grid .grid-item__content .grid-item__subheading{
-        margin-bottom: 5px;
-        margin-top: 7px;
-    }
-    .grid-view-item>div:not(:last-child) {
-        margin-bottom: 14px;
-    }
-    .image-with-text-overlay-wrapper .featured-row__subtext {
-        padding-top: 18px;
-    }
-    .image-with-text-overlay__content-box .homepage-section-btn{
-        padding: 14px 48px;
-    }
+@media (min-width: 990px) {
+  .mobile-nav-bar--inner,
+  .mobile-nav-bar-wrapper {
+    display: block !important;
+  }
+  nav .wrapper-padded {
+    padding: 0 40px;
+  }
+  div.homepage-slider-container
+    .homepage-featured-content-box
+    .homepage-featured-content-box-inner {
+    gap: 35px;
+  }
+  /*div.shopify-section .homepage-sections-wrapper {*/
+  /*    padding: 80px 0;*/
+  /*}*/
+  .collection-grid a.homepage-featured-box-btn {
+    padding: 16px 50px;
+  }
+  .collection-grid .grid-item__content .grid-item__subheading {
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+  .grid-view-item > div:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  .image-with-text-overlay-wrapper .featured-row__subtext {
+    padding-top: 18px;
+  }
+  .image-with-text-overlay__content-box .homepage-section-btn {
+    padding: 14px 48px;
+  }
 }
-@media screen and (min-width: 481px){
-
+@media screen and (min-width: 481px) {
 }
-@media screen and (max-width: 767px){
-    .button-name{
-        display: none;
-    }
+@media screen and (max-width: 767px) {
+  .button-name {
+    display: none;
+  }
 }

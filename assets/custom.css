@@ -1,32 +1,41 @@
 /* Place any CSS overrides in this file. */
-
-.overlay-header:hover {
-  background: transparent !important;
-  border-bottom: none !important;
-}
-
-.overlay-header:hover .site-nav--mobile svg {
-  color: var(--overlay-header-text-color) !important;
+@media only screen and (min-width: 768px) {
+  .template-index
+    .header-section.sticky-header:not(.sticked)
+    .overlay-header-wrapper
+    .overlay-header:hover {
+    background: transparent;
+    border-bottom: none;
+  }
 }
 
 /* Main banner with image */
-.homepage-featured-content-box {
-  padding-bottom: 40px !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  position: absolute !important ;
+.homepage-slider-container
+  .homepage-featured-content-box
+  .homepage-featured-content-box-inner
+  .homepage-section-btn {
+  width: 200px;
+  background: #ffffff;
+  color: #000000;
+  padding: 16px;
 }
 
-.homepage-section-btn {
-  width: 200px !important;
-  background: #ffffff !important;
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  color: #000000 !important;
-  padding: 16px !important;
-  text-align: center !important;
+.homepage-slider-container
+  .homepage-featured-content-box
+  .homepage-featured-content-box-inner
+  .homepage-section-btn:hover {
+  background: #dfe3e8;
 }
 
-.homepage-section-btn:hover {
-  background: #dfe3e8 !important;
+/* Section with woman's face */
+.homepage-featured-content-box-inner
+  .homepage-section-btn-container
+  .homepage-section-btn {
+  background-color: #ffffff;
+}
+
+.homepage-featured-content-box-inner
+  .homepage-section-btn-container
+  .homepage-section-btn:hover {
+  background-color: #dfe3e8;
 }
