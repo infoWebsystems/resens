@@ -71,19 +71,13 @@
         "list_rWnTab": {
           "type": "list",
           "settings": {
-            "list_item": "List item"
+            "list_item": "Compostable packaging"
           }
         },
         "list_DeNTCm": {
           "type": "list",
           "settings": {
-            "list_item": "List item"
-          }
-        },
-        "list_Cdcie7": {
-          "type": "list",
-          "settings": {
-            "list_item": "List item"
+            "list_item": "Respect for nature, humans and the environment in general"
           }
         }
       },
@@ -92,8 +86,7 @@
         "list_fUqXEJ",
         "list_i4eg7A",
         "list_rWnTab",
-        "list_DeNTCm",
-        "list_Cdcie7"
+        "list_DeNTCm"
       ],
       "settings": {
       }
