@@ -5244,8 +5244,8 @@ label.error {
   .template-list-collections
     .header-section:not(.sticky-header)
     .overlay-header:hover {
-    background: var(--header-color);
-    border-bottom: 1px solid var(--header-border-color);
+    background: transparent;
+    border-bottom: none;
   }
   .contact-page
     .header-section.sticky-header:not(.sticked)

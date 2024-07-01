@@ -1,13 +1,4 @@
 /* Place any CSS overrides in this file. */
-@media only screen and (min-width: 768px) {
-  .template-index
-    .header-section.sticky-header:not(.sticked)
-    .overlay-header-wrapper
-    .overlay-header:hover {
-    background: transparent;
-    border-bottom: none;
-  }
-}
 
 /* Main banner with image */
 .homepage-slider-container
@@ -40,6 +31,8 @@
   background-color: #dfe3e8;
 }
 
-.homepage-featured-content-box-inner .sitewide--title-wrapper h2.homepage-sections--title {
+.homepage-featured-content-box-inner
+  .sitewide--title-wrapper
+  h2.homepage-sections--title {
   font-size: 40px;
 }
