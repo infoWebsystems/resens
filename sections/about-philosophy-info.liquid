@@ -8,27 +8,37 @@
 <div class="about-philosophy-info">
   <div class="wrapper-padded show-on-scroll">
     <h2 class="title">
-      PHILOSOPHY OF SLOW BEAUTY
+      {{ section.settings.title }}
     </h2>
     <h3 class="subtitle">
-      BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin
+      {{ section.settings.sub_title }}
     </h3>
     <div class="description">
-      <div>
-        MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are adherents of a conscious "Slow Beauty" approach, which goes hand in hand with the increasingly popular "Slow Food" trend. These approaches are about:</div>
-      <ul>
-        <li>
-          mindful consumption
-        </li>
-        <li>
-          getting the result not at any cost
-        </li>
-        <li>
-          ethical interaction with the world
-        </li>
-      </ul>
-      <div>That is,Moderate impact on the skin without overstimulation. And if there is one thing in our formulas that is abundant, it is anti-inflammatory, moisturizing and soothing components.
-      </div>
+      {{ section.settings.description }}
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Philosophy of Beauty",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "PHILOSOPHY OF SLOW BEAUTY",
+        "label": "Section Title"
+      }, {
+        "type": "text",
+        "id": "sub_title",
+        "default": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
+        "label": "Section Subtitle"
+      }, {
+        "type": "richtext",
+        "id": "description",
+        "default": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli.</p>",
+        "label": "Section Description"
+      }
+    ]
+  }
+{% endschema %}
