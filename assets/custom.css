@@ -75,6 +75,9 @@
   .template-page-sustainability .responsive-image-wrapper img {
     /* display: none; */
   }
+  .sticked .mobile-nav-bar-wrapper .grid__item {
+    margin-top: 0px;
+  }
   /* homepage-sections--title homepage-section-title */
 }
 /* Temp */
