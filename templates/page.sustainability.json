@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -28,15 +28,12 @@
         "richtext_BX4zqX": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Over 13 years of distribution of cosmetics, many plastic packaging has passed through our company. It was really painful for us that most of it went straight into the ground and polluted the environment. When we decided to embark on the path of responsible business, we were limited by the waste disposal system in Ukraine (or its absence) and the plastic used by the manufacturer. We realized that only by becoming a sustainable manufacturer ourselves could we be sure that our negative impact on the environment was minimal.<br\/><\/p>",
+            "text": "<p>Over 13 years of distribution of cosmetics, many plastic packaging has passed through our company. It was really painful for us that most of it went straight into the ground and polluted the environment. When we decided to embark on the path of responsible business, we were limited by the waste disposal system in Ukraine (or its absence) and the plastic used by the manufacturer. We realized that only by becoming a sustainable manufacturer ourselves could we be sure that our negative impact on the environment was minimal.<br/></p>",
             "text_size": 16
           }
         }
       },
-      "block_order": [
-        "heading_m8jAyh",
-        "richtext_BX4zqX"
-      ],
+      "block_order": ["heading_m8jAyh", "richtext_BX4zqX"],
       "settings": {
         "background_color": "",
         "colors": "white",
@@ -51,14 +48,12 @@
         "richtext_4x3hfA": {
           "type": "richtext",
           "settings": {
-            "text": "<p>\"Sustainable marketing should be, first and foremost, internal marketing. Only thing we can be sure of is changing ourselves!\" <br\/><strong>- Yulia Polyakova and Olga Guzhyk. <\/strong><\/p><p>\"My goal is to make a beautiful product without impoverishing the future of my daughters.\" <strong>- Yulia Gagarina.<\/strong><\/p>",
+            "text": "<p>\"Sustainable marketing should be, first and foremost, internal marketing. Only thing we can be sure of is changing ourselves!\" <br/><strong>- Yulia Polyakova and Olga Guzhyk. </strong></p><p>\"My goal is to make a beautiful product without impoverishing the future of my daughters.\" <strong>- Yulia Gagarina.</strong></p>",
             "text_size": 18
           }
         }
       },
-      "block_order": [
-        "richtext_4x3hfA"
-      ],
+      "block_order": ["richtext_4x3hfA"],
       "settings": {
         "background_color": "#f4f4f4",
         "colors": "white",
@@ -73,14 +68,12 @@
         "richtext_GhjAYc": {
           "type": "richtext",
           "settings": {
-            "text": "<p>That's how the idea to produce effectivecosmetics and human health products in a new generation of packaging thatneither increases plastic pollution nor contaminates land and wastewater cameabout. Our goal, strategy, and vision were formed in <strong>accordance with the sustainable development goals that the <\/strong><a href=\"https:\/\/www.un.org\/en\/our-work\/support-sustainable-development-and-climate-action\" target=\"_blank\" title=\"https:\/\/www.un.org\/en\/our-work\/support-sustainable-development-and-climate-action\"><strong>UN plans toimplement by 2030<\/strong><\/a>, namely, to prevent climate warming by more than 1.5°C<\/p>",
+            "text": "<p>That's how the idea to produce effectivecosmetics and human health products in a new generation of packaging thatneither increases plastic pollution nor contaminates land and wastewater cameabout. Our goal, strategy, and vision were formed in <strong>accordance with the sustainable development goals that the </strong><a href=\"https://www.un.org/en/our-work/support-sustainable-development-and-climate-action\" target=\"_blank\" title=\"https://www.un.org/en/our-work/support-sustainable-development-and-climate-action\"><strong>UN plans toimplement by 2030</strong></a>, namely, to prevent climate warming by more than 1.5°C</p>",
             "text_size": 16
           }
         }
       },
-      "block_order": [
-        "richtext_GhjAYc"
-      ],
+      "block_order": ["richtext_GhjAYc"],
       "settings": {
         "background_color": "",
         "colors": "white",
@@ -95,36 +88,36 @@
         "logo_image_rE7eEr": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/213.png",
-            "link": "https:\/\/www.un.org\/sustainabledevelopment\/health\/"
+            "image": "shopify://shop_images/213.png",
+            "link": "https://www.un.org/sustainabledevelopment/health/"
           }
         },
         "logo_image_pXnJki": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4141.png",
-            "link": "https:\/\/www.un.org\/sustainabledevelopment\/sustainable-consumption-production\/"
+            "image": "shopify://shop_images/4141.png",
+            "link": "https://www.un.org/sustainabledevelopment/sustainable-consumption-production/"
           }
         },
         "logo_image_jr8F3L": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/43422.png",
-            "link": "https:\/\/www.un.org\/sustainabledevelopment\/climate-change\/"
+            "image": "shopify://shop_images/43422.png",
+            "link": "https://www.un.org/sustainabledevelopment/climate-change/"
           }
         },
         "logo_image_hQKDqQ": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5252.png",
-            "link": "https:\/\/www.un.org\/sustainabledevelopment\/oceans\/"
+            "image": "shopify://shop_images/5252.png",
+            "link": "https://www.un.org/sustainabledevelopment/oceans/"
           }
         },
         "logo_image_BN7dAK": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5252112.png",
-            "link": "https:\/\/www.un.org\/sustainabledevelopment\/biodiversity\/"
+            "image": "shopify://shop_images/5252112.png",
+            "link": "https://www.un.org/sustainabledevelopment/biodiversity/"
           }
         }
       },
@@ -148,7 +141,7 @@
         "title": "",
         "richtext": "",
         "width_classes": 75,
-        "url": "https:\/\/www.youtube.com\/watch?v=0XTBYMfZyrM",
+        "url": "https://www.youtube.com/watch?v=0XTBYMfZyrM",
         "autoplay": false,
         "loop": true,
         "mute": false,
@@ -161,22 +154,19 @@
         "richtext_W3eg7i": {
           "type": "richtext",
           "settings": {
-            "text": "<p>We are a <a href=\"https:\/\/www.cisl.cam.ac.uk\/resources\/unleashing-sustainable-business\" target=\"_blank\" title=\"https:\/\/www.cisl.cam.ac.uk\/resources\/unleashing-sustainable-business\"><strong>PDO (purpose-driven organization) company<\/strong><\/a><strong> <\/strong>in which the ORGANIZATIONAL purpose is the reason for our existence. To put it another way, our purpose answers the question of WHY the company was born. We believe that our activities should benefit everyone, both people and the planet, making them our ultimate beneficiaries. That is, we are focused on impact that generates value that supports the global goals of society and the economy. <br\/>We make decisions that support this goal, even if it may reduce profits or require additional efforts to implement. For us, the financial goal is an intermediate one, as opposed to BAU (business as usual), where profit maximization remains the main goal.<br\/><\/p>",
+            "text": "<p>We are a <a href=\"https://www.cisl.cam.ac.uk/resources/unleashing-sustainable-business\" target=\"_blank\" title=\"https://www.cisl.cam.ac.uk/resources/unleashing-sustainable-business\"><strong>PDO (purpose-driven organization) company</strong></a><strong> </strong>in which the ORGANIZATIONAL purpose is the reason for our existence. To put it another way, our purpose answers the question of WHY the company was born. We believe that our activities should benefit everyone, both people and the planet, making them our ultimate beneficiaries. That is, we are focused on impact that generates value that supports the global goals of society and the economy. <br/>We make decisions that support this goal, even if it may reduce profits or require additional efforts to implement. For us, the financial goal is an intermediate one, as opposed to BAU (business as usual), where profit maximization remains the main goal.<br/></p>",
             "text_size": 16
           }
         },
         "richtext_LLUKX3": {
           "type": "richtext",
           "settings": {
-            "text": "<p>We are implementing a set of measures to become a Zero Net Company within 10 years and reduce the carbon footprint of our production cycle. <br\/><br\/>We are implementing carbon management tools, where emissions will be included in the main KPIs of the company. At the start, we launch the process of calculating our carbon footprint, which takes about two years, and we are confidently moving towards the result.<br\/><\/p>",
+            "text": "<p>We are implementing a set of measures to become a Zero Net Company within 10 years and reduce the carbon footprint of our production cycle. <br/><br/>We are implementing carbon management tools, where emissions will be included in the main KPIs of the company. At the start, we launch the process of calculating our carbon footprint, which takes about two years, and we are confidently moving towards the result.<br/></p>",
             "text_size": 16
           }
         }
       },
-      "block_order": [
-        "richtext_W3eg7i",
-        "richtext_LLUKX3"
-      ],
+      "block_order": ["richtext_W3eg7i", "richtext_LLUKX3"],
       "settings": {
         "background_color": "#f4f4f4",
         "colors": "white",
@@ -185,64 +175,8 @@
         "text_alignment_mobile": "center"
       }
     },
-    "animated_text_3TzTia": {
-      "type": "animated-text",
-      "blocks": {
-        "text_static_tb3yCe": {
-          "type": "text_static",
-          "settings": {
-            "text_static": "<p>Everyone can reduce their carbon footprint by changing their habits. <\/p>",
-            "max_width_desktop": 100,
-            "max_width_mobile": 100,
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "text_dynamic_3Pygdj": {
-          "type": "text_dynamic",
-          "settings": {
-            "text_dynamic": "100, 500, 1000",
-            "animation_timing": 500,
-            "rotation_interval": 5000,
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "text_static_p3EbhP": {
-          "type": "text_static",
-          "settings": {
-            "text_static": "<p>Interested in what carbon footprint you<br\/>leave behind? <\/p>",
-            "max_width_desktop": 100,
-            "max_width_mobile": 100,
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "button_8RqbHN": {
-          "type": "button",
-          "settings": {
-            "button_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/",
-            "button_text": "Calculate it with ouronline calculator",
-            "color_button_text": "rgba(0,0,0,0)",
-            "color_button_background": "rgba(0,0,0,0)",
-            "color_hover_button_text": "rgba(0,0,0,0)",
-            "color_hover_button_background": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "text_static_tb3yCe",
-        "text_dynamic_3Pygdj",
-        "text_static_p3EbhP",
-        "button_8RqbHN"
-      ],
-      "settings": {
-        "colors": "dark",
-        "image_desktop": "shopify:\/\/shop_images\/A_black_imageqqq.jpg",
-        "height_desktop": "m",
-        "text_size_desktop": 60,
-        "text_position_desktop": "left",
-        "height_mobile": "full",
-        "text_size_mobile": 22,
-        "text_position_mobile": "left"
-      }
+    "content-on-image-background": {
+      "type": "content-on-image-background"
     },
     "text_rich_text_aiRYBj": {
       "type": "text--rich-text",
@@ -256,15 +190,12 @@
         "richtext_EiWYGj": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The beauty industry has a reputation as one of the least environmentally friendly industries due to its heavy reliance on disposable products and plastic packaging. Because packaging is a major contributor to carbon emissions, the focus of our project is on radically different packaging.<br\/><br\/>Ukraine currently has a rather low culture of sorting and composting. Therefore, in addition to direct climate action, we aim to change the attitude towards packaging in the professional market.<br\/>By spreading awareness of the benefits of environmentally friendly packaging and educating people about sorting and composting, we hope to influence the culture of packaging use and take an important step towards a sustainable future for our planet.<br\/>After all, plastic production and its ever-growing waste pose a fundamental threat to our planet and humanity.<br\/><\/p>",
+            "text": "<p>The beauty industry has a reputation as one of the least environmentally friendly industries due to its heavy reliance on disposable products and plastic packaging. Because packaging is a major contributor to carbon emissions, the focus of our project is on radically different packaging.<br/><br/>Ukraine currently has a rather low culture of sorting and composting. Therefore, in addition to direct climate action, we aim to change the attitude towards packaging in the professional market.<br/>By spreading awareness of the benefits of environmentally friendly packaging and educating people about sorting and composting, we hope to influence the culture of packaging use and take an important step towards a sustainable future for our planet.<br/>After all, plastic production and its ever-growing waste pose a fundamental threat to our planet and humanity.<br/></p>",
             "text_size": 16
           }
         }
       },
-      "block_order": [
-        "heading_YcMViT",
-        "richtext_EiWYGj"
-      ],
+      "block_order": ["heading_YcMViT", "richtext_EiWYGj"],
       "settings": {
         "background_color": "",
         "colors": "white",
@@ -277,13 +208,13 @@
       "type": "image--image-with-text",
       "settings": {
         "colors": "light",
-        "image": "shopify:\/\/shop_images\/5455.jpg",
+        "image": "shopify://shop_images/5455.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
         "text_alignment": "left",
         "title": "",
-        "text": "<p>Plastic is currently driving the growth of the petrochemical industry and contributing to the overall growth of oil consumption.<br\/>Around 460 million tons of plastic are produced every year, and all too often it ends up in the wrong place. And when plastic gets into nature, it stays there forever, accumulating and affecting every ecosystem. <strong>Over the next 30 years, oil-based plastic production is estimated to quadruple, which will significantly impact CO2 emissions and have a dangerous impact on biodiversity. <\/strong>According to the International Union for Conservation of Nature (IUCN), numerous species of animals and plants are at risk of extinction:<br\/>•\tGreat Panda (Ailuropoda melanoleuca)<br\/>•\tTiger (Panthera tigris)<br\/>•\tAmazonian dolphin (Inia geoffrensis)<br\/>•\tGorilla (Gorilla beringei, Gorilla gorilla)<br\/>•\tElephant (Loxodonta spp., Elephas maximus)<br\/>•\tGiraffe (Giraffa camelopardalis)<br\/>•\tLeopard (Panthera pardus)<br\/>•\tOrangutan (Pongo spp.)<br\/>•\tSea turtle (Cheloniidae, Dermochelyidae)<br\/>•\tRhizophora spp.<br\/>•\tCalifornia redwood (Sequoia sempervirens)<br\/>•\tThorny archives (Pachypodium spp.)<br\/>•\tLarge elephant grass (Adansonia digitata)<br\/>•\tDwarf Oak (Quercus spp.)<br\/><\/p>",
+        "text": "<p>Plastic is currently driving the growth of the petrochemical industry and contributing to the overall growth of oil consumption.<br/>Around 460 million tons of plastic are produced every year, and all too often it ends up in the wrong place. And when plastic gets into nature, it stays there forever, accumulating and affecting every ecosystem. <strong>Over the next 30 years, oil-based plastic production is estimated to quadruple, which will significantly impact CO2 emissions and have a dangerous impact on biodiversity. </strong>According to the International Union for Conservation of Nature (IUCN), numerous species of animals and plants are at risk of extinction:<br/>•\tGreat Panda (Ailuropoda melanoleuca)<br/>•\tTiger (Panthera tigris)<br/>•\tAmazonian dolphin (Inia geoffrensis)<br/>•\tGorilla (Gorilla beringei, Gorilla gorilla)<br/>•\tElephant (Loxodonta spp., Elephas maximus)<br/>•\tGiraffe (Giraffa camelopardalis)<br/>•\tLeopard (Panthera pardus)<br/>•\tOrangutan (Pongo spp.)<br/>•\tSea turtle (Cheloniidae, Dermochelyidae)<br/>•\tRhizophora spp.<br/>•\tCalifornia redwood (Sequoia sempervirens)<br/>•\tThorny archives (Pachypodium spp.)<br/>•\tLarge elephant grass (Adansonia digitata)<br/>•\tDwarf Oak (Quercus spp.)<br/></p>",
         "button_label": "",
         "button_link": ""
       }
@@ -294,28 +225,28 @@
         "logo_image_yPPJAj": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Project441.jpg",
+            "image": "shopify://shop_images/New_Project441.jpg",
             "link": ""
           }
         },
         "logo_image_mDKAKW": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Project312.jpg",
+            "image": "shopify://shop_images/New_Project312.jpg",
             "link": ""
           }
         },
         "logo_image_DfJehL": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Project3124.jpg",
+            "image": "shopify://shop_images/New_Project3124.jpg",
             "link": ""
           }
         },
         "logo_image_4ct9yK": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/New_Project1.jpg",
+            "image": "shopify://shop_images/New_Project1.jpg",
             "link": ""
           }
         }
@@ -338,14 +269,12 @@
         "richtext_himPjd": {
           "type": "richtext",
           "settings": {
-            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br\/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br\/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br\/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br\/><\/p>",
+            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br/></p>",
             "text_size": 18
           }
         }
       },
-      "block_order": [
-        "richtext_himPjd"
-      ],
+      "block_order": ["richtext_himPjd"],
       "settings": {
         "background_color": "",
         "colors": "white",
@@ -360,12 +289,12 @@
         "image_D9g8Xa": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/4.png",
+            "desktop_image": "shopify://shop_images/4.png",
             "heading": "",
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-top md-min-justify-left",
             "mobile_position": "md-max-align-top md-max-justify-left",
             "text_color": "#262428",
@@ -384,7 +313,7 @@
             "text": "A study by The University of Newcastle, commissioned by WWF, found that the average person consumes about 2,000 tiny pieces of plastic every week, or about 5 grams, which is the weight of an average credit card!",
             "text_alignment": "center",
             "button_label": "",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#fefefe",
             "text_color": "#262428",
@@ -399,10 +328,10 @@
           "settings": {
             "heading": "Couldmicroplastics get into our bloodstream?",
             "heading_size": 30,
-            "text": "It is generally believed that once microplastics enter the human body, they will be excreted through the gastrointestinal tract and biliary tract. However, researchers at the Amsterdam University Medical Center have found the presence of microplastics in human blood.\nA recent review by the Mexico National Polytechnic Institute shows that microplastics are transported throughout the body through the bloodstream and have been found in 15 human biological components, such as spleen, liver, colon, lungs, feces, placenta, breast milk, etc. The organs with the highest levels are the colon (28.1 ppm\/g) and liver (4.6 ppm\/g).\nMicroplastics are virtually impossible to clean up once they enter the environment. It simply continues to accumulate, posing a growing threat to our ecosystem and health every day.",
+            "text": "It is generally believed that once microplastics enter the human body, they will be excreted through the gastrointestinal tract and biliary tract. However, researchers at the Amsterdam University Medical Center have found the presence of microplastics in human blood.\nA recent review by the Mexico National Polytechnic Institute shows that microplastics are transported throughout the body through the bloodstream and have been found in 15 human biological components, such as spleen, liver, colon, lungs, feces, placenta, breast milk, etc. The organs with the highest levels are the colon (28.1 ppm/g) and liver (4.6 ppm/g).\nMicroplastics are virtually impossible to clean up once they enter the environment. It simply continues to accumulate, posing a growing threat to our ecosystem and health every day.",
             "text_alignment": "center",
             "button_label": "",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-right",
             "background_color": "#fefefe",
             "text_color": "#262428",
@@ -413,11 +342,7 @@
           }
         }
       },
-      "block_order": [
-        "image_D9g8Xa",
-        "text_z7qtMh",
-        "text_fwERBG"
-      ],
+      "block_order": ["image_D9g8Xa", "text_z7qtMh", "text_fwERBG"],
       "settings": {
         "color_scheme": "white",
         "title": "These tiny particles arealready in the oceans, among the pollen carried by bees, and in our lungs.",
@@ -468,7 +393,7 @@
             "text": "\"Replacing traditional plastics with biodegradable, biobased materials and creating an efficient recycling system for this group of materials is key to a cleaner future; it enables us to reduce our dependence on oil, eliminate microplastic pollution and fight global warming,\" said Suvi Haimi, CEO and co-founder of Sulapac.",
             "text_alignment": "left",
             "button_label": "Read More",
-            "url": "shopify:\/\/blogs\/news",
+            "url": "shopify://blogs/news",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -479,10 +404,7 @@
           }
         }
       },
-      "block_order": [
-        "image_fEXqjT",
-        "text_eFngdt"
-      ],
+      "block_order": ["image_fEXqjT", "text_eFngdt"],
       "settings": {
         "color_scheme": "white",
         "title": "ALTERNATIVE TO PLASTIC",
@@ -515,7 +437,7 @@
             "text": "Over 75% of all aluminum produced since 1988 is still in circulation in recycled form, which demonstrates its high recyclability and importance for resource conservation.",
             "text_alignment": "left",
             "button_label": "Read more",
-            "url": "shopify:\/\/blogs\/news\/aluminium",
+            "url": "shopify://blogs/news/aluminium",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -544,10 +466,7 @@
           }
         }
       },
-      "block_order": [
-        "text_8AV7jU",
-        "image_CkCLdK"
-      ],
+      "block_order": ["text_8AV7jU", "image_CkCLdK"],
       "settings": {
         "color_scheme": "white",
         "title": "Aluminum",
@@ -580,7 +499,7 @@
             "text": "The mycelium used for our packaging was also chosen to reduce our environmental impact. It plays an important role in our strategy, as it minimizes our environmental footprint.",
             "text_alignment": "left",
             "button_label": "Read more",
-            "url": "shopify:\/\/blogs\/news\/mycelium",
+            "url": "shopify://blogs/news/mycelium",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -597,7 +516,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-top md-min-justify-left",
             "mobile_position": "md-max-align-top md-max-justify-left",
             "text_color": "#262428",
@@ -609,10 +528,7 @@
           }
         }
       },
-      "block_order": [
-        "text_pr4QDa",
-        "image_UhX9tF"
-      ],
+      "block_order": ["text_pr4QDa", "image_UhX9tF"],
       "settings": {
         "color_scheme": "white",
         "title": "MYCELIUM",
@@ -663,7 +579,7 @@
             "text": "Wood is a natural, biodegradable material that biodegrades easily in nature and plays an important role in our environmental strategy.",
             "text_alignment": "left",
             "button_label": "Read More",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -674,10 +590,7 @@
           }
         }
       },
-      "block_order": [
-        "image_EbQdbD",
-        "text_pbNhih"
-      ],
+      "block_order": ["image_EbQdbD", "text_pbNhih"],
       "settings": {
         "color_scheme": "white",
         "title": "WOOD",
@@ -728,7 +641,7 @@
             "text": "This process leads to the loss of the natural environment, species extinction, and the destruction of biodiversity.",
             "text_alignment": "left",
             "button_label": "Read more",
-            "url": "shopify:\/\/blogs\/news\/fallen-leaves",
+            "url": "shopify://blogs/news/fallen-leaves",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -739,10 +652,7 @@
           }
         }
       },
-      "block_order": [
-        "image_Rwcmjd",
-        "text_7VF6HK"
-      ],
+      "block_order": ["image_Rwcmjd", "text_7VF6HK"],
       "settings": {
         "color_scheme": "white",
         "title": "FALLEN LEAVES",
@@ -775,7 +685,7 @@
             "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
             "text_alignment": "left",
             "button_label": "Read more",
-            "url": "shopify:\/\/blogs\/news\/flowering-paper",
+            "url": "shopify://blogs/news/flowering-paper",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -792,7 +702,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-top md-min-justify-left",
             "mobile_position": "md-max-align-top md-max-justify-left",
             "text_color": "#262428",
@@ -804,10 +714,7 @@
           }
         }
       },
-      "block_order": [
-        "text_GLfQeh",
-        "image_NkGpdF"
-      ],
+      "block_order": ["text_GLfQeh", "image_NkGpdF"],
       "settings": {
         "color_scheme": "white",
         "title": "FLOWERING PAPER",
@@ -840,7 +747,7 @@
             "text": "- is the first tree planting project in Ukraine supported by the United Nations. Founded by a group of Ukrainian mothers, the project aims to reduce CO2 emissions and support environmental initiatives.",
             "text_alignment": "left",
             "button_label": "Read more",
-            "url": "shopify:\/\/blogs\/news\/trees-planting",
+            "url": "shopify://blogs/news/trees-planting",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "background_color": "#e6e5e7",
             "text_color": "#262428",
@@ -857,7 +764,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-top md-min-justify-left",
             "mobile_position": "md-max-align-top md-max-justify-left",
             "text_color": "#262428",
@@ -869,10 +776,7 @@
           }
         }
       },
-      "block_order": [
-        "text_4fiYmn",
-        "image_hYzkkL"
-      ],
+      "block_order": ["text_4fiYmn", "image_hYzkkL"],
       "settings": {
         "color_scheme": "white",
         "title": "TREES PLANTING",
@@ -898,13 +802,13 @@
       "type": "advanced-layout--hero",
       "settings": {
         "homepage-hero-featured-content": "homepage-hero-image-selection",
-        "home-page-hero-image": "shopify:\/\/shop_images\/6.jpg",
+        "home-page-hero-image": "shopify://shop_images/6.jpg",
         "image_overlay_opacity": 50,
         "homepage-hero-image-heading": "",
         "homepage-hero-image-description": "",
         "text-color": "#ffffff",
         "homepage-hero-image-button-label": "",
-        "homepage-hero-image-link": "shopify:\/\/blogs\/news\/greenwashing-vs-sustainable",
+        "homepage-hero-image-link": "shopify://blogs/news/greenwashing-vs-sustainable",
         "video_url": "",
         "homepage-hero-video-autoplay": true,
         "homepage-hero-video-loop": true,
@@ -921,9 +825,7 @@
           }
         }
       },
-      "block_order": [
-        "blog_z64bfM"
-      ],
+      "block_order": ["blog_z64bfM"],
       "settings": {
         "colors": "white",
         "title": "From the blog",
@@ -941,7 +843,7 @@
     "image_logo_list_VTEpxB",
     "video_video_7GpWej",
     "text_rich_text_9EGRrh",
-    "animated_text_3TzTia",
+    "content-on-image-background",
     "text_rich_text_aiRYBj",
     "image_image_with_text_cBwR3y",
     "image_logo_list_3YXzBG",

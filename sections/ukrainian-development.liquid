@@ -12,7 +12,7 @@
 {% endif %}">
   <div class="wrapper-padded show-on-scroll">
     <h2 class="title">
-      SCIENTIFIC UKRAINIAN DEVELOPMENT
+      {{ section.settings.title }}
     </h2>
     <div class="facts">
       <ul class="list">
@@ -35,6 +35,11 @@
         "type": "image_picker",
         "id": "background",
         "label": "Background for this section"
+      }, {
+        "type": "text",
+        "id": "title",
+        "default": "SCIENTIFIC UKRAINIAN DEVELOPMENT",
+        "label": "Title"
       }
     ],
     "blocks": [

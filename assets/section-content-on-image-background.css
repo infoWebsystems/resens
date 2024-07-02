@@ -1,0 +1,39 @@
+.content-on-image-background {
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.content-on-image-background .title {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.content-on-image-background .text {
+  margin: 0 auto;
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffffff;
+  max-width: 400px;
+}
+
+.content-on-image-background .button {
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 16px;
+  width: 200px;
+  background: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
