@@ -1,4 +1,5 @@
 .content-on-image-background {
+  margin-top: 106px;
   padding: 80px 0;
   color: #ffffff;
 }
@@ -22,7 +23,6 @@
   line-height: 160%;
   text-align: center;
   color: #ffffff;
-  max-width: 400px;
 }
 
 .content-on-image-background .button {
