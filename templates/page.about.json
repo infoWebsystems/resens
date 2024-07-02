@@ -16,7 +16,7 @@
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "Share your story",
+        "title": "About us",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -90,7 +90,8 @@
         "list_DeNTCm"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg"
+        "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
+        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
       }
     },
     "eco-responcibility": {
