@@ -107,6 +107,7 @@
         "card_tKFXRT": {
           "type": "card",
           "settings": {
+            "background": "shopify:\/\/shop_images\/about-facts-bg-1.jpg",
             "card_value": "38%",
             "card_description": "of innovative compostable packaging - for the first time in Ukraine"
           }
@@ -114,6 +115,7 @@
         "card_QYhtfm": {
           "type": "card",
           "settings": {
+            "background": "shopify:\/\/shop_images\/about-facts-bg-2.jpg",
             "card_value": "59%",
             "card_description": "of packaging made from recyclable materials"
           }
@@ -121,6 +123,7 @@
         "card_emzGm9": {
           "type": "card",
           "settings": {
+            "background": "shopify:\/\/shop_images\/about-facts-bg-3.jpg",
             "card_value": "3%",
             "card_description": "of packaging made of plastic, and we plan to reduce this to 0% over the next 3 years"
           }
