@@ -1,0 +1,82 @@
+<link
+  rel="preload"
+  href="{{ 'section-founders-cards.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-founders-cards.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="founders-cards">
+  <div class="wrapper-padded show-on-scroll">
+    <div class="grid">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'card' %}
+            <div class="founder-info">
+              {% if block.settings.image %}
+                <img
+                  class="photo"
+                  src="{{ block.settings.image | image_url }}"
+                  alt="founder">
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'photo' }}
+              {% endif %}
+              <div class="name">{{ block.settings.name }}</div>
+              <div class="description">{{ block.settings.quote }}</div>
+              {% if block.settings.read_more_url %}
+                {% comment %} 
+                                    <div class="read-more">
+                                      Show more
+                                      </div>
+                                    {% endcomment %}
+              {% endif %}
+            </div>
+        {% endcase %}
+      {% else %}
+        {% for i in (1..3) %}
+          <div class="founder-info">
+            {{ 'product-1' | placeholder_svg_tag: 'photo' }}
+            <div class="name">Name</div>
+            <div class="description">Quote</div>
+
+            <a class="read-more" href="#">Show more</a>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Founders Cards",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Card",
+        "type": "card",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "name",
+            "default": "Name:",
+            "label": "Name"
+          }, {
+            "type": "text",
+            "id": "quote",
+            "label": "Quote",
+            "default": "Quote"
+          }, {
+            "type": "url",
+            "id": "read_more_url",
+            "label": "Read more URL"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

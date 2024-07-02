@@ -47,7 +47,7 @@
         "logo": "shopify:\/\/shop_images\/resens_logo_Artboard_1_2_1.svg",
         "logo-placement": "center",
         "logo_max_width": 100,
-        "logo_padding": 30,
+        "logo_padding": 10,
         "mobile_social_icons": false,
         "label-enable": false,
         "cart-style": "shopping-cart",

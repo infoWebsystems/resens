@@ -12,27 +12,64 @@
     </div>
     <div class="definition">
       <div class="subdefinition re">
-        <h3 class="title">
-          Re
+        <h3 class="title re">
+          {{ section.settings.header_1 }}
         </h3>
         <div class="description">
-          <span class="bold">RE</span>
-          name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.
+          <span class="bold">{{ section.settings.header_1 }}</span>
+          {{ section.settings.text_1 }}
         </div>
 
       </div>
       <div class="subdefinition sens">
-        <h3 class="title">
-          sens
+        <h3 class="title sens">
+          {{ section.settings.header_2 }}
         </h3>
         <div class="description">
-          <span class="bold">sens</span>
-          comes from "senses" and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.
+          <span class="bold">{{ section.settings.header_2 }}</span>
+          {{ section.settings.text_2 }}
         </div>
       </div>
     </div>
     <div class="conclusion">
-      So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer.
+      {{ section.settings.conclusion }}
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Resens Definition",
+    "settings": [
+      {
+        "type": "text",
+        "id": "header_1",
+        "label": "Header 1",
+        "default": "Re"
+      },
+      {
+        "type": "text",
+        "id": "header_2",
+        "label": "Header 2",
+        "default": "Sens"
+      },
+      {
+        "type": "text",
+        "id": "text_1",
+        "label": "Text 1",
+        "default": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically."
+      },
+      {
+        "type": "text",
+        "id": "text_2",
+        "label": "Text 2",
+        "default": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us."
+      }, {
+        "type": "text",
+        "id": "conclusion",
+        "label": "Conclusion",
+        "default": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
+      }
+    ]
+  }
+{% endschema %}

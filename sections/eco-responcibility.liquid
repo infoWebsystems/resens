@@ -8,16 +8,37 @@
 <div class="eco-responcibility">
   <div class="wrapper-padded show-on-scroll">
     <h2 class="title">
-      ECO-RESPONCIBILITY
+      {{ section.settings.title }}
     </h2>
     <h3 class="subtitle">
-      THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET
+      {{ section.settings.sub_title }}
     </h3>
     <div class="description">
-      Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br>
-      We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br>
-      PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br>
-      VISION is to become a Zero Net company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of "bad habits" and contribute to a sustainable future.
+      {{ section.settings.description }}
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Eco Responcibility",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "ECO-RESPONCIBILITY"
+      }, {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Section Secondary Title",
+        "default": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET"
+      }, {
+        "type": "richtext",
+        "id": "description",
+        "label": "Main Text",
+        "default": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br> VISION is to become a Zero Net company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
+      }
+    ]
+  }
+{% endschema %}

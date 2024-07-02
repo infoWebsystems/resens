@@ -1,0 +1,59 @@
+.founders-cards {
+  padding: 16px 10px 80px 10px;
+}
+
+.founders-cards .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.founders-cards .founder-info {
+  background-color: #f4f4f4;
+  padding: 48px 24px 40px 24px;
+}
+
+.founders-cards .founder-info .photo {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.founders-cards .founder-info .name {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.founders-cards .founder-info .description {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.founders-cards .founder-info .read-more {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .founders-cards .grid {
+    grid-template-columns: 1fr;
+  }
+  .founders-cards .founder-info {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}

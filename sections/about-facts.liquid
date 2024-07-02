@@ -8,12 +8,72 @@
 <div class="about-facts">
   <div class="wrapper-padded show-on-scroll">
     <h2 class="title">
-      Re[Sens] – your personal contribution to environmental protection
+      {{ section.settings.title }}
     </h2>
+
     <div class="cards">
-      <div class="card">card 1</div>
-      <div class="card">card 2</div>
-      <div class="card">card 3</div>
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when "card" %}
+            <div class="card card-1" style="background: {% if block.settings.background %}
+          url(' {{ block.settings.background | image_url: width: " 700x" }}') center center / cover no-repeat
+        {% else %}
+          green
+        {% endif %}">
+              <div class="value">{{ block.settings.card_value }}</div>
+              <div class="description">
+                {{ block.settings.card_description }}
+              </div>
+            </div>
+        {% endcase %}
+      {% else %}
+        {% for i in (1..3) %}
+          <div class="card card-1" style="background: green">
+            <div class="value">Title</div>
+            <div class="description">
+              Description
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Environment Protection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Re[Sens] – your personal contribution to environmental protection"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Card",
+        "type": "card",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "background",
+            "label": "Background for this card"
+          }, {
+            "type": "text",
+            "id": "card_value",
+            "default": "38%",
+            "label": "Value"
+          }, {
+            "type": "text",
+            "id": "card_description",
+            "default": "of innovative compostable packaging - for the first time in Ukraine",
+            "label": "Card description"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

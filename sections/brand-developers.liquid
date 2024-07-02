@@ -1,0 +1,259 @@
+<link
+  rel="preload"
+  href="{{ 'section-brand-developers.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-brand-developers.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="brand-developers">
+  <div class="wrapper-padded show-on-scroll">
+    <h2 class="title">
+      {{ section.settings.title }}
+    </h2>
+    <div class="grid brand-developers-desktop" style="background: {% if section.settings.background %}
+    url(' {{ section.settings.background | image_url: width: " 2000x" }}') center center / cover no-repeat
+  {% else %}
+    green
+  {% endif %}">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'founder_1' %}
+            <div class="founder-info grid-row-2">
+              <div class="header">
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+              </div>
+              <div class="description">{{ block.settings.about }}</div>
+            </div>
+          {% when 'founder_2' %}
+            <div class="founder-info">
+              <div class="header">
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+              </div>
+              <div class="description">{{ block.settings.about }}</div>
+            </div>
+          {% when 'founder_3' %}
+            <div class="founder-info">
+              <div class="header">
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+              </div>
+              <div class="description">{{ block.settings.about }}</div>
+            </div>
+          {% when 'general_info' %}
+            <div class="general-info">
+              <div>
+                {{ block.settings.general_info }}
+              </div>
+              {% if block.settings.trust_badge %}
+                <div class="trust_badge">
+                  <img src="{{ block.settings.trust_badge | image_url }}" alt="{{ block.settings.trust_badge.alt }}">
+                </div>
+              {% endif %}
+
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+
+
+    <div class="brand-developers-mobile">
+      <div class="brand-developers">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'founder_1' %}
+              <div class="brand-developer">
+                <div class="image">
+                  {% if block.settings.image_developer_on_mobile %}
+                    <img src="{{ block.settings.image_developer_on_mobile |  image_url  }}" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                  {% else %}
+                    {{ "image" | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+                <div class="description">{{ block.settings.mobile_about }}</div>
+              </div>
+            {% when 'founder_2' %}
+              <div class="brand-developer">
+                <div class="image">
+                  {% if block.settings.image_developer_on_mobile %}
+                    <img src="{{ block.settings.image_developer_on_mobile |  image_url  }}" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                  {% else %}
+                    {{ "image" | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+                <div class="description">{{ block.settings.mobile_about }}</div>
+              </div>
+            {% when 'founder_3' %}
+              <div class="brand-developer">
+                <div class="image">
+                  {% if block.settings.image_developer_on_mobile %}
+                    <img src="{{ block.settings.image_developer_on_mobile |  image_url  }}" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                  {% else %}
+                    {{ "image" | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+                <div class="description">{{ block.settings.mobile_about }}</div>
+              </div>
+              <div class="general-info">
+                <div>
+                  {{ block.settings.general_info }}
+                </div>
+                {% if block.settings.trust_badge %}
+                  <div class="trust_badge">
+                    <img src="{{ block.settings.trust_badge | image_url }}" alt="{{ block.settings.trust_badge.alt }}">
+                  </div>
+                {% endif %}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Brand Developers",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "brand developers"
+      }, {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Founder 1",
+        "type": "founder_1",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "role",
+            "default": "CO-FOUNDER AND BRAND DEVELOPER",
+            "label": "Role"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "default": "OLGA HUZHYK",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "about",
+            "default": "Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'",
+            "label": "About"
+          },
+          {
+            "type": "richtext",
+            "id": "mobile_about",
+            "default": "<p>Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'</p>",
+            "label": "About on mobile devices"
+          }, {
+            "type": "image_picker",
+            "id": "image_developer_on_mobile",
+            "label": "Image for mobile devices"
+          }
+        ]
+      }, {
+        "name": "Founder 2",
+        "type": "founder_2",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "html",
+            "id": "role",
+            "default": "CO-FOUNDER <br> OF THE BRAND",
+            "label": "Role"
+          },
+          {
+            "type": "html",
+            "id": "name",
+            "default": "YULIA HAHARINA",
+            "label": "Name"
+          },
+          {
+            "type": "html",
+            "id": "about",
+            "default": "Eco-activist, lecturer, organizer of recycling stations in residential complexes",
+            "label": "About"
+          },
+          {
+            "type": "richtext",
+            "id": "mobile_about",
+            "default": "<p>Eco-activist, lecturer, organizer of recycling stations in residential complexes</p>",
+            "label": "About on mobile devices"
+          }, {
+            "type": "image_picker",
+            "id": "image_developer_on_mobile",
+            "label": "Image for mobile devices"
+          }
+        ]
+      }, {
+        "name": "Founder 3",
+        "type": "founder_3",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "role",
+            "default": "CO-FOUNDER <br> OF THE BRAND",
+            "label": "Role"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "default": "YULIA POLIAKOVA",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "about",
+            "default": "Mentor in «Misto Dobra»",
+            "label": "About"
+          },
+          {
+            "type": "richtext",
+            "id": "mobile_about",
+            "default": "<p>Mentor in «Misto Dobra»</p>",
+            "label": "About on mobile devices"
+          }, {
+            "type": "image_picker",
+            "id": "image_developer_on_mobile",
+            "label": "Image for mobile devices"
+          }
+        ]
+      }, {
+        "name": "General Info",
+        "type": "general_info",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "general_info",
+            "label": "General Info",
+            "default": "Co-founders of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)"
+          }, {
+            "type": "image_picker",
+            "id": "trust_badge",
+            "label": "Trust Badge"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

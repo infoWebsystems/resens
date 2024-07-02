@@ -1,0 +1,44 @@
+<link
+  rel="preload"
+  href="{{ 'section-about-philosophy-info.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-about-philosophy-info.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="about-philosophy-info">
+  <div class="wrapper-padded show-on-scroll">
+    <h2 class="title">
+      {{ section.settings.title }}
+    </h2>
+    <h3 class="subtitle">
+      {{ section.settings.sub_title }}
+    </h3>
+    <div class="description">
+      {{ section.settings.description }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Philosophy of Beauty",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "PHILOSOPHY OF SLOW BEAUTY",
+        "label": "Section Title"
+      }, {
+        "type": "text",
+        "id": "sub_title",
+        "default": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
+        "label": "Section Subtitle"
+      }, {
+        "type": "richtext",
+        "id": "description",
+        "default": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli.</p>",
+        "label": "Section Description"
+      }
+    ]
+  }
+{% endschema %}

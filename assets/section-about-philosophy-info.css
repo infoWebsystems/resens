@@ -1,8 +1,8 @@
-.eco-responcibility {
-  padding: 80px 10px 128px 10px;
+.about-philosophy-info {
+  padding: 80px 10px 0 10px;
 }
 
-.eco-responcibility .title {
+.about-philosophy-info .title {
   text-align: center;
   margin: 0;
   font-weight: 400;
@@ -12,32 +12,37 @@
   text-transform: uppercase;
 }
 
-.eco-responcibility .subtitle {
+.about-philosophy-info .subtitle {
   margin: 0;
   margin-top: 32px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 160%;
   text-align: center;
   letter-spacing: 0.17em;
   text-transform: uppercase;
+  line-height: 160%;
 }
 
-.eco-responcibility .description {
-  margin-top: 24px;
+.about-philosophy-info .description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-  font-weight: 400;
+.about-philosophy-info .description ul li {
+  font-weight: 500;
   font-size: 16px;
   line-height: 160%;
-  letter-spacing: 1px;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 767px) {
-  .eco-responcibility .title {
+  .about-facts .cards {
+    grid-template-columns: 1fr;
+  }
+  .about-philosophy-info .title {
     font-size: 20px;
   }
-  .eco-responcibility .subtitle {
+  .about-philosophy-info .subtitle {
     font-size: 16px;
   }
 }

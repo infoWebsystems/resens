@@ -1,0 +1,64 @@
+<link
+  rel="preload"
+  href="{{ 'section-content-on-image-background.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-content-on-image-background.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="content-on-image-background" style="background: {% if section.settings.background %}
+  url(' {{ section.settings.background | image_url: width: " 700x" }}') center center / cover no-repeat
+{% else %}
+  green
+{% endif %}">
+  <div class="wrapper-padded show-on-scroll">
+    <h2 class="title">
+      {{ section.settings.title }}
+    </h2>
+    <div class="text">
+      {{ section.settings.description }}
+    </div>
+    <a class="button" href="{{ section.settings.btn_url }}">
+      {{ section.settings.btn_label }}
+    </a>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Ukrainian Development",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background for this section"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Everyone can reduce their carbon footprint by changing their habits.",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "default": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button Label",
+        "default": "Label"
+      }, {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Button URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Content on image background"
+      }
+    ]
+  }
+{% endschema %}

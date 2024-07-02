@@ -1,12 +1,22 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image": "shopify:\/\/shop_images\/DSC0362411.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
+        "title": "About us",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -21,45 +31,211 @@
         "hover-button-background": "#494949"
       }
     },
-    "63d055aa-9706-43b0-b3c8-49b4a2e53ef9": {
-      "type": "text--rich-text",
+    "logo-with-text": {
+      "type": "logo-with-text",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/logo-without-text.png",
+        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
+    },
+    "resens-definition": {
+      "type": "resens-definition",
+      "settings": {
+        "header_1": "Re",
+        "header_2": "Sens",
+        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
+        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
+        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
+      }
+    },
+    "ukrainian-development": {
+      "type": "ukrainian-development",
       "blocks": {
-        "heading_RdzzHJ": {
-          "type": "heading",
+        "list_QNYrLE": {
+          "type": "list",
           "settings": {
-            "heading": "ABOUT US"
+            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
           }
         },
-        "a52c67a4-24a0-4020-93a2-4b06cdc1c155": {
-          "type": "richtext",
+        "list_fUqXEJ": {
+          "type": "list",
           "settings": {
-            "text": "<p>The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles.</p>",
-            "text_size": 20
+            "list_item": "Clinically proven effectiveness"
+          }
+        },
+        "list_i4eg7A": {
+          "type": "list",
+          "settings": {
+            "list_item": "Innovative raw materials from around the world: europe, japan, korea, usa"
+          }
+        },
+        "list_rWnTab": {
+          "type": "list",
+          "settings": {
+            "list_item": "Compostable packaging"
+          }
+        },
+        "list_DeNTCm": {
+          "type": "list",
+          "settings": {
+            "list_item": "Respect for nature, humans and the environment in general"
           }
         }
       },
-      "block_order": ["heading_RdzzHJ", "a52c67a4-24a0-4020-93a2-4b06cdc1c155"],
+      "block_order": [
+        "list_QNYrLE",
+        "list_fUqXEJ",
+        "list_i4eg7A",
+        "list_rWnTab",
+        "list_DeNTCm"
+      ],
       "settings": {
-        "colors": "white",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "left"
+        "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
+        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
       }
     },
-    "logo-with-text": {
-      "type": "logo-with-text"
-    },
-    "resens-definition": {
-      "type": "resens-definition"
-    },
-    "ukrainian-development": {
-      "type": "ukrainian-development"
-    },
     "eco-responcibility": {
-      "type": "eco-responcibility"
+      "type": "eco-responcibility",
+      "settings": {
+        "title": "ECO-RESPONCIBILITY",
+        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
+        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br\/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br\/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br\/> VISION is to become a <strong>Zero Net <\/strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.<\/p>"
+      }
     },
     "about-facts": {
-      "type": "about-facts"
+      "type": "about-facts",
+      "blocks": {
+        "card_tKFXRT": {
+          "type": "card",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/about-facts-bg-1.jpg",
+            "card_value": "38%",
+            "card_description": "of innovative compostable packaging - for the first time in Ukraine"
+          }
+        },
+        "card_QYhtfm": {
+          "type": "card",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/about-facts-bg-2.jpg",
+            "card_value": "59%",
+            "card_description": "of packaging made from recyclable materials"
+          }
+        },
+        "card_emzGm9": {
+          "type": "card",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/about-facts-bg-3.jpg",
+            "card_value": "3%",
+            "card_description": "of packaging made of plastic, and we plan to reduce this to 0% over the next 3 years"
+          }
+        }
+      },
+      "block_order": [
+        "card_tKFXRT",
+        "card_QYhtfm",
+        "card_emzGm9"
+      ],
+      "settings": {
+        "title": "Re[Sens] – your personal contribution to environmental protection"
+      }
+    },
+    "about-philosophy-info": {
+      "type": "about-philosophy-info",
+      "settings": {
+        "title": "PHILOSOPHY OF SLOW BEAUTY",
+        "sub_title": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
+        "description": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are adherents of a conscious \"Slow Beauty\" approach, which goes hand in hand with the increasingly popular \"Slow Food\" trend. These approaches are about:<\/p><ul><li><strong>mindful consumption<\/strong><\/li><li><strong>getting the result not at any cost<\/strong><\/li><li><strong>ethical interaction with the world<\/strong><\/li><\/ul><p>That is,Moderate impact on the skin without overstimulation. And if there is one thing in our formulas that is abundant, it is anti-inflammatory, moisturizing and soothing components.<\/p>"
+      }
+    },
+    "brand-developers": {
+      "type": "brand-developers",
+      "blocks": {
+        "founder_1_3bPzEc": {
+          "type": "founder_1",
+          "settings": {
+            "role": "CO-FOUNDER AND BRAND DEVELOPER",
+            "name": "OLGA HUZHYK",
+            "about": "Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'",
+            "mobile_about": "<p>Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology \"without chemophobia\"<\/p>",
+            "image_developer_on_mobile": "shopify:\/\/shop_images\/resized-1.jpg"
+          }
+        },
+        "founder_2_Wdbr8q": {
+          "type": "founder_2",
+          "settings": {
+            "role": "CO-FOUNDER <br> OF THE BRAND",
+            "name": "YULIA HAHARINA",
+            "about": "Eco-activist, lecturer, organizer of recycling stations in residential complexes",
+            "mobile_about": "<p>Co-founder of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)<\/p><p>Graduate of the University of Cambridge (Institute of Sustainability Leadership) 2023<\/p><p>Eco-activist, lecturer, organizer of recycling stations in residential complexes<\/p>",
+            "image_developer_on_mobile": "shopify:\/\/shop_images\/resized-3.jpg"
+          }
+        },
+        "founder_3_PgwK6E": {
+          "type": "founder_3",
+          "settings": {
+            "role": "CO-FOUNDER  OF THE BRAND",
+            "name": "YULIA POLIAKOVA",
+            "about": "Mentor in «Misto Dobra»",
+            "mobile_about": "<p>Co-founder of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)<\/p><p>Graduate of the University of Cambridge (Institute of Sustainability Leadership) 2023<\/p><p>Mentor in «Misto Dobra»<\/p>",
+            "image_developer_on_mobile": "shopify:\/\/shop_images\/resized-2.jpg"
+          }
+        },
+        "general_info_dMAJiE": {
+          "type": "general_info",
+          "settings": {
+            "general_info": "Co-founders of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)"
+          }
+        }
+      },
+      "block_order": [
+        "founder_1_3bPzEc",
+        "founder_2_Wdbr8q",
+        "founder_3_PgwK6E",
+        "general_info_dMAJiE"
+      ],
+      "settings": {
+        "title": "brand developers",
+        "background": "shopify:\/\/shop_images\/img_1164_b1648254-7c0b-4c6a-b073-6d252021c007.jpg"
+      }
+    },
+    "founders-cards": {
+      "type": "founders-cards",
+      "blocks": {
+        "card_yCX7GK": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/file_2.jpg",
+            "name": "Yulia Haharina:",
+            "quote": "“My goal is to make a beautiful product without impoverishing the future of my daughters”",
+            "read_more_url": ""
+          }
+        },
+        "card_WQ6A4Q": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/file.jpg",
+            "name": "Olha Huzhyk:",
+            "quote": "“Your personal planet is your body. And apart from the body, by and large, nothin...",
+            "read_more_url": "shopify:\/\/pages\/about-us"
+          }
+        },
+        "card_bBKdFJ": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/file_1.jpg",
+            "name": "Yulia Poliakova:",
+            "quote": "“\"Creating a business in which the organizational object is the reason for...",
+            "read_more_url": "shopify:\/\/pages\/about-us"
+          }
+        }
+      },
+      "block_order": [
+        "card_yCX7GK",
+        "card_WQ6A4Q",
+        "card_bBKdFJ"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -69,6 +245,8 @@
     "ukrainian-development",
     "eco-responcibility",
     "about-facts",
-    "63d055aa-9706-43b0-b3c8-49b4a2e53ef9"
+    "about-philosophy-info",
+    "brand-developers",
+    "founders-cards"
   ]
 }

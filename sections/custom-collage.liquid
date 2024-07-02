@@ -1,0 +1,84 @@
+<link
+  rel="preload"
+  href="{{ 'section-custom-collage.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-custom-collage.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="custom-collage">
+  <div class="wrapper-padded show-on-scroll">
+    <div class="main-flex" style="flex-direction: {{ section.settings.image_position }};">
+      <div class="image">
+        {% if section.settings.main_image %}
+          <img src="{{ section.settings.main_image | image_url }}" alt="{{ section.settings.main_image.alt }}">
+        {% else %}
+          {{ 'image' | placeholder_svg_tag }}
+        {% endif %}
+      </div>
+      <div class="content">
+        <div class="text">
+          <div class="title">{{ section.settings.title }}</div>
+          <div class="main-text">
+            {{ section.settings.main_text }}
+          </div>
+        </div>
+        {% if section.settings.btn_url %}
+          <a class="read-more-btn" href="{{ section.settings.btn_url }}">{{ section.settings.btn_label }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Collage",
+    "settings": [
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "Image Position",
+        "options": [
+          {
+            "label": "Left",
+            "value": "row"
+          }, {
+            "label": "Right",
+            "value": "row-reverse"
+          }
+        ],
+        "default": "row"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Title",
+        "label": "Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main image"
+      },
+      {
+        "type": "richtext",
+        "id": "main_text",
+        "default": "<p>Main Text</p>",
+        "label": "Main Text"
+      }, {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button Label"
+      }, {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Button URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Collage"
+      }
+    ]
+  }
+{% endschema %}
