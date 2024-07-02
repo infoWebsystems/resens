@@ -57,12 +57,15 @@
     width: 270px;
     min-height: 270px;
   }
+  .custom-collage .main-flex {
+    flex-direction: column !important;
+  }
+  .custom-collage .main-flex .image {
+    align-self: center;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .custom-collage .main-flex {
-    flex-direction: column;
-  }
   .custom-collage .image {
     height: 100px;
     width: 100%;

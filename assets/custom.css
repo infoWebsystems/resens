@@ -59,3 +59,10 @@
 .template-page-about #breadcrumbs span {
   color: #fff;
 }
+
+@media only screen and (max-width: 989px) {
+  [data-wetheme-section-type='image--image-with-text'] .grid--full {
+    display: flex;
+    flex-direction: column;
+  }
+}
