@@ -10,7 +10,7 @@
     <h2 class="title">
       {{ section.settings.title }}
     </h2>
-    <div class="grid" style="background: {% if section.settings.background %}
+    <div class="grid brand-developers-desktop" style="background: {% if section.settings.background %}
     url(' {{ section.settings.background | image_url: width: " 2000x" }}') center center / cover no-repeat
   {% else %}
     green
@@ -42,9 +42,79 @@
               <div class="description">{{ block.settings.about }}</div>
             </div>
           {% when 'general_info' %}
-            <div class="general-info">{{ block.settings.general_info }}</div>
+            <div class="general-info">
+              <div>
+                {{ block.settings.general_info }}
+              </div>
+              {% if block.settings.trust_badge %}
+                <div class="trust_badge">
+                  <img src="{{ block.settings.trust_badge | image_url }}" alt="{{ block.settings.trust_badge.alt }}">
+                </div>
+              {% endif %}
+
+            </div>
         {% endcase %}
       {% endfor %}
+    </div>
+
+
+    <div class="brand-developers-mobile">
+      <div class="brand-developers">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'founder_1' %}
+              <div class="brand-developer">
+                <div class="image">
+                  {% if block.settings.image_developer_on_mobile %}
+                    <img src="https://images.pexels.com/photos/1263324/pexels-photo-1263324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                  {% else %}
+                    {{ "image" | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+                <div class="description">{{ block.settings.about }}.</div>
+              </div>
+            {% when 'founder_2' %}
+              <div class="brand-developer">
+                <div class="image">
+                  {% if block.settings.image_developer_on_mobile %}
+                    <img src="https://images.pexels.com/photos/1263324/pexels-photo-1263324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                  {% else %}
+                    {{ "image" | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+                <div class="description">{{ block.settings.about }}.</div>
+              </div>
+            {% when 'founder_3' %}
+              <div class="brand-developer">
+                <div class="image">
+                  {% if block.settings.image_developer_on_mobile %}
+                    <img src="https://images.pexels.com/photos/1263324/pexels-photo-1263324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                  {% else %}
+                    {{ "image" | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+                <div class="role">{{ block.settings.role }}</div>
+                <div class="name">{{ block.settings.name }}</div>
+                <div class="description">{{ block.settings.about }}.</div>
+              </div>
+              <div class="general-info">
+                <div>
+                  {{ block.settings.general_info }}
+                </div>
+                {% if block.settings.trust_badge %}
+                  <div class="trust_badge">
+                    <img src="{{ block.settings.trust_badge | image_url }}" alt="{{ block.settings.trust_badge.alt }}">
+                  </div>
+                {% endif %}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+
     </div>
   </div>
 </div>
@@ -85,6 +155,10 @@
             "id": "about",
             "default": "Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'",
             "label": "About"
+          }, {
+            "type": "image_picker",
+            "id": "image_developer_on_mobile",
+            "label": "Image for mobile devices"
           }
         ]
       }, {
@@ -107,6 +181,10 @@
             "id": "about",
             "default": "Eco-activist, lecturer, organizer of recycling stations in residential complexes",
             "label": "About"
+          }, {
+            "type": "image_picker",
+            "id": "image_developer_on_mobile",
+            "label": "Image for mobile devices"
           }
         ]
       }, {
@@ -129,6 +207,10 @@
             "id": "about",
             "default": "Mentor in «Misto Dobra»",
             "label": "About"
+          }, {
+            "type": "image_picker",
+            "id": "image_developer_on_mobile",
+            "label": "Image for mobile devices"
           }
         ]
       }, {
@@ -141,6 +223,10 @@
             "id": "general_info",
             "label": "General Info",
             "default": "Co-founders of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)"
+          }, {
+            "type": "image_picker",
+            "id": "trust_badge",
+            "label": "Trust Badge"
           }
         ]
       }
