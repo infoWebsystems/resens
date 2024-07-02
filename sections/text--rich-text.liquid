@@ -15,7 +15,12 @@
 <div
   class="homepage-sections-wrapper homepage-sections-wrapper--{{ section.settings.colors }} "
   data-wetheme-section-type="text--rich-text"
-  data-wetheme-section-id="{{ section.id }}">
+  data-wetheme-section-id="{{ section.id }}"
+  style=" {% if section.settings.background_color %}
+    background-color: {{ section.settings.background_color }} 
+			{% else %}
+		background-color: transparent
+  {% endif %}">
 
   <div class="wrapper-padded show-on-scroll">
 
@@ -71,6 +76,11 @@
     "class": "rich-text",
     "settings": [
       {
+        "type": "color",
+        "id": "background_color",
+        "label": "Section Background"
+      },
+      {
         "type": "select",
         "id": "colors",
         "label": "t:all.Color_scheme",
@@ -90,7 +100,8 @@
             "label": "t:all.Dark"
           }
         ]
-      }, {
+      },
+      {
         "type": "select",
         "id": "section_width",
         "label": "t:all.Width",
@@ -104,7 +115,8 @@
           }
         ],
         "default": "narrow"
-      }, {
+      },
+      {
         "type": "select",
         "id": "text_alignment_desktop",
         "label": "t:all.Text_alignment_on_desktop",
