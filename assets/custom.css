@@ -84,7 +84,7 @@
   /* homepage-sections--title homepage-section-title */
 }
 .mobile-nav-bar-wrapper button.site-nav__link {
-  padding: 20px 11px;
+  padding: 20px 11px !important;
 }
 /* Temp */
 
