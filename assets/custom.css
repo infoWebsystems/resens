@@ -60,6 +60,23 @@
   color: #fff;
 }
 
+/* Temp */
+@media only screen and (max-width: 989px) {
+  .template-page-about #breadcrumbs {
+    z-index: 1;
+    display: none;
+  }
+  .template-page-about h2.homepage-sections--title,
+  .template-page-sustainability h2.homepage-sections--title {
+    font-size: 20px !important;
+  }
+  .template-page-sustainability .responsive-image-wrapper img {
+    display: none;
+  }
+  /* homepage-sections--title homepage-section-title */
+}
+/* Temp */
+
 @media only screen and (max-width: 989px) {
   [data-wetheme-section-type='image--image-with-text'] .grid--full {
     display: flex;
