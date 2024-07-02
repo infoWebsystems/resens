@@ -161,15 +161,15 @@
 .brand-developers-mobile .brand-developer {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .brand-developers-mobile .brand-developer .image {
   width: 288px;
+  align-self: center;
 }
 
 .brand-developers-mobile .brand-developer .role {
-  text-align: center;
+  text-align: left;
   margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
