@@ -198,7 +198,6 @@
         "card_yCX7GK": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/founder-photo-1.png",
             "name": "Yulia Haharina:",
             "quote": "“My goal is to make a beautiful product without impoverishing the future of my daughters”",
             "read_more_url": ""
@@ -219,7 +218,7 @@
             "image": "shopify:\/\/shop_images\/founder-photo-3.png",
             "name": "Yulia Poliakova:",
             "quote": "“\"Creating a business in which the organizational object is the reason for...",
-            "read_more_url": "#"
+            "read_more_url": "shopify:\/\/pages\/about-us"
           }
         }
       },
