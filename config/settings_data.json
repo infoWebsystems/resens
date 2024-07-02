@@ -120,31 +120,6 @@
         "settings": {
         }
       },
-      "5858961087409699889": {
-        "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-footer-selector\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
-        "disabled": false,
-        "settings": {
-          "footer_ui_type": "popup",
-          "option_language": true,
-          "style_corners": "square",
-          "style_dropdown": "outlined",
-          "option_classic_flag_style": "square",
-          "option_classic_currency_type": "symbol",
-          "search_country": true,
-          "block_background": "#ffffff",
-          "style_colors_background": "#ffffff",
-          "style_colors_border": "#000000",
-          "style_colors_text": "#000000",
-          "option_modal_continent": false,
-          "option_flag_style": "square",
-          "option_currency_type": "iso",
-          "option_modal_language": true,
-          "title": "Select Your Region",
-          "language_title": "Preferred Language",
-          "helper_text": "Changing language will not affect your selected region",
-          "block_alignement": "center"
-        }
-      },
       "15912215999290715800": {
         "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-modal\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
         "disabled": false,
@@ -172,6 +147,31 @@
           "style_colors_cta_text": "#ffffff",
           "style_colors_cta_button": "#000000",
           "style_colors_text": "#000000"
+        }
+      },
+      "5858961087409699889": {
+        "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-footer-selector\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
+        "disabled": true,
+        "settings": {
+          "footer_ui_type": "popup",
+          "option_language": true,
+          "style_corners": "square",
+          "style_dropdown": "outlined",
+          "option_classic_flag_style": "square",
+          "option_classic_currency_type": "symbol",
+          "search_country": true,
+          "block_background": "#ffffff",
+          "style_colors_background": "#ffffff",
+          "style_colors_border": "#000000",
+          "style_colors_text": "#000000",
+          "option_modal_continent": false,
+          "option_flag_style": "square",
+          "option_currency_type": "iso",
+          "option_modal_language": true,
+          "title": "Select Your Region",
+          "language_title": "Preferred Language",
+          "helper_text": "Changing language will not affect your selected region",
+          "block_alignement": "center"
         }
       }
     }
