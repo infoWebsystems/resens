@@ -190,7 +190,8 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
         "title": "Everyone can reduce their carbon footprint by changing their habits.",
-        "description": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator"
+        "description": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
+        "btn_label": "Label"
       }
     },
     "text_rich_text_aiRYBj": {
@@ -447,6 +448,15 @@
         "btn_url": "#"
       }
     },
+    "content_on_image_background_P6Vefr": {
+      "type": "content-on-image-background",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Rectangle_60.jpg",
+        "title": "Greenwashing VS Sustainable",
+        "description": "Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.",
+        "btn_label": "READ MORE"
+      }
+    },
     "advanced_layout_hero_L4EeEN": {
       "type": "advanced-layout--hero",
       "settings": {
@@ -509,6 +519,7 @@
     "custom_collage_gfPUyY",
     "custom_collage_7zeBbt",
     "custom_collage_nakQzg",
+    "content_on_image_background_P6Vefr",
     "advanced_layout_hero_L4EeEN",
     "blog_blog_posts_Rdw7XP"
   ]
