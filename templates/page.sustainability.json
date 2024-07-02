@@ -222,6 +222,35 @@
         "text_alignment_mobile": "center"
       }
     },
+    "text_rich_text_mpqPj7": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_8jULwK": {
+          "type": "heading",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "richtext_9r3Abp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Plastic is currently driving the growth of the petrochemical industry and contributing to the overall growth of oil consumption.<br\/>Around 460 million tons of plastic are produced every year, and all too often it ends up in the wrong place. And when plastic gets into nature, it stays there forever, accumulating and affecting every ecosystem. <strong>Over the next 30 years, oil-based plastic production is estimated to quadruple, which will significantly impact CO2 emissions and have a dangerous impact on biodiversity. <\/strong>According to the International Union for Conservation of Nature (IUCN), numerous species of animals and plants are at risk of extinction:<\/p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_8jULwK",
+        "richtext_9r3Abp"
+      ],
+      "settings": {
+        "background_color": "#f4f4f4",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "image_image_with_text_cBwR3y": {
       "type": "image--image-with-text",
       "settings": {
@@ -235,6 +264,28 @@
         "text": "<p>•\tGreat Panda (Ailuropoda melanoleuca)<br\/>•\tTiger (Panthera tigris)<br\/>•\tAmazonian dolphin (Inia geoffrensis)<br\/>•\tGorilla (Gorilla beringei, Gorilla gorilla)<br\/>•\tElephant (Loxodonta spp., Elephas maximus)<br\/>•\tGiraffe (Giraffa camelopardalis)<br\/>•\tLeopard (Panthera pardus)<br\/>•\tOrangutan (Pongo spp.)<br\/>•\tSea turtle (Cheloniidae, Dermochelyidae)<br\/>•\tRhizophora spp.<br\/>•\tCalifornia redwood (Sequoia sempervirens)<br\/>•\tThorny archives (Pachypodium spp.)<br\/>•\tLarge elephant grass (Adansonia digitata)<br\/>•\tDwarf Oak (Quercus spp.)<br\/><\/p>",
         "button_label": "",
         "button_link": ""
+      }
+    },
+    "text_rich_text_YQNdgz": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_himPjd": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br\/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br\/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br\/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br\/><\/p>",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "richtext_himPjd"
+      ],
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "image_logo_list_3YXzBG": {
@@ -279,28 +330,6 @@
         "colors": "light",
         "width": 240,
         "title": ""
-      }
-    },
-    "text_rich_text_YQNdgz": {
-      "type": "text--rich-text",
-      "blocks": {
-        "richtext_himPjd": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br\/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br\/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br\/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br\/><\/p>",
-            "text_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "richtext_himPjd"
-      ],
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
       }
     },
     "collage_builder_TCnEUA": {
@@ -892,9 +921,10 @@
     "text_rich_text_9EGRrh",
     "content-on-image-background",
     "text_rich_text_aiRYBj",
+    "text_rich_text_mpqPj7",
     "image_image_with_text_cBwR3y",
-    "image_logo_list_3YXzBG",
     "text_rich_text_YQNdgz",
+    "image_logo_list_3YXzBG",
     "collage_builder_TCnEUA",
     "collage_builder_8mTLDK",
     "collage_builder_FRiTe3",
