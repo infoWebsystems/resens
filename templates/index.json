@@ -9,22 +9,6 @@
 */
 {
   "sections": {
-    "1719929791b2a17589": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_Uwf6z7": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_Uwf6z7"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
@@ -152,6 +136,22 @@
         "richtext": "",
         "collection": "creams",
         "show_view_all": false
+      }
+    },
+    "1719929791b2a17589": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_Uwf6z7": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_Uwf6z7"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "35b28867-77fd-4573-8212-101b3b8e2245": {
@@ -556,10 +556,10 @@
     }
   },
   "order": [
-    "1719929791b2a17589",
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5",
     "b4aa8931-1a4b-45b0-be73-a34e8c206af7",
     "3c4d9433-fe83-4e4a-afa6-63c348fea245",
+    "1719929791b2a17589",
     "35b28867-77fd-4573-8212-101b3b8e2245",
     "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
     "e8654ad7-b205-46a1-b672-af13dcfa8fe9",
