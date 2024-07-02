@@ -185,65 +185,6 @@
         "text_alignment_mobile": "center"
       }
     },
-    "animated_text_3TzTia": {
-      "type": "animated-text",
-      "blocks": {
-        "text_static_tb3yCe": {
-          "type": "text_static",
-          "settings": {
-            "text_static": "<p>Everyone can reduce their carbon footprint by changing their habits. <\/p>",
-            "max_width_desktop": 100,
-            "max_width_mobile": 100,
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "text_dynamic_3Pygdj": {
-          "type": "text_dynamic",
-          "settings": {
-            "text_dynamic": "100, 500, 1000",
-            "animation_timing": 500,
-            "rotation_interval": 5000,
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "text_static_p3EbhP": {
-          "type": "text_static",
-          "settings": {
-            "text_static": "<p>Interested in what carbon footprint you<br\/>leave behind? <\/p>",
-            "max_width_desktop": 100,
-            "max_width_mobile": 100,
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "button_8RqbHN": {
-          "type": "button",
-          "settings": {
-            "button_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/",
-            "button_text": "Calculate it with ouronline calculator",
-            "color_button_text": "rgba(0,0,0,0)",
-            "color_button_background": "rgba(0,0,0,0)",
-            "color_hover_button_text": "rgba(0,0,0,0)",
-            "color_hover_button_background": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "text_static_tb3yCe",
-        "text_dynamic_3Pygdj",
-        "text_static_p3EbhP",
-        "button_8RqbHN"
-      ],
-      "settings": {
-        "colors": "dark",
-        "image_desktop": "shopify:\/\/shop_images\/A_black_imageqqq.jpg",
-        "height_desktop": "m",
-        "text_size_desktop": 60,
-        "text_position_desktop": "left",
-        "height_mobile": "full",
-        "text_size_mobile": 22,
-        "text_position_mobile": "left"
-      }
-    },
     "text_rich_text_aiRYBj": {
       "type": "text--rich-text",
       "blocks": {
@@ -941,7 +882,6 @@
     "image_logo_list_VTEpxB",
     "video_video_7GpWej",
     "text_rich_text_9EGRrh",
-    "animated_text_3TzTia",
     "text_rich_text_aiRYBj",
     "image_image_with_text_cBwR3y",
     "image_logo_list_3YXzBG",
