@@ -68,8 +68,9 @@
   }
   .template-page-about h2.homepage-sections--title,
   .template-page-sustainability h2.homepage-sections--title {
-    /* font-size: 20px !important; */
-    display: none;
+    font-size: 20px !important;
+    margin: 30px 0 0 0;
+    /* display: none; */
   }
   .template-page-sustainability .responsive-image-wrapper img {
     /* display: none; */
