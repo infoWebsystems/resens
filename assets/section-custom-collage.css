@@ -1,0 +1,70 @@
+.custom-collage {
+  margin-top: 128px;
+}
+
+.custom-collage .main-flex {
+  display: flex;
+  gap: 48px;
+}
+
+.custom-collage .image {
+  width: 389px;
+  min-height: 389px;
+  flex-shrink: 0;
+}
+
+.custom-collage .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-collage .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-collage .content .title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.custom-collage .content .main-text {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: justify;
+}
+
+.custom-collage .content .read-more-btn {
+  padding: 16px 55px;
+  margin-top: 41px;
+  background: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  align-self: flex-start;
+}
+
+@media only screen and (max-width: 989px) {
+  .custom-collage .image {
+    width: 270px;
+    min-height: 270px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-collage .main-flex {
+    flex-direction: column;
+  }
+  .custom-collage .image {
+    height: 100px;
+    width: 100%;
+  }
+}
