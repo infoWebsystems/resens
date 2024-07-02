@@ -51,12 +51,6 @@
     "ukrainian-development": {
       "type": "ukrainian-development",
       "blocks": {
-        "list_pkiCah": {
-          "type": "list",
-          "settings": {
-            "list_item": "List item"
-          }
-        },
         "list_QNYrLE": {
           "type": "list",
           "settings": {
@@ -89,7 +83,6 @@
         }
       },
       "block_order": [
-        "list_pkiCah",
         "list_QNYrLE",
         "list_fUqXEJ",
         "list_i4eg7A",
