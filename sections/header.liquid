@@ -27,7 +27,7 @@ Testing Cypress integration
 {% if section.settings.overlay_header_list_collection and template == 'list-collections' %}
   {% assign list-collection-overlay = true %}
 {% endif %}
-
+{% assign list-collection-overlay = true %}
 {% assign contact-overlay = false %}
 {% if section.settings.overlay_header_contact and template == 'page.contact' or template == 'page.about' %}
   {% assign contact-overlay = true %}
@@ -40,7 +40,7 @@ Testing Cypress integration
 %}
   {% assign overlay = true %}
 {% endif %}
- {% assign overlay = true %}
+ 
 {% capture locale %}
   {% render 'localization-form', show_locale_selector: section.settings.show_locale_selector, show_currency_selector: section.settings.show_currency_selector %}
 {% endcapture %}
