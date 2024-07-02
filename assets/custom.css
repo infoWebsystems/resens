@@ -78,7 +78,13 @@
   .mobile-nav-bar-wrapper .grid__item {
     margin-top: 0px;
   }
+  .sticked .site-header__logo img {
+    width: 35px;
+  }
   /* homepage-sections--title homepage-section-title */
+}
+.mobile-nav-bar-wrapper button.site-nav__link {
+  padding: 20px 11px;
 }
 /* Temp */
 
