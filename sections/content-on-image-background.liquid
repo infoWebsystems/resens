@@ -18,7 +18,7 @@
       {{ section.settings.description }}
     </div>
     <div class="button">
-      CALCULATE
+      {{ section.settings.btn_label }}
     </div>
   </div>
 </div>
@@ -41,6 +41,16 @@
         "id": "description",
         "default": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
         "label": "Description"
+      }, {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button Label",
+        "default": "Label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Content on image background"
       }
     ]
   }
