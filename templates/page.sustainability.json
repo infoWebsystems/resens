@@ -54,21 +54,35 @@
             "text": "<p><em>\"Sustainable marketing should be, first and<br\/>foremost, internal marketing. Only thing we can be sure of is changing<br\/>ourselves!\"<\/em> - Yulia Polyakova and Olga Guzhyk. <\/p><p><em>\"My goal is to make a beautiful product without<br\/>impoverishing the future of my daughters.\"<\/em> - Yulia<br\/>Gagarina.<\/p>",
             "text_size": 18
           }
-        },
-        "richtext_4zzfAx": {
+        }
+      },
+      "block_order": [
+        "richtext_4x3hfA"
+      ],
+      "settings": {
+        "background_color": "#f4f4f4",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "text_rich_text_DAftC9": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_GhjAYc": {
           "type": "richtext",
           "settings": {
             "text": "<p>That's how the idea to produce effectivecosmetics and human health products in a new generation of packaging thatneither increases plastic pollution nor contaminates land and wastewater cameabout. Our goal, strategy, and vision were formed inaccordance with the sustainable development goals that the <a href=\"https:\/\/www.un.org\/en\/our-work\/support-sustainable-development-and-climate-action\" target=\"_blank\" title=\"https:\/\/www.un.org\/en\/our-work\/support-sustainable-development-and-climate-action\">UN plans toimplement by 2030<\/a>, namely, to prevent climate warming by more than 1.5°C<\/p>",
-            "text_size": 18
+            "text_size": 14
           }
         }
       },
       "block_order": [
-        "richtext_4x3hfA",
-        "richtext_4zzfAx"
+        "richtext_GhjAYc"
       ],
       "settings": {
-        "background_color": "#f4f4f4",
+        "background_color": "",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -923,6 +937,7 @@
     "main",
     "text_rich_text_KRj3Vw",
     "text_rich_text_bngeLP",
+    "text_rich_text_DAftC9",
     "image_logo_list_VTEpxB",
     "video_video_7GpWej",
     "text_rich_text_9EGRrh",
