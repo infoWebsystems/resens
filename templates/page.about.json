@@ -34,6 +34,7 @@
     "logo-with-text": {
       "type": "logo-with-text",
       "settings": {
+        "logo": "shopify:\/\/shop_images\/logo-without-text.png",
         "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
       }
     },
@@ -102,21 +103,29 @@
     "eco-responcibility": {
       "type": "eco-responcibility",
       "settings": {
+        "title": "ECO-RESPONCIBILITY",
+        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
+        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br> VISION is to become a Zero Net company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.<\/p>"
       }
     },
     "about-facts": {
       "type": "about-facts",
       "settings": {
+        "title": "Re[Sens] – your personal contribution to environmental protection"
       }
     },
     "about-philosophy-info": {
       "type": "about-philosophy-info",
       "settings": {
+        "title": "PHILOSOPHY OF SLOW BEAUTY",
+        "sub_title": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
+        "description": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli.<\/p>"
       }
     },
     "brand-developers": {
       "type": "brand-developers",
       "settings": {
+        "title": "brand developers"
       }
     },
     "founders-cards": {
