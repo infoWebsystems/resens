@@ -66,40 +66,40 @@
               <div class="brand-developer">
                 <div class="image">
                   {% if block.settings.image_developer_on_mobile %}
-                    <img src="https://images.pexels.com/photos/1263324/pexels-photo-1263324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                    <img src="{{ block.settings.image_developer_on_mobile |  image_url  }}" alt="{{ block.settings.image_developer_on_mobile.alt }}">
                   {% else %}
                     {{ "image" | placeholder_svg_tag }}
                   {% endif %}
                 </div>
                 <div class="role">{{ block.settings.role }}</div>
                 <div class="name">{{ block.settings.name }}</div>
-                <div class="description">{{ block.settings.about }}.</div>
+                <div class="description">{{ block.settings.mobile_about }}</div>
               </div>
             {% when 'founder_2' %}
               <div class="brand-developer">
                 <div class="image">
                   {% if block.settings.image_developer_on_mobile %}
-                    <img src="https://images.pexels.com/photos/1263324/pexels-photo-1263324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                    <img src="{{ block.settings.image_developer_on_mobile |  image_url  }}" alt="{{ block.settings.image_developer_on_mobile.alt }}">
                   {% else %}
                     {{ "image" | placeholder_svg_tag }}
                   {% endif %}
                 </div>
                 <div class="role">{{ block.settings.role }}</div>
                 <div class="name">{{ block.settings.name }}</div>
-                <div class="description">{{ block.settings.about }}.</div>
+                <div class="description">{{ block.settings.mobile_about }}</div>
               </div>
             {% when 'founder_3' %}
               <div class="brand-developer">
                 <div class="image">
                   {% if block.settings.image_developer_on_mobile %}
-                    <img src="https://images.pexels.com/photos/1263324/pexels-photo-1263324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="{{ block.settings.image_developer_on_mobile.alt }}">
+                    <img src="{{ block.settings.image_developer_on_mobile |  image_url  }}" alt="{{ block.settings.image_developer_on_mobile.alt }}">
                   {% else %}
                     {{ "image" | placeholder_svg_tag }}
                   {% endif %}
                 </div>
                 <div class="role">{{ block.settings.role }}</div>
                 <div class="name">{{ block.settings.name }}</div>
-                <div class="description">{{ block.settings.about }}.</div>
+                <div class="description">{{ block.settings.mobile_about }}</div>
               </div>
               <div class="general-info">
                 <div>
@@ -145,16 +145,24 @@
             "id": "role",
             "default": "CO-FOUNDER AND BRAND DEVELOPER",
             "label": "Role"
-          }, {
+          },
+          {
             "type": "text",
             "id": "name",
             "default": "OLGA HUZHYK",
             "label": "Name"
-          }, {
+          },
+          {
             "type": "text",
             "id": "about",
             "default": "Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'",
             "label": "About"
+          },
+          {
+            "type": "richtext",
+            "id": "mobile_about",
+            "default": "<p>Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'</p>",
+            "label": "About on mobile devices"
           }, {
             "type": "image_picker",
             "id": "image_developer_on_mobile",
@@ -171,16 +179,24 @@
             "id": "role",
             "default": "CO-FOUNDER <br> OF THE BRAND",
             "label": "Role"
-          }, {
+          },
+          {
             "type": "html",
             "id": "name",
             "default": "YULIA HAHARINA",
             "label": "Name"
-          }, {
+          },
+          {
             "type": "html",
             "id": "about",
             "default": "Eco-activist, lecturer, organizer of recycling stations in residential complexes",
             "label": "About"
+          },
+          {
+            "type": "richtext",
+            "id": "mobile_about",
+            "default": "<p>Eco-activist, lecturer, organizer of recycling stations in residential complexes</p>",
+            "label": "About on mobile devices"
           }, {
             "type": "image_picker",
             "id": "image_developer_on_mobile",
@@ -197,16 +213,24 @@
             "id": "role",
             "default": "CO-FOUNDER <br> OF THE BRAND",
             "label": "Role"
-          }, {
+          },
+          {
             "type": "text",
             "id": "name",
             "default": "YULIA POLIAKOVA",
             "label": "Name"
-          }, {
+          },
+          {
             "type": "text",
             "id": "about",
             "default": "Mentor in «Misto Dobra»",
             "label": "About"
+          },
+          {
+            "type": "richtext",
+            "id": "mobile_about",
+            "default": "<p>Mentor in «Misto Dobra»</p>",
+            "label": "About on mobile devices"
           }, {
             "type": "image_picker",
             "id": "image_developer_on_mobile",
