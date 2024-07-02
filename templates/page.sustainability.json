@@ -9,11 +9,26 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "template--page",
+    "image-with-text-overlay": {
+      "type": "image--image-with-text-overlay",
       "settings": {
-        "page_title_enabled": true,
-        "page_width": "full-width"
+        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image_height": "30vw",
+        "bg_image_overlay_opacity": 10,
+        "parallax": false,
+        "title": "Share your story",
+        "text": "",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "text_rich_text_KRj3Vw": {
@@ -457,7 +472,7 @@
     }
   },
   "order": [
-    "main",
+    "image-with-text-overlay",
     "text_rich_text_KRj3Vw",
     "text_rich_text_bngeLP",
     "text_rich_text_DAftC9",
