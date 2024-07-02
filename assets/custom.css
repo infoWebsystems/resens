@@ -68,10 +68,11 @@
   }
   .template-page-about h2.homepage-sections--title,
   .template-page-sustainability h2.homepage-sections--title {
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
+    display: none;
   }
   .template-page-sustainability .responsive-image-wrapper img {
-    display: none;
+    /* display: none; */
   }
   /* homepage-sections--title homepage-section-title */
 }
@@ -89,5 +90,5 @@
 }
 
 .template-page-sustainability .responsive-image-wrapper img {
-  height: 158px;
+  /* height: 158px; */
 }
