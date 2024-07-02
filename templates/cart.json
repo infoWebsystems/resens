@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -11,11 +20,13 @@
         "934e81cc-7295-49b0-a17f-63d662b754e1": {
           "type": "heading",
           "settings": {
+            "heading": "Heading"
           }
         },
         "5a0c4ffd-ea03-4643-b331-82ef44fc90b6": {
           "type": "richtext",
           "settings": {
+            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.<\/p>",
             "text_size": 14
           }
         }
@@ -39,6 +50,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -54,6 +68,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -69,6 +86,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#242424",
@@ -84,6 +104,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -121,11 +144,28 @@
         "height_6": "4",
         "block_alignment": "center"
       }
+    },
+    "17199184463143ecc7": {
+      "type": "apps",
+      "blocks": {
+        "elasty_ukrainian_connector_hub_novapost_caan7a": {
+          "type": "shopify:\/\/apps\/elasty-ukrainian-connector-hub\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "elasty_ukrainian_connector_hub_novapost_caan7a"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "16458092233c51454f",
-    "400eb640-b884-4376-ac4a-7e747faee5ee"
+    "400eb640-b884-4376-ac4a-7e747faee5ee",
+    "17199184463143ecc7"
   ]
 }
