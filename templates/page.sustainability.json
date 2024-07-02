@@ -428,21 +428,23 @@
     "custom_collage_7zeBbt": {
       "type": "custom-collage",
       "settings": {
-        "image_position": "row",
+        "image_position": "row-reverse",
         "title": "FLOWERING PAPER",
-        "main_text": "<p>Flowering paper embodies the idea of circularity and responsibility towards nature, and turns packaging into something more than just garbage. It is enough to plant this paper in the ground and water it, and in 7-10 days the first flower shoots of poppy, purslane, petunia and marigold will sprout.This innovative packaging not only provides a unique experience for consumers, but also has a significant environmental benefit. Even if it ends up in any environment, due to uncontrolled recycling, only flowers will remain.<\/p><p><\/p>",
-        "btn_label": "",
-        "btn_url": ""
+        "main_image": "shopify:\/\/shop_images\/Rectangle_61_2.jpg",
+        "main_text": "<p><strong>Flowering paper embodies the idea of circularity and responsibility towards nature, and turns packaging into something more than just garbage. It is enough to plant this paper in the ground and water it, and in 7-10 days the first flower shoots of poppy, purslane, petunia and marigold will sprout.<\/strong><\/p><p>This innovative packaging not only provides a unique experience for consumers, but also has a significant environmental benefit. Even if it ends up in any environment, due to uncontrolled recycling, only flowers will remain.<\/p><p><\/p>",
+        "btn_label": "read more",
+        "btn_url": "#"
       }
     },
     "custom_collage_nakQzg": {
       "type": "custom-collage",
       "settings": {
         "image_position": "row",
-        "title": "Title",
-        "main_text": "<p>Main Text<\/p>",
-        "btn_label": "",
-        "btn_url": ""
+        "title": "TREES PLANTING",
+        "main_image": "shopify:\/\/shop_images\/Rectangle_61.jpg",
+        "main_text": "<p><strong>\"Mama, plant a tree\" - is the first tree planting project in Ukraine supported by the United Nations. Founded by a group of Ukrainian mothers, the project aims to reduce CO2 emissions and support environmental initiatives.<\/strong><\/p><p>Every year, the average person on the planet produces 6 tons of CO2, so to offset this impact and preserve nature for future generations, one person needs to plant 73 trees annually. \"Mama, plant a tree\" has made this process easy and affordable.<\/p>",
+        "btn_label": "read more",
+        "btn_url": "#"
       }
     },
     "advanced_layout_hero_L4EeEN": {
