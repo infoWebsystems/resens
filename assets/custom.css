@@ -70,3 +70,7 @@
 .template-page-sustainability h2 {
   font-size: medium;
 }
+
+.template-page-sustainability .responsive-image-wrapper img {
+  height: 158px;
+}

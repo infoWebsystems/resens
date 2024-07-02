@@ -45,4 +45,13 @@
   .ukrainian-development .title {
     font-size: 20px;
   }
+  .ukrainian-development .wrapper-padded {
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .ukrainian-development .wrapper-padded {
+    padding: 0 40px;
+  }
 }

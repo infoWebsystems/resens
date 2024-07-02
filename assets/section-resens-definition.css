@@ -60,3 +60,9 @@
     align-self: self-end;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .resens-definition .description {
+    font-size: 12px;
+  }
+}
