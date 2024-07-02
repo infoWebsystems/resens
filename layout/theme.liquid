@@ -163,10 +163,10 @@
       <p>This store requires javascript to be enabled for some features to work correctly.</p>
     </div>
 
- {% comment %}
+
         {% sections 'header-group' %}
 
-  {% endcomment %}
+
     {% if settings.enable_breadcrumbs %}
       {% unless template == 'index' or template == 'cart' or template == 'search' %}
         {% unless template.name == 'collection' or template == 'list-collections' or template contains 'contact' or template.name == 'product' %}
