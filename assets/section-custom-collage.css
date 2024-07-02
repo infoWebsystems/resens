@@ -50,6 +50,7 @@
   line-height: 20px;
   color: #ffffff;
   align-self: flex-start;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 989px) {
