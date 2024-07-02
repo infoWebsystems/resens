@@ -66,3 +66,7 @@
     flex-direction: column;
   }
 }
+
+.template-page-sustainability h2 {
+  font-size: medium;
+}

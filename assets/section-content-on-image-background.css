@@ -37,3 +37,9 @@
   color: #000000;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .content-on-image-background .title {
+    font-size: 26px;
+  }
+}

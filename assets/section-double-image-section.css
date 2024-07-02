@@ -61,4 +61,7 @@
   .double-image-section .grid {
     grid-template-columns: 1fr;
   }
+  .double-image-section .title {
+    font-size: 26px;
+  }
 }

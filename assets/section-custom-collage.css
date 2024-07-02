@@ -71,4 +71,7 @@
     height: 100px;
     width: 100%;
   }
+  .custom-collage .content .title {
+    font-size: 26px;
+  }
 }
