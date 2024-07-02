@@ -23,9 +23,11 @@
               <div class="name">{{ block.settings.name }}</div>
               <div class="description">{{ block.settings.quote }}</div>
               {% if block.settings.read_more_url %}
-                <div class="read-more">
-                  Show more
-                </div>
+                {% comment %} 
+                                    <div class="read-more">
+                                      Show more
+                                      </div>
+                                    {% endcomment %}
               {% endif %}
             </div>
         {% endcase %}
@@ -35,9 +37,8 @@
             {{ 'product-1' | placeholder_svg_tag: 'photo' }}
             <div class="name">Name</div>
             <div class="description">Quote</div>
-            <div class="read-more">
-              Show more
-            </div>
+
+            <a class="read-more" href="#">Show more</a>
           </div>
         {% endfor %}
       {% endfor %}

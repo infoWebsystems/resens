@@ -17,9 +17,9 @@
     <div class="text">
       {{ section.settings.description }}
     </div>
-    <div class="button">
+    <a class="button" href="{{ section.settings.btn_url }}">
       {{ section.settings.btn_label }}
-    </div>
+    </a>
   </div>
 </div>
 
@@ -31,21 +31,28 @@
         "type": "image_picker",
         "id": "background",
         "label": "Background for this section"
-      }, {
+      },
+      {
         "type": "text",
         "id": "title",
         "default": "Everyone can reduce their carbon footprint by changing their habits.",
         "label": "Title"
-      }, {
+      },
+      {
         "type": "text",
         "id": "description",
         "default": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
         "label": "Description"
-      }, {
+      },
+      {
         "type": "text",
         "id": "btn_label",
         "label": "Button Label",
         "default": "Label"
+      }, {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Button URL"
       }
     ],
     "presets": [

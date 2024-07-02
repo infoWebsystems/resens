@@ -26,6 +26,7 @@
 }
 
 .content-on-image-background .button {
+  display: block;
   margin: 0 auto;
   margin-top: 24px;
   padding: 16px;

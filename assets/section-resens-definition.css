@@ -59,6 +59,12 @@
   .resens-definition .definition .title.sens {
     align-self: self-end;
   }
+  .resens-definition .definition {
+    flex-direction: column;
+  }
+  .resens-definition .subdefinition {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
