@@ -38,6 +38,7 @@
       "block_order": [
         "content"
       ],
+      "disabled": true,
       "settings": {
         "name_button": "",
         "name_search": "Search",
