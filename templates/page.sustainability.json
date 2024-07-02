@@ -485,6 +485,7 @@
       "block_order": [
         "blog_z64bfM"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "title": "From the blog",
