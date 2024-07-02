@@ -341,6 +341,35 @@
         "description": "A study by The University of Newcastle, commissioned by WWF, found that the average person consumes about 2,000 tiny pieces of plastic every week, or about 5 grams, which is the weight of an average credit card!"
       }
     },
+    "text_rich_text_Y8tT6t": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_MEyHRB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Could microplastics get into our bloodstream?"
+          }
+        },
+        "richtext_aknRVp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>It is generally believed that once microplastics enter the human body, they will be excreted through the gastrointestinal tract and biliary tract. However, researchers at the Amsterdam University Medical Center have found the presence of microplastics in human blood.<\/p><p>A recent review by the Mexico National Polytechnic Institute shows that microplastics are transported throughout the body through the bloodstream and have been found in 15 human biological components, such as spleen, liver, colon, lungs, feces, placenta, breast milk, etc. The organs with the highest levels are the colon (28.1 ppm\/g) and liver (4.6 ppm\/g). Microplastics are virtually impossible to clean up once they enter the environment. It simply continues to accumulate, posing a growing threat to our ecosystem and health every day.<\/p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_MEyHRB",
+        "richtext_aknRVp"
+      ],
+      "settings": {
+        "background_color": "#f4f4f4",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "collage_builder_8mTLDK": {
       "type": "collage-builder",
       "blocks": {
@@ -850,6 +879,7 @@
     "image_logo_list_3YXzBG",
     "text_rich_text_YQNdgz",
     "double-image-section",
+    "text_rich_text_Y8tT6t",
     "collage_builder_8mTLDK",
     "collage_builder_FRiTe3",
     "collage_builder_EfwcTC",
