@@ -384,49 +384,53 @@
     "custom_collage_kDGw4h": {
       "type": "custom-collage",
       "settings": {
-        "image_position": "row",
-        "title": "Title",
-        "main_text": "<p>Main Text<\/p>",
-        "btn_label": "",
-        "btn_url": ""
+        "image_position": "row-reverse",
+        "title": "Aluminium",
+        "main_image": "shopify:\/\/shop_images\/Rectangle_61_1.jpg",
+        "main_text": "<p><strong>Aluminum is the world's most recyclable material. <\/strong><\/p><p>Over 75% of all aluminum produced since 1988 is still in circulation in recycled form, which demonstrates its high recyclability and importance for resource conservation. Recycling aluminum uses 95% less energy than creating a new material from virgin raw materials. Aluminum can be reused an unlimited number of times without losing its quality and properties, making it an effective alternative to plastic packaging. We see aluminum as one of the key materials that plays an important role in our sustainability strategy. It is an ideal example of a material that can form the foundation for a future renewable economy.<\/p>",
+        "btn_label": "READ MORE",
+        "btn_url": "#"
       }
     },
     "custom_collage_LQGGRm": {
       "type": "custom-collage",
       "settings": {
         "image_position": "row",
-        "title": "Title",
-        "main_text": "<p>Main Text<\/p>",
-        "btn_label": "",
-        "btn_url": ""
+        "title": "MYCELIUM",
+        "main_image": "shopify:\/\/shop_images\/Rectangle_61_2.jpg",
+        "main_text": "<p><strong>The mycelium used for our packaging was also chosen to reduce our environmental impact. It plays an important role in our strategy, as it minimizes our environmental footprint. <\/strong><\/p><p>Mycelium is not only a natural but also a highly sustainable alternative to traditional plastic packaging. It is produced by cultivating mushrooms in special conditions, where they are provided with the right nutrient medium, humidity and temperature. The fungi that form the mycelium grow in a suitable substrate base, such as straw, wood shavings or agricultural waste. It is highly durable and can be molded into any desired shape.<\/p>",
+        "btn_label": "read more",
+        "btn_url": "#"
       }
     },
     "custom_collage_TNwGb8": {
       "type": "custom-collage",
       "settings": {
-        "image_position": "row",
-        "title": "Title",
-        "main_text": "<p>Main Text<\/p>",
-        "btn_label": "",
-        "btn_url": ""
+        "image_position": "row-reverse",
+        "title": "Wood",
+        "main_image": "shopify:\/\/shop_images\/Rectangle_61.jpg",
+        "main_text": "<p><strong>Wood is a natural, biodegradable material that biodegrades easily in nature and plays an important role in our environmental strategy.<\/strong><\/p><p> Our choice to use wood for the lids on aluminum tubes is driven by our desire to reduce plastic as much as possible. A special production technology allows us to make threads directly into the wood and makes it possible to remove even the smallest plastic elements from the packaging, such as caps. The lids with threads inside are made in the Zhytomyr region from carefully selected wood that comes from responsibly managed forests. <\/p>",
+        "btn_label": "Read more",
+        "btn_url": "#"
       }
     },
     "custom_collage_gfPUyY": {
       "type": "custom-collage",
       "settings": {
         "image_position": "row",
-        "title": "Title",
-        "main_text": "<p>Main Text<\/p>",
-        "btn_label": "",
-        "btn_url": ""
+        "title": "FALLEN LEAVES ",
+        "main_image": "shopify:\/\/shop_images\/Rectangle_61_1.jpg",
+        "main_text": "<p><strong>Massive uncontrolled deforestation is a serious problem in the modern world. This process leads to the loss of the natural environment, species extinction, and the destruction of biodiversity.<\/strong><\/p><p>In 2017, a 16-year-old schoolboy from Zakarpattia, with a flair for biotechnology, came up with the idea of preserving the Carpathian forests by creating revolutionary paper from alternative raw materials. The research in the school laboratory and home kitchen lasted over 6 months.<\/p>",
+        "btn_label": "read more",
+        "btn_url": "#"
       }
     },
     "custom_collage_7zeBbt": {
       "type": "custom-collage",
       "settings": {
         "image_position": "row",
-        "title": "Title",
-        "main_text": "<p>Main Text<\/p>",
+        "title": "FLOWERING PAPER",
+        "main_text": "<p>Flowering paper embodies the idea of circularity and responsibility towards nature, and turns packaging into something more than just garbage. It is enough to plant this paper in the ground and water it, and in 7-10 days the first flower shoots of poppy, purslane, petunia and marigold will sprout.This innovative packaging not only provides a unique experience for consumers, but also has a significant environmental benefit. Even if it ends up in any environment, due to uncontrolled recycling, only flowers will remain.<\/p><p><\/p>",
         "btn_label": "",
         "btn_url": ""
       }
