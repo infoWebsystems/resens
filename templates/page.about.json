@@ -148,8 +148,47 @@
     },
     "brand-developers": {
       "type": "brand-developers",
+      "blocks": {
+        "founder_1_3bPzEc": {
+          "type": "founder_1",
+          "settings": {
+            "role": "CO-FOUNDER AND BRAND DEVELOPER",
+            "name": "OLGA HUZHYK",
+            "about": "Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'"
+          }
+        },
+        "founder_2_Wdbr8q": {
+          "type": "founder_2",
+          "settings": {
+            "role": "CO-FOUNDER <br> OF THE BRAND",
+            "name": "YULIA HAHARINA",
+            "about": "Eco-activist, lecturer, organizer of recycling stations in residential complexes"
+          }
+        },
+        "founder_3_PgwK6E": {
+          "type": "founder_3",
+          "settings": {
+            "role": "CO-FOUNDER  OF THE BRAND",
+            "name": "YULIA POLIAKOVA",
+            "about": "Mentor in «Misto Dobra»"
+          }
+        },
+        "general_info_dMAJiE": {
+          "type": "general_info",
+          "settings": {
+            "general_info": "Co-founders of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)"
+          }
+        }
+      },
+      "block_order": [
+        "founder_1_3bPzEc",
+        "founder_2_Wdbr8q",
+        "founder_3_PgwK6E",
+        "general_info_dMAJiE"
+      ],
       "settings": {
-        "title": "brand developers"
+        "title": "brand developers",
+        "background": "shopify:\/\/shop_images\/img_1164_b1648254-7c0b-4c6a-b073-6d252021c007.jpg"
       }
     },
     "founders-cards": {
