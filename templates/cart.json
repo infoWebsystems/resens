@@ -35,6 +35,7 @@
         "934e81cc-7295-49b0-a17f-63d662b754e1",
         "5a0c4ffd-ea03-4643-b331-82ef44fc90b6"
       ],
+      "disabled": true,
       "settings": {
         "colors": "light",
         "section_width": "narrow",
@@ -124,6 +125,7 @@
         "21da33db-aa2c-4521-a043-87642190017f",
         "94e51c3a-7e6a-4803-bc4d-5c225eade9a4"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "SHOP BY CATEGORY",
