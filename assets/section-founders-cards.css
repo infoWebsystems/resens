@@ -17,6 +17,7 @@
   width: 120px;
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .founders-cards .founder-info .name {
