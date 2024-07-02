@@ -15,7 +15,7 @@
               {% if block.settings.image %}
                 <img
                   class="photo"
-                  src="{{ block.settings.image | asset_url }}"
+                  src="{{ block.settings.image | image_url }}"
                   alt="founder">
               {% else %}
                 {{ 'product-1' | placeholder_svg_tag: 'photo' }}
