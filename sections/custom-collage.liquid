@@ -10,7 +10,7 @@
     <div class="main-flex" style="flex-direction: {{ section.settings.image_position }};">
       <div class="image">
         {% if section.settings.main_image %}
-          <img src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+          <img src="{{ section.settings.main_image | image_url }}" alt="{{ section.settings.main_image.alt }}">
         {% else %}
           {{ 'image' | placeholder_svg_tag }}
         {% endif %}
