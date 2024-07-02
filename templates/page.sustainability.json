@@ -244,7 +244,7 @@
         "richtext_9r3Abp"
       ],
       "settings": {
-        "background_color": "#f4f4f4",
+        "background_color": "#f9f9fb",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -264,28 +264,6 @@
         "text": "<p>•\tGreat Panda (Ailuropoda melanoleuca)<br\/>•\tTiger (Panthera tigris)<br\/>•\tAmazonian dolphin (Inia geoffrensis)<br\/>•\tGorilla (Gorilla beringei, Gorilla gorilla)<br\/>•\tElephant (Loxodonta spp., Elephas maximus)<br\/>•\tGiraffe (Giraffa camelopardalis)<br\/>•\tLeopard (Panthera pardus)<br\/>•\tOrangutan (Pongo spp.)<br\/>•\tSea turtle (Cheloniidae, Dermochelyidae)<br\/>•\tRhizophora spp.<br\/>•\tCalifornia redwood (Sequoia sempervirens)<br\/>•\tThorny archives (Pachypodium spp.)<br\/>•\tLarge elephant grass (Adansonia digitata)<br\/>•\tDwarf Oak (Quercus spp.)<br\/><\/p>",
         "button_label": "",
         "button_link": ""
-      }
-    },
-    "text_rich_text_YQNdgz": {
-      "type": "text--rich-text",
-      "blocks": {
-        "richtext_himPjd": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br\/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br\/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br\/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br\/><\/p>",
-            "text_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "richtext_himPjd"
-      ],
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
       }
     },
     "image_logo_list_3YXzBG": {
@@ -330,6 +308,28 @@
         "colors": "light",
         "width": 240,
         "title": ""
+      }
+    },
+    "text_rich_text_YQNdgz": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_himPjd": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity.<br\/>Reducing, reusing and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred? This is because plastic can be mechanically recycled only once, and demand is only growing. <br\/>So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. <br\/>Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health.<br\/><\/p>",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "richtext_himPjd"
+      ],
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "collage_builder_TCnEUA": {
@@ -923,8 +923,8 @@
     "text_rich_text_aiRYBj",
     "text_rich_text_mpqPj7",
     "image_image_with_text_cBwR3y",
-    "text_rich_text_YQNdgz",
     "image_logo_list_3YXzBG",
+    "text_rich_text_YQNdgz",
     "collage_builder_TCnEUA",
     "collage_builder_8mTLDK",
     "collage_builder_FRiTe3",
