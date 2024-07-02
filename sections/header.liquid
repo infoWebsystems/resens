@@ -18,16 +18,14 @@ Testing Cypress integration
   {% assign collection-overlay = true %}
 {% endif %}
 
-{% comment %} {% assign about-overlay = false %}
-{% if template contains "page.about" %}
-  {% assign about-overlay = true %}
-{% endif %} {% endcomment %}
-
 {% assign list-collection-overlay = false %}
 {% if section.settings.overlay_header_list_collection and template == 'list-collections' %}
   {% assign list-collection-overlay = true %}
 {% endif %}
-{% assign list-collection-overlay = true %}
+{% comment %} header on about and on sustainability pages {% endcomment %}
+{% if template == 'page.sustainability' or template == 'page.about' %}
+  {% assign list-collection-overlay = true %} 
+{% endif %}
 {% assign contact-overlay = false %}
 {% if section.settings.overlay_header_contact and template == 'page.contact' or template == 'page.about' %}
   {% assign contact-overlay = true %}

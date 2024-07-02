@@ -40,3 +40,22 @@
 .site-header__logo img {
   max-width: 120px !important;
 }
+
+.template-page-about .overlay-header {
+  background: transparent;
+}
+
+.template-page-about .sticked .overlay-header {
+  background: #fff;
+}
+
+.template-page-about #breadcrumbs {
+  position: absolute;
+  top: 124px;
+  z-index: 100000;
+  color: #fff;
+}
+
+.template-page-about #breadcrumbs span {
+  color: #fff;
+}
