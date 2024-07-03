@@ -1,5 +1,14 @@
 /* Place any CSS overrides in this file. */
 
+.nav-bar.mobile-nav-bar-wrapper {
+  padding: 20px 0;
+}
+
+.nav-bar.mobile-nav-bar-wrapper button.site-nav__link {
+  margin-left: -10px;
+}
+
+
 /* Main banner with image */
 .homepage-slider-container
   .homepage-featured-content-box
@@ -35,6 +44,8 @@
   .sitewide--title-wrapper
   h2.homepage-sections--title {
   font-size: 40px;
+  margin-top: 26px;
+  letter-spacing: 5px !important;
 }
 
 .site-header__logo img {
@@ -51,14 +62,19 @@
 
 .template-page-about #breadcrumbs {
   position: absolute;
-  top: 124px;
+  top: 110px;
   z-index: 100000;
   color: #fff;
+}
+#breadcrumbs.wrapper-padded {
+  margin: 15px 10px!important;
 }
 
 .template-page-about #breadcrumbs span {
   color: #fff;
+  text-transform: capitalize;
 }
+
 
 /* Temp */
 @media only screen and (max-width: 989px) {

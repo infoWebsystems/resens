@@ -8,19 +8,19 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.13em!important;
   text-transform: uppercase;
 }
 
 .about-philosophy-info .subtitle {
-  margin: 0;
-  margin-top: 32px;
+  margin: 21px 0 21px 0;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.12em !important;
   text-transform: uppercase;
-  line-height: 160%;
+  line-height: 165% !important;
+}
 }
 
 .about-philosophy-info .description {

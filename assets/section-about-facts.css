@@ -1,6 +1,6 @@
 .about-facts {
   background-color: #f4f4f4;
-  padding: 64px 10px;
+  padding: 62px 10px;
 }
 
 .about-facts .title {
@@ -8,8 +8,8 @@
   margin: 0;
   font-weight: 400;
   font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.17em;
+  line-height: 40px!important;
+  letter-spacing: 0.13em!important;
   text-transform: uppercase;
 }
 
@@ -42,8 +42,8 @@
 
 .about-facts .card .value {
   font-weight: 400;
-  font-size: 80px;
-  line-height: 160%;
+  font-size: 74px;
+  line-height: 180%;
   text-align: center;
 }
 

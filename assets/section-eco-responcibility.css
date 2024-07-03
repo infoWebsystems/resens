@@ -7,19 +7,18 @@
   margin: 0;
   font-weight: 400;
   font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.17em;
+  line-height: 40px!important;
+  letter-spacing: 0.13em!important;
   text-transform: uppercase;
 }
 
 .eco-responcibility .subtitle {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 24px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 160%;
-  text-align: center;
-  letter-spacing: 0.17em;
+   text-align: center;
+  letter-spacing: 0.13em!important;
   text-transform: uppercase;
 }
 

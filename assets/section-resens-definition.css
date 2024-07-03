@@ -21,23 +21,24 @@
 
 .resens-definition .definition .title {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 140%;
+  font-size: 21px;
+  line-height: 90%!important;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 .resens-definition .description {
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: -0.7px;
   font-weight: 400;
 }
 
 .resens-definition .conclusion {
   margin-top: 64px;
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: -0.7px;
   font-weight: 400;
   font-size: 14px;
   text-align: justify;
