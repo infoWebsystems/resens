@@ -1,5 +1,7 @@
 /* Place any CSS overrides in this file. */
-
+.large--three-quarters {
+  width: 100% !important;
+}
 .nav-bar.mobile-nav-bar-wrapper {
   padding: 20px 0;
 }
