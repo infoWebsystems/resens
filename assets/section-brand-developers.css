@@ -17,7 +17,7 @@
 }
 
 .brand-developers .grid.brand-developers-desktop {
-  margin-top: 32px;
+  margin: 32px 0  0 0!important;
   background: url('./brand-developers.jpg') center center / cover no-repeat;
   color: #fff;
   padding: 384px 37px 32px 37px;

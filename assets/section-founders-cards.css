@@ -22,7 +22,7 @@
 
 .founders-cards .founder-info .name {
   margin-top: 32px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 160%;
   text-align: center;
@@ -32,7 +32,7 @@
 .founders-cards .founder-info .description {
   margin-top: 16px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 160%;
   text-align: center;
   font-style: italic;
