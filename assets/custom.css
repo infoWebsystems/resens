@@ -208,13 +208,13 @@
   .product-details-product-title {
     font-size: 20px !important;
   }
-}
-
-@media only screen and (max-width: 989px) {
   [data-wetheme-section-type='image--image-with-text'] .grid--full {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 989px) {
   .template-article #PageContainer {
     max-width: 100%;
   }
