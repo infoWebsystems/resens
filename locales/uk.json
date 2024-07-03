@@ -3223,7 +3223,7 @@
   "sections": {
     "collection_template": {
       "apply": "Застосувати",
-      "clear": "ясно",
+      "clear": "Очистити",
       "clear_all": "Очистити все",
       "empty": "Продукти не знайдено",
       "from": "Від",
@@ -3279,7 +3279,7 @@
       "results_for_html": "Ваш пошук за запитом \" {{ terms }} \" виявив наступне:",
       "placeholder": "Шукайте в нашому магазині",
       "submit": "Пошук",
-      "products": "Продукти",
+      "products": "Товари",
       "articles": "Статті",
       "suggestions": "Пропозиції",
       "pages": "Сторінки",
