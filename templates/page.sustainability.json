@@ -252,7 +252,7 @@
           "type": "richtext",
           "settings": {
             "text": "<p>Plastic is currently driving the growth of the petrochemical industry and contributing to the overall growth of oil consumption.<br\/>Around 460 million tons of plastic are produced every year, and all too often it ends up in the wrong place. And when plastic gets into nature, it stays there forever, accumulating and affecting every ecosystem. <strong>Over the next 30 years, oil-based plastic production is estimated to quadruple, which will significantly impact CO2 emissions and have a dangerous impact on biodiversity. <\/strong>According to the International Union for Conservation of Nature (IUCN), numerous species of animals and plants are at risk of extinction:<\/p>",
-            "text_size": 14
+            "text_size": 16
           }
         }
       },
