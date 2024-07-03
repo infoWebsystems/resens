@@ -164,7 +164,7 @@
           "style_colors_background": "#ffffff",
           "style_colors_border": "#000000",
           "style_colors_text": "#000000",
-          "option_modal_continent": false,
+          "option_modal_continent": true,
           "option_flag_style": "square",
           "option_currency_type": "iso",
           "option_modal_language": true,
@@ -172,6 +172,12 @@
           "language_title": "Preferred Language",
           "helper_text": "Changing language will not affect your selected region",
           "block_alignement": "center"
+        }
+      },
+      "5852681610843478489": {
+        "type": "shopify:\/\/apps\/mcs-currency-switcher\/blocks\/app-embed-block\/2cc9619f-a737-47fd-9fcd-b9015d101c42",
+        "disabled": true,
+        "settings": {
         }
       }
     }
