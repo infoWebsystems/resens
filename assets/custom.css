@@ -163,6 +163,15 @@
     .homepage-featured-content-box {
     width: 100% !important;
   }
+
+  .image-with-text-overlay-wrapper--textPosition-center
+    .homepage-featured-content-box.image-with-text-overlay__content-box,
+  .image-with-text-overlay-wrapper--textPosition-center
+    .homepage-featured-content-box.image-with-text-overlay__content-box,
+  .image-with-text-overlay-wrapper--textPosition-center
+    .homepage-featured-content-box.image-with-text-overlay__content-box {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 989px) {

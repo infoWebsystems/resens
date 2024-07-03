@@ -8,7 +8,7 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 0.13em!important;
+  letter-spacing: 0.13em !important;
   text-transform: uppercase;
 }
 
@@ -21,7 +21,6 @@
   text-transform: uppercase;
   line-height: 165% !important;
 }
-}
 
 .about-philosophy-info .description {
   display: flex;
@@ -33,6 +32,22 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
+}
+
+.about-philosophy-info .description,
+.about-philosophy-info .description h1,
+.about-philosophy-info .description h2,
+.about-philosophy-info .description h3,
+.about-philosophy-info .description h4,
+.about-philosophy-info .description h5,
+.about-philosophy-info .description h6,
+.about-philosophy-info .description p,
+.about-philosophy-info .description ul,
+.about-philosophy-info .description ol,
+.about-philosophy-info .description li,
+.about-philosophy-info .description a,
+.about-philosophy-info .description div {
+  text-align: justify;
 }
 
 @media only screen and (max-width: 767px) {

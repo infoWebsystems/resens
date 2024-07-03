@@ -7,8 +7,8 @@
   margin: 0;
   font-weight: 400;
   font-size: 32px;
-  line-height: 40px!important;
-  letter-spacing: 0.13em!important;
+  line-height: 40px !important;
+  letter-spacing: 0.13em !important;
   text-transform: uppercase;
 }
 
@@ -17,8 +17,8 @@
   margin-top: 24px;
   font-weight: 400;
   font-size: 20px;
-   text-align: center;
-  letter-spacing: 0.13em!important;
+  text-align: center;
+  letter-spacing: 0.13em !important;
   text-transform: uppercase;
 }
 
@@ -29,6 +29,22 @@
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 1px;
+  text-align: justify;
+}
+
+.eco-responcibility .description,
+.eco-responcibility .description h1,
+.eco-responcibility .description h2,
+.eco-responcibility .description h3,
+.eco-responcibility .description h4,
+.eco-responcibility .description h5,
+.eco-responcibility .description h6,
+.eco-responcibility .description p,
+.eco-responcibility .description ul,
+.eco-responcibility .description ol,
+.eco-responcibility .description li,
+.eco-responcibility .description a,
+.eco-responcibility .description div {
   text-align: justify;
 }
 
