@@ -1,9 +1,9 @@
-.resens-definition-mobile {
-  display: none;
-}
-
 .resens-definition {
   padding: 80px 10px;
+}
+
+.resens-definition .definition .mobile-visible {
+  display: none;
 }
 
 .resens-definition .image {
@@ -13,7 +13,7 @@
 
 .resens-definition .definition {
   display: flex;
-  gap: 18px;
+  gap: 24px;
 }
 
 .resens-definition .subdefinition {
@@ -26,7 +26,7 @@
 .resens-definition .definition .title {
   font-weight: 400;
   font-size: 21px;
-  line-height: 90%!important;
+  line-height: 90% !important;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #000000;
@@ -56,20 +56,25 @@
 
 @media only screen and (max-width: 989px) {
   .resens-definition .image {
-    width: 100%;
-  }
-  .resens-definition .definition .title.re {
-    align-self: self-start;
-  }
-  .resens-definition .definition .title.sens {
-    align-self: self-end;
-  }
-  .resens-definition-dektop {
     display: none;
   }
-
-  .resens-definition-mobile {
-    display: flex;
+  .resens-definition .definition {
+    flex-direction: column;
+  }
+  .resens-definition .subdefinition {
+    width: 100%;
+  }
+  .resens-definition .definition .title {
+    align-self: center;
+  }
+  .resens-definition .definition .title span {
+    color: #dbdbdb;
+  }
+  .resens-definition .definition .desktop-visible {
+    display: none;
+  }
+  .resens-definition .definition .mobile-visible {
+    display: block;
   }
 }
 
@@ -77,33 +82,4 @@
   .resens-definition .description {
     font-size: 12px;
   }
-}
-
-/* Mobile */
-.resens-definition-mobile {
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-}
-
-.resens-definition-mobile .title {
-  text-align: center;
-  font-size: 33px;
-}
-
-.resens-definition-mobile .title span {
-  color: #dbdbdb;
-}
-
-.resens-definition-mobile .description {
-  margin-top: 24px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  text-align: justify;
-  color: #000000;
-}
-
-.resens-definition-mobile .description span {
-  font-weight: 700;
 }
