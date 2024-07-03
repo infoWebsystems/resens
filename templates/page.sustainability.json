@@ -186,7 +186,7 @@
         "richtext_LLUKX3": {
           "type": "richtext",
           "settings": {
-            "text": "<p>We are implementing a set of measures to become a Zero Net Company within 10 years and reduce the carbon footprint of our production cycle. <br\/><br\/>We are implementing carbon management tools, where emissions will be included in the main KPIs of the company. At the start, we launch the process of calculating our carbon footprint, which takes about two years, and we are confidently moving towards the result.<br\/><\/p>",
+            "text": "<p>We are implementing a set of measures to become a Zero Net Company within 10 years and reduce the carbon footprint of our production cycle. <\/p><p>We are integrating carbon management tools, where emissions will be included in the main KPIs of the company. At the start, we are launching the process of calculating our carbon footprint, which takes about two years, and we are confidently moving towards achieving this goal.<\/p>",
             "text_size": 16
           }
         }
