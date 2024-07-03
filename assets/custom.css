@@ -172,6 +172,30 @@
     .homepage-featured-content-box.image-with-text-overlay__content-box {
     width: 100%;
   }
+
+  .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
+    .homepage-featured-content-box-inner
+    .slide-buttons
+    a.homepage-section-btn {
+    width: -webkit-fill-available;
+  }
+
+  .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
+    .homepage-featured-content-box-inner
+    .slideshow-title
+    h2 {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.17em !important;
+    line-height: 40px !important;
+  }
+  .mobile-nav-bar-wrapper .mobile-grid--table {
+    position: relative;
+  }
+  .mobile-nav-bar-wrapper .mobile-grid--table .search-button {
+    position: absolute;
+    left: 26px;
+  }
 }
 
 @media only screen and (max-width: 989px) {
