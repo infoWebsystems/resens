@@ -74,6 +74,9 @@
       "block_order": [
         "richtext_4x3hfA"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "background_color": "#f4f4f4",
         "colors": "white",
