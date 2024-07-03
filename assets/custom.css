@@ -146,6 +146,11 @@
 
 /* Temp */
 
+.template-article #PageContainer {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 767px) {
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
     .homepage-featured-content-box-inner
@@ -202,5 +207,8 @@
   [data-wetheme-section-type='image--image-with-text'] .grid--full {
     display: flex;
     flex-direction: column;
+  }
+  .template-article #PageContainer {
+    max-width: 100%;
   }
 }
