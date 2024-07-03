@@ -17,7 +17,7 @@
 }
 
 .brand-developers .grid.brand-developers-desktop {
-  margin: 32px 0  0 0!important;
+  margin: 32px 0 0 0 !important;
   background: url('./brand-developers.jpg') center center / cover no-repeat;
   color: #fff;
   padding: 384px 37px 32px 37px;
@@ -35,7 +35,6 @@
   flex-direction: column;
   gap: 16px;
   padding-right: 42px;
-
 }
 
 .brand-developers .brand-developers-desktop .founder-info .role {
@@ -90,6 +89,9 @@
   }
   .brand-developers .grid.brand-developers-desktop {
     display: none;
+  }
+  .brand-developers {
+    padding: 30px 10px 0;
   }
 }
 
