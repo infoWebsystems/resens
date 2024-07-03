@@ -77,6 +77,8 @@
     "enable_breadcrumbs": true,
     "popup--enable": true,
     "pop-up-time": "7",
+    "pop-up-text-header-text": "Re[Sens] - your leading partner in the world of sustainable professional cosmetics.",
+    "pop-up-text-description-text": "<p>Join us to stay informed about the best offers.<\/p>",
     "popup--show-social-icons": false,
     "popup--show-newsletter": true,
     "desktop-popup-style": "slide-up",
