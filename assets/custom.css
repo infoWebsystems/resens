@@ -120,7 +120,11 @@
     display: none;
   }
   .template-page-about h2.homepage-sections--title,
-  .template-page-sustainability h2.homepage-sections--title {
+  .template-page-sustainability h2.homepage-sections--title,
+  .image-with-text-overlay-wrapper--textAlignment-center
+    .homepage-featured-content-box
+    .homepage-featured-content-box-inner
+    h2.homepage-sections--title {
     font-size: 20px !important;
     margin: 30px 0 0 0;
     /* display: none; */
@@ -141,6 +145,20 @@
 }
 
 /* Temp */
+
+@media only screen and (max-width: 767px) {
+  .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
+    .homepage-featured-content-box-inner
+    .slideshow-title
+    h2,
+  .image-with-text-overlay-wrapper--textAlignment-left
+    .homepage-featured-content-box
+    .homepage-featured-content-box-inner
+    h2.homepage-sections--title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width: 989px) {
   [data-wetheme-section-type='image--image-with-text'] .grid--full {
