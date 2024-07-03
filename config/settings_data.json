@@ -173,6 +173,12 @@
           "helper_text": "Changing language will not affect your selected region",
           "block_alignement": "center"
         }
+      },
+      "5852681610843478489": {
+        "type": "shopify:\/\/apps\/mcs-currency-switcher\/blocks\/app-embed-block\/2cc9619f-a737-47fd-9fcd-b9015d101c42",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
