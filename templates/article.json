@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "e635abf7-4793-4302-96d6-07b26f4e2ef3": {
@@ -23,7 +32,7 @@
         "article-sidebar-description": "",
         "blog-sidebar-link": "",
         "show_blog_tags": false,
-        "show_recent_posts": true,
+        "show_recent_posts": false,
         "blog_show_date": false
       }
     }
