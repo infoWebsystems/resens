@@ -82,10 +82,18 @@
 
 .template-page-sustainability .shopify-section .homepage-sections-wrapper {
   margin: 0px 0;
-  padding: 64px 0;
+
 }
 .template-page-sustainability  .content-on-image-background {
   margin: 0;
+}
+
+.template-page-sustainability .rte  p {
+  text-align: justify!important;
+}
+
+.template-page-sustainability .shopify-section {
+
 }
 
 .template-page-sustainability h2 {
