@@ -176,7 +176,7 @@
       },
       "5852681610843478489": {
         "type": "shopify:\/\/apps\/mcs-currency-switcher\/blocks\/app-embed-block\/2cc9619f-a737-47fd-9fcd-b9015d101c42",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
