@@ -193,7 +193,7 @@
         "richtext_LLUKX3"
       ],
       "settings": {
-        "background_color": "",
+        "background_color": "#f4f4f4",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
