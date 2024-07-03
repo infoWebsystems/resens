@@ -164,7 +164,7 @@
           "style_colors_background": "#ffffff",
           "style_colors_border": "#000000",
           "style_colors_text": "#000000",
-          "option_modal_continent": false,
+          "option_modal_continent": true,
           "option_flag_style": "square",
           "option_currency_type": "iso",
           "option_modal_language": true,
