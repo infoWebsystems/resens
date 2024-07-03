@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "e15cd669-6e10-45b6-87de-7377df6538ba": {
@@ -14,6 +23,7 @@
         "8cdcd2dc-52d3-473e-b1b9-de7d6cc61232"
       ],
       "settings": {
+        "background_color": "",
         "colors": "white",
         "section_width": "narrow",
         "text_alignment_desktop": "center",
@@ -28,6 +38,8 @@
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "button_label": "Read more",
         "button_link": "shopify:\/\/blogs\/news"
       }
@@ -39,7 +51,7 @@
         "blog-sidebar-description": "",
         "blog-sidebar-link": "",
         "show_blog_tags": false,
-        "show_recent_posts": true,
+        "show_recent_posts": false,
         "blog_show_date": true
       }
     },
@@ -51,6 +63,8 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
@@ -67,6 +81,8 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
@@ -83,6 +99,8 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
@@ -99,6 +117,8 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
             "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
@@ -145,6 +165,8 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "wide",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -153,6 +175,8 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "wide",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -161,6 +185,8 @@
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "wide",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -184,6 +210,7 @@
       "type": "newsletter--newsletter",
       "settings": {
         "colors": "accent",
+        "newsletter_heading": "Join our Mailing List",
         "newsletter_description": "<p>Get priority access to events and exclusive offers<\/p>"
       }
     }
