@@ -59,11 +59,8 @@
   .resens-definition .definition .title.sens {
     align-self: self-end;
   }
-  .resens-definition .definition {
-    flex-direction: column;
-  }
-  .resens-definition .subdefinition {
-    width: 100%;
+  .resens-definition-dektop {
+    display: none;
   }
 }
 
@@ -71,4 +68,34 @@
   .resens-definition .description {
     font-size: 12px;
   }
+}
+
+/* Mobile */
+.resens-definition-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.resens-definition-mobile .title {
+  text-align: center;
+  font-size: 33px;
+}
+
+.resens-definition-mobile .title span {
+  color: #dbdbdb;
+}
+
+.resens-definition-mobile .description {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: justify;
+  color: #000000;
+}
+
+.resens-definition-mobile .description span {
+  font-weight: 700;
 }

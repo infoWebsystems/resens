@@ -7,28 +7,46 @@
 
 <div class="resens-definition">
   <div class="wrapper-padded show-on-scroll">
-    <div class="image">
-      <img src="{{ 'resens-def.png' | asset_url }}" alt="">
-    </div>
-    <div class="definition">
-      <div class="subdefinition re">
-        <h3 class="title re">
-          {{ section.settings.header_1 }}
-        </h3>
-        <div class="description">
-          <span class="bold">{{ section.settings.header_1 }}</span>
-          {{ section.settings.text_1 }}
-        </div>
-
+    <div class="resens-definition-dektop">
+      <div class="image">
+        <img src="{{ 'resens-def.png' | asset_url }}" alt="">
       </div>
-      <div class="subdefinition sens">
-        <h3 class="title sens">
-          {{ section.settings.header_2 }}
-        </h3>
-        <div class="description">
-          <span class="bold">{{ section.settings.header_2 }}</span>
-          {{ section.settings.text_2 }}
+      <div class="definition">
+        <div class="subdefinition re">
+          <h3 class="title re">
+            {{ section.settings.header_1 }}
+          </h3>
+          <div class="description">
+            <span class="bold">{{ section.settings.header_1 }}</span>
+            {{ section.settings.text_1 }}
+          </div>
+
         </div>
+        <div class="subdefinition sens">
+          <h3 class="title sens">
+            {{ section.settings.header_2 }}
+          </h3>
+          <div class="description">
+            <span class="bold">{{ section.settings.header_2 }}</span>
+            {{ section.settings.text_2 }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resens-definition-mobile">
+      <div class="re-block">
+        <div class="title">{{ section.settings.header_1 }}<span>[{{ section.settings.header_2 }}]</span>
+        </div>
+        <div class="description">
+          <span>{{ section.settings.header_1 }}</span>
+          {{ section.settings.text_1 }}</div>
+      </div>
+      <div class="sens-block">
+        <div class="title">
+          <span>{{ section.settings.header_1 }}</span>[{{ section.settings.header_2 }}]</div>
+        <div class="description">
+          <span>{{ section.settings.header_2 }}</span>
+          {{ section.settings.text_2 }}</div>
       </div>
     </div>
     <div class="conclusion">
