@@ -28,28 +28,36 @@
                 {{ 'product-1' | placeholder_svg_tag: 'photo' }}
               {% endif %}
               <div class="name">{{ block.settings.name }}</div>
+              {% assign quoteLength = block.settings.quote | size %}
               <div class="description">
-                {% assign original_string = block.settings.quote %}
-                {% assign truncated_string = original_string | truncate: 80, "" %}
-                {% assign truncated_length = truncated_string | size %}
-                {% assign remaining_string_start = truncated_length %}
-                {% assign remaining_string = original_string | slice: remaining_string_start, original_string.size %}
+                {% if quoteLength <= 100 %}
+                  {{ block.settings.quote }}
+                {% else %}
+                  {% assign original_string = block.settings.quote %}
+                  {% assign truncated_string = original_string | truncate: 80, "" %}
+                  {% assign truncated_length = truncated_string | size %}
+                  {% assign remaining_string_start = truncated_length %}
+                  {% assign remaining_string = original_string | slice: remaining_string_start, original_string.size %}
 
-                <p>
-                  {{ truncated_string }}
-                  <span class="points">...</span>
+                  <p>
+                    {{ truncated_string }}
+                    <span class="points">...</span>
 
-                  <span class="moreText">
-                    {{ remaining_string }}
-                  </span>
-                </p>
+                    <span class="moreText">
+                      {{ remaining_string }}
+                    </span>
+                  </p>
+                {% endif %}
               </div>
-              <div class="read-more textButton onTextButton">
-                Show more
-              </div>
+
+
+              {% if quoteLength > 100 %}
+                <div class="read-more textButton onTextButton">
+                  Show more
+                </div>
+              {% endif %}
             </div>
         {% endcase %}
-
       {% else %}
         {% for i in (1..3) %}
           <div class="founder-info">
