@@ -1,5 +1,7 @@
 /* Place any CSS overrides in this file. */
-
+.large--three-quarters {
+  width: 100% !important;
+}
 .nav-bar.mobile-nav-bar-wrapper {
   padding: 20px 0;
 }
@@ -74,7 +76,44 @@
   text-transform: capitalize;
 }
 
+.template-page-sustainability .homepage-sections--title {
+  line-height: 40px !important;
+  letter-spacing: 0.7px !important;
+}
+
+.template-page-sustainability .shopify-section .homepage-sections-wrapper {
+  margin: 0px 0;
+}
+.template-page-sustainability .content-on-image-background {
+  margin: 0;
+}
+
+.template-page-sustainability .rte p {
+  text-align: justify !important;
+}
+
+.template-page-sustainability .shopify-section {
+}
+
+.template-page-sustainability h2 {
+  font-size: medium;
+}
+
+.template-page-sustainability .responsive-image-wrapper img {
+  /* height: 158px; */
+}
+
+.template-page-sustainability .logo-bar__item {
+  margin: 3px !important;
+}
+.template-page-sustainability .large--three-quarters {
+  width: 62%;
+}
+
 /* Temp */
+.mobile-nav-bar-wrapper button.site-nav__link {
+  padding: 20px 11px !important;
+}
 @media only screen and (max-width: 989px) {
   .template-page-about #breadcrumbs {
     z-index: 1;
@@ -100,9 +139,7 @@
   }
   /* homepage-sections--title homepage-section-title */
 }
-.mobile-nav-bar-wrapper button.site-nav__link {
-  padding: 20px 11px !important;
-}
+
 /* Temp */
 
 @media only screen and (max-width: 989px) {
@@ -110,33 +147,4 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-@media only screen and (max-width: 767px) {
-  .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
-    .homepage-featured-content-box-inner
-    .slideshow-title
-    h2,
-  .image-with-text-overlay-wrapper--textAlignment-left
-    .homepage-featured-content-box
-    .homepage-featured-content-box-inner
-    h2.homepage-sections--title {
-    font-size: 20px;
-    text-align: center !important;
-  }
-  .image-with-text-overlay-wrapper--textAlignment-center
-    .homepage-featured-content-box
-    .homepage-featured-content-box-inner
-    h2.homepage-sections--title {
-    font-size: 20px !important;
-    margin: 30px 0 0;
-  }
-}
-
-.template-page-sustainability h2 {
-  font-size: medium;
-}
-
-.template-page-sustainability .responsive-image-wrapper img {
-  /* height: 158px; */
 }

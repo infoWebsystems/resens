@@ -120,9 +120,15 @@
         "settings": {
         }
       },
+      "5852681610843478489": {
+        "type": "shopify:\/\/apps\/mcs-currency-switcher\/blocks\/app-embed-block\/2cc9619f-a737-47fd-9fcd-b9015d101c42",
+        "disabled": true,
+        "settings": {
+        }
+      },
       "15912215999290715800": {
         "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-modal\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "test_mode": false,
           "modal_closeButton": true,
@@ -151,7 +157,7 @@
       },
       "5858961087409699889": {
         "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-footer-selector\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "footer_ui_type": "popup",
           "option_language": true,
@@ -172,12 +178,6 @@
           "language_title": "Preferred Language",
           "helper_text": "Changing language will not affect your selected region",
           "block_alignement": "center"
-        }
-      },
-      "5852681610843478489": {
-        "type": "shopify:\/\/apps\/mcs-currency-switcher\/blocks\/app-embed-block\/2cc9619f-a737-47fd-9fcd-b9015d101c42",
-        "disabled": true,
-        "settings": {
         }
       }
     }

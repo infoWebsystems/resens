@@ -130,7 +130,7 @@
       "settings": {
         "rows": 1,
         "grid-desktop": 4,
-        "grid-mobile": "2",
+        "grid-mobile": "1",
         "colors": "white",
         "title": "",
         "richtext": "",

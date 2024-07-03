@@ -75,7 +75,7 @@
         "richtext_4x3hfA"
       ],
       "settings": {
-        "background_color": "",
+        "background_color": "#f4f4f4",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -193,7 +193,7 @@
         "richtext_LLUKX3"
       ],
       "settings": {
-        "background_color": "",
+        "background_color": "#f4f4f4",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -205,7 +205,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
         "title": "Everyone can reduce their carbon footprint by changing their habits.",
-        "description": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
+        "description": "<p>Interested in what carbon footprint you leave behind? Calculate it with our online calculator<\/p>",
         "btn_label": "CALCULATE",
         "btn_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/"
       }
@@ -261,7 +261,7 @@
         "richtext_9r3Abp"
       ],
       "settings": {
-        "background_color": "",
+        "background_color": "#f4f4f4",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -395,7 +395,7 @@
       "settings": {
         "image_position": "row",
         "title": "Plastic Alternatives - SULAPAC®",
-        "main_image": "shopify:\/\/shop_images\/Rectangle_61.jpg",
+        "main_image": "shopify:\/\/shop_images\/IMG_1951.jpg",
         "main_text": "<p><strong>The only way to reduce our dependence on oil and stop microplastic pollution is to replace conventional plastic with bio-based and biodegradable materials that leave no microplastics at any stage of the product's life cycle.<\/strong><\/p><p>\"Replacing traditional plastics with biodegradable, biobased materials and creating an efficient recycling system for this group of materials is key to a cleaner future; it enables us to reduce our dependence on oil, eliminate microplastic pollution and fight global warming,\" said Suvi Haimi, CEO and co-founder of Sulapac.<\/p>",
         "btn_label": "READ MORE",
         "btn_url": "shopify:\/\/blogs\/news\/plastic-alternatives"
@@ -406,7 +406,7 @@
       "settings": {
         "image_position": "row-reverse",
         "title": "Aluminium",
-        "main_image": "shopify:\/\/shop_images\/Rectangle_61_1.jpg",
+        "main_image": "shopify:\/\/shop_images\/IMG_1952.jpg",
         "main_text": "<p><strong>Aluminum is the world's most recyclable material. <\/strong><\/p><p>Over 75% of all aluminum produced since 1988 is still in circulation in recycled form, which demonstrates its high recyclability and importance for resource conservation. Recycling aluminum uses 95% less energy than creating a new material from virgin raw materials. Aluminum can be reused an unlimited number of times without losing its quality and properties, making it an effective alternative to plastic packaging. We see aluminum as one of the key materials that plays an important role in our sustainability strategy. It is an ideal example of a material that can form the foundation for a future renewable economy.<\/p>",
         "btn_label": "READ MORE",
         "btn_url": "shopify:\/\/blogs\/news\/aluminium"
@@ -428,7 +428,7 @@
       "settings": {
         "image_position": "row-reverse",
         "title": "Wood",
-        "main_image": "shopify:\/\/shop_images\/Rectangle_61.jpg",
+        "main_image": "shopify:\/\/shop_images\/IMG_1957_01f3d212-0866-4a68-b8e9-88688edb3fd8.jpg",
         "main_text": "<p><strong>Wood is a natural, biodegradable material that biodegrades easily in nature and plays an important role in our environmental strategy.<\/strong><\/p><p> Our choice to use wood for the lids on aluminum tubes is driven by our desire to reduce plastic as much as possible. A special production technology allows us to make threads directly into the wood and makes it possible to remove even the smallest plastic elements from the packaging, such as caps. The lids with threads inside are made in the Zhytomyr region from carefully selected wood that comes from responsibly managed forests. <\/p>",
         "btn_label": "Read more",
         "btn_url": "shopify:\/\/blogs\/news\/wood"
@@ -439,7 +439,7 @@
       "settings": {
         "image_position": "row",
         "title": "FALLEN LEAVES ",
-        "main_image": "shopify:\/\/shop_images\/Rectangle_61_1.jpg",
+        "main_image": "shopify:\/\/shop_images\/IMG_0687_1.jpg",
         "main_text": "<p><strong>Massive uncontrolled deforestation is a serious problem in the modern world. This process leads to the loss of the natural environment, species extinction, and the destruction of biodiversity.<\/strong><\/p><p>In 2017, a 16-year-old schoolboy from Zakarpattia, with a flair for biotechnology, came up with the idea of preserving the Carpathian forests by creating revolutionary paper from alternative raw materials. The research in the school laboratory and home kitchen lasted over 6 months.<\/p>",
         "btn_label": "read more",
         "btn_url": "shopify:\/\/blogs\/news\/fallen-leaves"
@@ -450,7 +450,7 @@
       "settings": {
         "image_position": "row-reverse",
         "title": "FLOWERING PAPER",
-        "main_image": "shopify:\/\/shop_images\/Rectangle_61_2.jpg",
+        "main_image": "shopify:\/\/shop_images\/IMG_1953.jpg",
         "main_text": "<p><strong>Flowering paper embodies the idea of circularity and responsibility towards nature, and turns packaging into something more than just garbage. It is enough to plant this paper in the ground and water it, and in 7-10 days the first flower shoots of poppy, purslane, petunia and marigold will sprout.<\/strong><\/p><p>This innovative packaging not only provides a unique experience for consumers, but also has a significant environmental benefit. Even if it ends up in any environment, due to uncontrolled recycling, only flowers will remain.<\/p><p><\/p>",
         "btn_label": "read more",
         "btn_url": "shopify:\/\/blogs\/news\/flowering-paper"
@@ -461,7 +461,7 @@
       "settings": {
         "image_position": "row",
         "title": "TREES PLANTING",
-        "main_image": "shopify:\/\/shop_images\/Rectangle_61.jpg",
+        "main_image": "shopify:\/\/shop_images\/IMG_1956.jpg",
         "main_text": "<p><strong>\"Mama, plant a tree\" - is the first tree planting project in Ukraine supported by the United Nations. Founded by a group of Ukrainian mothers, the project aims to reduce CO2 emissions and support environmental initiatives.<\/strong><\/p><p>Every year, the average person on the planet produces 6 tons of CO2, so to offset this impact and preserve nature for future generations, one person needs to plant 73 trees annually. \"Mama, plant a tree\" has made this process easy and affordable.<\/p>",
         "btn_label": "read more",
         "btn_url": "shopify:\/\/blogs\/news\/trees-planting"
@@ -472,7 +472,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_60.jpg",
         "title": "Greenwashing VS Sustainable",
-        "description": "Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.",
+        "description": "<p>Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.<\/p>",
         "btn_label": "READ MORE",
         "btn_url": "shopify:\/\/blogs\/news\/greenwashing-vs-sustainable"
       }
