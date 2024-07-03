@@ -24,9 +24,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#fefefe",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "#494949"
           }
@@ -296,7 +296,7 @@
       ],
       "settings": {
         "colors": "white",
-        "title": "Frequently asked questions",
+        "title": "",
         "faq_icon": "caret"
       }
     }
