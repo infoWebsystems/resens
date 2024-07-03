@@ -151,6 +151,10 @@
   margin: 0 auto;
 }
 
+.homepage-section--logo-bar-wrapper .logo-bar__item img {
+  height: 158px;
+}
+
 @media only screen and (max-width: 767px) {
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
     .homepage-featured-content-box-inner
