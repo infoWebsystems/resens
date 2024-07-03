@@ -540,16 +540,6 @@
     },
     "1719929791b2a17589": {
       "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_Uwf6z7": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_Uwf6z7"
-      ],
       "settings": {
         "include_margins": true
       }
