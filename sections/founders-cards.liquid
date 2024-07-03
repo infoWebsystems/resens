@@ -5,6 +5,13 @@
   onload="this.onload=null;this.rel='stylesheet'" />
 <noscript>{{ 'section-founders-cards.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+  .moreText {
+    display: none;
+  }
+</style>
+
+
 <div class="founders-cards">
   <div class="wrapper-padded show-on-scroll">
     <div class="grid">
@@ -21,16 +28,28 @@
                 {{ 'product-1' | placeholder_svg_tag: 'photo' }}
               {% endif %}
               <div class="name">{{ block.settings.name }}</div>
-              <div class="description">{{ block.settings.quote }}</div>
-              {% if block.settings.read_more_url %}
-                {% comment %} 
-                                    <div class="read-more">
-                                      Show more
-                                      </div>
-                                    {% endcomment %}
-              {% endif %}
+              <div class="description">
+                {% assign original_string = block.settings.quote %}
+                {% assign truncated_string = original_string | truncate: 80, "" %}
+                {% assign truncated_length = truncated_string | size %}
+                {% assign remaining_string_start = truncated_length %}
+                {% assign remaining_string = original_string | slice: remaining_string_start, original_string.size %}
+
+                <p>
+                  {{ truncated_string }}
+                  <span class="points">...</span>
+
+                  <span class="moreText">
+                    {{ remaining_string }}
+                  </span>
+                </p>
+              </div>
+              <div class="read-more textButton onTextButton">
+                Show more
+              </div>
             </div>
         {% endcase %}
+
       {% else %}
         {% for i in (1..3) %}
           <div class="founder-info">
@@ -38,13 +57,45 @@
             <div class="name">Name</div>
             <div class="description">Quote</div>
 
-            <a class="read-more" href="#">Show more</a>
+            <div class="read-more">Show more</div>
           </div>
         {% endfor %}
       {% endfor %}
     </div>
   </div>
 </div>
+
+<script>
+        function toggleText(element) {
+          let points =
+                element.querySelector(".points");
+   
+            let showMoreText =
+                element.querySelector(".moreText");
+   
+            let buttonText =
+                element.querySelector(".textButton");
+   
+
+            if (points.style.display === "none") {
+                showMoreText.style.display = "none";
+                points.style.display = "inline";
+                buttonText.innerHTML = "Show More";
+            }
+            else {
+                showMoreText.style.display = "inline";
+                points.style.display = "none";
+                buttonText.innerHTML = "Show Less";
+            }
+        }
+
+        document.querySelectorAll('.onTextButton').forEach(button => {
+          button.addEventListener('click', (e) => {
+            const node = e.target.parentElement;
+            toggleText(node);
+          })
+        })
+</script>
 
 {% schema %}
   {
@@ -70,10 +121,6 @@
             "id": "quote",
             "label": "Quote",
             "default": "Quote"
-          }, {
-            "type": "url",
-            "id": "read_more_url",
-            "label": "Read more URL"
           }
         ]
       }
