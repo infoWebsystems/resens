@@ -205,7 +205,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
         "title": "Everyone can reduce their carbon footprint by changing their habits.",
-        "description": "<p>Interested in what carbon footprint you leave behind? <br\/>Calculate it with our online calculator<\/p>",
+        "description": "<p>Interested in what carbon footprint you leave behind? Calculate it with our online calculator<\/p>",
         "btn_label": "CALCULATE",
         "btn_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/"
       }
@@ -261,7 +261,7 @@
         "richtext_9r3Abp"
       ],
       "settings": {
-        "background_color": "",
+        "background_color": "#f4f4f4",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
