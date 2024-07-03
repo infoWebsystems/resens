@@ -75,7 +75,7 @@
         "richtext_4x3hfA"
       ],
       "settings": {
-        "background_color": "#f4f4f4",
+        "background_color": "",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -193,7 +193,7 @@
         "richtext_LLUKX3"
       ],
       "settings": {
-        "background_color": "#f4f4f4",
+        "background_color": "",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -206,7 +206,8 @@
         "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
         "title": "Everyone can reduce their carbon footprint by changing their habits.",
         "description": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
-        "btn_label": "CALCULATE"
+        "btn_label": "CALCULATE",
+        "btn_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/"
       }
     },
     "text_rich_text_aiRYBj": {
@@ -260,7 +261,7 @@
         "richtext_9r3Abp"
       ],
       "settings": {
-        "background_color": "#f9f9fb",
+        "background_color": "",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -382,7 +383,7 @@
         "richtext_aknRVp"
       ],
       "settings": {
-        "background_color": "#f4f4f4",
+        "background_color": "",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -472,7 +473,8 @@
         "background": "shopify:\/\/shop_images\/Rectangle_60.jpg",
         "title": "Greenwashing VS Sustainable",
         "description": "Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.",
-        "btn_label": "READ MORE"
+        "btn_label": "READ MORE",
+        "btn_url": "shopify:\/\/blogs\/news\/greenwashing-vs-sustainable"
       }
     },
     "blog_blog_posts_Rdw7XP": {
