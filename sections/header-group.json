@@ -60,8 +60,8 @@
         "overlay_header_contact": false,
         "overlay_logo": "shopify:\/\/shop_images\/resens_logo_Artboard_1_6_1.svg",
         "overlay_opacity": 0,
-        "show_currency_selector": true,
-        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_locale_selector": true,
         "main_linklist": "main-menu",
         "dropdown_alignment": "left"
       }
