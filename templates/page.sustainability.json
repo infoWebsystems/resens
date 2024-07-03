@@ -205,7 +205,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/resens-dark-bg.jpg",
         "title": "Everyone can reduce their carbon footprint by changing their habits.",
-        "description": "Interested in what carbon footprint you leave behind? Calculate it with our online calculator",
+        "description": "<p>Interested in what carbon footprint you leave behind? <br\/>Calculate it with our online calculator<\/p>",
         "btn_label": "CALCULATE",
         "btn_url": "https:\/\/www.mamaplantatree.com\/ua\/calc-3\/"
       }
@@ -472,7 +472,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_60.jpg",
         "title": "Greenwashing VS Sustainable",
-        "description": "Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.",
+        "description": "<p>Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.<\/p>",
         "btn_label": "READ MORE",
         "btn_url": "shopify:\/\/blogs\/news\/greenwashing-vs-sustainable"
       }
