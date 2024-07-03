@@ -75,7 +75,7 @@
         "richtext_4x3hfA"
       ],
       "custom_css": [
-        "p {text-align: cente !important;}"
+        "p {text-align: center !important;}"
       ],
       "settings": {
         "background_color": "#f4f4f4",
