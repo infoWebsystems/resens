@@ -87,6 +87,7 @@
       ],
       "disabled": true,
       "settings": {
+        "background_color": "",
         "colors": "light",
         "section_width": "narrow",
         "text_alignment_desktop": "center",
@@ -143,7 +144,7 @@
       "settings": {
         "section_color_scheme": "white",
         "form_width": "narrow",
-        "form_title": "Contact us",
+        "form_title": "",
         "form_description": "<p>Have a question, or want a product recommendation? Get in touch.<\/p>"
       }
     },
