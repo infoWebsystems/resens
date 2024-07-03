@@ -540,6 +540,16 @@
     },
     "1719929791b2a17589": {
       "type": "apps",
+      "blocks": {
+        "elasty_ukrainian_connect_hub_novapost_bKpJkh": {
+          "type": "shopify:\/\/apps\/elasty-ukrainian-connect-hub\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "elasty_ukrainian_connect_hub_novapost_bKpJkh"
+      ],
       "settings": {
         "include_margins": true
       }
