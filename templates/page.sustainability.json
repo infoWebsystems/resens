@@ -66,7 +66,7 @@
         "richtext_4x3hfA": {
           "type": "richtext",
           "settings": {
-            "text": "<p>\"Sustainable marketing should be, first and foremost, internal marketing. The only thing we can be sure of is changing ourselves!\" - <strong>Yulia Polyakova and Olga Guzhyk.<\/strong><\/p><p>\"My goal is to make a beautiful product without impoverishing the future of my daughters.\" - <strong>Yulia Gagarina.<\/strong><\/p>",
+            "text": "<p>\"Sustainable marketing should be, first and foremost, internal marketing. The only thing we can be sure of is changing ourselves!\" <br\/>- <strong>Yulia Polyakova and Olga Guzhyk.<\/strong><\/p><p>\"My goal is to make a beautiful product without impoverishing the future of my daughters.\" - <strong>Yulia Gagarina.<\/strong><\/p>",
             "text_size": 16
           }
         }
