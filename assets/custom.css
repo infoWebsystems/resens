@@ -200,6 +200,10 @@
   text-align: left;
 }
 
+#popup .custom-font {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 767px) {
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
     .homepage-featured-content-box-inner
@@ -270,6 +274,6 @@
   }
 
  .template-collection .homepage-section-title {
-   line-height: inherit!important;SS
+   line-height: inherit!important;
  }
 }
