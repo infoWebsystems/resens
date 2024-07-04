@@ -52,6 +52,9 @@
         "heading_m8jAyh",
         "richtext_BX4zqX"
       ],
+      "custom_css": [
+        "h2{letter-spacing: 0.13em !important;font-size: 20px;line-height: 32px;}"
+      ],
       "settings": {
         "background_color": "",
         "colors": "white",
