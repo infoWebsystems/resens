@@ -91,7 +91,7 @@
         "richtext_GhjAYc": {
           "type": "richtext",
           "settings": {
-            "text": "<p>That's how the idea to produce effective cosmetics and health products in a new generation of packaging that neither increases plastic pollution nor contaminates land and wastewater came about. Our goal, strategy, and vision were formed in accordance with the sustainable development goals that the UN plans to implement by 2030, namely, to prevent climate warming by more than 1.5°C.<\/p>",
+            "text": "<p>That's how the idea to produce effective cosmetics and health products in a new generation of packaging that neither increases plastic pollution nor contaminates land and wastewater came about. Our goal, strategy, and vision were formed in <a href=\"\/pages\/about-us\" title=\"About us\">accordance with the sustainable development goals that the UN plans to implement by 2030<\/a>, namely, to prevent climate warming by more than 1.5°C.<\/p>",
             "text_size": 16
           }
         }
