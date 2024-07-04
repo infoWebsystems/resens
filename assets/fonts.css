@@ -150,14 +150,14 @@ h6 {
   .slideshow-title-container {
     width: 100% !important;
   }
-  .template-index h1,
-  .template-index h2,
-  .template-index h3,
-  .template-index h4,
-  .template-index h5,
-  .template-index h6 {
-    line-height: 28px !important;
-  }
+  /*.template-index h1,*/
+  /*.template-index h2,*/
+  /*.template-index h3,*/
+  /*.template-index h4,*/
+  /*.template-index h5,*/
+  /*.template-index h6 {*/
+  /*  line-height: 28px !important;*/
+  /*}*/
 }
 
 .drawer#NavDrawer a {
