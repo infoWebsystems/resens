@@ -268,6 +268,12 @@
     max-width: 100%;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .template-index .homepage-content--template--16569068388510__35b28867-77fd-4573-8212-101b3b8e2245 h2.homepage-sections--title {
+    line-height: 41px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .template-page-sustainability .large--three-quarters {
     width: 100% !important;
