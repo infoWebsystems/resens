@@ -81,6 +81,9 @@
   font-size: 20px;
   line-height: 32px;
 }
+.template-page-sustainability .homepage-sections--title {
+
+}
 
 .template-page-sustainability .shopify-section .homepage-sections-wrapper {
   margin: 0px 0;
@@ -106,7 +109,7 @@
   margin: 3px !important;
 }
 .template-page-sustainability .large--three-quarters {
-  width: 62%;
+  width: 62%!important;
 }
 
 /* Temp */
