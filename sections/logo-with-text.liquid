@@ -10,7 +10,7 @@
     <div class="content">
       <div class="logo">
         {% if section.settings.logo %}
-          <img src="{{ section.settings.logo | img_url }}" alt="{{ section.settings.logo.alt }}">
+          <img src="{{ section.settings.logo | image_url }}" alt="{{ section.settings.logo.alt }}">
         {% else %}
           {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
