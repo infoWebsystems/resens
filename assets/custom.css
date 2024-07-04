@@ -78,7 +78,6 @@
 
 .template-page-sustainability .homepage-sections--title {
   letter-spacing: 0.13em !important;
-  font-size: 20px;
   line-height: 32px;
 }
 .template-page-sustainability .homepage-sections--title {
@@ -263,5 +262,10 @@
 @media only screen and (max-width: 989px) {
   .template-article #PageContainer {
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .template-page-sustainability .large--three-quarters {
+    width: 100% !important;
   }
 }
