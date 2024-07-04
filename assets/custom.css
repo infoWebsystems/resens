@@ -276,4 +276,9 @@
  .template-collection .homepage-section-title {
    line-height: inherit!important;
  }
+
+  .contact-page h3.homepage-sections--title {
+    font-size: 18px;
+  }
+
 }
