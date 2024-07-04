@@ -150,12 +150,12 @@ h6 {
   .slideshow-title-container {
     width: 100% !important;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  .template-index h1,
+  .template-index h2,
+  .template-index h3,
+  .template-index h4,
+  .template-index h5,
+  .template-index h6 {
     line-height: 28px !important;
   }
 }
