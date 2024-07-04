@@ -268,4 +268,8 @@
   .template-page-sustainability .large--three-quarters {
     width: 100% !important;
   }
+
+ .template-collection .homepage-section-title {
+   line-height: inherit!important;SS
+ }
 }
