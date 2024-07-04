@@ -280,7 +280,7 @@
     "image_image_with_text_cBwR3y": {
       "type": "image--image-with-text",
       "custom_css": [
-        "p {text-align: left;}"
+        "p {text-align: left!importnat;}"
       ],
       "settings": {
         "colors": "light",
