@@ -77,8 +77,8 @@
 }
 
 .template-page-sustainability .homepage-sections--title {
-  line-height: 40px !important;
-  letter-spacing: 0.7px !important;
+  letter-spacing: 0.13em !important;
+  font-size: 20px;
 }
 
 .template-page-sustainability .shopify-section .homepage-sections-wrapper {
@@ -95,9 +95,7 @@
 .template-page-sustainability .shopify-section {
 }
 
-.template-page-sustainability h2 {
-  font-size: medium;
-}
+
 
 .template-page-sustainability .responsive-image-wrapper img {
   /* height: 158px; */
