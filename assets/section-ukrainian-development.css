@@ -25,11 +25,11 @@
 
 .ukrainian-development .list li {
   position: relative;
-  font-weight: 400;
-  font-size: 16px;
+  /*font-weight: 400;*/
+  /*font-size: 16px;*/
   list-style-type: none;
-  letter-spacing: -.7px;
-  margin: 0!important;
+  /*letter-spacing: -.7px;*/
+  margin: 0 0 5px 0!important;
 }
 
 .ukrainian-development .list li::before {

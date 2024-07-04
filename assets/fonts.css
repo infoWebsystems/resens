@@ -137,7 +137,7 @@ h4,
 h5,
 h6 {
   font-weight: 400 !important;
-  line-height: 50px !important;
+  /*line-height: 50px !important;*/
   letter-spacing: 0.17em !important;
   text-transform: uppercase !important;
 }
@@ -150,14 +150,14 @@ h6 {
   .slideshow-title-container {
     width: 100% !important;
   }
-  .template-index h1,
-  .template-index h2,
-  .template-index h3,
-  .template-index h4,
-  .template-index h5,
-  .template-index h6 {
-    line-height: 28px !important;
-  }
+  /*.template-index h1,*/
+  /*.template-index h2,*/
+  /*.template-index h3,*/
+  /*.template-index h4,*/
+  /*.template-index h5,*/
+  /*.template-index h6 {*/
+  /*  line-height: 28px !important;*/
+  /*}*/
 }
 
 .drawer#NavDrawer a {

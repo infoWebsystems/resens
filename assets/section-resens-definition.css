@@ -42,10 +42,10 @@
 .resens-definition .conclusion {
   margin-top: 64px;
   text-align: justify;
-  letter-spacing: -0.7px;
-  font-weight: 400;
-  font-size: 14px;
-  text-align: justify;
+  /*letter-spacing: -0.7px;*/
+  /*font-weight: 400;*/
+  /*font-size: 14px;*/
+  /*text-align: justify;*/
 }
 
 .resens-definition .description .bold {

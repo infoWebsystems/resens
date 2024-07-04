@@ -77,8 +77,11 @@
 }
 
 .template-page-sustainability .homepage-sections--title {
-  line-height: 40px !important;
-  letter-spacing: 0.7px !important;
+  letter-spacing: 0.13em !important;
+  line-height: 32px;
+}
+.template-page-sustainability .homepage-sections--title {
+
 }
 
 .template-page-sustainability .shopify-section .homepage-sections-wrapper {
@@ -95,9 +98,7 @@
 .template-page-sustainability .shopify-section {
 }
 
-.template-page-sustainability h2 {
-  font-size: medium;
-}
+
 
 .template-page-sustainability .responsive-image-wrapper img {
   /* height: 158px; */
@@ -107,7 +108,7 @@
   margin: 3px !important;
 }
 .template-page-sustainability .large--three-quarters {
-  width: 62%;
+  width: 62%!important;
 }
 
 /* Temp */
@@ -199,6 +200,10 @@
   text-align: left;
 }
 
+#popup .custom-font {
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 767px) {
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
     .homepage-featured-content-box-inner
@@ -262,4 +267,13 @@
   .template-article #PageContainer {
     max-width: 100%;
   }
+}
+@media only screen and (max-width: 767px) {
+  .template-page-sustainability .large--three-quarters {
+    width: 100% !important;
+  }
+
+ .template-collection .homepage-section-title {
+   line-height: inherit!important;
+ }
 }

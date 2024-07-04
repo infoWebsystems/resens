@@ -53,22 +53,26 @@
 }
 
 .brand-developers .brand-developers-desktop .founder-info .description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
+  /*font-weight: 400;*/
+  /*font-size: 16px;*/
+  /*line-height: 160%;*/
+
   padding-right: 64px;
 }
 
 .brand-developers .brand-developers-desktop .general-info {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
+  /*font-weight: 400;*/
+  /*font-size: 16px;*/
+  /*line-height: 160%;*/
   grid-row: 2 / 3;
   grid-column: 2 / 4;
   margin-top: 26px;
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.brand-developers .brand-developers-desktop .general-info > div {
+  text-align: justify;
 }
 
 .brand-developers .brand-developers-desktop .general-info .trust_badge {
