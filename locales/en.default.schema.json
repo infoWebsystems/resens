@@ -156,7 +156,7 @@
       }
     },
     "Products": {
-      "name": "Products*",
+      "name": "Products",
       "settings": {
         "header-0": {
           "content": "Gift wrapping"
@@ -2206,7 +2206,7 @@
     "Bottom_margin": "Bottom margin",
     "Block_spacing": "Block spacing",
     "Grid_image_size": "Grid image size",
-    "Products": "Products**",
+    "Products": "Products",
     "Enable_collapsible_tab": "Enable collapsible tab",
     "Collapsible_tab": "Collapsible tab",
     "Custom_icon": "Custom icon",
