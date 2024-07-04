@@ -330,6 +330,9 @@
         "logo_image_DfJehL",
         "logo_image_4ct9yK"
       ],
+      "custom_css": [
+        "img {height: 290px;}"
+      ],
       "settings": {
         "colors": "light",
         "width": 290,
