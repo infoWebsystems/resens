@@ -234,6 +234,9 @@
         "heading_YcMViT",
         "richtext_EiWYGj"
       ],
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
       "settings": {
         "background_color": "",
         "colors": "white",
