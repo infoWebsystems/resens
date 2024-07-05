@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -13,6 +22,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -28,6 +40,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -43,6 +58,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#242424",
@@ -58,6 +76,9 @@
           "settings": {
             "heading": "",
             "heading_size": 30,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "shopify:\/\/collections\/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -75,6 +96,7 @@
         "24036f10-4e78-447d-94b1-cd6c36d48905",
         "4076362f-8c35-4f71-942f-0938ddf5334f"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "",
