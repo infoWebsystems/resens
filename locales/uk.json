@@ -855,7 +855,7 @@
         "zip_code_placeholder": "ЗІП код",
         "postal_code_label": "Поштовий індекс",
         "postal_code_placeholder": "12345",
-        "postcode_label": "Індекс ( будь яке значення 5 цифр )",
+        "postcode_label": "Поштовий індекс",
         "postcode_placeholder": "Поштовий індекс",
         "pincode_label": "PIN-код",
         "pincode_placeholder": "PIN-код",
