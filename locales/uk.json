@@ -853,7 +853,7 @@
         "phone_tooltip": "У випадку, якщо нам знадобиться зв’язатися з вами щодо вашого замовлення",
         "zip_code_label": "ЗІП код",
         "zip_code_placeholder": "ЗІП код",
-        "postal_code_label": "Номер телефону",
+        "postal_code_label": "Індекс ( будь яке значення 5 цифр ) ",
         "postal_code_placeholder": "12345",
         "postcode_label": "Поштовий індекс",
         "postcode_placeholder": "Поштовий індекс",
