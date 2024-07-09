@@ -22,7 +22,7 @@
       "home_link_title": "Back to the frontpage"
     },
     "newsletter_form": {
-      "newsletter_email": "email@example.com",
+      "newsletter_email": "",
       "submit": "Subscribe",
       "confirmation": "Thanks for subscribing"
     },
