@@ -1059,7 +1059,7 @@
       "payment_gateway": {
         "credit_card_label": "Кредитна карта",
         "bank_deposit_label": "Банківський депозит",
-        "cash_on_delivery_label": "Накладений платіж (COD)",
+        "cash_on_delivery_label": "Накладений платіж ",
         "money_order_label": "Грошовий переказ",
         "debit_card_label": "Дебетова картка",
         "deferred_payment_label": "Виберіть спосіб оплати пізніше",
@@ -1892,7 +1892,7 @@
           "staff": "Помилка персоналу",
           "other": "Інший"
         },
-        "cash_on_delivery": "Накладений платіж (COD)",
+        "cash_on_delivery": "Накладений платіж ",
         "not_available": "Це замовлення недоступне",
         "financial_status": {
           "authorized": "Авторизований",
