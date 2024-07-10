@@ -564,7 +564,7 @@
         "offsite_gateway_redirect_hint": "Після натискання «%{button_label}» ви будете перенаправлені на %{gateway_label}, щоб безпечно завершити покупку.",
         "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} всього %{total_shop_price}",
         "receiver_payment_experience_hint": "Після оформлення замовлення ви отримаєте реквізити для оплати. Здійсніть платіж у Multibanco або онлайн протягом %{due_days} днів.",
-        "billing_address_title": "Платіжна адреса",
+        "billing_address_title": "Дані одержувача",
         "billing_address_description": "Виберіть адресу, яка відповідає вашій картці або способу оплати.",
         "billing_address_description_no_shipping_address": "Введіть адресу, яка відповідає вашій картці або способу оплати.",
         "no_js_credit_card_fields_redirect_hint": "Вас буде перенаправлено, щоб додати платіжну інформацію.",
