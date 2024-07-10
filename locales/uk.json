@@ -596,7 +596,7 @@
         "klarna_slice_it_label": "Фінанси з Klarna",
         "ideal_label": "IDEAL",
         "bank_picker_label": "банк",
-        "afterpay_label": "Післяоплата",
+        "afterpay_label": "Післяплата",
         "cashapppay_label": "Готівка App Pay",
         "purchase_options_card_update_agreement_label_html": "Оновлюючи спосіб оплати, ви дозволяєте здійснювати платежі за будь-яку регулярну або відкладену покупку відповідно до <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">політики скасування<\/a> цього магазину.",
         "subscription_card_update_agreement_label": "Зміна способу оплати призведе до оновлення вашої підписки та майбутніх регулярних платежів.",
