@@ -3042,7 +3042,7 @@
       "date": "Запланова на {{ date }}",
       "cancelled": "Замовлення скасовано {{ date }}",
       "cancelled_reason": "Причина: {{ reason }}",
-      "billing_address": "Дані одержувача",
+      "billing_address": "Платіжна адреса",
       "payment_status": "Статус платежу",
       "shipping_address": "Адреса доставки",
       "fulfillment_status": "Статус виконання",
