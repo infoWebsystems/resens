@@ -2317,7 +2317,7 @@
         },
         "manual_payment_methods": {
           "money_order": "Грошовий переказ - {{formattedTransactionAmount}}",
-          "cash_on_delivery": "Оплата при доставці (COD) - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Оплата при доставці  - {{formattedTransactionAmount}}",
           "bank_deposit": "Банківський депозит - {{formattedTransactionAmount}}",
           "manual": "Вручну - {{formattedTransactionAmount}}"
         },
