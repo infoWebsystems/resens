@@ -472,10 +472,10 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "address_title": "Delivery address ",
+        "address_title": "Delivery address or Nova Poshta branch number",
         "address2_label": "Apartment number (do not fill in if delivery to the branch)",
         "optional_address2_label": "Apartment number (do not fill in if delivery to the branch)",
-        "address1_label": "Delivery address "
+        "address1_label": "Delivery address or Nova Poshta branch number"
       }
     }
   }
