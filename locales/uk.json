@@ -891,7 +891,7 @@
         "credit_card_expires_on_notice": "Термін дії закінчується %{month}\/%{year}",
         "express_payment_gateway_label": "Експрес",
         "manual_payment_gateway_label": "Інструкція",
-        "billing_address_title": "Платіжна адреса",
+        "billing_address_title": "Дані одержувача",
         "free_label": "безкоштовно"
       },
       "field_errors": {
