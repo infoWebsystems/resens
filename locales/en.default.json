@@ -471,16 +471,6 @@
   },
   "shopify": {
     "checkout": {
-      "thank_you": {
-        "thank_you_confirmed_order_with_email": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_confirmed_order_with_email_and_phone": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_payments_app_pending_payment_description_default_with_email": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!",
-        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Sorry for the inconvenience. Our payment and delivery systems are in the process of getting set up.  Expect a message from our manager within the next hour with payment and delivery details.  Thanks for your patience. We're on it!"
-      },
       "contact": {
         "address_title": "Delivery address or Nova Poshta branch number",
         "address2_label": "Apartment number (do not fill in if delivery to the branch)",
