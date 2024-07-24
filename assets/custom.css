@@ -49,7 +49,7 @@
   letter-spacing: 5px !important;
 }
 
-.site-header__logo img {
+.site-header__logo img.logo_image {
   max-width: 40px !important;
   transform: scale(1.1);
 }
