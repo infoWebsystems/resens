@@ -69,7 +69,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "peeling",
-            "collection_img": "shopify:\/\/shop_images\/DSC03658.jpg",
+            "collection_img": "shopify:\/\/shop_images\/123.jpg",
             "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
@@ -140,6 +140,9 @@
     },
     "35b28867-77fd-4573-8212-101b3b8e2245": {
       "type": "image--image-with-text-overlay",
+      "custom_css": [
+        "h2 {line-height: inherit;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_1627.jpg",
         "image_height": "50vw",

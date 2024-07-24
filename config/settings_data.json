@@ -84,6 +84,7 @@
     "desktop-popup-style": "slide-up",
     "pop-up-delay": 5,
     "popup--test-mode": false,
+    "favicon": "shopify:\/\/shop_images\/resens_logo_Artboard_20_1_2x_1246aa2a-fa99-454a-bc74-83b33452900d.png",
     "animations_enabled": true,
     "page_fade_enabled": true,
     "ken_burns_enabled": true,
