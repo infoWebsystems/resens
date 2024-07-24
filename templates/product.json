@@ -195,6 +195,11 @@
         "enable_readmore": false
       }
     },
+    "product_tabs_L38RWc": {
+      "type": "product-tabs",
+      "settings": {
+      }
+    },
     "1703582568516c93de": {
       "type": "apps",
       "blocks": {
@@ -435,6 +440,7 @@
   "order": [
     "product-form",
     "product-description",
+    "product_tabs_L38RWc",
     "1703582568516c93de",
     "1703582541785ea29c",
     "image-with-text-00",
