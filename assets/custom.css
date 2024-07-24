@@ -3,7 +3,7 @@
   width: 100% !important;
 }
 .nav-bar.mobile-nav-bar-wrapper {
-  padding: 20px 0;
+  padding: 1px 0;
 }
 
 .nav-bar.mobile-nav-bar-wrapper button.site-nav__link {
@@ -16,8 +16,8 @@
   .homepage-featured-content-box-inner
   .homepage-section-btn {
   width: 200px;
-  background: #ffffff;
-  color: #000000;
+  background: #585750;
+  color: #fff;
   padding: 16px;
 }
 
@@ -25,7 +25,7 @@
   .homepage-featured-content-box
   .homepage-featured-content-box-inner
   .homepage-section-btn:hover {
-  background: #dfe3e8;
+  background: #878383;
 }
 
 /* Section with woman's face */
@@ -50,7 +50,8 @@
 }
 
 .site-header__logo img {
-  max-width: 120px !important;
+  max-width: 40px !important;
+  transform: scale(1.1);
 }
 
 .template-page-about .overlay-header {
@@ -233,6 +234,8 @@
     .slide-buttons
     a.homepage-section-btn {
     width: -webkit-fill-available;
+    padding: 16px 7px;
+    font-size: 14px;
   }
 
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left

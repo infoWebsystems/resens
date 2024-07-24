@@ -14735,6 +14735,7 @@ textarea:focus {
   letter-spacing: var(--heading-spacing);
   text-transform: var(--heading-font-case);
   margin: 0;
+  font-size: 32px;
 }
 :not(#ShopNowContainer)
   > div
