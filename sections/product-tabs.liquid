@@ -1,59 +1,67 @@
-<div class="tabs">
-  {% if product.metafields.custom.activee_ingredients != blank %}
-    <input type="radio" name="tabs" id="tabone" checked="checked">
-    <label class="label" for="tabone">
-      <span>Active ingredients</span>
-      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
-    </label>
-    <div class="tab">
-      {{ product.metafields.custom.activee_ingredients | metafield_tag }}
-    </div>
-  {% endif %}
-  
-  {% if product.metafields.custom.how_to_use != blank %}
-    <input type="radio" name="tabs" id="tabtwo">
-    <label class="label" for="tabtwo">
-      <span>How to use</span>
-      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
-    </label>
-    <div class="tab">
-      {{ product.metafields.custom.how_to_use | metafield_tag }}
-    </div>
-  {% endif %}
-  
-  {% if product.metafields.custom.result != blank %}
-    <input type="radio" name="tabs" id="tabthree">
-    <label class="label" for="tabthree">
-      <span>Result</span>
-      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
-    </label>
-    <div class="tab">
-      {{ product.metafields.custom.result | metafield_tag }}
-    </div>
-  {% endif %}
+{% assign activee_ingredients = product.metafields.custom.activee_ingredients %}
+{% assign how_to_use = product.metafields.custom.how_to_use %}
+{% assign result = product.metafields.custom.result %}
+{% assign ingredients = product.metafields.custom.ingredients %}
+{% assign packaging = product.metafields.custom.packaging %}
 
-  {% if product.metafields.custom.ingredients != blank %}
-    <input type="radio" name="tabs" id="tabfour">
-    <label class="label" for="tabfour">
-      <span>Ingredients</span>
-      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
-    </label>
-    <div class="tab">
-      {{ product.metafields.custom.ingredients | metafield_tag }}
-    </div>
-  {% endif %}
+{% if activee_ingredients or how_to_use or result or ingredients or packaging %}
+  <div class="tabs" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+    {% if activee_ingredients != blank %}
+      <input type="radio" name="tabs" id="tabone" checked="checked">
+      <label class="label" for="tabone">
+        <span>Active ingredients</span>
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      </label>
+      <div class="tab">
+        {{ activee_ingredients | metafield_tag }}
+      </div>
+    {% endif %}
+    
+    {% if how_to_use != blank %}
+      <input type="radio" name="tabs" id="tabtwo">
+      <label class="label" for="tabtwo">
+        <span>How to use</span>
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      </label>
+      <div class="tab">
+        {{ how_to_use | metafield_tag }}
+      </div>
+    {% endif %}
+    
+    {% if result != blank %}
+      <input type="radio" name="tabs" id="tabthree">
+      <label class="label" for="tabthree">
+        <span>Result</span>
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      </label>
+      <div class="tab">
+        {{ result | metafield_tag }}
+      </div>
+    {% endif %}
 
-  {% if product.metafields.custom.packaging != blank %}
-    <input type="radio" name="tabs" id="tabfive">
-    <label class="label" for="tabfive">
-      <span>Packaging</span>
-      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
-    </label>
-    <div class="tab">
-      {{ product.metafields.custom.packaging | metafield_tag }}
-    </div>
-  {% endif %}
-</div>
+    {% if ingredients != blank %}
+      <input type="radio" name="tabs" id="tabfour">
+      <label class="label" for="tabfour">
+        <span>Ingredients</span>
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      </label>
+      <div class="tab">
+        {{ ingredients | metafield_tag }}
+      </div>
+    {% endif %}
+
+    {% if packaging != blank %}
+      <input type="radio" name="tabs" id="tabfive">
+      <label class="label" for="tabfive">
+        <span>Packaging</span>
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      </label>
+      <div class="tab">
+        {{ packaging | metafield_tag }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
 
 <style>
 .tabs {
@@ -63,19 +71,23 @@
   gap: 72px;
 }
 .tabs label {
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
 	order: 1; // Put the labels first
 	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
+	padding-bottom: 1rem;
 	cursor: pointer;
-  transition: background ease 0.2s;
+  transition: border-bottom ease 0.8s;
   justify-content: space-between;
   align-items: center;
   display: flex;
   text-transform: uppercase;
 }
+.tabs label:not(:last-of-type) {
+  margin-right: 72px;
+}
 .tabs label svg { 
-  transform: rotate(180deg);
+  transition: all 0.4s;
+  transform: rotate(-180deg);
   display: none;
 }
 .tabs .tab {
@@ -84,7 +96,7 @@
 	width: 100%;
 	display: none;
   padding: 64px 0;
-  background: #f4f4f4;
+  background: {{ section.settings.content_background }};
   margin-top: 32px;
 }
 .tabs .tab > * { 
@@ -96,7 +108,7 @@
 	display: none;
 }
 .tabs input[type="radio"]:checked + label {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 1);
   font-weight: 700;
 }
 .tabs input[type="radio"]:checked + label svg {
@@ -104,6 +116,12 @@
 }
 .tabs input[type="radio"]:checked + label + .tab {
 	display: block;
+}
+
+@media only screen and (max-width: 989px) {
+  .tabs label:not(:last-of-type) {
+    margin-right: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -115,40 +133,72 @@
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem;
+    margin: 0 2rem 24px 2rem;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 24px;
+  }
+  .tabs label:not(:last-of-type) {
+    margin-right: 2rem;
   }
   .tabs label svg { 
     display: block;
   }
   .tabs input[type="radio"]:checked + label {
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 16px;
   }
   .tabs .tab {
     margin-top: 0;
-    padding: 64px 35px;
+    margin: 0 32px 24px 32px;
+    padding: 0;
+    padding-bottom: 16px;
+    background-color: #fff;
+  }
+  .tabs input[type="radio"]:checked + label + .tab {
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .tabs .tab > * { 
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1px;
   }
 }
 </style>
 
-<script>
-  // document.querySelectorAll('label.label').forEach(label => {
-  //   label.addEventListener('click', (e) => {
-  //     // console.log(e.currentTarget.previousElementSibling.classList.contains('checked'));
-  //     document.querySelectorAll('input.input').forEach(input => {
-  //       // input.classList.remove('checked');
-  //       input.removeAttribute('checked');
-  //     })
-
-  //     e.currentTarget.previousElementSibling.classList.add('checked');
-  //     e.currentTarget.previousElementSibling.setAttribute('checked', 'checked');
-
-  //     console.log(e.currentTarget.previousElementSibling)
-  //   })
-  // })
-</script>
-
 {% schema %}
 {
   "name": "Product tags",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "content_background",
+      "label": "Content Background on Desktop",
+      "default": "#f4f4f4"
+    }
+  ],
   "presets": [
     {
       "name": "Product Tabs"
