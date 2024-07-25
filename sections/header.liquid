@@ -844,7 +844,7 @@ Testing Cypress integration
       <div class="mobile-nav-bar--inner">
         <div class="mobile-grid--table">
 
-          <div class="grid__item three-twelfths">
+          <div class="grid__item three-twelfths grid_item_language_switcher">
             <div class="site-nav--mobile">
               <button type="button" aria-label="{{ 'layout.navigation.menu' | t }}" class="icon-fallback-text site-nav__link js-drawer-open-left-link" aria-controls="NavDrawer" aria-expanded="false">
                 {% render 'theme-icon' with icon: 'hamburger_nav', iconClasses: 'fa-2x', widthUnset: true %}
@@ -854,6 +854,12 @@ Testing Cypress integration
                 {% endif %}
 
               </button>
+            </div>
+            {% comment %} <div class="language-switcher-header"><a href="#">Ukraine / UK</a></div> {% endcomment %}
+            <div class="language-switcher-header">
+              <div class="localization-form-wrapper">
+                {% render 'localization-form', show_locale_selector: section.settings.show_locale_selector %}
+              </div>
             </div>
           </div>
 
@@ -932,6 +938,14 @@ Testing Cypress integration
   .contact-page .header-section:not(.sticky-header) .overlay-header
   {
     background-color: {{ opaque_color }};
+  }
+
+  .template-index .header-section.sticky-header:not(.sticked) .overlay-header localization-form .disclosure a {
+    color: #fff;
+  }
+
+  .template-index .header-section.sticky-header.sticked .overlay-header .mobile-grid--table {
+    align-items: center;
   }
 
   .overlay-header .grid--full {

@@ -12135,6 +12135,20 @@ body.js-drawer-open {
 .mobile-nav-bar-wrapper .mobile-grid--table .grid__item {
   padding: 0;
 }
+.mobile-nav-bar-wrapper .mobile-grid--table .grid__item.grid_item_language_switcher {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.mobile-nav-bar-wrapper .mobile-grid--table .grid__item.grid_item_language_switcher .language-switcher-header localization-form button {
+  border: none;
+}
+.mobile-nav-bar-wrapper .mobile-grid--table .grid__item.grid_item_language_switcher .language-switcher-header localization-form a span {
+  display: inline-block;
+  transform: rotate(30deg);
+  padding: 0 6px;
+  font-size: 18px;
+}
 #NavDrawer {
   background-color: var(--menu-drawer-color);
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
