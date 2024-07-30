@@ -276,6 +276,21 @@
         "show_view_all": false
       }
     },
+    "video_video_zi8xrR": {
+      "type": "video--video",
+      "settings": {
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "width_classes": 75,
+        "video": "shopify:\/\/files\/videos\/re_sens_final_vo_full hd.mp4",
+        "url": "",
+        "autoplay": false,
+        "loop": true,
+        "mute": false,
+        "video_overlay_opacity": 50
+      }
+    },
     "cf965c26-6ea8-499a-8a05-a4e350ede58a": {
       "type": "image--image-with-text",
       "disabled": true,
@@ -566,6 +581,7 @@
     "35b28867-77fd-4573-8212-101b3b8e2245",
     "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
     "e8654ad7-b205-46a1-b672-af13dcfa8fe9",
+    "video_video_zi8xrR",
     "cf965c26-6ea8-499a-8a05-a4e350ede58a",
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
     "12a25ae5-a869-4fec-9751-deb411052883",
