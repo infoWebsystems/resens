@@ -285,6 +285,8 @@
         "width_classes": 75,
         "video": "shopify:\/\/files\/videos\/re_sens_final_vo_full hd.mp4",
         "url": "",
+        "mobile_video": "shopify:\/\/files\/videos\/re_sens_vertical_final.mp4",
+        "url_mobile": "",
         "autoplay": true,
         "loop": true,
         "mute": false,
