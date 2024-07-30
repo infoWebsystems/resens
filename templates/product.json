@@ -156,6 +156,7 @@
         },
         "4fdb087c-4728-4785-b270-a71a092b7898": {
           "type": "social_sharing",
+          "disabled": true,
           "settings": {
             "margin_bottom": 20
           }
@@ -198,6 +199,9 @@
     "product_tabs_L38RWc": {
       "type": "product-tabs",
       "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "content_background": "#f4f4f4"
       }
     },
     "1703582568516c93de": {
