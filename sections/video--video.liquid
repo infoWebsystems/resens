@@ -38,10 +38,11 @@
                 {% assign show_overlay_button = false %}
                 {% assign show_overlay = false %}
             {% endunless %}
-            {% render 'native-video' with video: section.settings.video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id %}
+            {% render 'native-video' with video: section.settings.video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id, class: "desktop-video" %}
         {% elsif section.settings.url %}
             <wetheme-video
             section-id="{{ section.id }}"
+						class="wetheme-video-video_url"
             v-bind:hero="false"
             video-type="{{ type }}"
             url="{{ section.settings.url }}"
@@ -52,6 +53,30 @@
             >
             </wetheme-video>
         {% endif %}
+
+				{% if section.settings.mobile_video %}
+					{% unless section.settings.autoplay %}
+							{% assign show_overlay_button = true %}
+							{% assign show_overlay = true %}
+					{% else %}
+							{% assign show_overlay_button = false %}
+							{% assign show_overlay = false %}
+					{% endunless %}
+					{% render 'native-video' with video: section.settings.mobile_video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id, class: "mobile-video" %}
+				{% elsif section.settings.url_mobile %}
+					<wetheme-video
+					section-id="{{ section.id }}"
+					class="wetheme-video-mobile_video_url"
+					v-bind:hero="false"
+					video-type="{{ type }}"
+					url="{{ section.settings.url_mobile }}"
+					v-bind:autoplay="{% if section.settings.autoplay %}true{% else %}false{% endif %}"
+					v-bind:loop="{% if section.settings.loop %}true{% else %}false{% endif %}"
+					v-bind:mute="{% if section.settings.mute %}true{% else %}false{% endif %}"
+					v-bind:overlay="true"
+					>
+					</wetheme-video>
+				{% endif %}
       </div>
 
       <style>
@@ -63,6 +88,23 @@
           {% capture selector %}.homepage-video-content-overlay-wrapper-{{ section.id }} .video--video__static-image{% endcapture %}
           {% render 'responsive-background-image' with section.settings.image, selector: selector %}
         {% endif %}
+
+				#shopify-section-{{ section.id }} native-video.mobile-video,
+				#shopify-section-{{ section.id }} .wetheme-video-mobile_video_url {
+					display: none;
+				}
+
+				@media only screen and (max-width: 768px) {
+					#shopify-section-{{ section.id }} native-video.mobile-video,
+					#shopify-section-{{ section.id }} .wetheme-video-mobile_video_url {
+						display: block;
+					}
+
+					#shopify-section-{{ section.id }} native-video.desktop-video,
+					#shopify-section-{{ section.id }} .wetheme-video-video_url {
+						display: none;
+					}
+				}
       </style>
     </div>
   </div>
@@ -135,6 +177,26 @@
 			"id": "url",
 			"type": "video_url",
 			"label": "t:all.Video_URL",
+			"info": "t:all.Accepts_YouTube_and_Vimeo__Video_will_be_muted_and_some_devices_may_prevent_autoplay__Learn_morehttps___support_eightthemes_com_hc_en_us_articles_360020109497_Product_Mediaheading_2",
+			"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+			"accept": [
+				"youtube",
+				"vimeo"
+			]
+		},
+		{
+			"type": "video",
+			"id": "mobile_video",
+			"label": "t:all.Mobile_Video"
+		},
+		{
+			"type": "header",
+			"content": "t:all.Or_embed_video_from_URL_mobile"
+		},
+		{
+			"id": "url_mobile",
+			"type": "video_url",
+			"label": "t:all.Video_URL_mobile",
 			"info": "t:all.Accepts_YouTube_and_Vimeo__Video_will_be_muted_and_some_devices_may_prevent_autoplay__Learn_morehttps___support_eightthemes_com_hc_en_us_articles_360020109497_Product_Mediaheading_2",
 			"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
 			"accept": [

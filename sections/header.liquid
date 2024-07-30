@@ -955,9 +955,10 @@ Testing Cypress integration
   }
 
   @media only screen and (max-width: 768px) {
-    .template-index .header-section.sticky-header:not(.sticked) .overlay-header .language-switcher-header {
-    display: none;
-  }
+    .template-index .header-section.sticky-header:not(.sticked) .overlay-header .language-switcher-header,
+    .template-index .header-section.sticky-header.sticked .overlay-header .language-switcher-header {
+      display: none;
+    }
   }
 
   .overlay-header .grid--full {
