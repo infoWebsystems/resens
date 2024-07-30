@@ -560,6 +560,12 @@ Testing Cypress integration
             width: 100%;
           }
 
+          @media screen and (min-width: 769px) {
+            #NavDrawer .mobile-nav-grid-container .mobile-nav--footer {
+              display: none;
+            }
+          }
+
           {% if shop.customer_accounts_enabled and social_icons %}
             .mobile-nav.nav--meta .mobile-nav__social-icons {
               justify-content: end;
@@ -946,6 +952,12 @@ Testing Cypress integration
 
   .template-index .header-section.sticky-header.sticked .overlay-header .mobile-grid--table {
     align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .template-index .header-section.sticky-header:not(.sticked) .overlay-header .language-switcher-header {
+    display: none;
+  }
   }
 
   .overlay-header .grid--full {
