@@ -946,7 +946,7 @@ Testing Cypress integration
     background-color: {{ opaque_color }};
   }
 
-  .template-index .header-section.sticky-header:not(.sticked) .overlay-header localization-form .disclosure a {
+  .header-section.sticky-header:not(.sticked) .overlay-header localization-form .disclosure a {
     color: #fff;
   }
 
@@ -955,8 +955,10 @@ Testing Cypress integration
   }
 
   @media only screen and (max-width: 768px) {
-    .template-index .header-section.sticky-header:not(.sticked) .overlay-header .language-switcher-header,
-    .template-index .header-section.sticky-header.sticked .overlay-header .language-switcher-header {
+    .header-section.sticky-header:not(.sticked) .overlay-header .language-switcher-header,
+    .header-section.sticky-header.sticked .overlay-header .language-switcher-header,
+    .header-section.sticky-header:not(.sticked) .language-switcher-header,
+    .header-section.sticky-header.sticked .language-switcher-header {
       display: none;
     }
   }
