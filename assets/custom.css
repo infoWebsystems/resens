@@ -68,6 +68,13 @@
   z-index: 100000;
   color: #fff;
 }
+
+@media only screen and (min-width: 1660px) {
+  #breadcrumbs {
+    left: calc((100vw - 1660px) / 2);
+  }
+}
+
 #breadcrumbs.wrapper-padded {
   margin: 15px 10px !important;
 }
@@ -282,17 +289,13 @@
   .contact-page h3.homepage-sections--title {
     font-size: 18px;
   }
-<<<<<<< HEAD
-=======
+
   .shopify-policy__title {
     margin: 60px 0;
-
   }
 
   .shopify-policy__title h1{
     font-size: 24px!important;
   }
-
->>>>>>> 4fcd5edeb1ae728c524c9e75555f5d82fd1125bc
 }
 
