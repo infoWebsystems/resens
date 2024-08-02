@@ -6,7 +6,7 @@ function getCurrentLanguage() {
   return match ? match[1] : null;
 }
 
-let currentLanguage = getCurrentLanguage() ? getCurrentLanguage() : 'uk'
+let currentLanguage = getCurrentLanguage() ? getCurrentLanguage() : 'uk';
 
 
 if (currentLanguage === 'uk') {

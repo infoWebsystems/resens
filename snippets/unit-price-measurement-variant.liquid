@@ -1,5 +1,5 @@
 <div class="unit-price{% unless variant.unit_price_measurement %} hide{% endunless %}" v-if="variant && variant.unit_price_measurement" v-bind:class="{ hide: false }">
-    (<span class="unit-price__price" v-html="money(variant.unit_price)"><span class="money">{{ variant.unit_price | money }}</span></span>
+    (<span class="unit-price__price" v-html="money(variant.unit_price)"><span class="money money-resens">{{ variant.unit_price | money }}</span></span>
     <span> / </span>
 
     {% assign hide = true %}
