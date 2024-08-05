@@ -171,7 +171,8 @@
 
     {% if settings.enable_breadcrumbs %}
       {% unless template == 'index' or template == 'cart' or template == 'search' %}
-        {% unless template.name == 'collection' or template == 'list-collections' or template contains 'contact' or template.name == 'product' %}
+        {% comment %} {% unless template.name == 'collection' or template == 'list-collections' or template contains 'contact' or template.name == 'product' %} {% endcomment %}
+        {% unless template.name == 'collection' or template == 'list-collections' or template.name == 'product' %}
           <div id="breadcrumbs" class="wrapper-padded">
             {% render 'breadcrumb' %}
           </div>

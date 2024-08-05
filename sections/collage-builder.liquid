@@ -323,21 +323,21 @@
           {% endif %}
 
           {% comment %} Collage grid item content and styles (block type agnostic) {% endcomment %}
-          <div class="collage-builder__grid-item collage-builder__grid-item--{{ section.id }}--{{ forloop.index }} collage-builder__grid-item--{{ block.type }} collage-builder__grid-item--{{ block.id }}{% if has_mobile_image %} collage-builder__grid-item--mobile-image{% endif %}{% if has_mobile_video %} collage-builder__grid-item--mobile-video{% endif %}{% if mobile_type == 'mp4' %} collage-builder__grid-item--mobile-video-mp4{% endif %}" {{ block.shopify_attributes }}>
-            <div class="collage-builder__grid-item--inner">
-              <div class="collage-builder__content">
-                {% if block_is_link %}
-                <a href="{{ block.settings.url }}" data-timer-link data-timer-id={{ block.id }}>
-                {% endif %}
+					<div class="collage-builder__grid-item collage-builder__grid-item--{{ section.id }}--{{ forloop.index }} collage-builder__grid-item--{{ block.type }} collage-builder__grid-item--{{ block.id }}{% if has_mobile_image %} collage-builder__grid-item--mobile-image{% endif %}{% if has_mobile_video %} collage-builder__grid-item--mobile-video{% endif %}{% if mobile_type == 'mp4' %} collage-builder__grid-item--mobile-video-mp4{% endif %}" {{ block.shopify_attributes }}>
+						<div class="collage-builder__grid-item--inner">
+							<div class="collage-builder__content">
+								{% if block_is_link %}
+								<a href="{{ block.settings.url }}" data-timer-link data-timer-id={{ block.id }}>
+								{% endif %}
 
-                  {{ block_content }}
+									{{ block_content }}
 
-                {% if block_is_link %}
-                </a>
-                {% endif %}
-              </div>
-            </div>
-          </div>
+								{% if block_is_link %}
+								</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
           
           <style>
             @media screen and (min-width: 768px) {

@@ -15751,10 +15751,10 @@ textarea:focus {
     max-width: 50%;
   }
 }
-.template-search:not(.js-drawer-open-right) input {
+.template-search:not(.js-drawer-open-right) input[type="email"] {
   padding: 10px;
 }
-.template-search:not(.js-drawer-open-right) .input-group-field {
+.template-search:not(.js-drawer-open-right) .input-group-field:not([type="email"]) {
   border: 1px solid var(--text-color);
 }
 .template-search:not(.js-drawer-open-right) .search-result-type.h2,

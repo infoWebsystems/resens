@@ -64,7 +64,7 @@
 
 .template-page-about #breadcrumbs {
   position: absolute;
-  top: 110px;
+  top: 70px;
   z-index: 100000;
   color: #fff;
 }
@@ -81,7 +81,6 @@
 
 .template-page-about #breadcrumbs span {
   color: #fff;
-  text-transform: capitalize;
 }
 
 .template-page-sustainability .homepage-sections--title {
@@ -299,3 +298,7 @@
   }
 }
 
+/* Collage remove padding on first element */
+.collage-grid--content-width .collage-builder__grid-container > div[class*="-text"] {
+  padding-bottom: 0;
+}
