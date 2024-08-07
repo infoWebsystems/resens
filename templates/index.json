@@ -493,6 +493,7 @@
             "title_color": "",
             "title_size": 32,
             "alignment": "center",
+            "background_color": "",
             "html_area": ""
           }
         }
@@ -500,6 +501,7 @@
       "block_order": [
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
