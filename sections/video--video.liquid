@@ -90,6 +90,30 @@
 						{% render 'responsive-background-image' with section.settings.image, selector: selector %}
 					{% endif %}
 
+					/* Decrease height of the videos START */
+
+					#shopify-section-{{ section.id }} native-video.desktop-video .video {
+						height: 676px;
+					}
+
+					#shopify-section-{{ section.id }} native-video.desktop-video .video video {
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+
+					#shopify-section-{{ section.id }} native-video.mobile-video .video {
+						height: 456px;
+					}
+
+					#shopify-section-{{ section.id }} native-video.mobile-video .video video {
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+
+					/* Decrease height of the videos END */
+
 					#shopify-section-{{ section.id }} native-video.mobile-video,
 					#shopify-section-{{ section.id }} .wetheme-video-mobile_video_url {
 						display: none;
