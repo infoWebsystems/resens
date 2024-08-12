@@ -33,7 +33,7 @@
 						{% endif %}>
               <div class="collage-builder__text-container--inner">
                 {% if block.settings.heading != blank %}
-                  <h2  class="collage-builder__heading" {{ timer_complete_attrs }}>{{ block.settings.heading }}</h2>
+                  <h2  class="collage-builder__heading" {{ timer_complete_attrs }} {% if block.settings.show_overlay %}style="opacity: 0.6;;"{% endif %}>{{ block.settings.heading }}</h2>
                 {% endif %}
                 {% if block.settings.timer_complete_message != blank %}
                   <h2 class="collage-builder__heading hide" {{ timer_complete_attrs }}>{{ block.settings.timer_complete_message }}</h2>
