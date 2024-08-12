@@ -28,7 +28,9 @@
 
           {% comment %} Text overlay content (image, background video, text and html blocks) {% endcomment %}
           {% capture text_content %}
-            <div class="collage-builder__text-container collage-builder__text-container--{{ block.id }} {{ block.settings.desktop_position }} {{ block.settings.mobile_position }}">
+            <div class="collage-builder__text-container collage-builder__text-container--{{ block.id }} {{ block.settings.desktop_position }} {{ block.settings.mobile_position }}" {% if block.settings.show_overlay %}
+							style="background-color: rgba(0, 0, 0, 0.4);"
+						{% endif %}>
               <div class="collage-builder__text-container--inner">
                 {% if block.settings.heading != blank %}
                   <h2  class="collage-builder__heading" {{ timer_complete_attrs }}>{{ block.settings.heading }}</h2>
@@ -847,6 +849,11 @@
 					"type": "image_picker",
 					"id": "desktop_image",
 					"label": "t:all.Image"
+				},
+				{
+					"type": "checkbox",
+					"id": "show_overlay",
+					"label": "t:all.Show_Overlay"
 				},
 				{
 					"type": "image_picker",
