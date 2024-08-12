@@ -341,7 +341,7 @@
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "button_color": "#e6e5e7",
             "button_background_color": "#262428",
             "button_hover_color": "#d4d3d4",
