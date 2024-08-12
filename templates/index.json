@@ -170,6 +170,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/selfcare-products-and-flower-arrangement_1_2.png",
+            "show_overlay": false,
             "heading": "Up yo 15% off for  Professional skin cleansing",
             "heading_size": 32,
             "h-margin": 40,
@@ -189,6 +190,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "show_overlay": false,
             "heading": "Up yo 15% off for  Professional skin cleansing",
             "heading_size": 32,
             "h-margin": 40,
@@ -334,6 +336,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
+            "show_overlay": true,
             "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 30,
             "h-margin": 1,
@@ -353,6 +356,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1632.jpg",
+            "show_overlay": false,
             "heading": "",
             "heading_size": 16,
             "h-margin": 1,
@@ -372,6 +376,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1631.jpg",
+            "show_overlay": false,
             "heading": "",
             "heading_size": 38,
             "h-margin": 1,
