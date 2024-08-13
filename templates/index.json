@@ -366,7 +366,7 @@
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
             "button_color": "#fefefe",
-            "button_background_color": "#000000",
+            "button_background_color": "#555655",
             "button_hover_color": "#fefefe",
             "button_hover_background_color": "#c4c4c4",
             "overlay_color": "rgba(0,0,0,0)"
@@ -386,7 +386,7 @@
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
             "button_color": "#fefefe",
-            "button_background_color": "#000000",
+            "button_background_color": "#555655",
             "button_hover_color": "#fefefe",
             "button_hover_background_color": "#c4c4c4",
             "overlay_color": "rgba(0,0,0,0)"
