@@ -145,7 +145,7 @@
         "section_color_scheme": "white",
         "form_width": "narrow",
         "form_title": "",
-        "form_description": "<p>Have a question, or want a product recommendation? Get in touch.<\/p>"
+        "form_description": "<h4>Have a question, or want a product recommendation? Get in touch.<\/h4>"
       }
     },
     "171895764357c44b9c": {
@@ -153,10 +153,12 @@
       "blocks": {
         "instafeed_app_block_48Utax": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
           "settings": {
             "title": "",
             "title_color": "",
             "alignment": "center",
+            "background_color": "",
             "html_area": ""
           }
         }

@@ -74,12 +74,15 @@
     .slideshow-title
     h2 {
     text-align: left;
+    letter-spacing: 8px !important;
+    font-weight: 300 !important;
+    font-size: 28px !important;
   }
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
     .homepage-featured-content-box-inner
     .slide-buttons {
-    justify-content: flex-start;
-    flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
   }
   .homepage-sections--slideshow-wrapper.mobile-text-position--center
     .homepage-featured-content-box {
@@ -206,6 +209,9 @@
     .slideshow-title
     h2 {
     text-align: left;
+    font-weight: 300 !important;
+    letter-spacing: 8px !important;
+    line-height: 1.3em !important;
   }
   .homepage-sections--slideshow-wrapper.text-position--center-left
     .homepage-featured-content-box-inner

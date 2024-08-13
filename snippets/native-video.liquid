@@ -27,7 +27,7 @@
   endunless
 %}
 
-<native-video>
+<native-video class="{{ class }}">
   <div class="{% if overlay %}homepage-hero-content-overlay-wrapper homepage-video-content-overlay-wrapper-{{ scope_id }}{% else %}overlay-hidden{% endif %}">
     {% if overlay %}
       <div class="video--video__static-image"><!-- Image filled using CSS background-image --></div>

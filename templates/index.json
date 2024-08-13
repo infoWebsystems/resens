@@ -170,6 +170,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/selfcare-products-and-flower-arrangement_1_2.png",
+            "show_overlay": false,
             "heading": "Up yo 15% off for  Professional skin cleansing",
             "heading_size": 32,
             "h-margin": 40,
@@ -189,6 +190,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "show_overlay": false,
             "heading": "Up yo 15% off for  Professional skin cleansing",
             "heading_size": 32,
             "h-margin": 40,
@@ -276,6 +278,23 @@
         "show_view_all": false
       }
     },
+    "video_video_zi8xrR": {
+      "type": "video--video",
+      "settings": {
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "width_classes": 75,
+        "video": "shopify:\/\/files\/videos\/re_sens_final_vo_full hd.mp4",
+        "url": "",
+        "mobile_video": "shopify:\/\/files\/videos\/re_sens_vertical_final.mp4",
+        "url_mobile": "",
+        "autoplay": false,
+        "loop": true,
+        "mute": false,
+        "video_overlay_opacity": 50
+      }
+    },
     "cf965c26-6ea8-499a-8a05-a4e350ede58a": {
       "type": "image--image-with-text",
       "disabled": true,
@@ -317,6 +336,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
+            "show_overlay": true,
             "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 30,
             "h-margin": 1,
@@ -324,7 +344,7 @@
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "button_color": "#e6e5e7",
             "button_background_color": "#262428",
             "button_hover_color": "#d4d3d4",
@@ -336,6 +356,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1632.jpg",
+            "show_overlay": false,
             "heading": "",
             "heading_size": 16,
             "h-margin": 1,
@@ -345,7 +366,7 @@
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
             "button_color": "#fefefe",
-            "button_background_color": "#c4c4c4",
+            "button_background_color": "#000000",
             "button_hover_color": "#fefefe",
             "button_hover_background_color": "#c4c4c4",
             "overlay_color": "rgba(0,0,0,0)"
@@ -355,6 +376,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/IMG_1631.jpg",
+            "show_overlay": false,
             "heading": "",
             "heading_size": 38,
             "h-margin": 1,
@@ -364,7 +386,7 @@
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
             "button_color": "#fefefe",
-            "button_background_color": "#c4c4c4",
+            "button_background_color": "#000000",
             "button_hover_color": "#fefefe",
             "button_hover_background_color": "#c4c4c4",
             "overlay_color": "rgba(0,0,0,0)"
@@ -488,6 +510,7 @@
       "blocks": {
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
           "settings": {
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
@@ -557,6 +580,7 @@
     "35b28867-77fd-4573-8212-101b3b8e2245",
     "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
     "e8654ad7-b205-46a1-b672-af13dcfa8fe9",
+    "video_video_zi8xrR",
     "cf965c26-6ea8-499a-8a05-a4e350ede58a",
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
     "12a25ae5-a869-4fec-9751-deb411052883",

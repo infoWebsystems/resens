@@ -3,7 +3,7 @@
   width: 100% !important;
 }
 .nav-bar.mobile-nav-bar-wrapper {
-  padding: 20px 0;
+  padding: 1px 0;
 }
 
 .nav-bar.mobile-nav-bar-wrapper button.site-nav__link {
@@ -16,8 +16,8 @@
   .homepage-featured-content-box-inner
   .homepage-section-btn {
   width: 200px;
-  background: #ffffff;
-  color: #000000;
+  background: #585750;
+  color: #fff;
   padding: 16px;
 }
 
@@ -25,7 +25,7 @@
   .homepage-featured-content-box
   .homepage-featured-content-box-inner
   .homepage-section-btn:hover {
-  background: #dfe3e8;
+  background: #878383;
 }
 
 /* Section with woman's face */
@@ -49,8 +49,9 @@
   letter-spacing: 5px !important;
 }
 
-.site-header__logo img {
-  max-width: 120px !important;
+.site-header__logo img.logo_image {
+  max-width: 40px !important;
+  transform: scale(1.1);
 }
 
 .template-page-about .overlay-header {
@@ -63,17 +64,23 @@
 
 .template-page-about #breadcrumbs {
   position: absolute;
-  top: 110px;
+  top: 70px;
   z-index: 100000;
   color: #fff;
 }
+
+@media only screen and (min-width: 1660px) {
+  #breadcrumbs {
+    left: calc((100vw - 1660px) / 2);
+  }
+}
+
 #breadcrumbs.wrapper-padded {
   margin: 15px 10px !important;
 }
 
 .template-page-about #breadcrumbs span {
   color: #fff;
-  text-transform: capitalize;
 }
 
 .template-page-sustainability .homepage-sections--title {
@@ -233,6 +240,8 @@
     .slide-buttons
     a.homepage-section-btn {
     width: -webkit-fill-available;
+    padding: 16px 7px;
+    font-size: 14px;
   }
 
   .homepage-sections--slideshow-wrapper.mobile-text-position--center-left
@@ -282,7 +291,6 @@
 
   .shopify-policy__title {
     margin: 60px 0;
-
   }
 
   .shopify-policy__title h1{
@@ -290,3 +298,7 @@
   }
 }
 
+/* Collage remove padding on first element */
+.collage-grid--content-width .collage-builder__grid-container > div[class*="-text"] {
+  padding-bottom: 0;
+}

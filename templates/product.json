@@ -157,6 +157,7 @@
         },
         "4fdb087c-4728-4785-b270-a71a092b7898": {
           "type": "social_sharing",
+          "disabled": true,
           "settings": {
             "margin_bottom": 20
           }
@@ -194,6 +195,14 @@
       "disabled": true,
       "settings": {
         "enable_readmore": false
+      }
+    },
+    "product_tabs_L38RWc": {
+      "type": "product-tabs",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "content_background": "#f4f4f4"
       }
     },
     "1703582568516c93de": {
@@ -436,6 +445,7 @@
   "order": [
     "product-form",
     "product-description",
+    "product_tabs_L38RWc",
     "1703582568516c93de",
     "1703582541785ea29c",
     "image-with-text-00",
