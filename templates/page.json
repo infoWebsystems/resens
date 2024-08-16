@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -6,9 +15,26 @@
         "page_title_enabled": true,
         "page_width": "full-width"
       }
+    },
+    "1723819730acaa32f5": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_tGmkcJ": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_tGmkcJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1723819730acaa32f5"
   ]
 }
