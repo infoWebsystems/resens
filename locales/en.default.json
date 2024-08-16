@@ -478,7 +478,14 @@
         "address1_label": "Delivery address"
       },
       "shipping": {
-        "split_shipping_option_free": "Based on the carrier's tariffs"
+        "free_rate_label": "Based on the carrier's tariffs"
+      }
+    }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "shipping": {
+        "free": "Based on the carrier's tariffs"
       }
     }
   }
