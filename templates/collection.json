@@ -38,6 +38,7 @@
         "collage-builder-block-00": {
           "type": "image",
           "settings": {
+            "show_overlay": false,
             "heading": "",
             "heading_size": 30,
             "h-margin": 1,
@@ -56,6 +57,7 @@
         "collage-builder-block-01": {
           "type": "image",
           "settings": {
+            "show_overlay": false,
             "heading": "",
             "heading_size": 30,
             "h-margin": 1,
@@ -74,6 +76,7 @@
         "collage-builder-block-02": {
           "type": "image",
           "settings": {
+            "show_overlay": false,
             "heading": "",
             "heading_size": 30,
             "h-margin": 1,
@@ -92,6 +95,7 @@
         "collage-builder-block-03": {
           "type": "image",
           "settings": {
+            "show_overlay": false,
             "heading": "",
             "heading_size": 30,
             "h-margin": 1,
@@ -134,21 +138,6 @@
         "width_6": "1",
         "height_6": "4",
         "block_alignment": "center"
-      }
-    },
-    "collection-header-default": {
-      "type": "template--collection--header",
-      "blocks": {
-        "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67": {
-          "type": "description",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67"
-      ],
-      "settings": {
       }
     },
     "product-grid": {
@@ -196,12 +185,44 @@
         "enable_filtering": true,
         "enable_sorting": true
       }
+    },
+    "collection-header-default": {
+      "type": "template--collection--header",
+      "blocks": {
+        "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67"
+      ],
+      "settings": {
+      }
+    },
+    "17238196903967100f": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_Ebxkhi": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_Ebxkhi"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image-with-text-overlay",
     "collage-builder",
     "product-grid",
-    "collection-header-default"
+    "collection-header-default",
+    "17238196903967100f"
   ]
 }

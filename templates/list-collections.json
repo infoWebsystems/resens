@@ -53,7 +53,7 @@
         "overlay_opacity": 0,
         "text_alignment": "center",
         "text_color": "#262428",
-        "background_color": "#E6E5E7"
+        "background_color": "#e6e5e7"
       }
     },
     "main": {
@@ -101,10 +101,27 @@
 
         ]
       }
+    },
+    "1723819700c63e0846": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_zikimX": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_zikimX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "countdown-timer",
-    "main"
+    "main",
+    "1723819700c63e0846"
   ]
 }
