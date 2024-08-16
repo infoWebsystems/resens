@@ -302,3 +302,14 @@
 .collage-grid--content-width .collage-builder__grid-container > div[class*="-text"] {
   padding-bottom: 0;
 }
+
+/* Nova Post app styling */
+
+#nova-poshta .form-group input,
+#nova-poshta .form-group input::placeholder {
+  font-family: 'CeraPro', sans-serif !important;
+}
+
+#novapostrender-form__container {
+  border: none !important;
+}
