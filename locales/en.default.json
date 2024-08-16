@@ -477,8 +477,8 @@
         "optional_address2_label": "Apartment number (do not fill in if delivery to the branch)",
         "address1_label": "Delivery address"
       },
-      "order_summary": {
-        "free_shipping_discount_label": "Based on the carrier's tariffs"
+      "shipping": {
+        "split_shipping_option_free": "Based on the carrier's tariffs"
       }
     }
   }
