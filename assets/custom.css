@@ -313,3 +313,7 @@
 #novapostrender-form__container {
   border: none !important;
 }
+
+.ajaxcart__footer .cart__checkout {
+  font-size: 14px !important;
+}
