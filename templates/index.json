@@ -510,6 +510,7 @@
             "title_color": "",
             "title_size": 32,
             "alignment": "center",
+            "background_color": "",
             "html_area": ""
           }
         }
@@ -563,7 +564,6 @@
       "blocks": {
         "elasty_ukrainian_connect_hub_novapost_bKpJkh": {
           "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
           "settings": {
           }
         }
