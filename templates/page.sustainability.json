@@ -170,6 +170,7 @@
         "richtext": "",
         "width_classes": 75,
         "url": "https:\/\/www.youtube.com\/watch?v=0XTBYMfZyrM",
+        "url_mobile": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "autoplay": false,
         "loop": true,
         "mute": false,
@@ -513,6 +514,22 @@
         "blog_show_date": false,
         "post_limit": 4
       }
+    },
+    "1723819788fde6a00a": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_7TUKte": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_7TUKte"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -539,6 +556,7 @@
     "custom_collage_7zeBbt",
     "custom_collage_nakQzg",
     "content_on_image_background_P6Vefr",
-    "blog_blog_posts_Rdw7XP"
+    "blog_blog_posts_Rdw7XP",
+    "1723819788fde6a00a"
   ]
 }
