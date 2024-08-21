@@ -5,15 +5,10 @@
 
 <script>
   function getLanguageFromURL() {
-    let url = window.location.href;
-
-    let match = url.match(/\/([a-z]{2})(?:\/|$)/);
-
-    return match ? match[1] : null;
+    return document.documentElement.getAttribute('lang');
   }
 
-  let languageFromURL = getLanguageFromURL() ? getLanguageFromURL() : 'uk';
-
+  let languageFromURL = getLanguageFromURL();
 
   if (languageFromURL === 'en') {  
     Currency.convertAll('UAH', 'EUR');
