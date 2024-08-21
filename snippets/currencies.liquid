@@ -16,7 +16,7 @@
 
 
   if (languageFromURL === 'en') {  
-    Currency.convertAll('UAH', 'USD');
+    Currency.convertAll('UAH', 'EUR');
   }
 
   {% if template contains 'product' %}
@@ -40,7 +40,7 @@
 
     waitForPriceBlock('span.mw-price').then((button) => {
       if (languageFromURL === 'en') {  
-        Currency.convertAll('UAH', 'USD');
+        Currency.convertAll('UAH', 'EUR');
       }
     });
   {% endif %}

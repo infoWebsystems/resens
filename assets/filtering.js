@@ -266,7 +266,7 @@ class CollectionFiltersForm extends HTMLElement {
     document.dispatchEvent(event);
     
     if (window.location.href.includes('/en/')) {
-      Currency.convertAll('UAH', 'USD');
+      Currency.convertAll('UAH', 'EUR');
     }
   }
 
