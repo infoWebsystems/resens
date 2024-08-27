@@ -39,11 +39,11 @@
         "image_hnYhg8": {
           "type": "image",
           "settings": {
-            "title": "Make a great \n first impression",
-            "text": "Add images and text to give focus to your chosen product, collection, or blog post.",
-            "first_button_label": "Shop now",
+            "title": "",
+            "text": "",
+            "first_button_label": "",
             "first_button_link": "shopify:\/\/collections\/all",
-            "second_button_label": "Learn more",
+            "second_button_label": "",
             "second_button_link": "",
             "image": "shopify:\/\/shop_images\/1.png",
             "desktop-caption-heading-size": 80,
