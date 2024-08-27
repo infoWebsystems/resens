@@ -302,3 +302,9 @@
 .collage-grid--content-width .collage-builder__grid-container > div[class*="-text"] {
   padding-bottom: 0;
 }
+
+/* Temporarily Styling for main Image Banner-Slider START */
+.homepage-slider-container .swiper-container .responsive-image-wrapper img {
+  object-fit: fill !important;
+}
+/* Temporarily Styling for main Image Banner-Slider END */
