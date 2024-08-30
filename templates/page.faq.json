@@ -306,6 +306,7 @@
       "blocks": {
         "novapost_app_novapost_Mpw6kG": {
           "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "disabled": true,
           "settings": {
           }
         }
