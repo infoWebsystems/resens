@@ -157,6 +157,7 @@
       "blocks": {
         "elasty_ukrainian_connector_hub_novapost_caan7a": {
           "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "disabled": true,
           "settings": {
           }
         }
