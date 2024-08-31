@@ -41,7 +41,6 @@
         },
         "options": {
           "type": "options",
-          "disabled": true,
           "settings": {
             "show_variant_labels": true,
             "hide_out_of_stock_variants": false,
@@ -443,17 +442,6 @@
     },
     "172381968010fbf476": {
       "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_cn74hy": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_cn74hy"
-      ],
       "settings": {
         "include_margins": true
       }
