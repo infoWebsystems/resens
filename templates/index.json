@@ -34,7 +34,7 @@
             "caption-text": "#242424",
             "button-text": "#ffffff",
             "button-background": "#242424",
-            "hover-button-background": "#9F9F9F"
+            "hover-button-background": "#9f9f9f"
           }
         },
         "image_iQ7EqU": {
@@ -73,7 +73,7 @@
         "desktop_height": "full_screen",
         "mobile_height": "full_screen",
         "slide_navigation_style": "bars",
-        "slide_transition_delay": 10
+        "slide_transition_delay": 5
       }
     },
     "b4aa8931-1a4b-45b0-be73-a34e8c206af7": {
