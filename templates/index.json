@@ -12,6 +12,31 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
+        "image_VhfzBy": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "",
+            "first_button_link": "shopify:\/\/collections\/all",
+            "second_button_label": "",
+            "second_button_link": "",
+            "image": "shopify:\/\/shop_images\/1_ffc2fbdd-c31a-4da2-9344-9db3d3928781.png",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile_image": "shopify:\/\/shop_images\/2_1.5_3.png",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9F9F9F"
+          }
+        },
         "image_iQ7EqU": {
           "type": "image",
           "settings": {
@@ -38,6 +63,7 @@
         }
       },
       "block_order": [
+        "image_VhfzBy",
         "image_iQ7EqU"
       ],
       "custom_css": [
@@ -574,17 +600,6 @@
     },
     "1723819659b94ca16a": {
       "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_gRz73d": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_gRz73d"
-      ],
       "settings": {
         "include_margins": true
       }
