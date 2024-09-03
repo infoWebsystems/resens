@@ -760,6 +760,8 @@ class ProductCrossSell extends lit_element_s {
       ]
     };
 
+    console.log(formData);
+
     try {
       const fetchResult = await window.fetch('/cart/add.js', {
         method: 'POST',
