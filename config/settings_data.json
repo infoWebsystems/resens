@@ -64,6 +64,18 @@
     "cart_notes_enable": false,
     "giftwrap_gift_note": false,
     "enable-additional-checkout-buttons": true,
+    "buy_x_get_y_activate": true,
+    "buy_x_get_y_product_list": [
+      "cleanup-emulsion",
+      "cleanup-gel",
+      "cleanup-absorbent-mask",
+      "soft-hyaluronic-gommage",
+      "soft-silk-gommage",
+      "brightening-peel-hpa",
+      "3action-exosome-boost-serum",
+      "3action-exosome-boost-eye-cream"
+    ],
+    "buy_x_get_y_product_gift": "resens-tube-squeezer-key",
     "giftwrap_product_selector": "gift-card",
     "product-grid": "square",
     "hover-effect": true,
