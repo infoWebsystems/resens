@@ -198,6 +198,7 @@
   <script defer type="module" src="{{ 'theme.min.js' | asset_url }}"></script>
   <script defer src="{{ 'SafeLoadScripts.js' | asset_url }}"></script>
   <script defer nomodule src="{{ 'theme.legacy.min.js' | asset_url }}"></script> 
+  <script defer src="{{ 'discounts.js' | asset_url }}"></script> 
 
   {% if settings.popup--enable %}
     {% render 'popup' %}
@@ -243,6 +244,7 @@
       "giftwrapProduct": {{ settings.giftwrap_product_selector | json }}
     }
   </script>
+
   {% if request.design_mode %}<script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>{% endif %}
 </body>
 </html>
