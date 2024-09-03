@@ -16,6 +16,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/DSC0362411.jpg",
+            "show_overlay": false,
             "heading": "Contact us",
             "heading_size": 40,
             "h-margin": 1,
@@ -189,6 +190,23 @@
         "button_text": "Get directions",
         "layout": "right"
       }
+    },
+    "1723819763e95abae5": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_c7m9gJ": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_c7m9gJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -197,6 +215,7 @@
     "057a50d5-3fee-4ea2-a832-2d38f47b959a",
     "171895764357c44b9c",
     "1645634969fb497783",
-    "f9008be2-cc52-4777-becc-c975f680a054"
+    "f9008be2-cc52-4777-becc-c975f680a054",
+    "1723819763e95abae5"
   ]
 }

@@ -303,8 +303,21 @@
   padding-bottom: 0;
 }
 
-/* Temporarily Styling for main Image Banner-Slider START */
+/* Nova Post app styling */
+
+#nova-poshta .form-group input,
+#nova-poshta .form-group input::placeholder {
+  font-family: 'CeraPro', sans-serif !important;
+}
+
+#novapostrender-form__container {
+  border: none !important;
+}
+
+.ajaxcart__footer .cart__checkout {
+  font-size: 14px !important;
+}
+
 .homepage-slider-container .swiper-container .responsive-image-wrapper img {
   object-fit: fill !important;
 }
-/* Temporarily Styling for main Image Banner-Slider END */

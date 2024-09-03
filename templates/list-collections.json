@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "countdown-timer": {
@@ -21,11 +30,14 @@
         "template--14753824079942__23cda6f6-bcd5-4472-ba45-6258490f5b2a-1678905038aa47c95f-3": {
           "type": "text",
           "settings": {
+            "text": "Grab the offer before it's gone"
           }
         },
         "template--14753824079942__23cda6f6-bcd5-4472-ba45-6258490f5b2a-1678905038aa47c95f-4": {
           "type": "button",
           "settings": {
+            "label": "Shop now",
+            "link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -35,9 +47,13 @@
         "template--14753824079942__23cda6f6-bcd5-4472-ba45-6258490f5b2a-1678905038aa47c95f-3",
         "template--14753824079942__23cda6f6-bcd5-4472-ba45-6258490f5b2a-1678905038aa47c95f-4"
       ],
+      "disabled": true,
       "settings": {
+        "overlay_color": "#262428",
         "overlay_opacity": 0,
-        "text_alignment": "center"
+        "text_alignment": "center",
+        "text_color": "#262428",
+        "background_color": "#e6e5e7"
       }
     },
     "main": {
@@ -46,6 +62,8 @@
         "48565bcb-5ec5-4813-8f44-266a90e1fe86": {
           "type": "product_card_image",
           "settings": {
+            "enable_quick_shop": false,
+            "disable_quick_shop_mobile": true
           }
         },
         "f75472f8-b867-4fb5-a9a2-be07da2c5483": {
@@ -83,10 +101,28 @@
 
         ]
       }
+    },
+    "1723819700c63e0846": {
+      "type": "apps",
+      "blocks": {
+        "novapost_app_novapost_zikimX": {
+          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "novapost_app_novapost_zikimX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "countdown-timer",
-    "main"
+    "main",
+    "1723819700c63e0846"
   ]
 }

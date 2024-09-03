@@ -41,7 +41,6 @@
         },
         "options": {
           "type": "options",
-          "disabled": true,
           "settings": {
             "show_variant_labels": true,
             "hide_out_of_stock_variants": false,
@@ -440,6 +439,12 @@
         "circle_images": true,
         "title": "Testimonials"
       }
+    },
+    "172381968010fbf476": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -454,6 +459,7 @@
     "countdown-timer",
     "apps",
     "info-columns-02",
-    "f6e8390a-f5ac-483b-9e76-303171946f3a"
+    "f6e8390a-f5ac-483b-9e76-303171946f3a",
+    "172381968010fbf476"
   ]
 }

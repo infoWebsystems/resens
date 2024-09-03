@@ -245,7 +245,8 @@
                         {% endif %}
 
                       {%- when 'options' -%}
-                        <div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px">
+												{% comment %} {% if product.variants.size < 2 %}{% endif %} {% endcomment %}
+                        <div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px; {% if product.variants.size < 2 %}display: none;{% endif %}">
                           {% render 'product-options' with product: product,
                             show_variant_labels: block.settings.show_variant_labels,
                             size_option_name: block.settings.size_option_name,
