@@ -264,75 +264,79 @@
   const productGiftID = cartWrapper.getAttribute('data-buy_x_get_y_product_gift-id');
   const productGiftVariantID = cartWrapper.getAttribute('data-buy_x_get_y_product_gift-variant-id');
 
+  const stringToBoolean = (str) => str.toLowerCase() === 'true';
+
   document.addEventListener('DOMContentLoaded', function() {
-    function checkAndApplyDiscount() {
-      fetch('/cart.js')
-        .then(response => response.json())
-        .then(cart => {
-          const eligibleProducts = productIDList;
-          const freeProductId = productGiftVariantID;
+    if (stringToBoolean(isDiscountActive)) {
+      function checkAndApplyDiscount() {
+        fetch('/cart.js')
+          .then(response => response.json())
+          .then(cart => {
+            const eligibleProducts = productIDList;
+            const freeProductId = productGiftVariantID;
 
-          let eligibleCount = 0;
-          let isGiftInTheCart = false;
+            let eligibleCount = 0;
+            let isGiftInTheCart = false;
 
-          cart.items.forEach(item => {
-            if (eligibleProducts.includes(item.product_id.toString())) {
-              eligibleCount += 1 * item.quantity;
+            cart.items.forEach(item => {
+              if (eligibleProducts.includes(item.product_id.toString())) {
+                eligibleCount += 1 * item.quantity;
+              }
+              if (item.product_id.toString() == productGiftID && item.discounts.length > 0) {
+                isGiftInTheCart = true;
+              }
+            })
+
+            if (eligibleCount >= 3 && !isGiftInTheCart) {
+              let formData = {
+              'items': [{
+                'id': freeProductId,
+                'quantity': 1
+                }]
+              };
+              fetch(window.Shopify.routes.root + 'cart/add.js', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+              })
+              .then(response => {
+                window.location.reload();
+                return response.json();
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+              });
             }
-            if (item.product_id.toString() == productGiftID && item.discounts.length > 0) {
-              isGiftInTheCart = true;
+
+            if (eligibleCount < 3 && isGiftInTheCart) {
+              fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    id: freeProductId,
+                    quantity: 0
+                }),
+              })
+              .then(response => {
+                window.location.reload();
+                return response.json();
+              })
+              .then(data => {
+                  console.log('Product removed from cart:', data);
+              })
+              .catch(error => {
+                  console.error('Error removing product from cart:', error);
+              });
             }
-          })
+        });
+      }
 
-          if (eligibleCount >= 3 && !isGiftInTheCart) {
-            let formData = {
-            'items': [{
-              'id': freeProductId,
-              'quantity': 1
-              }]
-            };
-            fetch(window.Shopify.routes.root + 'cart/add.js', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(formData)
-            })
-            .then(response => {
-              window.location.reload();
-              return response.json();
-            })
-            .catch((error) => {
-              console.error('Error:', error);
-            });
-          }
-
-          if (eligibleCount < 3 && isGiftInTheCart) {
-            fetch('/cart/change.js', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                  id: freeProductId,
-                  quantity: 0
-              }),
-            })
-            .then(response => {
-              window.location.reload();
-              return response.json();
-            })
-            .then(data => {
-                console.log('Product removed from cart:', data);
-            })
-            .catch(error => {
-                console.error('Error removing product from cart:', error);
-            });
-          }
-      });
+      checkAndApplyDiscount();
     }
-
-    checkAndApplyDiscount();
 });
 
 </script>
