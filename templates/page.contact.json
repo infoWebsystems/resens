@@ -185,7 +185,7 @@
         "colors": "white",
         "heading": "Re[sens]",
         "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine<\/p><p>Mon-Fri from 09:00 to 18:00<\/p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com<\/span><\/a><\/p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68<\/span><\/a><\/p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03<\/span><\/a><\/p>",
-        "map_address": "7 Krakivska, office 2, Kyiv, Ukraine",
+        "map_address": "Krakivska St, 7, Kyiv, 02000",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
         "layout": "right"
@@ -193,17 +193,6 @@
     },
     "1723819763e95abae5": {
       "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_c7m9gJ": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_c7m9gJ"
-      ],
       "settings": {
         "include_margins": true
       }
