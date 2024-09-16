@@ -301,7 +301,7 @@
 
 /* Instafeed styling  START*/
 #insta-feed {
-  padding: 0 58px;
+  /* padding: 0 58px; */
 }
 
 #insta-feed button.instafeed-new-arrow-next,
@@ -316,8 +316,8 @@
 
 #insta-feed .instafeed-new-layout-item {
   margin: 0 auto;
-  width: 19vw !important; 
-  height: 19vw !important;
+  width: 20% !important; 
+  height: 17vw !important;
 }
 
 #insta-feed .instafeed-new-layout-wrapper {
@@ -327,25 +327,32 @@
   row-gap: 35px !important;
 }
 
+#insta-feed .instafeed-new-layout-item:nth-child(n+9):nth-child(-n+12) {
+  display: none;
+}
+
 @media only screen and (max-width: 991px) {
   #insta-feed {
-    padding: 0 20px;
+    /* padding: 0 50px !important; */
   }
   
   #insta-feed .instafeed-new-layout-item {
-    width: 20vw !important;
-    height: 20vw !important;
+    width: 30% !important;
+    height: 22vw !important;
   }
   
   #insta-feed .instafeed-new-layout-wrapper {
     column-gap: 10px !important;
     row-gap: 15px !important;
   }
+  #insta-feed .instafeed-new-layout-item:nth-child(n+7):nth-child(-n+8) {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   #insta-feed {
-    padding: 0;
+    /* padding: 0; */
   }
   
   #insta-feed .instafeed-new-layout-item {
