@@ -217,23 +217,6 @@
         "newsletter_heading": "Join our Mailing List",
         "newsletter_description": "<p>Get priority access to events and exclusive offers<\/p>"
       }
-    },
-    "1723819739b488e88f": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_q9JXeq": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_q9JXeq"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -242,7 +225,6 @@
     "main",
     "8b2fc622-0e44-4a15-802d-c07a2aed74b1",
     "67543449-bf33-4648-97bf-c7e5c527ccf2",
-    "1646004249db2dcfc2",
-    "1723819739b488e88f"
+    "1646004249db2dcfc2"
   ]
 }
