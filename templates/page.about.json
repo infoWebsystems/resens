@@ -233,23 +233,6 @@
       ],
       "settings": {
       }
-    },
-    "1723819753963f47cb": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_Qpb8VH": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_Qpb8VH"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -261,7 +244,6 @@
     "about-facts",
     "about-philosophy-info",
     "brand-developers",
-    "founders-cards",
-    "1723819753963f47cb"
+    "founders-cards"
   ]
 }
