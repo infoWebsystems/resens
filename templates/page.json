@@ -15,27 +15,9 @@
         "page_title_enabled": true,
         "page_width": "full-width"
       }
-    },
-    "1723819730acaa32f5": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_tGmkcJ": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_tGmkcJ"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
-    "main",
-    "1723819730acaa32f5"
+    "main"
   ]
 }
