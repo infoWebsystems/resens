@@ -200,30 +200,12 @@
       ],
       "settings": {
       }
-    },
-    "17238196903967100f": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_Ebxkhi": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_Ebxkhi"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "image-with-text-overlay",
     "collage-builder",
     "product-grid",
-    "collection-header-default",
-    "17238196903967100f"
+    "collection-header-default"
   ]
 }
