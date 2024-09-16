@@ -1,6 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 <head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59FFHQ3V');</script>
+<!-- End Google Tag Manager -->
   <!-- Basic page needs ================================================== -->
   <meta charset="utf-8">
   {%- comment -%}DemoStoreRequirements{%- endcomment -%}
@@ -140,7 +147,11 @@
   Add the page template as a class for easy page or template specific styling.
 {% endcomment %}
 <body id="{{ page_title | handle }}" class="test {% if template == 'page.about'  or template == 'page.sustainability' %} template-collection template-page-about template-page-sustainability  {% endif %} {% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} ">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59FFHQ3V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
   {{ 'theme.min.css' | asset_url | stylesheet_tag }}
   <noscript>{{ 'swiper.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'photoswipe.min.css' | asset_url | stylesheet_tag }}</noscript>
