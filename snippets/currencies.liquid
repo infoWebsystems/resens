@@ -4,16 +4,6 @@
 {{ "currencies.js" | asset_url | script_tag }}
 
 <script>
-  function getLanguageFromURL() {
-    return document.documentElement.getAttribute('lang');
-  }
-
-  let languageFromURL = getLanguageFromURL();
-
-  // if (languageFromURL === 'en') {  
-  //   Currency.convertAll('UAH', 'EUR');
-  // }
-
   {% if template contains 'product' %}
     // Function to find the button once it's loaded
     function waitForPriceBlock(selector) {
@@ -34,9 +24,16 @@
     }
 
     waitForPriceBlock('span.mw-price').then((button) => {
-      if (languageFromURL === 'en') {  
-        // Currency.convertAll('UAH', 'EUR');
-      }
+      setTimeout(() => {
+        const productPriceWrapper = document.querySelector('#ProductPrice');
+        const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+        const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
+        const productSpan = document.querySelector('span.mw-price');
+        
+        if (currentLanguage == 'en') {
+          productSpan.textContent = eurPrice + "€";
+        }
+      }, 100);
     });
   {% endif %}
 </script>
