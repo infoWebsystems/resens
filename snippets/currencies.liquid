@@ -10,9 +10,9 @@
 
   let languageFromURL = getLanguageFromURL();
 
-  if (languageFromURL === 'en') {  
-    Currency.convertAll('UAH', 'EUR');
-  }
+  // if (languageFromURL === 'en') {  
+  //   Currency.convertAll('UAH', 'EUR');
+  // }
 
   {% if template contains 'product' %}
     // Function to find the button once it's loaded
@@ -35,7 +35,7 @@
 
     waitForPriceBlock('span.mw-price').then((button) => {
       if (languageFromURL === 'en') {  
-        Currency.convertAll('UAH', 'EUR');
+        // Currency.convertAll('UAH', 'EUR');
       }
     });
   {% endif %}
