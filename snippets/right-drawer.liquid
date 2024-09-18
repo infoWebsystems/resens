@@ -384,6 +384,14 @@
           })
 
           subtotalSpan.innerHTML = subtotal + dividerSymbol + symbolsAfterDot  + '€';
+
+          window.addEventListener('click', (e) => {
+            if (e.target.closest('.ajaxcart__qty--minus') || e.target.closest('.ajaxcart__qty--plus') || e.target.closest('.ajaxcart__qty-remove')) {
+              setTimeout(() => {
+                window.location.reload();
+              }, 1000)
+            }
+          })
         });
       });
     }
