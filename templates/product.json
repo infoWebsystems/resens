@@ -41,7 +41,6 @@
         },
         "options": {
           "type": "options",
-          "disabled": true,
           "settings": {
             "show_variant_labels": true,
             "hide_out_of_stock_variants": false,
