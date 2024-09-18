@@ -189,7 +189,17 @@
 
                       <p class="hide cart__total" v-text="cart.total_price"></p>
                       <div class="grid__item ajaxcart__subtotal">
-                        <p v-money="cart.total_price"></p>
+
+                      {% assign cart_elements_eur_prices_and_qnt = '' %}
+
+                      {% for item in cart.items %}
+                        {% if forloop.first %}
+                          {% assign cart_elements_eur_prices_and_qnt = item.product.metafields.elasty.price |  append: ':' |  append: item.quantity %}
+                        {% else %}
+                          {% assign cart_elements_eur_prices_and_qnt = cart_elements_eur_prices_and_qnt | append: ', ' | append: item.product.metafields.elasty.price |  append: ':' |  append: item.quantity %}
+                        {% endif %}
+                      {% endfor %}
+                        <p data-cart-total-info="{{ cart_elements_eur_prices_and_qnt }}" class="js-subtotal_cart_drawer" v-money="cart.total_price"></p>
                       </div>
                     </div>
 
@@ -349,8 +359,31 @@
           cartProducts.forEach((product, index) => {
             const eurPrices = product.querySelector('.display-table').getAttribute('data-eur-prices').split(',');
             const priceField = product.querySelector('.mw-price');
+            
             priceField.innerHTML = eurPrices[index] + '€';
           })
+
+          const subtotalElem = document.querySelector('.js-subtotal_cart_drawer');
+          const subtotalSpan = subtotalElem.querySelector('.mw-price');
+          const subtotalInfo = subtotalElem.getAttribute('data-cart-total-info');
+
+          let subtotalInfoArr = subtotalInfo.split(', ');
+
+          let dividerSymbol = subtotalInfoArr[0].split(':')[0].match(/(\d+)(\D+)(\d+)/)[2];
+          const symbolsAfterDot = subtotalInfoArr[0].split(':')[0].split('.').at(-1);
+
+
+          let subtotal = 0;
+
+          subtotalInfoArr.forEach(item => {
+            const itemArr = item.split(':');
+            const itemPrice = itemArr[0].split('.')[0];
+            const itemQnt = itemArr[1];
+
+            subtotal += itemPrice * itemQnt;
+          })
+
+          subtotalSpan.innerHTML = subtotal + dividerSymbol + symbolsAfterDot  + '€';
         });
       });
     }
