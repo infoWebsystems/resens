@@ -684,6 +684,39 @@
   {%- endcase -%}
 {%- endfor -%}
 
+<script>
+
+function waitForPriceBlock(selector) {
+      return new Promise((resolve) => {
+        const observer = new MutationObserver((mutations, me) => {
+            const button = document.querySelector(selector);
+            if (button) {
+                me.disconnect();
+                resolve(button);
+            }
+        });
+
+        observer.observe(document, {
+            childList: true,
+            subtree: true
+        });
+      });
+    }
+
+    waitForPriceBlock('#ProductPrice').then((button) => {
+      setTimeout(() => {
+        const productPriceWrapper = document.querySelector('#ProductPrice');
+        const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+        const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
+        const productSpan = document.querySelector('#ProductPrice .money-resens');
+
+        if (currentLanguage == 'en') {
+          productSpan.textContent = eurPrice + "€";
+        }
+			}, 500);
+    });
+</script>
+
 
 
 {% schema %}

@@ -136,6 +136,7 @@
   {% endif %}
 
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script src="{{ 'right-drawer.js' | asset_url }}" defer></script>
 </head>
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
@@ -156,7 +157,8 @@
   {% comment %}
   Cart Drawer, also used by 'Quick View', and 'Search'
   {% endcomment %}
-  {% render 'right-drawer' %}
+  {% comment %} {% render 'right-drawer' %} {% endcomment %}
+  {% section 'right-drawer' %}
 
   <div id="DrawerOverlay" class="drawer-overlay"></div>
 
