@@ -117,10 +117,16 @@ function addCartDrawerListeners() {
     });
   });
 
-document.querySelector('.js-drawer-close .icon-fallback-text')
-.addEventListener('click', () => {
-  closeCartDrawer();
-});
+  // Redirect to checkout Page
+  document.querySelector('.js-right_drawer_cart_checkout').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = '/checkout';
+  });
+
+  document.querySelector('.js-drawer-close .icon-fallback-text')
+  .addEventListener('click', () => {
+    closeCartDrawer();
+  });
 
   document.querySelector('#DrawerOverlay').addEventListener('click', () => {
     closeCartDrawer();
