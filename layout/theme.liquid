@@ -142,6 +142,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% endif %}
 
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script src="{{ 'right-drawer.js' | asset_url }}" defer></script>
 </head>
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
@@ -166,7 +167,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% comment %}
   Cart Drawer, also used by 'Quick View', and 'Search'
   {% endcomment %}
-  {% render 'right-drawer' %}
+  {% comment %} {% render 'right-drawer' %} {% endcomment %}
+  {% section 'right-drawer' %}
 
   <div id="DrawerOverlay" class="drawer-overlay"></div>
 
@@ -255,5 +257,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   </script>
   {% if request.design_mode %}<script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>{% endif %}
+    
+  {% render 'currencies' %}
 </body>
 </html>

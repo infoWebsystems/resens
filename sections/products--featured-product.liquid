@@ -119,7 +119,7 @@
                           <div class="product-price-size--{{ section.settings.price_font }} product-price-group">
                             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
                             <p id="ComparePrice" class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}" v-bind:class="{ 'on-sale' : isSale }" v-if="isSale" v-money="variant.compare_at_price">
-                              <span class="money">{{ current_variant.compare_at_price | money }}</span>
+                              <span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
                             </p>
 
                             {% render 'product-pricing', current_variant: current_variant %}
@@ -225,7 +225,7 @@
                 {% else %}
                   {% comment %} Show placeholder product info {% endcomment %}
                   <div class="product-price-size--{{ section.settings.price_font }} product-price-group">
-                    <span id="ProductPrice"><span class="money">{{ 1699 | money }}</span></span>
+                    <span id="ProductPrice"><span class="money money-resens">{{ 1699 | money }}</span></span>
                   </div>
                   {% if section.settings.show_add_to_cart %}
                     <div class="onboarding--sold-out">

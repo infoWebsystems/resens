@@ -96,14 +96,19 @@
               
                   <span class="price-line-through sale-price">
                     <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                    {{- item.product.compare_at_price | money -}}
+                    <span class="money-resens">{{- item.product.compare_at_price | money -}}</span>
                   </span>
 
-                  <span class="money item-price">{{ item.price | money }}</span>
+                  <span class="money money-resens item-price">{{ item.price | money }}</span>
               
                 {% else %}
-              
-                  <span class="money">{{ item.price | money }}</span>
+                  {% assign current_language = shop.locale | split: "-" | first %}
+
+                  {% if current_language == 'en' %}
+                    <span class="money money-resens">{{ item.product.metafields.elasty.price }}€</span>
+                  {% else %}
+                    <span class="money money-resens">{{ item.price | money }}</span>
+                  {% endif %}
               
                 {% endif %}
 
@@ -133,30 +138,36 @@
                 {%- if original_line_price != item.final_line_price and item.line_level_discount_allocations != blank -%}
                   <span class="hidden">{{ 'products.general.regular_price' | t }}</span>
                   <span class="cart-total-label__discount">
-                    <span class="discount--sale-color discount--line-through">{{ original_line_price | money }}</span>
+                    <span class="money-resens discount--sale-color discount--line-through">{{ original_line_price | money }}</span>
                   </span>
                   <span class="hidden">{{ 'products.general.sale_price' | t }}</span>
                   <span class="cart-total-label__discount">
-                    <span class="money">{{ item.final_line_price | money }}</span>
+                    <span class="money money-resens">{{ item.final_line_price | money }}</span>
                   </span>
                 {% elsif original_line_price != item.final_line_price and item.line_level_discount_allocations == blank %}
                   <span class="hidden">{{ 'products.general.regular_price' | t }}</span>
                   <span class="cart-total-label__discount">
-                    <span class="discount--sale-color discount--line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
+                    <span class="money-resens discount--sale-color discount--line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
                   </span>
                   <span class="hidden">{{ 'products.general.sale_price' | t }}</span>
                   <span class="cart-total-label__discount">
-                    <span class="money">{{ item.final_line_price | money }}</span>
+                    <span class="money money-resens">{{ item.final_line_price | money }}</span>
                   </span>
                 {%- else -%}
-                  <span class="money">{{ item.final_line_price | money }}</span>
+                  {% assign current_language = shop.locale | split: "-" | first %}
+
+                  {% if current_language == 'en' %}
+                    <span class="money money-resens">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                  {% else %}
+                    <span class="money money-resens">{{ item.final_line_price | money }}</span>
+                  {% endif %}
                 {%- endif -%}
 
                 {%- if item.line_level_discount_allocations != blank -%}
                   <ul class="order-discount--cart-list discount--sale-color" aria-label="{{ 'customer.order.discount' | t }}">
                     {%- for discount_allocation in item.line_level_discount_allocations -%}
                       <li class="order-discount--item">
-                        <strong>{{ discount_allocation.discount_application.title }} (-<span class="money">{{ discount_allocation.amount | money }}</span>)</strong>
+                        <strong>{{ discount_allocation.discount_application.title }} (-<span class="money money-resens">{{ discount_allocation.amount | money }}</span>)</strong>
                       </li>
                     {%- endfor -%}
                   </ul>
@@ -185,7 +196,7 @@
               {%- for discount_application in cart.cart_level_discount_applications -%}
               <p>
                 <span class="cart__subtotal-title"><span class="hidden">{{ 'customer.order.discount' | t }}:</span>{{- discount_application.title -}}</span>
-                <span class="h3 cart__subtotal"><span class="money">-{{ discount_application.total_allocated_amount | money }}</span></span>
+                <span class="h3 cart__subtotal"><span class="money money-resens">-{{ discount_application.total_allocated_amount | money }}</span></span>
               </p>
               {%- endfor -%}
             </div>
@@ -193,12 +204,12 @@
 
           {% if subtotal_compare_at_price != cart.total_price %}
             <span class="cart__subtotal">
-              <del><span class="money">{{ subtotal_compare_at_price | money }}</span></del>
+              <del><span class="money money-resens">{{ subtotal_compare_at_price | money }}</span></del>
             </span>
           {% endif %}
           <p>
             <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
-            <span class="h3 cart__subtotal"><span class="money">{{ cart.total_price | money }}</span></span>
+            <span class="h3 cart__subtotal"><span class="money money-resens">{{ cart.total_price | money }}</span></span>
           </p>
 
           {%- capture taxes_shipping_checkout -%}

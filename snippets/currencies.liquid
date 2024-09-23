@@ -1,0 +1,43 @@
+
+{{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
+{% comment %}{{ "currencies-rate.js" | asset_url | script_tag }}{% endcomment %}
+{{ "currencies.js" | asset_url | script_tag }}
+
+<script>
+  {% if template contains 'product' %}
+    // Function to find the button once it's loaded
+    // function waitForPriceBlock(selector) {
+    //   return new Promise((resolve) => {
+    //     const observer = new MutationObserver((mutations, me) => {
+    //         const button = document.querySelector(selector);
+    //         if (button) {
+    //             me.disconnect();
+    //             resolve(button);
+    //         }
+    //     });
+
+    //     observer.observe(document, {
+    //         childList: true,
+    //         subtree: true
+    //     });
+    //   });
+    // }
+
+    // waitForPriceBlock('#ProductPrice').then((button) => {
+    //   console.log(button);
+    //   setTimeout(() => {
+    //     const productPriceWrapper = document.querySelector('#ProductPrice');
+    //     const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+    //     const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
+    //     const productSpan = document.querySelector('span.mw-price');
+
+    //     console.log(eurPrice);
+    //     console.log(currentLanguage);
+        
+    //     if (currentLanguage == 'en') {
+    //       productSpan.textContent = eurPrice + "€";
+    //     }
+    //   }, 100);
+    // });
+  {% endif %}
+</script>

@@ -63,7 +63,7 @@
                   <ul class="order-discount--list" aria-label="{{ 'customer.order.discount' | t }}">
                     {%- for discount_allocation in line_item.line_level_discount_allocations -%}
                       <li class="order-discount--item discount--sale-color">
-                        {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
+                        {{ discount_allocation.discount_application.title }} (-<span class="money-resens">{{ discount_allocation.amount | money }}</span>)
                       </li>
                     {%- endfor -%}
                   </ul>
@@ -78,17 +78,17 @@
                         <span class="hidden">{{ 'products.general.regular_price' | t }}</span>
                       </dt>
                       <dd>
-                        <s><span class="money">{{ line_item.original_price | money }}</span></s>
+                        <s><span class="money money-resens">{{ line_item.original_price | money }}</span></s>
                       </dd>
                       <dt>
                         <span class="hidden">{{ 'products.general.sale_price' | t }}</span>
                       </dt>
                       <dd>
-                        <span class="order-discount discount--sale-color"><span class="money">{{ line_item.final_price | money }}</span></span>
+                        <span class="money-resens order-discount discount--sale-color"><span class="money money-resens">{{ line_item.final_price | money }}</span></span>
                       </dd>
                     </dl>
                   {%- else -%}
-                    <span class="money">{{ line_item.original_price | money }}</span>
+                    <span class="money money-resens">{{ line_item.original_price | money }}</span>
                   {%- endif -%}
 
                   {% if line_item.unit_price != blank %}
@@ -103,7 +103,7 @@
                         {{ line_item.unit_price_measurement.reference_unit }}
                       {%- endcapture -%}
 
-                      <span data-unit-price>( {{ line_item.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}})
+                      <span class="money-resens" data-unit-price>( {{ line_item.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}})
                     </span>
 								  {% endif %}
                 </div>
@@ -117,17 +117,17 @@
                         <span class="hidden">{{ 'products.general.regular_price' | t }}</span>
                       </dt>
                       <dd>
-                        <s><span class="money">{{ line_item.original_line_price | money }}</span></s>
+                        <s><span class="money money-resens">{{ line_item.original_line_price | money }}</span></s>
                       </dd>
                       <dt>
                         <span class="hidden">{{ 'products.general.sale_price' | t }}</span>
                       </dt>
                       <dd>
-                        <span class="order-discount discount--sale-color"><span class="money">{{ line_item.final_line_price | money }}</span></span>
+                        <span class="order-discount discount--sale-color"><span class="money money-resens">{{ line_item.final_line_price | money }}</span></span>
                       </dd>
                     </dl>
                   {%- else -%}
-                    <span class="money">{{ line_item.original_line_price | money }}</span>
+                    <span class="money money-resens">{{ line_item.original_line_price | money }}</span>
                   {%- endif -%}
                 </div>
               </td>
@@ -137,7 +137,7 @@
           <tfoot>
             <tr>
               <td colspan="4">{{ 'customer.order.subtotal' | t }}</td>
-              <td class="text-right"><span class="money">{{ order.line_items_subtotal_price | money }}</span></td>
+              <td class="text-right"><span class="money money-resens">{{ order.line_items_subtotal_price | money }}</span></td>
             </tr>
 
             {%- if order.cart_level_discount_applications != blank -%}
@@ -150,7 +150,7 @@
                     </span>
                   </th>
                   <td class="total money-styling text-right" data-label="{{ 'customer.order.discount' | t }}">
-                      <span class="order-discount discount--sale-color"><span class="money">{{ discount_application.total_allocated_amount | money }}</span></span>
+                      <span class="order-discount discount--sale-color"><span class="money money-resens">{{ discount_application.total_allocated_amount | money }}</span></span>
                   </td>
                 {%- endfor -%}
               </tr>
@@ -159,14 +159,14 @@
             {% for shipping_method in order.shipping_methods %}
             <tr>
               <td colspan="4">{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</td>
-              <td class="text-right"><span class="money">{{ shipping_method.price | money }}</span></td>
+              <td class="text-right"><span class="money money-resens">{{ shipping_method.price | money }}</span></td>
             </tr>
             {% endfor %}
 
             {% for tax_line in order.tax_lines %}
               <tr>
                 <td colspan="4">{{ 'customer.order.tax' | t }} ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%)</td>
-                <td class="text-right"><span class="money">{{ tax_line.price | money }}</span></td>
+                <td class="text-right"><span class="money money-resens">{{ tax_line.price | money }}</span></td>
               </tr>
             {% endfor %}
 
@@ -178,14 +178,14 @@
               <tr>
                 <td colspan="4">{{ order.financial_status_label }}</td>
                 <td class="text-right">
-                  <span class="money">{{ order.total_refunded_amount | money }}</span>
+                  <span class="money money-resens">{{ order.total_refunded_amount | money }}</span>
                 </td>
               </tr>
             {% endif %}
 
             <tr>
               <td colspan="4"><strong>{{ 'customer.order.total' | t }}</strong></td>
-              <td class="text-right"><strong><span class="money">{% if refunded %}{{ order.total_price | minus:order.total_refunded_amount | money }}{% endif %} {% unless refunded %}{{ order.total_price | money }}{% endunless %} {{ order.currency }}</span></strong></td>
+              <td class="text-right"><strong><span class="money money-resens">{% if refunded %}{{ order.total_price | minus:order.total_refunded_amount | money }}{% endif %} {% unless refunded %}{{ order.total_price | money }}{% endunless %} {{ order.currency }}</span></strong></td>
             </tr>
           </tfoot>
         </table>

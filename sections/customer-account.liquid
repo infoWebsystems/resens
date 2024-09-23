@@ -41,14 +41,14 @@
                   <tr class="text-link-animated">
                     <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
                     <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | time_tag: format: 'date' }}</td>
-                    <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}{% if order.financial_status_label == 'Refunded' or order.financial_status_label == 'Partially refunded' %} <span class="money">{{ order.total_refunded_amount | money }}</span>{% endif %}</td>
+                    <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}{% if order.financial_status_label == 'Refunded' or order.financial_status_label == 'Partially refunded' %} <span class="money money-resens">{{ order.total_refunded_amount | money }}</span>{% endif %}</td>
                     <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
                     <td data-label="{{ 'customer.orders.total' | t }}">
                       {% if order.financial_status_label == 'Refunded' or order.financial_status_label == 'Partially refunded' %}
-                        <span class="money order--refunded-total">{{ order.total_price | money }}</span>
-                        <span class="money">{{ order.total_price | minus: order.total_refunded_amount | money }}</span>
+                        <span class="money money-resens order--refunded-total">{{ order.total_price | money }}</span>
+                        <span class="money money-resens">{{ order.total_price | minus: order.total_refunded_amount | money }}</span>
                       {% else %}
-                        <span class="money">{{ order.total_price | money }}</span>
+                        <span class="money money-resens">{{ order.total_price | money }}</span>
                       {% endif %}
                     </td>
                   </tr>

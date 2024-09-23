@@ -74,7 +74,9 @@ Parameters:
 <select name="id" id="productSelect-{{ section.id }}" data-section="{{ section.id }}" class="product-single__variants original-select no-js" autocomplete="off" v-model="variant && variant.id">
   {% for variant in product.variants %}
     {% if variant.available %}
-      <option {% if variant.id == current_variant.id %} selected {% endif %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+      <option {% if variant.id == current_variant.id %} selected {% endif %} value="{{ variant.id }}">
+        {{ variant.title }} - <span class="money-resens">{{ variant.price | money_with_currency }}</span>
+      </option>
     {% else %}
       <option value="{{ variant.id }}" disabled>
         {{ variant.title }} - {{ 'products.product.sold_out' | t }}

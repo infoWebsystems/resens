@@ -1335,7 +1335,7 @@
                               <div class="facets__display">
                                 <div class="facets__header text-inline-link-animated">
                                   {%- assign max_price_amount = filter.range_max | money | escape -%}
-                                  <span class="facets__selected">{{ "sections.collection_template.max_price" | t: price: max_price_amount }}</span>
+                                  <span class="facets__selected max_price_amount money-resens">{{ "sections.collection_template.max_price" | t: price: max_price_amount }}</span>
                                   <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" >{{ 'sections.collection_template.reset' | t }}</a>
                                 </div>
                                 <price-range-selector class="facets__price">
@@ -1423,9 +1423,11 @@
                           {% if filter.type == "price_range" %}
                             {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
                               <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
+                                <span class="money-resens">
                                 {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
+                                </span>
                                 {{ icon_close }}
-                              </a>
+                              </a>  
                             {%- endif -%}
                           {% endif %}
                         {%- endfor -%}
@@ -1561,8 +1563,10 @@
                     {% if filter.type == "price_range" %}
                         {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
                         <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
+                          <span class="money-resens">
                             {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
-                            {{ icon_close }}
+                          </span>
+                          {{ icon_close }}
                         </a>
                         {%- endif -%}
                     {% endif %}
@@ -1658,16 +1662,18 @@
                               {% if item.price_varies %}
                                 {{ 'products.general.from_text' | t }}
                               {% endif %}
-                              <span class="money">{{ item.price | money }}</span>
+                              <span class="money money-resens">{{ item.price | money }}</span>
                               <span class="money price-line-through sale-price">
                                 <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                                {{- item.compare_at_price | money -}}
+                                <span class="money-resens">
+                                  {{- item.compare_at_price | money -}}
+                                </span>
                               </span>
                             {% else %}
                               {% if item.price_varies %}
-                                {{ 'products.general.from_text' | t }} <span class="money">{{ item.price | money }}</span>
+                                {{ 'products.general.from_text' | t }} <span class="money money-resens">{{ item.price | money }}</span>
                               {% else %}
-                                <span class="money">{{ item.price | money }}</span>
+                                <span class="money money-resens">{{ item.price | money }}</span>
                               {% endif %}
                             {% endif %}
 
@@ -1704,28 +1710,28 @@
                         {% if on_sale %}
                           {% if item.price_varies %}
                             {% capture sale_price %}
-                              <span class="money">{{ item.price | money }}</span>
+                              <span class="money money-resens">{{ item.price | money }}</span>
                             {% endcapture %}
                             {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
                           {% else %}
                             <strong>{{ 'products.product.on_sale' | t }}</strong>
-                            <span itemprop="price"><span class="money">{{ item.price | money }}</span></span>
+                            <span itemprop="price"><span class="money money-resens">{{ item.price | money }}</span></span>
                           {% endif %}
                         {% else %}
                           {% if item.price_varies %}
                             {% capture price %}
-                              <span class="money">{{ item.price | money }}</span>
+                              <span class="money money-resens">{{ item.price | money }}</span>
                             {% endcapture %}
                             <span itemprop="price">{{ 'products.general.from_text_html' | t: price: price }}</span>
                           {% else %}
-                            <span itemprop="price"><span class="money">{{ item.price | money }}</span></span>
+                            <span itemprop="price"><span class="money money-resens">{{ item.price | money }}</span></span>
                           {% endif %}
                         {% endif %}
                         {% if sold_out %}
                           <br><strong>{{ 'products.product.sold_out' | t }}</strong>
                         {% endif %}
                         {% if on_sale %}
-                          <br><s><span class="money">{{ item.compare_at_price | money }}</span></s>
+                          <br><s><span class="money money-resens">{{ item.compare_at_price | money }}</span></s>
                         {% endif %}
 
                         {% assign first_variant = item.variants[0] %}
