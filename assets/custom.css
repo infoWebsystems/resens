@@ -299,7 +299,7 @@
 }
 
 /* Instafeed styling  START*/
-/* #insta-feed button.instafeed-new-arrow-next,
+#insta-feed button.instafeed-new-arrow-next,
 #insta-feed button.instafeed-new-arrow-prev {
   display: none;
 }
@@ -350,7 +350,7 @@
   #insta-feed .instafeed-new-layout-wrapper {
     row-gap: 20px !important;
   }
-} */
+}
 
 /* Instafeed styling  END*/
 
@@ -367,7 +367,7 @@
   padding-bottom: 0;
 }
 
-/* Nova Post app styling */
+/* Nova Post app styling  START*/
 
 #nova-poshta .form-group input,
 #nova-poshta .form-group input::placeholder {
@@ -381,3 +381,4 @@
 .ajaxcart__footer .cart__checkout {
   font-size: 14px !important;
 }
+/* Nova Post app styling  END*/
