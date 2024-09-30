@@ -13,6 +13,7 @@
   margin-top: 60px;
 }
 .reviews .reviews-slide {
+  height: auto;
   padding: 48px 24px 24px 24px;
   background: #F4F4F4;
   display: flex;
