@@ -1,0 +1,136 @@
+.reviews {
+  padding: 120px 0;
+}
+
+.reviews .reviews-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.reviews .reviews-slider {
+  margin-top: 60px;
+}
+.reviews .reviews-slide {
+  padding: 48px 24px 24px 24px;
+  background: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews .reviews-slide-photo {
+  width: 120px;
+  height: 120px;
+}
+
+.reviews .reviews-slide-name {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.reviews .reviews-slide-text {
+  margin-top: 16px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.reviews .reviews-slide-photo .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .reviews {
+    padding: 50px 0;
+  }
+  .reviews .reviews-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .reviews .reviews-slider {
+    margin-top: 24px;
+  }
+  .reviews .reviews-slide {
+    padding: 24px 16px 16px 16px;
+  }
+  .reviews .reviews-slide-photo {
+    width: 90px;
+    height: 90px;
+  }
+  .reviews .reviews-slide-name {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  .reviews .reviews-slide-text {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Slick Styling START */
+.reviews .slick-track {
+  display: flex;
+  gap: 16px;
+}
+
+.reviews .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  bottom: -22px;
+}
+
+.reviews .slick-dots li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.reviews .slick-dots li button {
+  width: 6px;
+  height: 6px;
+  background-color: #F4F4F4;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.reviews .slick-dots li.slick-active button {
+  background-color: #000000;
+}
+
+.reviews .slick-dots li button:before {
+  content: unset;
+}
+
+.reviews .review-prev,
+.reviews .review-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  display: flex;
+  border: none;
+}
+
+.reviews .review-prev {
+  left: -15px;
+}
+
+.reviews .review-next {
+  right: -15px;
+}
+/* Slick Styling END */

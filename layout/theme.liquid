@@ -143,6 +143,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   <script src="{{ 'right-drawer.js' | asset_url }}" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="{{ 'slick.css' | asset_url }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ 'slick-theme.css' | asset_url }}"/>
 </head>
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
@@ -152,6 +155,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59FFHQ3V"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
   
   {{ 'theme.min.css' | asset_url | stylesheet_tag }}
   <noscript>{{ 'swiper.min.css' | asset_url | stylesheet_tag }}</noscript>
@@ -210,7 +217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <script defer type="module" src="{{ 'theme.min.js' | asset_url }}"></script>
   <script defer src="{{ 'SafeLoadScripts.js' | asset_url }}"></script>
-  <script defer nomodule src="{{ 'theme.legacy.min.js' | asset_url }}"></script> 
+  <script defer nomodule src="{{ 'theme.legacy.min.js' | asset_url }}"></script>
 
   {% if settings.popup--enable %}
     {% render 'popup' %}
