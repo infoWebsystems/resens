@@ -532,6 +532,61 @@
         "menu_item_size": 32
       }
     },
+    "reviews_xJVeCd": {
+      "type": "reviews",
+      "blocks": {
+        "review_6YgrpD": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/aiony-haust-3TLl_97HNJo-unsplash.jpg",
+            "review_name": "Sarah Thompson:",
+            "review_text": "\"I absolutely love this site! The skincare products are top-notch, and I’ve noticed a significant improvement in my skin’s texture. The customer service is also amazing. Highly recommend!\""
+          }
+        },
+        "review_WqjhUV": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+            "review_name": "Emily Carter:",
+            "review_text": "\"The website is easy to navigate, and the product descriptions are detailed, which makes it easy to choose the right items. I especially love their eco-friendly packaging and cruelty-free products!\""
+          }
+        },
+        "review_ihwrhy": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/freestocks-MWWKA47KemU-unsplash.jpg",
+            "review_name": "Jessica Reed:",
+            "review_text": "\"I’ve been using their makeup collection for a while now, and I’m hooked! The pigments are rich, and everything feels luxurious without breaking the bank. Fast shipping too!\""
+          }
+        },
+        "review_UrPGMn": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/aiony-haust-3TLl_97HNJo-unsplash.jpg",
+            "review_name": "Sarah Thompson:",
+            "review_text": "\"I absolutely love this site! The skincare products are top-notch, and I’ve noticed a significant improvement in my skin’s texture. The customer service is also amazing. Highly recommend!\""
+          }
+        },
+        "review_BVyjn3": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+            "review_name": "Emily Carter:",
+            "review_text": "\"The website is easy to navigate, and the product descriptions are detailed, which makes it easy to choose the right items. I especially love their eco-friendly packaging and cruelty-free products!\""
+          }
+        }
+      },
+      "block_order": [
+        "review_6YgrpD",
+        "review_WqjhUV",
+        "review_ihwrhy",
+        "review_UrPGMn",
+        "review_BVyjn3"
+      ],
+      "settings": {
+        "section_title": "Reviews"
+      }
+    },
     "17047069040e4a9d4f": {
       "type": "apps",
       "blocks": {
@@ -601,11 +656,6 @@
       "type": "apps",
       "settings": {
         "include_margins": true
-      }
-    },
-    "reviews_xJVeCd": {
-      "type": "reviews",
-      "settings": {
       }
     }
   },
