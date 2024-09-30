@@ -2,7 +2,9 @@
 
 <section class="reviews">
   <div class="wrapper-padded">
-    <h3 class="reviews-title">REVIEWS</h3>
+    {% if section.settings.section_title != blank %}
+      <h3 class="reviews-title">{{ section.settings.section_title }}</h3>
+    {% endif %}
 
     <div class="reviews-slider">
       {% for block in section.blocks %}
@@ -68,6 +70,14 @@
 {% schema %}
 {
   "name": "Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Reviews"
+    }
+  ],
   "blocks": [
     {
       "type": "review",
