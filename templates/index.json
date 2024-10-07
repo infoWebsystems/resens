@@ -14,19 +14,18 @@
       "blocks": {
         "image_VhfzBy": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
             "first_button_label": "",
-            "first_button_link": "shopify:\/\/collections\/all",
+            "first_button_link": "shopify://collections/all",
             "second_button_label": "",
             "second_button_link": "",
-            "image": "shopify:\/\/shop_images\/1_2.png",
+            "image": "shopify://shop_images/b2c___web2_engl.png",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify:\/\/shop_images\/2______1_5___3.png",
+            "mobile_image": "shopify://shop_images/b2c___mobile7_engl.png",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
@@ -44,10 +43,10 @@
             "title": "CULTURE OF SENSIBILITY WITHOUT FOOTPRINT",
             "text": "",
             "first_button_label": "Shop now",
-            "first_button_link": "shopify:\/\/collections\/all",
+            "first_button_link": "shopify://collections/all",
             "second_button_label": "SUSTAINABILITY",
-            "second_button_link": "shopify:\/\/pages\/sustainability",
-            "image": "shopify:\/\/shop_images\/DSC03624.jpg",
+            "second_button_link": "shopify://pages/sustainability",
+            "image": "shopify://shop_images/DSC03624.jpg",
             "desktop-caption-heading-size": 40,
             "desktop-caption-body-text-size": 20,
             "text_position": "center_left",
@@ -84,7 +83,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "lines-cleanup",
-            "collection_img": "shopify:\/\/shop_images\/DSC03694.jpg",
+            "collection_img": "shopify://shop_images/DSC03694.jpg",
             "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
@@ -96,7 +95,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "peeling",
-            "collection_img": "shopify:\/\/shop_images\/123.jpg",
+            "collection_img": "shopify://shop_images/123.jpg",
             "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
@@ -171,7 +170,7 @@
         "h2 {line-height: inherit;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1627.jpg",
+        "image": "shopify://shop_images/IMG_1627.jpg",
         "image_height": "50vw",
         "bg_image_overlay_opacity": 35,
         "parallax": false,
@@ -182,7 +181,7 @@
         "textAlignment": "left",
         "heading--text-size": 26,
         "text--text-size": 20,
-        "link": "shopify:\/\/collections\/microbiome-friendly-skincare-strategy-for-sensitive-skin",
+        "link": "shopify://collections/microbiome-friendly-skincare-strategy-for-sensitive-skin",
         "button_label": "Shop now",
         "button-text": "#000000",
         "button-background": "#d6e2ff",
@@ -196,13 +195,13 @@
         "83447c73-f480-4c7d-8508-249f594f3aa3": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/selfcare-products-and-flower-arrangement_1_2.png",
+            "desktop_image": "shopify://shop_images/selfcare-products-and-flower-arrangement_1_2.png",
             "show_overlay": false,
             "heading": "Up yo 15% off for  Professional skin cleansing",
             "heading_size": 32,
             "h-margin": 40,
             "button_label": "",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-top md-min-justify-left",
             "mobile_position": "md-max-align-center md-max-justify-left",
             "text_color": "#262428",
@@ -216,13 +215,13 @@
         "0d4c44b0-cb7c-43dc-829a-743dfa47a878": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "desktop_image": "shopify://shop_images/Mask_group_2.png",
             "show_overlay": false,
             "heading": "Up yo 15% off for  Professional skin cleansing",
             "heading_size": 32,
             "h-margin": 40,
             "button_label": "",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-top md-min-justify-left",
             "mobile_position": "md-max-align-center md-max-justify-left",
             "text_color": "#ffffff",
@@ -312,9 +311,9 @@
         "title": "",
         "richtext": "",
         "width_classes": 75,
-        "video": "shopify:\/\/files\/videos\/re_sens_final_vo_full hd.mp4",
+        "video": "shopify://files/videos/re_sens_final_vo_full hd.mp4",
         "url": "",
-        "mobile_video": "shopify:\/\/files\/videos\/re_sens_vertical_final.mp4",
+        "mobile_video": "shopify://files/videos/re_sens_vertical_final.mp4",
         "url_mobile": "",
         "autoplay": false,
         "loop": true,
@@ -327,15 +326,15 @@
       "disabled": true,
       "settings": {
         "colors": "white",
-        "image": "shopify:\/\/shop_images\/Image_with_text_2890x_b42898d8-c2d8-4ac4-ad68-7a6dbe559d53.webp",
+        "image": "shopify://shop_images/Image_with_text_2890x_b42898d8-c2d8-4ac4-ad68-7a6dbe559d53.webp",
         "text_overlapping_image": true,
         "section-width": "full",
         "layout": "right",
         "text_alignment": "left",
         "title": "MEET THE FOUNDER",
-        "text": "<p>Imogen Grey, founder of Re[Sense], shares her origin story, future vision, and what she loves most about our cosmetics.<\/p>",
+        "text": "<p>Imogen Grey, founder of Re[Sense], shares her origin story, future vision, and what she loves most about our cosmetics.</p>",
         "button_label": "READ MORE",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify://collections/all"
       }
     },
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9": {
@@ -362,7 +361,7 @@
         "template--14831909208134__8e9e36da-191e-4c8c-ba3a-8a307b84bae9-image-1": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/IMG_1634.jpg",
+            "desktop_image": "shopify://shop_images/IMG_1634.jpg",
             "show_overlay": true,
             "heading": "DISCOVER SENSUAL BEAUTY",
             "heading_size": 30,
@@ -382,13 +381,13 @@
         "da5b3af5-5d95-44e2-b098-f4b3a39403f9": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/IMG_1632.jpg",
+            "desktop_image": "shopify://shop_images/IMG_1632.jpg",
             "show_overlay": false,
             "heading": "",
             "heading_size": 16,
             "h-margin": 1,
             "button_label": "CLEANSING",
-            "url": "shopify:\/\/collections\/cleansing-1",
+            "url": "shopify://collections/cleansing-1",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -402,13 +401,13 @@
         "9cf4de3c-89e3-446e-b378-f839c160f721": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/IMG_1631.jpg",
+            "desktop_image": "shopify://shop_images/IMG_1631.jpg",
             "show_overlay": false,
             "heading": "",
             "heading_size": 38,
             "h-margin": 1,
             "button_label": "CARE",
-            "url": "shopify:\/\/collections\/care",
+            "url": "shopify://collections/care",
             "desktop_position": "md-min-align-top md-min-justify-center",
             "mobile_position": "md-max-align-top md-max-justify-center",
             "text_color": "#262428",
@@ -455,8 +454,8 @@
           "settings": {
             "menu_item_text": "CleanUP line",
             "menu_item_color": "#000000",
-            "menu_item_link": "shopify:\/\/collections\/lines-cleanup",
-            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+            "menu_item_link": "shopify://collections/lines-cleanup",
+            "menu_item_image": "shopify://shop_images/Rectangle_44.png"
           }
         },
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2": {
@@ -464,8 +463,8 @@
           "settings": {
             "menu_item_text": "3Action Exosome Boost line",
             "menu_item_color": "#000000",
-            "menu_item_link": "shopify:\/\/collections\/lines-3action-exosome-boost",
-            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+            "menu_item_link": "shopify://collections/lines-3action-exosome-boost",
+            "menu_item_image": "shopify://shop_images/Rectangle_44.png"
           }
         },
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3": {
@@ -473,8 +472,8 @@
           "settings": {
             "menu_item_text": "HydroCeramide line",
             "menu_item_color": "#000000",
-            "menu_item_link": "shopify:\/\/collections\/lines-hydroceramide",
-            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+            "menu_item_link": "shopify://collections/lines-hydroceramide",
+            "menu_item_image": "shopify://shop_images/Rectangle_44.png"
           }
         },
         "3e6623f9-7a43-41d7-ab12-f7e4bae5e603": {
@@ -482,8 +481,8 @@
           "settings": {
             "menu_item_text": "A-Redensity Line",
             "menu_item_color": "#000000",
-            "menu_item_link": "shopify:\/\/collections\/lines-a-redensity",
-            "menu_item_image": "shopify:\/\/shop_images\/Rectangle_44.png"
+            "menu_item_link": "shopify://collections/lines-a-redensity",
+            "menu_item_image": "shopify://shop_images/Rectangle_44.png"
           }
         },
         "menu_item_MmnmtT": {
@@ -524,7 +523,7 @@
       "settings": {
         "colors": "white",
         "min_height": "50vw",
-        "image_desktop_default": "shopify:\/\/shop_images\/Rectangle_44.png",
+        "image_desktop_default": "shopify://shop_images/Rectangle_44.png",
         "menu_position": "center",
         "alignment_desktop": "center",
         "alignment_mobile": "center",
@@ -536,14 +535,13 @@
       "type": "apps",
       "blocks": {
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": true,
           "settings": {
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
             "title_size": 32,
             "alignment": "center",
-            "background_color": "",
             "background_color": "",
             "html_area": ""
           }
@@ -563,7 +561,7 @@
         "article_ekRVbW": {
           "type": "article",
           "settings": {
-            "blog_post_1": "news\/greenwashing-vs-sustainable",
+            "blog_post_1": "news/greenwashing-vs-sustainable",
             "blog_post_2": "",
             "blog_post_3": "",
             "blog_post_4": ""
@@ -587,7 +585,7 @@
       "settings": {
         "colors": "white",
         "heading": "Re[sens]",
-        "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine<\/p><p>Mon-Fri from 09:00 to 18:00<\/p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com<\/span><\/a><\/p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68<\/span><\/a><\/p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03<\/span><\/a><\/p>",
+        "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine</p><p>Mon-Fri from 09:00 to 18:00</p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com</span></a></p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68</span></a></p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03</span></a></p>",
         "map_address": "Krakivska St, 7, Kyiv, 02000",
         "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
         "button_text": "Get directions",
