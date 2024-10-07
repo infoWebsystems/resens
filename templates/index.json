@@ -17,10 +17,10 @@
           "settings": {
             "title": "",
             "text": "",
-            "first_button_label": "",
+            "first_button_label": "Shop now",
             "first_button_link": "shopify://collections/all",
-            "second_button_label": "",
-            "second_button_link": "",
+            "second_button_label": "SUSTAINABILITY",
+            "second_button_link": "shopify://pages/sustainability",
             "image": "shopify://shop_images/b2c___web2_engl.png",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
