@@ -11,7 +11,6 @@
   width: 592px;
   background-color: white;
   padding: 32px;
-  /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
   overflow-y: scroll;
   z-index: 10001;
 }
@@ -117,6 +116,60 @@
   padding: 12px 20px;
   width: 100%;
 }
+
+/* Thank you modal START */
+.modal-thank-you-hidden {
+  display: none;
+}
+
+.modal-thank-you {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 592px;
+  background-color: white;
+  padding: 32px;
+  overflow-y: scroll;
+  z-index: 10001;
+}
+
+.modal-thank-you {
+  padding-top: 48px;
+}
+.modal-thank-you-close {
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.modal-thank-you-title {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+}
+.modal-thank-you-message {
+  margin: 0;
+  text-align: center;
+}
+.btn.modal-thank-you-button {
+  display: block;
+  margin-top: 32px;
+  width: 100%;
+  padding: 12px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* Thank you modal END */
 
 @media only screen and (max-width: 767px) {
   .form-modal {

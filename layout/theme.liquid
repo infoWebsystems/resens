@@ -182,7 +182,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="DrawerOverlay" class="drawer-overlay"></div>
 
   <div id="sendResumeForm" class="form-modal form-modal-hidden">
-    {% assign form_fields = shop.metaobjects.vacancy_form_fields.['vacancy-form-fields'] %}
+    {% assign form_fields = shop.metaobjects.vacancies_form['vacancy-form'] %}
+    <div class="form-modal-head">
+      <h3 class="form-modal-title">
+        {{ form_fields.heading }}
+      </h3>
+      <div class="form-modal-close">
+        <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.8996 8.6001L9.09961 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9.09961 8.6001L25.8996 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="form-modal-form-wrapper">
+      {% form 'contact' %}
+        {{ form.errors | default_errors }}
+        {{ form.posted_successfully? }}
+      
+        <div class="form-modal-fields">        
+          <div class="form-modal-field name">
+            <label for="name">{{ form_fields.name_label }}</label>
+            <input type="text" name="contact[first_name]" id="name" placeholder="{{ form_fields.name_placeholder }}" required/>
+          </div>
+        
+          <div class="form-modal-field city">
+            <label for="city">{{ form_fields.country_label }}</label>
+            <input type="tel" name="contact[city]" id="city" placeholder="{{ form_fields.country_placeholder }}" required/>
+          </div>
+
+          <div class="form-modal-field cooperation-form">
+            <label for="cooperation-form">{{ form_fields.wished_form_collaboration_label }}</label>
+
+            <select id="cooperation-form" name="contact[cooperation-form]" required>
+              <option value="" disabled selected>{{ form_fields.wished_form_collaboration_option_placeholder }}</option>
+              
+              {% assign topic_string = form_fields.wished_form_collaboration_options | remove: '[' | remove: ']' | remove: '"' %}
+              {% assign topic_options = topic_string | split: ',' %}
+              
+              {% for option in topic_options %}
+                  <option value="{{ option }}">{{ option }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-modal-field unit">
+            <label for="unit">{{ form_fields.unit_label }}</label>
+
+            <select id="unit" name="contact[unit]" required>
+              {% assign topic_string = form_fields.unit_options | remove: '[' | remove: ']' | remove: '"' %}
+              {% assign topic_options = topic_string | split: ',' %}
+              
+              {% for option in topic_options %}
+                  <option value="{{ option }}">{{ option }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-modal-field phone">
+            <label for="phone">{{ form_fields.phone_label }}</label>
+            <input type="tel" name="contact[phone]" id="phone" placeholder="{{ form_fields.phone_placeholder }}" required/>
+          </div>
+        
+          <div class="form-modal-field email">
+            <label for="email">{{ form_fields.email_label }}</label>
+            <input type="email" name="contact[email]" id="email" placeholder="{{ form_fields.email_placeholder }}" required/>
+          </div>
+        </div>
+
+        <div class="submit form-modal-submit">
+          <input class="btn" type="submit" value="{{ form_fields.submit_button_text }}" />
+        </div>
+      {% endform %}
+    </div>
+  </div>
+
+  <div id="partnershipForm" class="form-modal form-modal-hidden">
+    {% assign form_fields = shop.metaobjects.partnership_form['partnership-form'] %}
     <div class="form-modal-head">
       <h3 class="form-modal-title">
         {{ form_fields.heading }}
@@ -206,7 +282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <select id="subject" name="contact[subject]" required>
               <option value="" disabled selected>{{ form_fields.topic_label_option_placeholder }}</option>
               
-              {% assign topic_string = form_fields.topic_label_options | remove: '[' | remove: ']' | remove: '"' %}
+              {% assign topic_string = form_fields.topic_options | remove: '[' | remove: ']' | remove: '"' %}
               {% assign topic_options = topic_string | split: ',' %}
               
               {% for option in topic_options %}
@@ -247,7 +323,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {% endform %}
     </div>
   </div>
-  
+
+  <div id="thankYouModal" class="modal-thank-you modal-thank-you-hidden">
+    {% assign form_fields = shop.metaobjects.thank_you_modal['thank-you-modal'] %}
+
+      <div class="modal-thank-you-close">
+        <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.8996 8.6001L9.09961 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9.09961 8.6001L25.8996 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <h3 class="modal-thank-you-title">
+        {{ form_fields.heading }}
+      </h3>
+
+      <p class="modal-thank-you-message">
+        {{ form_fields.thank_you_message }}
+      </p>
+
+      <button class="btn modal-thank-you-button">{{ form_fields.continue_button_text }}</button>
+  </div>
+
   <div class="form-overlay form-modal-hidden"></div>
 
   <div id="PageContainer" data-editor-open="{{ request.design_mode }}" data-cart-action="{{ settings.ajax_cart_method }}" data-language-url="{{ localization.language.root_url }}">
