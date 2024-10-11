@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "image-with-text-overlay": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC0362411.jpg",
+        "image_height": "30vw",
+        "bg_image_overlay_opacity": 10,
+        "parallax": false,
+        "title": "Sustainability",
+        "text": "",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
+      }
+    }
+  },
+  "order": [
+    "image-with-text-overlay"
+  ]
+}

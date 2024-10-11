@@ -1,0 +1,106 @@
+<link
+  rel="preload"
+  href="{{ 'section-vacancies.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>{{ 'section-vacancies.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="vacancies">
+  <div class="wrapper-padded show-on-scroll">
+    <div class="vacancies-list">
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <div class="vacancies-item">
+            <div class="vacancies-item-position-name">
+              {{ block.settings.vacancy_name }}
+            </div>
+    
+            <div class="vacancies-item-short-description">
+              {{ block.settings.vacancy_description }}
+            </div>
+    
+            <a href="{{ block.settings.vacancy_url }}" class="vacancies-item-show-more">
+              {{ section.settings.read_more_vacancy_text }}
+            </a>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="vacancies-none">
+          <div class="vacancies-none-title">
+            {{ section.settings.no_vacancies_title }}
+          </div>
+    
+          <div class="vacancies-none-subtitle">
+            {{ section.settings.no_vacancies_subtitle }}
+          </div>
+    
+          <button id="onSendResumeFormOpen" class="btn vacancies-none-button">
+            {{ section.settings.no_vacancies_button_text }}
+          </button>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Vacancies",
+    "settings": [
+      {
+        "type": "text",
+        "id": "read_more_vacancy_text",
+        "label": "Read More Vacancy Link Text",
+        "default": "Read More"
+      },
+      {
+        "type": "textarea",
+        "id": "no_vacancies_title",
+        "label": "Title when there is no vacancy",
+        "default": "No vacancies"
+      },
+      {
+        "type": "textarea",
+        "id": "no_vacancies_subtitle",
+        "label": "Subtitle when there is no vacancy",
+        "default": "No vacancies Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "no_vacancies_button_text",
+        "label": "Button text When there is no vacancy",
+        "default": "Send Resume"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Vacancy",
+        "type": "vacancy",
+        "settings": [
+          {
+            "type": "text",
+            "id": "vacancy_name",
+            "label": "Position",
+            "default": "Position Name"
+          },
+          {
+            "type": "richtext",
+            "id": "vacancy_description",
+            "label": "Vacancy Description",
+            "default": "<p>Vacancy Description</p>"
+          },
+          {
+            "type": "url",
+            "id": "vacancy_url",
+            "label": "Vacancy Read More URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Vacancies"
+      }
+    ]
+  }
+{% endschema %}

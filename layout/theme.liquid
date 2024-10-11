@@ -22,6 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preload" href="{{ 'swiper.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <link rel="preload" href="{{ 'photoswipe.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <link rel="preload" href="{{ 'custom.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="{{ 'modals.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <link rel="preload" href="{{ 'wss.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
   {% if settings.animations_enabled %}
@@ -143,6 +144,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   <script src="{{ 'right-drawer.js' | asset_url }}" defer></script>
+  <script src="{{ 'modals.js' | asset_url }}" defer></script>
 
   <link rel="stylesheet" type="text/css" href="{{ 'slick.css' | asset_url }}"/>
   <link rel="stylesheet" type="text/css" href="{{ 'slick-theme.css' | asset_url }}"/>
@@ -150,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
 {% endcomment %}
-<body id="{{ page_title | handle }}" class="test {% if template == 'page.about'  or template == 'page.sustainability' %} template-collection template-page-about template-page-sustainability  {% endif %} {% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} ">
+<body id="{{ page_title | handle }}" class="test {% if template == 'page.about'  or template == 'page.sustainability' or template == 'page.vacancies' or template == 'page.vacancy' %} template-collection template-page-about template-page-sustainability template-page-vacancies template-page-vacancy  {% endif %} {% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} ">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59FFHQ3V"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -178,6 +180,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% section 'right-drawer' %}
 
   <div id="DrawerOverlay" class="drawer-overlay"></div>
+
+  <div id="sendResumeForm" class="form-modal form-modal-hidden">
+    {% assign form_fields = shop.metaobjects.vacancy_form_fields.['vacancy-form-fields'] %}
+    <div class="form-modal-head">
+      <h3 class="form-modal-title">
+        {{ form_fields.heading }}
+      </h3>
+      <div class="form-modal-close">
+        <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.8996 8.6001L9.09961 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9.09961 8.6001L25.8996 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="form-modal-form-wrapper">
+      {% form 'contact' %}
+        {{ form.errors | default_errors }}
+      
+        <div class="form-modal-fields">
+          <div class="form-modal-field subject">
+            <label for="subject">{{ form_fields.topic_label }}</label>
+
+            <select id="subject" name="contact[subject]" required>
+              <option value="" disabled selected>{{ form_fields.topic_label_option_placeholder }}</option>
+              
+              {% assign topic_string = form_fields.topic_label_options | remove: '[' | remove: ']' | remove: '"' %}
+              {% assign topic_options = topic_string | split: ',' %}
+              
+              {% for option in topic_options %}
+                  <option value="{{ option }}">{{ option }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        
+          <div class="form-modal-field name">
+            <label for="name">{{ form_fields.name_label }}</label>
+            <input type="text" name="contact[first_name]" id="name" placeholder="{{ form_fields.name_placeholder }}" required/>
+          </div>
+        
+          <div class="form-modal-field country">
+            <label for="country">{{ form_fields.country_label }}</label>
+            <input type="tel" name="contact[country]" id="country" placeholder="{{ form_fields.country_placeholder }}" required/>
+          </div>
+
+          <div class="form-modal-field city">
+            <label for="city">{{ form_fields.city_label }}</label>
+            <input type="tel" name="contact[city]" id="city" placeholder="{{ form_fields.city_placeholder }}" required/>
+          </div>
+
+          <div class="form-modal-field phone">
+            <label for="phone">{{ form_fields.phone_label }}</label>
+            <input type="tel" name="contact[phone]" id="phone" placeholder="{{ form_fields.phone_placeholder }}" required/>
+          </div>
+        
+          <div class="form-modal-field email">
+            <label for="email">{{ form_fields.email_label }}</label>
+            <input type="email" name="contact[email]" id="email" placeholder="{{ form_fields.email_placeholder }}" required/>
+          </div>
+        </div>
+
+        <div class="submit form-modal-submit">
+          <input class="btn" type="submit" value="{{ form_fields.submit_button_text }}" />
+        </div>
+      {% endform %}
+    </div>
+  </div>
+  
+  <div class="form-overlay form-modal-hidden"></div>
 
   <div id="PageContainer" data-editor-open="{{ request.design_mode }}" data-cart-action="{{ settings.ajax_cart_method }}" data-language-url="{{ localization.language.root_url }}">
     <div class="no-js disclaimer">

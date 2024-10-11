@@ -1,0 +1,88 @@
+.vacancies {
+
+}
+
+.vacancies .vacancies-none-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.vacancies .vacancies-none-subtitle {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+}
+
+.vacancies .vacancies-none-button {
+  padding: 12px 35.5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.vacancies .vacancies-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vacancies .vacancies-item {
+  padding: 40px;
+  background-color: #F4F4F4;
+}
+
+.vacancies .vacancies-item .vacancies-item-position-name {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+}
+
+.vacancies .vacancies-item .vacancies-item-short-description {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: justify;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+
+.vacancies .vacancies-item .vacancies-item-show-more {
+  display: block;
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+  .vacancies .vacancies-none-title {
+    font-size: 16px;
+  }
+
+  .vacancies .vacancies-item .vacancies-item-position-name {
+      font-size: 20px;
+  }
+}
