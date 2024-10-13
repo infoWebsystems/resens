@@ -181,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div id="DrawerOverlay" class="drawer-overlay"></div>
 
-  <div id="sendResumeForm" class="form-modal form-modal-hidden">
+  <div id="sendResumeForm" class="form-modal hidden">
     {% assign form_fields = shop.metaobjects.vacancies_form['vacancy-form'] %}
     <div class="form-modal-head">
       <h3 class="form-modal-title">
@@ -196,11 +196,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="form-modal-form-wrapper">
-      {% form 'contact' %}
-        {{ form.errors | default_errors }}
-        {{ form.posted_successfully? }}
-      
-        <div class="form-modal-fields">        
+      <form action="/contact" method="POST">
+        <div class="form-modal-fields">
           <div class="form-modal-field name">
             <label for="name">{{ form_fields.name_label }}</label>
             <input type="text" name="contact[first_name]" id="name" placeholder="{{ form_fields.name_placeholder }}" required/>
@@ -253,11 +250,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="submit form-modal-submit">
           <input class="btn" type="submit" value="{{ form_fields.submit_button_text }}" />
         </div>
-      {% endform %}
+      </form>
     </div>
   </div>
 
-  <div id="partnershipForm" class="form-modal form-modal-hidden">
+  <div id="partnershipForm" class="form-modal hidden">
     {% assign form_fields = shop.metaobjects.partnership_form['partnership-form'] %}
     <div class="form-modal-head">
       <h3 class="form-modal-title">
@@ -272,9 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="form-modal-form-wrapper">
-      {% form 'contact' %}
-        {{ form.errors | default_errors }}
-      
+      <form action="/contact" method="POST">
         <div class="form-modal-fields">
           <div class="form-modal-field subject">
             <label for="subject">{{ form_fields.topic_label }}</label>
@@ -320,14 +315,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="submit form-modal-submit">
           <input class="btn" type="submit" value="{{ form_fields.submit_button_text }}" />
         </div>
-      {% endform %}
+      </form>
     </div>
   </div>
 
-  <div id="thankYouModal" class="modal-thank-you modal-thank-you-hidden">
+  <div id="thankYouModal" class="modal-thank-you hidden">
     {% assign form_fields = shop.metaobjects.thank_you_modal['thank-you-modal'] %}
 
-      <div class="modal-thank-you-close">
+      <div class="modal-thank-you-close-icon modal-thank-you-close">
         <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25.8996 8.6001L9.09961 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M9.09961 8.6001L25.8996 25.4001" stroke="#262428" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -342,10 +337,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {{ form_fields.thank_you_message }}
       </p>
 
-      <button class="btn modal-thank-you-button">{{ form_fields.continue_button_text }}</button>
+      <button class="btn modal-thank-you-button modal-thank-you-close">{{ form_fields.continue_button_text }}</button>
   </div>
 
-  <div class="form-overlay form-modal-hidden"></div>
+  <div class="form-overlay hidden"></div>
 
   <div id="PageContainer" data-editor-open="{{ request.design_mode }}" data-cart-action="{{ settings.ajax_cart_method }}" data-language-url="{{ localization.language.root_url }}">
     <div class="no-js disclaimer">

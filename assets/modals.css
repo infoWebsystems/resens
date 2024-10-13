@@ -1,7 +1,3 @@
-.form-modal-hidden {
-  display: none;
-}
-
 .form-modal {
   position: fixed;
   top: 72px;
@@ -118,10 +114,6 @@
 }
 
 /* Thank you modal START */
-.modal-thank-you-hidden {
-  display: none;
-}
-
 .modal-thank-you {
   position: fixed;
   top: 50%;
@@ -137,7 +129,7 @@
 .modal-thank-you {
   padding-top: 48px;
 }
-.modal-thank-you-close {
+.modal-thank-you-close-icon {
   cursor: pointer;
   position: absolute;
   top: 32px;

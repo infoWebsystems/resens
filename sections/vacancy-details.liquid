@@ -5,26 +5,34 @@
   onload="this.onload=null;this.rel='stylesheet'" />
 <noscript>{{ 'section-vacancy-details.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="vacancies-details">
+<div class="vacancy-details">
   <div class="wrapper-padded show-on-scroll">
-    <div class="vacancies-details-description">
+    <div class="vacancy-details-description">
       {{ page.content }}
     </div>
+    <button class="btn vacancy-details-button onSendResumeFormOpen">
+      {{ section.settings.send_resume_button_text }}
+    </button>
   </div>
 </div>
 
 {% schema %}
   {
-    "name": "Vacancies Details",
+    "name": "Vacancy Details",
     "settings": [
-
+      {
+        "type": "text",
+        "id": "send_resume_button_text",
+        "label": "Send Resume Button Text",
+        "default": "Send"
+      }
     ],
     "blocks": [
       
     ],
     "presets": [
       {
-        "name": "Vacancies Details"
+        "name": "Vacancy Details"
       }
     ]
   }
