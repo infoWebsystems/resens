@@ -196,7 +196,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="form-modal-form-wrapper">
-      <form action="/contact" method="POST">
+      {% form 'contact' %}
+        {{ form.errors | default_errors }}
+      
         <div class="form-modal-fields">
           <div class="form-modal-field name">
             <label for="name">{{ form_fields.name_label }}</label>
@@ -247,10 +249,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <div class="submit form-modal-submit">
+        <div class="submit form-modal-submit" data-is-submitted-successfully="{{ form.posted_successfully? }}">
           <input class="btn" type="submit" value="{{ form_fields.submit_button_text }}" />
         </div>
-      </form>
+      {% endform %}
     </div>
   </div>
 
@@ -269,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="form-modal-form-wrapper">
-      <form action="/contact" method="POST">
+      {% form 'contact' %}
         <div class="form-modal-fields">
           <div class="form-modal-field subject">
             <label for="subject">{{ form_fields.topic_label }}</label>
@@ -312,10 +314,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <div class="submit form-modal-submit">
+        <div class="submit form-modal-submit" data-is-submitted-successfully="{{ form.posted_successfully? }}">
           <input class="btn" type="submit" value="{{ form_fields.submit_button_text }}" />
         </div>
-      </form>
+      {% endform %}
     </div>
   </div>
 

@@ -81,13 +81,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
   padding: 12px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .form-modal-fields select {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
   appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M6.24023 9.12012L12.0002 14.8801L17.7602 9.12012" stroke="%230D0C0D" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"/></svg>'); 
   background-repeat: no-repeat;
