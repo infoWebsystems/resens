@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnsCloseModal = modal.querySelectorAll(closeElem);
     const btnsOpenModal = document.querySelectorAll(triggerElem);
 
-    const openModal = function () {
+    const openModal = function (e) {
+      e.preventDefault();
       overlay.classList.remove('hidden');
       modal.classList.remove('hidden');
       document.querySelector('body').style.overflow = 'hidden';
