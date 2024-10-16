@@ -586,6 +586,17 @@
         "section_title": "Reviews"
       }
     },
+    "content_on_image_background_zcRVa3": {
+      "type": "content-on-image-background",
+      "settings": {
+        "background": "shopify://shop_images/resens-dark-bg.jpg",
+        "title": "РОЗШИРЮЙ СВІЙ БІЗНЕС РАЗОМ ІЗ RE[SENS]",
+        "description": "<p>Запрошуємо до співпраці компанії з усього світу! Отримайте ексклюзивні умови партнерства та підтримку на кожному етапі.Об'єднаймо зусилля, щоб подарувати вашим клієнтам унікальні рішення, що вже завоювали довіру професіоналів.</p>",
+        "btn_label": "ПРИЄДНАТИСЬ",
+        "btn_url": "",
+        "btn_custom_class_name": "onPartnershipForm"
+      }
+    },
     "17047069040e4a9d4f": {
       "type": "apps",
       "blocks": {
@@ -672,6 +683,7 @@
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
     "12a25ae5-a869-4fec-9751-deb411052883",
     "reviews_xJVeCd",
+    "content_on_image_background_zcRVa3",
     "17047069040e4a9d4f",
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949",
     "2702beb3-827b-44e4-991e-9b79a8ccc045",
