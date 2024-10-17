@@ -348,7 +348,7 @@
   }
 }
 
-#insta-feed .instafeed-new-layout-item:nth-child(n+9):nth-child(-n+12) {
+#insta-feed .instafeed-new-layout-item:nth-child(n+9) {
   display: none;
 }
 /* Instafeed styling  END*/
