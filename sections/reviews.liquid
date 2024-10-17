@@ -1,6 +1,6 @@
 <link rel="preload" href="{{ 'section-reviews.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 
-<section class="reviews">
+<section class="reviews wow shown-on-scroll animated fadeInUp">
   <div class="wrapper-padded">
     {% if section.settings.section_title != blank %}
       <h3 class="reviews-title">{{ section.settings.section_title }}</h3>
@@ -39,7 +39,7 @@
   $(document).ready(function(){
     $('.reviews-slider').slick(
       {
-        infinite: false,
+        infinite: true,
         arrows: true,
         dots: false,
         slidesToShow: 3,

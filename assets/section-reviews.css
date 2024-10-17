@@ -1,5 +1,5 @@
 .reviews {
-  padding: 120px 0;
+  padding: 40px 0 120px 0;
 }
 
 .reviews .reviews-title {
@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 8px;
 }
 
 .reviews .reviews-slide-photo {
@@ -52,9 +53,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .reviews {
-    padding: 50px 0;
-  }
   .reviews .reviews-title {
     font-size: 24px;
     line-height: 30px;
@@ -79,10 +77,15 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .reviews .reviews-slide {
+    margin: 0;
+  }
+}
+
 /* Slick Styling START */
 .reviews .slick-track {
   display: flex;
-  gap: 16px;
 }
 
 .reviews .slick-dots {
