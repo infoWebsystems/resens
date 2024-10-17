@@ -591,7 +591,7 @@
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "BOOST YOUR BUSINESS WITH RE[SENS]",
-        "description": "<p>We invite companies from all over the world to cooperate! Get exclusive partnership terms and support at every step.Together we can provide your customers with unique solutions that have already earned the trust of professionals.</p>",
+        "description": "<p>We invite companies from all over the world to cooperate! Get exclusive partnership terms and support at every step.</p><p>Together we can provide your customers with unique solutions that have already earned the trust of professionals.</p>",
         "btn_label": "JOIN",
         "btn_url": "",
         "btn_custom_class_name": "onPartnershipForm",
