@@ -594,7 +594,8 @@
         "description": "<p>We invite companies from all over the world to cooperate! Get exclusive partnership terms and support at every step.Together we can provide your customers with unique solutions that have already earned the trust of professionals.</p>",
         "btn_label": "JOIN",
         "btn_url": "",
-        "btn_custom_class_name": "onPartnershipForm"
+        "btn_custom_class_name": "onPartnershipForm",
+        "section_bottom_margin": 0
       }
     },
     "17047069040e4a9d4f": {
@@ -602,6 +603,7 @@
       "blocks": {
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
           "settings": {
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
@@ -615,6 +617,7 @@
       "block_order": [
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
