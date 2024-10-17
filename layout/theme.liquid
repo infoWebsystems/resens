@@ -229,6 +229,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <label for="unit">{{ form_fields.unit_label }}</label>
 
             <select id="unit" name="contact[unit]" required>
+              <option value="" disabled selected>{{ form_fields.unit_option_placeholder }}</option>
+
               {% assign topic_string = form_fields.unit_options | remove: '[' | remove: ']' | remove: '"' %}
               {% assign topic_options = topic_string | split: ',' %}
               

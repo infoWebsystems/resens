@@ -1,10 +1,10 @@
 .form-modal {
   position: fixed;
   top: 72px;
-  bottom: 72px;
   left: 50%;
   transform: translateX(-50%);
   width: 592px;
+  max-height: calc(100vh - 144px);
   background-color: white;
   padding: 32px;
   overflow-y: scroll;
@@ -81,18 +81,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 1);
   padding: 12px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .form-modal-fields select {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.5);
   appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M6.24023 9.12012L12.0002 14.8801L17.7602 9.12012" stroke="%230D0C0D" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"/></svg>'); 
   background-repeat: no-repeat;
   background-position: right 0px center;
   background-size: 24px;
+}
+
+.form-modal-fields select.selected {
+  color: rgba(0, 0, 0, 1);
 }
 
 .form-modal-fields select:focus {
@@ -105,12 +108,18 @@
 }
 
 .form-modal-submit {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .form-modal-submit [type="submit"] {
   padding: 12px 20px;
   width: 100%;
+}
+
+.form-modal input:-webkit-autofill {
+  background-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  color: inherit;
 }
 
 /* Thank you modal START */
@@ -166,8 +175,8 @@
 @media only screen and (max-width: 767px) {
   .form-modal {
     top: 40px;
-    bottom: 40px;
     width: calc(100% - 80px);
+    max-height: calc(100vh - 80px);
   }
 }
 
@@ -176,5 +185,6 @@
     top: 0px;
     bottom: 0px;
     width: 100%;
+    max-height: unset;
   }
 }

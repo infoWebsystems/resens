@@ -1,7 +1,3 @@
-.vacancies {
-
-}
-
 .vacancies .vacancies-none-title {
   font-weight: 400;
   font-size: 20px;
@@ -64,7 +60,6 @@
   line-height: 160%;
   text-align: justify;
   color: #000000;
-  letter-spacing: 1.5px;
 }
 
 .vacancies .vacancies-item .vacancies-item-show-more {
@@ -84,5 +79,11 @@
 
   .vacancies .vacancies-item .vacancies-item-position-name {
       font-size: 20px;
+  }
+
+  .vacancies .vacancies-none-subtitle,
+  .vacancies .vacancies-item .vacancies-item-short-description {
+    font-size: 14px;
+    line-height: 22.4px;
   }
 }

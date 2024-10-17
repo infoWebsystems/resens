@@ -53,4 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
   formModalInit('sendResumeForm', '.form-modal-close', '.onSendResumeFormOpen', true);
   formModalInit('partnershipForm', '.form-modal-close', '.onPartnershipForm', true);
   formModalInit('thankYouModal', '.modal-thank-you-close', '.onThankYouModal');
+
+  document.querySelectorAll('.form-modal select').forEach(select => {
+    if (select.value !== '') select.classList.add('selected');
+
+    select.addEventListener('change', (e) => {
+      const target = e.target;
+      target.value === "" ? target.classList.remove('selected') : target.classList.add('selected');
+    })
+  })
+
+  document.querySelectorAll('.form-modal-field.phone input').forEach(input => {
+    input.addEventListener('input', function () {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    });
+  })
 })
