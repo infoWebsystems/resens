@@ -299,6 +299,10 @@
 }
 
 /* Instafeed styling  START*/
+#insta-feed h2, .instafeed-shopify h2 {
+  margin-bottom: 15px !important;
+}
+
 #insta-feed button.instafeed-new-arrow-next,
 #insta-feed button.instafeed-new-arrow-prev {
   display: none;
@@ -309,49 +313,44 @@
   height: auto !important;
 }
 
-#insta-feed .instafeed-new-layout-item {
-  margin: 0 auto;
-  width: 20% !important; 
-  height: 17vw !important;
-}
-
 #insta-feed .instafeed-new-layout-wrapper {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px !important;
-  row-gap: 35px !important;
+  justify-content: center;
+  gap: 30px !important;
 }
 
-#insta-feed .instafeed-new-layout-item:nth-child(n+9):nth-child(-n+12) {
-  display: none;
+#insta-feed .instafeed-new-layout-item {
+  width: calc((100vw - 60px - 90px) / 4) !important;
+  height: calc((100vw - 60px - 90px) / 4) !important;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 1660px) {
   #insta-feed .instafeed-new-layout-item {
-    width: 30% !important;
-    height: 22vw !important;
-  }
-  
-  #insta-feed .instafeed-new-layout-wrapper {
-    column-gap: 10px !important;
-    row-gap: 15px !important;
-  }
-  #insta-feed .instafeed-new-layout-item:nth-child(n+7):nth-child(-n+8) {
-    display: none;
+    width: calc((1600px - 90px) / 4) !important;
+    height: calc((1600px - 90px) / 4) !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #insta-feed .instafeed-new-layout-item {
-    width: 42vw !important;
-    height: 42vw !important;
+    width: calc((100vw - 60px - 30px) / 2) !important;
+    height: calc((100vw - 60px - 30px) / 2) !important;
   }
-  
+}
+@media only screen and (max-width: 480px) {
   #insta-feed .instafeed-new-layout-wrapper {
-    row-gap: 20px !important;
+    gap: 15px !important;
+  }
+  #insta-feed .instafeed-new-layout-item {
+    width: calc((100vw - 30px - 15px) / 2) !important;
+    height: calc((100vw - 30px - 15px) / 2) !important;
   }
 }
 
+#insta-feed .instafeed-new-layout-item:nth-child(n+9):nth-child(-n+12) {
+  display: none;
+}
 /* Instafeed styling  END*/
 
 /* Card Drawer START */
