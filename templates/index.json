@@ -603,12 +603,12 @@
       "blocks": {
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "disabled": true,
           "settings": {
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
             "title_size": 32,
             "alignment": "center",
+            "margin_bottom": 70,
             "background_color": "",
             "html_area": ""
           }
@@ -617,7 +617,6 @@
       "block_order": [
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
