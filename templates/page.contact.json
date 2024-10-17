@@ -159,6 +159,8 @@
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
             "alignment": "center",
+            "margin_bottom": 70,
+            "margin_sides": 0,
             "background_color": "",
             "html_area": ""
           }
