@@ -76,60 +76,6 @@
         "slide_transition_delay": 5
       }
     },
-    "image_logo_list_kEhdQi": {
-      "type": "image--logo-list",
-      "blocks": {
-        "logo_image_VdtdP7": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_KrqTEY": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_n4pkqp": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_PGjKqK": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_Ucd984": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_6NdPTh": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_VdtdP7",
-        "logo_image_KrqTEY",
-        "logo_image_n4pkqp",
-        "logo_image_PGjKqK",
-        "logo_image_Ucd984",
-        "logo_image_6NdPTh"
-      ],
-      "settings": {
-        "colors": "accent",
-        "width": 100,
-        "title": "As seen in"
-      }
-    },
     "b4aa8931-1a4b-45b0-be73-a34e8c206af7": {
       "type": "collection--collection-list",
       "blocks": {
@@ -216,6 +162,60 @@
         "richtext": "",
         "collection": "creams",
         "show_view_all": false
+      }
+    },
+    "image_logo_list_kEhdQi": {
+      "type": "image--logo-list",
+      "blocks": {
+        "logo_image_VdtdP7": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_KrqTEY": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_n4pkqp": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_PGjKqK": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_Ucd984": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_6NdPTh": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_VdtdP7",
+        "logo_image_KrqTEY",
+        "logo_image_n4pkqp",
+        "logo_image_PGjKqK",
+        "logo_image_Ucd984",
+        "logo_image_6NdPTh"
+      ],
+      "settings": {
+        "colors": "dark",
+        "width": 100,
+        "title": "As seen in"
       }
     },
     "35b28867-77fd-4573-8212-101b3b8e2245": {
