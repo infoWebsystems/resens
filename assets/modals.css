@@ -1,5 +1,5 @@
 /* ScrollBar Styling END */
-.form-modal::-webkit-scrollbar {
+/* .form-modal::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -10,7 +10,33 @@
 
 .form-modal {
   scrollbar-color: #000 #000;
+} */
+
+/* Target the scrollbar of the modal window */
+.form-modal::-webkit-scrollbar {
+  width: 10px;
 }
+
+.form-modal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.form-modal::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.form-modal::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Firefox specific scrollbar styles */
+.form-modal {
+  scrollbar-width: thin;
+  scrollbar-color: #000 transparent;
+}
+
 /* ScrollBar Styling START */
 
 .form-modal {
