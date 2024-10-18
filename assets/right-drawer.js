@@ -118,10 +118,13 @@ function addCartDrawerListeners() {
   });
 
   // Redirect to checkout Page
-  document.querySelector('.js-right_drawer_cart_checkout').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = '/checkout';
-  });
+  const checkoutBtn = document.querySelector('.js-right_drawer_cart_checkout');
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = '/checkout';
+    });
+  }
 
   document.querySelector('.js-drawer-close .icon-fallback-text')
   .addEventListener('click', () => {
