@@ -1,3 +1,18 @@
+/* ScrollBar Styling END */
+.form-modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+.form-modal::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.form-modal {
+  scrollbar-color: #000 #000;
+}
+/* ScrollBar Styling START */
+
 .form-modal {
   position: fixed;
   top: 72px;
@@ -7,6 +22,7 @@
   max-height: calc(100vh - 144px);
   background-color: white;
   padding: 32px;
+  padding-top: 0;
   overflow-y: scroll;
   z-index: 10001;
 }
@@ -26,6 +42,11 @@
 }
 
 .form-modal-head {
+  padding-top: 32px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
