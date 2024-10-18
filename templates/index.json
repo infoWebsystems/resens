@@ -164,6 +164,60 @@
         "show_view_all": false
       }
     },
+    "image_logo_list_kEhdQi": {
+      "type": "image--logo-list",
+      "blocks": {
+        "logo_image_VdtdP7": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_KrqTEY": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_n4pkqp": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_PGjKqK": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_Ucd984": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_6NdPTh": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_VdtdP7",
+        "logo_image_KrqTEY",
+        "logo_image_n4pkqp",
+        "logo_image_PGjKqK",
+        "logo_image_Ucd984",
+        "logo_image_6NdPTh"
+      ],
+      "settings": {
+        "colors": "dark",
+        "width": 100,
+        "title": "We are in media"
+      }
+    },
     "35b28867-77fd-4573-8212-101b3b8e2245": {
       "type": "image--image-with-text-overlay",
       "custom_css": [
@@ -676,6 +730,7 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5",
     "b4aa8931-1a4b-45b0-be73-a34e8c206af7",
     "3c4d9433-fe83-4e4a-afa6-63c348fea245",
+    "image_logo_list_kEhdQi",
     "35b28867-77fd-4573-8212-101b3b8e2245",
     "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
     "e8654ad7-b205-46a1-b672-af13dcfa8fe9",
