@@ -1,20 +1,6 @@
-/* ScrollBar Styling END */
-/* .form-modal::-webkit-scrollbar {
-  width: 5px;
-}
-
-.form-modal::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 10px;
-}
-
-.form-modal {
-  scrollbar-color: #000 #000;
-} */
-
-/* Target the scrollbar of the modal window */
+/* ScrollBar Styling START */
 .form-modal::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 .form-modal::-webkit-scrollbar-track {
@@ -36,8 +22,7 @@
   scrollbar-width: thin;
   scrollbar-color: #000 transparent;
 }
-
-/* ScrollBar Styling START */
+/* ScrollBar Styling END */
 
 .form-modal {
   position: fixed;
