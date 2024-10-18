@@ -73,12 +73,17 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .vacancies .vacancies-item {
+    padding: 16px;
+  }
   .vacancies .vacancies-none-title {
     font-size: 16px;
   }
 
   .vacancies .vacancies-item .vacancies-item-position-name {
-      font-size: 20px;
+      font-size: 16px;
+      line-height: 20.11px;
+      letter-spacing: 0.18em;
   }
 
   .vacancies .vacancies-none-subtitle,
