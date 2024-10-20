@@ -1,8 +1,11 @@
+{% assign current_language = shop.locale | split: "-" | first %}
 <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
 <span id="ProductPrice" itemprop="price"
+  data-eur-price="{{ product.metafields.elasty.price }}"
+  data-current-language="{{ current_language }}"
   content="{{ current_variant.price | divided_by: 100 }}"
   v-bind:content="variant ? variant.price / 100 : null"
   v-html="variant ? money(variant.price) : '{{ 'products.product.unavailable' | t }}'"
 >
-  <span class="money">{{ current_variant.price | money }}</span>
+  <span class="money money-resens">{{ current_variant.price | money }}</span>
 </span>

@@ -9,7 +9,7 @@
   url(' {{ section.settings.background | image_url: width: " 700x" }}') center center / cover no-repeat
 {% else %}
   green
-{% endif %}">
+{% endif %}; margin-bottom: {{ section.settings.section_bottom_margin }}px">
   <div class="wrapper-padded show-on-scroll">
     <h2 class="title">
       {{ section.settings.title }}
@@ -18,7 +18,7 @@
       {{ section.settings.description }}
     </div>
     <a
-      class="button"
+      class="button {{ section.settings.btn_custom_class_name }}"
       target="_blank"
       href="{{ section.settings.btn_url }}">
       {{ section.settings.btn_label }}
@@ -28,7 +28,7 @@
 
 {% schema %}
   {
-    "name": "Ukrainian Development",
+    "name": "Content on background",
     "settings": [
       {
         "type": "image_picker",
@@ -52,10 +52,27 @@
         "id": "btn_label",
         "label": "Button Label",
         "default": "Label"
-      }, {
+      }, 
+      {
         "type": "url",
         "id": "btn_url",
         "label": "Button URL"
+      },
+      {
+        "type": "text",
+        "id": "btn_custom_class_name",
+        "label": "Button Class name",
+        "info": "Please dont't change it, it is for functionality"
+      },
+      {
+        "type": "range",
+        "id": "section_bottom_margin",
+        "label": "Bottom Space",
+        "max": 200,
+        "min": 0,
+        "step": 5,
+        "default": 0,
+        "unit": "px"
       }
     ],
     "presets": [

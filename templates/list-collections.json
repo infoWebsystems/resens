@@ -37,7 +37,7 @@
           "type": "button",
           "settings": {
             "label": "Shop now",
-            "link": "shopify:\/\/collections\/all"
+            "link": "shopify://collections/all"
           }
         }
       },
@@ -104,17 +104,6 @@
     },
     "1723819700c63e0846": {
       "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_zikimX": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_zikimX"
-      ],
       "settings": {
         "include_margins": true
       }

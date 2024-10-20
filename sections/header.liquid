@@ -23,7 +23,7 @@ Testing Cypress integration
   {% assign list-collection-overlay = true %}
 {% endif %}
 {% comment %} header on about and on sustainability pages {% endcomment %}
-{% if template == 'page.sustainability' or template == 'page.about' %}
+{% if template == 'page.sustainability' or template == 'page.about' or template == 'page.vacancies' or template == 'page.vacancy' %}
   {% assign list-collection-overlay = true %} 
 {% endif %}
 {% assign contact-overlay = false %}
@@ -96,7 +96,7 @@ Testing Cypress integration
                   {% when 'quantity' %}
                     <span class="cart-item-count-header cart-item-count-header--has-label cart-item-count-header--quantity{% if cart.item_count == 0 %} hide{% endif %}">{{ cart.item_count }}</span>
                   {% when 'total' %}
-                    <span class="cart-item-count-header cart-item-count-header--has-label cart-item-count-header--total{% if cart.total_price == 0 %} hide{% endif %}"><span class="money">{{ cart.total_price | money }}</span></span>
+                    <span class="cart-item-count-header cart-item-count-header--has-label cart-item-count-header--total{% if cart.total_price == 0 %} hide{% endif %}"><span class="money money-resens">{{ cart.total_price | money }}</span></span>
                 {% endcase %}
             </span>
           {% else %}
@@ -104,7 +104,7 @@ Testing Cypress integration
               {% when 'quantity' %}
                 <span class="header--supporting-text"><span class="cart-item-count-header cart-item-count-header--quantity{% if cart.item_count == 0 %} hide{% endif %}">{{ cart.item_count }}</span></span>
               {% when 'total' %}
-                <span class="header--supporting-text"><span class="cart-item-count-header cart-item-count-header--total{% if cart.total_price == 0 %} hide{% endif %}"><span class="money">{{ cart.total_price | money }}</span></span></span>
+                <span class="header--supporting-text"><span class="cart-item-count-header cart-item-count-header--total{% if cart.total_price == 0 %} hide{% endif %}"><span class="money money-resens">{{ cart.total_price | money }}</span></span></span>
             {% endcase %}
           {% endif %}
       </a>
@@ -903,7 +903,7 @@ Testing Cypress integration
                   <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
                 </span>
                 {% if section.settings.cart-number == 'total' %}
-                  <span class="cart-item-count-header--total{% if cart.item_count == 0 %} hide{% endif %}">{{ cart.total_price | money }}</span>
+                  <span class="money-resens cart-item-count-header--total{% if cart.item_count == 0 %} hide{% endif %}">{{ cart.total_price | money }}</span>
                 {% endif %}
               </a>
             </div>

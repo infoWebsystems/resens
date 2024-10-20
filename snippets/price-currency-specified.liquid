@@ -40,6 +40,8 @@
 
 {% if matching_currency and price_amount != '0' %}
   {% if add_divider == false %}<span class="event-item--subheading">{% else %} | {% endif %}
-    {{ currency_price }}
+    <span class="money-resens">
+      {{ currency_price }}
+    </span>
   {% if add_divider == false %}</span>{% endif %}
 {% endif %}

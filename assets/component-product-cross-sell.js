@@ -1049,7 +1049,7 @@ class ProductCrossSell extends lit_element_s {
                     ` : ''
                   }
 
-                  <span class="money">${formatMoney(this.currentVariant.price, this.moneyFormat)}</span>
+                  <span class="money money-resens">${formatMoney(this.currentVariant.price, this.moneyFormat)}</span>
                 </a>
               `
               : y`<span>Sold out</span>`

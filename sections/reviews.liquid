@@ -1,0 +1,112 @@
+<link rel="preload" href="{{ 'section-reviews.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+
+<section class="reviews wow shown-on-scroll animated fadeInUp">
+  <div class="wrapper-padded">
+    {% if section.settings.section_title != blank %}
+      <h3 class="reviews-title">{{ section.settings.section_title }}</h3>
+    {% endif %}
+
+    <div class="reviews-slider">
+      {% for block in section.blocks %}
+        <div class="reviews-slide">
+          <div class="reviews-slide-photo">
+            {% if block.settings.review_photo != blank %}
+              <img class="image" src="{{ block.settings.review_photo | image_url }}" alt="Review {{ forloop.index }}">
+            {% else %}
+            {{ 'image' | placeholder_svg_tag: 'image' }}
+            {% endif %}
+          </div>
+
+          {% if block.settings.review_name != blank %}
+            <div class="reviews-slide-name">
+              {{ block.settings.review_name }}
+            </div>
+          {% endif %}
+
+
+          {% if block.settings.review_text != blank %}
+            <div class="reviews-slide-text">
+              {{ block.settings.review_text }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function(){
+    $('.reviews-slider').slick(
+      {
+        infinite: true,
+        arrows: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="review-prev"><svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L2 12L12 23" stroke="black" stroke-width="2"/></svg></button>',
+        nextArrow: '<button type="button" class="review-next"><svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L11 12L1 23" stroke="black" stroke-width="2"/></svg></button>',
+        responsive: [
+          {
+            breakpoint: 989,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              arrows: false,
+              dots: true
+            }
+          }
+        ]
+      }
+    );
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Reviews"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "review_photo",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "review_name",
+          "label": "Name",
+          "default": "Name"
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "Review Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews"
+    }
+  ]
+}
+{% endschema %}

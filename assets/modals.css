@@ -1,0 +1,222 @@
+/* ScrollBar Styling START */
+.form-modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+.form-modal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.form-modal::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.form-modal::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Firefox specific scrollbar styles */
+.form-modal {
+  scrollbar-width: thin;
+  scrollbar-color: #000 transparent;
+}
+/* ScrollBar Styling END */
+
+.form-modal {
+  position: fixed;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 592px;
+  max-height: calc(100vh - 144px);
+  background-color: white;
+  padding: 32px;
+  padding-top: 0;
+  overflow-y: scroll;
+  z-index: 10001;
+}
+
+.form-modal-close {
+  cursor: pointer;
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+}
+
+.form-modal-head {
+  padding-top: 32px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.form-modal-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-modal-form-wrapper {
+  margin-top: 40px;
+}
+
+.form-modal-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-modal-fields label {
+  align-self: flex-start;
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.form-modal-field:has(input[required]) label:after,
+.form-modal-field:has(select[required]) label:after {
+  content: "*";
+  color: red;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.form-modal-fields input,
+.form-modal-fields select {
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-modal-fields select {
+  color: rgba(0, 0, 0, 0.5);
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M6.24023 9.12012L12.0002 14.8801L17.7602 9.12012" stroke="%230D0C0D" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"/></svg>'); 
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  background-size: 24px;
+}
+
+.form-modal-fields select.selected {
+  color: rgba(0, 0, 0, 1);
+}
+
+.form-modal-fields select:focus {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-modal-fields input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form-modal-submit {
+  margin-top: 25px;
+}
+
+.form-modal-submit [type="submit"] {
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.form-modal input:-webkit-autofill {
+  background-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  color: inherit;
+}
+
+/* Thank you modal START */
+.modal-thank-you {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 592px;
+  background-color: white;
+  padding: 32px;
+  overflow-y: scroll;
+  z-index: 10001;
+}
+
+.modal-thank-you {
+  padding-top: 48px;
+}
+.modal-thank-you-close-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.modal-thank-you-title {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+}
+.modal-thank-you-message {
+  margin: 0;
+  text-align: center;
+}
+.btn.modal-thank-you-button {
+  display: block;
+  margin-top: 32px;
+  width: 100%;
+  padding: 12px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* Thank you modal END */
+
+@media only screen and (max-width: 767px) {
+  .form-modal {
+    top: 40px;
+    width: calc(100% - 80px);
+    max-height: calc(100vh - 80px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .form-modal {
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    max-height: unset;
+  }
+}

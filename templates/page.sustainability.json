@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image-with-text-overlay": {
@@ -514,23 +514,6 @@
         "blog_show_date": false,
         "post_limit": 4
       }
-    },
-    "1723819788fde6a00a": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_7TUKte": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_7TUKte"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -557,7 +540,6 @@
     "custom_collage_7zeBbt",
     "custom_collage_nakQzg",
     "content_on_image_background_P6Vefr",
-    "blog_blog_posts_Rdw7XP",
-    "1723819788fde6a00a"
+    "blog_blog_posts_Rdw7XP"
   ]
 }

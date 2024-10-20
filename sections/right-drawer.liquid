@@ -1,0 +1,156 @@
+{% assign current_language = shop.locale | split: "-" | first %}
+<div class="right-drawer-vue"></div>
+   <div search-collections="">
+      <div id="sideCart" class="drawer drawer--right drawer--cart drawer--right-hidden">
+         <div class="drawer__header sitewide--title-wrapper">
+            <div class="drawer__close js-drawer-close">
+               <button type="button" class="icon-fallback-text">
+                  <span class="fallback-text">Close cart</span> 
+                  <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M18.5 6L6.5 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     <path d="M6.5 6L18.5 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+               </button>
+            </div>
+            <input tabindex="-1" aria-hidden="true" class="sr-only"> 
+            <div class="drawer__title h2 true">
+               <span>{{ 'cart.general.title' | t }}</span>
+            </div>
+         </div>
+         <div id="CartContainer">
+            {% form 'cart', cart %}
+              {% if cart.item_count > 0 %}
+                <div class="ajaxcart__inner">
+                  {% for item in cart.items %}
+                    <div class="ajaxcart__product sidenav__item" 
+                      data-index="{{ forloop.index }}" 
+                      data-line-item-key="{{ item.key }}">
+                      <div data-line="1" class="ajaxcart__row">
+                         <div class="grid display-table">
+                            <div class="grid__item small--one-whole medium--one-quarter large--one-quarter medium--display-table-cell" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                               <a href="{{ item.url }}" class="ajaxcart__product-image">
+                                  <img src="{{ item.image | img_url: 'small' }}" srcset="{{ item.image | img_url: 'large' }}" loading="lazy" alt="{{ item.title | escape }}"> <!---->
+                               </a>
+                               <svg class="hidden cart-product-loader" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><style>.spinner_6kVp{transform-origin:center;animation:spinner_irSm .75s infinite linear}@keyframes spinner_irSm{100%{transform:rotate(360deg)}}</style><path d="M10.72,19.9a8,8,0,0,1-6.5-9.79A7.77,7.77,0,0,1,10.4,4.16a8,8,0,0,1,9.49,6.52A1.54,1.54,0,0,0,21.38,12h.13a1.37,1.37,0,0,0,1.38-1.54,11,11,0,1,0-12.7,12.39A1.54,1.54,0,0,0,12,21.34h0A1.47,1.47,0,0,0,10.72,19.9Z" class="spinner_6kVp"/></svg>
+                            </div>
+                            <div class="grid__item small--one-whole medium--two-quarters large--two-quarters medium--display-table-cell">
+                               <p>
+                                  <a href="{{ item.url }}" class="ajaxcart__product-name">{{ item.product.title }}</a>
+                                  {% for option in item.variant.options %}
+                                    <span class="ajaxcart__product-meta">{{ option }}</span> <!----> 
+                                  {% endfor %}
+                               </p>
+                               <div class="text-center">
+                                  <!----> <!----> <span class="price-no--discount hide">69000</span> 
+                                    <span class="ajaxcart-item__price">
+                                      <span class="money money-resens">
+
+                                      {% if current_language == 'en' %}
+                                        <span class="money money-resens">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                                      {% else %}
+                                        <span class="mw-price">{{ item.line_price | money }}</span>
+                                      {% endif %}
+                                      </span>
+                                    </span> 
+                                  <s>
+                                     <!---->
+                                  </s>
+                                  <!---->
+                               </div>
+                               <ul aria-label="Discount" class="ajaxcart-item__discounts">
+                                  <!---->
+                               </ul>
+                               <div class="grid--full text-center ajaxcart__quantity-wrapper">
+                                  <div class="grid__item">
+                                     <div class="ajaxcart__qty">
+                                        <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-action="-">
+                                           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" class="flex-full">
+                                              <path d="M6 12H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                           </svg>
+                                           <span class="fallback-text">−</span>
+                                        </button>
+                                        <input type="text" name="updates[]" min="0" aria-label="quantity" pattern="[0-9]*" class="ajaxcart__qty-num" value="{{ item.quantity }}"> 
+                                        <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-action="+">
+                                           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" class="flex-full">
+                                              <path d="M6 12H12M12 12H18M12 12V6M12 12V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                           </svg>
+                                           <span class="fallback-text">+</span>
+                                        </button>
+                                     </div>
+                                  </div>
+                               </div>
+                               <button type="button" class="sidenav__item-delete ajaxcart__qty-remove text-link-animated"><span class="cart-drawer--remove-btn"><a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity=0">
+                                {{ 'cart.general.remove' | t }}
+                              </a></span>
+
+                              </button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                  {% endfor %}
+
+                  <div class="ajaxcart__footer-wrapper">
+                    <div class="ajaxcart__footer">
+                       <div class="grid--full">
+                          <div class="grid__item ajaxcart__subtotal_header">
+                             <p>{{ 'cart.general.subtotal' | t }}</p>
+                          </div>
+                          <!----> 
+                          <s>
+                             <!---->
+                          </s>
+                          <ul class="grid__item ajaxcart-item__discounts" style="margin: 0px;">
+                             <!---->
+                          </ul>
+                          <p class="hide cart__total">69000</p>
+                          <div class="grid__item ajaxcart__subtotal">
+                             <p data-cart-total-info="5.0:3" class="js-subtotal_cart_drawer">
+                              <span class="money money-resens">
+
+
+                              {% if current_language == 'en' %}
+                                <!-- Calculate total price using custom elasty.price metafield for English -->
+                                {% assign total_price_eur = 0 %}
+
+                                {% for item in cart.items %}
+                                  {% assign product_price_eur = item.product.metafields.elasty.price | times: item.quantity %}
+                                  {% assign total_price_eur = total_price_eur | plus: product_price_eur %}
+                                {% endfor %}
+
+                                <span class="mw-price">{{ total_price_eur }}€</span>
+                              {% else %}
+                                <span class="mw-price">{{ cart.total_price | money }}</span>
+                              {% endif %}
+                              </span>
+                            </p>
+                          </div>
+                       </div>
+                       <div class="cart__shipping rte text-link-animated">
+                        {%- capture taxes_shipping_checkout -%}
+                          {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                            {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                          {%- elsif cart.taxes_included -%}
+                            {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
+                          {%- elsif shop.shipping_policy.body != blank -%}
+                            {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                          {%- else -%}
+                            {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
+                          {%- endif -%}
+                        {%- endcapture -%}
+                        <p class="text-center">{{ taxes_shipping_checkout }}</p>
+                       </div>
+                       <button type="submit" name="checkout" class="js-right_drawer_cart_checkout cart__checkout">
+                        {{ 'cart.general.checkout' | t }}
+                       </button>
+                    </div>
+                 </div>
+                </div>
+              {% else %}
+                <p class="empty-cart">{{ 'cart.general.empty' | t }}</p>
+              {% endif %}
+            {% endform %}
+         </div>
+      </div>
+   </div>
+</div>

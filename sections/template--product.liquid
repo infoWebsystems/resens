@@ -193,7 +193,7 @@
                           <div class="product-price-size--{{ block.settings.price_font }} product-price-group">
                             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
                             <p id="ComparePrice" class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}" v-bind:class="{ 'on-sale' : isSale }" v-if="isSale" v-money="variant.compare_at_price">
-                              <span class="money">{{ current_variant.compare_at_price | money }}</span>
+                              <span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
                             </p>
 
                             {% render 'product-pricing', current_variant: current_variant %}
@@ -684,6 +684,39 @@
 
   {%- endcase -%}
 {%- endfor -%}
+
+<script>
+
+function waitForPriceBlock(selector) {
+      return new Promise((resolve) => {
+        const observer = new MutationObserver((mutations, me) => {
+            const button = document.querySelector(selector);
+            if (button) {
+                me.disconnect();
+                resolve(button);
+            }
+        });
+
+        observer.observe(document, {
+            childList: true,
+            subtree: true
+        });
+      });
+    }
+
+    waitForPriceBlock('#ProductPrice').then((button) => {
+      setTimeout(() => {
+        const productPriceWrapper = document.querySelector('#ProductPrice');
+        const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+        const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
+        const productSpan = document.querySelector('#ProductPrice .money-resens');
+
+        if (currentLanguage == 'en') {
+          productSpan.textContent = eurPrice + "€";
+        }
+			}, 500);
+    });
+</script>
 
 
 

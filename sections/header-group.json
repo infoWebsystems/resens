@@ -62,7 +62,7 @@
         "overlay_opacity": 0,
         "show_currency_selector": false,
         "show_locale_selector": true,
-        "main_linklist": "main-menu",
+        "main_linklist": "test-menu",
         "dropdown_alignment": "left"
       }
     }

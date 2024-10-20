@@ -300,29 +300,11 @@
         "title": "",
         "faq_icon": "caret"
       }
-    },
-    "17238197730776ce49": {
-      "type": "apps",
-      "blocks": {
-        "novapost_app_novapost_Mpw6kG": {
-          "type": "shopify:\/\/apps\/novapost-app\/blocks\/novapost\/90152f55-ca93-4500-9fe1-6c3f5db831c0",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "novapost_app_novapost_Mpw6kG"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "b71609ee-6355-4679-b82d-61ff492ebea0",
     "main",
-    "16457242689a58d7f3",
-    "17238197730776ce49"
+    "16457242689a58d7f3"
   ]
 }

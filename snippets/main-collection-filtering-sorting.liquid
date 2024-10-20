@@ -163,7 +163,7 @@ Accepts:
                       <div class="facets__display">
                         <div class="facets__header text-inline-link-animated">
                           {%- assign max_price_amount = filter.range_max | money | escape -%}
-                          <span class="facets__selected">{{ "sections.collection_template.max_price" | t: price: max_price_amount }}</span>
+                          <span class="facets__selected money-resens">{{ "sections.collection_template.max_price" | t: price: max_price_amount }}</span>
                           <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" >{{ 'sections.collection_template.reset' | t }}</a>
                         </div>
                         <price-range-selector class="facets__price">
@@ -253,7 +253,9 @@ Accepts:
                   {% if filter.type == "price_range" %}
                     {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
                       <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
+                        <span class="money-resens">
                         {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
+                        </span>
                         {{ icon_close }}
                       </a>
                     {%- endif -%}
@@ -334,7 +336,9 @@ Accepts:
                 {% if filter.type == "price_range" %}
                     {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
                     <a class="active-facets__button active-facets__button--light button button--tertiary js-facet-remove" href="{{ filter.url_to_remove }}">
-                        {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
+                      <span class="money-resens">
+                      {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
+                      </span>
                         {{ icon_close }}
                     </a>
                     {%- endif -%}

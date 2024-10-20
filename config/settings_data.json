@@ -82,8 +82,8 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
-    "sm_instagram_link": "https:\/\/www.instagram.com\/re_sens_ukraine?igsh=MW0wanIwdWE4Z2Jnbw==",
-    "sm_youtube_link": "https:\/\/www.youtube.com\/@gp_group_ukraine",
+    "sm_instagram_link": "https://www.instagram.com/re_sens_ukraine?igsh=MW0wanIwdWE4Z2Jnbw==",
+    "sm_youtube_link": "https://www.youtube.com/@gp_group_ukraine",
     "social_sharing_title": "Share",
     "social_sharing_blog": true,
     "share_facebook": true,
@@ -93,13 +93,13 @@
     "popup--enable": true,
     "pop-up-time": "7",
     "pop-up-text-header-text": "Re[Sens] - your leading partner in the world of sustainable professional cosmetics.",
-    "pop-up-text-description-text": "<p>Join us to stay informed about the best offers.<\/p>",
+    "pop-up-text-description-text": "<p>Join us to stay informed about the best offers.</p>",
     "popup--show-social-icons": false,
     "popup--show-newsletter": true,
     "desktop-popup-style": "slide-up",
     "pop-up-delay": 5,
     "popup--test-mode": false,
-    "favicon": "shopify:\/\/shop_images\/resens_logo_Artboard_20_1_2x_1246aa2a-fa99-454a-bc74-83b33452900d.png",
+    "favicon": "shopify://shop_images/resens_logo_Artboard_20_1_2x_1246aa2a-fa99-454a-bc74-83b33452900d.png",
     "animations_enabled": true,
     "page_fade_enabled": true,
     "ken_burns_enabled": true,
@@ -114,26 +114,26 @@
     ],
     "blocks": {
       "8776485610325655785": {
-        "type": "shopify:\/\/apps\/hiko-social-login\/blocks\/hiko-auth\/3832d7e1-5bcd-4b72-91da-236b57feef8f",
+        "type": "shopify://apps/hiko-social-login/blocks/hiko-auth/3832d7e1-5bcd-4b72-91da-236b57feef8f",
         "disabled": false,
         "settings": {
           "social_font": "enable"
         }
       },
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
       },
       "5946647744298494267": {
-        "type": "shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {
         }
       },
       "15912215999290715800": {
-        "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-modal\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
+        "type": "shopify://apps/geolocation-orbe/blocks/app-embed-modal/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
         "disabled": true,
         "settings": {
           "test_mode": false,
@@ -144,7 +144,7 @@
           "option_search_country": false,
           "title": "Are you in the right place?",
           "text": "Please select your shipping country.",
-          "helper_text": "<p>Buy from the country of your choice. Remember that we can only ship your order to addresses located in the chosen country.<\/p>",
+          "helper_text": "<p>Buy from the country of your choice. Remember that we can only ship your order to addresses located in the chosen country.</p>",
           "cta_text": "Shop now",
           "fallback_text": "We don’t ship to {country}",
           "alignment_image": "right",
@@ -162,7 +162,7 @@
         }
       },
       "5858961087409699889": {
-        "type": "shopify:\/\/apps\/geolocation-orbe\/blocks\/app-embed-footer-selector\/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
+        "type": "shopify://apps/geolocation-orbe/blocks/app-embed-footer-selector/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
         "disabled": true,
         "settings": {
           "footer_ui_type": "popup",
@@ -187,7 +187,7 @@
         }
       },
       "1232542678405107163": {
-        "type": "shopify:\/\/apps\/instafeed\/blocks\/head-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": true,
         "settings": {
         }
