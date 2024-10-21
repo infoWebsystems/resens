@@ -626,33 +626,6 @@
     ]
   },
   {
-    "name": "t:settings_schema.CartDiscount.name",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "buy_x_get_y_activate",
-        "default": false,
-        "label": "Activate Discount" 
-      },
-      {
-        "type": "number",
-        "id": "buy_x_get_y_quantity",
-        "default": 3,
-        "label": "Product quantity to apply the discount"
-      },
-      {
-        "type": "product_list",
-        "id": "buy_x_get_y_product_list",
-        "label": "Product List"
-      },
-      {
-        "type": "product",
-        "id": "buy_x_get_y_product_gift",
-        "label": "Product to Gift"
-      }
-    ]
-  },
-  {
     "name": "t:settings_schema.Products.name",
     "settings": [
       {
