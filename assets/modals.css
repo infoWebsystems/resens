@@ -160,10 +160,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 592px;
+  width: 491px;
   background-color: white;
   padding: 32px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   z-index: 10001;
 }
 
@@ -189,6 +189,7 @@
 }
 .modal-thank-you-message {
   margin: 0;
+  margin-top: 12px;
   text-align: center;
 }
 .btn.modal-thank-you-button {
@@ -210,6 +211,10 @@
     width: calc(100% - 80px);
     max-height: calc(100vh - 80px);
   }
+  .modal-thank-you {
+    top: 50%;
+    width: calc(100% - 80px);
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -218,5 +223,18 @@
     bottom: 0px;
     width: 100%;
     max-height: unset;
+  }
+  .modal-thank-you {
+    top: 50%;
+    width: 100%;
+    padding: 16px;
+  }
+  .modal-thank-you-close-icon {
+    top: 16px;
+    right: 16px;
+  }
+  .modal-thank-you-title {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
