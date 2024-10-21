@@ -12,31 +12,6 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
-        "image_VhfzBy": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "text": "",
-            "first_button_label": "Shop now",
-            "first_button_link": "shopify://collections/all",
-            "second_button_label": "SUSTAINABILITY",
-            "second_button_link": "shopify://pages/sustainability",
-            "image": "shopify://shop_images/b2c___web2_engl.png",
-            "desktop-caption-heading-size": 80,
-            "desktop-caption-body-text-size": 24,
-            "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/b2c___mobile7_engl.png",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 0,
-            "caption-text": "#242424",
-            "button-text": "#ffffff",
-            "button-background": "#242424",
-            "hover-button-background": "#9f9f9f"
-          }
-        },
         "image_iQ7EqU": {
           "type": "image",
           "settings": {
@@ -67,14 +42,14 @@
             "title": "",
             "text": "",
             "first_button_label": "",
-            "first_button_link": "shopify:\/\/collections\/all",
+            "first_button_link": "shopify://collections/all",
             "second_button_label": "",
             "second_button_link": "",
-            "image": "shopify:\/\/shop_images\/big.webp",
+            "image": "shopify://shop_images/big.webp",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify:\/\/shop_images\/mobile.webp",
+            "mobile_image": "shopify://shop_images/mobile.webp",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
@@ -616,9 +591,9 @@
         "review_6YgrpD": {
           "type": "review",
           "settings": {
-            "review_photo": "shopify://shop_images/aiony-haust-3TLl_97HNJo-unsplash.jpg",
-            "review_name": "Sarah Thompson:",
-            "review_text": "\"I absolutely love this site! The skincare products are top-notch, and I’ve noticed a significant improvement in my skin’s texture. The customer service is also amazing. Highly recommend!\""
+            "review_photo": "shopify://shop_images/3R2A0017.jpg",
+            "review_name": "Анна Завальська",
+            "review_text": "Пишаюсь стати однією зперших, хто спробував лінійку нової розумної косметики з айдентикою України -бо це любов з першого дотику, насолода від текстур, аромату, формату і форми.<br><br>Я обожнюю концептуальнийпідхід і в цьому випадку я в захваті від бренду, який глобально ставить за метупіклуватись про тебе = природу, без жодного негативного впливу."
           }
         },
         "review_WqjhUV": {
