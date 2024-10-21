@@ -380,7 +380,3 @@
 .ajaxcart__footer .cart__checkout {
   font-size: 14px !important;
 }
-
-.homepage-slider-container .swiper-container .responsive-image-wrapper img {
-  object-fit: fill !important;
-}

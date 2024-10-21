@@ -187,27 +187,27 @@ async function applyDiscountToCartDrawer (isCartPage) {
           const eligibleProducts = product_list;
           const freeProductId = product_gift_variant_id;
 
+          let eligibleCount = 0;
+          let isGiftInTheCart = false;
+
+          let totalPrice = 0;
+
+          cart.items.forEach(item => {
+            if (eligibleProducts.includes(item.product_id.toString())) {
+              eligibleCount += item.quantity;
+              totalPrice += (item.price / 100) * item.quantity
+            }
+
+            if (item.product_id.toString() == product_gift_id) {
+              isGiftInTheCart = true;
+            }
+          })
+
+          let formData;
+
           if (stringToBoolean(is_minimum_quantity_of_items)) {
-            let eligibleCount = 0;
-            let isGiftInTheCart = false;
-
-            cart.items.forEach(item => {
-              if (eligibleProducts.includes(item.product_id.toString())) {
-                eligibleCount += item.quantity;
-              }
-
-              // if (item.product_id.toString() == product_gift_id && item.discounts.length > 0) {
-              if (item.product_id.toString() == product_gift_id) {
-                isGiftInTheCart = true;
-              }
-            })
-
-            // console.log(cart);
-
-            // console.log(isGiftInTheCart);
-
             if (eligibleCount >= Number(minimum_quantity_of_items) && !isGiftInTheCart) {
-              let formData = {
+              formData = {
               'items': [{
                 'id': freeProductId,
                 'quantity': Number(product_gift_product_quantity)
@@ -235,21 +235,8 @@ async function applyDiscountToCartDrawer (isCartPage) {
           }
 
           if (stringToBoolean(is_minimum_purchase_amount)) {
-            let totalPrice = 0;
-            let isGiftInTheCart = false;
-
-            cart.items.forEach(item => {
-              if (eligibleProducts.includes(item.product_id.toString())) {
-                totalPrice += (item.price / 100) * item.quantity
-              }
-              // if (item.product_id.toString() == product_gift_id && item.discounts.length > 0) {
-              if (item.product_id.toString() == product_gift_id) {
-                isGiftInTheCart = true;
-              }
-            })
-
             if (totalPrice >= Number(minimum_purchase_amount) && !isGiftInTheCart) {
-              let formData = {
+              formData = {
               'items': [{
                 'id': freeProductId,
                 'quantity': Number(product_gift_product_quantity)
@@ -281,5 +268,106 @@ async function applyDiscountToCartDrawer (isCartPage) {
 
     checkAndApplyDiscount();
   }
+
+  // if (isNotExpired) {
+  //   function checkAndApplyDiscount() {
+  //     fetch('/cart.js')
+  //       .then(response => response.json())
+  //       .then(cart => {
+  //         const eligibleProducts = product_list;
+  //         const freeProductId = product_gift_variant_id;
+
+  //         if (stringToBoolean(is_minimum_quantity_of_items)) {
+  //           let eligibleCount = 0;
+  //           let isGiftInTheCart = false;
+
+  //           cart.items.forEach(item => {
+  //             if (eligibleProducts.includes(item.product_id.toString())) {
+  //               eligibleCount += item.quantity;
+  //             }
+
+  //             // if (item.product_id.toString() == product_gift_id && item.discounts.length > 0) {
+  //             if (item.product_id.toString() == product_gift_id) {
+  //               isGiftInTheCart = true;
+  //             }
+  //           })
+
+  //           if (eligibleCount >= Number(minimum_quantity_of_items) && !isGiftInTheCart) {
+  //             let formData = {
+  //             'items': [{
+  //               'id': freeProductId,
+  //               'quantity': Number(product_gift_product_quantity)
+  //               }]
+  //             };
+
+  //             fetch(window.Shopify.routes.root + 'cart/add.js', {
+  //               method: 'POST',
+  //               headers: {
+  //                 'Content-Type': 'application/json'
+  //               },
+  //               body: JSON.stringify(formData)
+  //             })
+  //             .then(response => {
+  //               if (isCartPage) {
+  //                 window.location.reload();
+  //               }
+  //               updateCartDrawer();
+  //               return response.json();
+  //             })
+  //             .catch((error) => {
+  //               console.error('Error:', error);
+  //             });
+  //           }
+  //         }
+
+  //         if (stringToBoolean(is_minimum_purchase_amount)) {
+  //           let totalPrice = 0;
+  //           let isGiftInTheCart = false;
+
+  //           cart.items.forEach(item => {
+  //             if (eligibleProducts.includes(item.product_id.toString())) {
+  //               totalPrice += (item.price / 100) * item.quantity
+  //             }
+  //             // if (item.product_id.toString() == product_gift_id && item.discounts.length > 0) {
+  //             if (item.product_id.toString() == product_gift_id) {
+  //               isGiftInTheCart = true;
+  //             }
+  //           })
+
+  //           if (totalPrice >= Number(minimum_purchase_amount) && !isGiftInTheCart) {
+  //             let formData = {
+  //             'items': [{
+  //               'id': freeProductId,
+  //               'quantity': Number(product_gift_product_quantity)
+  //               }]
+  //             };
+
+  //             fetch(window.Shopify.routes.root + 'cart/add.js', {
+  //               method: 'POST',
+  //               headers: {
+  //                 'Content-Type': 'application/json'
+  //               },
+  //               body: JSON.stringify(formData)
+  //             })
+  //             .then(response => {
+  //               if (isCartPage) {
+  //                 window.location.reload();
+  //               }
+  //               updateCartDrawer();
+
+  //               return response.json();
+  //             })
+  //             .catch((error) => {
+  //               console.error('Error:', error);
+  //             });
+  //           }
+  //         }
+  //     });
+  //   }
+
+  //   checkAndApplyDiscount();
+  // }
+
+
 }
 // Discount Applying END
