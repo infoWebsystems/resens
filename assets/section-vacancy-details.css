@@ -22,23 +22,28 @@
 }
 
 .vacancy-details-description h2 {
-  
+  font-size: 28px;
+  line-height: 40px;
 }
 
 .vacancy-details-description h3 {
-  
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .vacancy-details-description h4 {
-  
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .vacancy-details-description h5 {
-  
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .vacancy-details-description h6 {
-  
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .vacancy-details-description p {
@@ -64,5 +69,25 @@
   .vacancy-details-description h1 {
     font-size: 20px;
     line-height: 25px;
+  }
+  .vacancy-details-description h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .vacancy-details-description h3 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .vacancy-details-description h4 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .vacancy-details-description h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .vacancy-details-description h6 {
+    font-size: 13px;
+    line-height: 17px;
   }
 }
