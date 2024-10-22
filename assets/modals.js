@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector('body').style.overflow = 'auto';
 
       if (window.location.href.indexOf('?contact_posted=true') !== -1) {
-        window.history.replaceState(null, null, window.location.pathname);
+        const newUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState(null, null, newUrl);
       }
     }
 

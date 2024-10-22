@@ -228,6 +228,7 @@
     top: 50%;
     width: 100%;
     padding: 16px;
+    padding-top: 25px;
   }
   .modal-thank-you-close-icon {
     top: 16px;
