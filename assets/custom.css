@@ -47,6 +47,7 @@
   font-size: 40px;
   margin-top: 26px;
   letter-spacing: 5px !important;
+  line-height: 40px;
 }
 
 .site-header__logo img.logo_image {
@@ -132,6 +133,7 @@
     h2.homepage-sections--title {
     font-size: 20px !important;
     margin: 30px 0 0 0;
+    line-height: 24px;
     /* display: none; */
   }
   .template-page-sustainability .responsive-image-wrapper img {
