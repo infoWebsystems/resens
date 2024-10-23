@@ -46,7 +46,11 @@
                                       <span class="money money-resens">
 
                                       {% if current_language == 'en' %}
-                                        <span class="money money-resens">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                                       {% if item.final_price == 0 %}
+                                          <span class="money money-resens">0€</span>
+                                       {% else %}
+                                          <span class="money money-resens">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                                       {% endif %}
                                       {% else %}
                                         <span class="mw-price">{{ item.line_price | money }}</span>
                                       {% endif %}
