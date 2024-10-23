@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const newUrl = window.location.origin + window.location.pathname;
         window.history.replaceState(null, null, newUrl);
       }
+
+      modal.querySelectorAll('form.contact-form .submit').forEach(form => {
+        form.setAttribute('data-is-submitted-successfully', false);
+      });
     }
 
     for (let i = 0; i < btnsOpenModal.length; i++) {
