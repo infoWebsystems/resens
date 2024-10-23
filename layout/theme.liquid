@@ -199,9 +199,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {% form 'contact' %}
         {{ form.errors | default_errors }}
 
-        <input type="hidden" name="contact[form_type]" value="Resume Form">
-      
         <div class="form-modal-fields">
+          <div class="form-modal-field hidden">
+            <input type="text" name="contact[form_topic]" value="Resume Form"/>
+          </div>
+
+
           <div class="form-modal-field name">
             <label for="name">{{ form_fields.name_label }}</label>
             <input type="text" name="contact[first_name]" id="name" placeholder="{{ form_fields.name_placeholder }}" required/>
@@ -277,9 +280,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="form-modal-form-wrapper">
       {% form 'contact' %}
 
-        <input type="hidden" name="contact[form_type]" value="PartnerShip Form">
-
         <div class="form-modal-fields">
+          <div class="form-modal-field hidden">
+            <input type="text" name="contact[form_topic]" value="Partnership Form"/>
+          </div>
+
+
           <div class="form-modal-field subject">
             <label for="subject">{{ form_fields.topic_label }}</label>
 
