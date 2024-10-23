@@ -141,11 +141,31 @@
                 {%- if original_line_price != item.final_line_price and item.line_level_discount_allocations != blank -%}
                   <span class="hidden">{{ 'products.general.regular_price' | t }}</span>
                   <span class="cart-total-label__discount">
+                  {% assign current_language = shop.locale | split: "-" | first %}
+
+                  {% if current_language == 'en' %}
+                    <span class="money-resens discount--sale-color discount--line-through">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                  {% else %}
                     <span class="money-resens discount--sale-color discount--line-through">{{ original_line_price | money }}</span>
+                  {% endif %}
                   </span>
                   <span class="hidden">{{ 'products.general.sale_price' | t }}</span>
                   <span class="cart-total-label__discount">
-                    <span class="money money-resens">{{ item.final_line_price | money }}</span>
+
+                    {% if current_language == 'en' %}
+
+                      {% assign part = item.final_line_price %}
+                      {% assign total = item.original_price %}
+                      {% assign percentage = part | times: 100.0 | divided_by: total %}
+  
+                      {% assign value = item.product.metafields.elasty.price %}
+                      {% assign percentage = percentage | divided_by: 100 %}
+                      {% assign result = value | times: percentage %}
+  
+                      <span class="money money-resens">{{ result }}€</span>
+                    {% else %}
+                      <span class="money money-resens">{{ item.final_line_price | money }}</span>
+                    {% endif %} 
                   </span>
                 {% elsif original_line_price != item.final_line_price and item.line_level_discount_allocations == blank %}
                   <span class="hidden">{{ 'products.general.regular_price' | t }}</span>
@@ -168,9 +188,32 @@
 
                 {%- if item.line_level_discount_allocations != blank -%}
                   <ul class="order-discount--cart-list discount--sale-color" aria-label="{{ 'customer.order.discount' | t }}">
+
+
+
+
                     {%- for discount_allocation in item.line_level_discount_allocations -%}
                       <li class="order-discount--item">
-                        <strong>{{ discount_allocation.discount_application.title }} (-<span class="money money-resens">{{ discount_allocation.amount | money }}</span>)</strong>
+                        <strong>{{ discount_allocation.discount_application.title }} (-<span class="money money-resens">
+
+                        {% assign current_language = shop.locale | split: "-" | first %}
+                        
+                        {% if current_language == 'en' %}
+                        
+                          {% assign part = discount_allocation.amount %}
+                          {% assign total = item.original_price %}
+                          {% assign percentage = part | times: 100.0 | divided_by: total %}
+
+                          {% assign value = item.product.metafields.elasty.price %}
+                          {% assign percentage = percentage | divided_by: 100 %}
+                          {% assign result = value | times: percentage %}
+
+                          {{ result }}€
+                        {% else %}
+                          {{ discount_allocation.amount | money }}
+                        {% endif %} 
+
+                        </span>)</strong>
                       </li>
                     {%- endfor -%}
                   </ul>
