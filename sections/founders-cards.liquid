@@ -95,6 +95,18 @@
                 points.style.display = "none";
                 buttonText.innerHTML = "Show Less";
             }
+
+            function trimTextNodes(node) {
+              node.childNodes.forEach(child => {
+                if (child.nodeType === Node.TEXT_NODE) {
+                  child.textContent = child.textContent.trim();
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                  trimTextNodes(child);
+                }
+              });
+            }
+
+            trimTextNodes(element.querySelector('.description'));
         }
 
         document.querySelectorAll('.onTextButton').forEach(button => {

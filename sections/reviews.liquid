@@ -1,5 +1,11 @@
 <link rel="preload" href="{{ 'section-reviews.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 
+<style>
+  .moreText {
+    display: none;
+  }
+</style>
+
 <section class="reviews wow shown-on-scroll animated fadeInUp">
   <div class="wrapper-padded">
     {% if section.settings.section_title != blank %}
@@ -23,17 +29,89 @@
             </div>
           {% endif %}
 
+          {% if block.settings.review_about != blank %}
+            <div class="reviews-slide-about">
+              {{ block.settings.review_about }}
+            </div>
+          {% endif %}
+
+          {% assign quoteLength = block.settings.review_text | size %}
 
           {% if block.settings.review_text != blank %}
             <div class="reviews-slide-text">
-              {{ block.settings.review_text }}
+              {% if quoteLength <= 100 %}
+                {{ block.settings.review_text }}
+              {% else %}
+                {% assign original_string = block.settings.review_text %}
+                {% assign truncated_string = original_string | truncate: 80, "" %}
+                {% assign truncated_length = truncated_string | size %}
+                {% assign remaining_string_start = truncated_length %}
+                {% assign remaining_string = original_string | slice: remaining_string_start, original_string.size %}
+
+                <p>
+                  {{ truncated_string }}
+                  <span class="points">...</span>
+
+                  <span class="moreText">
+                    {{ remaining_string }}
+                  </span>
+                </p>
+              {% endif %}
             </div>
+          {% endif %}
+
+          {% if quoteLength > 100 %}
+            <div class="read-more textButton onTextButton">Show more</div>
           {% endif %}
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
+
+<script>
+  function toggleText(element) {
+    let points =
+      element.querySelector(".points");
+
+      let showMoreText =
+          element.querySelector(".moreText");
+
+      let buttonText =
+          element.querySelector(".textButton");
+
+
+      if (points.style.display === "none") {
+          showMoreText.style.display = "none";
+          points.style.display = "inline";
+          buttonText.innerHTML = "Show More";
+      }
+      else {
+          showMoreText.style.display = "inline";
+          points.style.display = "none";
+          buttonText.innerHTML = "Show Less";
+      }
+
+      function trimTextNodes(node) {
+        node.childNodes.forEach(child => {
+          if (child.nodeType === Node.TEXT_NODE) {
+            child.textContent = child.textContent.trim();
+          } else if (child.nodeType === Node.ELEMENT_NODE) {
+            trimTextNodes(child);
+          }
+        });
+      }
+
+      trimTextNodes(element.querySelector('.reviews-slide-text'));
+    }
+
+    document.querySelector('.reviews-slider').addEventListener('click', (e) => {
+      if (e.target.closest('.onTextButton')) {
+        const node = e.target.closest('.onTextButton').parentElement;
+        toggleText(node);
+      }
+    })
+</script>
 
 <script>
   $(document).ready(function(){
@@ -93,6 +171,12 @@
           "id": "review_name",
           "label": "Name",
           "default": "Name"
+        },
+        {
+          "type": "text",
+          "id": "review_about",
+          "label": "Person About",
+          "default": "About"
         },
         {
           "type": "text",

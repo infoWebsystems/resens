@@ -29,11 +29,19 @@
 
 .reviews .reviews-slide-name {
   margin-top: 32px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+.reviews .reviews-slide-about {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
 }
 
 .reviews .reviews-slide-text {
@@ -43,6 +51,16 @@
   font-size: 16px;
   line-height: 160%;
   text-align: center;
+}
+
+.reviews .read-more {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .reviews .reviews-slide-photo .image {
@@ -74,6 +92,9 @@
   .reviews .reviews-slide-text {
     margin-top: 12px;
     font-size: 14px;
+  }
+  .reviews .read-more {
+    margin-top: 12px;
   }
 }
 
