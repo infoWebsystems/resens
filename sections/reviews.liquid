@@ -39,11 +39,11 @@
 
           {% if block.settings.review_text != blank %}
             <div class="reviews-slide-text">
-              {% if quoteLength <= 100 %}
+              {% if quoteLength <= 150 %}
                 {{ block.settings.review_text }}
               {% else %}
                 {% assign original_string = block.settings.review_text %}
-                {% assign truncated_string = original_string | truncate: 80, "" %}
+                {% assign truncated_string = original_string | truncate: 150, "" %}
                 {% assign truncated_length = truncated_string | size %}
                 {% assign remaining_string_start = truncated_length %}
                 {% assign remaining_string = original_string | slice: remaining_string_start, original_string.size %}
@@ -61,7 +61,13 @@
           {% endif %}
 
           {% if quoteLength > 100 %}
-            <div class="read-more textButton onTextButton">Show more</div>
+            {% assign current_language = shop.locale | split: "-" | first %}
+
+            {% if current_language == 'en' %}
+              <div class="read-more textButton onTextButton">Show more</div>
+            {% else %}
+              <div class="read-more textButton onTextButton">Показати більше</div>
+            {% endif %}
           {% endif %}
         </div>
       {% endfor %}
@@ -84,12 +90,12 @@
       if (points.style.display === "none") {
           showMoreText.style.display = "none";
           points.style.display = "inline";
-          buttonText.innerHTML = "Show More";
+          document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show More" : buttonText.innerHTML = "Показати більше"
       }
       else {
           showMoreText.style.display = "inline";
           points.style.display = "none";
-          buttonText.innerHTML = "Show Less";
+          document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show Less" : buttonText.innerHTML = "Приховати"
       }
 
       function trimTextNodes(node) {
@@ -117,7 +123,7 @@
   $(document).ready(function(){
     $('.reviews-slider').slick(
       {
-        infinite: true,
+        infinite: false,
         arrows: true,
         dots: false,
         slidesToShow: 3,

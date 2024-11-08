@@ -95,6 +95,8 @@
   }
   .reviews .read-more {
     margin-top: 12px;
+    font-size:14px;
+    line-height:22.4px;
   }
 }
 
