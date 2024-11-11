@@ -602,6 +602,14 @@
             "review_text": "Так сильно люблю цю косметику, що вона зі мною в усіх подорожах. Мій улюблений продукт – матувальний крем длячутливої шкіри. А без маски-гоммаж з гіалуроновою кислотою взагалі нікуди. Це чудо чудесне, а не маска. Не можу вам передати, наскільки я щаслива, що маю такий догляд за шкірою."
           }
         },
+        "review_VFRhQ9": {
+          "type": "review",
+          "settings": {
+            "review_name": "Name",
+            "review_about": "About",
+            "review_text": "Review Text"
+          }
+        },
         "review_ihwrhy": {
           "type": "review",
           "settings": {
@@ -633,6 +641,7 @@
       "block_order": [
         "review_6YgrpD",
         "review_WqjhUV",
+        "review_VFRhQ9",
         "review_ihwrhy",
         "review_UrPGMn",
         "review_BVyjn3"
