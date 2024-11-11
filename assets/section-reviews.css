@@ -53,8 +53,12 @@
   text-align: center;
 }
 
+.reviews-slide-text p {
+  margin-bottom: 16px;
+}
+
 .reviews .read-more {
-  margin-top: 16px;
+  margin-top: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
@@ -93,8 +97,10 @@
     margin-top: 12px;
     font-size: 14px;
   }
+  .reviews-slide-text p {
+    margin-bottom: 12px;
+  }
   .reviews .read-more {
-    margin-top: 12px;
     font-size:14px;
     line-height:22.4px;
   }

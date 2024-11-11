@@ -52,7 +52,7 @@
                   {{ truncated_string }}
                   <span class="points">...</span>
 
-                  <span class="moreText">
+                  <span class="moreText invisible">
                     {{ remaining_string }}
                   </span>
                 </p>
@@ -77,8 +77,8 @@
 
 <script>
   function toggleText(element) {
-    let points =
-      element.querySelector(".points");
+      let points =
+        element.querySelector(".points");
 
       let showMoreText =
           element.querySelector(".moreText");
@@ -90,12 +90,12 @@
       if (points.style.display === "none") {
           showMoreText.style.display = "none";
           points.style.display = "inline";
-          document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show More" : buttonText.innerHTML = "Показати більше"
+          document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show more" : buttonText.innerHTML = "Показати більше"
       }
       else {
           showMoreText.style.display = "inline";
           points.style.display = "none";
-          document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show Less" : buttonText.innerHTML = "Приховати"
+          document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show less" : buttonText.innerHTML = "Приховати"
       }
 
       function trimTextNodes(node) {
