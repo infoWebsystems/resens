@@ -66,9 +66,7 @@
         "image_iQ7EqU",
         "image_hnYhg8"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "desktop_height": "full_screen",
         "mobile_height": "full_screen",
@@ -143,8 +141,7 @@
         },
         "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_quick_shop-1": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -337,8 +334,7 @@
         },
         "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_quick_shop-1": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -600,10 +596,10 @@
         "review_WqjhUV": {
           "type": "review",
           "settings": {
-            "review_photo": "shopify://shop_images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
-            "review_name": "Emily Carter:",
-            "review_about": "About",
-            "review_text": "\"The website is easy to navigate, and the product descriptions are detailed, which makes it easy to choose the right items. I especially love their eco-friendly packaging and cruelty-free products!\""
+            "review_photo": "shopify://shop_images/3R2A9753.jpg",
+            "review_name": "Оксана Шаварська",
+            "review_about": "Письменниця,сценаристка, блогерка",
+            "review_text": "Так сильно люблю цю косметику, що вона зі мною в усіх подорожах. Мій улюблений продукт – матувальний крем длячутливої шкіри. А без маски-гоммаж з гіалуроновою кислотою взагалі нікуди. Це чудо чудесне, а не маска. Не можу вам передати, наскільки я щаслива, що маю такий догляд за шкірою."
           }
         },
         "review_ihwrhy": {
