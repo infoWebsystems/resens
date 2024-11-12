@@ -109,9 +109,7 @@
     "social_sharing_product": true,
     "quick_shop_enable": false,
     "quick_add_enable": true,
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "8776485610325655785": {
         "type": "shopify://apps/hiko-social-login/blocks/hiko-auth/3832d7e1-5bcd-4b72-91da-236b57feef8f",
@@ -123,14 +121,12 @@
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "5946647744298494267": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15912215999290715800": {
         "type": "shopify://apps/geolocation-orbe/blocks/app-embed-modal/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
@@ -189,8 +185,7 @@
       "1232542678405107163": {
         "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
