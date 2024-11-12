@@ -595,6 +595,7 @@
         "logo_image_VdtdP7": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/vogue-logo-svg-vector.svg",
             "link": ""
           }
         },
@@ -637,6 +638,7 @@
         "logo_image_Ucd984",
         "logo_image_6NdPTh"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "width": 150,
