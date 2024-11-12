@@ -602,13 +602,15 @@
         "logo_image_KrqTEY": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/playboy-2.svg",
             "link": ""
           }
         },
         "logo_image_n4pkqp": {
           "type": "logo_image",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/images.png",
+            "link": "https://viva.ua/events/17960-liliya-pustovit-karolina-ashion-anna-zavalska-zirki-na-prezentatsii-brendu-resens"
           }
         },
         "logo_image_PGjKqK": {
@@ -638,7 +640,6 @@
         "logo_image_Ucd984",
         "logo_image_6NdPTh"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "width": 150,
