@@ -38,6 +38,7 @@
         },
         "image_hnYhg8": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
@@ -636,7 +637,6 @@
         "logo_image_Ucd984",
         "logo_image_6NdPTh"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "width": 150,
