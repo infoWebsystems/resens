@@ -7,45 +7,11 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
-        "image_VhfzBy": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "text": "",
-            "first_button_label": "Shop now",
-            "first_button_link": "shopify://collections/all",
-            "second_button_label": "SUSTAINABILITY",
-            "second_button_link": "shopify://pages/sustainability",
-            "image": "shopify://shop_images/b2c___web2_engl.png",
-            "desktop-caption-heading-size": 80,
-            "desktop-caption-body-text-size": 24,
-            "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/b2c___mobile7_engl.png",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 0,
-            "caption-text": "#242424",
-            "button-text": "#ffffff",
-            "button-background": "#242424",
-            "hover-button-background": "#9f9f9f"
-          }
-        },
         "image_iQ7EqU": {
           "type": "image",
           "settings": {
@@ -617,7 +583,6 @@
         "review_UrPGMn",
         "review_BVyjn3"
       ],
-      "disabled": true,
       "settings": {
         "section_title": "Reviews"
       }
@@ -679,7 +644,6 @@
     },
     "content_on_image_background_zcRVa3": {
       "type": "content-on-image-background",
-      "disabled": true,
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "BOOST YOUR BUSINESS WITH RE[SENS]",
