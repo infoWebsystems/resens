@@ -231,11 +231,11 @@
         "card_WQ6A4Q",
         "card_bBKdFJ"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "content_on_image_background_hzaWYV": {
       "type": "content-on-image-background",
+      "disabled": true,
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "BOOST YOUR BUSINESS WITH RE[SENS]",
