@@ -177,6 +177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   Cart Drawer, also used by 'Quick View', and 'Search'
   {% endcomment %}
   {% comment %} {% render 'right-drawer' %} {% endcomment %}
+  
   {% section 'right-drawer' %}
 
   <div id="DrawerOverlay" class="drawer-overlay"></div>
@@ -357,7 +358,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="form-overlay hidden"></div>
 
-  <div id="PageContainer" data-editor-open="{{ request.design_mode }}" data-cart-action="{{ settings.ajax_cart_method }}" data-language-url="{{ localization.language.root_url }}">
+  {% assign buy_x_get_y_fields = shop.metaobjects.buy_x_get_y_discount['buy-x-get-y-discount'] %}
+
+  {% assign product_ids = "" %}
+
+  {% for product in buy_x_get_y_fields.product_list.value.products %}
+    {% assign product_ids = product_ids | append: product.id %}
+    {% unless forloop.last %}
+      {% assign product_ids = product_ids | append: "," %}
+    {% endunless %}
+  {% endfor %}
+
+  <div id="PageContainer" data-editor-open="{{ request.design_mode }}" data-cart-action="{{ settings.ajax_cart_method }}" data-language-url="{{ localization.language.root_url }}"
+    data-buy_x_get_y_is_minimum_quantity_of_items="{{ buy_x_get_y_fields.minimum_quantity_of_items }}"
+    data-buy_x_get_y_is_minimum_purchase_amount="{{ buy_x_get_y_fields.minimum_purchase_amount }}"
+    data-buy_x_get_y_minimum_quantity_of_items="{{ buy_x_get_y_fields.quantity }}"
+    data-buy_x_get_y_minimum_purchase_amount="{{ buy_x_get_y_fields.amount }}"
+    data-buy_x_get_y_product_list="{{ product_ids }}"
+    data-buy_x_get_y_product_gift_id="{{ buy_x_get_y_fields.gift_product.value.id }}"
+    data-buy_x_get_y_product_gift_variant_id="{{ buy_x_get_y_fields.gift_product.value.first_available_variant.id }}"
+    data-buy_x_get_y_product_gift_product_quantity="{{ buy_x_get_y_fields.gift_product_quantity }}"
+    data-buy_x_get_y_start_date="{{ buy_x_get_y_fields.start_date }}"
+    data-buy_x_get_y_end_date="{{ buy_x_get_y_fields.end_date_optional }}"
+  >
     <div class="no-js disclaimer">
       <p>This store requires javascript to be enabled for some features to work correctly.</p>
     </div>
@@ -441,8 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "giftwrapProduct": {{ settings.giftwrap_product_selector | json }}
     }
   </script>
+
   {% if request.design_mode %}<script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>{% endif %}
-    
-  {% render 'currencies' %}
 </body>
 </html>

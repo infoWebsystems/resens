@@ -155,6 +155,9 @@
         }
       }
     },
+    "CartDiscount": {
+      "name": "Cart Discount"
+    },
     "Products": {
       "name": "Products",
       "settings": {

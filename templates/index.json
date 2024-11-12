@@ -12,31 +12,6 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
-        "image_VhfzBy": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "text": "",
-            "first_button_label": "Shop now",
-            "first_button_link": "shopify://collections/all",
-            "second_button_label": "SUSTAINABILITY",
-            "second_button_link": "shopify://pages/sustainability",
-            "image": "shopify://shop_images/b2c___web2_engl.png",
-            "desktop-caption-heading-size": 80,
-            "desktop-caption-body-text-size": 24,
-            "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/b2c___mobile7_engl.png",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 0,
-            "caption-text": "#242424",
-            "button-text": "#ffffff",
-            "button-background": "#242424",
-            "hover-button-background": "#9f9f9f"
-          }
-        },
         "image_iQ7EqU": {
           "type": "image",
           "settings": {
@@ -60,15 +35,38 @@
             "button-background": "#242424",
             "hover-button-background": "#9f9f9f"
           }
+        },
+        "image_hnYhg8": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "",
+            "first_button_link": "shopify://collections/all",
+            "second_button_label": "",
+            "second_button_link": "",
+            "image": "shopify://shop_images/big.webp",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile_image": "shopify://shop_images/mobile.webp",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9f9f9f"
+          }
         }
       },
       "block_order": [
-        "image_VhfzBy",
-        "image_iQ7EqU"
+        "image_iQ7EqU",
+        "image_hnYhg8"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "desktop_height": "full_screen",
         "mobile_height": "full_screen",
@@ -143,8 +141,7 @@
         },
         "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_quick_shop-1": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -283,8 +280,7 @@
         },
         "template--16567602479262__e8654ad7-b205-46a1-b672-af13dcfa8fe9-product_card_quick_shop-1": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -657,7 +653,6 @@
       "blocks": {
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "disabled": true,
           "settings": {
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
@@ -671,7 +666,6 @@
       "block_order": [
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -681,6 +675,7 @@
       "blocks": {
         "article_ekRVbW": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "blog_post_1": "news/greenwashing-vs-sustainable",
             "blog_post_2": "",

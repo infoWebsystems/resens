@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_body_text": "#000000",
@@ -91,6 +91,18 @@
     "animations_enabled": true,
     "page_fade_enabled": true,
     "ken_burns_enabled": true,
+    "buy_x_get_y_activate": true,
+    "buy_x_get_y_product_list": [
+      "cleanup-emulsion",
+      "cleanup-gel",
+      "cleanup-absorbent-mask",
+      "soft-hyaluronic-gommage",
+      "soft-silk-gommage",
+      "brightening-peel-hpa",
+      "3action-exosome-boost-serum",
+      "3action-exosome-boost-eye-cream"
+    ],
+    "buy_x_get_y_product_gift": "resens-tube-squeezer-key",
     "enable-sale-badge": true,
     "enable-sold-out-badge": true,
     "show_reviews": true,

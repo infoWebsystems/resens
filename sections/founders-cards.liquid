@@ -52,9 +52,13 @@
 
 
               {% if quoteLength > 100 %}
-                <div class="read-more textButton onTextButton">
-                  Show more
-                </div>
+                {% assign current_language = shop.locale | split: "-" | first %}
+
+                {% if current_language == 'en' %}
+                  <div class="read-more textButton onTextButton">Show more</div>
+                {% else %}
+                  <div class="read-more textButton onTextButton">Показати більше</div>
+                {% endif %}
               {% endif %}
             </div>
         {% endcase %}
@@ -88,13 +92,25 @@
             if (points.style.display === "none") {
                 showMoreText.style.display = "none";
                 points.style.display = "inline";
-                buttonText.innerHTML = "Show More";
+                document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show more" : buttonText.innerHTML = "Показати більше"
             }
             else {
                 showMoreText.style.display = "inline";
                 points.style.display = "none";
-                buttonText.innerHTML = "Show Less";
+                document.documentElement.getAttribute('lang') == 'en' ? buttonText.innerHTML = "Show less" : buttonText.innerHTML = "Приховати"
             }
+
+            function trimTextNodes(node) {
+              node.childNodes.forEach(child => {
+                if (child.nodeType === Node.TEXT_NODE) {
+                  child.textContent = child.textContent.trim();
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                  trimTextNodes(child);
+                }
+              });
+            }
+
+            trimTextNodes(element.querySelector('.description'));
         }
 
         document.querySelectorAll('.onTextButton').forEach(button => {

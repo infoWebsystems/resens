@@ -44,22 +44,31 @@ async function updateCartAJAX(key, qty = 0) {
   });
 }
 
-window.addEventListener('submit', async e => {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+  let isCartPage = document.querySelector('.template-cart') !== null;
 
-  if (e.target.getAttribute('action').includes('/cart/add')) {
-    const form = e.target;
-
-    // Open cart drawer
-    openCartDrawer();
-
-    await fetch('/cart/add', {
-      method: 'post',
-      body: new FormData(form)
+  if (!isCartPage) {
+    window.addEventListener('submit', async e => {
+      e.preventDefault();
+    
+      if (e.target.getAttribute('action').includes('/cart/add')) {
+        const form = e.target;
+    
+        // Open cart drawer
+        openCartDrawer();
+    
+        await fetch('/cart/add', {
+          method: 'post',
+          body: new FormData(form)
+        });
+    
+        // // Update Cart
+        await applyDiscountToCartDrawer();
+        await updateCartDrawer();
+      }
     });
-
-    // // Update Cart
-    await updateCartDrawer();
+  } else {
+    applyDiscountToCartDrawer(isCartPage);
   }
 });
 
@@ -94,7 +103,8 @@ function addCartDrawerListeners() {
 
       // Update cart
       const index = closestButtonParent.dataset.index;
-      updateCartDrawer(index);
+      await applyDiscountToCartDrawer();
+      await updateCartDrawer(index);
     });
   });
 
@@ -113,7 +123,8 @@ function addCartDrawerListeners() {
 
       // Update cart
       const index = itemClosestParent.dataset.index;
-      updateCartDrawer(index);
+      await applyDiscountToCartDrawer();
+      await updateCartDrawer(index);
     });
   });
 
@@ -144,3 +155,118 @@ document.querySelectorAll('.js-drawer-open-right-link').forEach(item => {
     openCartDrawer();
   });
 })
+
+// Discount Applying START
+const stringToBoolean = str => str.toLowerCase() === 'true';
+
+async function applyDiscountToCartDrawer (isCartPage) {
+  const wrapper = document.querySelector('#PageContainer');
+
+  const is_minimum_quantity_of_items = wrapper.getAttribute('data-buy_x_get_y_is_minimum_quantity_of_items');
+  const is_minimum_purchase_amount = wrapper.getAttribute('data-buy_x_get_y_is_minimum_purchase_amount');
+  const minimum_quantity_of_items = wrapper.getAttribute('data-buy_x_get_y_minimum_quantity_of_items');
+  const minimum_purchase_amount = wrapper.getAttribute('data-buy_x_get_y_minimum_purchase_amount');
+  const product_list = wrapper.getAttribute('data-buy_x_get_y_product_list');
+  const product_gift_id = wrapper.getAttribute('data-buy_x_get_y_product_gift_id');
+  const product_gift_variant_id = wrapper.getAttribute('data-buy_x_get_y_product_gift_variant_id');
+  const product_gift_product_quantity = wrapper.getAttribute('data-buy_x_get_y_product_gift_product_quantity');
+  const start_date = wrapper.getAttribute('data-buy_x_get_y_start_date');
+  const end_date = wrapper.getAttribute('data-buy_x_get_y_end_date');
+
+  const startDate = new Date(start_date).getTime();
+  const endDate = end_date ? new Date(end_date).getTime() : Infinity;
+  const currentDate = Date.now();
+
+  const isNotExpired = currentDate >= startDate && currentDate <= endDate;
+
+  if (isNotExpired) {
+    function checkAndApplyDiscount() {
+      fetch('/cart.js')
+        .then(response => response.json())
+        .then(cart => {
+          const eligibleProducts = product_list;
+          const freeProductId = product_gift_variant_id;
+
+          let eligibleCount = 0;
+          let isGiftInTheCart = false;
+
+          let totalPrice = 0;
+
+          cart.items.forEach(item => {
+            if (eligibleProducts.includes(item.product_id.toString())) {
+              eligibleCount += item.quantity;
+              totalPrice += (item.price / 100) * item.quantity
+            }
+
+            if (item.product_id.toString() == product_gift_id) {
+              isGiftInTheCart = true;
+            }
+          })
+
+          let formData;
+
+          if (stringToBoolean(is_minimum_quantity_of_items)) {
+            if (eligibleCount >= Number(minimum_quantity_of_items) && !isGiftInTheCart) {
+              formData = {
+              'items': [{
+                'id': freeProductId,
+                'quantity': Number(product_gift_product_quantity)
+                }]
+              };
+
+              fetch(window.Shopify.routes.root + 'cart/add.js', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+              })
+              .then(response => {
+                if (isCartPage) {
+                  window.location.reload();
+                }
+                updateCartDrawer();
+                return response.json();
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+              });
+            }
+          }
+
+          if (stringToBoolean(is_minimum_purchase_amount)) {
+            if (totalPrice >= Number(minimum_purchase_amount) && !isGiftInTheCart) {
+              formData = {
+              'items': [{
+                'id': freeProductId,
+                'quantity': Number(product_gift_product_quantity)
+                }]
+              };
+
+              fetch(window.Shopify.routes.root + 'cart/add.js', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+              })
+              .then(response => {
+                if (isCartPage) {
+                  window.location.reload();
+                }
+                updateCartDrawer();
+
+                return response.json();
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+              });
+            }
+          }
+      });
+    }
+
+    checkAndApplyDiscount();
+  }
+}
+// Discount Applying END
