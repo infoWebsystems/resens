@@ -596,14 +596,14 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/vogue-logo-svg-vector.svg",
-            "link": ""
+            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
           }
         },
         "logo_image_KrqTEY": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/playboy-2.svg",
-            "link": ""
+            "link": "https://playboy.ua/playboy-recommend/-2024-07-11"
           }
         },
         "logo_image_n4pkqp": {
@@ -640,6 +640,7 @@
         "logo_image_Ucd984",
         "logo_image_6NdPTh"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "width": 150,
