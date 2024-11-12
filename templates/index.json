@@ -658,7 +658,6 @@
       "blocks": {
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "disabled": true,
           "settings": {
             "title": "FOLLOW US ON INSTAGRAM",
             "title_color": "",
@@ -672,7 +671,6 @@
       "block_order": [
         "2d8d530c-d887-4c7d-9855-4fd4f97858e6"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -682,6 +680,7 @@
       "blocks": {
         "article_ekRVbW": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "blog_post_1": "news/greenwashing-vs-sustainable",
             "blog_post_2": "",
