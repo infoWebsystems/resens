@@ -39,9 +39,19 @@
     {% else %}
     {% assign current_language = shop.locale | split: "-" | first %}
     {% if current_language == 'en' %}
-      <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
+      {% comment %} DELETE START {% endcomment %}
+      <span class="money-resens discount--sale-color discount--line-through">{{ product.metafields.elasty.price }}€</span>
+      <span class="money money-resens">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>
+      {% comment %} DELETE END {% endcomment %}
+
+      {% comment %} <span class="money money-resens">{{ product.metafields.elasty.price }}€</span> {% endcomment %}
     {% else %}
-      <span class="money money-resens">{{ product.price | money }}</span>
+      {% comment %} DELETE START {% endcomment %}
+      <span class="money-resens discount--sale-color discount--line-through">{{ product.price | money }}</span>
+      <span class="money money-resens">{{ product.price | divided_by: 4 | times: 3 | money }}</span>
+      {% comment %} DELETE END {% endcomment %}
+
+      {% comment %} <span class="money money-resens">{{ product.price | money }}</span> {% endcomment %}
     {% endif %}
     {% endif %}
 
