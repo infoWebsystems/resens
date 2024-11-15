@@ -34,7 +34,7 @@
     "vacancy_details_TxULdX": {
       "type": "vacancy-details",
       "settings": {
-        "send_resume_button_text": "Відправити резюме"
+        "send_resume_button_text": "Send Resume"
       }
     }
   },
