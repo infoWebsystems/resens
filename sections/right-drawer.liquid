@@ -49,10 +49,28 @@
                                        {% if item.final_price == 0 %}
                                           <span class="money money-resens">0€</span>
                                        {% else %}
-                                          <span class="money money-resens">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                                          {%- if item.original_line_price != item.final_line_price and item.line_level_discount_allocations != blank -%}
+                                             <span class="money-resens discount--sale-color discount--line-through">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                                          {% endif %}
+
+                                          {% assign part = item.final_line_price %}
+                                          {% assign total = item.original_price %}
+                                          {% assign percentage = part | times: 100.0 | divided_by: total %}
+                      
+                                          {% assign value = item.product.metafields.elasty.price %}
+                                          {% assign percentage = percentage | divided_by: 100 %}
+                                          {% assign result = value | times: percentage %}
+                      
+                                          <span class="money money-resens">{{ result }}€</span>
                                        {% endif %}
                                       {% else %}
+
+                                       {%- if item.original_line_price != item.final_line_price and item.line_level_discount_allocations != blank -%}
+                                          <span class="money-resens discount--sale-color discount--line-through">{{ item.original_line_price | money }}</span>
+                                       {% endif %}
+
                                         <span class="mw-price">{{ item.line_price | money }}</span>
+
                                       {% endif %}
                                       </span>
                                     </span> 
