@@ -715,11 +715,13 @@ function waitForPriceBlock(selector) {
 					console.log(eurPrice);
 
 					if (currentLanguage == 'en') {
-						productSpan.innerHTML = `<span class="money-resens discount--sale-color discount--line-through">{{ product.metafields.elasty.price }}€</span>
-      <span class="money money-resens">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>`;
+			// 			productSpan.innerHTML = `<span class="money-resens discount--sale-color discount--line-through">{{ product.metafields.elasty.price }}€</span>
+      // <span class="money money-resens">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>`;
+						productSpan.innerHTML = `<span class="money money-resens" style="font-weight: 700;">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>`;
 					} else {
-						productSpan.innerHTML = `<span class="money-resens discount--sale-color discount--line-through">{{ product.price | money }}</span>
-      <span class="money money-resens">{{ product.price | divided_by: 4 | times: 3 | money }}</span>`;
+			// 			productSpan.innerHTML = `<span class="money-resens discount--sale-color discount--line-through">{{ product.price | money }}</span>
+      // <span class="money money-resens">{{ product.price | divided_by: 4 | times: 3 | money }}</span>`;
+						productSpan.innerHTML = `<span class="money money-resens" style="font-weight: 700;">{{ product.price | divided_by: 4 | times: 3 | money }}</span>`;
 					}
 				// DELETE END
 
