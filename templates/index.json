@@ -12,6 +12,31 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
+        "image_hnYhg8": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "ОБРАТИ",
+            "first_button_link": "shopify://collections/all",
+            "second_button_label": "SUSTAINABILITY",
+            "second_button_link": "shopify://pages/sustainability",
+            "image": "shopify://shop_images/b2c_____web2_1.png",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile_image": "shopify://shop_images/b2c_____mobile7_1.png",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9f9f9f"
+          }
+        },
         "image_iQ7EqU": {
           "type": "image",
           "settings": {
@@ -35,37 +60,11 @@
             "button-background": "#242424",
             "hover-button-background": "#9f9f9f"
           }
-        },
-        "image_hnYhg8": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "text": "",
-            "first_button_label": "",
-            "first_button_link": "shopify://collections/all",
-            "second_button_label": "",
-            "second_button_link": "",
-            "image": "shopify://shop_images/b2c_____web2_1.png",
-            "desktop-caption-heading-size": 80,
-            "desktop-caption-body-text-size": 24,
-            "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/b2c_____mobile7_1.png",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 0,
-            "caption-text": "#242424",
-            "button-text": "#ffffff",
-            "button-background": "#242424",
-            "hover-button-background": "#9f9f9f"
-          }
         }
       },
       "block_order": [
-        "image_iQ7EqU",
-        "image_hnYhg8"
+        "image_hnYhg8",
+        "image_iQ7EqU"
       ],
       "custom_css": [],
       "settings": {
