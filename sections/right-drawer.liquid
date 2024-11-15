@@ -50,7 +50,8 @@
                                           <span class="money money-resens">0€</span>
                                        {% else %}
                                           {%- if item.original_line_price != item.final_line_price and item.line_level_discount_allocations != blank -%}
-                                             <span class="money-resens discount--sale-color discount--line-through">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
+                                             {% comment %} <span class="money-resens discount--sale-color discount--line-through">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span> {% endcomment %}
+                                             <span class="money-resens discount--line-through">{{ item.product.metafields.elasty.price | times: item.quantity }}€</span>
                                           {% endif %}
 
                                           {% assign part = item.final_line_price %}
@@ -61,15 +62,16 @@
                                           {% assign percentage = percentage | divided_by: 100 %}
                                           {% assign result = value | times: percentage %}
                       
-                                          <span class="money money-resens">{{ result }}€</span>
+                                          <span class="money money-resens" style="font-weight: 700;">{{ result }}€</span>
                                        {% endif %}
                                       {% else %}
 
                                        {%- if item.original_line_price != item.final_line_price and item.line_level_discount_allocations != blank -%}
-                                          <span class="money-resens discount--sale-color discount--line-through">{{ item.original_line_price | money }}</span>
+                                          {% comment %} <span class="money-resens discount--sale-color discount--line-through">{{ item.original_line_price | money }}</span> {% endcomment %}
+                                          <span class="money-resens discount--line-through">{{ item.original_line_price | money }}</span>
                                        {% endif %}
 
-                                        <span class="mw-price">{{ item.line_price | money }}</span>
+                                        <span class="mw-price" style="font-weight: 700;">{{ item.line_price | money }}</span>
 
                                       {% endif %}
                                       </span>
