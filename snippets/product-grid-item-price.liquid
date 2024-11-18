@@ -45,6 +45,10 @@
       {% endif %}
     {% endfor %}
 
+    {% if product.id == 8105634529438 %}
+      {% assign is_accessories = true %}
+    {% endif %}
+
     {% if current_language == 'en' %}
       {% comment %} DELETE START {% endcomment %}
       {% if is_accessories %}

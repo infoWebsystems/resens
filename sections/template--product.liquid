@@ -721,6 +721,10 @@ function waitForPriceBlock(selector) {
         {% endif %}
       {% endfor %}
 
+			{% if product.id == 8105634529438 %}
+				{% assign is_accessories = true %}
+			{% endif %}
+
 			{% if is_accessories %}
 				if (currentLanguage == 'en') {
 				productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
