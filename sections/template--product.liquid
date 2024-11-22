@@ -707,58 +707,54 @@ function waitForPriceBlock(selector) {
     waitForPriceBlock('#ProductPrice').then((button) => {
       setTimeout(() => {
 				// DELETE START
-					const productPriceWrapper = document.querySelector('#ProductPrice');
-					const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-					const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
-					const productSpan = document.querySelector('#ProductPrice .money-resens');
+				const productPriceWrapper = document.querySelector('#ProductPrice');
+				const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+				const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
+				const productSpan = document.querySelector('#ProductPrice .money-resens');
 
-					console.log(eurPrice);
+				console.log(eurPrice);
 
-					{% assign is_accessories = false %}
-      {% for collection in product.collections %}
-        {% if collection.handle == "accessories" %}
-          {% assign is_accessories = true %}
-        {% endif %}
-      {% endfor %}
+				{% assign is_accessories = false %}
+				{% for collection in product.collections %}
+					{% if collection.handle == "accessories" %}
+						{% assign is_accessories = true %}
+					{% endif %}
+				{% endfor %}
 
-			{% if product.id == 8105634529438 %}
-				{% assign is_accessories = true %}
-			{% endif %}
+				{% if product.id == 8105634529438 %}
+					{% assign is_accessories = true %}
+				{% endif %}
 
-			{% if is_accessories %}
-				if (currentLanguage == 'en') {
-				productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
-						} else {
-				productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-						}
-      {% else %}
-				if (currentLanguage == 'en') {
-				productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-				<span class="money money-resens" style="font-weight: 700;">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>`;
-						} else {
-				productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.price | money }}</span>
-				<span class="money money-resens" style="font-weight: 700;">{{ product.price | divided_by: 4 | times: 3 | money }}</span>`;
-						}
-      {% endif %}
-
-			// 		if (currentLanguage == 'en') {
-			// productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-      // <span class="money money-resens" style="font-weight: 700;">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>`;
-			// 		} else {
-			// productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.price | money }}</span>
-      // <span class="money money-resens" style="font-weight: 700;">{{ product.price | divided_by: 4 | times: 3 | money }}</span>`;
-			// 		}
+				{% if is_accessories %}
+					if (currentLanguage == 'en') {
+					productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
+							} else {
+					productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
+							}
+				{% else %}
+					if (currentLanguage == 'en') {
+					productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
+					<span class="money money-resens" style="font-weight: 700;">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>`;
+							} else {
+					productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.price | money }}</span>
+					<span class="money money-resens" style="font-weight: 700;">{{ product.price | divided_by: 4 | times: 3 | money }}</span>`;
+							}
+				{% endif %}
 				// DELETE END
 
-        // const productPriceWrapper = document.querySelector('#ProductPrice');
-        // const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-        // const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
-        // const productSpan = document.querySelector('#ProductPrice .money-resens');
+				// UNCOMMENT AFTER DELETING START
+				
+				// const productPriceWrapper = document.querySelector('#ProductPrice');
+				// const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+				// const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
+				// const productSpan = document.querySelector('#ProductPrice .money-resens');
 
 
-        // if (currentLanguage == 'en') {
-        //   productSpan.textContent = eurPrice + "€";
-        // }
+				// if (currentLanguage == 'en') {
+				//   productSpan.textContent = eurPrice + "€";
+				// }
+
+				// UNCOMMENT AFTER DELETING END
 			}, 500);
     });
 </script>

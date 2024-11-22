@@ -38,6 +38,8 @@
       {{ 'products.general.from_text' | t }} <span class="money money-resens">{{ product.price | money }}</span>
     {% else %}
     {% assign current_language = shop.locale | split: "-" | first %}
+
+    {% comment %} DELETE START {% endcomment %}
     {% assign is_accessories = false %}
     {% for collection in product.collections %}
       {% if collection.handle == "accessories" %}
@@ -48,6 +50,7 @@
     {% if product.id == 8105634529438 %}
       {% assign is_accessories = true %}
     {% endif %}
+    {% comment %} DELETE END {% endcomment %}
 
     {% if current_language == 'en' %}
       {% comment %} DELETE START {% endcomment %}
@@ -58,11 +61,15 @@
         <span class="money money-resens" style="font-weight: 700;">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>
       {% endif %}
       {% comment %} DELETE END {% endcomment %}
+      
+
+      {% comment %} UNCOMMENT AFTER DELETING START {% endcomment %}
 
       {% comment %} <span class="money money-resens">{{ product.metafields.elasty.price }}€</span> {% endcomment %}
+
+      {% comment %} UNCOMMENT AFTER DELETING END {% endcomment %}
     {% else %}
       {% comment %} DELETE START {% endcomment %}
-
       {% if is_accessories %}
         <span class="money money-resens">{{ product.price | money }}</span>
       {% else %}
@@ -70,8 +77,13 @@
         <span class="money money-resens" style="font-weight: 700;">{{ product.price | divided_by: 4 | times: 3 | money }}</span>
       {% endif %}
       {% comment %} DELETE END {% endcomment %}
+      
+
+      {% comment %} UNCOMMENT AFTER DELETING START {% endcomment %}
 
       {% comment %} <span class="money money-resens">{{ product.price | money }}</span> {% endcomment %}
+
+      {% comment %} UNCOMMENT AFTER DELETING END {% endcomment %}
     {% endif %}
     {% endif %}
 
