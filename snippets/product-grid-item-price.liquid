@@ -37,41 +37,52 @@
     {% if product.price_varies %}
       {{ 'products.general.from_text' | t }} <span class="money money-resens">{{ product.price | money }}</span>
     {% else %}
+
     {% assign current_language = shop.locale | split: "-" | first %}
-    {% assign is_accessories = false %}
-    {% for collection in product.collections %}
-      {% if collection.handle == "accessories" %}
-        {% assign is_accessories = true %}
+    {% assign is_exception = false %}
+
+    {% for item in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].product_exceptions.value.products %}
+      {% if product.id == item.id %}
+        {% assign is_exception = true %}
       {% endif %}
     {% endfor %}
 
-    {% if product.id == 8105634529438 %}
-      {% assign is_accessories = true %}
-    {% endif %}
-
     {% if current_language == 'en' %}
-      {% comment %} DELETE START {% endcomment %}
-      {% if is_accessories %}
+      {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
+        {% if is_exception %}
+          <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
+        {% else %}
+          <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
+
+          {% assign product_price = product.metafields.elasty.price | default: 0 %}
+          {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
+      
+          {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+          {% assign discounted_price = product.metafields.elasty.price | minus: discount_value %}
+      
+          <span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>
+        {% endif %}
+      {% else %}
         <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
-      {% else %}
-        <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-        <span class="money money-resens" style="font-weight: 700;">{{ product.metafields.elasty.price | divided_by: 4 | times: 3 }}€</span>
       {% endif %}
-      {% comment %} DELETE END {% endcomment %}
-
-      {% comment %} <span class="money money-resens">{{ product.metafields.elasty.price }}€</span> {% endcomment %}
     {% else %}
-      {% comment %} DELETE START {% endcomment %}
+      {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
+        {% if is_exception %}
+          <span class="money money-resens">{{ product.price | money }}</span>
+        {% else %}
+          <span class="money-resens discount--line-through">{{ product.price | money }}</span>
 
-      {% if is_accessories %}
-        <span class="money money-resens">{{ product.price | money }}</span>
+          {% assign product_price = product.price | default: 0 %}
+          {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
+      
+          {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+          {% assign discounted_price = product.price | minus: discount_value %}
+
+          <span class="money money-resens" style="font-weight: 700;">{{ discounted_price | money }}</span>
+        {% endif %}
       {% else %}
-        <span class="money-resens discount--line-through">{{ product.price | money }}</span>
-        <span class="money money-resens" style="font-weight: 700;">{{ product.price | divided_by: 4 | times: 3 | money }}</span>
+        <span class="money money-resens">{{ product.price | money }}</span>
       {% endif %}
-      {% comment %} DELETE END {% endcomment %}
-
-      {% comment %} <span class="money money-resens">{{ product.price | money }}</span> {% endcomment %}
     {% endif %}
     {% endif %}
 
