@@ -708,7 +708,6 @@ function waitForPriceBlock(selector) {
       setTimeout(() => {
 				const productPriceWrapper = document.querySelector('#ProductPrice');
 				const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-				const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
 				const productSpan = document.querySelector('#ProductPrice .money-resens');
 
 				{% assign is_exception = false %}
