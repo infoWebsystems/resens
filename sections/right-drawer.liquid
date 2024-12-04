@@ -37,7 +37,9 @@
                                <p>
                                   <a href="{{ item.url }}" class="ajaxcart__product-name">{{ item.product.title }}</a>
                                   {% for option in item.variant.options %}
-                                    <span class="ajaxcart__product-meta">{{ option }}</span> <!----> 
+                                    {% if option != 'Default Title' %}
+                                       <span class="ajaxcart__product-meta">{{ option }}</span> <!----> 
+                                    {% endif %}
                                   {% endfor %}
                                </p>
                                <div class="text-center">
