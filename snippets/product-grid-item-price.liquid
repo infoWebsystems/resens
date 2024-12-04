@@ -41,8 +41,8 @@
     {% assign current_language = shop.locale | split: "-" | first %}
     {% assign is_exception = false %}
 
-    {% for item in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].product_exceptions.value.products %}
-      {% if product.id == item.id %}
+    {% for item in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
+      {% if product.id != item.id %}
         {% assign is_exception = true %}
       {% endif %}
     {% endfor %}
@@ -58,7 +58,7 @@
           {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
       
           {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-          {% assign discounted_price = product.metafields.elasty.price | minus: discount_value %}
+          {% assign discounted_price = product.metafields.elasty.price | minus: discount_value | round %}
       
           <span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>
         {% endif %}
@@ -78,7 +78,8 @@
           {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
           {% assign discounted_price = product.price | minus: discount_value %}
 
-          <span class="money money-resens" style="font-weight: 700;">{{ discounted_price | money }}</span>
+          {% assign price_parts = discounted_price | money | split: '.' %}
+          <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
         {% endif %}
       {% else %}
         <span class="money money-resens">{{ product.price | money }}</span>
