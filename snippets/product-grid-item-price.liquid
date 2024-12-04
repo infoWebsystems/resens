@@ -39,17 +39,23 @@
     {% else %}
 
     {% assign current_language = shop.locale | split: "-" | first %}
-    {% assign is_exception = false %}
+    {% assign is_discounted = false %}
 
-    {% for item in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
-      {% if product.id != item.id %}
-        {% assign is_exception = true %}
-      {% endif %}
+    {% assign discounted_products_ids = '' %}
+
+    {% for product in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
+      {% assign discounted_products_ids = discounted_products_ids | append: product.id | append: ',' %}
     {% endfor %}
+
+    {% assign discounted_products_ids = discounted_products_ids | remove_last: ',' %}
+
+    {% if discounted_products_ids contains product.id %}
+      {% assign is_discounted = true %}
+    {% endif %}
 
     {% if current_language == 'en' %}
       {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-        {% if is_exception %}
+        {% if is_discounted == false %}
           <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
         {% else %}
           <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
@@ -67,7 +73,7 @@
       {% endif %}
     {% else %}
       {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-        {% if is_exception %}
+        {% if is_discounted == false %}
           <span class="money money-resens">{{ product.price | money }}</span>
         {% else %}
           <span class="money-resens discount--line-through">{{ product.price | money }}</span>
