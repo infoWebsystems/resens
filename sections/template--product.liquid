@@ -712,8 +712,8 @@ function waitForPriceBlock(selector) {
 
 				{% assign is_exception = false %}
 
-				{% for item in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].product_exceptions.value.products %}
-					{% if product.id == item.id %}
+				{% for item in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
+					{% if product.id != item.id %}
 						{% assign is_exception = true %}
 					{% endif %}
 				{% endfor %}
