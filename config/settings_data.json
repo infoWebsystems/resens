@@ -109,6 +109,12 @@
     "social_sharing_product": true,
     "quick_shop_enable": false,
     "quick_add_enable": true,
+    "sections": {
+      "right-drawer": {
+        "type": "right-drawer",
+        "settings": {}
+      }
+    },
     "content_for_index": [],
     "blocks": {
       "8776485610325655785": {
