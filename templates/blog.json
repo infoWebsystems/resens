@@ -34,14 +34,15 @@
       "type": "image--image-with-text",
       "settings": {
         "colors": "light",
+        "image": "shopify://shop_images/FOX05861.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "Share brand or product details",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "title": "reduce sensitivity without diminishing sensuality",
+        "text": "<p>This project is about the inner strength of every woman, which is also reflected in the condition of her skin. We aim to show how important it is to embrace and nurture one’s sensitivity, while allowing oneself to remain sensual and confident.</p>",
         "button_label": "Read more",
-        "button_link": "shopify://blogs/news"
+        "button_link": "shopify://blogs/sensitivity-sensuality"
       }
     },
     "collage_builder_aHJrmn": {
@@ -178,7 +179,6 @@
     },
     "main": {
       "type": "template--blog",
-      "disabled": true,
       "settings": {
         "show_author_name": false,
         "blog-sidebar-description": "",
@@ -338,6 +338,7 @@
         "template--14795084955718__67543449-bf33-4648-97bf-c7e5c527ccf2-1688737988dceb6ec0-1",
         "fac94e75-038c-49a0-9ab0-446701305b55"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
