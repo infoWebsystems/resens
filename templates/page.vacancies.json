@@ -36,6 +36,7 @@
       "blocks": {
         "vacancy_fgeNeC": {
           "type": "vacancy",
+          "disabled": true,
           "settings": {
             "vacancy_name": "Сosmetologist Сoach",
             "vacancy_description": "<p>We are looking for a specialist who is in love with his job, with a desire to develop, who is ready to learn and improve his skills.</p>",
