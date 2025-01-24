@@ -79,8 +79,8 @@
       ],
       "settings": {
         "read_more_vacancy_text": "See more",
-        "no_vacancies_title": "На даний момент у нас немає відкритих вакансій, але ми завжди раді знайомству з талановитими людьми, які поділяють наші цінності і прагнення!",
-        "no_vacancies_subtitle": "Якщо ви хочете приєднатися до нашої команди в майбутньому, залиште свої дані через форму зворотного зв'язку.\n Ми обов'язково зв'яжемося з вами, коли з'являться нові можливості.",
+        "no_vacancies_title": "We currently have no open positions, but we are always happy to meet talented people who share our values and aspirations!",
+        "no_vacancies_subtitle": "If you would like to join our team in the future, please leave your details via the feedback form.",
         "no_vacancies_button_text": "Send resume"
       }
     }
