@@ -505,6 +505,14 @@
             "menu_item_color": "#ffffff",
             "menu_item_link": ""
           }
+        },
+        "menu_item_4gGeCw": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "Menu item",
+            "menu_item_color": "#ffffff",
+            "menu_item_link": ""
+          }
         }
       },
       "block_order": [
@@ -514,7 +522,8 @@
         "3e6623f9-7a43-41d7-ab12-f7e4bae5e603",
         "menu_item_MmnmtT",
         "menu_item_TnMHJH",
-        "menu_item_Vq9pL7"
+        "menu_item_Vq9pL7",
+        "menu_item_4gGeCw"
       ],
       "disabled": true,
       "settings": {
