@@ -616,19 +616,36 @@
         "logo_image_PGjKqK": {
           "type": "logo_image",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/mc.png",
+            "link": "https://marieclaire.ua/uk/beauty/re-sens-pershij-brend-na-rinku-profesijnoyi-kosmetiki-yakij-povnistyu-vidmovivsya-vid-plastiku?fbclid=PAZXh0bgNhZW0CMTEAAabxZLodSEhzJBL5cd5zAeAr1FxR8DgQa4l66O1uOSQl0S10kM0rpcxvgJQ_aem_LjltXWT6dsCQqhmLlnb19A"
           }
         },
         "logo_image_Ucd984": {
           "type": "logo_image",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/elle.png",
+            "link": "https://elle.ua/krasota/beauty_blog/made-in-ukraine-9-ukrainskih-beauty-brendiv-yakim-doviryayut/"
           }
         },
         "logo_image_6NdPTh": {
           "type": "logo_image",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/beautyhub.png",
+            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
+          }
+        },
+        "logo_image_JU7hAi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/ursa.png",
+            "link": "https://ursamedia.com.ua/trend/pokrashhuye-imunitet-ta-yakist-shkiry-v-ukrayini-zyavyvsya-novyy-brend-profesiynoyi-kosmetyky/"
+          }
+        },
+        "logo_image_xdz3Gw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/estportal.png",
+            "link": "https://estportal.com/resens-pershij-ukrainskij-100-sustainable-brend-na-rinku-profesijnoi-kosmetiki/"
           }
         }
       },
@@ -638,9 +655,10 @@
         "logo_image_n4pkqp",
         "logo_image_PGjKqK",
         "logo_image_Ucd984",
-        "logo_image_6NdPTh"
+        "logo_image_6NdPTh",
+        "logo_image_JU7hAi",
+        "logo_image_xdz3Gw"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "width": 150,
