@@ -535,45 +535,45 @@
           "type": "review",
           "settings": {
             "review_photo": "shopify://shop_images/3R2A0017.jpg",
-            "review_name": "Анна Завальська:",
-            "review_about": "Співачка, авторка та перекладачка пісенних текстів, поетеса ",
-            "review_text": "\"Пишаюсь стати однією з перших, хто спробував лінійку нової розумної косметики з айдентикою України - бо це любов з першого дотику, насолода від текстур, аромату, формату і форми.Я обожнюю концептуальний підхід і в цьому випадку я в захваті від бренду, який глобально ставить за мету піклуватись про тебе = природу, без жодного негативного впливу.\""
+            "review_name": "ANNA ZAVALSKA:",
+            "review_about": "Singer, songwriter, translator of song lyrics, poetess",
+            "review_text": "\"I’m proud to be among the first to try the line of new smart cosmetics with a Ukrainian identity—it’s love at first touch, a delight in textures, aroma, format, and form.I adore conceptual approaches, and in this case, I am thrilled by a brand that globally aims to care for you = nature, with absolutely no negative impact.\""
           }
         },
         "review_WqjhUV": {
           "type": "review",
           "settings": {
             "review_photo": "shopify://shop_images/3R2A9753.jpg",
-            "review_name": "Оксана Шаварська:",
-            "review_about": "Письменниця, сценаристка, блогерка",
-            "review_text": "\"Так сильно люблю цю косметику, що вона зі мною в усіх подорожах. Мій улюблений продукт – матувальний крем для чутливої шкіри. А без маски-гоммаж з гіалуроновою кислотою взагалі нікуди. Це чудо чудесне, а не маска. Не можу вам передати, наскільки я щаслива, що маю такий догляд за шкірою.\""
+            "review_name": "OKSANA SHAVARSKA:",
+            "review_about": "Writer, screenwriter, blogger",
+            "review_text": "\"I love this cosmetics so much that it travels with me everywhere. My favorite product is the mattifying cream for sensitive skin. And the hyaluronic acid gommage mask—absolutely essential. It’s a miracle, not just a mask. I can’t express how happy I am to have this skincare routine.\""
           }
         },
         "review_ihwrhy": {
           "type": "review",
           "settings": {
             "review_photo": "shopify://shop_images/3R2A1125.jpg",
-            "review_name": "Мар'яна Головко:",
-            "review_about": "Співачка, акторка, солістка проєктів Nova Opera, Suok Music, Das Wortspiel",
-            "review_text": "\"КосметикаRe[Sens] - високобіотехнологічна професійна косметика, створена з любовʼю дожінки та її чутливості в усьому... чутливості шкіри, чутливості до навколишнього середовища (упаковка — компостуєма і не шкодить нашій планеті). Це український бренд заснований дуже красивими людьми зсередини та ззовні. Я щиро раджу. І дякую, що мені дісталася така радість - випробувати на собі і відчути справжню турботу.\""
+            "review_name": "MARIANA HOLOVKO:",
+            "review_about": "Singer, actress, soloist of Nova Opera, Suok Music, and Das Wortspiel projects",
+            "review_text": "\"Re[Sens] cosmetics—highly biotechnological professional cosmetics created with love for women and their sensitivity in everything... skin sensitivity, environmental awareness (the packaging is compostable and harmless to the planet). This is a Ukrainian brand founded by people who are beautiful inside and out. I wholeheartedly recommend it. Thank you for giving me the joy of experiencing real care.\""
           }
         },
         "review_UrPGMn": {
           "type": "review",
           "settings": {
             "review_photo": "shopify://shop_images/dsc08899.jpg",
-            "review_name": "Інесса Кравченко:",
-            "review_about": "Видавчиня журналу «Колесо життя»",
-            "review_text": "\"Прекрасні очищувальні засоби. Без перебільшення. Я їх купила всі! 😊 Використовую за інструкцією і відверто вражена результатом. Ну а сироватка і крем просто просяться самі на обличчя. Дуже якісний догляд!\""
+            "review_name": "INESSA KRAVCHENKO:",
+            "review_about": "Publisher of \"The Wheel of Life\" magazine",
+            "review_text": "\"Wonderful cleansing products. No exaggeration. I bought them all! 😊 I use them as instructed and am genuinely impressed with the results. The serum and cream are just calling to be applied. Excellent quality care!\""
           }
         },
         "review_BVyjn3": {
           "type": "review",
           "settings": {
             "review_photo": "shopify://shop_images/3R2A0575.jpg",
-            "review_name": "Лала Тарапакіна:",
-            "review_about": "Засновниця та активістка благодійного фонду «12 Вартових»",
-            "review_text": "\"Цей бізнес давно та системно підтримує мій фонд, і для мене дуже цінно, що саме фонд, а не мене особисто. І мені захотілося бути взаємною і щиро спробувати на собі те, що гартувалося три роки з увагою до кожної деталі: наповнення - магічне та наукове одночасно, вся упаковка - біорозкладна, а філософія бренда - дозволити собі бути чуттєвою та чутливою.\""
+            "review_name": "LALA TARAPAKINA:",
+            "review_about": "Founder and activist of the “12 Guardians” charity fund",
+            "review_text": "\"This business has been supporting my fund systematically for a long time, and I deeply value that they support the fund, not me personally. I felt the need to reciprocate and sincerely try for myself what has been crafted for three years with attention to every detail: the content—magical and scientific at the same time, the packaging—biodegradable, and the brand philosophy—allowing yourself to be sensual and sensitive.\""
           }
         }
       },
@@ -584,7 +584,6 @@
         "review_UrPGMn",
         "review_BVyjn3"
       ],
-      "disabled": true,
       "settings": {
         "section_title": "Reviews"
       }
@@ -667,7 +666,6 @@
     },
     "content_on_image_background_zcRVa3": {
       "type": "content-on-image-background",
-      "disabled": true,
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "BOOST YOUR BUSINESS WITH RE[SENS]",
