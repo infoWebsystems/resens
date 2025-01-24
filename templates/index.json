@@ -649,6 +649,7 @@
     },
     "content_on_image_background_zcRVa3": {
       "type": "content-on-image-background",
+      "disabled": true,
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "BOOST YOUR BUSINESS WITH RE[SENS]",
