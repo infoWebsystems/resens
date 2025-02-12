@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "main": {
+      "type": "template--cart",
+      "settings": {}
+    },
     "16458092233c51454f": {
       "type": "text--rich-text",
       "blocks": {
@@ -38,10 +42,6 @@
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
-    },
-    "main": {
-      "type": "template--cart",
-      "settings": {}
     },
     "text_rich_text_NQ4Mqh": {
       "type": "text--rich-text",
@@ -182,8 +182,8 @@
     }
   },
   "order": [
-    "16458092233c51454f",
     "main",
+    "16458092233c51454f",
     "text_rich_text_NQ4Mqh",
     "400eb640-b884-4376-ac4a-7e747faee5ee"
   ]
