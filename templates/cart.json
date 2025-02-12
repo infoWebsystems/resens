@@ -1,18 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "template--cart",
-      "settings": {
-      }
+      "settings": {}
     },
     "16458092233c51454f": {
       "type": "text--rich-text",
@@ -20,13 +19,13 @@
         "934e81cc-7295-49b0-a17f-63d662b754e1": {
           "type": "heading",
           "settings": {
-            "heading": "Heading"
+            "heading": "Pay attention"
           }
         },
         "5a0c4ffd-ea03-4643-b331-82ef44fc90b6": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.<\/p>",
+            "text": "<p>Delivery is made only to Ukraine and Europe.</p>",
             "text_size": 14
           }
         }
@@ -35,7 +34,6 @@
         "934e81cc-7295-49b0-a17f-63d662b754e1",
         "5a0c4ffd-ea03-4643-b331-82ef44fc90b6"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "",
         "colors": "light",
@@ -55,7 +53,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -74,7 +72,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
@@ -93,7 +91,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#242424",
@@ -112,7 +110,7 @@
             "heading_size": 30,
             "h-margin": 1,
             "button_label": "Shop now",
-            "url": "shopify:\/\/collections\/all",
+            "url": "shopify://collections/all",
             "desktop_position": "md-min-align-bottom md-min-justify-center",
             "mobile_position": "md-max-align-bottom md-max-justify-center",
             "text_color": "#262428",
