@@ -3366,8 +3366,7 @@
       "continue_browsing_html": "Продовжуйте переглядати <a href=\"/collections/all\">тут</a> .",
       "close_cart": "Закрити кошик",
       "savings_html": "Ви економите {{ price }}",
-      "see_more": "Переглянути ще",
-      "taxes_and_shipping_at_checkout": "Податки та вартість доставки розраховуються під час оформлення замовлення. "
+      "see_more": "Переглянути ще"
     },
     "label": {
       "product": "Продукт",
