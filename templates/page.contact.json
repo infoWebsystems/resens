@@ -183,24 +183,6 @@
         "newsletter_description": "<p>Join us to stay informed about the best offers.</p>"
       }
     },
-    "f9008be2-cc52-4777-becc-c975f680a054": {
-      "type": "store-information--map",
-      "settings": {
-        "colors": "white",
-        "heading": "Re[sens]",
-        "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine</p><p>Mon-Fri from 09:00 to 18:00</p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com</span></a></p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68</span></a></p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03</span></a></p>",
-        "map_address": "Krakivska St, 7, Kyiv, 02000",
-        "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
-        "button_text": "Get directions",
-        "layout": "right"
-      }
-    },
-    "1723819763e95abae5": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "template_product_info_columns_zM874e": {
       "type": "template--product--info-columns",
       "blocks": {
@@ -221,7 +203,7 @@
             "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Britain_filled_with_th_8b45008c-9ab4-42c0-825d-4aad3564d736.png",
             "grid_image_size": "square",
             "heading": "Great Britain",
-            "text": "<p>Aesthetic Art Academy LTD , co number 10320205, registered address 368 Forest Road , London, E17 5JF , contacts: info@imagine-you.co.uk , tel +447799140911 (WhatsApp, Telegram, Viber)</p>",
+            "text": "<p><strong>Aesthetic Art Academy LTD</strong>, co number 10320205, registered address 368 Forest Road , London, E17 5JF , contacts: info@imagine-you.co.uk , tel +447799140911 (WhatsApp, Telegram, Viber)</p>",
             "button_text": "Go to site",
             "button_link": "https://Imagine-you.co.uk"
           }
@@ -239,6 +221,24 @@
         "text_alignment": "center",
         "vertical_alignment": "top"
       }
+    },
+    "f9008be2-cc52-4777-becc-c975f680a054": {
+      "type": "store-information--map",
+      "settings": {
+        "colors": "white",
+        "heading": "Re[sens]",
+        "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine</p><p>Mon-Fri from 09:00 to 18:00</p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com</span></a></p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68</span></a></p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03</span></a></p>",
+        "map_address": "Krakivska St, 7, Kyiv, 02000",
+        "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
+        "button_text": "Get directions",
+        "layout": "right"
+      }
+    },
+    "1723819763e95abae5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -247,8 +247,8 @@
     "057a50d5-3fee-4ea2-a832-2d38f47b959a",
     "171895764357c44b9c",
     "1645634969fb497783",
+    "template_product_info_columns_zM874e",
     "f9008be2-cc52-4777-becc-c975f680a054",
-    "1723819763e95abae5",
-    "template_product_info_columns_zM874e"
+    "1723819763e95abae5"
   ]
 }
