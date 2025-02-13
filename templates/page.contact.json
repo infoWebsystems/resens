@@ -162,6 +162,7 @@
             "margin_bottom": 50,
             "margin_sides": 0,
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
@@ -199,6 +200,45 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "template_product_info_columns_zM874e": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_zDLcLt": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Spain_filled_with_the__ed09936a-1497-44cd-8623-a6f87ae44280.png",
+            "grid_image_size": "square",
+            "heading": "Spain",
+            "text": "<p><strong>BEAUTY CARTEL DISTRIBUTION SOCIEDAD LIMITADA</strong>: Urbanización Guadalmina Baja, Calle 3, Hoyo 15, Bloque 12, Apartamento B-D, San Pedro Alcántara, C.P. 29670 Marbella (Málaga), con C.I.F. número B7094468</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_bX9Gxe": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Britain_filled_with_th_8b45008c-9ab4-42c0-825d-4aad3564d736.png",
+            "grid_image_size": "square",
+            "heading": "Great Britain",
+            "text": "<p>Aesthetic Art Academy LTD , co number 10320205, registered address 368 Forest Road , London, E17 5JF , contacts: info@imagine-you.co.uk , tel +447799140911 (WhatsApp, Telegram, Viber)</p>",
+            "button_text": "Go to site",
+            "button_link": "https://Imagine-you.co.uk"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_zDLcLt",
+        "image_and_text_bX9Gxe"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "Our partners",
+        "description": "<p>Re[sens] in the world</p>",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
     }
   },
   "order": [
@@ -208,6 +248,7 @@
     "171895764357c44b9c",
     "1645634969fb497783",
     "f9008be2-cc52-4777-becc-c975f680a054",
-    "1723819763e95abae5"
+    "1723819763e95abae5",
+    "template_product_info_columns_zM874e"
   ]
 }
