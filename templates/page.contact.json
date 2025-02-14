@@ -207,17 +207,29 @@
             "button_text": "Go to site",
             "button_link": "https://Imagine-you.co.uk"
           }
+        },
+        "image_and_text_U3qmym": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_UNITED_ARAB_EMIRATES_f_a933b513-bbaf-4469-96de-7dedb9e72d3a.png",
+            "grid_image_size": "square",
+            "heading": "UNITED ARAB EMIRATES",
+            "text": "<p><strong>ETAIL LLC</strong><br/>Shams business center sharjah media city, Sharjah, PO box 515000<br/>Contacts - Abhijith Shylaja( +971 52 685 1349)<br/>Riyas Abdul Razak (+971<br/>55 345 9669)</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
         "image_and_text_zDLcLt",
-        "image_and_text_bX9Gxe"
+        "image_and_text_bX9Gxe",
+        "image_and_text_U3qmym"
       ],
       "settings": {
         "colors": "white",
         "heading": "Our partners",
         "description": "<p>Re[Sens] in the world</p>",
-        "columns_per_row": 2,
+        "columns_per_row": 3,
         "text_alignment": "center",
         "vertical_alignment": "top"
       }
