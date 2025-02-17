@@ -192,9 +192,9 @@
             "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Spain_filled_with_the__ed09936a-1497-44cd-8623-a6f87ae44280.png",
             "grid_image_size": "square",
             "heading": "Spain",
-            "text": "<p><strong>BEAUTY CARTEL DISTRIBUTION SOCIEDAD LIMITADA</strong></p><p>Urbanización Guadalmina Baja, Calle 3, Hoyo 15, Bloque 12, Apartamento B-D, San Pedro Alcántara, C.P. 29670 Marbella (Málaga), con C.I.F. número B7094468</p>",
-            "button_text": "",
-            "button_link": "shopify://collections/all"
+            "text": "<p><strong>BEAUTY CARTEL DISTRIBUTION SOCIEDAD LIMITADA</strong></p><p>Urbanización Guadalmina Baja, Calle 3, Hoyo 15, Bloque 12, Apartamento B-D, San Pedro Alcántara, C.P. 29670 Marbella (Málaga), con C.I.F. número B7094468</p><p>email: manager@beautycartel.es</p><p>phone: +34 650 473 012</p>",
+            "button_text": "Go to site",
+            "button_link": "https://beautycartel.es"
           }
         },
         "image_and_text_bX9Gxe": {
@@ -203,7 +203,7 @@
             "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Britain_filled_with_th_8b45008c-9ab4-42c0-825d-4aad3564d736.png",
             "grid_image_size": "square",
             "heading": "Great Britain",
-            "text": "<p><strong>AESTHETIC ART ACADEMY LTD</strong></p><p>0320205, 368 Forest Road , London, E17 5JF</p><p>email: info@imagine-you.co.uk</p><p>tel: +447799140911 (WhatsApp, Telegram, Viber)</p>",
+            "text": "<p><strong>AESTHETIC ART ACADEMY LTD</strong></p><p>0320205, 368 Forest Road , London, E17 5JF</p><p>email: info@imagine-you.co.uk</p><p>phone: +447799140911 (WhatsApp, Telegram, Viber)</p>",
             "button_text": "Go to site",
             "button_link": "https://Imagine-you.co.uk"
           }
@@ -214,7 +214,7 @@
             "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_UNITED_ARAB_EMIRATES_f_a933b513-bbaf-4469-96de-7dedb9e72d3a.png",
             "grid_image_size": "square",
             "heading": "UNITED ARAB EMIRATES",
-            "text": "<p><strong>ETAIL LLC</strong><br/>Shams business center sharjah media city, Sharjah, PO box 515000. </p><p>tel: +971 52 685 1349, +971 55 345 9669</p>",
+            "text": "<p><strong>ETAIL LLC</strong><br/>Shams business center sharjah media city, Sharjah, PO box 515000. </p><p>email: abhijith@etail.ae, riyas@etail.ae</p><p>phone: +971 52 685 1349, +971 55 345 9669</p>",
             "button_text": "",
             "button_link": "shopify://collections/all"
           }
