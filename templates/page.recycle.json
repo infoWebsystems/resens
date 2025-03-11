@@ -15,9 +15,63 @@
         "page_title_enabled": true,
         "page_width": "full-width"
       }
+    },
+    "image_image_with_text_QwRTwX": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/recycle_aluminium2.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "Give Used Packaging a New Life!",
+        "text": "<p>Every tube and bottle you return is a step toward a cleaner future. Your commitment helps reduce environmental impact and gives aluminium a second chance—one that could become part of something greater.</p><p>We take responsibility for restoring its life cycle at the recycling plant in Sumy.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "text_rich_text_iWiwQ9": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_8e6DL8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Here, you can restock your Re[Sens] cosmetics and return aluminium packaging for reuse."
+          }
+        },
+        "richtext_dBVHBe": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h3><strong>Our Main Office Address:</strong></h3><p>📍 7 Krakivska St., Office 2, Kyiv, Ukraine<br/>🕘 Mon-Fri: 09:00 – 18:00<br/>✉️ <a>hello@resenss.com</a><br/>📞 +38 068 472 50 68<br/>📞 +38 050 625 38 03</p>",
+            "text_size": 18
+          }
+        },
+        "richtext_xgVCdi": {
+          "type": "richtext",
+          "settings": {
+            "text": "<h6>Support environmental initiatives with us—choose the most responsible partners in your city!</h6><h6>(List of partners is being finalized)</h6>",
+            "text_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_8e6DL8",
+        "richtext_dBVHBe",
+        "richtext_xgVCdi"
+      ],
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_image_with_text_QwRTwX",
+    "text_rich_text_iWiwQ9"
   ]
 }
