@@ -51,7 +51,7 @@
       "type": "advanced-layout--custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<div style='text-align:center; padding: 30px 0;'><div class=\"wrapper-padded\"><h2 class=\"homepage-sections--title\">Here, you can restock your Re[Sens] cosmetics and return aluminium packaging for reuse.</h2><p>Support environmental initiatives with us—choose the most responsible partners in your city!<br>(List of partners is being finalized)</p></div></div>"
+        "custom_liquid": "<div style='display: flex; gap: 20px; align-items: center; padding: 30px 0;'>\n    <div style='width: 60%; text-align: left;'>\n        <h2 class='homepage-sections--title'>Here, you can restock your Re[Sens] cosmetics and return aluminium packaging for reuse.</h2>\n        <p>Support environmental initiatives with us—choose the most responsible partners in your city! (List of partners is being finalized)</p>\n    </div>\n    <div style='width: 40%; text-align: center;'>\n        <p> <h2>Our Main Office Address:</h2>\n                <p>📍 7 Krakivska St., Office 2, Kyiv, Ukraine</p>\n<p>🕘 Mon-Fri: 09:00 – 18:00</p>\n<p>✉️ hello@resenss.com</p>\n<p>📞 +38 068 472 50 68</p>\n<p>📞 +38 050 625 38 03</p>\n            </td></p>\n    </div>\n</div>"
       }
     },
     "text_rich_text_iWiwQ9": {
