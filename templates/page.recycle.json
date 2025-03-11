@@ -31,27 +31,22 @@
         "button_link": ""
       }
     },
-    "advanced_layout_custom_html_7n4Xay": {
-      "type": "advanced-layout--custom-html",
-      "blocks": {
-        "html_EN7MqP": {
-          "type": "html",
-          "settings": {
-            "code": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Two Column Layout</title>\n\n\n    <h2 align=\"center\">HERE, YOU CAN RESTOCK YOUR RE[SENS] COSMETICS AND RETURN ALUMINIUM PACKAGING FOR REUSE!</h2>\n    <br>\n    <table border=\"0\" width=\"100%\" align=\"center\">\n        <tbody>\n            <tr>\n                <td width=\"50%\" align=\"center\" valign=\"top\">\n                    <h4>Support environmental initiatives with us—choose the most responsible partners in your city!</h4>\n                    <p>(List of partners is being finalized)</p>\n                </td>\n                <td width=\"50%\" align=\"center\" valign=\"top\">\n                    <h2>Our Main Office Address:</h2>\n                    <p>📍 7 Krakivska St., Office 2, Kyiv, Ukraine</p>\n                    <p>🕘 Mon-Fri: 09:00 – 18:00</p>\n                    <p>✉️ hello@resenss.com</p>\n                    <p>📞 +38 068 472 50 68</p>\n                    <p>📞 +38 050 625 38 03</p>\n                </td>\n            </tr>\n        </tbody>\n    </table>",
-            "width": "100%"
-          }
-        }
-      },
-      "block_order": [
-        "html_EN7MqP"
+    "advanced_layout_custom_liquid_xWAN8g": {
+      "type": "advanced-layout--custom-liquid",
+      "custom_css": [
+        ".wrapper-padded table {width: 100%; border-collapse: collapse; border: 1px solid grey;}",
+        ".wrapper-padded table td,.wrapper-padded table th {border: 1px solid grey; padding: 10px; text-align: left;}"
       ],
-      "settings": {}
+      "settings": {
+        "custom_liquid": "<div style='text-align:center; padding: 30px 0;'><div class=\"wrapper-padded\"><h2 class=\"homepage-sections--title\">Here, you can restock your Re[Sens] cosmetics and return aluminium packaging for reuse.</h2><p>Support environmental initiatives with us—choose the most responsible partners in your city!<br>(List of partners is being finalized)</p></div></div>"
+      }
     },
     "text_rich_text_iWiwQ9": {
       "type": "text--rich-text",
       "blocks": {
         "heading_8e6DL8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Here, you can restock your Re[Sens] cosmetics and return aluminium packaging for reuse."
           }
@@ -62,21 +57,12 @@
             "text": "<h3><strong>Our Main Office Address:</strong></h3><p>📍 7 Krakivska St., Office 2, Kyiv, Ukraine<br/>🕘 Mon-Fri: 09:00 – 18:00<br/>✉️ <a>hello@resenss.com</a><br/>📞 +38 068 472 50 68<br/>📞 +38 050 625 38 03</p>",
             "text_size": 18
           }
-        },
-        "richtext_xgVCdi": {
-          "type": "richtext",
-          "settings": {
-            "text": "<h6>Support environmental initiatives with us—choose the most responsible partners in your city!</h6><h6>(List of partners is being finalized)</h6>",
-            "text_size": 18
-          }
         }
       },
       "block_order": [
         "heading_8e6DL8",
-        "richtext_dBVHBe",
-        "richtext_xgVCdi"
+        "richtext_dBVHBe"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "",
         "colors": "white",
@@ -89,7 +75,7 @@
   "order": [
     "main",
     "image_image_with_text_QwRTwX",
-    "advanced_layout_custom_html_7n4Xay",
+    "advanced_layout_custom_liquid_xWAN8g",
     "text_rich_text_iWiwQ9"
   ]
 }
