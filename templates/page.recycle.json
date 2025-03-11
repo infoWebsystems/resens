@@ -31,11 +31,33 @@
         "button_link": ""
       }
     },
-    "advanced_layout_custom_liquid_xWAN8g": {
-      "type": "advanced-layout--custom-liquid",
-      "custom_css": [],
+    "text_rich_text_LrQPMe": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_Hh9tdj": {
+          "type": "heading",
+          "settings": {
+            "heading": "HERE, YOU CAN RESTOCK YOUR RE[SENS] COSMETICS AND RETURN ALUMINIUM PACKAGING FOR REUSE."
+          }
+        },
+        "richtext_jA4nQi": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Support environmental initiatives with us—choose the most responsible partners in your city!(List of partners is being finalized)</p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hh9tdj",
+        "richtext_jA4nQi"
+      ],
       "settings": {
-        "custom_liquid": "<div style='text-align:center; padding: 30px 0;'><div class=\"wrapper-padded\"><h2 class=\"homepage-sections--title\">Here, you can restock your Re[Sens] cosmetics and return aluminium packaging for reuse.</h2><p>Support environmental initiatives with us—choose the most responsible partners in your city!<br>(List of partners is being finalized)</p></div></div>"
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "store_information_map_yVF6JD": {
@@ -54,7 +76,7 @@
   "order": [
     "main",
     "image_image_with_text_QwRTwX",
-    "advanced_layout_custom_liquid_xWAN8g",
+    "text_rich_text_LrQPMe",
     "store_information_map_yVF6JD"
   ]
 }
