@@ -353,51 +353,56 @@
         "image_and_text_L3NgYn": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify://shop_images/FOX04001_43d94585-b12e-41b2-b506-32b179ffb051.jpg",
             "grid_image_size": "square",
             "heading": "Smart Peel",
             "text": "<p>Since all Re[Sens]cosmetics are developed with the core mission of revealing beauty through sensitivity, the SMART PEEL line incorporates new biotechnological solutions in acid and enzyme synthesis.</p>",
             "button_text": "Learn more",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://blogs/about-lines/smart-peel"
           }
         },
         "image_and_text_DwaqNy": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify://shop_images/FOX04083_2ad06c43-2307-4605-a918-a36159319b7b.jpg",
             "grid_image_size": "square",
             "heading": "HydroCeramide",
             "text": "<p>The HYDROCERAMIDE line is dedicated to reinforcing the skin’s protective barrier and addressing dehydration issues.</p>",
             "button_text": "Learn more",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://blogs/about-lines/hydroceramide"
           }
         },
         "image_and_text_NViGy9": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify://shop_images/FOX04041.jpg",
             "grid_image_size": "square",
             "heading": "A-Redensity",
             "text": "<p>The A-REDENSITY line follows a microbiome-friendly strategy to care for sensitive skin, supporting a healthy skin flora and barrier function.</p>",
             "button_text": "Learn more",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://blogs/about-lines/a-redensity"
           }
         },
         "image_and_text_TdPCEc": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify://shop_images/FOX04029_207c96ac-a58d-4687-b91f-736584049372.jpg",
             "grid_image_size": "square",
             "heading": "3action Exosome Boost",
             "text": "<p>Our flagship anti-aging line is based on the principle of reconstructing skin architecture from the base level.</p>",
             "button_text": "Learn more",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://blogs/about-lines/3action-exosome-boost"
           }
         },
         "image_and_text_KNN4VL": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify://shop_images/IMG_5916.jpg",
             "grid_image_size": "square",
             "heading": "Masks",
             "text": "<p>The RE[SENS] MASKS represent cutting-edge advancements in biotechnology and dermato-cosmetology.</p>",
             "button_text": "Learn more",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://blogs/about-lines/masks"
           }
         }
       },
