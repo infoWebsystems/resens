@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image": "shopify://shop_images/IMG_5905.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "Sustainability",
+        "title": "Innovative Technologies",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -37,13 +37,13 @@
         "heading_m8jAyh": {
           "type": "heading",
           "settings": {
-            "heading": "Re[Sens] is the first sustainable brand in the professional cosmetics industry, known for its unprecedented approach to packaging in Ukraine and beyond."
+            "heading": "RE[SENS]– THE FIRST HIGH-TECH SUSTAINABLE BRAND SPECIALIZING IN SENSITIVE SKINCARE."
           }
         },
         "richtext_BX4zqX": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Over 13 years of distributing cosmetics, countless plastic packages have passed through our company. It was really painful for us to see that most of it ended up in the ground, polluting the environment. When we decided to embark on the path of responsible business, we were limited by the waste disposal system in Ukraine (or the lack thereof) and the plastic used by the manufacturers. We realized that only by becoming a sustainable manufacturer ourselves could we ensure that our negative impact on the environment was minimal.</p>",
+            "text": "<p>All brand products are based on advanced research developed by Ukrainian scientists using the finest ingredients from around the world – from Europe to Japan, Korea, and the USA.<br/></p><p>Our goal is not just to \"soothe\" the skin but to restore its natural ability for self-healing and health maintenance by providing it with the necessary components to strengthen and balance.<br/></p><p>We love ourselves sensitive because sensitivity is not a weakness but a profound ability to feel and care for oneself. In a world where pollution, stress, and the fast pace of life have become part of our reality, sensitive skin requires special care. And that is exactly what we offer.</p>",
             "text_size": 16
           }
         }
@@ -61,6 +61,21 @@
         "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_ikhwrd": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/sen-ne-im__1.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<p>For sensitive skin, the most important thing is not overloading or \"aggressive\" methods, but balance and harmony. That is why the brand’s formulas feature a unique holistic approach that combines immuno-, neuro-, and sensi-cosmetology to support the skin and provide care without compromising its natural barrier functions.</p>",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "text_rich_text_bngeLP": {
@@ -523,6 +538,7 @@
   "order": [
     "image-with-text-overlay",
     "text_rich_text_KRj3Vw",
+    "image_image_with_text_ikhwrd",
     "text_rich_text_bngeLP",
     "text_rich_text_DAftC9",
     "image_logo_list_VTEpxB",
