@@ -342,8 +342,8 @@
         "image_and_text_cTGBjD": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/CleanUp.svg",
-            "grid_image_size": "square",
+            "image": "shopify://shop_images/1111.png",
+            "grid_image_size": "wide",
             "heading": "CleanUP",
             "text": "<p>The CleanUP product line is an innovative professional cleansing system designed to protect the skin from external stressors while supporting its internal defence functions.</p>",
             "button_text": "Learn more",
@@ -353,8 +353,8 @@
         "image_and_text_L3NgYn": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/Peel.svg",
-            "grid_image_size": "square",
+            "image": "shopify://shop_images/55555.png",
+            "grid_image_size": "wide",
             "heading": "Smart Peel",
             "text": "<p>Since all Re[Sens]cosmetics are developed with the core mission of revealing beauty through sensitivity, the SMART PEEL line incorporates new biotechnological solutions in acid and enzyme synthesis.</p>",
             "button_text": "Learn more",
@@ -364,8 +364,8 @@
         "image_and_text_DwaqNy": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/Hydro.svg",
-            "grid_image_size": "square",
+            "image": "shopify://shop_images/22222.png",
+            "grid_image_size": "wide",
             "heading": "HydroCeramide",
             "text": "<p>The HYDROCERAMIDE line is dedicated to reinforcing the skin’s protective barrier and addressing dehydration issues.</p>",
             "button_text": "Learn more",
@@ -385,8 +385,8 @@
         "image_and_text_TdPCEc": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/3A.svg",
-            "grid_image_size": "square",
+            "image": "shopify://shop_images/33333.png",
+            "grid_image_size": "wide",
             "heading": "3action Exosome Boost",
             "text": "<p>Our flagship anti-aging line is based on the principle of reconstructing skin architecture from the base level.</p>",
             "button_text": "Learn more",
@@ -396,8 +396,8 @@
         "image_and_text_KNN4VL": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/ShakerMask_Icon_9ae890d9-e2d7-45f2-9fa5-068fd4d7ed9d.png",
-            "grid_image_size": "square",
+            "image": "shopify://shop_images/mask.png",
+            "grid_image_size": "wide",
             "heading": "Masks",
             "text": "<p>The RE[SENS] MASKS represent cutting-edge advancements in biotechnology and dermato-cosmetology.</p>",
             "button_text": "Learn more",
