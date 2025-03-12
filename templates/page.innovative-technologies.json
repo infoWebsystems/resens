@@ -43,7 +43,7 @@
         "richtext_BX4zqX": {
           "type": "richtext",
           "settings": {
-            "text": "<p>All brand products are based on advanced research developed by Ukrainian scientists using the finest ingredients from around the world – from Europe to Japan, Korea, and the USA.<br/></p><p>Our goal is not just to \"soothe\" the skin but to restore its natural ability for self-healing and health maintenance by providing it with the necessary components to strengthen and balance.<br/></p><p>We love ourselves sensitive because sensitivity is not a weakness but a profound ability to feel and care for oneself. In a world where pollution, stress, and the fast pace of life have become part of our reality, sensitive skin requires special care. And that is exactly what we offer.</p>",
+            "text": "<p>All brand products are based on advanced research developed by Ukrainian scientists using the finest ingredients from around the world – from Europe to Japan, Korea, and the USA. Our goal is not just to \"soothe\" the skin but to restore its natural ability for self-healing and health maintenance by providing it with the necessary components to strengthen and balance.<br/></p><p>We love ourselves sensitive because sensitivity is not a weakness but a profound ability to feel and care for oneself. In a world where pollution, stress, and the fast pace of life have become part of our reality, sensitive skin requires special care. And that is exactly what we offer.</p>",
             "text_size": 16
           }
         }
@@ -58,7 +58,7 @@
       "settings": {
         "background_color": "",
         "colors": "white",
-        "section_width": "narrow",
+        "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
@@ -307,19 +307,33 @@
         "text_alignment_mobile": "center"
       }
     },
-    "image_image_with_text_Q9AngW": {
-      "type": "image--image-with-text",
+    "text_rich_text_ieRgzC": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_Xf4KDD": {
+          "type": "heading",
+          "settings": {
+            "heading": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM"
+          }
+        },
+        "richtext_cxDwHA": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Our products have a recommended usage period of 3 MONTHS AFTER OPENING, thanks to a unique microbiome-friendly preservation system that considers the specifics of sensitive skin. We use safe preservatives that do not disrupt the balance of the skin’s natural microbiota, which is critically important for its health. We avoid harsh chemical preservatives, such as formaldehyde donors and other aggressive chemical substances that can negatively impact the skin’s natural microbiome.<br/><br/>To extend the product’s shelf life after opening, we recommend storing it in the refrigerator door. This helps maintain its freshness and effectiveness for a longer period. We prioritize the safety and comfort of your sensitive skin, ensuring that our products deliver maximum benefits and effectiveness throughout their recommended usage period.</p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xf4KDD",
+        "richtext_cxDwHA"
+      ],
       "settings": {
-        "colors": "light",
-        "image": "shopify://shop_images/microbiome.png",
-        "text_overlapping_image": false,
-        "section-width": "full",
-        "layout": "left",
-        "text_alignment": "center",
-        "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
-        "text": "<p>Our products have a recommended usage period of 3 MONTHS AFTER OPENING, thanks to a unique microbiome-friendly preservation system that considers the specifics of sensitive skin.<br/><br/>We use safe preservatives that do not disrupt the balance of the skin’s natural microbiota, which is critically important for its health.<br/><br/>We avoid harsh chemical preservatives, such as formaldehyde donors and other aggressive chemical substances that can negatively impact the skin’s natural microbiome.<br/><br/>To extend the product’s shelf life after opening, we recommend storing it in the refrigerator door. This helps maintain its freshness and effectiveness for a longer period.</p><p>We prioritize the safety and comfort of your sensitive skin, ensuring that our products deliver maximum benefits and effectiveness throughout their recommended usage period.</p>",
-        "button_label": "",
-        "button_link": ""
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "template_product_info_columns_iwVaqi": {
@@ -448,7 +462,7 @@
     "text_rich_text_DAftC9",
     "image_image_with_text_overlay_NXF8we",
     "text_rich_text_ebXmeq",
-    "image_image_with_text_Q9AngW",
+    "text_rich_text_ieRgzC",
     "template_product_info_columns_iwVaqi",
     "double-image-section",
     "blog_blog_posts_Rdw7XP"
