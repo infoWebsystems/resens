@@ -330,28 +330,57 @@
           "settings": {
             "grid_image_size": "square",
             "heading": "CleanUP",
-            "text": "<p>The<strong>CleanUP product line</strong>is an innovative professional cleansing system designed to protect the skin from external stressors while supporting its internal defence functions.</p>",
+            "text": "<p>The CleanUP product line is an innovative professional cleansing system designed to protect the skin from external stressors while supporting its internal defence functions.</p>",
             "button_text": "Learn more",
             "button_link": "shopify://collections/all"
           }
         },
-        "image_and_text_6J8KWC": {
+        "image_and_text_L3NgYn": {
           "type": "image_and_text",
           "settings": {
             "grid_image_size": "square",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
+            "heading": "Smart Peel",
+            "text": "<p>Since all Re[Sens]cosmetics are developed with the core mission of revealing beauty through sensitivity, the SMART PEEL line incorporates new biotechnological solutions in acid and enzyme synthesis.</p>",
             "button_text": "Learn more",
             "button_link": "shopify://collections/all"
           }
         },
-        "video_and_text_HHBePr": {
-          "type": "video_and_text",
+        "image_and_text_DwaqNy": {
+          "type": "image_and_text",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "grid_video_size": "wide",
-            "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
+            "grid_image_size": "square",
+            "heading": "HydroCeramide",
+            "text": "<p>The HYDROCERAMIDE line is dedicated to reinforcing the skin’s protective barrier and addressing dehydration issues.</p>",
+            "button_text": "Learn more",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_NViGy9": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square",
+            "heading": "A-Redensity",
+            "text": "<p>The A-REDENSITY line follows a microbiome-friendly strategy to care for sensitive skin, supporting a healthy skin flora and barrier function.</p>",
+            "button_text": "Learn more",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_TdPCEc": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square",
+            "heading": "3action Exosome Boost",
+            "text": "<p>Our flagship anti-aging line is based on the principle of reconstructing skin architecture from the base level.</p>",
+            "button_text": "Learn more",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_KNN4VL": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square",
+            "heading": "Masks",
+            "text": "<p>The RE[SENS] MASKS represent cutting-edge advancements in biotechnology and dermato-cosmetology.</p>",
             "button_text": "Learn more",
             "button_link": "shopify://collections/all"
           }
@@ -359,14 +388,17 @@
       },
       "block_order": [
         "image_and_text_cTGBjD",
-        "image_and_text_6J8KWC",
-        "video_and_text_HHBePr"
+        "image_and_text_L3NgYn",
+        "image_and_text_DwaqNy",
+        "image_and_text_NViGy9",
+        "image_and_text_TdPCEc",
+        "image_and_text_KNN4VL"
       ],
       "settings": {
         "colors": "white",
-        "heading": "Info columns",
-        "description": "<p>Emphasise your messaging</p>",
-        "columns_per_row": 3,
+        "heading": "",
+        "description": "",
+        "columns_per_row": 4,
         "text_alignment": "center",
         "vertical_alignment": "top"
       }
