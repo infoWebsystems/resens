@@ -168,18 +168,47 @@
         "homepage-hero-video-mute": false
       }
     },
+    "image_image_with_text_overlay_LcPgVa": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/IMG_5905_2a8f0018-5b64-4a42-93a3-4c6601087d9c.jpg",
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 20,
+        "parallax": true,
+        "title": "WHAT IS NEUROCOSMETICS?",
+        "text": "Neurocosmetologyis an innovative field of cosmetology that explores and utilizes the connectionbetween the skin and the nervous system to create more effective and balancedskincare products. It is based on the understanding that the skin is not just aprotective barrier but also an organ capable of perceiving and responding toexternal and internal stimuli, including emotional stress, anxiety, fatigue,and other psycho-emotional states.",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
+      }
+    },
     "text_rich_text_DAftC9": {
       "type": "text--rich-text",
       "blocks": {
+        "heading_hWL9G6": {
+          "type": "heading",
+          "settings": {
+            "heading": "How does it work?"
+          }
+        },
         "richtext_GhjAYc": {
           "type": "richtext",
           "settings": {
-            "text": "<p>That's how the idea to produce effective cosmetics and health products in a new generation of packaging that neither increases plastic pollution nor contaminates land and wastewater came about. Our goal, strategy, and vision were formed in <a href=\"https://www.un.org/en/our-work/support-sustainable-development-and-climate-action\" target=\"_blank\" title=\"https://www.un.org/en/our-work/support-sustainable-development-and-climate-action\">accordance with the sustainable development goals that the UN plans to implement by 2030</a>, namely, to prevent climate warming by more than 1.5°C.</p>",
+            "text": "<p>Neurocosmetics focus on developing formulas that maintain a balance between the skin's physiological and emotional health. They include ingredients that not only soothe the skin but also act on nerve receptors, reducing the impact of stress factors and helping the skin recover.<br/></p><h6>By influencing the sensory neurons of the skin, we impact brain function.</h6><p>The presence of neurobiological communication ensures that all body systems work harmoniously and synchronously.<br/></p><p>Modern technologies for extracting cellular peptides and metabolites from plant stem cells, as well as microbiome-friendly correction with probiotics/prebiotics, aim to improve the psycho-emotional state and skin health by influencing neurotransmitters.</p>",
             "text_size": 16
           }
         }
       },
       "block_order": [
+        "heading_hWL9G6",
         "richtext_GhjAYc"
       ],
       "settings": {
@@ -190,71 +219,40 @@
         "text_alignment_mobile": "center"
       }
     },
-    "text_rich_text_9EGRrh": {
-      "type": "text--rich-text",
-      "blocks": {
-        "richtext_W3eg7i": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>We are a <a href=\"https://www.cisl.cam.ac.uk/resources/unleashing-sustainable-business\" target=\"_blank\" title=\"https://www.cisl.cam.ac.uk/resources/unleashing-sustainable-business\">PDO (purpose-driven organization)</a> where the ORGANIZATIONAL purpose is the reason for our existence. In other words, our purpose answers the question of WHY the company was born. We believe that our activities should benefit everyone, both people and the planet, making them our ultimate beneficiaries. This means we are focused on impact that generates value and supports the global goals of society and the economy.</p><p> We make decisions that support this goal, even if it may reduce profits or require additional efforts to implement. For us, the financial goal is an intermediate one, as opposed to BAU (business as usual), where profit maximization remains the main goal.</p>",
-            "text_size": 16
-          }
-        },
-        "richtext_LLUKX3": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>We are implementing a set of measures to become a Zero Net Company within 10 years and reduce the carbon footprint of our production cycle. </p><p>We are integrating carbon management tools, where emissions will be included in the main KPIs of the company. At the start, we are launching the process of calculating our carbon footprint, which takes about two years, and we are confidently moving towards achieving this goal.</p>",
-            "text_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "richtext_W3eg7i",
-        "richtext_LLUKX3"
-      ],
+    "image_image_with_text_overlay_NXF8we": {
+      "type": "image--image-with-text-overlay",
       "settings": {
-        "background_color": "#f4f4f4",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "image": "shopify://shop_images/FOX05861.jpg",
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 20,
+        "parallax": true,
+        "title": "SLOW BEAUTY PHILOSOPHY",
+        "text": "Wereject the pursuit of instant results and focus on balanced beauty. The SlowBeauty concept is not just about skincare; it is a true life philosophy whereit is important to take time for yourself, listen to your body, and not rush.Slow Beauty requires mindfulness and respect for every skin cell, so we createproducts that enrich your skin with the optimal balance of hydration, soothing,and nourishment.",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
-    "content-on-image-background": {
-      "type": "content-on-image-background",
-      "settings": {
-        "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "Everyone can reduce their carbon footprint by changing their habits",
-        "description": "<p>Interested in what carbon footprint you leave behind? <br/>Calculate it with our online calculator.</p>",
-        "btn_label": "CALCULATE",
-        "btn_url": "https://www.mamaplantatree.com/ua/calc-3/",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
-      }
-    },
-    "text_rich_text_aiRYBj": {
+    "text_rich_text_ebXmeq": {
       "type": "text--rich-text",
       "blocks": {
-        "heading_YcMViT": {
+        "heading_qEpkFw": {
           "type": "heading",
           "settings": {
-            "heading": "ECO-RESPONSIBLE PACKAGING"
-          }
-        },
-        "richtext_EiWYGj": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>The beauty industry has a reputation as one of the least environmentally friendly industries due to its heavy reliance on disposable products and plastic packaging. Because packaging is a major contributor to carbon emissions, the focus of our project is on radically different packaging.</p><p> Ukraine currently has a rather low culture of sorting and composting. Therefore, in addition to direct climate action, we aim to change the attitude towards packaging in the professional market. By spreading awareness of the benefits of environmentally friendly packaging and educating people about sorting and composting, we hope to influence the culture of packaging use and take an important step towards a sustainable future for our planet. <br/>After all, plastic production and its ever-growing waste pose a fundamental threat to our planet and humanity.</p>",
-            "text_size": 16
+            "heading": "BALANCE DAMOUNT OF NECESSARY INGREDIENTS = THE PERFECT FORMULA THAT HITS THE TARGET"
           }
         }
       },
       "block_order": [
-        "heading_YcMViT",
-        "richtext_EiWYGj"
-      ],
-      "custom_css": [
-        "h2 {font-size: 32px;}"
+        "heading_qEpkFw"
       ],
       "settings": {
         "background_color": "",
@@ -264,144 +262,29 @@
         "text_alignment_mobile": "center"
       }
     },
-    "text_rich_text_mpqPj7": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_8jULwK": {
-          "type": "heading",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "richtext_9r3Abp": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>Plastic is currently driving the growth of the petrochemical industry and contributing to the overall growth of oil consumption. Around 460 million tons of plastic are produced every year, and all too often it ends up in the wrong place. And when plastic gets into nature, it stays there forever, accumulating and affecting every ecosystem. <strong>Over the next 30 years, oil-based plastic production is estimated to quadruple, which will significantly impact CO2 emissions and have a dangerous impact on biodiversity.</strong> According to the International Union for Conservation of Nature (IUCN), numerous species of animals and plants are at risk of extinction.</p>",
-            "text_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_8jULwK",
-        "richtext_9r3Abp"
-      ],
-      "settings": {
-        "background_color": "#f4f4f4",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "image_image_with_text_cBwR3y": {
+    "image_image_with_text_Q9AngW": {
       "type": "image--image-with-text",
-      "custom_css": [
-        "p {text-align: left !important;}"
-      ],
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/5455.jpg",
+        "image": "shopify://shop_images/IMG_5980.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
-        "text_alignment": "left",
-        "title": "",
-        "text": "<p>•\tGreat Panda (Ailuropoda melanoleuca)<br/>•\tTiger (Panthera tigris)<br/>•\tAmazonian dolphin (Inia geoffrensis)<br/>•\tGorilla (Gorilla beringei, Gorilla gorilla)<br/>•\tElephant (Loxodonta spp., Elephas maximus)<br/>•\tGiraffe (Giraffa camelopardalis)<br/>•\tLeopard (Panthera pardus)<br/>•\tOrangutan (Pongo spp.)<br/>•\tSea turtle (Cheloniidae, Dermochelyidae)<br/>•\tRhizophora spp.<br/>•\tCalifornia redwood (Sequoia sempervirens)<br/>•\tThorny archives (Pachypodium spp.)<br/>•\tLarge elephant grass (Adansonia digitata)<br/>•\tDwarf Oak (Quercus spp.)<br/></p>",
+        "text_alignment": "center",
+        "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
+        "text": "<p>Our products have a recommended usage period of 3 MONTHS AFTER OPENING, thanks to a unique microbiome-friendly preservation system that considers the specifics of sensitive skin.<br/><br/>We use safe preservatives that do not disrupt the balance of the skin’s natural microbiota, which is critically important for its health.<br/><br/>We avoid harsh chemical preservatives, such as formaldehyde donors and other aggressive chemical substances that can negatively impact the skin’s natural microbiome.<br/><br/>To extend the product’s shelf life after opening, we recommend storing it in the refrigerator door. This helps maintain its freshness and effectiveness for a longer period.</p><p>We prioritize the safety and comfort of your sensitive skin, ensuring that our products deliver maximum benefits and effectiveness throughout their recommended usage period.</p>",
         "button_label": "",
         "button_link": ""
       }
     },
-    "image_logo_list_3YXzBG": {
-      "type": "image--logo-list",
-      "blocks": {
-        "logo_image_yPPJAj": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/New_Project441.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_mDKAKW": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/New_Project312.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_DfJehL": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/New_Project3124.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_4ct9yK": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/New_Project1.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_yPPJAj",
-        "logo_image_mDKAKW",
-        "logo_image_DfJehL",
-        "logo_image_4ct9yK"
-      ],
-      "custom_css": [
-        "img {height: 290px;}"
-      ],
-      "settings": {
-        "colors": "light",
-        "width": 290,
-        "title": ""
-      }
-    },
-    "text_rich_text_YQNdgz": {
-      "type": "text--rich-text",
-      "blocks": {
-        "richtext_himPjd": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>These are just a few of the many endangered species. Helping to conserve these species and their habitats is essential to preserving our planet's biodiversity. </p><p>Reducing, reusing, and recycling are still key methods of circularity and conservation of natural resources. But why is the production of petroleum-based plastics still growing, even though recycled plastics are preferred?</p><p> This is because plastic can be mechanically recycled only once, and demand is only growing. So what happens to plastic waste? Unfortunately, most of it ends up in nature or is incinerated. </p><p>Even in the most optimistic scenario, only 37% of plastic packaging will be recycled by 2050. Every year, 14 million tons of plastic gets into the ocean. All this plastic degrades into tiny particles - microplastics - that last forever, accumulate in nature, and pose a serious threat to ecosystems and human health. These tiny particles are already in the oceans, among the pollen carried by bees, and in our lungs.</p>",
-            "text_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "richtext_himPjd"
-      ],
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
     "double-image-section": {
       "type": "double-image-section",
+      "disabled": true,
       "settings": {
         "title": "In a week, we consume a plastic credit card.",
         "main_image": "shopify://shop_images/image_12.jpg",
         "secondary_image": "shopify://shop_images/Rectangle_65.png",
         "description": "A study by The University of Newcastle, commissioned by WWF, found that the average person consumes about 2,000 tiny pieces of plastic every week, or about 5 grams, which is the weight of an average credit card!"
-      }
-    },
-    "content_on_image_background_P6Vefr": {
-      "type": "content-on-image-background",
-      "custom_css": [
-        ".content-on-image-background {padding: 120px 0;}"
-      ],
-      "settings": {
-        "background": "shopify://shop_images/Rectangle_60.jpg",
-        "title": "Greenwashing VS Sustainable",
-        "description": "<p>Environmental awareness is becoming more and more important, and along with it, interest in sustainable approaches in business is growing. However, is it really as clean as it seems? Let's take a deeper look at this together.</p>",
-        "btn_label": "READ MORE",
-        "btn_url": "shopify://blogs/news/greenwashing-vs-sustainable",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
       }
     },
     "blog_blog_posts_Rdw7XP": {
@@ -433,16 +316,12 @@
     "image_image_with_text_ikhwrd",
     "text_rich_text_bngeLP",
     "advanced_layout_hero_tjhPyn",
+    "image_image_with_text_overlay_LcPgVa",
     "text_rich_text_DAftC9",
-    "text_rich_text_9EGRrh",
-    "content-on-image-background",
-    "text_rich_text_aiRYBj",
-    "text_rich_text_mpqPj7",
-    "image_image_with_text_cBwR3y",
-    "image_logo_list_3YXzBG",
-    "text_rich_text_YQNdgz",
+    "image_image_with_text_overlay_NXF8we",
+    "text_rich_text_ebXmeq",
+    "image_image_with_text_Q9AngW",
     "double-image-section",
-    "content_on_image_background_P6Vefr",
     "blog_blog_posts_Rdw7XP"
   ]
 }
