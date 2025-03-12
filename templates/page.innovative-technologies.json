@@ -132,7 +132,7 @@
             "hero-menu-heading": "Clinically proven effectiveness",
             "hero-menu-subheading": "",
             "hero-menu-link": "",
-            "featured_image": "shopify://shop_images/3.png",
+            "featured_image": "shopify://shop_images/34.png",
             "featured_image_size": "medium"
           }
         },
@@ -142,7 +142,8 @@
             "hero-menu-heading": "Innovative raw materials from different parts of the world: Europe, Japan, Korea, USA",
             "hero-menu-subheading": "",
             "hero-menu-link": "",
-            "featured_image_size": "original"
+            "featured_image": "shopify://shop_images/4_0efa8f3d-9c0c-4fd1-8904-7f280f08b666.png",
+            "featured_image_size": "medium"
           }
         }
       },
@@ -158,7 +159,7 @@
         "image_overlay_opacity": 20,
         "homepage-hero-image-heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
         "homepage-hero-image-description": "",
-        "text-color": "#fff",
+        "text-color": "#ffffff",
         "homepage-hero-image-button-label": "",
         "homepage-hero-image-link": "",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
