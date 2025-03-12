@@ -328,11 +328,12 @@
         "image_and_text_cTGBjD": {
           "type": "image_and_text",
           "settings": {
+            "image": "shopify://shop_images/FOX02697.jpg",
             "grid_image_size": "square",
             "heading": "CleanUP",
             "text": "<p>The CleanUP product line is an innovative professional cleansing system designed to protect the skin from external stressors while supporting its internal defence functions.</p>",
             "button_text": "Learn more",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://blogs/about-lines/cleanup"
           }
         },
         "image_and_text_L3NgYn": {
