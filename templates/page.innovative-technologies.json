@@ -93,7 +93,7 @@
         "text_dynamic_yRDJhH": {
           "type": "text_dynamic",
           "settings": {
-            "text_dynamic": "WITHOUT, DIMINISHING",
+            "text_dynamic": "WITHOUT DIMINISHING",
             "animation_timing": 300,
             "rotation_interval": 3000,
             "text_color": "#fefefe"
