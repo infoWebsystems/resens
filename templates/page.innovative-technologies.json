@@ -103,6 +103,69 @@
         "text_alignment_mobile": "center"
       }
     },
+    "template_product_info_columns_9zwQXK": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_NLNUWg": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1_c9450c45-fa93-4dfb-b146-fa5fc8281020.png",
+            "grid_image_size": "wide",
+            "heading": "",
+            "text": "<h5>Own formulas developed by Ukrainian scientists</h5>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_KLKdYY": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "grid_image_size": "wide",
+            "heading": "",
+            "text": "<h5>Cosmetics certified in the EU and meet the highest quality standards</h5>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_ke3Jdb": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/34.png",
+            "grid_image_size": "wide",
+            "heading": "",
+            "text": "<h5>Clinically proven effectiveness</h5>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_kFY4WP": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/4_0efa8f3d-9c0c-4fd1-8904-7f280f08b666.png",
+            "grid_image_size": "wide",
+            "heading": "",
+            "text": "<h5>Innovative raw materials from different parts of the world: Europe, Japan, Korea, USA</h5>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_NLNUWg",
+        "image_and_text_KLKdYY",
+        "image_and_text_ke3Jdb",
+        "image_and_text_kFY4WP"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
+        "description": "",
+        "columns_per_row": 4,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
     "advanced_layout_hero_tjhPyn": {
       "type": "advanced-layout--hero",
       "blocks": {
@@ -315,6 +378,7 @@
     "text_rich_text_KRj3Vw",
     "image_image_with_text_ikhwrd",
     "text_rich_text_bngeLP",
+    "template_product_info_columns_9zwQXK",
     "advanced_layout_hero_tjhPyn",
     "image_image_with_text_overlay_LcPgVa",
     "text_rich_text_DAftC9",
