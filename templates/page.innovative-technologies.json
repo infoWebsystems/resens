@@ -216,9 +216,9 @@
     "image_image_with_text_overlay_LcPgVa": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/IMG_5905_2a8f0018-5b64-4a42-93a3-4c6601087d9c.jpg",
+        "image": "shopify://shop_images/side-view-woman-face-scan.jpg",
         "image_height": "40vw",
-        "bg_image_overlay_opacity": 20,
+        "bg_image_overlay_opacity": 30,
         "parallax": true,
         "title": "WHAT IS NEUROCOSMETICS?",
         "text": "Neurocosmetologyis an innovative field of cosmetology that explores and utilizes the connectionbetween the skin and the nervous system to create more effective and balancedskincare products. It is based on the understanding that the skin is not just aprotective barrier but also an organ capable of perceiving and responding toexternal and internal stimuli, including emotional stress, anxiety, fatigue,and other psycho-emotional states.",
