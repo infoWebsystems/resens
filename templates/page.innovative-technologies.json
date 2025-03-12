@@ -375,7 +375,8 @@
         "image_and_text_NViGy9": {
           "type": "image_and_text",
           "settings": {
-            "grid_image_size": "square",
+            "image": "shopify://shop_images/4444.png",
+            "grid_image_size": "wide",
             "heading": "A-Redensity",
             "text": "<p>The A-REDENSITY line follows a microbiome-friendly strategy to care for sensitive skin, supporting a healthy skin flora and barrier function.</p>",
             "button_text": "Learn more",
