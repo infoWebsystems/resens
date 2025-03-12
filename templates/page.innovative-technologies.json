@@ -78,16 +78,51 @@
         "button_link": ""
       }
     },
-    "content_on_image_background_4kPAeC": {
-      "type": "content-on-image-background",
+    "animated_text_ihGAGL": {
+      "type": "animated-text",
+      "blocks": {
+        "text_static_UdefXy": {
+          "type": "text_static",
+          "settings": {
+            "text_static": "<p>REDUCING SENSITIVITY</p>",
+            "max_width_desktop": 100,
+            "max_width_mobile": 100,
+            "text_color": "#fefefe"
+          }
+        },
+        "text_dynamic_yRDJhH": {
+          "type": "text_dynamic",
+          "settings": {
+            "text_dynamic": "WITHOUT, DIMINISHING",
+            "animation_timing": 300,
+            "rotation_interval": 3000,
+            "text_color": "#fefefe"
+          }
+        },
+        "text_static_Qb7UHY": {
+          "type": "text_static",
+          "settings": {
+            "text_static": "<p>SENSATION</p>",
+            "max_width_desktop": 100,
+            "max_width_mobile": 100,
+            "text_color": "#fefefe"
+          }
+        }
+      },
+      "block_order": [
+        "text_static_UdefXy",
+        "text_dynamic_yRDJhH",
+        "text_static_Qb7UHY"
+      ],
       "settings": {
-        "background": "shopify://shop_images/IMG_5905.jpg",
-        "title": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
-        "description": "",
-        "btn_label": "",
-        "btn_url": "",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
+        "colors": "white",
+        "image_desktop": "shopify://shop_images/FOX05415.jpg",
+        "height_desktop": "m",
+        "text_size_desktop": 60,
+        "text_position_desktop": "center",
+        "height_mobile": "full",
+        "text_size_mobile": 22,
+        "text_position_mobile": "center"
       }
     },
     "text_rich_text_bngeLP": {
@@ -171,7 +206,7 @@
       ],
       "settings": {
         "colors": "white",
-        "heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
+        "heading": "",
         "description": "",
         "columns_per_row": 4,
         "text_alignment": "center",
@@ -324,7 +359,7 @@
     "image-with-text-overlay",
     "text_rich_text_KRj3Vw",
     "image_image_with_text_ikhwrd",
-    "content_on_image_background_4kPAeC",
+    "animated_text_ihGAGL",
     "text_rich_text_bngeLP",
     "template_product_info_columns_9zwQXK",
     "image_image_with_text_overlay_LcPgVa",
