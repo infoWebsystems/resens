@@ -81,17 +81,17 @@
     "text_rich_text_bngeLP": {
       "type": "text--rich-text",
       "blocks": {
-        "richtext_4x3hfA": {
-          "type": "richtext",
+        "heading_d9bMUt": {
+          "type": "heading",
           "settings": {
-            "text": "<p>\"Sustainable marketing should be, first and foremost, internal marketing. The only thing we can be sure of is changing ourselves!\" <br/>- <strong>Yulia Polyakova and Olga Guzhyk.</strong></p><p>\"My goal is to make a beautiful product without impoverishing the future of my daughters.\" - <strong>Yulia Gagarina.</strong></p>",
-            "text_size": 16
+            "heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION"
           }
         }
       },
       "block_order": [
-        "richtext_4x3hfA"
+        "heading_d9bMUt"
       ],
+      "disabled": true,
       "custom_css": [
         "p {text-align: center !important;}"
       ],
@@ -101,6 +101,69 @@
         "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "advanced_layout_hero_tjhPyn": {
+      "type": "advanced-layout--hero",
+      "blocks": {
+        "text_nbeRwr": {
+          "type": "text",
+          "settings": {
+            "hero-menu-heading": "Own formulas developed by Ukrainian scientists",
+            "hero-menu-subheading": "",
+            "hero-menu-link": "",
+            "featured_image": "shopify://shop_images/1_c9450c45-fa93-4dfb-b146-fa5fc8281020.png",
+            "featured_image_size": "original"
+          }
+        },
+        "text_nnACWc": {
+          "type": "text",
+          "settings": {
+            "hero-menu-heading": "Cosmetics certified in the EU and meet the highest quality standards",
+            "hero-menu-subheading": "",
+            "hero-menu-link": "",
+            "featured_image": "shopify://shop_images/2.png",
+            "featured_image_size": "original"
+          }
+        },
+        "text_eQjaLD": {
+          "type": "text",
+          "settings": {
+            "hero-menu-heading": "Clinically proven effectiveness",
+            "hero-menu-subheading": "",
+            "hero-menu-link": "",
+            "featured_image_size": "original"
+          }
+        },
+        "text_KL6YET": {
+          "type": "text",
+          "settings": {
+            "hero-menu-heading": "Innovative raw materials from different parts of the world: Europe, Japan, Korea, USA",
+            "hero-menu-subheading": "",
+            "hero-menu-link": "",
+            "featured_image_size": "original"
+          }
+        }
+      },
+      "block_order": [
+        "text_nbeRwr",
+        "text_nnACWc",
+        "text_eQjaLD",
+        "text_KL6YET"
+      ],
+      "settings": {
+        "homepage-hero-featured-content": "homepage-hero-image-selection",
+        "home-page-hero-image": "shopify://shop_images/IMG_5887.jpg",
+        "image_overlay_opacity": 20,
+        "homepage-hero-image-heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
+        "homepage-hero-image-description": "",
+        "text-color": "#fff",
+        "homepage-hero-image-button-label": "",
+        "homepage-hero-image-link": "",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "homepage-hero-video-autoplay": true,
+        "homepage-hero-video-loop": true,
+        "homepage-hero-video-mute": false
       }
     },
     "text_rich_text_DAftC9": {
@@ -123,73 +186,6 @@
         "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
-      }
-    },
-    "image_logo_list_VTEpxB": {
-      "type": "image--logo-list",
-      "blocks": {
-        "logo_image_rE7eEr": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/213.png",
-            "link": "https://www.un.org/sustainabledevelopment/health/"
-          }
-        },
-        "logo_image_pXnJki": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/4141.png",
-            "link": "https://www.un.org/sustainabledevelopment/sustainable-consumption-production/"
-          }
-        },
-        "logo_image_jr8F3L": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/43422.png",
-            "link": "https://www.un.org/sustainabledevelopment/climate-change/"
-          }
-        },
-        "logo_image_hQKDqQ": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/5252.png",
-            "link": "https://www.un.org/sustainabledevelopment/oceans/"
-          }
-        },
-        "logo_image_BN7dAK": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/5252112.png",
-            "link": "https://www.un.org/sustainabledevelopment/biodiversity/"
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_rE7eEr",
-        "logo_image_pXnJki",
-        "logo_image_jr8F3L",
-        "logo_image_hQKDqQ",
-        "logo_image_BN7dAK"
-      ],
-      "settings": {
-        "colors": "white",
-        "width": 150,
-        "title": ""
-      }
-    },
-    "video_video_7GpWej": {
-      "type": "video--video",
-      "settings": {
-        "colors": "white",
-        "title": "",
-        "richtext": "",
-        "width_classes": 75,
-        "url": "https://www.youtube.com/watch?v=0XTBYMfZyrM",
-        "url_mobile": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "autoplay": false,
-        "loop": true,
-        "mute": false,
-        "video_overlay_opacity": 50
       }
     },
     "text_rich_text_9EGRrh": {
@@ -391,112 +387,6 @@
         "description": "A study by The University of Newcastle, commissioned by WWF, found that the average person consumes about 2,000 tiny pieces of plastic every week, or about 5 grams, which is the weight of an average credit card!"
       }
     },
-    "text_rich_text_Y8tT6t": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_MEyHRB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Could microplastics get into our bloodstream?"
-          }
-        },
-        "richtext_aknRVp": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>It is generally believed that once microplastics enter the human body, they will be excreted through the gastrointestinal tract and biliary tract. However, researchers at the Amsterdam University Medical Center have found the presence of microplastics in human blood.</p><p> A recent review by the Mexico National Polytechnic Institute shows that microplastics are transported throughout the body through the bloodstream and have been found in 15 human biological components, such as spleen, liver, colon, lungs, feces, placenta, breast milk, etc. The organs with the highest levels are the colon (28.1 ppm/g) and liver (4.6 ppm/g). </p><p>Microplastics are virtually impossible to clean up once they enter the environment. It simply continues to accumulate, posing a growing threat to our ecosystem and health every day.</p>",
-            "text_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_MEyHRB",
-        "richtext_aknRVp"
-      ],
-      "settings": {
-        "background_color": "#f4f4f4",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "custom-collage": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row",
-        "title": "Plastic Alternatives - SULAPAC®",
-        "main_image": "shopify://shop_images/IMG_1951.jpg",
-        "main_text": "<p><strong>The only way to reduce our dependence on oil and stop microplastic pollution is to replace conventional plastic with bio-based and biodegradable materials that leave no microplastics at any stage of the product's life cycle.</strong></p><p>\"Replacing traditional plastics with biodegradable, biobased materials and creating an efficient recycling system for this group of materials is key to a cleaner future; it enables us to reduce our dependence on oil, eliminate microplastic pollution and fight global warming,\" said Suvi Haimi, CEO and co-founder of Sulapac.</p>",
-        "btn_label": "READ MORE",
-        "btn_url": "shopify://blogs/news/plastic-alternatives"
-      }
-    },
-    "custom_collage_kDGw4h": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row-reverse",
-        "title": "Aluminium",
-        "main_image": "shopify://shop_images/IMG_1952.jpg",
-        "main_text": "<p><strong>Aluminum is the world's most recyclable material. </strong></p><p>Over 75% of all aluminum produced since 1988 is still in circulation in recycled form, which demonstrates its high recyclability and importance for resource conservation. Recycling aluminum uses 95% less energy than creating a new material from virgin raw materials. Aluminum can be reused an unlimited number of times without losing its quality and properties, making it an effective alternative to plastic packaging. We see aluminum as one of the key materials that plays an important role in our sustainability strategy. It is an ideal example of a material that can form the foundation for a future renewable economy.</p>",
-        "btn_label": "READ MORE",
-        "btn_url": "shopify://blogs/news/aluminium"
-      }
-    },
-    "custom_collage_LQGGRm": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row",
-        "title": "MYCELIUM",
-        "main_image": "shopify://shop_images/Rectangle_61_2.jpg",
-        "main_text": "<p><strong>The mycelium used for our packaging was also chosen to reduce our environmental impact. It plays an important role in our strategy, as it minimizes our environmental footprint. </strong></p><p>Mycelium is not only a natural but also a highly sustainable alternative to traditional plastic packaging. It is produced by cultivating mushrooms in special conditions, where they are provided with the right nutrient medium, humidity and temperature. The fungi that form the mycelium grow in a suitable substrate base, such as straw, wood shavings or agricultural waste. It is highly durable and can be molded into any desired shape.</p>",
-        "btn_label": "read more",
-        "btn_url": "shopify://blogs/news/mycelium"
-      }
-    },
-    "custom_collage_TNwGb8": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row-reverse",
-        "title": "Wood",
-        "main_image": "shopify://shop_images/IMG_1957_01f3d212-0866-4a68-b8e9-88688edb3fd8.jpg",
-        "main_text": "<p><strong>Wood is a natural, biodegradable material that biodegrades easily in nature and plays an important role in our environmental strategy.</strong></p><p> Our choice to use wood for the lids on aluminum tubes is driven by our desire to reduce plastic as much as possible. A special production technology allows us to make threads directly into the wood and makes it possible to remove even the smallest plastic elements from the packaging, such as caps. The lids with threads inside are made in the Zhytomyr region from carefully selected wood that comes from responsibly managed forests. </p>",
-        "btn_label": "Read more",
-        "btn_url": "shopify://blogs/news/wood"
-      }
-    },
-    "custom_collage_gfPUyY": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row",
-        "title": "FALLEN LEAVES ",
-        "main_image": "shopify://shop_images/IMG_0687_1.jpg",
-        "main_text": "<p><strong>Massive uncontrolled deforestation is a serious problem in the modern world. This process leads to the loss of the natural environment, species extinction, and the destruction of biodiversity.</strong></p><p>In 2017, a 16-year-old schoolboy from Zakarpattia, with a flair for biotechnology, came up with the idea of preserving the Carpathian forests by creating revolutionary paper from alternative raw materials. The research in the school laboratory and home kitchen lasted over 6 months.</p>",
-        "btn_label": "read more",
-        "btn_url": "shopify://blogs/news/fallen-leaves"
-      }
-    },
-    "custom_collage_7zeBbt": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row-reverse",
-        "title": "FLOWERING PAPER",
-        "main_image": "shopify://shop_images/IMG_1953.jpg",
-        "main_text": "<p><strong>Flowering paper embodies the idea of circularity and responsibility towards nature, and turns packaging into something more than just garbage. It is enough to plant this paper in the ground and water it, and in 7-10 days the first flower shoots of poppy, purslane, petunia and marigold will sprout.</strong></p><p>This innovative packaging not only provides a unique experience for consumers, but also has a significant environmental benefit. Even if it ends up in any environment, due to uncontrolled recycling, only flowers will remain.</p><p></p>",
-        "btn_label": "read more",
-        "btn_url": "shopify://blogs/news/flowering-paper"
-      }
-    },
-    "custom_collage_nakQzg": {
-      "type": "custom-collage",
-      "settings": {
-        "image_position": "row",
-        "title": "TREES PLANTING",
-        "main_image": "shopify://shop_images/IMG_1956.jpg",
-        "main_text": "<p><strong>\"Mama, plant a tree\" - is the first tree planting project in Ukraine supported by the United Nations. Founded by a group of Ukrainian mothers, the project aims to reduce CO2 emissions and support environmental initiatives.</strong></p><p>Every year, the average person on the planet produces 6 tons of CO2, so to offset this impact and preserve nature for future generations, one person needs to plant 73 trees annually. \"Mama, plant a tree\" has made this process easy and affordable.</p>",
-        "btn_label": "read more",
-        "btn_url": "shopify://blogs/news/trees-planting"
-      }
-    },
     "content_on_image_background_P6Vefr": {
       "type": "content-on-image-background",
       "custom_css": [
@@ -540,9 +430,8 @@
     "text_rich_text_KRj3Vw",
     "image_image_with_text_ikhwrd",
     "text_rich_text_bngeLP",
+    "advanced_layout_hero_tjhPyn",
     "text_rich_text_DAftC9",
-    "image_logo_list_VTEpxB",
-    "video_video_7GpWej",
     "text_rich_text_9EGRrh",
     "content-on-image-background",
     "text_rich_text_aiRYBj",
@@ -551,14 +440,6 @@
     "image_logo_list_3YXzBG",
     "text_rich_text_YQNdgz",
     "double-image-section",
-    "text_rich_text_Y8tT6t",
-    "custom-collage",
-    "custom_collage_kDGw4h",
-    "custom_collage_LQGGRm",
-    "custom_collage_TNwGb8",
-    "custom_collage_gfPUyY",
-    "custom_collage_7zeBbt",
-    "custom_collage_nakQzg",
     "content_on_image_background_P6Vefr",
     "blog_blog_posts_Rdw7XP"
   ]
