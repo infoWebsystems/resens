@@ -132,7 +132,8 @@
             "hero-menu-heading": "Clinically proven effectiveness",
             "hero-menu-subheading": "",
             "hero-menu-link": "",
-            "featured_image_size": "original"
+            "featured_image": "shopify://shop_images/3.png",
+            "featured_image_size": "medium"
           }
         },
         "text_KL6YET": {
