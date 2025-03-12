@@ -78,6 +78,18 @@
         "button_link": ""
       }
     },
+    "content_on_image_background_4kPAeC": {
+      "type": "content-on-image-background",
+      "settings": {
+        "background": "shopify://shop_images/IMG_5905.jpg",
+        "title": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
+        "description": "",
+        "btn_label": "",
+        "btn_url": "",
+        "btn_custom_class_name": "",
+        "section_bottom_margin": 0
+      }
+    },
     "text_rich_text_bngeLP": {
       "type": "text--rich-text",
       "blocks": {
@@ -164,71 +176,6 @@
         "columns_per_row": 4,
         "text_alignment": "center",
         "vertical_alignment": "top"
-      }
-    },
-    "advanced_layout_hero_tjhPyn": {
-      "type": "advanced-layout--hero",
-      "blocks": {
-        "text_nbeRwr": {
-          "type": "text",
-          "settings": {
-            "hero-menu-heading": "Own formulas developed by Ukrainian scientists",
-            "hero-menu-subheading": "",
-            "hero-menu-link": "",
-            "featured_image": "shopify://shop_images/1_c9450c45-fa93-4dfb-b146-fa5fc8281020.png",
-            "featured_image_size": "medium"
-          }
-        },
-        "text_nnACWc": {
-          "type": "text",
-          "settings": {
-            "hero-menu-heading": "Cosmetics certified in the EU and meet the highest quality standards",
-            "hero-menu-subheading": "",
-            "hero-menu-link": "",
-            "featured_image": "shopify://shop_images/2.png",
-            "featured_image_size": "medium"
-          }
-        },
-        "text_eQjaLD": {
-          "type": "text",
-          "settings": {
-            "hero-menu-heading": "Clinically proven effectiveness",
-            "hero-menu-subheading": "",
-            "hero-menu-link": "",
-            "featured_image": "shopify://shop_images/34.png",
-            "featured_image_size": "medium"
-          }
-        },
-        "text_KL6YET": {
-          "type": "text",
-          "settings": {
-            "hero-menu-heading": "Innovative raw materials from different parts of the world: Europe, Japan, Korea, USA",
-            "hero-menu-subheading": "",
-            "hero-menu-link": "",
-            "featured_image": "shopify://shop_images/4_0efa8f3d-9c0c-4fd1-8904-7f280f08b666.png",
-            "featured_image_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "text_nbeRwr",
-        "text_nnACWc",
-        "text_eQjaLD",
-        "text_KL6YET"
-      ],
-      "settings": {
-        "homepage-hero-featured-content": "homepage-hero-image-selection",
-        "home-page-hero-image": "shopify://shop_images/IMG_5887.jpg",
-        "image_overlay_opacity": 20,
-        "homepage-hero-image-heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
-        "homepage-hero-image-description": "",
-        "text-color": "#ffffff",
-        "homepage-hero-image-button-label": "",
-        "homepage-hero-image-link": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "homepage-hero-video-autoplay": true,
-        "homepage-hero-video-loop": true,
-        "homepage-hero-video-mute": false
       }
     },
     "image_image_with_text_overlay_LcPgVa": {
@@ -377,9 +324,9 @@
     "image-with-text-overlay",
     "text_rich_text_KRj3Vw",
     "image_image_with_text_ikhwrd",
+    "content_on_image_background_4kPAeC",
     "text_rich_text_bngeLP",
     "template_product_info_columns_9zwQXK",
-    "advanced_layout_hero_tjhPyn",
     "image_image_with_text_overlay_LcPgVa",
     "text_rich_text_DAftC9",
     "image_image_with_text_overlay_NXF8we",
