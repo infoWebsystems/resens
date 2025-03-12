@@ -286,27 +286,6 @@
         "hover-button-background": "#494949"
       }
     },
-    "text_rich_text_ebXmeq": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_qEpkFw": {
-          "type": "heading",
-          "settings": {
-            "heading": "BALANCE DAMOUNT OF NECESSARY INGREDIENTS = THE PERFECT FORMULA THAT HITS THE TARGET"
-          }
-        }
-      },
-      "block_order": [
-        "heading_qEpkFw"
-      ],
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
     "text_rich_text_ieRgzC": {
       "type": "text--rich-text",
       "blocks": {
@@ -330,6 +309,27 @@
       ],
       "settings": {
         "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "text_rich_text_ebXmeq": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_qEpkFw": {
+          "type": "heading",
+          "settings": {
+            "heading": "BALANCE DAMOUNT OF NECESSARY INGREDIENTS = THE PERFECT FORMULA THAT HITS THE TARGET"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qEpkFw"
+      ],
+      "settings": {
+        "background_color": "#c4c4c4",
         "colors": "white",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
@@ -461,8 +461,8 @@
     "image_image_with_text_overlay_LcPgVa",
     "text_rich_text_DAftC9",
     "image_image_with_text_overlay_NXF8we",
-    "text_rich_text_ebXmeq",
     "text_rich_text_ieRgzC",
+    "text_rich_text_ebXmeq",
     "template_product_info_columns_iwVaqi",
     "double-image-section",
     "blog_blog_posts_Rdw7XP"
