@@ -309,8 +309,8 @@
     "image_image_with_text_e3Ere9": {
       "type": "image--image-with-text",
       "settings": {
-        "colors": "white",
-        "image": "shopify://shop_images/row.png",
+        "colors": "light",
+        "image": "shopify://shop_images/row_transp.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -334,6 +334,7 @@
       "block_order": [
         "heading_qEpkFw"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#494949",
         "colors": "dark",
