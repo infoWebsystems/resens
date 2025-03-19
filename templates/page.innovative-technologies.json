@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "image-with-text-overlay": {
+    "image_image_with_text_overlay_6nYXk7": {
       "type": "image--image-with-text-overlay",
       "settings": {
         "image": "shopify://shop_images/close-up-hyaluronic-acid-tratment.jpg",
@@ -101,6 +101,28 @@
         "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image--image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/FOX05796.jpg",
+        "image_height": "30vw",
+        "bg_image_overlay_opacity": 30,
+        "parallax": false,
+        "title": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
+        "text": "",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "template_product_info_columns_9zwQXK": {
@@ -410,10 +432,11 @@
     }
   },
   "order": [
-    "image-with-text-overlay",
+    "image_image_with_text_overlay_6nYXk7",
     "text_rich_text_KRj3Vw",
     "image_image_with_text_ikhwrd",
     "text_rich_text_bngeLP",
+    "image-with-text-overlay",
     "template_product_info_columns_9zwQXK",
     "image_image_with_text_overlay_LcPgVa",
     "text_rich_text_DAftC9",
