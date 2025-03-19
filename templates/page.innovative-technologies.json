@@ -310,7 +310,7 @@
       "type": "image--image-with-text",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/232b2d622f5f222f5ee6f186028f5f27.png",
+        "image": "shopify://shop_images/row.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
