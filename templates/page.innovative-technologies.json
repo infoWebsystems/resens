@@ -306,6 +306,21 @@
         "text_alignment_mobile": "center"
       }
     },
+    "image_image_with_text_e3Ere9": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "white",
+        "image": "shopify://shop_images/232b2d622f5f222f5ee6f186028f5f27.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<h2>BALANCE DAMOUNT OF NECESSARY INGREDIENTS = THE PERFECT FORMULA THAT HITS THE TARGET</h2>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "text_rich_text_ebXmeq": {
       "type": "text--rich-text",
       "blocks": {
@@ -459,6 +474,7 @@
     "text_rich_text_DAftC9",
     "image_image_with_text_overlay_NXF8we",
     "text_rich_text_ieRgzC",
+    "image_image_with_text_e3Ere9",
     "text_rich_text_ebXmeq",
     "template_product_info_columns_iwVaqi",
     "double-image-section",
