@@ -238,7 +238,7 @@
         "richtext_GhjAYc": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Neurocosmetics focus on developing formulas that maintain a balance between the skin's physiological and emotional health. They include ingredients that not only soothe the skin but also act on nerve receptors, reducing the impact of stress factors and helping the skin recover.<br/></p><h5><strong>By influencing the sensory neurons of the skin, we impact brain function. The presence of neurobiological communication ensures that all body systems work harmoniously and synchronously.</strong><br/></h5><p>Modern technologies for extracting cellular peptides and metabolites from plant stem cells, as well as microbiome-friendly correction with probiotics/prebiotics, aim to improve the psycho-emotional state and skin health by influencing neurotransmitters.</p>",
+            "text": "<p>Neurocosmetics focus on developing formulas that maintain a balance between the skin's physiological and emotional health. They include ingredients that not only soothe the skin but also act on nerve receptors, reducing the impact of stress factors and helping the skin recover.<br/></p><h5><strong>By influencing the sensory neurons of the skin, we impact brain function. The presence of neurobiological communication ensures that all body systems work harmoniously and synchronously.</strong><br/></h5><p>Modern technologies for extracting cellular peptides and metabolites from plant stem cells, as well as microbiome-friendly correction with probiotics/prebiotics, aim <strong>to improve the psycho-emotional state and skin health by influencing neurotransmitters.</strong></p>",
             "text_size": 14
           }
         }
