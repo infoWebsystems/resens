@@ -188,8 +188,24 @@
         "vertical_alignment": "top"
       }
     },
+    "image_image_with_text_qha3Eb": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/close-up-transparent-bubbles-gray-shades.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "WHAT IS NEUROCOSMETICS?",
+        "text": "<p>Neurocosmetologyis an innovative field of cosmetology that explores and utilizes the connectionbetween the skin and the nervous system to create more effective and balanced skincare products. It is based on the understanding that the skin is not just aprotective barrier but also an organ capable of perceiving and responding toexternal and internal stimuli, including emotional stress, anxiety, fatigue,and other psycho-emotional states.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "image_image_with_text_overlay_LcPgVa": {
       "type": "image--image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/close-up-transparent-bubbles-gray-shades.jpg",
         "image_height": "40vw",
@@ -233,7 +249,7 @@
       ],
       "settings": {
         "background_color": "",
-        "colors": "white",
+        "colors": "dark",
         "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
@@ -438,6 +454,7 @@
     "text_rich_text_bngeLP",
     "image-with-text-overlay",
     "template_product_info_columns_9zwQXK",
+    "image_image_with_text_qha3Eb",
     "image_image_with_text_overlay_LcPgVa",
     "text_rich_text_DAftC9",
     "image_image_with_text_overlay_NXF8we",
