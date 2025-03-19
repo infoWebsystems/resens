@@ -15,9 +15,24 @@
         "page_title_enabled": true,
         "page_width": "full-width"
       }
+    },
+    "image_image_with_text_CbtWwi": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "light",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "НАДЧУТЛИВЕ ПИТАННЯ",
+        "text": "<p><em>Засоби молодого українського бренду </em>Re[Sens] <em>допомагають ефективно вирішувати проблеми шкіри, що реагує на зовнішні подразники.</em></p><p><em>ТЕКСТ: АЛЬОНА ПОНОМАРЕНКО ДЛЯ УКРАЇНСЬКОГО VOGUE</em></p>",
+        "button_label": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_image_with_text_CbtWwi"
   ]
 }
