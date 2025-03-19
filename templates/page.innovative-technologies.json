@@ -357,8 +357,8 @@
           "settings": {
             "image": "shopify://shop_images/22222.png",
             "grid_image_size": "wide",
-            "heading": "HydroCeramide",
-            "text": "<p>The HYDROCERAMIDE line is dedicated to reinforcing the skin’s protective barrier and addressing dehydration issues.</p>",
+            "heading": "Ceramide",
+            "text": "<p>The CERAMIDE line is dedicated to reinforcing the skin’s protective barrier and addressing dehydration issues.</p>",
             "button_text": "Learn more",
             "button_link": "shopify://blogs/about-lines/hydroceramide"
           }
