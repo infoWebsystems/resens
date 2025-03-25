@@ -18,7 +18,7 @@
           "settings": {
             "title": "",
             "text": "",
-            "first_button_label": "Shop Now",
+            "first_button_label": "Shop Now*",
             "first_button_link": "shopify://collections",
             "second_button_label": "SUSTAINABILITY",
             "second_button_link": "shopify://pages/sustainability",
