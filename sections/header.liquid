@@ -885,16 +885,17 @@ Testing Cypress integration
               </a>
               {% endif %}
 
-                   {% if section.settings.enable_wishlist%}
-                            <a href="#swym-wishlist" class="wishlist-button" aria-label="{{ 'section.settings.name_wishlist' | t }}"  aria-expanded="false">
-                              <span class="icon-fallback-text">
-                                {% render 'theme-icon' with icon: 'heart', iconSize: 20 %}
-                                <span class="fallback-text">{{ 'section.settings.name_wishlist ' | t }}</span>
-                              </span>
-                            </a>
-                            {% endif %}
+              {% if section.settings.enable_wishlist and section.settings.wishlist_icon_link != blank%}
+                <a href="{{ section.settings.wishlist_icon_link }}" class="wishlist-button" aria-label="{{ 'section.settings.name_wishlist' | t }}"  aria-expanded="false">
+                  <span class="icon-fallback-text">
+                    {% render 'theme-icon' with icon: 'heart', iconSize: 20 %}
+                    <span class="fallback-text">{{ 'section.settings.name_wishlist ' | t }}</span>
+                  </span>
+                </a>
+              {% endif %}
 
-              <a href="{{ routes.cart_url }}" aria-label="{{ 'layout.cart.title' | t }}" class="{% if settings.ajax_cart_method == 'drawer' %}js-drawer-open-right-link {% endif %}site-nav__link" aria-controls="CartDrawer" aria-expanded="false">
+              {% comment %} <a href="{{ routes.cart_url }}" aria-label="{{ 'layout.cart.title' | t }}" class="{% if settings.ajax_cart_method == 'drawer' %}js-drawer-open-right-link {% endif %}site-nav__link" aria-controls="CartDrawer" aria-expanded="false"> {% endcomment %}
+              <a href="{{ routes.cart_url }}" aria-label="{{ 'layout.cart.title' | t }}" class="{% if settings.ajax_cart_method == 'drawer' %} {% endif %}site-nav__link js-drawer-open-right-link-custom" aria-controls="CartDrawer" aria-expanded="false">
                 <span class="icon-fallback-text">
                   {% render 'theme-icon' with icon: section.settings.cart-style, iconClasses: 'fa-2x' %}
                   {% if section.settings.cart-number == 'quantity' %}
@@ -1162,11 +1163,17 @@ Testing Cypress integration
 			"default": true
 		},
 		{
-        			"type": "checkbox",
-        			"id": "enable_wishlist",
-        			"label": "t:sections.header.settings.enable_wishlist.label",
-        			"default": true
-        		},
+      "type": "checkbox",
+      "id": "enable_wishlist",
+      "label": "Enable Wishlist",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "wishlist_icon_link",
+      "label": "Wishlist Link",
+      "info": "Link to the wishlist page"
+    },
 		{
 			"type": "header",
 			"content": "t:sections.header.settings.header-13.content"

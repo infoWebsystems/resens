@@ -150,8 +150,10 @@ function addCartDrawerListeners() {
 addCartDrawerListeners();
 
 // Open cart drawer
-document.querySelectorAll('.js-drawer-open-right-link').forEach(item => {
-  item.addEventListener('click', () => {
+// document.querySelectorAll('.js-drawer-open-right-link').forEach(item => {
+document.querySelectorAll('.js-drawer-open-right-link-custom').forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
     openCartDrawer();
   });
 })

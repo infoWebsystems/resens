@@ -11508,6 +11508,7 @@ body.js-drawer-open {
   justify-content: flex-start;
 }
 .has-search-icon .site-nav--mobile .js-drawer-open-right-link,
+.has-search-icon .site-nav--mobile .js-drawer-open-right-link-custom,
 .has-search-icon .site-nav--mobile .search-button {
   display: flex;
   justify-content: center;
@@ -11516,6 +11517,7 @@ body.js-drawer-open {
   justify-content: flex-end;
 }
 .site-nav--mobile .js-drawer-open-right-link.site-nav__link,
+.site-nav--mobile .js-drawer-open-right-link-custom.site-nav__link,
 .site-nav--mobile .site-nav__link:nth-child(2) {
   padding: 21px 10px;
   position: relative;
