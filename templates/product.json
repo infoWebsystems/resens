@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product-form": {
@@ -29,9 +29,8 @@
           }
         },
         "12634054-1617-44bd-a7fc-a2a4eccc599f": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "f0f0e917-92a5-4957-a68e-2d0bb38d7819": {
           "type": "separator",
@@ -55,6 +54,31 @@
           "type": "quantity",
           "settings": {
             "margin_bottom": 40
+          }
+        },
+        "wishlist_plus_wishlist_pdp_button_kDttAD": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_atw_button_icon": "heart",
+            "swym_atw_display_btn_text": true,
+            "swym_button_position": "default",
+            "swym_atw_button_vertical_offset": 0,
+            "swym_atw_full_width": true,
+            "swym_atw_button_alignment": "center",
+            "swym_add_to_wishlist_color": "#000000",
+            "swym_added_to_wishlist_color": "#222222",
+            "swym_button_text_color": "#fff",
+            "swym_atw_border_color": "#000",
+            "swym_atw_border_thickness": 0,
+            "swym_atw_button_border_radius": 0,
+            "swym_enable_hover_customization": false,
+            "swym_hover_add_to_wishlist_color": "#000000",
+            "swym_hover_added_to_wishlist_color": "#222222",
+            "swym_hover_button_text_color": "#fff",
+            "swym_hover_atw_border_color": "#000",
+            "swym_hover_atw_border_thickness": 0,
+            "swym_hover_atw_button_border_radius": 0,
+            "swym_custom_css": ""
           }
         },
         "a7717974-ed85-4cde-80ef-4751178acf57": {
@@ -108,7 +132,7 @@
             "icon": "none",
             "heading": "Collapsible tab",
             "open_close_icon": "caret",
-            "text": "<p>Share some information about your product<\/p>",
+            "text": "<p>Share some information about your product</p>",
             "page": "",
             "open_by_default": false,
             "margin_bottom": 0
@@ -121,7 +145,7 @@
             "icon": "none",
             "heading": "Collapsible tab",
             "open_close_icon": "caret",
-            "text": "<p>Share some information about your product<\/p>",
+            "text": "<p>Share some information about your product</p>",
             "page": "",
             "open_by_default": false,
             "margin_bottom": 0
@@ -134,7 +158,7 @@
             "icon": "none",
             "heading": "Collapsible tab",
             "open_close_icon": "caret",
-            "text": "<p>Share some information about your product<\/p>",
+            "text": "<p>Share some information about your product</p>",
             "page": "",
             "open_by_default": false,
             "margin_bottom": 40
@@ -169,6 +193,7 @@
         "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
         "options",
         "quantity",
+        "wishlist_plus_wishlist_pdp_button_kDttAD",
         "a7717974-ed85-4cde-80ef-4751178acf57",
         "2f3ddc8d-6514-403d-a884-88c9a0294300",
         "buy_buttons",
@@ -208,9 +233,8 @@
       "type": "apps",
       "blocks": {
         "8fb0f91b-3508-4098-930d-b48357abd58b": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -224,9 +248,8 @@
       "type": "apps",
       "blocks": {
         "93d54964-54a7-4c03-ad9a-d54a135eb461": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -241,13 +264,13 @@
       "disabled": true,
       "settings": {
         "colors": "light",
-        "image": "shopify:\/\/shop_images\/front-view-arrangement-of-skin-care-cream_1.png",
+        "image": "shopify://shop_images/front-view-arrangement-of-skin-care-cream_1.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
         "text_alignment": "left",
         "title": "About Brand",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br\/>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br\/>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br\/>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <br\/>velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br\/>occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br\/>mollit anim id est laborum.<\/p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br/>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br/>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <br/>velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br/>occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br/>mollit anim id est laborum.</p>",
         "button_label": "",
         "button_link": ""
       }
@@ -291,8 +314,7 @@
         },
         "product_card_quick_shop": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -340,7 +362,7 @@
           "type": "button",
           "settings": {
             "label": "Shop now",
-            "link": "shopify:\/\/collections\/all"
+            "link": "shopify://collections/all"
           }
         }
       },
@@ -375,9 +397,9 @@
           "settings": {
             "grid_image_size": "wide",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "block-column-01": {
@@ -385,9 +407,9 @@
           "settings": {
             "grid_image_size": "wide",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "block-column-02": {
@@ -395,9 +417,9 @@
           "settings": {
             "grid_image_size": "wide",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         }
       },
@@ -423,7 +445,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+            "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
             "customer_name": "John Smith",
             "link": "",
             "stars": 5
