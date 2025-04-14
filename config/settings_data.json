@@ -192,6 +192,11 @@
         "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": true,
         "settings": {}
+      },
+      "8605505498557855500": {
+        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
