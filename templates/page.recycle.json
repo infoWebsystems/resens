@@ -31,33 +31,55 @@
         "button_link": ""
       }
     },
-    "text_rich_text_LrQPMe": {
-      "type": "text--rich-text",
+    "template_product_info_columns_jQ4mcT": {
+      "type": "template--product--info-columns",
       "blocks": {
-        "heading_Hh9tdj": {
-          "type": "heading",
+        "image_and_text_zcFLdy": {
+          "type": "image_and_text",
           "settings": {
-            "heading": "HERE, YOU CAN RESTOCK YOUR RE[SENS] COSMETICS AND RETURN ALUMINIUM PACKAGING FOR REUSE"
+            "image": "shopify://shop_images/MALEVYCH_BEAUTY_HUB.png",
+            "grid_image_size": "wide",
+            "heading": "вінниця",
+            "text": "<h5><strong>MALEVYCH BEAUTY HUB</strong><br/></h5><p>Графік роботи:<br/>Пн-Нд 9:00-20:00</p><p>вул. Архітектора Артинова, 13<br/>Вінниця, Вінницька область<br/>+380 735 000 7220</p>",
+            "button_text": "Go to Instagram",
+            "button_link": "https://www.instagram.com/malevych.beauty.hub/"
           }
         },
-        "richtext_jA4nQi": {
-          "type": "richtext",
+        "image_and_text_rnjWH8": {
+          "type": "image_and_text",
           "settings": {
-            "text": "<p>Support environmental initiatives with us—choose the most responsible partners in your city!(List of partners is being finalized)</p>",
-            "text_size": 14
+            "image": "shopify://shop_images/logo_bile.png",
+            "grid_image_size": "wide",
+            "heading": "Київ",
+            "text": "<h5><strong>TRYFONOVA M.D.</strong></h5><p>Графік роботи:<br/>Пн-Пт 09:00-20:00<br/><br/>вул. Набережно Рибальська, 5<br/>Київ, Київська область<br/>+38 (097) 555-54-54</p>",
+            "button_text": "Go to the site",
+            "button_link": "https://tryfonovamd.com/All Products"
+          }
+        },
+        "image_and_text_TR4bXF": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/share_1.jpg",
+            "grid_image_size": "wide",
+            "heading": "Вінниця",
+            "text": "<h5><strong>Franceup Cosmetics</strong></h5><p>Графік роботи:<br/>Пн-Пт 10:00-19:00<br/><br/>вул Пирогова, 113<br/>Вінниця, Вінницька область<br/><br/>+38 (068) 174 76 34</p>",
+            "button_text": "Go to the site",
+            "button_link": "https://franceup.com.ua/"
           }
         }
       },
       "block_order": [
-        "heading_Hh9tdj",
-        "richtext_jA4nQi"
+        "image_and_text_zcFLdy",
+        "image_and_text_rnjWH8",
+        "image_and_text_TR4bXF"
       ],
       "settings": {
-        "background_color": "",
         "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "heading": "HERE, YOU CAN RESTOCK YOUR RE[SENS] COSMETICS AND RETURN ALUMINIUM PACKAGING FOR REUSE",
+        "description": "<p>Support environmental initiatives with us—choose the most responsible partners in your city!(List of partners is being finalized)</p>",
+        "columns_per_row": 3,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
       }
     },
     "store_information_map_yVF6JD": {
@@ -76,7 +98,7 @@
   "order": [
     "main",
     "image_image_with_text_QwRTwX",
-    "text_rich_text_LrQPMe",
+    "template_product_info_columns_jQ4mcT",
     "store_information_map_yVF6JD"
   ]
 }
