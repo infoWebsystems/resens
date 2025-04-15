@@ -39,8 +39,8 @@
           "settings": {
             "image": "shopify://shop_images/MALEVYCH_BEAUTY_HUB.png",
             "grid_image_size": "wide",
-            "heading": "вінниця",
-            "text": "<h5><strong>MALEVYCH BEAUTY HUB</strong><br/></h5><p>Графік роботи:<br/>Пн-Нд 9:00-20:00</p><p>вул. Архітектора Артинова, 13<br/>Вінниця, Вінницька область<br/>+380 735 000 7220</p>",
+            "heading": "Vinnytsia",
+            "text": "<h5><strong>MALEVYCH BEAUTY HUB</strong><br/></h5><p>Working hours:<br/>Mon-Fri 09:00-20:00</p><p>13, Architect Artynov St., Vinnytsia<br/>+380 735 000 7220</p>",
             "button_text": "Go to Instagram",
             "button_link": "https://www.instagram.com/malevych.beauty.hub/"
           }
@@ -50,8 +50,8 @@
           "settings": {
             "image": "shopify://shop_images/logo_bile.png",
             "grid_image_size": "wide",
-            "heading": "Київ",
-            "text": "<h5><strong>TRYFONOVA M.D.</strong></h5><p>Графік роботи:<br/>Пн-Пт 09:00-20:00<br/><br/>вул. Набережно Рибальська, 5<br/>Київ, Київська область<br/>+38 (097) 555-54-54</p>",
+            "heading": "Kyiv",
+            "text": "<h5><strong>TRYFONOVA M.D.</strong></h5><p>Working hours:<br/>Mon-Fri 09:00-20:00<br/><br/>5 Naberezhno Rybalska St., Kyiv<br/>+38 (097) 555-54-54</p>",
             "button_text": "Go to the site",
             "button_link": "https://tryfonovamd.com/All Products"
           }
@@ -61,8 +61,8 @@
           "settings": {
             "image": "shopify://shop_images/share_1.jpg",
             "grid_image_size": "wide",
-            "heading": "Вінниця",
-            "text": "<h5><strong>Franceup Cosmetics</strong></h5><p>Графік роботи:<br/>Пн-Пт 10:00-19:00<br/><br/>вул Пирогова, 113<br/>Вінниця, Вінницька область<br/><br/>+38 (068) 174 76 34</p>",
+            "heading": "Vinnytsia",
+            "text": "<h5><strong>Franceup Cosmetics</strong></h5><p>Working hours:<br/>Mon-Fri 10:00-19:00<br/><br/>113 Pyrogova St., Vinnytsia,<br/>+38 (068) 174 76 34</p>",
             "button_text": "Go to the site",
             "button_link": "https://franceup.com.ua/"
           }
