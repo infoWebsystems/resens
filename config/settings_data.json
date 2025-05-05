@@ -192,6 +192,11 @@
         "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": true,
         "settings": {}
+      },
+      "5822432907971180753": {
+        "type": "shopify://apps/bundle-bear/blocks/widget/8301eac6-7eb6-487c-92f6-ccde92f1db50",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
