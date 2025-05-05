@@ -55,14 +55,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const form = e.target;
     
         // Open cart drawer
-        openCartDrawer();
+        // openCartDrawer();
     
         await fetch('/cart/add', {
           method: 'post',
           body: new FormData(form)
         });
     
-        // // Update Cart
+        // // // Update Cart
         await applyDiscountToCartDrawer();
         await updateCartDrawer();
       }
