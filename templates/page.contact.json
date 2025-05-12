@@ -160,9 +160,9 @@
             "title_color": "",
             "title_size_v2": 0,
             "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 50,
-            "margin_sides": 0,
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
             "link_color": "#000000",
@@ -194,7 +194,7 @@
         "image_and_text_zDLcLt": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Spain_filled_with_the__ed09936a-1497-44cd-8623-a6f87ae44280.png",
+            "image": "shopify://shop_images/1000x1000_ReSens_map_ESP.jpg",
             "grid_image_size": "square",
             "heading": "Spain",
             "text": "<p><strong>BEAUTY CARTEL DISTRIBUTION SOCIEDAD LIMITADA</strong></p><p>Guadalmina Baja, San Pedro Alcántara, Marbella, 29670, Málaga</p><p>email: manager@beautycartel.es</p><p>phone: +34 650 473 012</p>",
@@ -205,7 +205,7 @@
         "image_and_text_bX9Gxe": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_Britain_filled_with_th_8b45008c-9ab4-42c0-825d-4aad3564d736.png",
+            "image": "shopify://shop_images/1000x1000_ReSens_map_GBR.jpg",
             "grid_image_size": "square",
             "heading": "Great Britain",
             "text": "<p><strong>AESTHETIC ART ACADEMY LTD</strong></p><p>368 Forest Road, London, E17 5JF</p><p>email: info@imagine-you.co.uk</p><p>phone: +44 7799 140911</p>",
@@ -216,7 +216,7 @@
         "image_and_text_U3qmym": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/teenkath_67096_A_detailed_outline_map_of_UNITED_ARAB_EMIRATES_f_a933b513-bbaf-4469-96de-7dedb9e72d3a.png",
+            "image": "shopify://shop_images/1000x1000_ReSens_map_ARE.jpg",
             "grid_image_size": "square",
             "heading": "UNITED ARAB EMIRATES",
             "text": "<p><strong>ETAIL LLC</strong><br/>Shams Business Center, Sharjah Media City, Sharjah, PO Box 515000</p><p>email: abhijith@etail.ae, riyas@etail.ae</p><p>phone: +971 52 685 1349, +971 55 345 9669</p>",
@@ -227,7 +227,7 @@
         "image_and_text_XxwqXN": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/latvia.webp",
+            "image": "shopify://shop_images/1000x1000_ReSens_map_LVA.jpg",
             "grid_image_size": "square",
             "heading": "LATVIA",
             "text": "<p><strong>REMEDICA</strong><br/>Kleistu str. 24<br/>Riga, LV-1067<br/><br/>email: info@remedica.lv</p><p>Phone No. +37125775885</p>",
