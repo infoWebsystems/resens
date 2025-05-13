@@ -197,6 +197,14 @@
         "type": "shopify://apps/bundle-bear/blocks/widget/8301eac6-7eb6-487c-92f6-ccde92f1db50",
         "disabled": false,
         "settings": {}
+      },
+      "7870687481494312845": {
+        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+        "disabled": false,
+        "settings": {
+          "additionalWLButtonCssClasses": "",
+          "additionalWLCartBubbleCssClasses": ""
+        }
       }
     }
   },
