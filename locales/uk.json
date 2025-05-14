@@ -1242,7 +1242,7 @@
         }
       },
       "delivery_options": {
-        "free_total_label": "Безкоштовно",
+        "free_total_label": "За тарифами перевізника",
         "ship": "Кораблем",
         "ship_to_address": "Відправити за адресою",
         "shipping_address": "Адреса доставки",
