@@ -125,7 +125,7 @@
         "total_label": "Всього",
         "total_outstanding_label": "Сума до оплати",
         "partial_total_label": "Всього",
-        "free_total_label": "безкоштовно",
+        "free_total_label": "Тарифи перевізника",
         "paid_label": "Оплачений",
         "payment_due_label": "Очікуваний платіж",
         "vat_label_html": "Включаючи %{amount} податки",
@@ -165,7 +165,8 @@
         "confirmation_number_label": "Підтвердження #%{confirmation_number}",
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> не можна використати з існуючими знижками.",
         "percent_off_shipping": "%{percent}% знижка на доставку",
-        "amount_off_shipping": "%{amount} знижки на доставку"
+        "amount_off_shipping": "%{amount} знижки на доставку",
+        "free_shipping_total_label": "Тарифи перевізника"
       },
       "shipping": {
         "title": "Доставка",
