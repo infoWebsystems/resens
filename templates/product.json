@@ -270,8 +270,8 @@
         "product_card_image": {
           "type": "product_card_image",
           "settings": {
-            "enable_quick_shop": false,
-            "disable_quick_shop_mobile": true
+            "enable_quick_shop": true,
+            "disable_quick_shop_mobile": false
           }
         },
         "product_card_title": {
