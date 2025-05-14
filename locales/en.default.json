@@ -481,7 +481,7 @@
         "free_rate_label": "Based on the carrier's tariffs"
       },
       "delivery_options": {
-        "free_total_label": "-"
+        "free_total_label": "❗️International shipping is charged according to carrier’s rate"
       }
     }
   },
