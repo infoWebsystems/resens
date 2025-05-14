@@ -486,8 +486,8 @@
       "order_summary": {
         "free_shipping_discount_label": "Terms of delivery:",
         "multiple_shipping_lines_label": "Terms of delivery:",
-        "free_total_label": "According to the carrier's rates",
-        "free_shipping_total_label": "Terms of delivery:"
+        "free_total_label": "Terms of delivery:",
+        "free_shipping_total_label": "According to the carrier's rates"
       }
     }
   },
