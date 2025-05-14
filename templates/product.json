@@ -288,6 +288,7 @@
         },
         "product_card_quick_shop": {
           "type": "product_card_quick_shop",
+          "disabled": true,
           "settings": {}
         }
       },
