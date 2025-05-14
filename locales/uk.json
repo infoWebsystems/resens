@@ -190,7 +190,7 @@
         "no_pickup_location_notice": "Принаймні один із ваших продуктів недоступний для отримання",
         "no_rates_for_country_notice": "Для цієї адреси не знайдено тарифів доставки.",
         "no_rates_contact_notice": "Зв'яжіться з нами для отримання додаткової інформації",
-        "free_rate_label": "За тарифами перевізника",
+        "free_rate_label": "Зверніть увагу!",
         "cheapest_rate_label": "Найдешевший",
         "please_enter_your_shipping_information_notice": "Введіть інформацію про доставку.",
         "estimated_delivery_date": {
