@@ -169,6 +169,12 @@
                        <button type="submit" name="checkout" class="js-right_drawer_cart_checkout cart__checkout">
                         {{ 'cart.general.checkout' | t }}
                        </button>
+
+                     {% if additional_checkout_buttons and settings.enable-additional-checkout-buttons %}
+                        <div class="additional-checkout-buttons additional-checkout-buttons--vertical">
+                           {{ content_for_additional_checkout_buttons }}
+                        </div>
+                     {% endif %}
                     </div>
                  </div>
                 </div>
