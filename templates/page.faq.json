@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "b71609ee-6355-4679-b82d-61ff492ebea0": {
@@ -15,7 +15,7 @@
         "template--14831909404742__b71609ee-6355-4679-b82d-61ff492ebea0-image-1": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/DSC0362411.jpg",
+            "desktop_image": "shopify://shop_images/DSC0362411.jpg",
             "show_overlay": false,
             "heading": "FAQs",
             "heading_size": 40,
@@ -72,196 +72,211 @@
           "type": "tab_content",
           "settings": {
             "question": "What is the manufacturer country of the brand?",
-            "text": "<p>Ukraine<\/p>"
+            "text": "<p>Ukraine</p>"
           }
         },
         "164572426857089649-1": {
           "type": "tab_content",
           "settings": {
             "question": "What does the brand name mean?",
-            "text": "<p><strong>RE<\/strong> in our name means \"rethinking\" the perception of care, the connection between people and the environment. We want to convey that the planet needs care no less than the skin. If this is not<br\/>taken into account, then everyone loses from an unconscious approach<\/p><p><strong>SENS <\/strong>comes from \"senses\" and sensitivity. It refers to our focus on sensations, our ability to feel the world around us. So it's not only about caring for sensitive skin, but also about reflecting a person's inner sensitivity, which is often manifested through the condition of their skin<\/p><p>So, <strong>Re[Sens] <\/strong>is about care for your skin and rethinking the role of a responsible person in the ecosystem.<\/p>"
+            "text": "<p><strong>RE</strong> in our name means \"rethinking\" the perception of care, the connection between people and the environment. We want to convey that the planet needs care no less than the skin. If this is not<br/>taken into account, then everyone loses from an unconscious approach</p><p><strong>SENS </strong>comes from \"senses\" and sensitivity. It refers to our focus on sensations, our ability to feel the world around us. So it's not only about caring for sensitive skin, but also about reflecting a person's inner sensitivity, which is often manifested through the condition of their skin</p><p>So, <strong>Re[Sens] </strong>is about care for your skin and rethinking the role of a responsible person in the ecosystem.</p>"
           }
         },
         "164572426857089649-2": {
           "type": "tab_content",
+          "disabled": true,
           "settings": {
             "question": "Are all the brand's products suitable for sensitive skin?",
-            "text": "<p>Yes. Absolutely all the brand's products contain soothing ingredients. In addition, it is important for us to avoid overstressing sensitive skin, so our formulas are developed with the<br\/>understanding that the skin needs a balanced approach.<\/p>"
+            "text": "<p>Yes. Absolutely all the brand's products contain soothing ingredients. In addition, it is important for us to avoid overstressing sensitive skin, so our formulas are developed with the<br/>understanding that the skin needs a balanced approach.</p>"
           }
         },
         "tab_content_NW89xr": {
           "type": "tab_content",
           "settings": {
             "question": "What is immunocosmetology?",
-            "text": "<p>The main idea behind immunocosmetology is to balance and maintain skin health with products and treatments that promote the skin's natural defense mechanisms and immune response. This includes the use of ingredients that soothe irritation, support skin regeneration, and increase its<br\/>resistance to the negative effects of external factors.<\/p>"
+            "text": "<p>The main idea behind immunocosmetology is to balance and maintain skin health with products and treatments that promote the skin's natural defense mechanisms and immune response. This includes the use of ingredients that soothe irritation, support skin regeneration, and increase its<br/>resistance to the negative effects of external factors.</p>"
           }
         },
         "tab_content_NzLrAw": {
           "type": "tab_content",
           "settings": {
             "question": "What is Inflammaging?",
-            "text": "<p>This is a term that combines two concepts: inflammation and aging. It is used to describe the process when chronic inflammation contributes to or accelerates the aging process. Under the<br\/>influence of various factors, such as stress, nutrition, and environmental pollution, inflammation can become chronic and activate aging mechanisms in the body's cells and tissues.<\/p>"
+            "text": "<p>This is a term that combines two concepts: inflammation and aging. It is used to describe the process when chronic inflammation contributes to or accelerates the aging process. Under the<br/>influence of various factors, such as stress, nutrition, and environmental pollution, inflammation can become chronic and activate aging mechanisms in the body's cells and tissues.</p>"
           }
         },
         "tab_content_KBDHFd": {
           "type": "tab_content",
           "settings": {
             "question": "Why do we use plant stem cells in our formulas?",
-            "text": "<p>Plant stem cells are used due to their unique ability to regenerate and repair, which allows them to actively fight the signs of aging, help reduce inflammation and improve moisture retention.<br\/>They have a powerful antioxidant effect and stimulate collagen synthesis, which helps maintain youthful and healthy skin.<\/p>"
+            "text": "<p>Plant stem cells are used due to their unique ability to regenerate and repair, which allows them to actively fight the signs of aging, help reduce inflammation and improve moisture retention.<br/>They have a powerful antioxidant effect and stimulate collagen synthesis, which helps maintain youthful and healthy skin.</p>"
           }
         },
         "tab_content_eJaB9R": {
           "type": "tab_content",
           "settings": {
             "question": "What is the cost of delivery?",
-            "text": "<p>Delivery by courier in Kyiv is free. Delivery by Nova Poshta - at the<br\/>carrier's rates.<\/p>"
+            "text": "<p>Delivery by courier in Kyiv is free. Delivery by Nova Poshta - at the<br/>carrier's rates.</p>"
           }
         },
         "tab_content_pM778L": {
           "type": "tab_content",
           "settings": {
             "question": "How do Lactobacillus in cosmetic products affect the skin?",
-            "text": "<p>They contribute to the maintenance of a healthy skin microbiome, which improves its barrier function and reduces inflammation. In addition, Lactobacillus helps to soothe irritated or damaged skin and reduce the risk of rashes.<\/p>"
+            "text": "<p>They contribute to the maintenance of a healthy skin microbiome, which improves its barrier function and reduces inflammation. In addition, Lactobacillus helps to soothe irritated or damaged skin and reduce the risk of rashes.</p>"
           }
         },
         "tab_content_mzyjVU": {
           "type": "tab_content",
           "settings": {
             "question": "What is a chelator?",
-            "text": "<p>It is a compound that is able to bind and isolate metal ions in various media. They are used in cosmetic products to cleanse the skin of impurities that may be bound to metal ions, such as iron or copper. Chelators help prevent oxidation and other harmful effects that can occur when metals interact with the skin.<\/p>"
+            "text": "<p>It is a compound that is able to bind and isolate metal ions in various media. They are used in cosmetic products to cleanse the skin of impurities that may be bound to metal ions, such as iron or copper. Chelators help prevent oxidation and other harmful effects that can occur when metals interact with the skin.</p>"
           }
         },
         "tab_content_MgR8Cf": {
           "type": "tab_content",
           "settings": {
             "question": "Why do we use hydrolyzed silk proteins in skin care products?",
-            "text": "<p>In skin cleansers, Hydrolyzed Silk Proteins act as moisturizers and soothing ingredients. They help to retain moisture in the skin during cleansing, thereby preventing it from drying out. It also helps to maintain the natural balance of the skin barrier, reducing irritation and inflammation that can occur during the cleansing process.<\/p>"
+            "text": "<p>In skin cleansers, Hydrolyzed Silk Proteins act as moisturizers and soothing ingredients. They help to retain moisture in the skin during cleansing, thereby preventing it from drying out. It also helps to maintain the natural balance of the skin barrier, reducing irritation and inflammation that can occur during the cleansing process.</p>"
           }
         },
         "tab_content_Rzyhmh": {
           "type": "tab_content",
           "settings": {
             "question": "Why does Hydro Ceramide Cream give the skin a beautiful natural glow?",
-            "text": "<p>Due to the presence of Palmitoyl Tetrapeptide-10, which is known as a \"highlighter peptide\".  This peptide creates the effect of crystalline skin while maintaining its transparency by activating the chaperone protein α-crystallin. At the same time, its \"soft polish\" effect helps to distribute light evenly, resulting in a distinct natural glow.<\/p>"
+            "text": "<p>Due to the presence of Palmitoyl Tetrapeptide-10, which is known as a \"highlighter peptide\".  This peptide creates the effect of crystalline skin while maintaining its transparency by activating the chaperone protein α-crystallin. At the same time, its \"soft polish\" effect helps to distribute light evenly, resulting in a distinct natural glow.</p>"
           }
         },
         "tab_content_AGywdV": {
           "type": "tab_content",
           "settings": {
             "question": "What line should I choose if my skin is very sensitive?",
-            "text": "<p>If your skin is highly sensitive, it is better to choose the A-Redensity line. This line has two creams: moisturizing and matting, so you can choose a suitable product for your skin type.<\/p>"
+            "text": "<p>If your skin is highly sensitive, it is better to choose the A-Redensity line. This line has two creams: moisturizing and matting, so you can choose a suitable product for your skin type.</p>"
           }
         },
         "tab_content_hDKtxM": {
           "type": "tab_content",
           "settings": {
             "question": "Why do we stimulate the production of our own exosomes rather than using animal or plant exosomes in cosmetic formulas?",
-            "text": "<p>Here you can place an explanation oAnimal and plant exosomes are still difficult to transport and store due to their natural vulnerability to external conditions and influences. Animal exosomes, for example, can be sensitive to temperature changes and mechanical stress, which can lead to their damage or loss of activity. Plant exosomes, on the other hand, can lose stability due to oxidation or decomposition when exposed to light or high humidity. <br\/>Stimulating the production of your own exosomes is currently an advantage, as it helps to optimize natural processes in the body and supports more harmonious interaction between cells. In addition, stimulating the production of its own exosomes contributes to the natural renewal of the skin and the reduction of signs of aging without the need for external sources, without the risk of causing allergic reactions or other undesirable effects.<br\/><\/p>"
+            "text": "<p>Here you can place an explanation oAnimal and plant exosomes are still difficult to transport and store due to their natural vulnerability to external conditions and influences. Animal exosomes, for example, can be sensitive to temperature changes and mechanical stress, which can lead to their damage or loss of activity. Plant exosomes, on the other hand, can lose stability due to oxidation or decomposition when exposed to light or high humidity. <br/>Stimulating the production of your own exosomes is currently an advantage, as it helps to optimize natural processes in the body and supports more harmonious interaction between cells. In addition, stimulating the production of its own exosomes contributes to the natural renewal of the skin and the reduction of signs of aging without the need for external sources, without the risk of causing allergic reactions or other undesirable effects.<br/></p>"
           }
         },
         "tab_content_9awhW8": {
           "type": "tab_content",
           "settings": {
             "question": "Can I use your peeling at home?",
-            "text": "<p>Yes, you can use the peeling at home. It has an atraumatic effect, does not cause irritation of sensitive skin, does not violate the barrier function, does not cause photosensitization and has no seasonal restrictions. But it is important to follow the rules of application and not use peeling more than once a week.<\/p>"
+            "text": "<p>Yes, you can use the peeling at home. It has an atraumatic effect, does not cause irritation of sensitive skin, does not violate the barrier function, does not cause photosensitization and has no seasonal restrictions. But it is important to follow the rules of application and not use peeling more than once a week.</p>"
           }
         },
         "tab_content_mR4HED": {
           "type": "tab_content",
           "settings": {
             "question": "What is the veil film in our deep cleansing products?",
-            "text": "<p>The veil film in our deep cleansing products is formed<br\/>by interacting with air to provide gentle and delicate exfoliation, which is<br\/>especially important for sensitive skin. In this way, we physically polish the<br\/>skin only from dirt and dead cells, avoiding excessive exfoliation, which is<br\/>one of the main causes of rashes and irritation<\/p>"
+            "text": "<p>The veil film in our deep cleansing products is formed<br/>by interacting with air to provide gentle and delicate exfoliation, which is<br/>especially important for sensitive skin. In this way, we physically polish the<br/>skin only from dirt and dead cells, avoiding excessive exfoliation, which is<br/>one of the main causes of rashes and irritation</p>"
           }
         },
         "tab_content_Rg7bfK": {
           "type": "tab_content",
           "settings": {
             "question": "What is sulapac?",
-            "text": "<p>Sulapac is a biodegradable composite used to produce environmentally friendly packaging. It consists of natural materials, such as wood and plant fibers, which are renewable by nature and can decompose in the soil when exposed to moisture and microorganisms. The use of sulapak helps to reduce the negative impact on the environment, as it leaves no harmful traces after decomposition<\/p>"
+            "text": "<p>Sulapac is a biodegradable composite used to produce environmentally friendly packaging. It consists of natural materials, such as wood and plant fibers, which are renewable by nature and can decompose in the soil when exposed to moisture and microorganisms. The use of sulapak helps to reduce the negative impact on the environment, as it leaves no harmful traces after decomposition</p>"
           }
         },
         "tab_content_KaqMje": {
           "type": "tab_content",
           "settings": {
             "question": "What is mycelium?",
-            "text": "<p>Mycelium is a network of filamentous structures formed from fungal hyphae and used to create biodegradable materials. Mushroom mycelium packaging is a natural and environmentally sustainable alternative to traditional plastic packaging. The use of mycelium for packaging reduces the environmental impact, as this material is renewable and completely biodegradable after use. It is often used in environmental activities to cleanse the soil of contaminants.<\/p>"
+            "text": "<p>Mycelium is a network of filamentous structures formed from fungal hyphae and used to create biodegradable materials. Mushroom mycelium packaging is a natural and environmentally sustainable alternative to traditional plastic packaging. The use of mycelium for packaging reduces the environmental impact, as this material is renewable and completely biodegradable after use. It is often used in environmental activities to cleanse the soil of contaminants.</p>"
           }
         },
         "tab_content_AiFmXL": {
           "type": "tab_content",
           "settings": {
             "question": "What is the continuous film technology we use in our toners?",
-            "text": "<p>With the continuous film technology we use in our toners, we ensure long-lasting action and maintain the effectiveness of active ingredients by preserving moisture and osmolytes in the upper layers of the epidermis. This weightless \"film\" of toner acts as a conductor to help the skin get the most out of your follow-up care.<\/p>"
+            "text": "<p>With the continuous film technology we use in our toners, we ensure long-lasting action and maintain the effectiveness of active ingredients by preserving moisture and osmolytes in the upper layers of the epidermis. This weightless \"film\" of toner acts as a conductor to help the skin get the most out of your follow-up care.</p>"
           }
         },
         "tab_content_ThJHtF": {
           "type": "tab_content",
           "settings": {
             "question": "Why is it important to use care products with ceramides?",
-            "text": "<p>The use of ceramides is important for maintaining healthy and supple skin. These natural lipids play a key role in maintaining the barrier function, which helps to retain moisture, protects against external aggressors, and helps to reduce the appearance of dryness, flaking, and irritation.<\/p>"
+            "text": "<p>The use of ceramides is important for maintaining healthy and supple skin. These natural lipids play a key role in maintaining the barrier function, which helps to retain moisture, protects against external aggressors, and helps to reduce the appearance of dryness, flaking, and irritation.</p>"
           }
         },
         "tab_content_AxVjKM": {
           "type": "tab_content",
           "settings": {
             "question": "Which gommage is better to choose?",
-            "text": "<p>The choice between the two gommages depends on the needs of your skin:<br\/>If your skin needs a more vigorous exfoliation, you can choose the Hyaluronic Acid Gommage Mask. It exfoliates the skin thanks to a veil film and innovative HA spheres. It has an enriched formula with proteins that soften and give a glossy effect.<br\/>If you are looking for a gentle gommage without abrasive particles that is suitable for even the most sensitive skin, choose Soft Gommage with Silk Peptides. It has \"silk fibers\" that, when exposed to air, form a veil film that gently exfoliates the skin, moisturizes it, makes it smooth and awakens its natural radiance.<br\/><\/p>"
+            "text": "<p>The choice between the two gommages depends on the needs of your skin:<br/>If your skin needs a more vigorous exfoliation, you can choose the Hyaluronic Acid Gommage Mask. It exfoliates the skin thanks to a veil film and innovative HA spheres. It has an enriched formula with proteins that soften and give a glossy effect.<br/>If you are looking for a gentle gommage without abrasive particles that is suitable for even the most sensitive skin, choose Soft Gommage with Silk Peptides. It has \"silk fibers\" that, when exposed to air, form a veil film that gently exfoliates the skin, moisturizes it, makes it smooth and awakens its natural radiance.<br/></p>"
           }
         },
         "tab_content_7wCJUy": {
           "type": "tab_content",
           "settings": {
             "question": "What is the V-shape facial effect?",
-            "text": "<p>The V-shaped facial effect is a concept in cosmetology and dermatology that describes the desired result of skin care and treatments aimed at creating a visual appearance of the face in the shape of the letter \"V\". Various methods and components can be used to achieve the V-shaped effect. These methods are aimed at maintaining and improving skin tone, restoring facial contour, reducing wrinkles and loss of hydration, resulting in a younger, firmer appearance. To achieve this effect, we recommend using the 3Action Exosome Boost line.<\/p>"
+            "text": "<p>The V-shaped facial effect is a concept in cosmetology and dermatology that describes the desired result of skin care and treatments aimed at creating a visual appearance of the face in the shape of the letter \"V\". Various methods and components can be used to achieve the V-shaped effect. These methods are aimed at maintaining and improving skin tone, restoring facial contour, reducing wrinkles and loss of hydration, resulting in a younger, firmer appearance. To achieve this effect, we recommend using the 3Action Exosome Boost line.</p>"
           }
         },
         "tab_content_aUMFRj": {
           "type": "tab_content",
           "settings": {
             "question": "From what age is it recommended to use the 3Action Exosome Boost line?",
-            "text": "<p>The 3Action Exosome Boost line is recommended to be used from the moment when the skin requires more intensive care and protection. Usually after 30 and later, when the skin begins to lose collagen and elastin, which leads to the appearance of wrinkles, loss of elasticity and other signs of aging. The exact age may vary depending on individual skin needs and condition. 3Action Exosome Boost contains ingredients that help stimulate the production of your own exosomes, which helps restore and maintain healthy skin, reduce the signs of aging and improve the overall appearance of your skin.<\/p>"
+            "text": "<p>The 3Action Exosome Boost line is recommended to be used from the moment when the skin requires more intensive care and protection. Usually after 30 and later, when the skin begins to lose collagen and elastin, which leads to the appearance of wrinkles, loss of elasticity and other signs of aging. The exact age may vary depending on individual skin needs and condition. 3Action Exosome Boost contains ingredients that help stimulate the production of your own exosomes, which helps restore and maintain healthy skin, reduce the signs of aging and improve the overall appearance of your skin.</p>"
           }
         },
         "tab_content_MfXjdH": {
           "type": "tab_content",
           "settings": {
             "question": "What products should I choose to moisturize my face?",
-            "text": "<p>Soft Hyaluronic Gommage<br\/>CleanUp Hydra Toner<br\/>A-Redensity Hydra Cream<br\/>Hydro Ceramide Cream<br\/><\/p>"
+            "text": "<p>Soft Hyaluronic Gommage<br/>CleanUp Hydra Toner<br/>A-Redensity Hydra Cream<br/>Hydro Ceramide Cream<br/></p>"
           }
         },
         "tab_content_WbAizF": {
           "type": "tab_content",
           "settings": {
             "question": " What products to use for oily and combination skin?",
-            "text": "<p>CleanUp Gel<br\/>CleanUp Powder<br\/>CleanUp Absorbent mask<br\/>CleanUp Matt Toner<br\/>A-Redensity Matt Cream<br\/><\/p>"
+            "text": "<p>CleanUp Gel<br/>CleanUp Powder<br/>CleanUp Absorbent mask<br/>CleanUp Matt Toner<br/>A-Redensity Matt Cream<br/></p>"
           }
         },
         "tab_content_RCTqAG": {
           "type": "tab_content",
           "settings": {
             "question": "Where are Re[Sens] cosmetics manufactured?",
-            "text": "<p>At the Ukrainian production facility, which is certified according to ISO (GMP) 22716.<br\/>Concepts, developments and formulas are created by Ukrainian scientists. <br\/>The latest technologies and raw materials from around the world.<br\/><\/p>"
+            "text": "<p>At the Ukrainian production facility, which is certified according to ISO (GMP) 22716.<br/>Concepts, developments and formulas are created by Ukrainian scientists. <br/>The latest technologies and raw materials from around the world.<br/></p>"
           }
         },
         "tab_content_6RNC37": {
           "type": "tab_content",
           "settings": {
             "question": "What is Slow Beauty?",
-            "text": "<p>Slow Beauty is a concept that defines a balanced, sensible approach and understanding of the true physiological needs of the skin. Avoiding excessive stress on sensitive skin is key to Slow Beauty.<br\/>It is important to keep in mind that the skin is a living organ that has its own balanced system of functioning.  Excessive stress can upset this balance and lead to irritation, allergic reactions, dryness, or even contribute to the development of certain skin problems, such as rashes or age spots, etc. In addition, an excessive amount of ingredients can hinder its ability to solve problems on its own. The concept is to provide a tool, not to do instead. Overstimulation is a \"bear favor\" that has its consequences.<br\/>When we prioritize the skin, focusing on its true physiological requirements and needs, we achieve results that go far beyond appearance. <br\/><\/p>"
+            "text": "<p>Slow Beauty is a concept that defines a balanced, sensible approach and understanding of the true physiological needs of the skin. Avoiding excessive stress on sensitive skin is key to Slow Beauty.<br/>It is important to keep in mind that the skin is a living organ that has its own balanced system of functioning.  Excessive stress can upset this balance and lead to irritation, allergic reactions, dryness, or even contribute to the development of certain skin problems, such as rashes or age spots, etc. In addition, an excessive amount of ingredients can hinder its ability to solve problems on its own. The concept is to provide a tool, not to do instead. Overstimulation is a \"bear favor\" that has its consequences.<br/>When we prioritize the skin, focusing on its true physiological requirements and needs, we achieve results that go far beyond appearance. <br/></p>"
           }
         },
         "tab_content_8RPMpb": {
           "type": "tab_content",
           "settings": {
             "question": "What is sustainable cosmetics?",
-            "text": "<p>Sustainable cosmetics are based on the principles of environmental sustainability and social responsibility. We use renewable materials and minimize the use of plastic, focusing on creating biodegradable or recyclable packaging solutions. Each element of the packaging is carefully designed to preserve the product and minimize the environmental impact. It is about the brand's crucial values that define new standards of aesthetic medicine and form the right habits of a responsible consumer. This is cosmetics that changes the world.<\/p>"
+            "text": "<p>Sustainable cosmetics are based on the principles of environmental sustainability and social responsibility. We use renewable materials and minimize the use of plastic, focusing on creating biodegradable or recyclable packaging solutions. Each element of the packaging is carefully designed to preserve the product and minimize the environmental impact. It is about the brand's crucial values that define new standards of aesthetic medicine and form the right habits of a responsible consumer. This is cosmetics that changes the world.</p>"
           }
         },
         "tab_content_iGtjx7": {
           "type": "tab_content",
           "settings": {
             "question": "Can I use your cosmetics during pregnancy and lactation?",
-            "text": "<p>Yes, our cosmetics can be used during pregnancy and lactation. The formulas of the products do not have a systemic effect, do not enter the bloodstream, so they do not affect the general condition of the body.<\/p>"
+            "text": "<p>Yes, our cosmetics can be used during pregnancy and lactation. The formulas of the products do not have a systemic effect, do not enter the bloodstream, so they do not affect the general condition of the body.</p>"
+          }
+        },
+        "tab_content_UxKtCE": {
+          "type": "tab_content",
+          "settings": {
+            "question": "How to use aluminium tubes properly?",
+            "text": "<p>✅ <strong>Shake the tube well</strong> to distribute the pressure and product evenly inside. This prevents the contents from spurting out when you open it.</p><p>✅ <strong>Keep the cap facing upwards</strong> as you open the tube to avoid sudden spills.<br/><a href=\"https://www.youtube.com/shorts/AaV6dWct574\">https://www.youtube.com/shorts/AaV6dWct574</a></p><p>✅ <strong>Use a tube-key / squeezer.</strong> This accessory helps you dispense the product evenly and keeps the tube intact, making application easier and more efficient.<br/><a href=\"https://www.youtube.com/shorts/LBeSoXkARJI\">https://www.youtube.com/shorts/LBeSoXkARJI</a></p><p>While this type of packaging may take a little extra effort, it is a conscious choice that reduces the cosmetic industry’s impact on the environment. By following these tips, you enjoy a high-quality product <strong>and</strong> make a meaningful contribution to protecting our planet.</p><p><strong>Your choice matters!</strong> 💚</p>"
+          }
+        },
+        "tab_content_NyfAfR": {
+          "type": "tab_content",
+          "settings": {
+            "question": "What to do with the packaging after use?",
+            "text": "<p>🌱 <strong>SULAPAC & MYCELIUM</strong> – compost together with your organic waste.</p><p>🌿 <strong>Flower (seed) paper</strong> – plant it in soil and watch flowers grow!</p><p>♻️ <strong>Aluminium</strong> – return the tube to us or use the most responsible recycling partners in your city.<br/>More details: <a href=\"https://resenss.com/pages/recycle\">https://resenss.com/pages/recycle</a></p>"
           }
         }
       },
@@ -293,7 +308,9 @@
         "tab_content_RCTqAG",
         "tab_content_6RNC37",
         "tab_content_8RPMpb",
-        "tab_content_iGtjx7"
+        "tab_content_iGtjx7",
+        "tab_content_UxKtCE",
+        "tab_content_NyfAfR"
       ],
       "settings": {
         "colors": "white",
