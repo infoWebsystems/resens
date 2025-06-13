@@ -76,7 +76,7 @@
       "settings": {
         "colors": "white",
         "heading": "HERE, YOU CAN RESTOCK YOUR RE[SENS] COSMETICS AND RETURN ALUMINIUM PACKAGING FOR REUSE",
-        "description": "<p>Support environmental initiatives with us—choose the most responsible partners in your city!(List of partners is being finalized)</p>",
+        "description": "<p>Support environmental initiatives with us—choose the most responsible partners in your city!</p><p>Swipe through the carousel and choose your city.</p>",
         "columns_per_row": 3,
         "text_alignment": "center",
         "vertical_alignment": "top"
