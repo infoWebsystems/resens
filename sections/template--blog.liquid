@@ -131,7 +131,7 @@
       {% if section.settings.show_recent_posts %}
       <div class="h4">{{ 'blogs.sidebar.recent_articles' | t }}</div>
       <ul class="no-bullets blog-sidebar--recent-articles nav-link-animated--custom">
-        {% for article in blog.articles limit:6 %}
+        {% for article in blogs[blog.handle].articles limit:6 %}
           <li>
             <a class="animated-link--item" href="{{ article.url }}">{{ article.title }}</a>
             <br>
