@@ -16,6 +16,15 @@
         "page_width": "full-width"
       }
     },
+    "blog_navigation_banner_NYLQC6": {
+      "type": "blog--navigation-banner",
+      "name": "t:sections.blog--navigation-banner.presets.name",
+      "settings": {
+        "banner_linklist": "blog-menu",
+        "nav_background_color": "#EEEEEE",
+        "navigation_position": "center"
+      }
+    },
     "blog_blog_posts_6mbkzW": {
       "type": "blog--blog-posts",
       "blocks": {
@@ -48,7 +57,7 @@
             "subheading": "Subheading",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
-            "overlay_font_color": "#fff",
+            "overlay_font_color": "#ffffff",
             "overlay_color": "#ffffff"
           }
         },
@@ -59,7 +68,7 @@
             "subheading": "Subheading",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
-            "overlay_font_color": "#fff",
+            "overlay_font_color": "#ffffff",
             "overlay_color": "#ffffff"
           }
         },
@@ -70,7 +79,7 @@
             "subheading": "Subheading",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
-            "overlay_font_color": "#fff",
+            "overlay_font_color": "#ffffff",
             "overlay_color": "#000000"
           }
         }
@@ -95,6 +104,7 @@
   },
   "order": [
     "main",
+    "blog_navigation_banner_NYLQC6",
     "blog_blog_posts_6mbkzW",
     "collection_collection_list_JDYnmp"
   ]
