@@ -61,60 +61,6 @@
       "type": "all-blogs-posts",
       "name": "All blog posts section",
       "settings": {}
-    },
-    "collection_collection_list_JDYnmp": {
-      "type": "collection--collection-list",
-      "blocks": {
-        "featured_collection_WgbUKG": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "skincare-collection",
-            "subheading": "",
-            "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": true,
-            "overlay_font_color": "#ffffff",
-            "overlay_color": "#494949"
-          }
-        },
-        "featured_collection_kqzaQw": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "skincare-sets",
-            "subheading": "",
-            "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": true,
-            "overlay_font_color": "#ffffff",
-            "overlay_color": "#494949"
-          }
-        },
-        "featured_collection_XiFYrg": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lines-home",
-            "subheading": "",
-            "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": true,
-            "overlay_font_color": "#ffffff",
-            "overlay_color": "#494949"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_WgbUKG",
-        "featured_collection_kqzaQw",
-        "featured_collection_XiFYrg"
-      ],
-      "name": "t:sections.collection--collection-list.presets.name",
-      "settings": {
-        "colors": "light",
-        "title": "Featured Collections",
-        "richtext": "",
-        "items-per-row": 3,
-        "fill-the-area": true,
-        "remove-spacing": false,
-        "section-width": "full",
-        "content-position": "overlay"
-      }
     }
   },
   "order": [
@@ -122,7 +68,6 @@
     "image_image_with_text_overlay_imHnrz",
     "advanced_layout_custom_liquid_k9UKd8",
     "blog_navigation_banner_NYLQC6",
-    "all_blogs_posts",
-    "collection_collection_list_JDYnmp"
+    "all_blogs_posts"
   ]
 }
