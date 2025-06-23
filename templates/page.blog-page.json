@@ -17,8 +17,8 @@
         "image_height": "40vw",
         "bg_image_overlay_opacity": 20,
         "parallax": true,
-        "title": "Blog Re[sens]",
-        "text": "A space for deep skin understanding, mindful care, and uncompromising beauty.",
+        "title": "БЛОГ RE[SENS]",
+        "text": "Простір для глибокого розуміння шкіри, усвідомленого догляду та безкомпромісної краси.",
         "colors": "light",
         "textPosition": "center",
         "textAlignment": "center",
@@ -43,7 +43,7 @@
       "type": "advanced-layout--custom-liquid",
       "name": "t:all.Custom_Liquid",
       "settings": {
-        "custom_liquid": "<div style=\"margin-top: 40vw;\"></div>"
+        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
       }
     },
     "blog_navigation_banner_NYLQC6": {
