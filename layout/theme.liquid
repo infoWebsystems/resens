@@ -467,53 +467,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   {% if request.design_mode %}<script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>{% endif %}
 
-        {% if request.path contains 'checkout' %}
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      if (sessionStorage.getItem('referral_discount_applied') === 'true') return;
+{% if request.path contains 'checkout' %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Покажемо тільки якщо знижка ще не застосована
+    if (sessionStorage.getItem('referral_discount_applied') === 'true') return;
 
-      // Затримка для завантаження елементів
-      setTimeout(() => {
-        const popup = document.createElement('div');
-        popup.id = 'referral-popup';
-        popup.innerHTML = `
-          <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                      background: rgba(0, 0, 0, 0.4); display: flex; align-items: center;
-                      justify-content: center; z-index: 9999;">
-            <div style="background: #fff; padding: 30px; border-radius: 12px; max-width: 380px;
-                        width: 90%; text-align: center; box-shadow: 0 6px 25px rgba(0,0,0,0.15);">
-              <h3 style="margin-bottom: 16px; font-size: 20px;">Звідки ви про нас дізналися?</h3>
-              <input type="text" id="referralAnswer" placeholder="Instagram, друзі, реклама..." 
-                     style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc;" />
-              <button onclick="submitReferralAnswer()" 
-                      style="margin-top: 20px; padding: 10px 20px; background-color: black; color: white;
-                             border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">
-                Надіслати
-              </button>
-            </div>
-          </div>
-        `;
-        document.body.appendChild(popup);
-      }, 1800);
-    });
+    // Popup HTML
+    const popupHTML = `
+      <div id="referral-popup-overlay" style="position: fixed; top: 0; left: 0;
+        width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex;
+        align-items: center; justify-content: center; z-index: 9999;">
+        <div style="background: white; padding: 28px; border-radius: 10px;
+          max-width: 380px; width: 90%; text-align: center; font-family: sans-serif;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+          <h3 style="margin-bottom: 16px; font-size: 20px;">Звідки ви про нас дізналися?</h3>
+          <input id="referralAnswer" type="text" placeholder="Instagram, друзі, реклама..."
+            style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc;
+            border-radius: 6px;" />
+          <button id="referralSubmit"
+            style="margin-top: 20px; padding: 10px 24px; background: black; color: white;
+            border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+            Надіслати
+          </button>
+        </div>
+      </div>
+    `;
 
-    function submitReferralAnswer() {
-      const input = document.getElementById('referralAnswer');
-      const value = input.value.trim();
+    // Показати popup з затримкою
+    setTimeout(() => {
+      document.body.insertAdjacentHTML('beforeend', popupHTML);
 
-      if (value.length < 3) {
-        alert('Будь ласка, введіть відповідь (не менше 3 символів)');
-        return;
-      }
+      // Обробка кліку
+      document.getElementById('referralSubmit').addEventListener('click', function () {
+        const input = document.getElementById('referralAnswer').value.trim();
 
-      // Зберігаємо у sessionStorage (можна потім звідти передати в аналітику або адмінку)
-      sessionStorage.setItem('referral_source', value);
-      sessionStorage.setItem('referral_discount_applied', 'true');
+        if (input.length < 3) {
+          alert('Будь ласка, введіть коректну відповідь');
+          return;
+        }
 
-      // Редирект із застосуванням знижки
-      window.location.href = '/discount/REFERRAL10?redirect=/checkout';
-    }
-  </script>
+        // Позначити як оброблений
+        sessionStorage.setItem('referral_discount_applied', 'true');
+
+        // Опціонально: зберегти відповідь у cart.attributes (можна дописати)
+        // fetch('/cart/update.js', { method: 'POST', headers: {'Content-Type': 'application/json'},
+        // body: JSON.stringify({ attributes: { referral_source: input } }) });
+
+        // Редирект із знижкою
+        window.location.href = '/discount/REFERRAL10?redirect=/checkout';
+      });
+    }, 2000); // 2 сек затримка
+  });
+</script>
 {% endif %}
 
         
