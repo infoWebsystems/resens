@@ -12,7 +12,7 @@
     "main": {
       "type": "template--page",
       "settings": {
-        "page_title_enabled": true,
+        "page_title_enabled": false,
         "page_width": "full-width"
       }
     },
