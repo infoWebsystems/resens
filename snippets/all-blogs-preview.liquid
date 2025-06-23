@@ -1,0 +1,46 @@
+<div class="wrapper-padded all-blogs-posts">
+  <h2 class="section-title">From All Blogs</h2>
+
+  {% assign all_articles = '' | split: '' %}
+
+  {% for blog in blogs %}
+    {% assign all_articles = all_articles | concat: blog.articles %}
+  {% endfor %}
+
+  {% assign sorted_articles = all_articles | sort: "published_at" | reverse %}
+
+  {% if sorted_articles.size > 0 %}
+    <div class="grid">
+      {% for article in sorted_articles limit: 6 %}
+        <div class="grid__item one-third medium--one-half article-preview">
+          {% if article.image %}
+            <a href="{{ article.url }}">
+              <img
+                src="{{ article.image | img_url: 'medium' }}"
+                alt="{{ article.title | escape_once }}"
+              >
+            </a>
+          {% endif %}
+
+          <h3 class="article-title">
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          </h3>
+
+          <p class="article-date">
+            {{ article.published_at | date: "%B %d, %Y" }}
+          </p>
+
+          <p class="article-excerpt">
+            {{ article.excerpt_or_content | strip_html | truncatewords: 25 }}
+          </p>
+
+          <p class="read-more-link">
+            <a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a>
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No articles found.</p>
+  {% endif %}
+</div>
