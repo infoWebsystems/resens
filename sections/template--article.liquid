@@ -34,12 +34,15 @@
   <article class="grid__item large--three-quarters" itemscope itemtype="http://schema.org/Article">
 
     <div class="rte text-link-animated" itemprop="articleBody">
-  		{% if article.image %}
-  			<div class="article--image-wrapper">
-            {% capture article_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
-            {% render 'responsive-image' with article.image, img_tag: article.title, alt: article_alt | escape, sizes: '100vw' %}
-  		  </div>
-  		{% endif %}
+  {%- comment -%}
+{% if article.image %}
+  <div class="article--image-wrapper">
+    {% capture article_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
+    {% render 'responsive-image' with article.image, img_tag: article.title, alt: article_alt | escape, sizes: '100vw' %}
+  </div>
+{% endif %}
+{%- endcomment -%}
+
 
       {{ article.content }}
     </div>
