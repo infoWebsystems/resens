@@ -1,5 +1,6 @@
 {% comment %}
-  Вивід останніх статей з усіх блогів
+  Вручну перебираємо потрібні блоги за handle
+  (оскільки global object `blogs` недоступний у секціях JSON-шаблону)
 {% endcomment %}
 
 <div class="wrapper-padded all-blogs-posts">
@@ -7,7 +8,10 @@
 
   {% assign all_articles = '' | split: '' %}
 
-  {% for blog in blogs %}
+  {% assign blog_handles = "news,coverage,articles,chemistry-lessons,podcasts,sensitivity-sensuality" | split: "," %}
+
+  {% for handle in blog_handles %}
+    {% assign blog = blogs[handle] %}
     {% assign all_articles = all_articles | concat: blog.articles %}
   {% endfor %}
 
