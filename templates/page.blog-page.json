@@ -7,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-
 {
   "sections": {
     "main": {
@@ -22,7 +21,7 @@
       "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
         "image": "shopify://shop_images/FOX05898.jpg",
-        "image_height": "40vw",
+        "image_height": "40vh",
         "bg_image_overlay_opacity": 20,
         "parallax": true,
         "title": "Blog Re[sens]",
@@ -44,7 +43,7 @@
       "type": "advanced-layout--custom-liquid",
       "name": "t:all.Custom_Liquid",
       "settings": {
-        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
+        "custom_liquid": "<div class=\"spacer-mobile\" style=\"margin-top: 30px;\"></div>"
       }
     },
     "blog_navigation_banner_NYLQC6": {
