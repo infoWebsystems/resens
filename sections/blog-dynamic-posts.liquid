@@ -1,34 +1,121 @@
-<div class="blog-posts-dynamic">
-  <h2>{{ blog.title }}</h2>
+{% paginate blog.articles by 6 %}
+  <div class="blog-posts-dynamic">
+    <h2 class="blog-posts-title">{{ blog.title }}</h2>
 
-  <div class="blog-posts-grid">
-    {% for article in blog.articles %}
-      <div class="blog-post-card">
-        {% if article.image %}
-          <a href="{{ article.url }}">
-            <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title | escape_once }}">
-          </a>
-        {% endif %}
+    <div class="blog-posts-grid">
+      {% for article in blog.articles %}
+        <div class="blog-post-card">
+          {% if article.image %}
+            <a href="{{ article.url }}">
+              <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title | escape_once }}">
+            </a>
+          {% endif %}
 
-        <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-        <p>{{ article.published_at | date: "%B %d, %Y" }}</p>
-        <p>{{ article.excerpt_or_content | strip_html | truncatewords: 25 }}</p>
-        <p><a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a></p>
+          <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+          <p class="article-date">{{ article.published_at | date: "%B %d, %Y" }}</p>
+          <p>{{ article.excerpt_or_content | strip_html | truncatewords: 25 }}</p>
+          <p><a href="{{ article.url }}">{{ 'blogs.article.read_more' | t: default: 'Read more' }} →</a></p>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if paginate.pages > 1 %}
+      <div class="blog-pagination">
+        <ul>
+          {% if paginate.previous %}
+            <li><a href="{{ paginate.previous.url }}">&larr; Prev</a></li>
+          {% endif %}
+
+          {% for part in paginate.parts %}
+            {% if part.is_link %}
+              <li><a href="{{ part.url }}">{{ part.title }}</a></li>
+            {% elsif part.title == paginate.current_page %}
+              <li class="active">{{ part.title }}</li>
+            {% else %}
+              <li>{{ part.title }}</li>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginate.next %}
+            <li><a href="{{ paginate.next.url }}">Next &rarr;</a></li>
+          {% endif %}
+        </ul>
       </div>
-    {% endfor %}
+    {% endif %}
   </div>
-</div>
+{% endpaginate %}
 
 <style>
+  .blog-posts-dynamic {
+    padding: 0 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .blog-posts-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
   .blog-posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto;
   }
+
   .blog-post-card img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 4px;
+  }
+
+  .blog-post-card h3 {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .blog-post-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .blog-pagination {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .blog-pagination ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 10px;
+  }
+
+  .blog-pagination li {
+    display: inline;
+  }
+
+  .blog-pagination li a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+  }
+
+  .blog-pagination li.active {
+    padding: 8px 14px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .blog-posts-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
