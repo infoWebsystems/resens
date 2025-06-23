@@ -1,13 +1,5 @@
-{% comment %}
-  Вручну перебираємо потрібні блоги за handle
-  (оскільки global object `blogs` недоступний у секціях JSON-шаблону)
-{% endcomment %}
-
 <div class="wrapper-padded all-blogs-posts">
-
-
   {% assign all_articles = '' | split: '' %}
-
   {% assign blog_handles = "news,coverage,articles,chemistry-lessons,podcasts,sensitivity-sensuality" | split: "," %}
 
   {% for handle in blog_handles %}
@@ -18,9 +10,9 @@
   {% assign sorted_articles = all_articles | sort: "published_at" | reverse %}
 
   {% if sorted_articles.size > 0 %}
-    <div class="grid">
+    <div class="blog-posts-grid">
       {% for article in sorted_articles limit: 6 %}
-        <div class="grid__item one-third medium--one-half article-preview">
+        <div class="blog-post-card">
           {% if article.image %}
             <a href="{{ article.url }}">
               <img
