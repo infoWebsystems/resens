@@ -64,6 +64,7 @@
     },
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54": {
       "type": "image--image-with-text",
+      "disabled": true,
       "settings": {
         "colors": "light",
         "image": "shopify://shop_images/FOX05861.jpg",
@@ -188,6 +189,7 @@
         "image_hX47RE",
         "image_F4baiR"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "Select the required category",
@@ -311,6 +313,7 @@
         "1109df3c-e2e9-4aec-be44-f068f797e659",
         "18a16615-ec6d-4759-8bc4-76adc65adf18"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "SHOP BY CATEGORY",
