@@ -379,8 +379,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".image--image-with-text-overlay {padding-top: 0 !important;}"
-    ]
+    "custom_css": []
   }
 }
