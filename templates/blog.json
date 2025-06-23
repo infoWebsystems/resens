@@ -39,18 +39,6 @@
         "navigation_position": "center"
       }
     },
-    "main": {
-      "type": "template--blog",
-      "disabled": true,
-      "settings": {
-        "show_author_name": false,
-        "blog-sidebar-description": "",
-        "blog-sidebar-link": "",
-        "show_blog_tags": false,
-        "show_recent_posts": false,
-        "blog_show_date": true
-      }
-    },
     "blog_dynamic_posts": {
       "type": "blog-dynamic-posts",
       "settings": {}
@@ -67,7 +55,6 @@
   "order": [
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "blog_navigation_banner_CHT9dU",
-    "main",
     "blog_dynamic_posts",
     "1646004249db2dcfc2"
   ]
