@@ -1,0 +1,34 @@
+<div class="blog-posts-dynamic">
+  <h2>{{ blog.title }}</h2>
+
+  <div class="blog-posts-grid">
+    {% for article in blog.articles %}
+      <div class="blog-post-card">
+        {% if article.image %}
+          <a href="{{ article.url }}">
+            <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title | escape_once }}">
+          </a>
+        {% endif %}
+
+        <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+        <p>{{ article.published_at | date: "%B %d, %Y" }}</p>
+        <p>{{ article.excerpt_or_content | strip_html | truncatewords: 25 }}</p>
+        <p><a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a></p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .blog-post-card img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+</style>
