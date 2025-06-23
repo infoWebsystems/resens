@@ -57,8 +57,8 @@
       "type": "blog--navigation-banner",
       "name": "t:sections.blog--navigation-banner.presets.name",
       "settings": {
-        "banner_linklist": "footer",
-        "nav_background_color": "#EEEEEE",
+        "banner_linklist": "blog-menu",
+        "nav_background_color": "#eeeeee",
         "navigation_position": "center"
       }
     },
