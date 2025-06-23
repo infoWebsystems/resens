@@ -30,17 +30,27 @@
         "text_alignment_mobile": "center"
       }
     },
-    "content_on_image_background_e8qF7T": {
-      "type": "content-on-image-background",
-      "name": "Content on image background",
+    "image_image_with_text_overlay_caUnmN": {
+      "type": "image--image-with-text-overlay",
+      "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
-        "background": "shopify://shop_images/FOX06046_2_1eec533b-cd39-4df1-83ac-965e805ae09b.png",
-        "title": "Everyone can reduce their carbon footprint by changing their habits.",
-        "description": "<p>Interested in what carbon footprint you leave behind? Calculate it with our online calculator</p>",
-        "btn_label": "Label",
-        "btn_url": "",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
+        "image": "shopify://shop_images/FOX05898.jpg",
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 35,
+        "parallax": true,
+        "title": "Blog Re[sens]",
+        "text": "A space for deep skin understanding, mindful care, and uncompromising beauty.",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54": {
@@ -373,7 +383,7 @@
   },
   "order": [
     "e15cd669-6e10-45b6-87de-7377df6538ba",
-    "content_on_image_background_e8qF7T",
+    "image_image_with_text_overlay_caUnmN",
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54",
     "collage_builder_aHJrmn",
     "main",
