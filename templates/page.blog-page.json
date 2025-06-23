@@ -71,9 +71,9 @@
             "collection": "skincare-collection",
             "subheading": "",
             "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": false,
+            "show-gradient-overlay": true,
             "overlay_font_color": "#ffffff",
-            "overlay_color": "#ffffff"
+            "overlay_color": "#494949"
           }
         },
         "featured_collection_kqzaQw": {
@@ -82,9 +82,9 @@
             "collection": "skincare-sets",
             "subheading": "",
             "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": false,
+            "show-gradient-overlay": true,
             "overlay_font_color": "#ffffff",
-            "overlay_color": "#ffffff"
+            "overlay_color": "#494949"
           }
         },
         "featured_collection_XiFYrg": {
@@ -93,9 +93,9 @@
             "collection": "lines-home",
             "subheading": "",
             "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": false,
+            "show-gradient-overlay": true,
             "overlay_font_color": "#ffffff",
-            "overlay_color": "#000000"
+            "overlay_color": "#494949"
           }
         }
       },
