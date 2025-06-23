@@ -16,6 +16,29 @@
         "page_width": "full-width"
       }
     },
+    "image_image_with_text_overlay_imHnrz": {
+      "type": "image--image-with-text-overlay",
+      "name": "t:sections.image--image-with-text-overlay.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/FOX05898.jpg",
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 20,
+        "parallax": true,
+        "title": "Blog Re[sens]",
+        "text": "A space for deep skin understanding, mindful care, and uncompromising beauty.",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
+      }
+    },
     "blog_navigation_banner_NYLQC6": {
       "type": "blog--navigation-banner",
       "name": "t:sections.blog--navigation-banner.presets.name",
@@ -104,6 +127,7 @@
   },
   "order": [
     "main",
+    "image_image_with_text_overlay_imHnrz",
     "blog_navigation_banner_NYLQC6",
     "blog_blog_posts_6mbkzW",
     "collection_collection_list_JDYnmp"
