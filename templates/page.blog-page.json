@@ -44,7 +44,7 @@
       "name": "t:sections.blog--navigation-banner.presets.name",
       "settings": {
         "banner_linklist": "blog-menu",
-        "nav_background_color": "#EEEEEE",
+        "nav_background_color": "#eeeeee",
         "navigation_position": "center"
       }
     },
@@ -60,7 +60,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "skincare-collection",
-            "subheading": "Subheading",
+            "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
             "overlay_font_color": "#ffffff",
@@ -71,7 +71,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "skincare-sets",
-            "subheading": "Subheading",
+            "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
             "overlay_font_color": "#ffffff",
@@ -82,7 +82,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "lines-home",
-            "subheading": "Subheading",
+            "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
             "overlay_font_color": "#ffffff",
