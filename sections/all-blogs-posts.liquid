@@ -1,6 +1,5 @@
 {% comment %}
-  Вивід статей з кількох блогів вручну через їх handle
-  Адаптивна сітка: 3 колонки на десктопі, 1 — на мобільних
+  Вивід статей з кількох блогів вручну через їх handle + пагінація
 {% endcomment %}
 
 <div class="all-blogs-posts">
@@ -18,40 +17,62 @@
 
   {% assign sorted_articles = all_articles | sort: "published_at" | reverse %}
 
-  {% if sorted_articles.size > 0 %}
-    <div class="blog-posts-grid">
-      {% for article in sorted_articles limit: 6 %}
-        <div class="blog-post-card">
-          {% if article.image %}
-            <a href="{{ article.url }}">
-              <img
-                src="{{ article.image | img_url: 'medium' }}"
-                alt="{{ article.title | escape_once }}"
-              >
-            </a>
+  {% paginate sorted_articles by 6 %}
+    {% if paginate.items.size > 0 %}
+      <div class="blog-posts-grid">
+        {% for article in paginate.items %}
+          <div class="blog-post-card">
+            {% if article.image %}
+              <a href="{{ article.url }}">
+                <img
+                  src="{{ article.image | img_url: 'medium' }}"
+                  alt="{{ article.title | escape_once }}"
+                >
+              </a>
+            {% endif %}
+
+            <h3 class="article-title">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </h3>
+
+            <p class="article-date">
+              {{ article.published_at | date: "%B %d, %Y" }}
+            </p>
+
+            <p class="article-excerpt">
+              {{ article.excerpt_or_content | strip_html | truncatewords: 25 }}
+            </p>
+
+            <p class="read-more-link">
+              <a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if paginate.pages > 1 %}
+        <div class="custom-pagination">
+          {% if paginate.previous %}
+            <a class="prev" href="{{ paginate.previous.url }}">← Previous</a>
           {% endif %}
 
-          <h3 class="article-title">
-            <a href="{{ article.url }}">{{ article.title }}</a>
-          </h3>
+          {% for part in paginate.parts %}
+            {% if part.is_link %}
+              <a class="page-link" href="{{ part.url }}">{{ part.title }}</a>
+            {% else %}
+              <span class="current">{{ part.title }}</span>
+            {% endif %}
+          {% endfor %}
 
-          <p class="article-date">
-            {{ article.published_at | date: "%B %d, %Y" }}
-          </p>
-
-          <p class="article-excerpt">
-            {{ article.excerpt_or_content | strip_html | truncatewords: 25 }}
-          </p>
-
-          <p class="read-more-link">
-            <a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a>
-          </p>
+          {% if paginate.next %}
+            <a class="next" href="{{ paginate.next.url }}">Next →</a>
+          {% endif %}
         </div>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p>No articles found.</p>
-  {% endif %}
+      {% endif %}
+    {% else %}
+      <p>No articles found.</p>
+    {% endif %}
+  {% endpaginate %}
 </div>
 
 <style>
@@ -117,6 +138,33 @@
     font-weight: 600;
     text-decoration: underline;
     color: #000;
+  }
+
+  .custom-pagination {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .custom-pagination a,
+  .custom-pagination .current {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .custom-pagination .current {
+    background-color: #000;
+    color: #fff;
+    pointer-events: none;
+  }
+
+  .custom-pagination a:hover {
+    background-color: #f4f4f4;
   }
 
   @media (max-width: 768px) {
