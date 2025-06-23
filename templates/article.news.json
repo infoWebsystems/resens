@@ -9,6 +9,13 @@
  */
 {
   "sections": {
+    "advanced_layout_custom_liquid_NMJpTx": {
+      "type": "advanced-layout--custom-liquid",
+      "name": "t:all.Custom_Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
+      }
+    },
     "blog_navigation_banner_NLMHp8": {
       "type": "blog--navigation-banner",
       "name": "t:sections.blog--navigation-banner.presets.name",
@@ -59,6 +66,7 @@
     }
   },
   "order": [
+    "advanced_layout_custom_liquid_NMJpTx",
     "blog_navigation_banner_NLMHp8",
     "advanced_layout_custom_liquid_6c7Ljg",
     "main",
