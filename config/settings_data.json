@@ -377,5 +377,10 @@
       "popup--enable": true,
       "desktop-popup-style": "slide-up"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".image--image-with-text-overlay {padding-top: 0 !important;}"
+    ]
   }
 }
