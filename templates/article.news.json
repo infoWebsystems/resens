@@ -14,8 +14,15 @@
       "name": "t:sections.blog--navigation-banner.presets.name",
       "settings": {
         "banner_linklist": "blog-menu",
-        "nav_background_color": "#EEEEEE",
+        "nav_background_color": "#eeeeee",
         "navigation_position": "center"
+      }
+    },
+    "advanced_layout_custom_liquid_6c7Ljg": {
+      "type": "advanced-layout--custom-liquid",
+      "name": "t:all.Custom_Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
       }
     },
     "main": {
@@ -53,6 +60,7 @@
   },
   "order": [
     "blog_navigation_banner_NLMHp8",
+    "advanced_layout_custom_liquid_6c7Ljg",
     "main",
     "9d393ac7-9597-4549-8ebb-968e14caed7a"
   ]
