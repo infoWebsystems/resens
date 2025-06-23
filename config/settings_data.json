@@ -11,6 +11,7 @@
   "current": {
     "color_body_text": "#000000",
     "color_primary": "#494949",
+    "color_body_bg": "#fff",
     "color_body_bg_secondary": "#f9f9fb",
     "sale_price_color": "#b24d4d",
     "sale_badge_color": "#b24d4d",
