@@ -12,7 +12,7 @@
     "main": {
       "type": "template--page",
       "settings": {
-        "page_title_enabled": false,
+        "page_title_enabled": true,
         "page_width": "full-width"
       }
     },
@@ -37,10 +37,65 @@
         "blog_show_date": true,
         "post_limit": 3
       }
+    },
+    "collection_collection_list_JDYnmp": {
+      "type": "collection--collection-list",
+      "blocks": {
+        "featured_collection_WgbUKG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skincare-collection",
+            "subheading": "Subheading",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#fff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "featured_collection_kqzaQw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skincare-sets",
+            "subheading": "Subheading",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#fff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "featured_collection_XiFYrg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lines-home",
+            "subheading": "Subheading",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#fff",
+            "overlay_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_WgbUKG",
+        "featured_collection_kqzaQw",
+        "featured_collection_XiFYrg"
+      ],
+      "name": "t:sections.collection--collection-list.presets.name",
+      "settings": {
+        "colors": "light",
+        "title": "Featured Collections",
+        "richtext": "",
+        "items-per-row": 3,
+        "fill-the-area": true,
+        "remove-spacing": false,
+        "section-width": "full",
+        "content-position": "overlay"
+      }
     }
   },
   "order": [
     "main",
-    "blog_blog_posts_6mbkzW"
+    "blog_blog_posts_6mbkzW",
+    "collection_collection_list_JDYnmp"
   ]
 }

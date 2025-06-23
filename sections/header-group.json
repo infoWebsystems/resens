@@ -66,23 +66,9 @@
         "main_linklist": "test-menu",
         "dropdown_alignment": "left"
       }
-    },
-    "content_on_image_background_ANTJ6m": {
-      "type": "content-on-image-background",
-      "name": "Content on image background",
-      "settings": {
-        "background": "shopify://shop_images/FOX05898.jpg",
-        "title": "Blog Re[sens]",
-        "description": "<p>A space for deep skin understanding, mindful care, and uncompromising beauty.</p>",
-        "btn_label": "",
-        "btn_url": "",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
-      }
     }
   },
   "order": [
-    "header",
-    "content_on_image_background_ANTJ6m"
+    "header"
   ]
 }
