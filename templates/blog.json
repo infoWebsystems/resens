@@ -53,6 +53,15 @@
         "hover-button-background": "#494949"
       }
     },
+    "blog_navigation_banner_CHT9dU": {
+      "type": "blog--navigation-banner",
+      "name": "t:sections.blog--navigation-banner.presets.name",
+      "settings": {
+        "banner_linklist": "footer",
+        "nav_background_color": "#EEEEEE",
+        "navigation_position": "center"
+      }
+    },
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54": {
       "type": "image--image-with-text",
       "settings": {
@@ -384,6 +393,7 @@
   "order": [
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "image_image_with_text_overlay_caUnmN",
+    "blog_navigation_banner_CHT9dU",
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54",
     "collage_builder_aHJrmn",
     "main",
