@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "blog_navigation_banner_NLMHp8": {
+      "type": "blog--navigation-banner",
+      "name": "t:sections.blog--navigation-banner.presets.name",
+      "settings": {
+        "banner_linklist": "blog-menu",
+        "nav_background_color": "#EEEEEE",
+        "navigation_position": "center"
+      }
+    },
     "main": {
       "type": "template--article",
       "settings": {
@@ -43,6 +52,7 @@
     }
   },
   "order": [
+    "blog_navigation_banner_NLMHp8",
     "main",
     "9d393ac7-9597-4549-8ebb-968e14caed7a"
   ]
