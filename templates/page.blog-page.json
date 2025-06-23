@@ -7,8 +7,16 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+
 {
   "sections": {
+    "main": {
+      "type": "template--page",
+      "settings": {
+        "page_title_enabled": false,
+        "page_width": "full-width"
+      }
+    },
     "image_image_with_text_overlay_imHnrz": {
       "type": "image--image-with-text-overlay",
       "name": "t:sections.image--image-with-text-overlay.presets.name",
@@ -17,8 +25,8 @@
         "image_height": "40vw",
         "bg_image_overlay_opacity": 20,
         "parallax": true,
-        "title": "БЛОГ RE[SENS]",
-        "text": "Простір для глибокого розуміння шкіри, усвідомленого догляду та безкомпромісної краси.",
+        "title": "Blog Re[sens]",
+        "text": "A space for deep skin understanding, mindful care, and uncompromising beauty.",
         "colors": "light",
         "textPosition": "center",
         "textAlignment": "center",
@@ -32,11 +40,11 @@
         "hover-button-background": "#494949"
       }
     },
-    "main": {
-      "type": "template--page",
+    "advanced_layout_custom_liquid_k9UKd8": {
+      "type": "advanced-layout--custom-liquid",
+      "name": "t:all.Custom_Liquid",
       "settings": {
-        "page_title_enabled": false,
-        "page_width": "full-width"
+        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
       }
     },
     "blog_navigation_banner_NYLQC6": {
@@ -110,8 +118,9 @@
     }
   },
   "order": [
-    "image_image_with_text_overlay_imHnrz",
     "main",
+    "image_image_with_text_overlay_imHnrz",
+    "advanced_layout_custom_liquid_k9UKd8",
     "blog_navigation_banner_NYLQC6",
     "all_blogs_posts",
     "collection_collection_list_JDYnmp"
