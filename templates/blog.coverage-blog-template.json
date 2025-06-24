@@ -52,63 +52,63 @@
         "logo_image_hVbkyn": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/9.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-1-vogue.jpg",
             "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
           }
         },
         "logo_image_yFk7kt": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/7.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-2-playboy.jpg",
             "link": "https://playboy.ua/playboy-recommend/-2024-07-11"
           }
         },
         "logo_image_cBET6d": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/2_e0b1b179-b098-4873-a1ed-dbd0d0498c04.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-5-marieclaire.jpg",
             "link": "https://www.village.com.ua/village/service-shopping/style-guide/357787-10-rizdvyanih-b-rsquo-yuti-podarunkiv-pidbirka-dlya-zhinok-nbsp"
           }
         },
         "logo_image_6NGTzK": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/6.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-4-bhub-1.jpg",
             "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
           }
         },
         "logo_image_bHYFLR": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/3_de566b8a-e7f5-4071-9a73-d357c528fb81.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-12-vogue.jpg",
             "link": "https://elle.ua/krasota/beauty_blog/made-in-ukraine-9-ukrainskih-beauty-brendiv-yakim-doviryayut/"
           }
         },
         "logo_image_nCJ9hN": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/5.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-9-estportal.jpg",
             "link": "https://marieclaire.ua/beauty/re-sens-pershij-brend-na-rinku-profesijnoyi-kosmetiki-yakij-povnistyu-vidmovivsya-vid-plastiku/"
           }
         },
         "logo_image_wNXUyc": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/8.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-11-village.jpg",
             "link": "https://viva.ua/events/17960-liliya-pustovit-karolina-ashion-anna-zavalska-zirki-na-prezentatsii-brendu-resens"
           }
         },
         "logo_image_z6ziYq": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/4_1ec8882f-5968-4e5a-867b-6a7e21220821.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-10-bhub-3.jpg",
             "link": "https://ursamedia.com.ua/trend/pokrashhuye-imunitet-ta-yakist-shkiry-v-ukrayini-zyavyvsya-novyy-brend-profesiynoyi-kosmetyky/"
           }
         },
         "logo_image_bnKxdw": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/1_80592e10-5220-46d0-bdea-3d3b3719e206.png",
+            "image": "shopify://shop_images/banner_500x500_20250624-6-elle.jpg",
             "link": "https://estportal.com/resens-pershij-ukrainskij-100-sustainable-brend-na-rinku-profesijnoi-kosmetiki/"
           }
         }
@@ -129,6 +129,7 @@
       "settings": {
         "colors": "light",
         "width": 200,
+        "height": 200,
         "title": "They write about us"
       }
     },
