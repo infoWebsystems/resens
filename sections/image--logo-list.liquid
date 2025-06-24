@@ -45,7 +45,7 @@
                 <a href="{{ block.settings.link }}" class="logo-bar__link">
               {% endif %}
               {% if block.settings.image != blank %}
-                {% render 'responsive-image' with block.settings.image, alt: block.settings.image.alt, class: 'logo-bar__image', default_size: '240x' %}
+                {% render 'responsive-image' with block.settings.image, alt: block.settings.image.alt, class: 'logo-bar__image', default_size: '400x' %}
               {% else %}
                 {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
               {% endif %}
