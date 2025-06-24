@@ -3,13 +3,13 @@
 
 {% case section.settings.colors %}
   {% when 'white' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--white' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--white' -%}
   {% when 'light' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--light' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--light' -%}
   {% when 'accent' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--accent' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--accent' -%}
   {% when 'dark' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--dark' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--dark' -%}
 {% endcase %}
 
 <div
@@ -25,80 +25,56 @@
       </div>
     {% endif %}
 
-    {% if section.blocks.size > 0 %}
-      <div class="logo-bar">
-        {% for block in section.blocks %}
-          <div class="logo-bar__item" {{ block.shopify_attributes }}>
-            {% if block.settings.link != blank %}
-              <a href="{{ block.settings.link }}" class="logo-bar__link">
-            {% endif %}
-            {% if block.settings.image != blank %}
-              <img 
-                src="{{ block.settings.image | image_url: width: 800 }}"
-                alt="{{ block.settings.image.alt | escape }}"
-                class="logo-bar__image"
-                width="400"
-                height="400"
-                loading="lazy"
-              />
+    <div>
+      {% if section.blocks.size > 0 %}
+        <div class="logo-bar">
+          {% for block in section.blocks %}
+            {% comment %}Use smaller of image size or width settings{% endcomment %}
+            {% if section.settings.width > block.settings.image.width %}
+              {% assign width = block.settings.image.width %}
             {% else %}
-              {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
+              {% assign width = section.settings.width %}
             {% endif %}
-            {% if block.settings.link != blank %}
-              </a>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
-    {% else %}
-      <div class="placeholder-noblocks">
-        {{ 'general.onboarding.no_content' | t }}
-      </div>
-    {% endif %}
+
+            <div
+              class="logo-bar__item"
+              {{ block.shopify_attributes }}
+              style="width: {{ width }}px; max-height: {{ section.settings.height }}px;"
+            >
+              {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}" class="logo-bar__link">
+              {% endif %}
+              {% if block.settings.image != blank %}
+                {% render 'responsive-image' with block.settings.image, alt: block.settings.image.alt, class: 'logo-bar__image', default_size: '240x' %}
+              {% else %}
+                {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
+              {% endif %}
+              {% if block.settings.link != blank %}
+                </a>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size == 0 %}
+        <div class="placeholder-noblocks">
+          {{ 'general.onboarding.no_content' | t }}
+        </div>
+      {% endif %}
+    </div>
   </div>
 </div>
 
 {% style %}
-.logo-bar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  justify-items: center;
-  align-items: center;
-}
-
-.logo-bar__item {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.logo-bar__image {
-  width: 100%;
+.logo-bar__item img,
+.logo-bar__item .logo-bar__image {
   height: 100%;
   object-fit: contain;
-  display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .logo-bar {
-    grid-template-columns: 1fr;
-  }
-
-  .logo-bar__item {
-    width: 100%;
-    height: auto;
-  }
-
-  .logo-bar__image {
-    width: 100%;
-    height: auto;
-  }
 }
 {% endstyle %}
+
+
 
 {% schema %}
 {
@@ -118,6 +94,26 @@
         { "value": "dark", "label": "t:all.Dark" }
       ],
       "info": "t:sections.image--logo-list.settings.colors.info"
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "label": "t:all.Logo_width",
+      "min": 100,
+      "max": 320,
+      "step": 10,
+      "unit": "t:all.px",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Logo height",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 80
     },
     {
       "type": "text",
