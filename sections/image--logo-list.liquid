@@ -33,8 +33,6 @@
                 alt="{{ block.settings.image.alt | escape }}"
                 class="logo-bar__image"
                 loading="lazy"
-                width="{{ section.settings.width }}"
-                height="{{ section.settings.height }}"
               />
             {% else %}
               {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
@@ -56,14 +54,16 @@
 {% style %}
 .logo-bar {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   justify-items: center;
+  margin-top: 32px;
 }
 
 .logo-bar__item {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -91,6 +91,20 @@
   object-fit: contain;
   display: block;
 }
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .logo-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  .logo-bar {
+    grid-template-columns: 1fr;
+  }
+}
 {% endstyle %}
 
 {% schema %}
@@ -109,28 +123,7 @@
         { "value": "light", "label": "t:all.Light" },
         { "value": "accent", "label": "t:all.Feature" },
         { "value": "dark", "label": "t:all.Dark" }
-      ],
-      "info": "t:sections.image--logo-list.settings.colors.info"
-    },
-    {
-      "type": "range",
-      "id": "width",
-      "label": "t:all.Logo_width",
-      "min": 100,
-      "max": 400,
-      "step": 10,
-      "unit": "t:all.px",
-      "default": 400
-    },
-    {
-      "type": "range",
-      "id": "height",
-      "label": "Logo height",
-      "min": 100,
-      "max": 400,
-      "step": 10,
-      "unit": "px",
-      "default": 400
+      ]
     },
     {
       "type": "text",
@@ -162,7 +155,6 @@
     {
       "name": "t:sections.image--logo-list.presets.name",
       "blocks": [
-        { "type": "logo_image" },
         { "type": "logo_image" },
         { "type": "logo_image" },
         { "type": "logo_image" }
