@@ -127,9 +127,7 @@
       "custom_css": [],
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
-        "colors": "light",
-        "width": 300,
-        "height": 300,
+        "colors": "white",
         "title": "They write about us"
       }
     },
