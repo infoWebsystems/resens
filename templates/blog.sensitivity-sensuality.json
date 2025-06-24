@@ -83,8 +83,8 @@
         "image_height": "40vw",
         "bg_image_overlay_opacity": 0,
         "parallax": true,
-        "title": "Sensitivity ≠ Weakness",
-        "text": "Re[Sens] created the “Sensitivity & Sensuality” project to capture a moment —a moment when we, as women, allow ourselves not only to act, but to feel.",
+        "title": "At the heart of it — five Ukrainian women.Five unique stories. Five distinct voices.",
+        "text": "<p>Re[Sens] created the “Sensitivity & Sensuality” project to capture a moment —a moment when we, as women, allow ourselves not only to act, but to feel. </p><p>At the heart of it — five Ukrainian women.Five unique stories. Five distinct voices. <b>Lala Tarapakina, Dasha Malakhova, Anna Zavalska, Oksana Shavarska, Maryana Holovko</b>. </p><p>Each one — vibrant, authentic, profound.They share how they find balance —between strength and tenderness,composure and softness,outer success and inner calm.</p>",
         "colors": "dark",
         "textPosition": "center",
         "textAlignment": "center",
@@ -96,6 +96,43 @@
         "button-background": "#262428",
         "hover-button-text": "#ffffff",
         "hover-button-background": "#494949"
+      }
+    },
+    "accordion_9iFDNN": {
+      "type": "accordion",
+      "blocks": {
+        "tab_content_wwCEyY": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Чутливість ≠слабкість",
+            "text": "<p>Чутливість — це не про надмірну вразливість. Це про здатність<br/>відгукуватися на світ. Це про глибину.<br/><br/>Шкіра — наша броня, наша прикраса і наша пам’ять. Вона пам’ятає холод і сонце,<br/>обійми і стрес. Вона живе — разом із нами. І коли вона чутлива — це не вада. Це<br/>дзеркало нашого темпу, нашого досвіду.</p><p>Кожного дня ми вчимося не<br/>заглушати чутливість, а трансформувати її у ресурс.<br/><br/>Чуттєвість — це її продовження. Це те, що робить нас живими. І це не лише про<br/>шкіру. Це про здатність відчувати світ — текстури, емоції, людей, моменти.</p>"
+          }
+        },
+        "tab_content_nnxK8V": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Бути сильною — цебути живою. Бути живою — це відчувати",
+            "text": "<p>І<br/>саме ця здатність — відчувати шкірою, серцем, нервовими закінченнями — не<br/>просто зберігає нашу молодість.<br/>Вона зберігає в нас <strong>життя</strong>.</p>"
+          }
+        },
+        "tab_content_biPxRy": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Re[Sens] народився з ідеї, що чутливість — це невада, а ресурс",
+            "text": "<p>Ми працюємо у напрямку<br/>нейрокосметики, досліджуючи зв’язок між емоційним станом і реакціями шкіри.<br/>Поєднуючи імуно-, нейро- та sensi- косметологію,<br/>ми створюємо <strong>формули, які</strong> <strong>не пригнічують шкіру, а розуміють її.</strong></p><p>Це — високі біотехнології, що<br/>підтримують природні механізми регенерації та стресостійкості, з повагою до<br/>мікробіому й індивідуальності.</p><p>Ми переконані<strong>: чутливість — не<br/>лише про тіло, а й про взаємодію з навколишнім світом.</strong><br/><br/>Саме тому <strong>відмова від пластику для нас — не маркетинг, а свідомий вибір.</strong></p><p>Ми впроваджуємо<br/>sustainable-рішення — біоматеріали, що не шкодять планеті: міцелій, деревина,<br/>алюміній, перероблений папір, опале листя тощо.<br/><br/>Так, ще не все досконало. Але ми чесно й цілеспрямовано рухаємося до упаковки,<br/>яка не залишає після себе слідів.</p><p>Бо турбота про шкіру й турбота про<br/>планету — це частини одного цілого.<br/><br/><strong>Ми знижуємо чутливість, не зменшуючи чуттєвості.</strong></p><p><br/><br/><strong>Але цей проєкт — не про косметику. Він — про нас.<br/><br/></strong>І ми хочемо, щоб це стало<br/>для вас нагадуванням:<br/><br/>Чутливість<br/>— <strong>не слабкість</strong>.<br/><br/>М’якість — <strong>не про капітуляцію</strong>.<br/><br/>Чуттєвість — <strong>це шлях до себе справжньої</strong>. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_content_wwCEyY",
+        "tab_content_nnxK8V",
+        "tab_content_biPxRy"
+      ],
+      "name": "t:sections.accordion.presets.name",
+      "settings": {
+        "colors": "white",
+        "title": "Discover the project",
+        "faq_icon": "caret"
       }
     },
     "blog_dynamic_posts": {
@@ -124,6 +161,7 @@
     "advanced_layout_custom_liquid_hD76rq",
     "text_rich_text_gF9qVQ",
     "image_image_with_text_overlay_jD87x4",
+    "accordion_9iFDNN",
     "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
     "1646004249db2dcfc2"
