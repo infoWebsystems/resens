@@ -146,7 +146,7 @@
       ],
       "name": "t:sections.blog--blog-posts.presets.name",
       "settings": {
-        "colors": "white",
+        "colors": "accent",
         "title": "",
         "richtext": "",
         "blog_show_date": true,
