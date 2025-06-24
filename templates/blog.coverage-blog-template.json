@@ -131,8 +131,31 @@
         "title": "Media about us"
       }
     },
+    "blog_blog_posts_gxQ3Tz": {
+      "type": "blog--blog-posts",
+      "blocks": {
+        "blog_tEDCei": {
+          "type": "blog",
+          "settings": {
+            "blog": "coverage"
+          }
+        }
+      },
+      "block_order": [
+        "blog_tEDCei"
+      ],
+      "name": "t:sections.blog--blog-posts.presets.name",
+      "settings": {
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "blog_show_date": true,
+        "post_limit": 3
+      }
+    },
     "blog_dynamic_posts": {
       "type": "blog-dynamic-posts",
+      "disabled": true,
       "settings": {}
     },
     "advanced_layout_custom_liquid_iEefMQ": {
@@ -156,6 +179,7 @@
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
     "image_logo_list_9kwTaY",
+    "blog_blog_posts_gxQ3Tz",
     "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
     "1646004249db2dcfc2"
