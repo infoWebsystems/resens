@@ -150,7 +150,7 @@
         "title": "",
         "richtext": "",
         "blog_show_date": true,
-        "post_limit": 3
+        "post_limit": 2
       }
     },
     "blog_dynamic_posts": {
