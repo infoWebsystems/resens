@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "e15cd669-6e10-45b6-87de-7377df6538ba": {
+      "type": "text--rich-text",
+      "blocks": {
+        "8cdcd2dc-52d3-473e-b1b9-de7d6cc61232": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE BLOG"
+          }
+        }
+      },
+      "block_order": [
+        "8cdcd2dc-52d3-473e-b1b9-de7d6cc61232"
+      ],
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "blog_navigation_banner_CHT9dU": {
+      "type": "blog--navigation-banner",
+      "name": "t:sections.blog--navigation-banner.presets.name",
+      "settings": {
+        "banner_linklist": "blog-menu",
+        "nav_background_color": "#eeeeee",
+        "navigation_position": "center"
+      }
+    },
+    "advanced_layout_custom_liquid_hD76rq": {
+      "type": "advanced-layout--custom-liquid",
+      "name": "t:all.Custom_Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
+      }
+    },
+    "blog_dynamic_posts": {
+      "type": "blog-dynamic-posts",
+      "settings": {}
+    },
+    "advanced_layout_custom_liquid_iEefMQ": {
+      "type": "advanced-layout--custom-liquid",
+      "name": "t:all.Custom_Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top: 60px;\"></div>"
+      }
+    },
+    "1646004249db2dcfc2": {
+      "type": "newsletter--newsletter",
+      "settings": {
+        "colors": "accent",
+        "newsletter_heading": "Join our Mailing List",
+        "newsletter_description": "<p>Get priority access to events and exclusive offers</p>"
+      }
+    }
+  },
+  "order": [
+    "e15cd669-6e10-45b6-87de-7377df6538ba",
+    "blog_navigation_banner_CHT9dU",
+    "advanced_layout_custom_liquid_hD76rq",
+    "blog_dynamic_posts",
+    "advanced_layout_custom_liquid_iEefMQ",
+    "1646004249db2dcfc2"
+  ]
+}
