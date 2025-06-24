@@ -1,6 +1,52 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+<div class="wrapper-padded all-blogs-posts">
+  {% if blog.articles.size > 0 %}
+    <div class="grid">
+      {% paginate blog.articles by 6 %}
+        {% for article in blog.articles %}
+          <div class="grid__item one-third medium--one-half small--one-whole article-preview">
+            {% if article.image %}
+              <a href="{{ article.url }}">
+                <img
+                  src="{{ article.image | img_url: '800x800' }}"
+                  alt="{{ article.title | escape_once }}"
+                >
+              </a>
+            {% endif %}
+
+            <h3 class="article-title">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </h3>
+
+            <p class="article-date">
+              {{ article.published_at | date: "%B %d, %Y" }}
+            </p>
+
+            <p class="article-excerpt">
+              {{ article.excerpt_or_content | strip_html | truncatewords: 25 }}
+            </p>
+
+            <p class="read-more-link">
+              <a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a>
+            </p>
+          </div>
+        {% endfor %}
+        
+        {% if paginate.pages > 1 %}
+          <div class="pagination">
+            {% if paginate.previous %}
+              <a href="{{ paginate.previous.url }}" class="prev">← Previous</a>
+            {% endif %}
+
+            <span class="page-number">{{ paginate.current_page }} / {{ paginate.pages }}</span>
+
+            {% if paginate.next %}
+              <a href="{{ paginate.next.url }}" class="next">Next →</a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endpaginate %}
+    </div>
+  {% else %}
+    <p>No articles found.</p>
+  {% endif %}
+</div>
