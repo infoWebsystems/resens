@@ -76,13 +76,53 @@
             "image": "shopify://shop_images/6.png",
             "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
           }
+        },
+        "logo_image_bHYFLR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/3_de566b8a-e7f5-4071-9a73-d357c528fb81.png",
+            "link": "https://elle.ua/krasota/beauty_blog/made-in-ukraine-9-ukrainskih-beauty-brendiv-yakim-doviryayut/"
+          }
+        },
+        "logo_image_nCJ9hN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
+          }
+        },
+        "logo_image_wNXUyc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
+          }
+        },
+        "logo_image_z6ziYq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
+          }
+        },
+        "logo_image_bnKxdw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
+          }
         }
       },
       "block_order": [
         "logo_image_hVbkyn",
         "logo_image_yFk7kt",
         "logo_image_cBET6d",
-        "logo_image_6NGTzK"
+        "logo_image_6NGTzK",
+        "logo_image_bHYFLR",
+        "logo_image_nCJ9hN",
+        "logo_image_wNXUyc",
+        "logo_image_z6ziYq",
+        "logo_image_bnKxdw"
       ],
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
