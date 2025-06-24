@@ -1,1 +1,26 @@
-.logo-bar{text-align:center}.logo-bar__item{display:inline-block;vertical-align:middle;margin:0 15px 15px 15px}@media screen and (max-width:767px){.logo-bar__item{margin:0 7.5px 15px 7.5px}}.logo-bar__item img{max-width:100%}
+.logo-bar {
+  text-align: center;
+}
+
+.logo-bar__item {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px 15px 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-bar__item {
+    width: 100%;
+    height: auto;
+    margin: 0 7.5px 15px 7.5px;
+  }
+}
+
+.logo-bar__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
