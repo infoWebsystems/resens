@@ -34,7 +34,7 @@
         <div class="blog-post-card">
           {% if article.image %}
             <a href="{{ article.url }}">
-              <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title | escape_once }}">
+              <img src="{{ article.image | img_url: '800x800' }}" alt="{{ article.title | escape_once }}">
             </a>
           {% endif %}
 
