@@ -125,8 +125,8 @@
         "logo_image_bnKxdw"
       ],
       "custom_css": [
-        "/* Стилі для контейнера логотипів */.logo-list__grid {display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; /* можна змінити відстань між логотипами */ align-items: center; justify-items: center;}",
-        "/* Мобільна адаптація: 2 логотипи в ряд */@media (max-width: 749px) {.logo-list__grid {grid-template-columns: repeat(2, 1fr); }}"
+        "/* Стилі для контейнера логотипів */.logo-bar {display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; /* можна змінити відстань між логотипами */ align-items: center; justify-items: center;}",
+        " /* Мобільна адаптація: 2 логотипи в ряд */@media (max-width: 749px) {.logo-bar {grid-template-columns: repeat(2, 1fr); }}"
       ],
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
