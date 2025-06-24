@@ -3,13 +3,13 @@
 
 {% case section.settings.colors %}
   {% when 'white' %}
-    {%- assign color_scheme = 'homepage-sections-wrapper--white' -%}
+    {% assign color_scheme = 'homepage-sections-wrapper--white' %}
   {% when 'light' %}
-    {%- assign color_scheme = 'homepage-sections-wrapper--light' -%}
+    {% assign color_scheme = 'homepage-sections-wrapper--light' %}
   {% when 'accent' %}
-    {%- assign color_scheme = 'homepage-sections-wrapper--accent' -%}
+    {% assign color_scheme = 'homepage-sections-wrapper--accent' %}
   {% when 'dark' %}
-    {%- assign color_scheme = 'homepage-sections-wrapper--dark' -%}
+    {% assign color_scheme = 'homepage-sections-wrapper--dark' %}
 {% endcase %}
 
 <div class="homepage-sections-wrapper {{ color_scheme }}" data-wetheme-section-type="image--logo-list" data-wetheme-section-id="{{ section.id }}">
@@ -55,52 +55,31 @@
 .logo-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  justify-items: center;
-  margin-top: 32px;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 30px;
 }
 
 .logo-bar__item {
+  max-width: 280px;
   width: 100%;
-  max-width: 400px;
-  aspect-ratio: 1 / 1;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
-  transition: transform 0.3s ease;
 }
 
-.logo-bar__item:hover {
-  transform: translateY(-4px);
-}
-
-.logo-bar__link {
-  display: block;
+.logo-bar__item img,
+.logo-bar__item .logo-bar__image {
   width: 100%;
-  height: 100%;
-}
-
-.logo-bar__image {
-  width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   display: block;
+  border-radius: 12px;
 }
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-  .logo-bar {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   .logo-bar {
     grid-template-columns: 1fr;
   }
@@ -123,7 +102,8 @@
         { "value": "light", "label": "t:all.Light" },
         { "value": "accent", "label": "t:all.Feature" },
         { "value": "dark", "label": "t:all.Dark" }
-      ]
+      ],
+      "info": "t:sections.image--logo-list.settings.colors.info"
     },
     {
       "type": "text",
@@ -162,7 +142,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [ "header" ]
+    "groups": ["header"]
   }
 }
 {% endschema %}
