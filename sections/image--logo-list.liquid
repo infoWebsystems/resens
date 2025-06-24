@@ -30,7 +30,7 @@
               {% endif %}
               {% if block.settings.image != blank %}
                 <img
-                  src="{{ block.settings.image | image_url: width: 800 }}"
+                  src="{{ block.settings.image | image_url: width: 400 }}"
                   alt="{{ block.settings.image.alt | escape }}"
                   class="logo-bar__image"
                   loading="lazy"
@@ -59,7 +59,7 @@
 .logo-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 30px;
   justify-items: center;
 }
 
