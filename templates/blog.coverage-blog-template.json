@@ -128,8 +128,8 @@
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
         "colors": "light",
-        "width": 200,
-        "height": 200,
+        "width": 400,
+        "height": 400,
         "title": "They write about us"
       }
     },
