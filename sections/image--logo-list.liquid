@@ -3,13 +3,13 @@
 
 {% case section.settings.colors %}
   {% when 'white' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--white' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--white' -%}
   {% when 'light' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--light' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--light' -%}
   {% when 'accent' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--accent' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--accent' -%}
   {% when 'dark' %}
-    {% assign color_scheme = 'homepage-sections-wrapper--dark' %}
+    {%- assign color_scheme = 'homepage-sections-wrapper--dark' -%}
 {% endcase %}
 
 <div class="homepage-sections-wrapper {{ color_scheme }}" data-wetheme-section-type="image--logo-list" data-wetheme-section-id="{{ section.id }}">
@@ -33,6 +33,8 @@
                 alt="{{ block.settings.image.alt | escape }}"
                 class="logo-bar__image"
                 loading="lazy"
+                width="{{ section.settings.width }}"
+                height="{{ section.settings.height }}"
               />
             {% else %}
               {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
@@ -54,35 +56,40 @@
 {% style %}
 .logo-bar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  justify-content: center;
-  padding: 0 30px;
+  justify-items: center;
 }
 
 .logo-bar__item {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 24px;
+  transition: transform 0.3s ease;
 }
 
-.logo-bar__item img,
-.logo-bar__item .logo-bar__image {
+.logo-bar__item:hover {
+  transform: translateY(-4px);
+}
+
+.logo-bar__link {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.logo-bar__image {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   display: block;
-  border-radius: 12px;
-}
-
-@media screen and (max-width: 767px) {
-  .logo-bar {
-    grid-template-columns: 1fr;
-  }
 }
 {% endstyle %}
 
@@ -104,6 +111,26 @@
         { "value": "dark", "label": "t:all.Dark" }
       ],
       "info": "t:sections.image--logo-list.settings.colors.info"
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "label": "t:all.Logo_width",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "unit": "t:all.px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Logo height",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 400
     },
     {
       "type": "text",
@@ -137,12 +164,13 @@
       "blocks": [
         { "type": "logo_image" },
         { "type": "logo_image" },
+        { "type": "logo_image" },
         { "type": "logo_image" }
       ]
     }
   ],
   "disabled_on": {
-    "groups": ["header"]
+    "groups": [ "header" ]
   }
 }
 {% endschema %}
