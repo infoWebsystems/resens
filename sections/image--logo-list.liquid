@@ -20,38 +20,36 @@
       </div>
     {% endif %}
 
-    <div>
-      {% if section.blocks.size > 0 %}
-        <div class="logo-bar">
-          {% for block in section.blocks %}
-            <div class="logo-bar__item" {{ block.shopify_attributes }}>
-              {% if block.settings.link != blank %}
-                <a href="{{ block.settings.link }}" class="logo-bar__link">
-              {% endif %}
-              {% if block.settings.image != blank %}
-                <img
-                  src="{{ block.settings.image | image_url: width: 400 }}"
-                  alt="{{ block.settings.image.alt | escape }}"
-                  class="logo-bar__image"
-                  loading="lazy"
-                  width="{{ section.settings.width }}"
-                  height="{{ section.settings.height }}"
-                />
-              {% else %}
-                {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
-              {% endif %}
-              {% if block.settings.link != blank %}
-                </a>
-              {% endif %}
-            </div>
-          {% endfor %}
-        </div>
-      {% else %}
-        <div class="placeholder-noblocks">
-          {{ 'general.onboarding.no_content' | t }}
-        </div>
-      {% endif %}
-    </div>
+    {% if section.blocks.size > 0 %}
+      <div class="logo-bar">
+        {% for block in section.blocks %}
+          <div class="logo-bar__item" {{ block.shopify_attributes }}>
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="logo-bar__link">
+            {% endif %}
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | image_url: width: 800 }}"
+                alt="{{ block.settings.image.alt | escape }}"
+                class="logo-bar__image"
+                loading="lazy"
+                width="{{ section.settings.width }}"
+                height="{{ section.settings.height }}"
+              />
+            {% else %}
+              {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
+            {% endif %}
+            {% if block.settings.link != blank %}
+              </a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="placeholder-noblocks">
+        {{ 'general.onboarding.no_content' | t }}
+      </div>
+    {% endif %}
   </div>
 </div>
 
@@ -75,58 +73,13 @@
 }
 
 .logo-bar__item img,
-.logo-bar__item .logo-bar__image {
+.logo-bar__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
 {% endstyle %}
-
-<div
-  class="homepage-sections-wrapper {{ color_scheme }}"
-  data-wetheme-section-type="image--logo-list"
-  data-wetheme-section-id="{{ section.id }}"
->
-  <div class="wrapper show-on-scroll logo-bar-section--{{ section.id }}">
-
-    {% if section.settings.title != blank %}
-      <div class="sitewide--title-wrapper">
-        <h2 class="homepage-sections--title">{{ section.settings.title | escape }}</h2>
-      </div>
-    {% endif %}
-
-    <div class="logo-bar">
-      {% for block in section.blocks %}
-        <div class="logo-bar__item" {{ block.shopify_attributes }}>
-          {% if block.settings.link != blank %}
-            <a href="{{ block.settings.link }}" class="logo-bar__link">
-          {% endif %}
-          {% if block.settings.image != blank %}
-            <img
-              src="{{ block.settings.image | img_url: '800x800' }}"
-              alt="{{ block.settings.image.alt | escape }}"
-              class="logo-bar__image"
-            />
-          {% else %}
-            {{ 'logo' | placeholder_svg_tag: 'icon icon--placeholder' }}
-          {% endif %}
-          {% if block.settings.link != blank %}
-            </a>
-          {% endif %}
-        </div>
-      {% endfor %}
-    </div>
-
-    {% if section.blocks.size == 0 %}
-      <div class="placeholder-noblocks">
-        {{ 'general.onboarding.no_content' | t }}
-      </div>
-    {% endif %}
-
-  </div>
-</div>
-
 
 {% schema %}
 {
@@ -144,8 +97,7 @@
         { "value": "light", "label": "t:all.Light" },
         { "value": "accent", "label": "t:all.Feature" },
         { "value": "dark", "label": "t:all.Dark" }
-      ],
-      "info": "t:sections.image--logo-list.settings.colors.info"
+      ]
     },
     {
       "type": "range",
@@ -205,7 +157,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [ "header" ]
+    "groups": ["header"]
   }
 }
 {% endschema %}
