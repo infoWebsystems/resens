@@ -73,7 +73,8 @@
         "logo_image_6NGTzK": {
           "type": "logo_image",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/6.png",
+            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
           }
         }
       },
