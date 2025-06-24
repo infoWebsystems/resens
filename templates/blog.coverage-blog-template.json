@@ -46,6 +46,48 @@
         "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
       }
     },
+    "image_logo_list_9kwTaY": {
+      "type": "image--logo-list",
+      "blocks": {
+        "logo_image_hVbkyn": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Vogue_logo_NEW_VECTO.png",
+            "link": "shopify://blogs/coverage/vogue-ua-довго-і-щасливо"
+          }
+        },
+        "logo_image_yFk7kt": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_cBET6d": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_6NGTzK": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_hVbkyn",
+        "logo_image_yFk7kt",
+        "logo_image_cBET6d",
+        "logo_image_6NGTzK"
+      ],
+      "name": "t:sections.image--logo-list.presets.name",
+      "settings": {
+        "colors": "light",
+        "width": 150,
+        "title": "They write about us"
+      }
+    },
     "blog_dynamic_posts": {
       "type": "blog-dynamic-posts",
       "settings": {}
@@ -70,6 +112,7 @@
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
+    "image_logo_list_9kwTaY",
     "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
     "1646004249db2dcfc2"
