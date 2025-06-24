@@ -132,51 +132,6 @@
         "title": "They write about us"
       }
     },
-    "image_logo_list_n4UGLR": {
-      "type": "image--logo-list",
-      "blocks": {
-        "logo_image_xfMt4t": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/2_bfa9c826-b6cc-46ef-a98e-4e96acbcd5e5.png",
-            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
-          }
-        },
-        "logo_image_KpPNYY": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/1_e917587e-3b40-46bb-9de0-02ea5e8ec2e7.png",
-            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
-          }
-        },
-        "logo_image_YLHgE6": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/2_bfa9c826-b6cc-46ef-a98e-4e96acbcd5e5.png",
-            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
-          }
-        },
-        "logo_image_wLjnwD": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/1_e917587e-3b40-46bb-9de0-02ea5e8ec2e7.png",
-            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_xfMt4t",
-        "logo_image_KpPNYY",
-        "logo_image_YLHgE6",
-        "logo_image_wLjnwD"
-      ],
-      "name": "t:sections.image--logo-list.presets.name",
-      "settings": {
-        "colors": "light",
-        "width": 200,
-        "title": "As seen in"
-      }
-    },
     "blog_dynamic_posts": {
       "type": "blog-dynamic-posts",
       "settings": {}
@@ -202,7 +157,6 @@
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
     "image_logo_list_9kwTaY",
-    "image_logo_list_n4UGLR",
     "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
     "1646004249db2dcfc2"
