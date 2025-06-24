@@ -124,9 +124,7 @@
         "logo_image_z6ziYq",
         "logo_image_bnKxdw"
       ],
-      "custom_css": [
-        "/* Стилі для контейнера логотипів */.logo-bar {display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; /* можна змінити відстань між логотипами */ align-items: center; justify-items: center;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
         "colors": "light",
