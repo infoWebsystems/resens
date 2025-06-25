@@ -73,7 +73,18 @@
             "image": "shopify://shop_images/images.jpg",
             "grid_image_size": "wide",
             "heading": "LVIV",
-            "text": "<p><strong>НОВОDERM</strong></p><p>Working hours:<br/>Mon - Fri: 9:00 – 19:00<br/>Sat: 9:00 – 17:00<br/><br/>Lviv, Sakharova St. 80A<br/>+38 (097) 657 7999</p>",
+            "text": "<p><strong>НОВОDERM ANTI-AGE & ESTETIC</strong></p><p>Working hours:<br/>Mon - Fri: 9:00 – 19:00<br/>Sat: 9:00 – 17:00<br/><br/>Lviv, Sakharova St. 80A<br/>+38 (097) 657 7999</p>",
+            "button_text": "Go to the site",
+            "button_link": "https://novoderm.com.ua/"
+          }
+        },
+        "image_and_text_gzFMWB": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/images.jpg",
+            "grid_image_size": "wide",
+            "heading": "LVIV",
+            "text": "<p><strong>НОВОDERM</strong></p><p>Working hours:<br/>Mon - Fri: 9:00 – 19:00<br/>Sat: 9:00 – 17:00<br/><br/>Lviv, Sakharova St. 82<br/>+38 (097) 657 7999</p>",
             "button_text": "Go to the site",
             "button_link": "https://novoderm.com.ua/"
           }
@@ -106,6 +117,7 @@
         "image_and_text_rnjWH8",
         "image_and_text_TR4bXF",
         "image_and_text_RDa787",
+        "image_and_text_gzFMWB",
         "image_and_text_BMjbyt",
         "image_and_text_8qwztw"
       ],
