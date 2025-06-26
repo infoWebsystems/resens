@@ -80,7 +80,7 @@
       "type": "image--image-with-text-overlay",
       "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20250625_Photo_1.jpg",
+        "image": "shopify://shop_images/20250625_Photo.jpg",
         "image_height": "50vw",
         "bg_image_overlay_opacity": 0,
         "parallax": true,
