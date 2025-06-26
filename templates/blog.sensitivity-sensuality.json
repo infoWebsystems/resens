@@ -76,27 +76,43 @@
         "text_alignment_mobile": "center"
       }
     },
-    "image_image_with_text_overlay_jD87x4": {
-      "type": "image--image-with-text-overlay",
-      "name": "t:sections.image--image-with-text-overlay.presets.name",
+    "image_slideshow_gcNHDR": {
+      "type": "image--slideshow",
+      "blocks": {
+        "image_9Tj6PU": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "",
+            "first_button_link": "shopify://collections/all",
+            "second_button_label": "",
+            "second_button_link": "",
+            "image": "shopify://shop_images/20250625_Photo_1.jpg",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9F9F9F"
+          }
+        }
+      },
+      "block_order": [
+        "image_9Tj6PU"
+      ],
+      "name": "t:sections.image--slideshow.presets.name",
       "settings": {
-        "image": "shopify://shop_images/66.png",
-        "image_height": "30vw",
-        "bg_image_overlay_opacity": 0,
-        "parallax": true,
-        "title": "",
-        "text": "",
-        "colors": "light",
-        "textPosition": "center",
-        "textAlignment": "center",
-        "heading--text-size": 26,
-        "text--text-size": 18,
-        "link": "",
-        "button_label": "",
-        "button-text": "#ffffff",
-        "button-background": "#262428",
-        "hover-button-text": "#ffffff",
-        "hover-button-background": "#494949"
+        "desktop_height": "full_screen",
+        "mobile_height": "full_screen",
+        "slide_navigation_style": "none",
+        "slide_transition_delay": 7
       }
     },
     "accordion_9iFDNN": {
@@ -161,7 +177,7 @@
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
     "text_rich_text_gF9qVQ",
-    "image_image_with_text_overlay_jD87x4",
+    "image_slideshow_gcNHDR",
     "accordion_9iFDNN",
     "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
