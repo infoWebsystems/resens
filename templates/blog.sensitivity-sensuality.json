@@ -92,6 +92,7 @@
             "desktop-caption-heading-size": 47,
             "desktop-caption-body-text-size": 18,
             "text_position": "center_left",
+            "mobile_image": "shopify://shop_images/20250625_Photo_mob_1.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
