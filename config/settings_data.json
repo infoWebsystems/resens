@@ -198,6 +198,11 @@
         "type": "shopify://apps/bundle-bear/blocks/widget/8301eac6-7eb6-487c-92f6-ccde92f1db50",
         "disabled": false,
         "settings": {}
+      },
+      "152906827736512534": {
+        "type": "shopify://apps/popupsmart-popup-a-b-testing/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
