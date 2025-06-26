@@ -81,7 +81,7 @@
       "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
         "image": "shopify://shop_images/banner2.png",
-        "image_height": "50vw",
+        "image_height": "40vw",
         "bg_image_overlay_opacity": 0,
         "parallax": true,
         "title": "",
