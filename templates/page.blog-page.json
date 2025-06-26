@@ -21,7 +21,7 @@
       "type": "image--image-with-text-overlay",
       "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
-        "image": "shopify://shop_images/FOX05898.jpg",
+        "image": "shopify://shop_images/20250625_Blog-1.jpg",
         "image_height": "40vw",
         "bg_image_overlay_opacity": 20,
         "parallax": true,
