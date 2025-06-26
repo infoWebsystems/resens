@@ -81,7 +81,7 @@
       "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
         "image": "shopify://shop_images/20250625_Photo_1.jpg",
-        "image_height": "40vw",
+        "image_height": "50vw",
         "bg_image_overlay_opacity": 0,
         "parallax": true,
         "title": "",
