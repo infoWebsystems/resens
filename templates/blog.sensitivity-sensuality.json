@@ -240,7 +240,7 @@
           "type": "richtext",
           "settings": {
             "text": "<p>Something exciting is coming soon! Stay tuned.</p>",
-            "text_size": 14
+            "text_size": 20
           }
         }
       },
