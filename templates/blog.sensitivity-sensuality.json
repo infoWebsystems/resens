@@ -39,43 +39,6 @@
         "navigation_position": "center"
       }
     },
-    "advanced_layout_custom_liquid_hD76rq": {
-      "type": "advanced-layout--custom-liquid",
-      "name": "t:all.Custom_Liquid",
-      "settings": {
-        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
-      }
-    },
-    "text_rich_text_gF9qVQ": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_CCpKnk": {
-          "type": "heading",
-          "settings": {
-            "heading": "SPECIAL PROJECT “Sensitivity & Sensuality” — a series of conversations with women who deeply feel the world and themselves within it."
-          }
-        },
-        "richtext_wPMyPg": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>We live in a time of urgency — of constant replies, resilience, and restraint. We’re expected to stay composed, stay strong, stay functional. But in this daily marathon of productivity, the most precious thing is not to lose ourselves.</p><p>This project is not about beauty in the conventional sense. It’s a manifesto of a new kind of balance. It’s about beauty in the details — in the honesty of being with your skin, your rhythm, your own sense of self.</p><p>Each woman featured is a reflection of this wholeness. They don’t play roles. Each one holds her own ritual of silence, her lived experience, her scars — and her beauty. They live as they feel.<br/>And that’s exactly what makes them inspiring.</p>",
-            "text_size": 14
-          }
-        }
-      },
-      "block_order": [
-        "heading_CCpKnk",
-        "richtext_wPMyPg"
-      ],
-      "name": "t:sections.text--rich-text.presets.name",
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
     "image_slideshow_gcNHDR": {
       "type": "image--slideshow",
       "blocks": {
@@ -114,6 +77,43 @@
         "mobile_height": "full_screen",
         "slide_navigation_style": "none",
         "slide_transition_delay": 7
+      }
+    },
+    "advanced_layout_custom_liquid_hD76rq": {
+      "type": "advanced-layout--custom-liquid",
+      "name": "t:all.Custom_Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
+      }
+    },
+    "text_rich_text_gF9qVQ": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_CCpKnk": {
+          "type": "heading",
+          "settings": {
+            "heading": "SPECIAL PROJECT “Sensitivity & Sensuality” — a series of conversations with women who deeply feel the world and themselves within it."
+          }
+        },
+        "richtext_wPMyPg": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We live in a time of urgency — of constant replies, resilience, and restraint. We’re expected to stay composed, stay strong, stay functional. But in this daily marathon of productivity, the most precious thing is not to lose ourselves.</p><p>This project is not about beauty in the conventional sense. It’s a manifesto of a new kind of balance. It’s about beauty in the details — in the honesty of being with your skin, your rhythm, your own sense of self.</p><p>Each woman featured is a reflection of this wholeness. They don’t play roles. Each one holds her own ritual of silence, her lived experience, her scars — and her beauty. They live as they feel.<br/>And that’s exactly what makes them inspiring.</p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_CCpKnk",
+        "richtext_wPMyPg"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "accordion_9iFDNN": {
@@ -275,9 +275,9 @@
   "order": [
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "blog_navigation_banner_CHT9dU",
+    "image_slideshow_gcNHDR",
     "advanced_layout_custom_liquid_hD76rq",
     "text_rich_text_gF9qVQ",
-    "image_slideshow_gcNHDR",
     "accordion_9iFDNN",
     "template_product_info_columns_wF49mL",
     "blog_dynamic_posts",
