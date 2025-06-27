@@ -46,6 +46,76 @@
         "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
       }
     },
+    "text_rich_text_xjL6RX": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_6NJiLD": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Special Project Re[Sens] — for those who want not just to use cosmetics, but to understand it"
+          }
+        },
+        "richtext_D6qTmN": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>“Chemistry Lessons”</strong> is a series of entertaining and educational videos from Re[Sens], the first Ukrainian high-biotech sustainable professional skincare brand. This project was created to explain the complex in simple terms — and to make the world of cosmetics more accessible, honest, and conscious.</p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_6NJiLD",
+        "richtext_D6qTmN"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "advanced_layout_custom_html_pPP46J": {
+      "type": "advanced-layout--custom-html",
+      "blocks": {
+        "html_iiCp7m": {
+          "type": "html",
+          "settings": {
+            "code": "<div style=\"text-align: center;\">\n  <h3 style=\"margin-bottom: 20px;\">We talk about:</h3>\n  <div style=\"display: inline-block; text-align: center;\">\n    <div style=\"border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 5px 0;\">\n      how skincare really works\n    </div>\n    <div style=\"border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 5px 0;\">\n      what modern ingredients are: exosomes, peptides, lipids, enzymes — and why your skin needs them\n    </div>\n    <div style=\"border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 5px 0;\">\n      why understanding your microbiome matters\n    </div>\n    <div style=\"border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 5px 0;\">\n      global trends, biotechnology, and the direction science is heading\n    </div>\n    <div style=\"border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 5px 0;\">\n      marketing myths — and how to spot an “empty promise” versus evidence-based results\n    </div>\n  </div>\n</div>",
+            "width": "100%"
+          }
+        }
+      },
+      "block_order": [
+        "html_iiCp7m"
+      ],
+      "name": "t:all.Custom_HTML",
+      "settings": {}
+    },
+    "text_rich_text_QYKKHx": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_mDAhPM": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The main face of the project is<strong>Yuliia Gaharyna</strong>, co-founder of Re[Sens], cosmetic chemist, and skincare formula developer. With humor, sincerity, and expertise, she reveals how cosmetics work — from the inside out.</p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "richtext_mDAhPM"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "blog_dynamic_posts": {
       "type": "blog-dynamic-posts",
       "settings": {}
@@ -70,6 +140,9 @@
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
+    "text_rich_text_xjL6RX",
+    "advanced_layout_custom_html_pPP46J",
+    "text_rich_text_QYKKHx",
     "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
     "1646004249db2dcfc2"
