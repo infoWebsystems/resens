@@ -159,11 +159,10 @@
             "button_link": "shopify://collections/all"
           }
         },
-        "video_and_text_JcBBaJ": {
-          "type": "video_and_text",
+        "image_and_text_4FTcPd": {
+          "type": "image_and_text",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "grid_video_size": "wide",
+            "grid_image_size": "square",
             "heading": "Heading",
             "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "Learn more",
@@ -176,7 +175,7 @@
         "image_and_text_kETHcc",
         "image_and_text_qPW7Ex",
         "image_and_text_raaHxw",
-        "video_and_text_JcBBaJ"
+        "image_and_text_4FTcPd"
       ],
       "name": "t:sections.template--product--info-columns.presets.name",
       "settings": {
