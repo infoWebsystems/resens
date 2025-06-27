@@ -99,7 +99,7 @@
         "richtext_mDAhPM": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The main face of the project is<strong>Yuliia Gaharyna</strong>, co-founder of Re[Sens], cosmetic chemist, and skincare formula developer. With humor, sincerity, and expertise, she reveals how cosmetics work — from the inside out.</p>",
+            "text": "<p>The main face of the project is <strong>Yuliia Gaharyna</strong>, co-founder of Re[Sens], cosmetic chemist, and skincare formula developer. With humor, sincerity, and expertise, she reveals how cosmetics work — from the inside out.</p>",
             "text_size": 14
           }
         }
