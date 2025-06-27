@@ -185,7 +185,7 @@
       "name": "t:sections.template--product--info-columns.presets.name",
       "settings": {
         "colors": "white",
-        "heading": "Бути сильною — це бути живою. Бути живою — це відчувати",
+        "heading": "",
         "description": "<p>ʼ</p>",
         "columns_per_row": 3,
         "text_alignment": "center",
