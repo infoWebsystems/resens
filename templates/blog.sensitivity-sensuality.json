@@ -124,8 +124,8 @@
           "settings": {
             "image": "shopify://shop_images/1_018cc24b-ac93-4651-9384-59500fd5f82f.png",
             "grid_image_size": "square",
-            "heading": "Даша Малахова",
-            "text": "<p>акторка, продюсерка, есеїстка</p>",
+            "heading": "Dasha Malakhova",
+            "text": "<p>actress, producer, essayist</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -135,8 +135,8 @@
           "settings": {
             "image": "shopify://shop_images/5_3e61a144-9d9a-4a90-8b45-ef3d4a921575.png",
             "grid_image_size": "square",
-            "heading": "Оксана Шаварська",
-            "text": "<p>письменниця, сценаристка, блогерка</p>",
+            "heading": "Oksana Shavarska",
+            "text": "<p>writer, screenwriter, blogger</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -146,8 +146,8 @@
           "settings": {
             "image": "shopify://shop_images/4_c320a085-aee1-432b-adae-7cbe8daca0a3.png",
             "grid_image_size": "square",
-            "heading": "Анна Завальська",
-            "text": "<p>співачка, поетеса, перекладачка пісенних текстів, поетеса</p>",
+            "heading": "Anna Zavalska",
+            "text": "<p>singer, poet, song lyrics translator</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -157,8 +157,8 @@
           "settings": {
             "image": "shopify://shop_images/3_5e0eafeb-53c5-4b79-8a61-c8a7bdda4180.png",
             "grid_image_size": "square",
-            "heading": "Мар’яна Головко",
-            "text": "<p>співачка, викладачка, артистка</p>",
+            "heading": "Maryana Holovko",
+            "text": "<p>singer, lecturer, performer</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -168,8 +168,8 @@
           "settings": {
             "image": "shopify://shop_images/2_fcd90d58-4ea4-402b-a45d-a1efc49d73f9.png",
             "grid_image_size": "square",
-            "heading": "Лала Тарапакіна",
-            "text": "<p>засновниця благодійного фонду</p>",
+            "heading": "Lala Tarapakina",
+            "text": "<p>founder of a charitable foundation</p>",
             "button_text": "",
             "button_link": ""
           }
