@@ -116,82 +116,6 @@
         "slide_transition_delay": 7
       }
     },
-    "template_product_info_columns_wF49mL": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "image_and_text_J663rx": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/8b6dfe4038234765001bce54a7039198.png",
-            "grid_image_size": "square",
-            "heading": "Dasha Malakhova",
-            "text": "<p>actress, producer, essayist</p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "image_and_text_kETHcc": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/5_3e61a144-9d9a-4a90-8b45-ef3d4a921575.png",
-            "grid_image_size": "square",
-            "heading": "Oksana Shavarska",
-            "text": "<p>writer, screenwriter, blogger</p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "image_and_text_qPW7Ex": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/4_c320a085-aee1-432b-adae-7cbe8daca0a3.png",
-            "grid_image_size": "square",
-            "heading": "Anna Zavalska",
-            "text": "<p>singer, poet, song lyrics translator</p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "image_and_text_raaHxw": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/3_5e0eafeb-53c5-4b79-8a61-c8a7bdda4180.png",
-            "grid_image_size": "square",
-            "heading": "Maryana Holovko",
-            "text": "<p>singer, lecturer, performer</p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "image_and_text_4FTcPd": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/2_fcd90d58-4ea4-402b-a45d-a1efc49d73f9.png",
-            "grid_image_size": "square",
-            "heading": "Lala Tarapakina",
-            "text": "<p>founder of a charitable foundation</p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_and_text_J663rx",
-        "image_and_text_kETHcc",
-        "image_and_text_qPW7Ex",
-        "image_and_text_raaHxw",
-        "image_and_text_4FTcPd"
-      ],
-      "name": "t:sections.template--product--info-columns.presets.name",
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "<p>ʼ</p>",
-        "columns_per_row": 3,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
-    },
     "accordion_9iFDNN": {
       "type": "accordion",
       "blocks": {
@@ -227,6 +151,82 @@
         "colors": "white",
         "title": "Discover the project",
         "faq_icon": "caret"
+      }
+    },
+    "template_product_info_columns_wF49mL": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_J663rx": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/8b6dfe4038234765001bce54a7039198.png",
+            "grid_image_size": "square",
+            "heading": "Dasha Malakhova",
+            "text": "<p>Actress, producer, essayist</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "image_and_text_kETHcc": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/5_3e61a144-9d9a-4a90-8b45-ef3d4a921575.png",
+            "grid_image_size": "square",
+            "heading": "Oksana Shavarska",
+            "text": "<p>Writer, screenwriter, blogger</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "image_and_text_qPW7Ex": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/4_c320a085-aee1-432b-adae-7cbe8daca0a3.png",
+            "grid_image_size": "square",
+            "heading": "Anna Zavalska",
+            "text": "<p>Singer, songwriter and translator of song lyrics, poet</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "image_and_text_raaHxw": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/3_5e0eafeb-53c5-4b79-8a61-c8a7bdda4180.png",
+            "grid_image_size": "square",
+            "heading": "Maryana Holovko",
+            "text": "<p>Soloist of Nova Opera ensemble, multi-genre singer, lecturer at the R. Glier Music Academy</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "image_and_text_4FTcPd": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/2_fcd90d58-4ea4-402b-a45d-a1efc49d73f9.png",
+            "grid_image_size": "square",
+            "heading": "Lala Tarapakina",
+            "text": "<p>Founder and activist of the charitable foundation “12 Vartovykh”<em>(12 Guardians)</em></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_J663rx",
+        "image_and_text_kETHcc",
+        "image_and_text_qPW7Ex",
+        "image_and_text_raaHxw",
+        "image_and_text_4FTcPd"
+      ],
+      "name": "t:sections.template--product--info-columns.presets.name",
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "<p>ʼ</p>",
+        "columns_per_row": 3,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
       }
     },
     "blog_dynamic_posts": {
@@ -278,8 +278,8 @@
     "advanced_layout_custom_liquid_hD76rq",
     "text_rich_text_gF9qVQ",
     "image_slideshow_gcNHDR",
-    "template_product_info_columns_wF49mL",
     "accordion_9iFDNN",
+    "template_product_info_columns_wF49mL",
     "blog_dynamic_posts",
     "text_rich_text_DJdAyH",
     "advanced_layout_custom_liquid_iEefMQ",
