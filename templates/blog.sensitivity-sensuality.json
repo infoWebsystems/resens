@@ -185,8 +185,8 @@
       "name": "t:sections.template--product--info-columns.presets.name",
       "settings": {
         "colors": "white",
-        "heading": "Info columns",
-        "description": "<p>Emphasise your messaging</p>",
+        "heading": "Бути сильною — це бути живою. Бути живою — це відчувати",
+        "description": "<p>ʼ</p>",
         "columns_per_row": 3,
         "text_alignment": "center",
         "vertical_alignment": "top"
