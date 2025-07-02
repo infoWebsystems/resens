@@ -3424,12 +3424,12 @@
   },
   "contact": {
     "form": {
-      "name": "Ім'я",
-      "email": "Електронна пошта",
-      "phone": "Номер телефону",
-      "message": "Повідомлення",
-      "send": "Надіслати",
-      "post_success": "Дякуємо, що звернулися до нас. Ми зв’яжемося з вами якомога швидше."
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "message": "Message",
+      "send": "Send",
+      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   }
 }

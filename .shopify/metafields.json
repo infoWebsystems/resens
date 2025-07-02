@@ -290,6 +290,16 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "shopping-bag-material",
+      "namespace": "shopify",
+      "name": "Shopping bag material",
+      "description": "Specifies the type of material used in shopping bags, e.g. paper, biodegradable materials",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
