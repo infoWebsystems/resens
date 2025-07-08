@@ -167,6 +167,17 @@
             "button_link": "https://resenss.com/en/blogs/sensitivity-sensuality/ya-dumayu-shcho-tilky-nizhnist-mozhe-khaknuty-zlo-dasha-malakhova"
           }
         },
+        "image_and_text_4FTcPd": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/2_fcd90d58-4ea4-402b-a45d-a1efc49d73f9.png",
+            "grid_image_size": "square",
+            "heading": "Lala Tarapakina",
+            "text": "<p>Founder and activist of the charitable foundation “12 Vartovykh”<em>(12 Guardians)</em></p>",
+            "button_text": "Watch the video",
+            "button_link": "shopify://blogs/sensitivity-sensuality/мені-здається-що-філософія-інколи-працює-так-само-як-інгредієнти-лала-тарапакіна"
+          }
+        },
         "image_and_text_kETHcc": {
           "type": "image_and_text",
           "settings": {
@@ -199,25 +210,14 @@
             "button_text": "",
             "button_link": ""
           }
-        },
-        "image_and_text_4FTcPd": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/2_fcd90d58-4ea4-402b-a45d-a1efc49d73f9.png",
-            "grid_image_size": "square",
-            "heading": "Lala Tarapakina",
-            "text": "<p>Founder and activist of the charitable foundation “12 Vartovykh”<em>(12 Guardians)</em></p>",
-            "button_text": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
         "image_and_text_J663rx",
+        "image_and_text_4FTcPd",
         "image_and_text_kETHcc",
         "image_and_text_qPW7Ex",
-        "image_and_text_raaHxw",
-        "image_and_text_4FTcPd"
+        "image_and_text_raaHxw"
       ],
       "name": "t:sections.template--product--info-columns.presets.name",
       "settings": {
