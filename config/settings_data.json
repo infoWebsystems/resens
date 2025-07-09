@@ -203,6 +203,11 @@
         "type": "shopify://apps/popupsmart-popup-a-b-testing/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
         "disabled": false,
         "settings": {}
+      },
+      "5368581398600051233": {
+        "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-popup/97e8894d-00f0-41a9-b986-49828146257c",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
