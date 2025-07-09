@@ -206,7 +206,7 @@
       },
       "5368581398600051233": {
         "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-popup/97e8894d-00f0-41a9-b986-49828146257c",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
