@@ -1,100 +1,38 @@
-{% comment %}
-  Вивід статей з кількох блогів вручну через їх handle + кастомна пагінація
-{% endcomment %}
-
-<div class="all-blogs-posts">
-  {% assign all_articles = '' | split: '' %}
-  {% assign blog_handles = "news,coverage,articles,chemistry-lessons,podcasts,sensitivity-sensuality" | split: "," %}
-
-  {% for handle in blog_handles %}
-    {% assign blog = blogs[handle] %}
-    {% if blog != blank %}
-      {% assign all_articles = all_articles | concat: blog.articles %}
-    {% endif %}
-  {% endfor %}
-
-  {% assign sorted_articles = all_articles | sort: "published_at" | reverse %}
-
-  {% assign per_page = 6 %}
-
-  {% assign current_page = 1 %}
-  {% if request.query.page %}
-    {% assign current_page = request.query.page | plus: 0 %}
-  {% endif %}
-
-  {% assign total_articles = sorted_articles.size %}
-  {% assign total_pages = total_articles | divided_by: per_page %}
-  {% assign remainder = total_articles | modulo: per_page %}
-  {% if remainder > 0 %}
-    {% assign total_pages = total_pages | plus: 1 %}
-  {% endif %}
-
-  {% assign start_index = per_page | times: current_page | minus: per_page %}
-  {% assign end_index = start_index | plus: per_page %}
-
+<div class="all-blogs-posts" id="blog-posts-app">
   <div class="blog-posts-grid">
-    {% for article in sorted_articles %}
-      {% if forloop.index0 >= start_index and forloop.index0 < end_index %}
-        <div class="blog-post-card">
-          {% if article.image %}
-            <a href="{{ article.url }}">
-              <img src="{{ article.image | img_url: '800x800' }}" alt="{{ article.title | escape_once }}">
-            </a>
-          {% endif %}
-
-          <h3 class="article-title">
-            <a href="{{ article.url }}">{{ article.title }}</a>
-          </h3>
-
-          <p class="article-date">
-            {{ article.published_at | date: "%B %d, %Y" }}
-          </p>
-
-          <p class="article-excerpt">
-            {{ article.excerpt_or_content | strip_html | truncatewords: 25 }}
-          </p>
-
-          <p class="read-more-link">
-            <a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a>
-          </p>
-        </div>
+    {% assign blog_handles = "news,coverage,articles,chemistry-lessons,podcasts,sensitivity-sensuality" | split: "," %}
+    {% assign all_articles = '' | split: '' %}
+    {% for handle in blog_handles %}
+      {% assign blog = blogs[handle] %}
+      {% if blog != blank %}
+        {% assign all_articles = all_articles | concat: blog.articles %}
       {% endif %}
+    {% endfor %}
+    {% assign sorted_articles = all_articles | sort: "published_at" | reverse %}
+
+    {% for article in sorted_articles %}
+      <div class="blog-post-card" data-title="{{ article.title | escape }}">
+        {% if article.image %}
+          <a href="{{ article.url }}">
+            <img src="{{ article.image | img_url: '800x800' }}" alt="{{ article.title | escape_once }}">
+          </a>
+        {% endif %}
+        <h3 class="article-title">
+          <a href="{{ article.url }}">{{ article.title }}</a>
+        </h3>
+        <p class="article-date">{{ article.published_at | date: "%B %d, %Y" }}</p>
+        <p class="article-excerpt">{{ article.excerpt_or_content | strip_html | truncatewords: 25 }}</p>
+        <p class="read-more-link">
+          <a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} →</a>
+        </p>
+      </div>
     {% endfor %}
   </div>
 
-  {% if total_pages > 1 %}
-    <div class="custom-pagination">
-      {% if current_page > 1 %}
-        <a class="prev" href="?page={{ current_page | minus: 1 }}">← Попередня</a>
-      {% endif %}
-
-      {% for i in (1..total_pages) %}
-        {% if i == current_page %}
-          <span class="current">{{ i }}</span>
-        {% else %}
-          <a class="page-link" href="?page={{ i }}">{{ i }}</a>
-        {% endif %}
-      {% endfor %}
-
-      {% if current_page < total_pages %}
-        <a class="next" href="?page={{ current_page | plus: 1 }}">Наступна →</a>
-      {% endif %}
-    </div>
-  {% endif %}
+  <div class="custom-pagination" id="pagination-controls"></div>
 </div>
 
 <style>
-  .all-blogs-posts {
-    padding: 40px 20px;
-  }
-
-  .section-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 32px;
-    text-align: center;
-  }
-
   .blog-posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -102,57 +40,11 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
-  .blog-post-card {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    transition: box-shadow 0.2s ease;
-  }
-
-  .blog-post-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-
-  .blog-post-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 16px;
-    border-radius: 4px;
-  }
-
-  .blog-post-card h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-
-  .blog-post-card .article-date {
-    font-size: 14px;
-    color: #999;
-    margin-bottom: 10px;
-  }
-
-  .blog-post-card .article-excerpt {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #444;
-    margin-bottom: 12px;
-  }
-
-  .blog-post-card .read-more-link a {
-    font-weight: 600;
-    text-decoration: underline;
-    color: #000;
-  }
-
+  .blog-post-card { display: none; }
   .custom-pagination {
     text-align: center;
     margin-top: 40px;
   }
-
   .custom-pagination a,
   .custom-pagination .current {
     display: inline-block;
@@ -163,33 +55,46 @@
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    cursor: pointer;
   }
-
   .custom-pagination .current {
     background-color: #000;
     color: #fff;
     pointer-events: none;
   }
-
-  .custom-pagination a:hover {
-    background-color: #f4f4f4;
-  }
-
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 20px;
-    }
-
-    .blog-post-card {
-      padding: 16px;
-    }
-
-    .blog-post-card h3 {
-      font-size: 16px;
-    }
-
-    .blog-post-card .article-excerpt {
-      font-size: 14px;
-    }
-  }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll(".blog-post-card");
+    const perPage = 6;
+    const totalPages = Math.ceil(cards.length / perPage);
+    const pagination = document.getElementById("pagination-controls");
+
+    function showPage(page) {
+      cards.forEach((card, index) => {
+        card.style.display = (index >= (page - 1) * perPage && index < page * perPage) ? "block" : "none";
+      });
+      renderPagination(page);
+    }
+
+    function renderPagination(currentPage) {
+      pagination.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        const link = document.createElement("a");
+        link.textContent = i;
+        if (i === currentPage) {
+          link.classList.add("current");
+        }
+        link.addEventListener("click", function() {
+          showPage(i);
+        });
+        pagination.appendChild(link);
+      }
+    }
+
+    if (cards.length > 0) {
+      showPage(1);
+    }
+  });
+</script>
