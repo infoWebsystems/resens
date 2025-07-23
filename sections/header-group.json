@@ -54,7 +54,7 @@
         "cart-number": "quantity",
         "enable_search": true,
         "enable_wishlist": true,
-        "wishlist_icon_link": "",
+        "wishlist_icon_link": "shopify://pages/swym-wishlist",
         "overlay_header_homepage": true,
         "overlay_header_collection": true,
         "overlay_header_list_collection": false,
