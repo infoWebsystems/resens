@@ -76,7 +76,7 @@
         "title": "SENSI-COSMETOLOGY",
         "text": "<p>Re[Sens] was born as a brand that works with sensitive skin not by “shutting it down,” but through understanding and respecting its reactions. Sensi-cosmetology is a modern skincare approach based on knowledge of receptors, sensory neurotransmission, the microbiome, and barrier function.</p>",
         "button_label": "Read More",
-        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+        "button_link": "shopify://blogs/articles/sensi-cosmetology"
       }
     },
     "image_image_with_text_TDLfVc": {
@@ -95,7 +95,7 @@
         "button_link": "shopify://blogs/articles/neurocosmetology"
       }
     },
-    "image_image_with_text_DwyJkR": {
+    "image_image_with_text_h7GhHz": {
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
@@ -105,26 +105,10 @@
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "Re[Sens] Neuro‑Cosmetic Mechanisms",
-        "text": "<p>Re[Sens] operates through two principal mechanisms to support skin balance at the cellular level: reducing stress hormone cortisol and boosting happiness hormones — endorphins.</p><p>Cortisol, released under stress through the hypothalamic‑pituitary‑adrenal axis, directly weakens skin’s protective functions, increases inflammatory reactions, and degrades collagen and elastin.</p>",
-        "button_label": "Read More",
-        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
-      }
-    },
-    "image_image_with_text_h7GhHz": {
-      "type": "image--image-with-text",
-      "name": "t:sections.image--image-with-text.presets.name",
-      "settings": {
-        "colors": "light",
-        "image": "shopify://shop_images/FOX05914.jpg",
-        "text_overlapping_image": false,
-        "section-width": "full",
-        "layout": "right",
-        "text_alignment": "center",
         "title": "IMMUNO-COSMETOLOGY",
         "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s internal defence resources, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they modulate local (epidermal) immunity, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p>",
         "button_label": "Read More",
-        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+        "button_link": "shopify://blogs/articles/immuno-cosmetology"
       }
     },
     "image_image_with_text_gfUm4n": {
@@ -135,7 +119,7 @@
         "image": "shopify://shop_images/FOX05914.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
-        "layout": "left",
+        "layout": "right",
         "text_alignment": "center",
         "title": "Amino Acids in Immunocosmetology",
         "text": "<p>Amino acids are not just protein building blocks — they also act as signalling molecules regulating epidermal barrier, metabolism, and immune activity. In an immunocosmetic framework, they serve as physiological modulators that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.</p>",
@@ -151,7 +135,7 @@
         "image": "shopify://shop_images/FOX05914.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
-        "layout": "right",
+        "layout": "left",
         "text_alignment": "center",
         "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
         "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p>",
@@ -314,7 +298,6 @@
     "text_rich_text_KRj3Vw",
     "image_image_with_text_A9LBpc",
     "image_image_with_text_TDLfVc",
-    "image_image_with_text_DwyJkR",
     "image_image_with_text_h7GhHz",
     "image_image_with_text_gfUm4n",
     "image_image_with_text_twyaaB",
