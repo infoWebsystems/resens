@@ -49,6 +49,13 @@
     "image_logo_list_9kwTaY": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_whdYAf": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250625-13-bhub.jpg",
+            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
+          }
+        },
         "logo_image_hVbkyn": {
           "type": "logo_image",
           "settings": {
@@ -135,6 +142,7 @@
         }
       },
       "block_order": [
+        "logo_image_whdYAf",
         "logo_image_hVbkyn",
         "logo_image_yFk7kt",
         "logo_image_cBET6d",
