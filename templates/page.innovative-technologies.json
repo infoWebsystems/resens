@@ -139,7 +139,7 @@
         "richtext_CbMjPy": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>Re[Sens] rejects instant results at any cost.</strong><br/>We choose a balanced, delicate approach that respects the natural rhythm of the skin.<br/>The Slow Beauty philosophy is more than skincare — it’s a way of life, emphasizing time for self-care, body awareness, and patience. Slow Beauty is the art of caring without haste. Delicacy over aggression. Results that stem from self-respect.</p><p><strong>LESS IS MORE</strong> — our guiding principle.<br/>Our formulas contain only what is necessary. Every ingredient serves a purpose and works in synergy without overstimulating the skin. Excess active ingredients can trigger irritation or disrupt natural regenerative mechanisms.</p><p>And if anything is abundant in our formulas — it’s anti-inflammatory, hydrating, and soothing ingredients that nurture the skin and support its health.</p><p><strong>Balanced amounts of essential ingredients = the ideal formula that hits the target.</strong></p>",
+            "text": "<p><strong>Re[Sens] rejects instant results at any cost.</strong><br/>We choose a balanced, delicate approach that respects the natural rhythm of the skin.<br/>The Slow Beauty philosophy is more than skincare — it’s a way of life, emphasizing time for self-care, body awareness, and patience. Slow Beauty is the art of caring without haste. Delicacy over aggression. Results that stem from self-respect.</p><p><strong>LESS IS MORE</strong> — our guiding principle.<br/>Our formulas contain only what is necessary. Every ingredient serves a purpose and works in synergy without overstimulating the skin. Excess active ingredients can trigger irritation or disrupt natural regenerative mechanisms.</p><p>And if anything is abundant in our formulas — it’s anti-inflammatory, hydrating, and soothing ingredients that nurture the skin and support its health.</p>",
             "text_size": 14
           }
         }
@@ -155,6 +155,29 @@
         "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_overlay_rGp6Ur": {
+      "type": "image--image-with-text-overlay",
+      "name": "t:sections.image--image-with-text-overlay.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/row_transp.png",
+        "image_height": "original",
+        "bg_image_overlay_opacity": 45,
+        "parallax": true,
+        "title": "Balanced amounts of",
+        "text": "essential ingredients = the ideal formula that hits the target.",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "template_product_info_columns_iwVaqi": {
@@ -285,6 +308,7 @@
     "image_image_with_text_h7GhHz",
     "image_image_with_text_twyaaB",
     "text_rich_text_efeY7Q",
+    "image_image_with_text_overlay_rGp6Ur",
     "template_product_info_columns_iwVaqi",
     "double-image-section",
     "blog_blog_posts_Rdw7XP"
