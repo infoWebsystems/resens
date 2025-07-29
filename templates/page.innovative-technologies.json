@@ -111,22 +111,6 @@
         "button_link": "shopify://blogs/articles/immuno-cosmetology"
       }
     },
-    "image_image_with_text_gfUm4n": {
-      "type": "image--image-with-text",
-      "name": "t:sections.image--image-with-text.presets.name",
-      "settings": {
-        "colors": "light",
-        "image": "shopify://shop_images/FOX05914.jpg",
-        "text_overlapping_image": false,
-        "section-width": "full",
-        "layout": "right",
-        "text_alignment": "center",
-        "title": "Amino Acids in Immunocosmetology",
-        "text": "<p>Amino acids are not just protein building blocks — they also act as signalling molecules regulating epidermal barrier, metabolism, and immune activity. In an immunocosmetic framework, they serve as physiological modulators that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.</p>",
-        "button_label": "Read More",
-        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
-      }
-    },
     "image_image_with_text_twyaaB": {
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
@@ -135,7 +119,7 @@
         "image": "shopify://shop_images/FOX05914.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
-        "layout": "left",
+        "layout": "right",
         "text_alignment": "center",
         "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
         "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p>",
@@ -299,7 +283,6 @@
     "image_image_with_text_A9LBpc",
     "image_image_with_text_TDLfVc",
     "image_image_with_text_h7GhHz",
-    "image_image_with_text_gfUm4n",
     "image_image_with_text_twyaaB",
     "text_rich_text_efeY7Q",
     "template_product_info_columns_iwVaqi",
