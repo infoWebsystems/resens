@@ -43,7 +43,7 @@
         "richtext_BX4zqX": {
           "type": "richtext",
           "settings": {
-            "text": "<p>All brand products are based on advanced research developed by Ukrainian scientists using the finest ingredients from around the world – from Europe to Japan, Korea, and the USA. Our goal is not just to \"soothe\" the skin but to restore its natural ability for self-healing and health maintenance by providing it with the necessary components to strengthen and balance.<br/></p><p><strong>We love ourselves sensitive</strong> because sensitivity is not a weakness but a profound ability to feel and care for oneself. In a world where pollution, stress, and the fast pace of life have become part of our reality, sensitive skin requires special care. And that is exactly what we offer.</p>",
+            "text": "<p>We work in the field of neurocosmetics, exploring the connection between emotional state and skin responses. <strong>The combination of sensi-, neuro-, and immuno-cosmetology</strong> allows us to create formulas that don’t suppress the skin — they understand it.</p><p>At the heart of Re[Sens] are advanced biotechnologies that gently activate natural regeneration mechanisms and enhance the skin’s resilience to stress, with deep respect for the microbiome and individual needs.</p><p>We <strong>integrate the most advanced, carefully selected raw materials from Japan, Korea, the USA, and the EU into our own unique formulas, clinically tested and proven</strong>. Re[Sens] cosmetics are EU-certified and meet the highest quality standards.</p><p>To support the skin’s natural microbiota, <strong>we use an innovative microbiome-friendly preservation system </strong>that ensures safety without disrupting the skin’s balance.</p><p>Each product embodies <strong>the concept of “Slow Beauty” </strong>— a gentle, balanced approach to skincare without overloading the skin. The brand’s formulas are enriched with an optimal blend of anti-inflammatory, hydrating, and soothing components for comprehensive support of skin health, comfort, and barrier integrity.</p>",
             "text_size": 16
           }
         }
@@ -63,284 +63,36 @@
         "text_alignment_mobile": "center"
       }
     },
-    "image_image_with_text_ikhwrd": {
+    "image_image_with_text_A9LBpc": {
       "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/sen-ne-im__1.png",
-        "text_overlapping_image": false,
-        "section-width": "full",
-        "layout": "left",
-        "text_alignment": "center",
-        "title": "",
-        "text": "<p>For sensitive skin, the most important thing is not overloading or \"aggressive\" methods, but balance and harmony. That is why <strong>the brand’s formulas feature a unique holistic approach that combines immuno-, neuro-, and sensi-cosmetology</strong> to support the skin and provide care without compromising its natural barrier functions.</p>",
-        "button_label": "",
-        "button_link": ""
-      }
-    },
-    "text_rich_text_bngeLP": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_d9bMUt": {
-          "type": "heading",
-          "settings": {
-            "heading": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION"
-          }
-        }
-      },
-      "block_order": [
-        "heading_d9bMUt"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "p {text-align: center !important;}"
-      ],
-      "settings": {
-        "background_color": "#f4f4f4",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "image-with-text-overlay": {
-      "type": "image--image-with-text-overlay",
-      "settings": {
         "image": "shopify://shop_images/FOX05914.jpg",
-        "image_height": "50vw",
-        "bg_image_overlay_opacity": 30,
-        "parallax": false,
-        "title": "REDUCING SENSITIVITY WITHOUT DIMINISHING SENSATION",
-        "text": "",
-        "colors": "light",
-        "textPosition": "center",
-        "textAlignment": "center",
-        "heading--text-size": 26,
-        "text--text-size": 18,
-        "link": "",
-        "button_label": "",
-        "button-text": "#ffffff",
-        "button-background": "#262428",
-        "hover-button-text": "#ffffff",
-        "hover-button-background": "#494949"
-      }
-    },
-    "template_product_info_columns_9zwQXK": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "image_and_text_NLNUWg": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/1_c9450c45-fa93-4dfb-b146-fa5fc8281020.png",
-            "grid_image_size": "wide",
-            "heading": "",
-            "text": "<h5>Own formulas developed by Ukrainian scientists</h5>",
-            "button_text": "",
-            "button_link": "shopify://collections/all"
-          }
-        },
-        "image_and_text_KLKdYY": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/2.png",
-            "grid_image_size": "wide",
-            "heading": "",
-            "text": "<h5>Cosmetics certified in the EU and meet the highest quality standards</h5>",
-            "button_text": "",
-            "button_link": "shopify://collections/all"
-          }
-        },
-        "image_and_text_ke3Jdb": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/34.png",
-            "grid_image_size": "wide",
-            "heading": "",
-            "text": "<h5>Clinically proven effectiveness</h5>",
-            "button_text": "",
-            "button_link": "shopify://collections/all"
-          }
-        },
-        "image_and_text_kFY4WP": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/4_0efa8f3d-9c0c-4fd1-8904-7f280f08b666.png",
-            "grid_image_size": "wide",
-            "heading": "",
-            "text": "<h5>Innovative raw materials from different parts of the world: Europe, Japan, Korea, USA</h5>",
-            "button_text": "",
-            "button_link": "shopify://collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "image_and_text_NLNUWg",
-        "image_and_text_KLKdYY",
-        "image_and_text_ke3Jdb",
-        "image_and_text_kFY4WP"
-      ],
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "",
-        "columns_per_row": 4,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
-    },
-    "image_image_with_text_qha3Eb": {
-      "type": "image--image-with-text",
-      "settings": {
-        "colors": "light",
-        "image": "shopify://shop_images/close-up-transparent-bubbles-gray-shades.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "WHAT IS NEUROCOSMETICS?",
-        "text": "<p>Neurocosmetologyis an innovative field of cosmetology that explores and utilizes the connectionbetween the skin and the nervous system to create more effective and balanced skincare products. It is based on the understanding that the skin is not just aprotective barrier but also an organ capable of perceiving and responding toexternal and internal stimuli, including emotional stress, anxiety, fatigue,and other psycho-emotional states.</p>",
-        "button_label": "",
-        "button_link": ""
+        "title": "SENSI-COSMETOLOGY",
+        "text": "<p>Re[Sens] was born as a brand that works with sensitive skin not by “shutting it down,” but through understanding and respecting its reactions. Sensi-cosmetology is a modern skincare approach based on knowledge of receptors, sensory neurotransmission, the microbiome, and barrier function.</p>",
+        "button_label": "Read More",
+        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
       }
     },
-    "image_image_with_text_overlay_LcPgVa": {
-      "type": "image--image-with-text-overlay",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/close-up-transparent-bubbles-gray-shades.jpg",
-        "image_height": "40vw",
-        "bg_image_overlay_opacity": 30,
-        "parallax": true,
-        "title": "WHAT IS NEUROCOSMETICS?",
-        "text": "Neurocosmetologyis an innovative field of cosmetology that explores and utilizes the connectionbetween the skin and the nervous system to create more effective and balancedskincare products. It is based on the understanding that the skin is not just aprotective barrier but also an organ capable of perceiving and responding toexternal and internal stimuli, including emotional stress, anxiety, fatigue,and other psycho-emotional states.",
-        "colors": "light",
-        "textPosition": "center",
-        "textAlignment": "center",
-        "heading--text-size": 26,
-        "text--text-size": 18,
-        "link": "",
-        "button_label": "",
-        "button-text": "#ffffff",
-        "button-background": "#262428",
-        "hover-button-text": "#ffffff",
-        "hover-button-background": "#494949"
-      }
-    },
-    "text_rich_text_DAftC9": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_hWL9G6": {
-          "type": "heading",
-          "settings": {
-            "heading": "How does it work?"
-          }
-        },
-        "richtext_GhjAYc": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>Neurocosmetics focus on developing formulas that maintain a balance between the skin's physiological and emotional health. They include ingredients that not only soothe the skin but also act on nerve receptors, reducing the impact of stress factors and helping the skin recover.<br/></p><h5><strong>By influencing the sensory neurons of the skin, we impact brain function. The presence of neurobiological communication ensures that all body systems work harmoniously and synchronously.</strong><br/></h5><p>Modern technologies for extracting cellular peptides and metabolites from plant stem cells, as well as microbiome-friendly correction with probiotics/prebiotics, aim <strong>to improve the psycho-emotional state and skin health by influencing neurotransmitters.</strong></p>",
-            "text_size": 14
-          }
-        }
-      },
-      "block_order": [
-        "heading_hWL9G6",
-        "richtext_GhjAYc"
-      ],
-      "settings": {
-        "background_color": "",
-        "colors": "dark",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "image_image_with_text_overlay_NXF8we": {
-      "type": "image--image-with-text-overlay",
-      "settings": {
-        "image": "shopify://shop_images/FOX05861.jpg",
-        "image_height": "40vw",
-        "bg_image_overlay_opacity": 20,
-        "parallax": true,
-        "title": "SLOW BEAUTY PHILOSOPHY",
-        "text": "Wereject the pursuit of instant results and focus on balanced beauty. The SlowBeauty concept is not just about skincare; it is a true life philosophy whereit is important to take time for yourself, listen to your body, and not rush.Slow Beauty requires mindfulness and respect for every skin cell, so we createproducts that enrich your skin with the optimal balance of hydration, soothing,and nourishment.",
-        "colors": "light",
-        "textPosition": "center",
-        "textAlignment": "center",
-        "heading--text-size": 26,
-        "text--text-size": 18,
-        "link": "",
-        "button_label": "",
-        "button-text": "#ffffff",
-        "button-background": "#262428",
-        "hover-button-text": "#ffffff",
-        "hover-button-background": "#494949"
-      }
-    },
-    "text_rich_text_ieRgzC": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_Xf4KDD": {
-          "type": "heading",
-          "settings": {
-            "heading": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM"
-          }
-        },
-        "richtext_cxDwHA": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>Our products have a recommended usage period of <strong>3 MONTHS AFTER OPENING</strong>, thanks to a unique <strong>microbiome-friendly preservation system</strong> that considers the specifics of sensitive skin. We <strong>use safe preservatives </strong>that do not disrupt the balance of the skin’s natural microbiota, which is critically important for its health. <strong>We avoid harsh chemical preservatives</strong>, such as formaldehyde donors and other aggressive chemical substances that can negatively impact the skin’s natural microbiome.<br/><br/><strong>To extend the product’s shelf life after opening, we recommend storing it in the refrigerator door</strong>. This helps maintain its freshness and effectiveness for a longer period. We prioritize the safety and comfort of your sensitive skin, ensuring that our products deliver maximum benefits and effectiveness throughout their recommended usage period.</p>",
-            "text_size": 14
-          }
-        }
-      },
-      "block_order": [
-        "heading_Xf4KDD",
-        "richtext_cxDwHA"
-      ],
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
-      }
-    },
-    "image_image_with_text_e3Ere9": {
+    "image_image_with_text_TDLfVc": {
       "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/row_transp.png",
-        "text_overlapping_image": false,
+        "image": "shopify://shop_images/FOX05914.jpg",
+        "text_overlapping_image": true,
         "section-width": "full",
-        "layout": "left",
+        "layout": "right",
         "text_alignment": "center",
-        "title": "",
-        "text": "<h2>BALANCE DAMOUNT OF NECESSARY INGREDIENTS = THE PERFECT FORMULA THAT HITS THE TARGET</h2>",
-        "button_label": "",
-        "button_link": ""
-      }
-    },
-    "text_rich_text_ebXmeq": {
-      "type": "text--rich-text",
-      "blocks": {
-        "heading_qEpkFw": {
-          "type": "heading",
-          "settings": {
-            "heading": "BALANCE DAMOUNT OF NECESSARY INGREDIENTS = THE PERFECT FORMULA THAT HITS THE TARGET"
-          }
-        }
-      },
-      "block_order": [
-        "heading_qEpkFw"
-      ],
-      "disabled": true,
-      "settings": {
-        "background_color": "#494949",
-        "colors": "dark",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "title": "NEUROCOSMETOLOGY",
+        "text": "<p>Neurocosmetology is a core direction for Re[Sens], based on the modern understanding of skin as a component of the neuro‑endocrine system. Skin perceives not only external stimuli — touch, temperature — but also internal states: fatigue, stress, emotional tension. By influencing the skin’s sensory neurons, neurocosmetology can also modulate brain function.</p>",
+        "button_label": "Read More",
+        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
       }
     },
     "template_product_info_columns_iwVaqi": {
@@ -466,17 +218,8 @@
   "order": [
     "image_image_with_text_overlay_6nYXk7",
     "text_rich_text_KRj3Vw",
-    "image_image_with_text_ikhwrd",
-    "text_rich_text_bngeLP",
-    "image-with-text-overlay",
-    "template_product_info_columns_9zwQXK",
-    "image_image_with_text_qha3Eb",
-    "image_image_with_text_overlay_LcPgVa",
-    "text_rich_text_DAftC9",
-    "image_image_with_text_overlay_NXF8we",
-    "text_rich_text_ieRgzC",
-    "image_image_with_text_e3Ere9",
-    "text_rich_text_ebXmeq",
+    "image_image_with_text_A9LBpc",
+    "image_image_with_text_TDLfVc",
     "template_product_info_columns_iwVaqi",
     "double-image-section",
     "blog_blog_posts_Rdw7XP"
