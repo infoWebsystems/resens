@@ -85,7 +85,7 @@
       "settings": {
         "colors": "light",
         "image": "shopify://shop_images/FOX05914.jpg",
-        "text_overlapping_image": true,
+        "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
         "text_alignment": "center",
@@ -93,6 +93,100 @@
         "text": "<p>Neurocosmetology is a core direction for Re[Sens], based on the modern understanding of skin as a component of the neuro‑endocrine system. Skin perceives not only external stimuli — touch, temperature — but also internal states: fatigue, stress, emotional tension. By influencing the skin’s sensory neurons, neurocosmetology can also modulate brain function.</p>",
         "button_label": "Read More",
         "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+      }
+    },
+    "image_image_with_text_DwyJkR": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/FOX05914.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "Re[Sens] Neuro‑Cosmetic Mechanisms",
+        "text": "<p>Re[Sens] operates through two principal mechanisms to support skin balance at the cellular level: reducing stress hormone cortisol and boosting happiness hormones — endorphins.</p><p>Cortisol, released under stress through the hypothalamic‑pituitary‑adrenal axis, directly weakens skin’s protective functions, increases inflammatory reactions, and degrades collagen and elastin.</p>",
+        "button_label": "Read More",
+        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+      }
+    },
+    "image_image_with_text_h7GhHz": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/FOX05914.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "IMMUNO-COSMETOLOGY",
+        "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s internal defence resources, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they modulate local (epidermal) immunity, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p>",
+        "button_label": "Read More",
+        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+      }
+    },
+    "image_image_with_text_gfUm4n": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/FOX05914.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "Amino Acids in Immunocosmetology",
+        "text": "<p>Amino acids are not just protein building blocks — they also act as signalling molecules regulating epidermal barrier, metabolism, and immune activity. In an immunocosmetic framework, they serve as physiological modulators that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.</p>",
+        "button_label": "Read More",
+        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+      }
+    },
+    "image_image_with_text_twyaaB": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/FOX05914.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
+        "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p>",
+        "button_label": "Read More",
+        "button_link": "shopify://blogs/articles/penetrates-deeply-what-this-cosmetic-claim-actually-means"
+      }
+    },
+    "text_rich_text_efeY7Q": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_pYDxdA": {
+          "type": "heading",
+          "settings": {
+            "heading": "SLOW BEAUTY PHILOSOPHY"
+          }
+        },
+        "richtext_CbMjPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Re[Sens] rejects instant results at any cost.</strong><br/>We choose a balanced, delicate approach that respects the natural rhythm of the skin.<br/>The Slow Beauty philosophy is more than skincare — it’s a way of life, emphasizing time for self-care, body awareness, and patience. Slow Beauty is the art of caring without haste. Delicacy over aggression. Results that stem from self-respect.</p><p><strong>LESS IS MORE</strong> — our guiding principle.<br/>Our formulas contain only what is necessary. Every ingredient serves a purpose and works in synergy without overstimulating the skin. Excess active ingredients can trigger irritation or disrupt natural regenerative mechanisms.</p><p>And if anything is abundant in our formulas — it’s anti-inflammatory, hydrating, and soothing ingredients that nurture the skin and support its health.</p><p><strong>Balanced amounts of essential ingredients = the ideal formula that hits the target.</strong></p>",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_pYDxdA",
+        "richtext_CbMjPy"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "template_product_info_columns_iwVaqi": {
@@ -220,6 +314,11 @@
     "text_rich_text_KRj3Vw",
     "image_image_with_text_A9LBpc",
     "image_image_with_text_TDLfVc",
+    "image_image_with_text_DwyJkR",
+    "image_image_with_text_h7GhHz",
+    "image_image_with_text_gfUm4n",
+    "image_image_with_text_twyaaB",
+    "text_rich_text_efeY7Q",
     "template_product_info_columns_iwVaqi",
     "double-image-section",
     "blog_blog_posts_Rdw7XP"
