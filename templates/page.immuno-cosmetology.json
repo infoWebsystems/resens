@@ -94,7 +94,37 @@
       "settings": {
         "title": "",
         "sub_title": "",
-        "description": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul><p><strong>The </strong><a href=\"https://resenss.com/collections/all?filter.p.m.custom.by_line=A-Redensity&sort_by=title-ascending\"><strong>A‑REDENSITY line</strong></a> features a postbiotic<em><strong>Lactobacillus casei</strong></em> at a clinically effective dose <strong>(1×10¹² CFU/g)</strong>, offering immunomodulatory effects and promoting microbiome balance restoration.</p>"
+        "description": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul>"
+      }
+    },
+    "collection_collection_list_gMWNdh": {
+      "type": "collection--collection-list",
+      "blocks": {
+        "featured_collection_6KPQcE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lines-a-redensity",
+            "subheading": "",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6KPQcE"
+      ],
+      "name": "t:sections.collection--collection-list.presets.name",
+      "settings": {
+        "colors": "light",
+        "title": "The A‑REDENSITY line",
+        "richtext": "<p>features a postbiotic<em><strong>Lactobacillus casei</strong></em> at a clinically effective dose <strong>(1×10¹² CFU/g)</strong>, offering immunomodulatory effects and promoting microbiome balance restoration.</p>",
+        "items-per-row": 3,
+        "fill-the-area": true,
+        "remove-spacing": false,
+        "section-width": "full",
+        "content-position": "overlay"
       }
     },
     "text_rich_text_KUaqc6": {
@@ -167,34 +197,50 @@
         "button_link": ""
       }
     },
-    "collection_collection_list_gMWNdh": {
-      "type": "collection--collection-list",
+    "text_rich_text_FEyTzi": {
+      "type": "text--rich-text",
       "blocks": {
-        "featured_collection_6KPQcE": {
-          "type": "featured_collection",
+        "richtext_y8eKRR": {
+          "type": "richtext",
           "settings": {
-            "collection": "lines-a-redensity",
-            "subheading": "",
-            "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": false,
-            "overlay_font_color": "#ffffff",
-            "overlay_color": "#ffffff"
+            "text": "<p>A‑REDENSITY follows the principle: “greater microbial diversity = less sensitivity, greater healthy glow,” delivering optimal barrier function and skin hydrobalance.</p>",
+            "text_size": 16
           }
         }
       },
       "block_order": [
-        "featured_collection_6KPQcE"
+        "richtext_y8eKRR"
       ],
-      "name": "t:sections.collection--collection-list.presets.name",
+      "name": "t:sections.text--rich-text.presets.name",
       "settings": {
-        "colors": "light",
-        "title": "A‑REDENSITY follows the principle:",
-        "richtext": "<p>“greater microbial diversity = less sensitivity, greater healthy glow,” delivering optimal barrier function and skin hydrobalance.</p><p>Amino acids are not just protein building blocks — they also act as <strong>signalling molecules</strong> regulating <strong>epidermal barrier, metabolism, and immune activity</strong>. In an immunocosmetic framework, they serve as <strong>physiological modulators</strong> that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.</p>",
-        "items-per-row": 3,
-        "fill-the-area": true,
-        "remove-spacing": false,
-        "section-width": "full",
-        "content-position": "overlay"
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_overlay_6Vgczd": {
+      "type": "image--image-with-text-overlay",
+      "name": "t:sections.image--image-with-text-overlay.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cleanup-powder-deep-cleansing-powder_64bc5324-377f-469d-b4ba-e4b56d137042.jpg",
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 0,
+        "parallax": true,
+        "title": "Amino acids are not just protein building blocks",
+        "text": "They also act as signalling molecules regulating epidermal barrier, metabolism, and immune activity. In an immunocosmetic framework, they serve as physiological modulators that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.",
+        "colors": "dark",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "collection_collection_list_VpKiXk": {
@@ -393,11 +439,13 @@
     "text_rich_text_iREWUh",
     "image_image_with_text_mVYarX",
     "eco-responcibility",
+    "collection_collection_list_gMWNdh",
     "text_rich_text_KUaqc6",
     "image_image_with_text_6AiaFJ",
     "image_image_with_text_C99WBX",
     "image_image_with_text_PQ4gyz",
-    "collection_collection_list_gMWNdh",
+    "text_rich_text_FEyTzi",
+    "image_image_with_text_overlay_6Vgczd",
     "collection_collection_list_VpKiXk",
     "about-philosophy-info",
     "brand-developers",
