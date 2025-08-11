@@ -189,6 +189,45 @@
         "block_alignment": "center"
       }
     },
+    "image_image_with_text_FFXyEL": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/FOX02608.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "The A-REDENSITY line",
+        "text": "<p>is based on microbiome-friendly care principles that support the balance and diversity of the epidermal microbiome. Its key component is a concentrate of <em><strong>Lactobacillus casei</strong></em>(1×10¹² cells per gram), which helps restore the population of commensal staphylococci (Coagulase-negative staphylococci — CoNS).</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "text_rich_text_bKQy9m": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_eHtt93": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The CoNS flora plays a crucial role in maintaining the skin’s barrier function, regulating sebum secretion, and competitively suppressing pathogenic bacteria, particularly <em>Staphylococcus aureus</em>. With age and under stress, <strong>microbial balance deteriorates, reducing skin resistance and increasing sensitivity.</strong></p><p>Restoring balance with <em><strong>Lactobacillus casei</strong></em><strong> stimulates the expression of antimicrobial peptides, strengthens the barrier, and normalises sebum regulation — reducing inflammation and increasing the skin’s resistance to external aggressors.</strong></p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_eHtt93"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "about-facts": {
       "type": "about-facts",
       "blocks": {
@@ -366,6 +405,8 @@
     "image_image_with_text_iCTiFG",
     "text_rich_text_U6LYre",
     "collage_builder_ckwXbi",
+    "image_image_with_text_FFXyEL",
+    "text_rich_text_bKQy9m",
     "about-facts",
     "eco-responcibility",
     "resens-definition",
