@@ -37,7 +37,7 @@
         "richtext_mTpN9y": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p>",
+            "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p><p>That's why Re[Sens] formulas rely on a <strong>MICROBIOME-FRIENDLY preservation system</strong> — specially tailored for sensitive skin. It is:</p>",
             "text_size": 16
           }
         }
@@ -111,6 +111,118 @@
         "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
       }
     },
+    "collage_builder_q3hYB9": {
+      "type": "collage-builder",
+      "blocks": {
+        "image_WppbRE": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/fantasy-water-character.jpg",
+            "show_overlay": false,
+            "heading": "gentle yet effective",
+            "heading_size": 24,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#ffffff",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#000000"
+          }
+        },
+        "image_z7pxyE": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Trial_Kit_1080_1080.jpg",
+            "show_overlay": false,
+            "heading": "reduced by 50% without compromising stability",
+            "heading_size": 18,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#ffffff",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#000000"
+          }
+        },
+        "image_jLdbLi": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/beautiful-blonde-woman-blue-light.jpg",
+            "show_overlay": false,
+            "heading": "non-disruptive to skin’s physiological equilibrium",
+            "heading_size": 18,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#ffffff",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#000000"
+          }
+        },
+        "image_pTcNU8": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/IMG_5882.jpg",
+            "show_overlay": false,
+            "heading": "reliable in post-opened formula protection",
+            "heading_size": 18,
+            "h-margin": 1,
+            "button_label": "Shop now",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#ffffff",
+            "button_color": "#E6E5E7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#D4D3D4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_WppbRE",
+        "image_z7pxyE",
+        "image_jLdbLi",
+        "image_pTcNU8"
+      ],
+      "name": "t:sections.collage-builder.presets.name",
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "2",
+        "height_1": "3",
+        "width_2": "2",
+        "height_2": "3",
+        "width_3": "2",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "3",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
     "ukrainian-development": {
       "type": "ukrainian-development",
       "blocks": {
@@ -145,6 +257,7 @@
         "list_i4eg7A",
         "list_rWnTab"
       ],
+      "disabled": true,
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "That's why Re[Sens] formulas rely on a MICROBIOME-FRIENDLY preservation system — specially tailored for sensitive skin. It is:"
@@ -155,30 +268,7 @@
       "settings": {
         "title": "We deliberately avoid harsh chemical preservatives that can disrupt the microbiome or provoke irritation.",
         "sub_title": "Our formulas exclude:",
-        "description": "<p><strong>Formaldehyde-releasing agents:</strong><br/>2‑Bromo‑2‑nitropropane‑1,3‑diol (Bronopol), 5‑Bromo‑5‑nitro‑1,3‑dioxane, Sodium hydroxymethyl glycinate, Benzylhemiformal, Quaternium‑15, DMDM Hydantoin, Methenamine (urotropine), Imidazolidinyl urea, Diazolidinyl urea</p><p><strong>Harsh preservatives:</strong><br/>Methylchloroisothiazolinone, Methylisothiazolinone (banned in EU creams and wet wipes; only allowed in rinse-off products at minimal concentrations)</p>"
-      }
-    },
-    "text_rich_text_bXwtkB": {
-      "type": "text--rich-text",
-      "blocks": {
-        "richtext_nNPHRe": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p><strong>Instead, we use mild, modern preservatives compatible with the skin’s natural processes. </strong>Re[Sens] cosmetics carefully <strong>support sensitive skin health — maintaining efficacy throughout the recommended term</strong> and remaining <strong>completely safe and comfortable</strong>, even for the most reactive skin.</p>",
-            "text_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "richtext_nNPHRe"
-      ],
-      "name": "t:sections.text--rich-text.presets.name",
-      "settings": {
-        "background_color": "",
-        "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "description": "<p><strong>Formaldehyde-releasing agents:</strong><br/>2‑Bromo‑2‑nitropropane‑1,3‑diol (Bronopol), 5‑Bromo‑5‑nitro‑1,3‑dioxane, Sodium hydroxymethyl glycinate, Benzylhemiformal, Quaternium‑15, DMDM Hydantoin, Methenamine (urotropine), Imidazolidinyl urea, Diazolidinyl urea</p><p><strong>Harsh preservatives:</strong><br/>Methylchloroisothiazolinone, Methylisothiazolinone (banned in EU creams and wet wipes; only allowed in rinse-off products at minimal concentrations)</p><p><strong>Instead, we use mild, modern preservatives compatible with the skin’s natural processes. </strong>Re[Sens] cosmetics carefully <strong>support sensitive skin health — maintaining efficacy throughout the recommended term</strong> and remaining <strong>completely safe and comfortable</strong>, even for the most reactive skin.</p>"
       }
     },
     "about-philosophy-info": {
@@ -298,9 +388,9 @@
     "about-facts",
     "logo-with-text",
     "resens-definition",
+    "collage_builder_q3hYB9",
     "ukrainian-development",
     "eco-responcibility",
-    "text_rich_text_bXwtkB",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
