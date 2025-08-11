@@ -31,17 +31,6 @@
         "hover-button-background": "#494949"
       }
     },
-    "resens-definition": {
-      "type": "resens-definition",
-      "disabled": true,
-      "settings": {
-        "header_1": "Re",
-        "header_2": "Sens",
-        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
-        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
-        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
-      }
-    },
     "text_rich_text_iREWUh": {
       "type": "text--rich-text",
       "blocks": {
@@ -89,34 +78,27 @@
         "description": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul>"
       }
     },
-    "collection_collection_list_gMWNdh": {
-      "type": "collection--collection-list",
-      "blocks": {
-        "featured_collection_6KPQcE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lines-a-redensity",
-            "subheading": "",
-            "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": false,
-            "overlay_font_color": "#ffffff",
-            "overlay_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_6KPQcE"
-      ],
-      "name": "t:sections.collection--collection-list.presets.name",
+    "image_image_with_text_overlay_6Vgczd": {
+      "type": "image--image-with-text-overlay",
+      "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
-        "colors": "light",
+        "image": "shopify://shop_images/A-Redensity-HYDRA-cream-Redness-resilience-Action_98823da0-7d0c-45df-851c-0e03c703c045.jpg",
+        "image_height": "40vw",
+        "bg_image_overlay_opacity": 0,
+        "parallax": true,
         "title": "The A‑REDENSITY line",
-        "richtext": "<p>features a postbiotic<em><strong>Lactobacillus casei</strong></em> at a clinically effective dose <strong>(1×10¹² CFU/g)</strong>, offering immunomodulatory effects and promoting microbiome balance restoration.</p>",
-        "items-per-row": 3,
-        "fill-the-area": true,
-        "remove-spacing": false,
-        "section-width": "full",
-        "content-position": "overlay"
+        "text": "features a postbioticLactobacillus casei at a clinically effective dose (1×10¹² CFU/g), offering immunomodulatory effects and promoting microbiome balance restoration.",
+        "colors": "light",
+        "textPosition": "center",
+        "textAlignment": "center",
+        "heading--text-size": 26,
+        "text--text-size": 18,
+        "link": "",
+        "button_label": "",
+        "button-text": "#ffffff",
+        "button-background": "#262428",
+        "hover-button-text": "#ffffff",
+        "hover-button-background": "#494949"
       }
     },
     "text_rich_text_KUaqc6": {
@@ -212,7 +194,7 @@
         "text_alignment_mobile": "center"
       }
     },
-    "image_image_with_text_overlay_6Vgczd": {
+    "image_image_with_text_overlay_wEBxbm": {
       "type": "image--image-with-text-overlay",
       "name": "t:sections.image--image-with-text-overlay.presets.name",
       "settings": {
@@ -417,6 +399,17 @@
         "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
       }
     },
+    "resens-definition": {
+      "type": "resens-definition",
+      "disabled": true,
+      "settings": {
+        "header_1": "Re",
+        "header_2": "Sens",
+        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
+        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
+        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
+      }
+    },
     "content_on_image_background_hzaWYV": {
       "type": "content-on-image-background",
       "disabled": true,
@@ -436,13 +429,13 @@
     "text_rich_text_iREWUh",
     "image_image_with_text_mVYarX",
     "eco-responcibility",
-    "collection_collection_list_gMWNdh",
+    "image_image_with_text_overlay_6Vgczd",
     "text_rich_text_KUaqc6",
     "image_image_with_text_6AiaFJ",
     "image_image_with_text_C99WBX",
     "image_image_with_text_PQ4gyz",
     "text_rich_text_FEyTzi",
-    "image_image_with_text_overlay_6Vgczd",
+    "image_image_with_text_overlay_wEBxbm",
     "collection_collection_list_VpKiXk",
     "about-philosophy-info",
     "brand-developers",
