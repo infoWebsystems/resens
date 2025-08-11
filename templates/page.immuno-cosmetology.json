@@ -31,14 +31,6 @@
         "hover-button-background": "#494949"
       }
     },
-    "logo-with-text": {
-      "type": "logo-with-text",
-      "disabled": true,
-      "settings": {
-        "logo": "shopify://shop_images/logo-without-text.png",
-        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
-      }
-    },
     "resens-definition": {
       "type": "resens-definition",
       "disabled": true,
@@ -417,6 +409,14 @@
         "title": ""
       }
     },
+    "logo-with-text": {
+      "type": "logo-with-text",
+      "disabled": true,
+      "settings": {
+        "logo": "shopify://shop_images/logo-without-text.png",
+        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
+    },
     "content_on_image_background_hzaWYV": {
       "type": "content-on-image-background",
       "disabled": true,
@@ -433,8 +433,6 @@
   },
   "order": [
     "image-with-text-overlay",
-    "logo-with-text",
-    "resens-definition",
     "text_rich_text_iREWUh",
     "image_image_with_text_mVYarX",
     "eco-responcibility",
@@ -451,6 +449,8 @@
     "founders-cards",
     "about-facts",
     "ukrainian-development",
+    "logo-with-text",
+    "resens-definition",
     "content_on_image_background_hzaWYV"
   ]
 }
