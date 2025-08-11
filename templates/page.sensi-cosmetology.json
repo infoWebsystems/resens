@@ -61,15 +61,6 @@
         "text_alignment_mobile": "center"
       }
     },
-    "eco-responcibility": {
-      "type": "eco-responcibility",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "sub_title": "",
-        "description": ""
-      }
-    },
     "ukrainian-development": {
       "type": "ukrainian-development",
       "settings": {
@@ -114,6 +105,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
+        "image": "shopify://shop_images/FOX04029_207c96ac-a58d-4687-b91f-736584049372.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -160,6 +152,15 @@
       "disabled": true,
       "settings": {
         "title": "Re[Sens] – your personal contribution to environmental protection"
+      }
+    },
+    "eco-responcibility": {
+      "type": "eco-responcibility",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "description": ""
       }
     },
     "resens-definition": {
