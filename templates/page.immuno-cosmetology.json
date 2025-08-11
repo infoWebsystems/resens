@@ -204,6 +204,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "lines-cleanup",
+            "collection_img": "shopify://shop_images/Cleanup-powder-deep-cleansing-powder_64bc5324-377f-469d-b4ba-e4b56d137042.jpg",
             "subheading": "",
             "overlay-btn-text": "Shop now",
             "show-gradient-overlay": false,
