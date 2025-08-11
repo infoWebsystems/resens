@@ -56,7 +56,7 @@
         "richtext_pWhaNf": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s<strong> internal defence resources</strong>, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they <strong>modulate local (epidermal) immunity</strong>, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p><p>Skin’s immune system includes immune cells (Langerhans cells, keratinocytes), the microbiome, and signalling molecules — forming the first line of defense against external threats. Immunocosmetics gently interact with these structures via active ingredients that:</p>",
+            "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s<strong> internal defence resources</strong>, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they <strong>modulate local (epidermal) immunity</strong>, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p>",
             "text_size": 16
           }
         }
@@ -71,6 +71,22 @@
         "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_mVYarX": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/Untitled-1.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "Skin’s immune system includes...",
+        "text": "<p>... immune cells (Langerhans cells, keratinocytes), the microbiome, and signalling molecules — forming the first line of defense against external threats. Immunocosmetics gently interact with these structures via active ingredients that:</p><ul><li>strengthen the barrier</li><li>reduce hyperreactivity</li><li>support the microbiome</li><li>regulate inflammatory responses</li></ul>",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "ukrainian-development": {
@@ -107,6 +123,7 @@
         "list_i4eg7A",
         "list_rWnTab"
       ],
+      "disabled": true,
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": ""
@@ -242,11 +259,12 @@
     "logo-with-text",
     "resens-definition",
     "text_rich_text_iREWUh",
-    "ukrainian-development",
+    "image_image_with_text_mVYarX",
     "eco-responcibility",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
+    "ukrainian-development",
     "about-facts",
     "content_on_image_background_hzaWYV"
   ]
