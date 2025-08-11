@@ -276,11 +276,10 @@
     },
     "about-philosophy-info": {
       "type": "about-philosophy-info",
-      "disabled": true,
       "settings": {
-        "title": "",
-        "sub_title": "A‑REDENSITY follows the principle: “greater microbial diversity = less sensitivity, greater healthy glow,” delivering optimal barrier function and skin hydrobalance.",
-        "description": "<p>Amino acids are not just protein building blocks — they also act as <strong>signalling molecules</strong> regulating <strong>epidermal barrier, metabolism, and immune activity</strong>. In an immunocosmetic framework, they serve as <strong>physiological modulators</strong> that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.</p>"
+        "title": "Key functions:",
+        "sub_title": "",
+        "description": "<ul><li><strong>regeneration</strong>: proline, glycine, serine, glutamic acid assist in synthesis of epidermal proteins (filaggrin, involucrin);</li><li><strong>hydration</strong>: amino acids act as osmolytes, binding moisture and maintaining electrolyte stability;</li><li><strong>immunomodulation</strong>: arginine, taurine, histidine exhibit antioxidant and anti-inflammatory properties, reducing pro-inflammatory cytokine production;</li><li><strong>textural correction</strong>: leucine, isoleucine, phenylalanine remodel microrelief, enhancing smoothness and density.</li></ul>"
       }
     },
     "brand-developers": {
@@ -371,6 +370,13 @@
       "disabled": true,
       "settings": {}
     },
+    "about-facts": {
+      "type": "about-facts",
+      "disabled": true,
+      "settings": {
+        "title": "Mechanisms include:"
+      }
+    },
     "ukrainian-development": {
       "type": "ukrainian-development",
       "blocks": {
@@ -411,13 +417,6 @@
         "title": ""
       }
     },
-    "about-facts": {
-      "type": "about-facts",
-      "disabled": true,
-      "settings": {
-        "title": "Mechanisms include:"
-      }
-    },
     "content_on_image_background_hzaWYV": {
       "type": "content-on-image-background",
       "disabled": true,
@@ -450,8 +449,8 @@
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
-    "ukrainian-development",
     "about-facts",
+    "ukrainian-development",
     "content_on_image_background_hzaWYV"
   ]
 }
