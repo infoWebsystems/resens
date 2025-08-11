@@ -94,7 +94,77 @@
       "settings": {
         "title": "",
         "sub_title": "",
-        "description": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul>"
+        "description": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul><p><strong>The </strong><a href=\"https://resenss.com/collections/all?filter.p.m.custom.by_line=A-Redensity&sort_by=title-ascending\"><strong>A‑REDENSITY line</strong></a> features a postbiotic<em><strong>Lactobacillus casei</strong></em> at a clinically effective dose <strong>(1×10¹² CFU/g)</strong>, offering immunomodulatory effects and promoting microbiome balance restoration.</p>"
+      }
+    },
+    "text_rich_text_KUaqc6": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_ie88Xx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mechanisms include:"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ie88Xx"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_6AiaFJ": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/medium-shot-young-woman-posing-with-tangerine.jpg",
+        "text_overlapping_image": false,
+        "section-width": "content",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<p><strong>Immune activation via antimicrobial peptides</strong>: <em>L. casei</em> stimulates β-defensin and LL-37 production, suppressing <em>S. aureus</em>, a key trigger of inflammatory dermatoses and skin sensitization.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "image_image_with_text_C99WBX": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/abstract-pink-oil-stained-glass.jpg",
+        "text_overlapping_image": false,
+        "section-width": "content",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<p><strong>Support of CoNS flora (coagulase‑negative staphylococci)</strong>: Commensal flora naturally competes with pathogens, regulates sebum, and reduces TLR signalling in keratinocytes. Its level declines tenfold with age, directly linked to skin hypersensitivity.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "image_image_with_text_PQ4gyz": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/3d-medical-background-with-virus-cells-dna-strand.jpg",
+        "text_overlapping_image": false,
+        "section-width": "content",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<p><strong>Neuro-immune stabilization</strong>: Fewer pathogens → less TLR activation → lower sensory neuron load → reduced hyperreactivity.</p>",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "about-philosophy-info": {
@@ -261,6 +331,10 @@
     "text_rich_text_iREWUh",
     "image_image_with_text_mVYarX",
     "eco-responcibility",
+    "text_rich_text_KUaqc6",
+    "image_image_with_text_6AiaFJ",
+    "image_image_with_text_C99WBX",
+    "image_image_with_text_PQ4gyz",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
