@@ -31,6 +31,30 @@
         "hover-button-background": "#494949"
       }
     },
+    "eco-responcibility": {
+      "type": "eco-responcibility",
+      "settings": {
+        "title": "",
+        "sub_title": "Neurocosmetology is a core direction for Re[Sens], based on the modern understanding of skin as a component of the neuro‑endocrine system. Skin perceives not only external stimuli — touch, temperature — but also internal states: fatigue, stress, emotional tension. By influencing the skin’s sensory neurons, neurocosmetology can also modulate brain function.",
+        "description": "<p>The presence of neurobiological communication between skin, nervous, endocrine, and immune systems ensures harmonious and synchronized functioning of the entire body. Neurocosmetics support this interaction: <strong>regulating neurosensory pathways, reducing stress signals, and increasing skin’s tolerance to irritants.</strong></p><p>Modern biotechnologies — including cellular peptides, stem cell metabolites, and neuromodulatory extracts — enable direct influence on skin receptors. This approach opens a new level of skincare that considers both the physiological reactivity of the skin and its emotional response.</p><p>In the near future, neurocosmetics will focus on age-related changes and neurodegenerative processes. Scientists have long studied diseases such as Parkinson’s and Alzheimer’s, related to aging of the nervous system; attention is now shifting <strong>to the aging of skin’s nerve cells — a phenomenon known as neuroaging.</strong> After 50, especially in women, skin neurons lose sensitivity, reducing cellular responsiveness to active ingredients. As a result, fibroblasts — responsible for collagen production — become less effective, leading to loss of firmness and appearance of wrinkles.</p>"
+      }
+    },
+    "image_image_with_text_tEniz6": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/FOX04067.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<p>To slow down these processes, skincare includes <strong>ingredients that activate neurons, restoring their sensitivity and responsiveness to stimulus.</strong> This approach shapes the future of neurocosmetology — skincare that supports skin at a cellular level, preserving youth and health.</p><p> </p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "text_rich_text_yFEzPh": {
       "type": "text--rich-text",
       "blocks": {
@@ -52,70 +76,6 @@
         "section_width": "full-width",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
-      }
-    },
-    "resens-definition": {
-      "type": "resens-definition",
-      "settings": {
-        "header_1": "Cortisol",
-        "header_2": "neurosensory peptides",
-        "text_1": ", released under stress through the hypothalamic‑pituitary‑adrenal axis, directly weakens skin’s protective functions, increases inflammatory reactions, and degrades collagen and elastin. The A‑REDENSITY formula contains a turmeric stem cell biotechnological complex that reduces cortisol synthesis and suppresses pro‑inflammatory interleukins (IL). In vitro results show inflammation reduced by up to 78%, and collagen/elastin protection against cortisol damage reaching 89–96%. This helps preserve skin firmness and reduce visible stress signs — redness, swelling, and loss of tone.",
-        "text_2": "in the line inhibit release of the neuropeptide CGRP from sensory nerve endings, reducing irritation and increasing resistance to environmental aggressors. Within 60 minutes of application in vivo, skin reactivity to stimuli softens significantly. Crucially, these peptides stimulate production of β‑endorphins and met‑enkephalins — known as “happiness hormones.” They help reduce neural and muscular activity, relieve tension, and enhance comfort, thereby reducing skin hypersensitivity.",
-        "conclusion": ""
-      }
-    },
-    "ukrainian-development": {
-      "type": "ukrainian-development",
-      "blocks": {
-        "list_QNYrLE": {
-          "type": "list",
-          "settings": {
-            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
-          }
-        },
-        "list_fUqXEJ": {
-          "type": "list",
-          "settings": {
-            "list_item": "Clinically proven effectiveness"
-          }
-        },
-        "list_i4eg7A": {
-          "type": "list",
-          "settings": {
-            "list_item": "Innovative raw materials from around the world: Europe, Japan, Korea, USA"
-          }
-        },
-        "list_rWnTab": {
-          "type": "list",
-          "settings": {
-            "list_item": "Compostable packaging"
-          }
-        },
-        "list_DeNTCm": {
-          "type": "list",
-          "settings": {
-            "list_item": "Respect for nature, humans and the environment in general"
-          }
-        }
-      },
-      "block_order": [
-        "list_QNYrLE",
-        "list_fUqXEJ",
-        "list_i4eg7A",
-        "list_rWnTab",
-        "list_DeNTCm"
-      ],
-      "settings": {
-        "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
-      }
-    },
-    "eco-responcibility": {
-      "type": "eco-responcibility",
-      "settings": {
-        "title": "ECO-RESPONCIBILITY",
-        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
-        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
       }
     },
     "about-facts": {
@@ -151,16 +111,28 @@
         "card_QYhtfm",
         "card_emzGm9"
       ],
+      "disabled": true,
       "settings": {
         "title": "Re[Sens] – your personal contribution to environmental protection"
       }
     },
     "about-philosophy-info": {
       "type": "about-philosophy-info",
+      "disabled": true,
       "settings": {
         "title": "PHILOSOPHY OF SLOW BEAUTY",
         "sub_title": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
         "description": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are adherents of a conscious \"Slow Beauty\" approach, which goes hand in hand with the increasingly popular \"Slow Food\" trend. These approaches are about:</p><ul><li><strong>mindful consumption</strong></li><li><strong>getting the result not at any cost</strong></li><li><strong>ethical interaction with the world.</strong></li></ul><p>That is,Moderate impact on the skin without overstimulation. And if there is one thing in our formulas that is abundant, it is anti-inflammatory, moisturizing and soothing components.</p>"
+      }
+    },
+    "resens-definition": {
+      "type": "resens-definition",
+      "settings": {
+        "header_1": "Cortisol",
+        "header_2": "neurosensory peptides",
+        "text_1": ", released under stress through the hypothalamic‑pituitary‑adrenal axis, directly weakens skin’s protective functions, increases inflammatory reactions, and degrades collagen and elastin. The A‑REDENSITY formula contains a turmeric stem cell biotechnological complex that reduces cortisol synthesis and suppresses pro‑inflammatory interleukins (IL). In vitro results show inflammation reduced by up to 78%, and collagen/elastin protection against cortisol damage reaching 89–96%. This helps preserve skin firmness and reduce visible stress signs — redness, swelling, and loss of tone.",
+        "text_2": "in the line inhibit release of the neuropeptide CGRP from sensory nerve endings, reducing irritation and increasing resistance to environmental aggressors. Within 60 minutes of application in vivo, skin reactivity to stimuli softens significantly. Crucially, these peptides stimulate production of β‑endorphins and met‑enkephalins — known as “happiness hormones.” They help reduce neural and muscular activity, relieve tension, and enhance comfort, thereby reducing skin hypersensitivity.",
+        "conclusion": ""
       }
     },
     "brand-developers": {
@@ -251,6 +223,53 @@
       "disabled": true,
       "settings": {}
     },
+    "ukrainian-development": {
+      "type": "ukrainian-development",
+      "blocks": {
+        "list_QNYrLE": {
+          "type": "list",
+          "settings": {
+            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
+          }
+        },
+        "list_fUqXEJ": {
+          "type": "list",
+          "settings": {
+            "list_item": "Clinically proven effectiveness"
+          }
+        },
+        "list_i4eg7A": {
+          "type": "list",
+          "settings": {
+            "list_item": "Innovative raw materials from around the world: Europe, Japan, Korea, USA"
+          }
+        },
+        "list_rWnTab": {
+          "type": "list",
+          "settings": {
+            "list_item": "Compostable packaging"
+          }
+        },
+        "list_DeNTCm": {
+          "type": "list",
+          "settings": {
+            "list_item": "Respect for nature, humans and the environment in general"
+          }
+        }
+      },
+      "block_order": [
+        "list_QNYrLE",
+        "list_fUqXEJ",
+        "list_i4eg7A",
+        "list_rWnTab",
+        "list_DeNTCm"
+      ],
+      "disabled": true,
+      "settings": {
+        "background": "shopify://shop_images/resens-dark-bg.jpg",
+        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
+      }
+    },
     "content_on_image_background_hzaWYV": {
       "type": "content-on-image-background",
       "disabled": true,
@@ -275,14 +294,15 @@
   },
   "order": [
     "image-with-text-overlay",
-    "text_rich_text_yFEzPh",
-    "resens-definition",
-    "ukrainian-development",
     "eco-responcibility",
+    "image_image_with_text_tEniz6",
+    "text_rich_text_yFEzPh",
     "about-facts",
     "about-philosophy-info",
+    "resens-definition",
     "brand-developers",
     "founders-cards",
+    "ukrainian-development",
     "content_on_image_background_hzaWYV",
     "logo-with-text"
   ]
