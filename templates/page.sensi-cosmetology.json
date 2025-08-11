@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_25_03_AM.png",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "About us",
+        "title": "SENSI-COSMETOLOGY",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -31,75 +31,97 @@
         "hover-button-background": "#494949"
       }
     },
-    "logo-with-text": {
-      "type": "logo-with-text",
-      "settings": {
-        "logo": "shopify://shop_images/logo-without-text.png",
-        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
-      }
-    },
-    "resens-definition": {
-      "type": "resens-definition",
-      "settings": {
-        "header_1": "Re",
-        "header_2": "Sens",
-        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
-        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
-        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
-      }
-    },
-    "ukrainian-development": {
-      "type": "ukrainian-development",
+    "text_rich_text_BRfMPr": {
+      "type": "text--rich-text",
       "blocks": {
-        "list_QNYrLE": {
-          "type": "list",
+        "heading_3UKcnJ": {
+          "type": "heading",
           "settings": {
-            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
+            "heading": "Re[Sens] was born as a brand that works with sensitive skin not by “shutting it down,” but through understanding and respecting its reactions."
           }
         },
-        "list_fUqXEJ": {
-          "type": "list",
+        "richtext_8FNd3H": {
+          "type": "richtext",
           "settings": {
-            "list_item": "Clinically proven effectiveness"
-          }
-        },
-        "list_i4eg7A": {
-          "type": "list",
-          "settings": {
-            "list_item": "Innovative raw materials from around the world: Europe, Japan, Korea, USA"
-          }
-        },
-        "list_rWnTab": {
-          "type": "list",
-          "settings": {
-            "list_item": "Compostable packaging"
-          }
-        },
-        "list_DeNTCm": {
-          "type": "list",
-          "settings": {
-            "list_item": "Respect for nature, humans and the environment in general"
+            "text": "<p>Sensi-cosmetology is a modern skincare approach based on knowledge of receptors, sensory neurotransmission, the microbiome, and barrier function.</p><p>The formulas are designed <strong>not to suppress reactivity but to gently recalibrate it:</strong> reducing sensitivity without losing sensory responsiveness.</p><p>Sensitivity, both physical and emotional, is shaped by many factors. At the center lies the concept of <strong>inflammaging</strong> — chronic, subclinical inflammation that gradually alters skin structure, lowers tolerance, and accelerates aging.</p>",
+            "text_size": 16
           }
         }
       },
       "block_order": [
-        "list_QNYrLE",
-        "list_fUqXEJ",
-        "list_i4eg7A",
-        "list_rWnTab",
-        "list_DeNTCm"
+        "heading_3UKcnJ",
+        "richtext_8FNd3H"
       ],
+      "name": "t:sections.text--rich-text.presets.name",
       "settings": {
-        "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "eco-responcibility": {
       "type": "eco-responcibility",
+      "disabled": true,
       "settings": {
-        "title": "ECO-RESPONCIBILITY",
-        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
-        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
+        "title": "",
+        "sub_title": "",
+        "description": ""
+      }
+    },
+    "ukrainian-development": {
+      "type": "ukrainian-development",
+      "settings": {
+        "background": "shopify://shop_images/resens-dark-bg.jpg",
+        "title": "Sensi-cosmetics address these changes not symptomatically but strategically: restoring the barrier, supporting the microbiome, and reducing inflammation."
+      }
+    },
+    "about-philosophy-info": {
+      "type": "about-philosophy-info",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "description": ""
+      }
+    },
+    "text_rich_text_arGKcA": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_ncz3Jx": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The skin contains over 3 million sensory receptors that send signals to the central nervous system. The skin’s taste receptors — TRPV1 — respond to heat, acidity, and irritation. With chronic exposure, their activity increases, leading to discomfort, inflammation, and muscle tension.</p><p><strong>Re[Sens] technology reprograms TRPV1 through controlled stimulation using Sichuan pepper extract </strong>— a natural myorelaxant with botox-like action that reduces excessive nervous and muscular reactivity.</p><p>Studies show that<strong> just 15 minutes after application, muscle contractions decrease by 88%, helping to quickly relieve tension and reduce hypersensitivity.</strong></p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_ncz3Jx"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "image_image_with_text_iCTiFG": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "The 3ACTION EXOSOME BOOST line",
+        "text": "<p>is enriched with goji berry and olive stem cells, which further support cellular regeneration and energy balance. This complex <strong>gently soothes the skin, preserves youthfulness and firmness, boosts resilience, and ensures lasting comfort.</strong></p>",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "about-facts": {
@@ -135,16 +157,20 @@
         "card_QYhtfm",
         "card_emzGm9"
       ],
+      "disabled": true,
       "settings": {
         "title": "Re[Sens] – your personal contribution to environmental protection"
       }
     },
-    "about-philosophy-info": {
-      "type": "about-philosophy-info",
+    "resens-definition": {
+      "type": "resens-definition",
+      "disabled": true,
       "settings": {
-        "title": "PHILOSOPHY OF SLOW BEAUTY",
-        "sub_title": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
-        "description": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are adherents of a conscious \"Slow Beauty\" approach, which goes hand in hand with the increasingly popular \"Slow Food\" trend. These approaches are about:</p><ul><li><strong>mindful consumption</strong></li><li><strong>getting the result not at any cost</strong></li><li><strong>ethical interaction with the world.</strong></li></ul><p>That is,Moderate impact on the skin without overstimulation. And if there is one thing in our formulas that is abundant, it is anti-inflammatory, moisturizing and soothing components.</p>"
+        "header_1": "Re",
+        "header_2": "Sens",
+        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
+        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
+        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
       }
     },
     "brand-developers": {
@@ -193,6 +219,7 @@
         "founder_3_PgwK6E",
         "general_info_dMAJiE"
       ],
+      "disabled": true,
       "settings": {
         "title": "brand developers",
         "background": "shopify://shop_images/img_1164_b1648254-7c0b-4c6a-b073-6d252021c007.jpg"
@@ -231,6 +258,7 @@
         "card_WQ6A4Q",
         "card_bBKdFJ"
       ],
+      "disabled": true,
       "settings": {}
     },
     "content_on_image_background_hzaWYV": {
@@ -245,18 +273,29 @@
         "btn_custom_class_name": "onPartnershipForm",
         "section_bottom_margin": 120
       }
+    },
+    "logo-with-text": {
+      "type": "logo-with-text",
+      "disabled": true,
+      "settings": {
+        "logo": "shopify://shop_images/logo-without-text.png",
+        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
     }
   },
   "order": [
     "image-with-text-overlay",
-    "logo-with-text",
-    "resens-definition",
+    "text_rich_text_BRfMPr",
     "ukrainian-development",
-    "eco-responcibility",
-    "about-facts",
     "about-philosophy-info",
+    "text_rich_text_arGKcA",
+    "image_image_with_text_iCTiFG",
+    "about-facts",
+    "eco-responcibility",
+    "resens-definition",
     "brand-developers",
     "founders-cards",
-    "content_on_image_background_hzaWYV"
+    "content_on_image_background_hzaWYV",
+    "logo-with-text"
   ]
 }
