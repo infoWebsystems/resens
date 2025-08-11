@@ -77,7 +77,7 @@
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "image": "shopify://shop_images/Untitled-1.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
