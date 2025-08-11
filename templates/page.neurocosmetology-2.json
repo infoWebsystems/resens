@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image": "shopify://shop_images/Untitled-1.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "About us",
+        "title": "NEUROCOSMETOLOGY",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -31,20 +31,36 @@
         "hover-button-background": "#494949"
       }
     },
-    "logo-with-text": {
-      "type": "logo-with-text",
+    "text_rich_text_yFEzPh": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_F8wzWN": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Re[Sens] operates through two principal mechanisms to support skin balance at the cellular level: <strong>reducing stress hormone cortisol and boosting happiness hormones — endorphins.</strong></p>",
+            "text_size": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_F8wzWN"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
       "settings": {
-        "logo": "shopify://shop_images/logo-without-text.png",
-        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "resens-definition": {
       "type": "resens-definition",
       "settings": {
-        "header_1": "Re",
-        "header_2": "Sens",
-        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
-        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
+        "header_1": "Cortisol",
+        "header_2": "neurosensory peptides",
+        "text_1": ", released under stress through the hypothalamic‑pituitary‑adrenal axis, directly weakens skin’s protective functions, increases inflammatory reactions, and degrades collagen and elastin. The A‑REDENSITY formula contains a turmeric stem cell biotechnological complex that reduces cortisol synthesis and suppresses pro‑inflammatory interleukins (IL). In vitro results show inflammation reduced by up to 78%, and collagen/elastin protection against cortisol damage reaching 89–96%. This helps preserve skin firmness and reduce visible stress signs — redness, swelling, and loss of tone.",
+        "text_2": "in the line inhibit release of the neuropeptide CGRP from sensory nerve endings, reducing irritation and increasing resistance to environmental aggressors. Within 60 minutes of application in vivo, skin reactivity to stimuli softens significantly. Crucially, these peptides stimulate production of β‑endorphins and met‑enkephalins — known as “happiness hormones.” They help reduce neural and muscular activity, relieve tension, and enhance comfort, thereby reducing skin hypersensitivity.",
         "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
       }
     },
@@ -193,6 +209,7 @@
         "founder_3_PgwK6E",
         "general_info_dMAJiE"
       ],
+      "disabled": true,
       "settings": {
         "title": "brand developers",
         "background": "shopify://shop_images/img_1164_b1648254-7c0b-4c6a-b073-6d252021c007.jpg"
@@ -231,6 +248,7 @@
         "card_WQ6A4Q",
         "card_bBKdFJ"
       ],
+      "disabled": true,
       "settings": {}
     },
     "content_on_image_background_hzaWYV": {
@@ -245,11 +263,19 @@
         "btn_custom_class_name": "onPartnershipForm",
         "section_bottom_margin": 120
       }
+    },
+    "logo-with-text": {
+      "type": "logo-with-text",
+      "disabled": true,
+      "settings": {
+        "logo": "shopify://shop_images/logo-without-text.png",
+        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
     }
   },
   "order": [
     "image-with-text-overlay",
-    "logo-with-text",
+    "text_rich_text_yFEzPh",
     "resens-definition",
     "ukrainian-development",
     "eco-responcibility",
@@ -257,6 +283,7 @@
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
-    "content_on_image_background_hzaWYV"
+    "content_on_image_background_hzaWYV",
+    "logo-with-text"
   ]
 }
