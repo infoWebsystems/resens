@@ -56,7 +56,7 @@
         "richtext_pWhaNf": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s<strong> internal defence resources</strong>, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they <strong>modulate local (epidermal) immunity</strong>, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p>",
+            "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s<strong> internal defence resources</strong>, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they <strong>modulate local (epidermal) immunity</strong>, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p><p>Skin’s immune system includes immune cells (Langerhans cells, keratinocytes), the microbiome, and signalling molecules — forming the first line of defense against external threats. Immunocosmetics gently interact with these structures via active ingredients that:</p>",
             "text_size": 16
           }
         }
@@ -71,14 +71,6 @@
         "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
-      }
-    },
-    "eco-responcibility": {
-      "type": "eco-responcibility",
-      "settings": {
-        "title": "ECO-RESPONCIBILITY",
-        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
-        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
       }
     },
     "ukrainian-development": {
@@ -125,6 +117,14 @@
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
+      }
+    },
+    "eco-responcibility": {
+      "type": "eco-responcibility",
+      "settings": {
+        "title": "ECO-RESPONCIBILITY",
+        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
+        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
       }
     },
     "about-philosophy-info": {
@@ -249,8 +249,8 @@
     "logo-with-text",
     "resens-definition",
     "text_rich_text_iREWUh",
-    "eco-responcibility",
     "ukrainian-development",
+    "eco-responcibility",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
