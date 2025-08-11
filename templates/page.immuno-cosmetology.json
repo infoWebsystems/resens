@@ -79,31 +79,25 @@
         "list_QNYrLE": {
           "type": "list",
           "settings": {
-            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
+            "list_item": "strengthen the barrier"
           }
         },
         "list_fUqXEJ": {
           "type": "list",
           "settings": {
-            "list_item": "Clinically proven effectiveness"
+            "list_item": "reduce hyperreactivity"
           }
         },
         "list_i4eg7A": {
           "type": "list",
           "settings": {
-            "list_item": "Innovative raw materials from around the world: Europe, Japan, Korea, USA"
+            "list_item": "support the microbiome"
           }
         },
         "list_rWnTab": {
           "type": "list",
           "settings": {
-            "list_item": "Compostable packaging"
-          }
-        },
-        "list_DeNTCm": {
-          "type": "list",
-          "settings": {
-            "list_item": "Respect for nature, humans and the environment in general"
+            "list_item": "regulate inflammatory responses"
           }
         }
       },
@@ -111,12 +105,11 @@
         "list_QNYrLE",
         "list_fUqXEJ",
         "list_i4eg7A",
-        "list_rWnTab",
-        "list_DeNTCm"
+        "list_rWnTab"
       ],
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
+        "title": ""
       }
     },
     "eco-responcibility": {
