@@ -31,75 +31,27 @@
         "hover-button-background": "#494949"
       }
     },
-    "logo-with-text": {
-      "type": "logo-with-text",
-      "settings": {
-        "logo": "shopify://shop_images/logo-without-text.png",
-        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
-      }
-    },
-    "resens-definition": {
-      "type": "resens-definition",
-      "settings": {
-        "header_1": "Re",
-        "header_2": "Sens",
-        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
-        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
-        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
-      }
-    },
-    "ukrainian-development": {
-      "type": "ukrainian-development",
+    "text_rich_text_jmK9MD": {
+      "type": "text--rich-text",
       "blocks": {
-        "list_QNYrLE": {
-          "type": "list",
+        "richtext_mTpN9y": {
+          "type": "richtext",
           "settings": {
-            "list_item": "Own formulas created by ukrainian developers taking into account the needs of sensitive skin"
-          }
-        },
-        "list_fUqXEJ": {
-          "type": "list",
-          "settings": {
-            "list_item": "Clinically proven effectiveness"
-          }
-        },
-        "list_i4eg7A": {
-          "type": "list",
-          "settings": {
-            "list_item": "Innovative raw materials from around the world: Europe, Japan, Korea, USA"
-          }
-        },
-        "list_rWnTab": {
-          "type": "list",
-          "settings": {
-            "list_item": "Compostable packaging"
-          }
-        },
-        "list_DeNTCm": {
-          "type": "list",
-          "settings": {
-            "list_item": "Respect for nature, humans and the environment in general"
+            "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p>",
+            "text_size": 16
           }
         }
       },
       "block_order": [
-        "list_QNYrLE",
-        "list_fUqXEJ",
-        "list_i4eg7A",
-        "list_rWnTab",
-        "list_DeNTCm"
+        "richtext_mTpN9y"
       ],
+      "name": "t:sections.text--rich-text.presets.name",
       "settings": {
-        "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
-      }
-    },
-    "eco-responcibility": {
-      "type": "eco-responcibility",
-      "settings": {
-        "title": "ECO-RESPONCIBILITY",
-        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
-        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "about-facts": {
@@ -135,16 +87,107 @@
         "card_QYhtfm",
         "card_emzGm9"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Re[Sens] – your personal contribution to environmental protection"
+        "title": "That's why Re[Sens] formulas rely on a MICROBIOME-FRIENDLY preservation system — specially tailored for sensitive skin. It is:"
+      }
+    },
+    "logo-with-text": {
+      "type": "logo-with-text",
+      "disabled": true,
+      "settings": {
+        "logo": "shopify://shop_images/logo-without-text.png",
+        "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
+    },
+    "resens-definition": {
+      "type": "resens-definition",
+      "disabled": true,
+      "settings": {
+        "header_1": "Re",
+        "header_2": "Sens",
+        "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
+        "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
+        "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
+      }
+    },
+    "ukrainian-development": {
+      "type": "ukrainian-development",
+      "blocks": {
+        "list_QNYrLE": {
+          "type": "list",
+          "settings": {
+            "list_item": "gentle yet effective"
+          }
+        },
+        "list_fUqXEJ": {
+          "type": "list",
+          "settings": {
+            "list_item": "reduced by 50% without compromising stability"
+          }
+        },
+        "list_i4eg7A": {
+          "type": "list",
+          "settings": {
+            "list_item": "non-disruptive to skin’s physiological equilibrium"
+          }
+        },
+        "list_rWnTab": {
+          "type": "list",
+          "settings": {
+            "list_item": "reliable in post-opened formula protection"
+          }
+        }
+      },
+      "block_order": [
+        "list_QNYrLE",
+        "list_fUqXEJ",
+        "list_i4eg7A",
+        "list_rWnTab"
+      ],
+      "settings": {
+        "background": "shopify://shop_images/resens-dark-bg.jpg",
+        "title": "That's why Re[Sens] formulas rely on a MICROBIOME-FRIENDLY preservation system — specially tailored for sensitive skin. It is:"
+      }
+    },
+    "eco-responcibility": {
+      "type": "eco-responcibility",
+      "settings": {
+        "title": "We deliberately avoid harsh chemical preservatives that can disrupt the microbiome or provoke irritation.",
+        "sub_title": "Our formulas exclude:",
+        "description": "<p><strong>Formaldehyde-releasing agents:</strong><br/>2‑Bromo‑2‑nitropropane‑1,3‑diol (Bronopol), 5‑Bromo‑5‑nitro‑1,3‑dioxane, Sodium hydroxymethyl glycinate, Benzylhemiformal, Quaternium‑15, DMDM Hydantoin, Methenamine (urotropine), Imidazolidinyl urea, Diazolidinyl urea</p><p><strong>Harsh preservatives:</strong><br/>Methylchloroisothiazolinone, Methylisothiazolinone (banned in EU creams and wet wipes; only allowed in rinse-off products at minimal concentrations)</p>"
+      }
+    },
+    "text_rich_text_bXwtkB": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_nNPHRe": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Instead, we use mild, modern preservatives compatible with the skin’s natural processes. </strong>Re[Sens] cosmetics carefully <strong>support sensitive skin health — maintaining efficacy throughout the recommended term</strong> and remaining <strong>completely safe and comfortable</strong>, even for the most reactive skin.</p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_nNPHRe"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "about-philosophy-info": {
       "type": "about-philosophy-info",
+      "disabled": true,
       "settings": {
-        "title": "PHILOSOPHY OF SLOW BEAUTY",
-        "sub_title": "BALANCED QUANTITY of essential ingredients = THE PERFECT FORMULA, that considers the true physiological needs of the skin",
-        "description": "<p>MORE – IS NOT BETTER. A large number of ingredients overwhelms the skin. It's like a person simultaneously reacting to a large number of stimuli. Multitasking exists, but the output is always enormous fatigue, apathy and burnout. We are adherents of a conscious \"Slow Beauty\" approach, which goes hand in hand with the increasingly popular \"Slow Food\" trend. These approaches are about:</p><ul><li><strong>mindful consumption</strong></li><li><strong>getting the result not at any cost</strong></li><li><strong>ethical interaction with the world.</strong></li></ul><p>That is,Moderate impact on the skin without overstimulation. And if there is one thing in our formulas that is abundant, it is anti-inflammatory, moisturizing and soothing components.</p>"
+        "title": "",
+        "sub_title": "",
+        "description": "<p><strong>Instead, we use mild, modern preservatives compatible with the skin’s natural processes. </strong>Re[Sens] cosmetics carefully <strong>support sensitive skin health — maintaining efficacy throughout the recommended term</strong> and remaining <strong>completely safe and comfortable</strong>, even for the most reactive skin.</p>"
       }
     },
     "brand-developers": {
@@ -193,6 +236,7 @@
         "founder_3_PgwK6E",
         "general_info_dMAJiE"
       ],
+      "disabled": true,
       "settings": {
         "title": "brand developers",
         "background": "shopify://shop_images/img_1164_b1648254-7c0b-4c6a-b073-6d252021c007.jpg"
@@ -231,6 +275,7 @@
         "card_WQ6A4Q",
         "card_bBKdFJ"
       ],
+      "disabled": true,
       "settings": {}
     },
     "content_on_image_background_hzaWYV": {
@@ -249,11 +294,13 @@
   },
   "order": [
     "image-with-text-overlay",
+    "text_rich_text_jmK9MD",
+    "about-facts",
     "logo-with-text",
     "resens-definition",
     "ukrainian-development",
     "eco-responcibility",
-    "about-facts",
+    "text_rich_text_bXwtkB",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
