@@ -126,12 +126,12 @@
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "button_color": "#E6E5E7",
             "button_background_color": "#262428",
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949",
-            "overlay_color": "#000000"
+            "overlay_color": "#ffffff"
           }
         },
         "image_z7pxyE": {
@@ -140,18 +140,18 @@
             "desktop_image": "shopify://shop_images/Trial_Kit_1080_1080.jpg",
             "show_overlay": false,
             "heading": "reduced by 50% without compromising stability",
-            "heading_size": 18,
+            "heading_size": 24,
             "h-margin": 1,
             "button_label": "Shop now",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "button_color": "#E6E5E7",
             "button_background_color": "#262428",
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949",
-            "overlay_color": "#000000"
+            "overlay_color": "#ffffff"
           }
         },
         "image_jLdbLi": {
@@ -160,18 +160,18 @@
             "desktop_image": "shopify://shop_images/beautiful-blonde-woman-blue-light.jpg",
             "show_overlay": false,
             "heading": "non-disruptive to skin’s physiological equilibrium",
-            "heading_size": 18,
+            "heading_size": 24,
             "h-margin": 1,
             "button_label": "Shop now",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "button_color": "#E6E5E7",
             "button_background_color": "#262428",
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949",
-            "overlay_color": "#000000"
+            "overlay_color": "#ffffff"
           }
         },
         "image_pTcNU8": {
@@ -180,18 +180,18 @@
             "desktop_image": "shopify://shop_images/IMG_5882.jpg",
             "show_overlay": false,
             "heading": "reliable in post-opened formula protection",
-            "heading_size": 18,
+            "heading_size": 24,
             "h-margin": 1,
             "button_label": "Shop now",
             "url": "",
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "button_color": "#E6E5E7",
             "button_background_color": "#262428",
             "button_hover_color": "#D4D3D4",
             "button_hover_background_color": "#494949",
-            "overlay_color": "#000000"
+            "overlay_color": "#ffffff"
           }
         }
       },
