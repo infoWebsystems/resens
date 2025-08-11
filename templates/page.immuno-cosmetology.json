@@ -89,52 +89,12 @@
         "button_link": ""
       }
     },
-    "ukrainian-development": {
-      "type": "ukrainian-development",
-      "blocks": {
-        "list_QNYrLE": {
-          "type": "list",
-          "settings": {
-            "list_item": "strengthen the barrier"
-          }
-        },
-        "list_fUqXEJ": {
-          "type": "list",
-          "settings": {
-            "list_item": "reduce hyperreactivity"
-          }
-        },
-        "list_i4eg7A": {
-          "type": "list",
-          "settings": {
-            "list_item": "support the microbiome"
-          }
-        },
-        "list_rWnTab": {
-          "type": "list",
-          "settings": {
-            "list_item": "regulate inflammatory responses"
-          }
-        }
-      },
-      "block_order": [
-        "list_QNYrLE",
-        "list_fUqXEJ",
-        "list_i4eg7A",
-        "list_rWnTab"
-      ],
-      "disabled": true,
-      "settings": {
-        "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": ""
-      }
-    },
     "eco-responcibility": {
       "type": "eco-responcibility",
       "settings": {
-        "title": "ECO-RESPONCIBILITY",
-        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
-        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
+        "title": "",
+        "sub_title": "",
+        "description": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul>"
       }
     },
     "about-philosophy-info": {
@@ -232,6 +192,46 @@
       ],
       "disabled": true,
       "settings": {}
+    },
+    "ukrainian-development": {
+      "type": "ukrainian-development",
+      "blocks": {
+        "list_QNYrLE": {
+          "type": "list",
+          "settings": {
+            "list_item": "strengthen the barrier"
+          }
+        },
+        "list_fUqXEJ": {
+          "type": "list",
+          "settings": {
+            "list_item": "reduce hyperreactivity"
+          }
+        },
+        "list_i4eg7A": {
+          "type": "list",
+          "settings": {
+            "list_item": "support the microbiome"
+          }
+        },
+        "list_rWnTab": {
+          "type": "list",
+          "settings": {
+            "list_item": "regulate inflammatory responses"
+          }
+        }
+      },
+      "block_order": [
+        "list_QNYrLE",
+        "list_fUqXEJ",
+        "list_i4eg7A",
+        "list_rWnTab"
+      ],
+      "disabled": true,
+      "settings": {
+        "background": "shopify://shop_images/resens-dark-bg.jpg",
+        "title": ""
+      }
     },
     "about-facts": {
       "type": "about-facts",
