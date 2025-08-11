@@ -68,15 +68,6 @@
         "title": "Sensi-cosmetics address these changes not symptomatically but strategically: restoring the barrier, supporting the microbiome, and reducing inflammation."
       }
     },
-    "about-philosophy-info": {
-      "type": "about-philosophy-info",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "sub_title": "",
-        "description": ""
-      }
-    },
     "text_rich_text_arGKcA": {
       "type": "text--rich-text",
       "blocks": {
@@ -226,6 +217,15 @@
         "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
+      }
+    },
+    "about-philosophy-info": {
+      "type": "about-philosophy-info",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "description": ""
       }
     },
     "about-facts": {
@@ -400,13 +400,13 @@
     "image-with-text-overlay",
     "text_rich_text_BRfMPr",
     "ukrainian-development",
-    "about-philosophy-info",
     "text_rich_text_arGKcA",
     "image_image_with_text_iCTiFG",
     "text_rich_text_U6LYre",
     "collage_builder_ckwXbi",
     "image_image_with_text_FFXyEL",
     "text_rich_text_bKQy9m",
+    "about-philosophy-info",
     "about-facts",
     "eco-responcibility",
     "resens-definition",
