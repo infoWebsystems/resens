@@ -230,7 +230,7 @@
         "parallax": true,
         "title": "Amino acids are not just protein building blocks",
         "text": "They also act as signalling molecules regulating epidermal barrier, metabolism, and immune activity. In an immunocosmetic framework, they serve as physiological modulators that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.",
-        "colors": "dark",
+        "colors": "light",
         "textPosition": "center",
         "textAlignment": "center",
         "heading--text-size": 26,
