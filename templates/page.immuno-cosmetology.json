@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/DSC0362411.jpg",
+        "image": "shopify://shop_images/FOX02608.jpg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "About us",
+        "title": "IMMUNO-COSMETOLOGY",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -33,6 +33,7 @@
     },
     "logo-with-text": {
       "type": "logo-with-text",
+      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/logo-without-text.png",
         "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
@@ -40,12 +41,44 @@
     },
     "resens-definition": {
       "type": "resens-definition",
+      "disabled": true,
       "settings": {
         "header_1": "Re",
         "header_2": "Sens",
         "text_1": "name arose at the moment of rethinking, where a high-quality healthy product and its packaging do not harm the planet. We want to convey that the planet needs care no less than the skin. If this is not taken into account, then everyone loses from an unconscious attitude. These realizations allowed us to explore the problem more holistically.",
         "text_2": "comes from 'senses' and skin sensitivity. It is not just about caring for sensitive skin, but also about reflecting the inner sensitivity of a person, which is often manifested through the condition of their skin. In a world where every element of life affects our sensibilities, Re[Sens] offers a deep 360° understanding. This indicates our focus on sensations, the ability to feel the world around us.",
         "conclusion": "So Re[Sens] isn't just about taking care of your skin. It is a rethinking of the role of a responsible person in the ecosystem and our attitude towards the planet. We invite you to immerse yourself in the experience of consciousness through values that define new standards of aesthetic medicine and form the right habits of a responsible consumer."
+      }
+    },
+    "text_rich_text_iREWUh": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_pWhaNf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s<strong> internal defence resources</strong>, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they <strong>modulate local (epidermal) immunity</strong>, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_pWhaNf"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "eco-responcibility": {
+      "type": "eco-responcibility",
+      "settings": {
+        "title": "ECO-RESPONCIBILITY",
+        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
+        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
       }
     },
     "ukrainian-development": {
@@ -92,51 +125,6 @@
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
         "title": "SCIENTIFIC UKRAINIAN DEVELOPMENT"
-      }
-    },
-    "eco-responcibility": {
-      "type": "eco-responcibility",
-      "settings": {
-        "title": "ECO-RESPONCIBILITY",
-        "sub_title": "THE FIRST SUSTAINABLE BRAND IN THE PROFESSIONAL COSMETICS MARKET",
-        "description": "<p>Our mission is to preserve beauty, not only of the skin but also of the environment, by raising sustainability standards in the cosmetics industry. <br/> We are against the presence of plastic in the cosmetics sector, as a large share (25%) of it ends up in the ocean through chemical-cosmetic production. Our task is to create and promote eco-friendly cosmetic solutions.<br/> PURPOSE is to create an effective product in packaging of the new generation, that does not increase plastic pollution and does not pollute land and wastewater.<br/> VISION is to become a <strong>Zero Net </strong>company within 10 years and minimize carbon footprint in the production cycle. We believe that we make significant impacked on changing even of 'bad habits' and contribute to a sustainable future.</p>"
-      }
-    },
-    "about-facts": {
-      "type": "about-facts",
-      "blocks": {
-        "card_tKFXRT": {
-          "type": "card",
-          "settings": {
-            "background": "shopify://shop_images/about-facts-bg-1.jpg",
-            "card_value": "38%",
-            "card_description": "of innovative compostable packaging - for the first time in Ukraine"
-          }
-        },
-        "card_QYhtfm": {
-          "type": "card",
-          "settings": {
-            "background": "shopify://shop_images/about-facts-bg-2.jpg",
-            "card_value": "59%",
-            "card_description": "of packaging made from recyclable materials"
-          }
-        },
-        "card_emzGm9": {
-          "type": "card",
-          "settings": {
-            "background": "shopify://shop_images/about-facts-bg-3.jpg",
-            "card_value": "3%",
-            "card_description": "of packaging made of plastic, and we plan to reduce this to 0% over the next 3 years"
-          }
-        }
-      },
-      "block_order": [
-        "card_tKFXRT",
-        "card_QYhtfm",
-        "card_emzGm9"
-      ],
-      "settings": {
-        "title": "Re[Sens] – your personal contribution to environmental protection"
       }
     },
     "about-philosophy-info": {
@@ -193,6 +181,7 @@
         "founder_3_PgwK6E",
         "general_info_dMAJiE"
       ],
+      "disabled": true,
       "settings": {
         "title": "brand developers",
         "background": "shopify://shop_images/img_1164_b1648254-7c0b-4c6a-b073-6d252021c007.jpg"
@@ -231,7 +220,15 @@
         "card_WQ6A4Q",
         "card_bBKdFJ"
       ],
+      "disabled": true,
       "settings": {}
+    },
+    "about-facts": {
+      "type": "about-facts",
+      "disabled": true,
+      "settings": {
+        "title": "Mechanisms include:"
+      }
     },
     "content_on_image_background_hzaWYV": {
       "type": "content-on-image-background",
@@ -251,12 +248,13 @@
     "image-with-text-overlay",
     "logo-with-text",
     "resens-definition",
-    "ukrainian-development",
+    "text_rich_text_iREWUh",
     "eco-responcibility",
-    "about-facts",
+    "ukrainian-development",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
+    "about-facts",
     "content_on_image_background_hzaWYV"
   ]
 }
