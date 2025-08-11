@@ -80,7 +80,7 @@
         "colors": "white",
         "image": "shopify://shop_images/Untitled-1.jpg",
         "text_overlapping_image": false,
-        "section-width": "full",
+        "section-width": "content",
         "layout": "left",
         "text_alignment": "center",
         "title": "Skin’s immune system includes...",
