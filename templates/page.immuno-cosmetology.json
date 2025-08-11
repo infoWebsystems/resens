@@ -197,30 +197,34 @@
         "content-position": "overlay"
       }
     },
-    "content_on_image_background_DUFaF9": {
-      "type": "content-on-image-background",
-      "name": "Content on image background",
+    "collection_collection_list_VpKiXk": {
+      "type": "collection--collection-list",
+      "blocks": {
+        "featured_collection_MMiw38": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lines-cleanup",
+            "subheading": "",
+            "overlay-btn-text": "Shop now",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_MMiw38"
+      ],
+      "name": "t:sections.collection--collection-list.presets.name",
       "settings": {
-        "background": "shopify://shop_images/A-Redensity-HYDRA-cream-Redness-resilience-Action_98823da0-7d0c-45df-851c-0e03c703c045.jpg",
-        "title": "A‑REDENSITY follows the principle:",
-        "description": "<p>“greater microbial diversity = less sensitivity, greater healthy glow,” delivering optimal barrier function and skin hydrobalance.</p><p>Amino acids are not just protein building blocks — they also act as <strong>signalling molecules</strong> regulating <strong>epidermal barrier, metabolism, and immune activity</strong>. In an immunocosmetic framework, they serve as <strong>physiological modulators</strong> that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.</p>",
-        "btn_label": "A‑REDENSITY",
-        "btn_url": "",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
-      }
-    },
-    "content_on_image_background_Fpa3N6": {
-      "type": "content-on-image-background",
-      "name": "Content on image background",
-      "settings": {
-        "background": "shopify://shop_images/Cleanup-powder-deep-cleansing-powder_64bc5324-377f-469d-b4ba-e4b56d137042.jpg",
+        "colors": "light",
         "title": "The innovative CleanUP Powder formula",
-        "description": "<p>— unique globally — contains <strong>14 pure amino acids</strong> chosen to support both <strong>structure and function of the stratum corneum</strong>. The complex mimics the <strong>physiological amino acid profile of NMF (Natural Moisturizing Factor)</strong> and the <strong>modulatory action of placental peptides</strong>, feeding cells and building tolerance even in sensitized skin.</p>",
-        "btn_label": "CleanUP Powder",
-        "btn_url": "",
-        "btn_custom_class_name": "",
-        "section_bottom_margin": 0
+        "richtext": "<p>— unique globally — contains <strong>14 pure amino acids</strong> chosen to support both <strong>structure and function of the stratum corneum</strong>. The complex mimics the <strong>physiological amino acid profile of NMF (Natural Moisturizing Factor)</strong> and the <strong>modulatory action of placental peptides</strong>, feeding cells and building tolerance even in sensitized skin.</p>",
+        "items-per-row": 3,
+        "fill-the-area": true,
+        "remove-spacing": false,
+        "section-width": "full",
+        "content-position": "overlay"
       }
     },
     "about-philosophy-info": {
@@ -393,8 +397,7 @@
     "image_image_with_text_C99WBX",
     "image_image_with_text_PQ4gyz",
     "collection_collection_list_gMWNdh",
-    "content_on_image_background_DUFaF9",
-    "content_on_image_background_Fpa3N6",
+    "collection_collection_list_VpKiXk",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
