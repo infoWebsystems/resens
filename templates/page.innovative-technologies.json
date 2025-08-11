@@ -180,93 +180,6 @@
         "hover-button-background": "#494949"
       }
     },
-    "template_product_info_columns_iwVaqi": {
-      "type": "template--product--info-columns",
-      "blocks": {
-        "image_and_text_cTGBjD": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/1111.png",
-            "grid_image_size": "wide",
-            "heading": "CleanUP",
-            "text": "<p>The CleanUP product line is an innovative professional cleansing system designed to protect the skin from external stressors while supporting its internal defence functions.</p>",
-            "button_text": "Learn more",
-            "button_link": "shopify://blogs/about-lines/cleanup"
-          }
-        },
-        "image_and_text_L3NgYn": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/55555.png",
-            "grid_image_size": "wide",
-            "heading": "Smart Peel",
-            "text": "<p>Since all Re[Sens]cosmetics are developed with the core mission of revealing beauty through sensitivity, the SMART PEEL line incorporates new biotechnological solutions in acid and enzyme synthesis.</p>",
-            "button_text": "Learn more",
-            "button_link": "shopify://blogs/about-lines/smart-peel"
-          }
-        },
-        "image_and_text_DwaqNy": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/22222.png",
-            "grid_image_size": "wide",
-            "heading": "Ceramide",
-            "text": "<p>The CERAMIDE line is dedicated to reinforcing the skin’s protective barrier and addressing dehydration issues.</p>",
-            "button_text": "Learn more",
-            "button_link": "shopify://blogs/about-lines/hydroceramide"
-          }
-        },
-        "image_and_text_NViGy9": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/4444.png",
-            "grid_image_size": "wide",
-            "heading": "A-Redensity",
-            "text": "<p>The A-REDENSITY line follows a microbiome-friendly strategy to care for sensitive skin, supporting a healthy skin flora and barrier function.</p>",
-            "button_text": "Learn more",
-            "button_link": "shopify://blogs/about-lines/a-redensity"
-          }
-        },
-        "image_and_text_TdPCEc": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/33333.png",
-            "grid_image_size": "wide",
-            "heading": "3action Exosome Boost",
-            "text": "<p>Our flagship anti-aging line is based on the principle of reconstructing skin architecture from the base level.</p>",
-            "button_text": "Learn more",
-            "button_link": "shopify://blogs/about-lines/3action-exosome-boost"
-          }
-        },
-        "image_and_text_KNN4VL": {
-          "type": "image_and_text",
-          "settings": {
-            "image": "shopify://shop_images/mask.png",
-            "grid_image_size": "wide",
-            "heading": "Masks",
-            "text": "<p>The RE[SENS] MASKS represent cutting-edge advancements in biotechnology and dermato-cosmetology.</p>",
-            "button_text": "Learn more",
-            "button_link": "shopify://blogs/about-lines/masks"
-          }
-        }
-      },
-      "block_order": [
-        "image_and_text_cTGBjD",
-        "image_and_text_L3NgYn",
-        "image_and_text_DwaqNy",
-        "image_and_text_NViGy9",
-        "image_and_text_TdPCEc",
-        "image_and_text_KNN4VL"
-      ],
-      "settings": {
-        "colors": "white",
-        "heading": "",
-        "description": "",
-        "columns_per_row": 4,
-        "text_alignment": "center",
-        "vertical_alignment": "top"
-      }
-    },
     "double-image-section": {
       "type": "double-image-section",
       "disabled": true,
@@ -309,7 +222,6 @@
     "image_image_with_text_twyaaB",
     "text_rich_text_efeY7Q",
     "image_image_with_text_overlay_rGp6Ur",
-    "template_product_info_columns_iwVaqi",
     "double-image-section",
     "blog_blog_posts_Rdw7XP"
   ]
