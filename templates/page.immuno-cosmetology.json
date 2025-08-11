@@ -217,35 +217,34 @@
         "hover-button-background": "#494949"
       }
     },
-    "collection_collection_list_VpKiXk": {
-      "type": "collection--collection-list",
+    "text_rich_text_dyxq7m": {
+      "type": "text--rich-text",
       "blocks": {
-        "featured_collection_MMiw38": {
-          "type": "featured_collection",
+        "heading_h3JRtE": {
+          "type": "heading",
           "settings": {
-            "collection": "lines-cleanup",
-            "collection_img": "shopify://shop_images/FOX04141_13511c36-4a3f-4bbf-851c-1df60858a46b.jpg",
-            "subheading": "",
-            "overlay-btn-text": "Shop now",
-            "show-gradient-overlay": false,
-            "overlay_font_color": "#ffffff",
-            "overlay_color": "#ffffff"
+            "heading": "The innovative CleanUP Powder formula"
+          }
+        },
+        "richtext_yd9b6z": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>— unique globally — contains <strong>14 pure amino acids</strong> chosen to support both <strong>structure and function of the stratum corneum</strong>. The complex mimics the <strong>physiological amino acid profile of NMF (Natural Moisturizing Factor)</strong> and the <strong>modulatory action of placental peptides</strong>, feeding cells and building tolerance even in sensitized skin.</p>",
+            "text_size": 16
           }
         }
       },
       "block_order": [
-        "featured_collection_MMiw38"
+        "heading_h3JRtE",
+        "richtext_yd9b6z"
       ],
-      "name": "t:sections.collection--collection-list.presets.name",
+      "name": "t:sections.text--rich-text.presets.name",
       "settings": {
-        "colors": "light",
-        "title": "The innovative CleanUP Powder formula",
-        "richtext": "<p>— unique globally — contains <strong>14 pure amino acids</strong> chosen to support both <strong>structure and function of the stratum corneum</strong>. The complex mimics the <strong>physiological amino acid profile of NMF (Natural Moisturizing Factor)</strong> and the <strong>modulatory action of placental peptides</strong>, feeding cells and building tolerance even in sensitized skin.</p>",
-        "items-per-row": 3,
-        "fill-the-area": true,
-        "remove-spacing": false,
-        "section-width": "full",
-        "content-position": "overlay"
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "about-philosophy-info": {
@@ -436,7 +435,7 @@
     "image_image_with_text_PQ4gyz",
     "text_rich_text_FEyTzi",
     "image_image_with_text_overlay_wEBxbm",
-    "collection_collection_list_VpKiXk",
+    "text_rich_text_dyxq7m",
     "about-philosophy-info",
     "brand-developers",
     "founders-cards",
