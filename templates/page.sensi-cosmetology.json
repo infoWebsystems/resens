@@ -116,6 +116,29 @@
         "button_link": ""
       }
     },
+    "text_rich_text_U6LYre": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_8gVJ7j": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The skin’s protective barrier is the first line of defence against pathogens, pollution, and irritants. When compromised, the skin becomes vulnerable, allowing harmful agents to penetrate, overloading the immune system, and triggering inflammatory responses — even to familiar factors.</p><p><strong>The </strong><a href=\"https://resenss.com/collections/all?filter.p.m.custom.by_line=Ceramide&sort_by=title-ascending\"><strong>CERAMIDE</strong></a><strong> technology restores and strengthens this barrier</strong> by infusing the skin with various forms of ceramides and vegan cholesterol synthesized by bacteria.</p><p>A unique lipid complex containing natural ceramides and phytosterols forms lamellar liquid crystals that mimic ceramide type III in the intercellular lipid matrix.</p><p>An innovative delivery system based on biotechnological and natural materials ensures deep penetration of active lipids into the intercellular space.</p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_8gVJ7j"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "about-facts": {
       "type": "about-facts",
       "blocks": {
@@ -291,6 +314,7 @@
     "about-philosophy-info",
     "text_rich_text_arGKcA",
     "image_image_with_text_iCTiFG",
+    "text_rich_text_U6LYre",
     "about-facts",
     "eco-responcibility",
     "resens-definition",
