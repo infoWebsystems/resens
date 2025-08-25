@@ -37,7 +37,7 @@
         "heading_3UKcnJ": {
           "type": "heading",
           "settings": {
-            "heading": "Re[Sens] was born as a brand that works with sensitive skin not by “shutting it down,” but through understanding and respecting its reactions."
+            "heading": "Re[Sens] was born as a brand that works with sensitive skin not by “shutting it down,” but through understanding and respecting its reactions"
           }
         },
         "richtext_8FNd3H": {
@@ -65,7 +65,7 @@
       "type": "ukrainian-development",
       "settings": {
         "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "Sensi-cosmetics address these changes not symptomatically but strategically: restoring the barrier, supporting the microbiome, and reducing inflammation."
+        "title": "Sensi-cosmetics address these changes not symptomatically but strategically: restoring the barrier, supporting the microbiome, and reducing inflammation"
       }
     },
     "text_rich_text_arGKcA": {
@@ -139,7 +139,7 @@
             "desktop_image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_32_29_AM.png",
             "show_overlay": false,
             "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_32_29_AM.png",
-            "heading": "This effectively eliminates dryness, flakiness, and moisture deficiency while strengthening the skin’s structure, enhancing hydration, and promoting cellular renewal and regeneration.",
+            "heading": "This effectively eliminates dryness, flakiness, and moisture deficiency while strengthening the skin’s structure, enhancing hydration, and promoting cellular renewal and regeneration",
             "heading_size": 28,
             "h-margin": 10,
             "button_label": "Shop now",
@@ -147,9 +147,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#262428",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
