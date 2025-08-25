@@ -58,7 +58,7 @@
       "settings": {
         "background_color": "",
         "colors": "white",
-        "section_width": "full-width",
+        "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
