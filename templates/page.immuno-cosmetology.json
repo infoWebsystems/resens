@@ -90,7 +90,7 @@
         "colors": "white",
         "section_width": "narrow",
         "text_alignment_desktop": "left",
-        "text_alignment_mobile": "center"
+        "text_alignment_mobile": "left"
       }
     },
     "eco-responcibility": {
@@ -108,7 +108,7 @@
       "settings": {
         "image": "shopify://shop_images/A-Redensity-HYDRA-cream-Redness-resilience-Action_98823da0-7d0c-45df-851c-0e03c703c045.jpg",
         "image_height": "40vw",
-        "bg_image_overlay_opacity": 0,
+        "bg_image_overlay_opacity": 30,
         "parallax": true,
         "title": "The A‑REDENSITY line",
         "text": "features a postbioticLactobacillus casei at a clinically effective dose (1×10¹² CFU/g), offering immunomodulatory effects and promoting microbiome balance restoration.",
@@ -224,7 +224,7 @@
       "settings": {
         "image": "shopify://shop_images/Cleanup-powder-deep-cleansing-powder_64bc5324-377f-469d-b4ba-e4b56d137042.jpg",
         "image_height": "40vw",
-        "bg_image_overlay_opacity": 0,
+        "bg_image_overlay_opacity": 30,
         "parallax": true,
         "title": "Amino acids are not just protein building blocks",
         "text": "They also act as signalling molecules regulating epidermal barrier, metabolism, and immune activity. In an immunocosmetic framework, they serve as physiological modulators that restore stratum corneum integrity, support hydration, and reduce skin inflammatory reactivity.",
@@ -256,23 +256,39 @@
             "text": "<p>— unique globally — contains <strong>14 pure amino acids</strong> chosen to support both <strong>structure and function of the stratum corneum</strong>. The complex mimics the <strong>physiological amino acid profile of NMF (Natural Moisturizing Factor)</strong> and the <strong>modulatory action of placental peptides</strong>, feeding cells and building tolerance even in sensitized skin.</p>",
             "text_size": 16
           }
+        },
+        "heading_8wA9dX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Key functions:"
+          }
+        },
+        "richtext_7F8b8c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<ul><li><strong>regeneration</strong>: proline, glycine, serine, glutamic acid assist in synthesis of epidermal proteins (filaggrin, involucrin);</li><li><strong>hydration</strong>: amino acids act as osmolytes, binding moisture and maintaining electrolyte stability;</li><li><strong>immunomodulation</strong>: arginine, taurine, histidine exhibit antioxidant and anti-inflammatory properties, reducing pro-inflammatory cytokine production;</li><li><strong>textural correction</strong>: leucine, isoleucine, phenylalanine remodel microrelief, enhancing smoothness and density</li></ul><p><strong>The amino acid system in </strong><a href=\"https://resenss.com/collections/all/products/cleanup-powder?_pos=6&_fid=c4324c8a7&_ss=c\"><strong>CleanUP Powder</strong></a><strong> not only compensates for NMF losses but also actively engages in recovery processes — reducing sensitivity, flaking, and microinflammation.</strong>.</p>",
+            "text_size": 14
+          }
         }
       },
       "block_order": [
         "heading_h3JRtE",
-        "richtext_yd9b6z"
+        "richtext_yd9b6z",
+        "heading_8wA9dX",
+        "richtext_7F8b8c"
       ],
       "name": "t:sections.text--rich-text.presets.name",
       "settings": {
         "background_color": "",
         "colors": "white",
         "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "text_alignment_desktop": "left",
+        "text_alignment_mobile": "left"
       }
     },
     "about-philosophy-info": {
       "type": "about-philosophy-info",
+      "disabled": true,
       "settings": {
         "title": "Key functions:",
         "sub_title": "",
