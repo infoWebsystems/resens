@@ -203,7 +203,7 @@
         "richtext_eHtt93": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The A-REDENSITY line is based on microbiome-friendly care principles that support the balance and diversity of the epidermal microbiome. Its key component is a concentrate of <em><strong>Lactobacillus casei</strong></em>(1×10¹² cells per gram), which helps restore the population of commensal staphylococci (Coagulase-negative staphylococci — CoNS).</p>",
+            "text": "<p>The <a href=\"https://resenss.com/en/collections/all?filter.p.m.custom.by_line=A-Redensity&sort_by=title-ascending\" title=\"https://resenss.com/en/collections/all?filter.p.m.custom.by_line=A-Redensity&sort_by=title-ascending\"><strong>A-REDENSITY line</strong></a> is based on microbiome-friendly care principles that support the balance and diversity of the epidermal microbiome. Its key component is a concentrate of <em><strong>Lactobacillus casei</strong></em>(1×10¹² cells per gram), which helps restore the population of commensal staphylococci (Coagulase-negative staphylococci — CoNS).</p>",
             "text_size": 16
           }
         }
