@@ -31,8 +31,41 @@
         "hover-button-background": "#494949"
       }
     },
+    "text_rich_text_Dgm9pL": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_miDwUP": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Neurocosmetology is a core direction for Re[Sens], based on the modern understanding of skin as a component of the neuro‑endocrine system. Skin perceives not only external stimuli — touch, temperature — but also internal states: fatigue, stress, emotional tension. By influencing the skin’s sensory neurons, neurocosmetology can also modulate brain function.</p>",
+            "text_size": 24
+          }
+        },
+        "richtext_JGW8dg": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The presence of neurobiological communication between skin, nervous, endocrine, and immune systems ensures harmonious and synchronized functioning of the entire body. Neurocosmetics support this interaction: <strong>regulating neurosensory pathways, reducing stress signals, and increasing skin’s tolerance to irritants.</strong></p><p>Modern biotechnologies — including cellular peptides, stem cell metabolites, and neuromodulatory extracts — enable direct influence on skin receptors. This approach opens a new level of skincare that considers both the physiological reactivity of the skin and its emotional response.</p><p>In the near future, neurocosmetics will focus on age-related changes and neurodegenerative processes. Scientists have long studied diseases such as Parkinson’s and Alzheimer’s, related to aging of the nervous system; attention is now shifting <strong>to the aging of skin’s nerve cells — a phenomenon known as neuroaging.</strong> After 50, especially in women, skin neurons lose sensitivity, reducing cellular responsiveness to active ingredients. As a result, fibroblasts — responsible for collagen production — become less effective, leading to loss of firmness and appearance of wrinkles.</p>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_miDwUP",
+        "richtext_JGW8dg"
+      ],
+      "custom_css": [],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "eco-responcibility": {
       "type": "eco-responcibility",
+      "disabled": true,
       "settings": {
         "title": "",
         "sub_title": "Neurocosmetology is a core direction for Re[Sens], based on the modern understanding of skin as a component of the neuro‑endocrine system. Skin perceives not only external stimuli — touch, temperature — but also internal states: fatigue, stress, emotional tension. By influencing the skin’s sensory neurons, neurocosmetology can also modulate brain function.",
@@ -294,6 +327,7 @@
   },
   "order": [
     "image-with-text-overlay",
+    "text_rich_text_Dgm9pL",
     "eco-responcibility",
     "image_image_with_text_tEniz6",
     "text_rich_text_yFEzPh",
