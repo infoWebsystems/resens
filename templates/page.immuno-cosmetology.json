@@ -70,8 +70,32 @@
         "button_link": ""
       }
     },
+    "text_rich_text_NFj8bP": {
+      "type": "text--rich-text",
+      "blocks": {
+        "richtext_tj7xMR": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>In immunocosmetic care, <strong>lactobacilli </strong>are seen not only as prebiotics or microbiome modifiers, but as <strong>true modulators of innate skin immunity.</strong> Their activity occurs through interaction with epidermal cells (notably keratinocytes), induction of antimicrobial peptides, and modulation of pro-inflammatory signalling pathways.</p><p>This <strong>enables targeting critical immune mechanisms</strong> in sensitive skin:</p><ul><li>reduced colonization by pathogens (especially <em>Staphylococcus aureus</em>)</li><li>stabilized microbiome</li><li>decreased neuro‑immune reactivity</li><li>restored barrier integrity</li></ul>",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "richtext_tj7xMR"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
     "eco-responcibility": {
       "type": "eco-responcibility",
+      "disabled": true,
       "settings": {
         "title": "",
         "sub_title": "",
@@ -427,6 +451,7 @@
     "image-with-text-overlay",
     "text_rich_text_iREWUh",
     "image_image_with_text_mVYarX",
+    "text_rich_text_NFj8bP",
     "eco-responcibility",
     "image_image_with_text_overlay_6Vgczd",
     "text_rich_text_KUaqc6",
