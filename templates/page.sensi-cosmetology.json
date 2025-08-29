@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_25_03_AM.png",
+        "image": "shopify://shop_images/1920x1080_SENSI-COSMETOLOGY.svg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "SENSI-COSMETOLOGY",
+        "title": "",
         "text": "",
         "colors": "light",
         "textPosition": "center",
