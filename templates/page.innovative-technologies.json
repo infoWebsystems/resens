@@ -73,7 +73,7 @@
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "SENSI-COSMETOLOGY",
+        "title": "",
         "text": "<p>Re[Sens] was born as a brand that works with sensitive skin not by “shutting it down,” but through understanding and respecting its reactions. Sensi-cosmetology is a modern skincare approach based on knowledge of receptors, sensory neurotransmission, the microbiome, and barrier function.</p>",
         "button_label": "Read More",
         "button_link": "shopify://pages/sensi-cosmetology"
@@ -89,7 +89,7 @@
         "section-width": "full",
         "layout": "right",
         "text_alignment": "center",
-        "title": "NEUROCOSMETOLOGY",
+        "title": "",
         "text": "<p>Neurocosmetology is a core direction for Re[Sens], based on the modern understanding of skin as a component of the neuro‑endocrine system. Skin perceives not only external stimuli — touch, temperature — but also internal states: fatigue, stress, emotional tension. By influencing the skin’s sensory neurons, neurocosmetology can also modulate brain function.</p>",
         "button_label": "Read More",
         "button_link": "shopify://pages/neurocosmetology"
@@ -105,7 +105,7 @@
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "IMMUNO-COSMETOLOGY",
+        "title": "",
         "text": "<p>Immunocosmetology is a contemporary skincare direction that works with the skin’s internal defence resources, rather than merely addressing irritation or inflammation symptoms.</p><p>Unlike traditional care, immunocosmetics don’t mask symptoms — they modulate local (epidermal) immunity, helping the skin restore balance, reduce reactivity, and maintain stable barrier function.</p>",
         "button_label": "Read More",
         "button_link": "shopify://pages/immuno-cosmetology"
@@ -121,7 +121,7 @@
         "section-width": "full",
         "layout": "right",
         "text_alignment": "center",
-        "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
+        "title": "",
         "text": "<p>The skin microbiome is not just a barrier — it’s a living, intelligent ecosystem. Its balance is critical to health, regulating inflammation, supporting hydration, strengthening immunity, and modulating skin’s response to stress.</p>",
         "button_label": "Read More",
         "button_link": "shopify://pages/microbiome-friendly-preservation-system"
