@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_35_03_AM.png",
+        "image": "shopify://shop_images/1920x1080_MICROBIOME-FRIENDLY.svg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 25,
         "parallax": false,
-        "title": "MICROBIOME-FRIENDLY PRESERVATION SYSTEM",
+        "title": "",
         "text": "",
         "colors": "light",
         "textPosition": "center",
@@ -70,9 +70,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#ffffff",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
@@ -90,9 +90,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#ffffff",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
@@ -110,9 +110,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#ffffff",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
@@ -130,9 +130,9 @@
             "desktop_position": "md-min-align-center md-min-justify-center",
             "mobile_position": "md-max-align-center md-max-justify-center",
             "text_color": "#ffffff",
-            "button_color": "#E6E5E7",
+            "button_color": "#e6e5e7",
             "button_background_color": "#262428",
-            "button_hover_color": "#D4D3D4",
+            "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
             "overlay_color": "rgba(0,0,0,0)"
           }
@@ -164,14 +164,6 @@
         "width_6": "1",
         "height_6": "4",
         "block_alignment": "center"
-      }
-    },
-    "ukrainian-development": {
-      "type": "ukrainian-development",
-      "disabled": true,
-      "settings": {
-        "background": "shopify://shop_images/resens-dark-bg.jpg",
-        "title": "That's why Re[Sens] formulas rely on a MICROBIOME-FRIENDLY preservation system — specially tailored for sensitive skin. It is:"
       }
     },
     "eco-responcibility": {
@@ -296,6 +288,14 @@
       "settings": {
         "logo": "shopify://shop_images/logo-without-text.png",
         "text": "The ancient Ukrainian traditions are being revived in the modern world through the element of the circle, taken from the Trypillian culture. It symbolizes the eternal turn of time, the values of cyclicality, life and regeneration, spirituality, harmony, as well as the unity of nature and cosmic cycles."
+      }
+    },
+    "ukrainian-development": {
+      "type": "ukrainian-development",
+      "disabled": true,
+      "settings": {
+        "background": "shopify://shop_images/resens-dark-bg.jpg",
+        "title": "That's why Re[Sens] formulas rely on a MICROBIOME-FRIENDLY preservation system — specially tailored for sensitive skin. It is:"
       }
     },
     "about-facts": {
