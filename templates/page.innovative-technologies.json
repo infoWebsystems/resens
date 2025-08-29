@@ -68,7 +68,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_25_03_AM.png",
+        "image": "shopify://shop_images/1920x1080_SENSI-COSMETOLOGY.svg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -84,7 +84,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/Untitled-1.jpg",
+        "image": "shopify://shop_images/1920x1080_NEUROCOSMETOLOGY.svg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
@@ -100,7 +100,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_32_29_AM.png",
+        "image": "shopify://shop_images/1920x1080_IMMUNO-COSMETOLOGY.svg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -116,7 +116,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_30_2025_at_01_35_03_AM.png",
+        "image": "shopify://shop_images/1920x1080_MICROBIOME-FRIENDLY.svg",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
