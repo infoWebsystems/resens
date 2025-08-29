@@ -12,11 +12,11 @@
     "image-with-text-overlay": {
       "type": "image--image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/FOX02608.jpg",
+        "image": "shopify://shop_images/1920x1080_IMMUNO-COSMETOLOGY.svg",
         "image_height": "30vw",
         "bg_image_overlay_opacity": 10,
         "parallax": false,
-        "title": "IMMUNO-COSMETOLOGY",
+        "title": "",
         "text": "",
         "colors": "light",
         "textPosition": "center",
