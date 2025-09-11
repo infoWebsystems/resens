@@ -38,7 +38,7 @@
           "type": "richtext",
           "settings": {
             "text": "<p>We strive to make your shopping experience at Re[Sens] as comfortable and pleasant as possible – from choosing the perfect product to the moment you hold it in your hands. Please review the terms for the delivery and payment of our products.</p>",
-            "text_size": 14
+            "text_size": 16
           }
         },
         "heading_g98EiY": {
@@ -51,7 +51,7 @@
           "type": "richtext",
           "settings": {
             "text": "<p>We deliver throughout Ukraine, except for the temporarily occupied territories.</p><h4>Shipping Methods</h4><p>We entrust the delivery of your favorite cosmetics to reliable logistics partners:</p><ol><li><strong>To a \"Nova Poshta\" branch</strong><br/>The most popular way to receive your order quickly and at a location convenient for you.</li><li><strong>To a \"Nova Poshta\" parcel locker (poshtomat)</strong><br/>A contactless way to pick up your parcel at any time of the day.</li><li><strong>Courier delivery by \"Nova Poshta\" to your address</strong><br/>Your order will be delivered directly to your door.</li></ol><p></p><h4>Shipping Costs</h4><p></p><ul><li>The shipping cost is calculated according to the tariffs of the carrier \"Nova Poshta\" and depends on the weight, dimensions of the parcel, and the selected delivery method.</li><li><strong>Enjoy free shipping to a \"Nova Poshta\" branch or parcel locker on all orders over 2000 UAH!</strong></li><li>The cost of courier delivery is paid by the customer, regardless of the order total.</li></ul><p></p><h4>Processing and Dispatch Times</h4><p></p><ul><li>We care about getting your order to you as quickly as possible. Order processing and fulfillment take <strong>1-2 business days</strong>.</li><li>Orders are dispatched from Monday to Friday.</li><li>Orders placed on weekends or public holidays are processed on the next business day.</li><li>After dispatch, delivery by \"Nova Poshta\" typically takes <strong>1-3 days</strong>.</li></ul>",
-            "text_size": 14
+            "text_size": 16
           }
         },
         "heading_CAydwB": {
@@ -64,7 +64,7 @@
           "type": "richtext",
           "settings": {
             "text": "<p>We are happy to ship Re[Sens] cosmetics to any corner of the world. You can see the countries to which we currently deliver our products when placing an order.</p><p></p><h4>How to Order?</h4><p></p><ol><li>Place your order on our website, providing your full international shipping address in English.</li><li>After receiving your order, our manager will contact you to confirm the details and calculate the exact shipping cost.</li><li>The shipping cost is calculated individually and depends on the destination country and the weight of the parcel.</li></ol><p></p><h4>Shipping Methods and Times</h4><p></p><ul><li>We deliver using various delivery services.</li><li>The estimated delivery time is <strong>14-30 days</strong> and may vary depending on the postal services and customs procedures in your country.</li></ul><p></p><h4>Payment for International Orders</h4><p></p><ul><li>All international orders are dispatched only after <strong>100% prepayment</strong> of the cost of the goods and shipping.</li><li>Payment is made online with a Visa/Mastercard via a secure payment system on our website. The details for the shipping payment will be sent to you by our manager after all details are confirmed.</li></ul><p></p><h4><strong>Important: Customs, Duties, and Taxes</strong></h4><p></p><ul><li>Please note that your order may be subject to import duties, taxes (e.g., VAT), and other fees levied by the destination country.</li><li><strong>The payment of all customs duties and taxes is the full responsibility of the recipient.</strong> Our store does not calculate or cover these costs.</li><li>For information about potential fees, please contact your country's customs office before placing an order.</li></ul>",
-            "text_size": 14
+            "text_size": 16
           }
         }
       },
@@ -80,8 +80,8 @@
         "background_color": "",
         "colors": "white",
         "section_width": "full-width",
-        "text_alignment_desktop": "left",
-        "text_alignment_mobile": "left"
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "logo-with-text": {
