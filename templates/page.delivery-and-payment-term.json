@@ -79,9 +79,9 @@
       "settings": {
         "background_color": "",
         "colors": "white",
-        "section_width": "full-width",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "section_width": "narrow",
+        "text_alignment_desktop": "left",
+        "text_alignment_mobile": "left"
       }
     },
     "logo-with-text": {
