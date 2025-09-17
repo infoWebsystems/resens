@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/DSC0362411.jpg",
         "image_height": "30vw",
-        "bg_image_overlay_opacity": 10,
+        "bg_image_overlay_opacity": 40,
         "parallax": false,
         "title": "Sustainability",
         "text": "",
@@ -106,6 +106,28 @@
         "background_color": "",
         "colors": "white",
         "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "text_rich_text_3tWRh3": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_REYp3W": {
+          "type": "heading",
+          "settings": {
+            "heading": "Through our unique Plastic Neutral Program, we join the global efforts to achieve key Sustainable Development Goals."
+          }
+        }
+      },
+      "block_order": [
+        "heading_REYp3W"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "narrow",
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
@@ -523,6 +545,7 @@
     "text_rich_text_KRj3Vw",
     "text_rich_text_bngeLP",
     "text_rich_text_DAftC9",
+    "text_rich_text_3tWRh3",
     "image_logo_list_VTEpxB",
     "video_video_7GpWej",
     "text_rich_text_9EGRrh",
