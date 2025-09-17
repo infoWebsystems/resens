@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/DSC0362411.jpg",
         "image_height": "30vw",
-        "bg_image_overlay_opacity": 10,
+        "bg_image_overlay_opacity": 40,
         "parallax": false,
         "title": "{{ page.title }}",
         "text": "",
