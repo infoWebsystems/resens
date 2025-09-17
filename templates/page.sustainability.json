@@ -131,9 +131,7 @@
         "heading_REYp3W",
         "richtext_Vd3jnV"
       ],
-      "custom_css": [
-        "p {text-align: center;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.text--rich-text.presets.name",
       "settings": {
         "background_color": "",
