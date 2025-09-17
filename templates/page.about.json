@@ -34,22 +34,15 @@
     "text_rich_text_cNQxqf": {
       "type": "text--rich-text",
       "blocks": {
-        "heading_666aiC": {
-          "type": "heading",
-          "settings": {
-            "heading": "Re[Sens] was born in 2022 from a vision of Ukrainian scientists who had spent over 15 years in the professional cosmetics industry."
-          }
-        },
         "richtext_bDXXtA": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.</p>",
-            "text_size": 14
+            "text": "<p><strong>Re[Sens</strong>] was born in 2022 from a vision of Ukrainian scientists who had spent over 15 years in the professional cosmetics industry. Their mission was bold yet simple: to merge cutting-edge biotechnology with a truly sustainable approach to beauty — so that skincare could be as respectful to nature as it is effective for skin.</p><p>Driven by a deep concern for the global plastic crisis, our founders pioneered an <strong>innovative, plastic-free packaging solution that is fully biodegradable</strong>. Every product is designed to deliver visible results while leaving the lightest footprint on the planet.</p>",
+            "text_size": 16
           }
         }
       },
       "block_order": [
-        "heading_666aiC",
         "richtext_bDXXtA"
       ],
       "name": "t:sections.text--rich-text.presets.name",
@@ -67,24 +60,24 @@
         "text_8Hc4Ag": {
           "type": "text",
           "settings": {
-            "heading": "What makes you different",
-            "subheading": "Shout about your unique selling points",
+            "heading": "Re[Sens] is sustainable skincare for sensitive skin, clinically tested and proven. We don’t just promise results — we guarantee them.",
+            "subheading": "",
             "link": ""
           }
         },
         "text_qyc6EK": {
           "type": "text",
           "settings": {
-            "heading": "What makes you different",
-            "subheading": "Shout about your unique selling points",
+            "heading": "In just our first year, Re[Sens] was honored with the Green Award at Édition Spéciale by Luxe Pack 2025 in Paris and recognized as a finalist for Best New Innovative Product at The Aesthetics Awards 2025 in the UK",
+            "subheading": "",
             "link": ""
           }
         },
         "text_kyphfL": {
           "type": "text",
           "settings": {
-            "heading": "What makes you different",
-            "subheading": "Shout about your unique selling points",
+            "heading": "Today, our brand is proudly present in Ukraine, the UK, Spain, Latvia, Lithuania, and Hungary, with European certification and a growing presence across both B2B and B2C markets.",
+            "subheading": "",
             "link": ""
           }
         }
@@ -97,6 +90,28 @@
       "name": "t:sections.text--text-adverts.presets.name",
       "settings": {
         "colors": "light"
+      }
+    },
+    "text_rich_text_VA6b7g": {
+      "type": "text--rich-text",
+      "blocks": {
+        "heading_Rz3JPa": {
+          "type": "heading",
+          "settings": {
+            "heading": "At Re[Sens], we believe that your skin deserves innovation, and our planet deserves care."
+          }
+        }
+      },
+      "block_order": [
+        "heading_Rz3JPa"
+      ],
+      "name": "t:sections.text--rich-text.presets.name",
+      "settings": {
+        "background_color": "",
+        "colors": "white",
+        "section_width": "full-width",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "logo-with-text": {
@@ -319,6 +334,7 @@
     "image-with-text-overlay",
     "text_rich_text_cNQxqf",
     "text_text_adverts_Dynibf",
+    "text_rich_text_VA6b7g",
     "logo-with-text",
     "resens-definition",
     "ukrainian-development",
