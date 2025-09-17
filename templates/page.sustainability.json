@@ -116,15 +116,23 @@
         "heading_REYp3W": {
           "type": "heading",
           "settings": {
-            "heading": "Through our unique Plastic Neutral Program, we join the global efforts to achieve key Sustainable Development Goals."
+            "heading": "Sustainability Goals"
+          }
+        },
+        "richtext_Vd3jnV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Through our unique Plastic Neutral Program, we join the global efforts to achieve key Sustainable Development Goals.</p>",
+            "text_size": 16
           }
         }
       },
       "block_order": [
-        "heading_REYp3W"
+        "heading_REYp3W",
+        "richtext_Vd3jnV"
       ],
       "custom_css": [
-        "h2 {line-height: 1.4em;}"
+        "p {text-align: center;}"
       ],
       "name": "t:sections.text--rich-text.presets.name",
       "settings": {
