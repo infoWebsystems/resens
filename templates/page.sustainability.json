@@ -110,16 +110,16 @@
         "text_alignment_mobile": "center"
       }
     },
-    "text_rich_text_3tWRh3": {
+    "text_rich_text_UcYFzT": {
       "type": "text--rich-text",
       "blocks": {
-        "heading_REYp3W": {
+        "heading_qDmEng": {
           "type": "heading",
           "settings": {
             "heading": "Sustainability Goals"
           }
         },
-        "richtext_Vd3jnV": {
+        "richtext_TWWgrb": {
           "type": "richtext",
           "settings": {
             "text": "<p>Through our unique Plastic Neutral Program, we join the global efforts to achieve key Sustainable Development Goals.</p>",
@@ -128,13 +128,11 @@
         }
       },
       "block_order": [
-        "heading_REYp3W",
-        "richtext_Vd3jnV"
+        "heading_qDmEng",
+        "richtext_TWWgrb"
       ],
-      "custom_css": [],
-      "name": "t:sections.text--rich-text.presets.name",
       "settings": {
-        "background_color": "",
+        "background_color": "#ffffff",
         "colors": "white",
         "section_width": "narrow",
         "text_alignment_desktop": "center",
@@ -554,7 +552,7 @@
     "text_rich_text_KRj3Vw",
     "text_rich_text_bngeLP",
     "text_rich_text_DAftC9",
-    "text_rich_text_3tWRh3",
+    "text_rich_text_UcYFzT",
     "image_logo_list_VTEpxB",
     "video_video_7GpWej",
     "text_rich_text_9EGRrh",
