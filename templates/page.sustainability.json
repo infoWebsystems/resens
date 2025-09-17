@@ -123,6 +123,9 @@
       "block_order": [
         "heading_REYp3W"
       ],
+      "custom_css": [
+        "h2 {line-height: 1.4em;}"
+      ],
       "name": "t:sections.text--rich-text.presets.name",
       "settings": {
         "background_color": "",
