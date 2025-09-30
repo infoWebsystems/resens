@@ -56,6 +56,13 @@
             "link": "https://viva.ua/fashion-beauty/19046-krasa-v-ritmi-usvidomlenosti-resens-predstaviv-kontseptsiyu-slow-is-the-new-smart"
           }
         },
+        "logo_image_jDJjGP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-4-insider.jpg",
+            "link": "https://insider.ua/11-zasobiv-yaki-varto-dodati-do-osinnoi-byuti-rutini/"
+          }
+        },
         "logo_image_whdYAf": {
           "type": "logo_image",
           "settings": {
@@ -68,6 +75,13 @@
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-11-marieclaire.jpg",
             "link": "https://marieclaire.ua/beauty/re-sens-den-narodzhennya-vysadka-derev/"
+          }
+        },
+        "logo_image_nCJ9hN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-13-insider.jpg",
+            "link": "https://insider.ua/rozmovi-pro-majbutne-krasi-byuti-branch-vid-resens/"
           }
         },
         "logo_image_yFk7kt": {
@@ -125,26 +139,14 @@
             "image": "shopify://shop_images/banner_500x500_20250929-12-marieclaire.jpg",
             "link": "https://marieclaire.ua/life/favoryty-misyatsya-digital-komanda-marie-claire-pro-znahidky-ta-nathnennya-u-veresni-2025/"
           }
-        },
-        "logo_image_nCJ9hN": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20250929-13-insider.jpg",
-            "link": "https://insider.ua/rozmovi-pro-majbutne-krasi-byuti-branch-vid-resens/"
-          }
-        },
-        "logo_image_jDJjGP": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20250929-4-insider.jpg",
-            "link": "https://insider.ua/11-zasobiv-yaki-varto-dodati-do-osinnoi-byuti-rutini/"
-          }
         }
       },
       "block_order": [
         "logo_image_9wj3da",
+        "logo_image_jDJjGP",
         "logo_image_whdYAf",
         "logo_image_hVbkyn",
+        "logo_image_nCJ9hN",
         "logo_image_yFk7kt",
         "logo_image_cBET6d",
         "logo_image_6NGTzK",
@@ -152,9 +154,7 @@
         "logo_image_77k4hD",
         "logo_image_wNXUyc",
         "logo_image_z6ziYq",
-        "logo_image_bnKxdw",
-        "logo_image_nCJ9hN",
-        "logo_image_jDJjGP"
+        "logo_image_bnKxdw"
       ],
       "custom_css": [],
       "name": "t:sections.image--logo-list.presets.name",
