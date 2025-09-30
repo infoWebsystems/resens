@@ -132,13 +132,6 @@
             "image": "shopify://shop_images/banner_500x500_20250929-9-karavan.jpg",
             "link": "https://karavan.ua/krasota/re-sens-ukrainskyj-sustainable-brend-shcho-vidkryvaie-novu-biolohiiu-krasy/"
           }
-        },
-        "logo_image_bnKxdw": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20250929-12-marieclaire.jpg",
-            "link": "https://marieclaire.ua/life/favoryty-misyatsya-digital-komanda-marie-claire-pro-znahidky-ta-nathnennya-u-veresni-2025/"
-          }
         }
       },
       "block_order": [
@@ -153,8 +146,7 @@
         "logo_image_bHYFLR",
         "logo_image_77k4hD",
         "logo_image_wNXUyc",
-        "logo_image_z6ziYq",
-        "logo_image_bnKxdw"
+        "logo_image_z6ziYq"
       ],
       "custom_css": [],
       "name": "t:sections.image--logo-list.presets.name",
@@ -167,6 +159,13 @@
       "type": "image--logo-list",
       "blocks": {
         "logo_image_cAi8gf": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-12-marieclaire.jpg",
+            "link": "https://marieclaire.ua/life/favoryty-misyatsya-digital-komanda-marie-claire-pro-znahidky-ta-nathnennya-u-veresni-2025/"
+          }
+        },
+        "logo_image_Qp7PrE": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20250901-vogue.jpg",
@@ -267,6 +266,7 @@
       },
       "block_order": [
         "logo_image_cAi8gf",
+        "logo_image_Qp7PrE",
         "logo_image_G9wJb3",
         "logo_image_r3Rarj",
         "logo_image_xee348",
