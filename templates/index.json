@@ -39,6 +39,7 @@
         },
         "image_hnYhg8": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
