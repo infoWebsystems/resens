@@ -661,6 +661,13 @@
             "link": "https://insider.ua/11-zasobiv-yaki-varto-dodati-do-osinnoi-byuti-rutini/"
           }
         },
+        "logo_image_NFGA7C": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bazaar.png",
+            "link": "https://harpersbazaar.com.ua/beauty/practice/dohlyadovi-zasoby-yaki-varto-sprobuvaty-prosto-zaraz/"
+          }
+        },
         "logo_image_n4pkqp": {
           "type": "logo_image",
           "settings": {
@@ -724,6 +731,7 @@
         "logo_image_Y44kDg",
         "logo_image_fhkwQC",
         "logo_image_iXpprn",
+        "logo_image_NFGA7C",
         "logo_image_n4pkqp",
         "logo_image_LzVTmL",
         "logo_image_PGjKqK",
