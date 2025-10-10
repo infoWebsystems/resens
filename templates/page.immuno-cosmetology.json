@@ -54,18 +54,18 @@
         "text_alignment_mobile": "center"
       }
     },
-    "image_image_with_text_mVYarX": {
+    "image_image_with_text_3tTMUY": {
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "white",
-        "image": "shopify://shop_images/FOX02608.jpg",
+        "colors": "light",
+        "image": "shopify://shop_images/1_579df93d-5d42-4023-b324-62715c267db5.png",
         "text_overlapping_image": false,
-        "section-width": "content",
+        "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
         "title": "Skin’s immune system includes...",
-        "text": "<p>... immune cells (Langerhans cells, keratinocytes), the microbiome, and signalling molecules — forming the first line of defense against external threats. Immunocosmetics gently interact with these structures via active ingredients that:</p><ul><li>strengthen the barrier</li><li>reduce hyperreactivity</li><li>support the microbiome</li><li>regulate inflammatory responses</li></ul>",
+        "text": "<p>... immune cells (Langerhans cells, keratinocytes), the microbiome, and signalling molecules — forming the first line of defense against external threats. Immunocosmetics gently interact with these structures via active ingredients that:strengthen the barrier, reduce hyperreactivity, support the microbiome, regulate inflammatory responses</p>",
         "button_label": "",
         "button_link": ""
       }
@@ -507,7 +507,7 @@
   "order": [
     "image-with-text-overlay",
     "text_rich_text_iREWUh",
-    "image_image_with_text_mVYarX",
+    "image_image_with_text_3tTMUY",
     "text_rich_text_NFj8bP",
     "eco-responcibility",
     "image_image_with_text_overlay_6Vgczd",

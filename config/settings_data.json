@@ -175,10 +175,6 @@
           "option_classic_flag_style": "square",
           "option_classic_currency_type": "symbol",
           "search_country": true,
-          "block_background": "#ffffff",
-          "style_colors_background": "#ffffff",
-          "style_colors_border": "#000000",
-          "style_colors_text": "#000000",
           "option_modal_continent": true,
           "option_flag_style": "square",
           "option_currency_type": "iso",
@@ -186,6 +182,10 @@
           "title": "Select Your Region",
           "language_title": "Preferred Language",
           "helper_text": "Changing language will not affect your selected region",
+          "block_background": "#ffffff",
+          "style_colors_background": "#ffffff",
+          "style_colors_border": "#000000",
+          "style_colors_text": "#000000",
           "block_alignement": "center"
         }
       },
