@@ -52,6 +52,13 @@
         "logo_image_9wj3da": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-15-bazaar.jpg",
+            "link": "https://harpersbazaar.com.ua/beauty/practice/dohlyadovi-zasoby-yaki-varto-sprobuvaty-prosto-zaraz/"
+          }
+        },
+        "logo_image_CtmUDP": {
+          "type": "logo_image",
+          "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-1-Viva.jpg",
             "link": "https://viva.ua/fashion-beauty/19046-krasa-v-ritmi-usvidomlenosti-resens-predstaviv-kontseptsiyu-slow-is-the-new-smart"
           }
@@ -136,6 +143,7 @@
       },
       "block_order": [
         "logo_image_9wj3da",
+        "logo_image_CtmUDP",
         "logo_image_jDJjGP",
         "logo_image_whdYAf",
         "logo_image_hVbkyn",
