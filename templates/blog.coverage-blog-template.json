@@ -52,6 +52,13 @@
         "logo_image_9wj3da": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-14-TCH.jpg",
+            "link": "https://tsn.ua/lady/krasota/kosmetologiya/osinniy-perezapusk-shkiry-porady-kosmetychnoyi-khimikyni-2927393.html"
+          }
+        },
+        "logo_image_8pYLKA": {
+          "type": "logo_image",
+          "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-15-bazaar.jpg",
             "link": "https://harpersbazaar.com.ua/beauty/practice/dohlyadovi-zasoby-yaki-varto-sprobuvaty-prosto-zaraz/"
           }
@@ -143,6 +150,7 @@
       },
       "block_order": [
         "logo_image_9wj3da",
+        "logo_image_8pYLKA",
         "logo_image_CtmUDP",
         "logo_image_jDJjGP",
         "logo_image_whdYAf",
