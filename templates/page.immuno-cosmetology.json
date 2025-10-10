@@ -59,7 +59,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/Untitled-1.jpg",
+        "image": "shopify://shop_images/FOX02608.jpg",
         "text_overlapping_image": false,
         "section-width": "content",
         "layout": "left",
