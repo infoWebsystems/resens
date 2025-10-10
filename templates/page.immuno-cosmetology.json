@@ -152,7 +152,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/medium-shot-young-woman-posing-with-tangerine.jpg",
+        "image": "shopify://shop_images/1_579df93d-5d42-4023-b324-62715c267db5.png",
         "text_overlapping_image": false,
         "section-width": "content",
         "layout": "left",
@@ -168,7 +168,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/abstract-pink-oil-stained-glass.jpg",
+        "image": "shopify://shop_images/2_21796d32-7687-434a-b71e-a800067214d5.png",
         "text_overlapping_image": false,
         "section-width": "content",
         "layout": "right",
@@ -184,7 +184,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/3d-medical-background-with-virus-cells-dna-strand.jpg",
+        "image": "shopify://shop_images/3_925a797b-0f17-4f70-883c-77dfafd81d14.png",
         "text_overlapping_image": false,
         "section-width": "content",
         "layout": "left",
