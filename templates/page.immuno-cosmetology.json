@@ -147,8 +147,47 @@
         "text_alignment_mobile": "center"
       }
     },
+    "text_text_adverts_YTTYxC": {
+      "type": "text--text-adverts",
+      "blocks": {
+        "text_tnErfM": {
+          "type": "text",
+          "settings": {
+            "heading": "Immune activation via antimicrobial peptides:",
+            "subheading": "L. casei stimulates β-defensin and LL-37 production, suppressing S. aureus, a key trigger of inflammatory dermatoses and skin sensitization.",
+            "link": ""
+          }
+        },
+        "text_VezjxH": {
+          "type": "text",
+          "settings": {
+            "heading": "Support of CoNS flora (coagulase‑negative staphylococci):",
+            "subheading": "Commensal flora naturally competes with pathogens, regulates sebum, and reduces TLR signalling in keratinocytes. Its level declines tenfold with age, directly linked to skin hypersensitivity.",
+            "link": ""
+          }
+        },
+        "text_kRP8Vn": {
+          "type": "text",
+          "settings": {
+            "heading": "Neuro-immune stabilization:",
+            "subheading": "Fewer pathogens → less TLR activation → lower sensory neuron load → reduced hyperreactivity.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_tnErfM",
+        "text_VezjxH",
+        "text_kRP8Vn"
+      ],
+      "name": "t:sections.text--text-adverts.presets.name",
+      "settings": {
+        "colors": "light"
+      }
+    },
     "image_image_with_text_6AiaFJ": {
       "type": "image--image-with-text",
+      "disabled": true,
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
@@ -165,6 +204,7 @@
     },
     "image_image_with_text_C99WBX": {
       "type": "image--image-with-text",
+      "disabled": true,
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
@@ -181,6 +221,7 @@
     },
     "image_image_with_text_PQ4gyz": {
       "type": "image--image-with-text",
+      "disabled": true,
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
@@ -471,6 +512,7 @@
     "eco-responcibility",
     "image_image_with_text_overlay_6Vgczd",
     "text_rich_text_KUaqc6",
+    "text_text_adverts_YTTYxC",
     "image_image_with_text_6AiaFJ",
     "image_image_with_text_C99WBX",
     "image_image_with_text_PQ4gyz",
