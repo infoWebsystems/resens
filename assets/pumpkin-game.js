@@ -1,10 +1,10 @@
-// Вміст для /assets/pumpkin-game.js
+// Вміст для /assets/pumpkin-game.js (Версія 2.0)
 
 jQuery(document).ready(function ($) {
   // --- НАЛАШТУВАННЯ ---
-  const MAX_COUNT = 20; // Максимальна кількість гарбузів
-  const SPAWN_CHANCE = 50; // Шанс появи (у %)
-  const SPAWN_DELAY = 1500; // Час очікування (1.5 сек)
+  const MAX_COUNT = 20;
+  const SPAWN_CHANCE = 50; 
+  const SPAWN_DELAY = 1500;
   // --- КІНЕЦЬ НАЛАШТУВАНЬ ---
 
   const counterId = 'pumpkin-counter';
@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
    */
   function createPumpkinCounter() {
     const current_count = getFoundPumpkins().length;
-    if (current_count >= MAX_COUNT) return; // Не показувати, якщо гра пройдена
+    if (current_count >= MAX_COUNT) return;
 
     const counterHTML = `
       <div id="${counterId}">
@@ -36,31 +36,19 @@ jQuery(document).ready(function ($) {
    * Створює гарбуз у випадковому місці
    */
   function spawnPumpkin() {
-    // 1. Перевірка шансу
-    if (Math.random() * 100 > SPAWN_CHANCE) {
-      return;
-    }
-
+    if (Math.random() * 100 > SPAWN_CHANCE) return;
     const foundPumpkins = getFoundPumpkins();
     const current_count = foundPumpkins.length;
+    if (current_count >= MAX_COUNT) return;
 
-    // 2. Перевірка, чи гра не закінчена
-    if (current_count >= MAX_COUNT) {
-      return;
-    }
-
-    // 3. Генеруємо ID, який ще не знайдено
     let pumpkinId;
     do {
       pumpkinId = `pumpkin-${Math.floor(Math.random() * MAX_COUNT) + 1}`;
     } while (foundPumpkins.includes(pumpkinId));
 
-    // 4. Створюємо HTML
     const $pumpkin = $(
       `<span class="collectible-pumpkin is-spawning" data-id="${pumpkinId}">🎃</span>`
     );
-
-    // 5. Обираємо координати
     const $container = $('body');
     const padding = 50;
     const randX =
@@ -69,19 +57,37 @@ jQuery(document).ready(function ($) {
     const viewHeight = $(window).height() + $(window).scrollTop();
     const randY =
       Math.floor(Math.random() * (viewHeight - padding * 2)) + padding;
-
     $pumpkin.css({
       top: `${randY}px`,
       left: `${randX}px`,
     });
-
-    // 6. Додаємо на сторінку
     $container.append($pumpkin);
     setTimeout(() => $pumpkin.removeClass('is-spawning'), 100);
   }
 
   /**
-   * Обробник кліків
+   * [НОВА ФУНКЦІЯ]
+   * Читає localStorage і застосовує потрібну знижку до кошика.
+   */
+  function updateDiscountBasedOnPumpkins() {
+    const foundPumpkins = getFoundPumpkins();
+    const count = foundPumpkins.length;
+    
+    // Якщо гарбузів 0, нічого не робимо
+    if (count === 0) {
+      return; 
+    }
+    
+    const discountCode = `PUMPKIN${count}`;
+    console.log(`[Pumpkin Game] Cart updated. Attempting to apply: ${discountCode}`);
+
+    // Цей запит тепер спрацює, тому що ця функція
+    // буде викликана ПІСЛЯ додавання товару в кошик.
+    $.post('/discount/' + discountCode);
+  }
+
+  /**
+   * Обробник кліків (ЗМІНЕНО)
    */
   $('body').on('click', '.collectible-pumpkin', function (e) {
     e.preventDefault();
@@ -91,19 +97,22 @@ jQuery(document).ready(function ($) {
     if ($pumpkin.hasClass('found')) return;
     $pumpkin.addClass('found');
 
-    // Зберігаємо прогрес у localStorage
     let foundPumpkins = getFoundPumpkins();
     if (!foundPumpkins.includes(pumpkinId)) {
       foundPumpkins.push(pumpkinId);
       localStorage.setItem(storageKey, JSON.stringify(foundPumpkins));
     }
 
-    // Оновлюємо лічильник
     const new_count = foundPumpkins.length;
     $(`#pumpkin-counter-current`).text(new_count);
 
-    // Спроба застосувати знижку
-    applyShopifyDiscount(new_count);
+    // [ВИДАЛЕНО]
+    // applyShopifyDiscount(new_count); // Більше не викликаємо це тут
+
+    // [НОВЕ]
+    // Ми викликаємо нову функцію. Вона спробує застосувати
+    // знижку негайно, *якщо* в кошику ВЖЕ є товари.
+    updateDiscountBasedOnPumpkins(); 
 
     if (new_count >= MAX_COUNT) {
       alert(
@@ -113,22 +122,26 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  /**
-   * Магія Shopify: застосування знижки через AJAX
-   */
-  function applyShopifyDiscount(count) {
-    if (count === 0) return;
-    const discountCode = `PUMPKIN${count}`;
-
-    // Використовуємо API Shopify для застосування коду
-    $.post('/discount/' + discountCode).always(function () {
-      // Опціонально: оновити кошик, щоб показати знижку
-      // Це може бути специфічно для вашої теми
-      // fetch('/cart.js').then(res => res.json()).then(cart => console.log(cart));
-    });
-  }
-
   // --- ЗАПУСК ГРИ ---
   createPumpkinCounter();
   setTimeout(spawnPumpkin, SPAWN_DELAY);
+  
+  // [НОВИЙ ОБРОБНИК]
+  // Це "слухач", який відстежує всі AJAX-запити на сайті.
+  // Якщо він бачить, що тема оновлює кошик (додає товар),
+  // він запускає нашу функцію знижки.
+  $(document).ajaxComplete(function(event, xhr, settings) {
+    // Шукаємо запити, які оновлюють кошик
+    if (settings.url.includes('/cart/add') || settings.url.includes('/cart/change')) {
+      console.log('[Pumpkin Game] Detected cart update. Running discount check.');
+      // Чекаємо 500мс, щоб Shopify встиг обробити кошик
+      setTimeout(updateDiscountBasedOnPumpkins, 500);
+    }
+  });
+
+  // [НОВЕ]
+  // Також запускаємо 1 раз при завантаженні сторінки.
+  // Це застосує знижку, якщо користувач оновить сторінку
+  // або повернеться на сайт пізніше, вже маючи товари в кошику.
+  updateDiscountBasedOnPumpkins();
 });
