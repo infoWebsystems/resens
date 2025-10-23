@@ -1,4 +1,4 @@
-// Вміст для /assets/pumpkin-game.js (Версія 3.3 - з вашим селектором)
+// Вміст для /assets/pumpkin-game.js (Версія 3.4 - Перехоплювач)
 
 jQuery(document).ready(function ($) {
   // --- НАЛАШТУВАННЯ ---
@@ -7,13 +7,9 @@ jQuery(document).ready(function ($) {
   const SPAWN_DELAY = 1500;
   // --- КІНЕЦЬ НАЛАШТУВАНЬ ---
 
-  // ####### ВАШ УНІКАЛЬНИЙ СЕЛЕКТОР ВЖЕ ТУТ #######
-  const YOUR_CART_BUTTON_SELECTOR = '.js-drawer-open-right-link-custom'; 
-  // ##########################################
-
   const counterId = 'pumpkin-counter';
   const storageKey = 'foundPumpkinsList';
-  console.log('[Pumpkin Game] Script v3.3 Loaded.');
+  console.log('[Pumpkin Game] Script v3.4 Loaded.');
 
   function getFoundPumpkins() {
     return JSON.parse(localStorage.getItem(storageKey)) || [];
@@ -60,22 +56,40 @@ jQuery(document).ready(function ($) {
     setTimeout(() => $pumpkin.removeClass('is-spawning'), 100);
   }
 
+  /**
+   * [ОНОВЛЕНО] Застосовує знижку і повертає "Проміс",
+   * щоб ми знали, коли він закінчить.
+   */
   function updateDiscountBasedOnPumpkins() {
-    const foundPumpkins = getFoundPumpkins();
-    const count = foundPumpkins.length;
-    if (count === 0) return; 
-    const discountCode = `PUMPKIN${count}`;
-    console.log(`[Pumpkin Game] Applying discount: ${discountCode}`);
-    $.post('/discount/' + discountCode)
-      .done(function() {
-        console.log(`[Pumpkin Game] Successfully applied ${discountCode}`);
-        $.get('/cart.js'); 
-      })
-      .fail(function() {
-        console.error(`[Pumpkin Game] Failed to apply ${discountCode}.`);
-      });
+    // Ця функція повертає jQuery Promise
+    return $.Deferred(function(def) {
+      const foundPumpkins = getFoundPumpkins();
+      const count = foundPumpkins.length;
+      
+      if (count === 0) {
+        console.log('[Pumpkin Game] 0 pumpkins, skipping discount.');
+        def.resolve(); // 0 гарбузів, просто продовжуємо
+        return;
+      }
+      
+      const discountCode = `PUMPKIN${count}`;
+      console.log(`[Pumpkin Game] Applying discount: ${discountCode}`);
+
+      $.post('/discount/' + discountCode)
+        .done(function() {
+          console.log(`[Pumpkin Game] Successfully applied ${discountCode}`);
+          def.resolve(); // Знижка застосована, продовжуємо
+        })
+        .fail(function() {
+          console.error(`[Pumpkin Game] Failed to apply ${discountCode}.`);
+          def.resolve(); // Помилка, але все одно продовжуємо (щоб користувач міг оплатити)
+        });
+    }).promise();
   }
 
+  /**
+   * Обробник кліків по гарбузу
+   */
   $('body').on('click', '.collectible-pumpkin', function (e) {
     e.preventDefault();
     const $pumpkin = $(this);
@@ -91,6 +105,7 @@ jQuery(document).ready(function ($) {
     const new_count = getFoundPumpkins().length;
     $(`#pumpkin-counter-current`).text(new_count);
     console.log(`[Pumpkin Game] Found pumpkin! Total: ${new_count}`);
+
     if (new_count >= MAX_COUNT) {
       alert(
         `🎃 ВІТАЄМО! 🎃\nВи зібрали всі ${MAX_COUNT} гарбузів! Ваша максимальна знижка (${MAX_COUNT}%) активована.`
@@ -99,19 +114,50 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  // [ОНОВЛЕНИЙ ОБРОБНИК v3.3]
-  // Ми об'єднуємо стандартні селектори з вашим селектором
-  const cartSelectors = `a[href="/cart"], .site-header__cart, .cart-icon, .header-cart-btn, ${YOUR_CART_BUTTON_SELECTOR}`;
+  /**
+   * [НОВИЙ ГОЛОВНИЙ ОБРОБНИК v3.4]
+   * Ми слухаємо кліки на кнопці "Оформити замовлення"
+   * (стандартний селектор Shopify - [name="checkout"]).
+   */
+  const checkoutButtonSelector = '[name="checkout"]';
   
-  $('body').on('click', cartSelectors, function() {
-    console.log(`[Pumpkin Game] Cart icon clicked (selector: ${YOUR_CART_BUTTON_SELECTOR}). Waiting 1 second...`);
-    setTimeout(function() {
-      updateDiscountBasedOnPumpkins();
-    }, 1000); // 1 секунда очікування, щоб кошик відкрився
+  $('body').on('click', checkoutButtonSelector, function(e) {
+    // Перевіряємо, чи це *не* сторінка checkout.shopify.com
+    if (window.location.href.includes('checkout.shopify.com')) {
+      return; // Не чіпаємо фінальну сторінку оплати
+    }
+
+    console.log('[Pumpkin Game] Checkout button clicked. Intercepting...');
+    
+    // 1. Зупиняємо перехід
+    e.preventDefault();
+    
+    const $button = $(this);
+    const originalButtonText = $button.text();
+    
+    // 2. Блокуємо кнопку на час запиту
+    $button.text('Застосовуємо знижку...');
+    $button.prop('disabled', true);
+
+    // 3. Запускаємо функцію знижки і чекаємо, поки вона закінчиться
+    updateDiscountBasedOnPumpkins().always(function() {
+      console.log('[Pumpkin Game] Discount logic finished. Proceeding to checkout.');
+      
+      // 4. Повертаємо кнопку і відправляємо форму
+      $button.text(originalButtonText);
+      $button.prop('disabled', false);
+      
+      const $form = $button.closest('form');
+      if ($form.length) {
+        $form.submit(); // Відправляємо користувача на оплату
+      } else {
+        // Якщо раптом не знайшли форму, просто йдемо на checkout
+        window.location.href = '/checkout';
+      }
+    });
   });
   
   // --- ЗАПУСК ГРИ ---
   createPumpkinCounter();
   setTimeout(spawnPumpkin, SPAWN_DELAY);
-  updateDiscountBasedOnPumpkins(); // Для тих, хто оновлює сторінку
 });
