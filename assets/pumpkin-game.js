@@ -1,10 +1,10 @@
-// Вміст для /assets/pumpkin-game.js (Версія 2.0)
+// Вміст для /assets/pumpkin-game.js (Версія 3.0)
 
 jQuery(document).ready(function ($) {
   // --- НАЛАШТУВАННЯ ---
   const MAX_COUNT = 20;
-  const SPAWN_CHANCE = 50; 
-  const SPAWN_DELAY = 1500;
+  const SPAWN_CHANCE = 50; // 50% шанс
+  const SPAWN_DELAY = 1500; // 1.5 сек
   // --- КІНЕЦЬ НАЛАШТУВАНЬ ---
 
   const counterId = 'pumpkin-counter';
@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
   }
 
   /**
-   * [НОВА ФУНКЦІЯ]
+   * [НОВА ЛОГІКА]
    * Читає localStorage і застосовує потрібну знижку до кошика.
    */
   function updateDiscountBasedOnPumpkins() {
@@ -81,13 +81,12 @@ jQuery(document).ready(function ($) {
     const discountCode = `PUMPKIN${count}`;
     console.log(`[Pumpkin Game] Cart updated. Attempting to apply: ${discountCode}`);
 
-    // Цей запит тепер спрацює, тому що ця функція
-    // буде викликана ПІСЛЯ додавання товару в кошик.
+    // Використовуємо $.post (jQuery) для застосування
     $.post('/discount/' + discountCode);
   }
 
   /**
-   * Обробник кліків (ЗМІНЕНО)
+   * Обробник кліків
    */
   $('body').on('click', '.collectible-pumpkin', function (e) {
     e.preventDefault();
@@ -106,12 +105,8 @@ jQuery(document).ready(function ($) {
     const new_count = foundPumpkins.length;
     $(`#pumpkin-counter-current`).text(new_count);
 
-    // [ВИДАЛЕНО]
-    // applyShopifyDiscount(new_count); // Більше не викликаємо це тут
-
-    // [НОВЕ]
-    // Ми викликаємо нову функцію. Вона спробує застосувати
-    // знижку негайно, *якщо* в кошику ВЖЕ є товари.
+    // Спробуємо застосувати знижку негайно,
+    // на випадок, якщо товари в кошику ВЖЕ є.
     updateDiscountBasedOnPumpkins(); 
 
     if (new_count >= MAX_COUNT) {
@@ -122,26 +117,44 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  /**
+   * [НОВИЙ "ШПИГУН" ЗА КОШИКОМ]
+   * Цей код замінює глобальну функцію `fetch` на нашу власну,
+   * щоб "підслухати", коли тема оновить кошик.
+   */
+  function patchFetch() {
+      const originalFetch = window.fetch; // Зберігаємо оригінал
+      
+      window.fetch = function() {
+          const [url, options] = arguments; // Отримуємо URL
+          
+          // Викликаємо оригінальний fetch
+          const fetchPromise = originalFetch.apply(this, arguments);
+
+          // Перевіряємо, чи це операція з кошиком
+          if (typeof url === 'string' && (url.includes('/cart/add') || url.includes('/cart/change') || url.includes('/cart/update'))) {
+              
+              console.log('[Pumpkin Game] Detected "fetch" cart update. Attaching discount logic.');
+              
+              // Коли запит виконано, запускаємо нашу логіку
+              fetchPromise.then(() => {
+                  // Чекаємо 500мс, щоб Shopify встиг оновити кошик
+                  setTimeout(updateDiscountBasedOnPumpkins, 500); 
+              });
+          }
+          
+          return fetchPromise; // Повертаємо оригінальний запит
+      };
+  }
+
   // --- ЗАПУСК ГРИ ---
   createPumpkinCounter();
   setTimeout(spawnPumpkin, SPAWN_DELAY);
   
-  // [НОВИЙ ОБРОБНИК]
-  // Це "слухач", який відстежує всі AJAX-запити на сайті.
-  // Якщо він бачить, що тема оновлює кошик (додає товар),
-  // він запускає нашу функцію знижки.
-  $(document).ajaxComplete(function(event, xhr, settings) {
-    // Шукаємо запити, які оновлюють кошик
-    if (settings.url.includes('/cart/add') || settings.url.includes('/cart/change')) {
-      console.log('[Pumpkin Game] Detected cart update. Running discount check.');
-      // Чекаємо 500мс, щоб Shopify встиг обробити кошик
-      setTimeout(updateDiscountBasedOnPumpkins, 500);
-    }
-  });
+  // Активуємо нашого "шпигуна"
+  patchFetch(); 
 
-  // [НОВЕ]
-  // Також запускаємо 1 раз при завантаженні сторінки.
-  // Це застосує знижку, якщо користувач оновить сторінку
-  // або повернеться на сайт пізніше, вже маючи товари в кошику.
+  // Запускаємо 1 раз при завантаженні сторінки
+  // (Це спрацює, якщо користувач оновить сторінку З товарами в кошику)
   updateDiscountBasedOnPumpkins();
 });
