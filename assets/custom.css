@@ -382,3 +382,47 @@
 .ajaxcart__footer .cart__checkout {
   font-size: 14px !important;
 }
+
+/* ===========================================
+   СТИЛІ ДЛЯ ГАРБУЗА ТА ЛІЧИЛЬНИКА
+   =========================================== */
+.collectible-pumpkin {
+  position: absolute; /* Позицію встановить JS */
+  z-index: 99999;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0);
+  opacity: 0;
+  font-size: 50px; /* Розмір емодзі */
+}
+
+.collectible-pumpkin:not(.is-spawning) {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.collectible-pumpkin:not(.found):hover {
+  transform: scale(1.2);
+}
+
+.collectible-pumpkin.found {
+  transform: scale(0);
+  opacity: 0;
+  cursor: default;
+}
+
+/* СТИЛІ ДЛЯ ЛІЧИЛЬНИКА (з виправленням для моб.) */
+#pumpkin-counter {
+  position: fixed;
+  bottom: 100px;
+  right: 15px;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 999999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease;
+}
