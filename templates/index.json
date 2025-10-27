@@ -31,7 +31,7 @@
             "mobile_text_position": "center_left",
             "image_overlay": "#262428",
             "image_overlay_opacity": 20,
-            "caption-text": "#242424",
+            "caption-text": "#ffffff",
             "button-text": "#ffffff",
             "button-background": "#242424",
             "hover-button-background": "#9f9f9f"
