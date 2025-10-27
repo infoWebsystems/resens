@@ -12,6 +12,32 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
+        "image_hnYhg8": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "Shop Now",
+            "first_button_link": "shopify://collections",
+            "second_button_label": "SUSTAINABILITY",
+            "second_button_link": "shopify://pages/sustainability",
+            "image": "shopify://shop_images/b2c_Halloween_web.jpg",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile_image": "shopify://shop_images/b2c_Halloween_mobile.jpg",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 20,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9f9f9f"
+          }
+        },
         "image_HRphyk": {
           "type": "image",
           "settings": {
@@ -26,32 +52,6 @@
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
             "mobile_image": "shopify://shop_images/b2c___mobile_2667e5e5-7919-4d44-b66c-3d76baa94b6c.jpg",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 20,
-            "caption-text": "#242424",
-            "button-text": "#ffffff",
-            "button-background": "#242424",
-            "hover-button-background": "#9f9f9f"
-          }
-        },
-        "image_hnYhg8": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "text": "",
-            "first_button_label": "Shop Now",
-            "first_button_link": "shopify://products/brightening-peel-hpa",
-            "second_button_label": "SUSTAINABILITY",
-            "second_button_link": "shopify://pages/sustainability",
-            "image": "shopify://shop_images/b2c_web_dc1b3b94-4097-4698-85bc-1f0f5454ad61.jpg",
-            "desktop-caption-heading-size": 80,
-            "desktop-caption-body-text-size": 24,
-            "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/b2c_mobile.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
@@ -89,8 +89,8 @@
         }
       },
       "block_order": [
-        "image_HRphyk",
         "image_hnYhg8",
+        "image_HRphyk",
         "image_iQ7EqU"
       ],
       "custom_css": [],
