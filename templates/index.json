@@ -15,8 +15,8 @@
         "image_hnYhg8": {
           "type": "image",
           "settings": {
-            "title": "1 гарбузик = 1% знижки",
-            "text": "Збирайте гарбузики і отримуйте знижки на улюблені продукти",
+            "title": "1 pumpkin = 1% discount",
+            "text": "Collect pumpkins and get discounts on your favorite products",
             "first_button_label": "Shop Now",
             "first_button_link": "shopify://collections",
             "second_button_label": "SUSTAINABILITY",
