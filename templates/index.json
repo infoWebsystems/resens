@@ -24,7 +24,7 @@
             "image": "shopify://shop_images/b2c_Halloween_web.jpg",
             "desktop-caption-heading-size": 72,
             "desktop-caption-body-text-size": 24,
-            "text_position": "center",
+            "text_position": "center_left",
             "mobile_image": "shopify://shop_images/b2c_Halloween_mobile.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
