@@ -2,7 +2,7 @@
 
 jQuery(document).ready(function ($) {
   // --- НАЛАШТУВАННЯ ---
-  const MAX_COUNT = 20;
+  const MAX_COUNT = 15;
   const SPAWN_CHANCE = 50; 
   const SPAWN_DELAY = 1500;
   // --- КІНЕЦЬ НАЛАШТУВАНЬ ---
