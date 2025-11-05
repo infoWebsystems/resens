@@ -45,6 +45,17 @@
             "button_link": "https://www.instagram.com/malevych.beauty.hub/"
           }
         },
+        "image_and_text_477eQi": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/MALEVYCH_BEAUTY_HUB.png",
+            "grid_image_size": "wide",
+            "heading": "Vinnytsia",
+            "text": "<h5><strong>MALEVYCH BEAUTY HUB</strong><br/></h5><p>Working hours:<br/>Mon-Fri 09:00-20:00</p><p>13, Architect Artynov St., Vinnytsia<br/>+380 735 000 7220</p>",
+            "button_text": "Go to Instagram",
+            "button_link": "https://www.instagram.com/malevych.beauty.hub/"
+          }
+        },
         "image_and_text_rnjWH8": {
           "type": "image_and_text",
           "settings": {
@@ -59,12 +70,12 @@
         "image_and_text_TR4bXF": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify://shop_images/share_1.jpg",
+            "image": "shopify://shop_images/cutis.clinic.png",
             "grid_image_size": "wide",
-            "heading": "Vinnytsia",
-            "text": "<h5><strong>Franceup Cosmetics</strong></h5><p>Working hours:<br/>Mon-Fri 10:00-19:00<br/><br/>113 Pyrogova St., Vinnytsia,<br/>+38 (068) 174 76 34</p>",
+            "heading": "Kyiv",
+            "text": "<h5><strong>Cutis Clinic</strong></h5><p>Working hours:<br/>Tue-Sat 10:00-18:00<br/><br/>Kyiv, Vozdvyzhenska St., 28-30<br/>+380 (93) 241 02 06</p>",
             "button_text": "Go to the site",
-            "button_link": "https://franceup.com.ua/"
+            "button_link": "https://www.cutis.clinic/"
           }
         },
         "image_and_text_RDa787": {
@@ -114,6 +125,7 @@
       },
       "block_order": [
         "image_and_text_zcFLdy",
+        "image_and_text_477eQi",
         "image_and_text_rnjWH8",
         "image_and_text_TR4bXF",
         "image_and_text_RDa787",
