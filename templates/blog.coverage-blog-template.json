@@ -46,23 +46,45 @@
         "custom_liquid": "<div style=\"margin-top: 40px;\"></div>"
       }
     },
-    "image_logo_list_9kwTaY": {
+    "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
-        "logo_image_DDw3MV": {
+        "logo_image_hhqbdb": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20251104-22-marieclaire.jpg",
+            "link": "https://marieclaire.ua/beauty/b-yuti-novynky-kosmetyky-dlya-gub-i-ochej-osin-2025/"
+          }
+        },
+        "logo_image_Y3miVQ": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-21-bhub.jpg",
             "link": "https://bhub.com.ua/uk/efekt-liftingu-12-zasobiv-dlya-omolodzhennya-shkiri-oblichchya/"
           }
         },
-        "logo_image_JMiqBx": {
+        "logo_image_CK3b96": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-20-vogue.jpg",
             "link": "https://vogue.ua/article/beauty/kozha/neyrokosmetika-noviy-trend-u-doglyadi-za-shkiroyu-yakiy-shvalyuyut-dermatologi-60827.html"
           }
-        },
+        }
+      },
+      "block_order": [
+        "logo_image_hhqbdb",
+        "logo_image_Y3miVQ",
+        "logo_image_CK3b96"
+      ],
+      "name": "t:sections.image--logo-list.presets.name",
+      "settings": {
+        "colors": "light",
+        "title": "Media about us"
+      }
+    },
+    "image_logo_list_9kwTaY": {
+      "type": "image--logo-list",
+      "blocks": {
         "logo_image_3jjTdJ": {
           "type": "logo_image",
           "settings": {
@@ -191,8 +213,6 @@
         }
       },
       "block_order": [
-        "logo_image_DDw3MV",
-        "logo_image_JMiqBx",
         "logo_image_3jjTdJ",
         "logo_image_9wj3da",
         "logo_image_haB87q",
@@ -216,7 +236,7 @@
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
         "colors": "white",
-        "title": "Media about us"
+        "title": ""
       }
     },
     "image_logo_list_LBQpED": {
@@ -398,6 +418,7 @@
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
+    "image_logo_list_gQX8ky",
     "image_logo_list_9kwTaY",
     "image_logo_list_LBQpED",
     "blog_blog_posts_gxQ3Tz",
