@@ -49,6 +49,13 @@
     "image_logo_list_9kwTaY": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_JMiqBx": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-18-liganet.jpg",
+            "link": "https://life.liga.net/istoriyi/interview/pislia-nas-tilky-kvity-spivzasnovnytsia-resens-pro-eko-revoliutsiiu-v-kosmetytsi-ta-stalyy-biznes"
+          }
+        },
         "logo_image_9wj3da": {
           "type": "logo_image",
           "settings": {
@@ -63,14 +70,14 @@
             "link": "https://trueua.info/news/resens-vidkryv-novu-biolohiyu-krasy-na-svyatkuvanni-dnya-narodzhennya-brendu-v-kyyevi"
           }
         },
-        "logo_image_JMiqBx": {
+        "logo_image_7MVXBX": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/banner_500x500_20250929-18-liganet.jpg",
-            "link": "https://life.liga.net/istoriyi/interview/pislia-nas-tilky-kvity-spivzasnovnytsia-resens-pro-eko-revoliutsiiu-v-kosmetytsi-ta-stalyy-biznes"
+            "image": "shopify://shop_images/banner_500x500_20250929-19-playboy.jpg",
+            "link": "https://playboy.ua/news/resen-svidkriv-novu-biologiyu-krasi-2025-10-15"
           }
         },
-        "logo_image_7MVXBX": {
+        "logo_image_D9QqrE": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-14-TCH.jpg",
@@ -170,10 +177,11 @@
         }
       },
       "block_order": [
+        "logo_image_JMiqBx",
         "logo_image_9wj3da",
         "logo_image_haB87q",
-        "logo_image_JMiqBx",
         "logo_image_7MVXBX",
+        "logo_image_D9QqrE",
         "logo_image_8pYLKA",
         "logo_image_CtmUDP",
         "logo_image_jDJjGP",
