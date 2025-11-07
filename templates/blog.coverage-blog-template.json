@@ -78,7 +78,7 @@
       ],
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "title": "Media about us"
       }
     },
