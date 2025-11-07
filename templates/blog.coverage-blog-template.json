@@ -52,6 +52,13 @@
         "logo_image_JMiqBx": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-20-vogue.jpg",
+            "link": "https://vogue.ua/article/beauty/kozha/neyrokosmetika-noviy-trend-u-doglyadi-za-shkiroyu-yakiy-shvalyuyut-dermatologi-60827.html"
+          }
+        },
+        "logo_image_3jjTdJ": {
+          "type": "logo_image",
+          "settings": {
             "image": "shopify://shop_images/banner_500x500_20250929-18-liganet.jpg",
             "link": "https://life.liga.net/istoriyi/interview/pislia-nas-tilky-kvity-spivzasnovnytsia-resens-pro-eko-revoliutsiiu-v-kosmetytsi-ta-stalyy-biznes"
           }
@@ -178,6 +185,7 @@
       },
       "block_order": [
         "logo_image_JMiqBx",
+        "logo_image_3jjTdJ",
         "logo_image_9wj3da",
         "logo_image_haB87q",
         "logo_image_7MVXBX",
