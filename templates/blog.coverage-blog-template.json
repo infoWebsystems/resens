@@ -49,6 +49,13 @@
     "image_logo_list_9kwTaY": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_DDw3MV": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-21-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/efekt-liftingu-12-zasobiv-dlya-omolodzhennya-shkiri-oblichchya/"
+          }
+        },
         "logo_image_JMiqBx": {
           "type": "logo_image",
           "settings": {
@@ -184,6 +191,7 @@
         }
       },
       "block_order": [
+        "logo_image_DDw3MV",
         "logo_image_JMiqBx",
         "logo_image_3jjTdJ",
         "logo_image_9wj3da",
