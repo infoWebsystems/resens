@@ -470,6 +470,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{{ 'pumpkin-game.js' | asset_url | append: '?v=7' }}" defer="defer"></script>
 {% endcomment %}
 
+{% if request.locale.iso_code contains 'uk' %}
+<script>
+(function () {
+  // --- 1) ТОЧНІ ВІДПОВІДНОСТІ (саме ті, що у тебе)
+  const EXACT = new Map([
+    ["Monthly Subscription", "Місячна підписка"],
+    ["Quarterly Subscription", "Квартальна підписка"],
+    ["Get your favorite products every month, no need to manually reorder, at a 10% discount.", 
+     "Отримуйте свої улюблені товари щомісяця — без необхідності повторного замовлення вручну, зі знижкою 10%."],
+    ["Get your favorite products every three months, no need to manually reorder, at a 10% discount.", 
+     "Отримуйте свої улюблені товари щокварталу (кожні три місяці) — без необхідності повторного замовлення вручну, зі знижкою 10%."]
+  ]);
+
+  // --- 2) ДОДАТКОВИЙ СЛОВНИК КОРОТКИХ ФРАЗ (опціонально)
+  const SHORT = new Map([
+    ["Subscribe & Save", "Підписка зі знижкою"],
+    ["One-time Purchase", "Одноразова покупка"],
+    ["One Time Purchase", "Одноразова покупка"],
+    ["Delivery every", "Доставка кожні"],
+    ["Save", "Знижка"]
+  ]);
+
+  // Допоміжна: екранувати для RegExp
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  // --- 3) Переклад текстового вузла
+  function translateText(text) {
+    if (!text) return text;
+
+    // Спочатку точні збіги
+    for (const [en, uk] of EXACT.entries()) {
+      const re = new RegExp("^" + esc(en) + "$");
+      if (re.test(text.trim())) return text.replace(re, uk);
+    }
+
+    // Потім короткі фрази (не руйнуємо інше)
+    for (const [en, uk] of SHORT.entries()) {
+      text = text.replace(new RegExp("\\b" + esc(en) + "\\b", "g"), uk);
+    }
+
+    // Більш загальні заміни
+    text = text
+      .replace(/\bEvery\b/gi, "Кожні")
+      .replace(/\bmonth(s)?\b/gi, (m, s) => s ? "місяців" : "місяць")
+      .replace(/\bthree months\b/gi, "три місяці")
+      .replace(/\bno need to manually reorder\b/gi, "без необхідності повторного замовлення вручну")
+      .replace(/\bat a (\d+)% discount\b/gi, "зі знижкою $1%");
+
+    return text;
+  }
+
+  // --- 4) Прохід по DOM + shadow DOM
+  function walk(node) {
+    if (!node) return;
+
+    // Перекладаємо текстові вузли
+    if (node.nodeType === Node.TEXT_NODE) {
+      const newText = translateText(node.nodeValue);
+      if (newText !== node.nodeValue) node.nodeValue = newText;
+      return;
+    }
+
+    // Перекладаємо aria-label/title, якщо є
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      ["aria-label","title"].forEach(attr=>{
+        if (node.hasAttribute && node.hasAttribute(attr)) {
+          const v = node.getAttribute(attr);
+          const t = translateText(v);
+          if (t !== v) node.setAttribute(attr, t);
+        }
+      });
+    }
+
+    // Діти звичайного DOM
+    node.childNodes && node.childNodes.forEach(walk);
+
+    // Якщо це елемент із shadowRoot — йдемо всередину
+    if (node.shadowRoot) node.shadowRoot.childNodes.forEach(walk);
+  }
+
+  // --- 5) Запуск після рендеру, з повторними спробами
+  function translateAll() {
+    // Беремо тільки області Appstle, щоб не чіпати решту сайту
+    const roots = document.querySelectorAll(
+      '.appstle_subscription_wrapper, [data-appstle-subscription-widget], .appstle_widget, [id*="appstle"], [class*="appstle"]'
+    );
+    if (!roots.length) return;
+    roots.forEach(root => walk(root));
+  }
+
+  // Перша спроба
+  document.addEventListener('DOMContentLoaded', translateAll);
+
+  // Якщо Appstle кидає власну подію — зловимо її
+  document.addEventListener('appstle:widget:loaded', translateAll);
+
+  // Спостерігач на динамічні зміни (віджет часто перебудовується)
+  const mo = new MutationObserver(translateAll);
+  mo.observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+{% endif %}
 
 
 </body>
