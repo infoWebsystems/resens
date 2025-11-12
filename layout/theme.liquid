@@ -470,6 +470,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{{ 'pumpkin-game.js' | asset_url | append: '?v=7' }}" defer="defer"></script>
 {% endcomment %}
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const translations = {
+    "Monthly Subscription": "Місячна підписка",
+    "One-time Purchase": "Одноразова покупка",
+    "Delivery every": "Доставка кожні",
+    "Delivery Every": "Доставка кожні",
+    "weeks": "тижнів",
+    "week": "тиждень",
+    "months": "місяців",
+    "month": "місяць",
+    "Add Subscription": "Оформити підписку",
+    "Add to cart": "Додати у кошик",
+    "Manage Subscription": "Керувати підпискою",
+    "Cancel Subscription": "Скасувати підписку",
+    "Pause": "Пауза",
+    "Save": "Знижка"
+  };
+  const observer = new MutationObserver(() => {
+    document.querySelectorAll('.appstle_subscription_wrapper *').forEach(el => {
+      const original = el.textContent.trim();
+      if (translations[original]) el.textContent = translations[original];
+    });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+
 
 </body>
 </html>
