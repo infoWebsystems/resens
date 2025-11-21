@@ -29,7 +29,7 @@
             "first_button_link": "shopify://pages/blog",
             "second_button_label": "",
             "second_button_link": "",
-            "image": "shopify://shop_images/20250625_Blog-eng.jpg",
+            "image": "shopify://shop_images/New_20251121_Blog_2.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
@@ -42,7 +42,7 @@
             "caption-text": "#242424",
             "button-text": "#ffffff",
             "button-background": "#242424",
-            "hover-button-background": "#9F9F9F"
+            "hover-button-background": "#9f9f9f"
           }
         }
       },
