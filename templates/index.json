@@ -715,10 +715,7 @@
         "logo_image_xdz3Gw",
         "logo_image_kHke7P"
       ],
-      "custom_css": [
-        "/* 6 колонок для логотипів на всьому сайті */ul.logo-bar,ul.logo-list {display: grid !important; grid-template-columns: repeat(6, minmax(0, 1fr)) !important; column-gap: 24px !important; row-gap: 24px !important;}",
-        "/* Центруємо самі логотипи */.logo-bar__item,.logo-list__item {display: flex !important; justify-content: center !important; align-items: center !important; width: 100% !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "colors": "white",
         "title": "We are in media"
