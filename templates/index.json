@@ -597,130 +597,6 @@
         "section_title": "Reviews"
       }
     },
-    "image_logo_list_kEhdQi": {
-      "type": "image--logo-list",
-      "blocks": {
-        "logo_image_VdtdP7": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/vogue-logo-svg-vector.svg",
-            "link": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html"
-          }
-        },
-        "logo_image_KrqTEY": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/playboy-2.svg",
-            "link": "https://playboy.ua/playboy-recommend/-2024-07-11"
-          }
-        },
-        "logo_image_Y44kDg": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/12.png",
-            "link": "https://officiel-online.com/uk/sobytiya/reSens-unveiled-a-new-biology-of-beauty-at-a-press-brunch-at-the-kanapa-restaurant/"
-          }
-        },
-        "logo_image_fhkwQC": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "link": "https://www.village.com.ua/village/service-shopping/style-guide/357787-10-rizdvyanih-b-rsquo-yuti-podarunkiv-pidbirka-dlya-zhinok-nbsp"
-          }
-        },
-        "logo_image_iXpprn": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/10.png",
-            "link": "https://insider.ua/11-zasobiv-yaki-varto-dodati-do-osinnoi-byuti-rutini/"
-          }
-        },
-        "logo_image_NFGA7C": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/bazaar.png",
-            "link": "https://harpersbazaar.com.ua/beauty/practice/dohlyadovi-zasoby-yaki-varto-sprobuvaty-prosto-zaraz/"
-          }
-        },
-        "logo_image_n4pkqp": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/images.png",
-            "link": "https://viva.ua/events/17960-liliya-pustovit-karolina-ashion-anna-zavalska-zirki-na-prezentatsii-brendu-resens"
-          }
-        },
-        "logo_image_LzVTmL": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/13.png",
-            "link": "https://karavan.ua/krasota/re-sens-ukrainskyj-sustainable-brend-shcho-vidkryvaie-novu-biolohiiu-krasy/"
-          }
-        },
-        "logo_image_PGjKqK": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/mc.png",
-            "link": "https://marieclaire.ua/uk/beauty/re-sens-pershij-brend-na-rinku-profesijnoyi-kosmetiki-yakij-povnistyu-vidmovivsya-vid-plastiku?fbclid=PAZXh0bgNhZW0CMTEAAabxZLodSEhzJBL5cd5zAeAr1FxR8DgQa4l66O1uOSQl0S10kM0rpcxvgJQ_aem_LjltXWT6dsCQqhmLlnb19A"
-          }
-        },
-        "logo_image_Ucd984": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/elle.png",
-            "link": "https://elle.ua/krasota/beauty_blog/made-in-ukraine-9-ukrainskih-beauty-brendiv-yakim-doviryayut/"
-          }
-        },
-        "logo_image_6NdPTh": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/beautyhub.png",
-            "link": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/"
-          }
-        },
-        "logo_image_JU7hAi": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/ursa.png",
-            "link": "https://ursamedia.com.ua/trend/pokrashhuye-imunitet-ta-yakist-shkiry-v-ukrayini-zyavyvsya-novyy-brend-profesiynoyi-kosmetyky/"
-          }
-        },
-        "logo_image_xdz3Gw": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/estportal.png",
-            "link": "https://estportal.com/resens-pershij-ukrainskij-100-sustainable-brend-na-rinku-profesijnoi-kosmetiki/"
-          }
-        },
-        "logo_image_kHke7P": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/11.png",
-            "link": "https://womo.ua/resens-ta-400-derev-ukrayinskyj-sustainable-brend-dovodyt-shho-vidpovidalnist-cze-nova-rozkish-u-sferi-profesijnoyi-kosmetyky/"
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_VdtdP7",
-        "logo_image_KrqTEY",
-        "logo_image_Y44kDg",
-        "logo_image_fhkwQC",
-        "logo_image_iXpprn",
-        "logo_image_NFGA7C",
-        "logo_image_n4pkqp",
-        "logo_image_LzVTmL",
-        "logo_image_PGjKqK",
-        "logo_image_Ucd984",
-        "logo_image_6NdPTh",
-        "logo_image_JU7hAi",
-        "logo_image_xdz3Gw",
-        "logo_image_kHke7P"
-      ],
-      "custom_css": [],
-      "settings": {
-        "colors": "white",
-        "title": "We are in media"
-      }
-    },
     "visual_navigation_banner_xaGJ8f": {
       "type": "visual-navigation-banner",
       "blocks": {
@@ -743,7 +619,7 @@
         "navigation_link_cQN9nQ": {
           "type": "navigation_link",
           "settings": {
-            "link_url": "",
+            "link_url": "https://marieclaire.ua/uk/beauty/re-sens-pershij-brend-na-rinku-profesijnoyi-kosmetiki-yakij-povnistyu-vidmovivsya-vid-plastiku?fbclid=PAZXh0bgNhZW0CMTEAAabxZLodSEhzJBL5cd5zAeAr1FxR8DgQa4l66O1uOSQl0S10kM0rpcxvgJQ_aem_LjltXWT6dsCQqhmLlnb19A",
             "link_image": "shopify://shop_images/5.png",
             "link_text": ""
           }
@@ -759,7 +635,7 @@
         "navigation_link_NUeFH4": {
           "type": "navigation_link",
           "settings": {
-            "link_url": "",
+            "link_url": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/",
             "link_image": "shopify://shop_images/6.png",
             "link_text": ""
           }
@@ -767,7 +643,7 @@
         "navigation_link_gKYxxm": {
           "type": "navigation_link",
           "settings": {
-            "link_url": "",
+            "link_url": "https://elle.ua/krasota/beauty_blog/made-in-ukraine-9-ukrainskih-beauty-brendiv-yakim-doviryayut/",
             "link_image": "shopify://shop_images/3_de566b8a-e7f5-4071-9a73-d357c528fb81.png",
             "link_text": ""
           }
@@ -801,7 +677,7 @@
         "navigation_link_DPUx8q": {
           "type": "navigation_link",
           "settings": {
-            "link_url": "",
+            "link_url": "https://womo.ua/resens-ta-400-derev-ukrayinskyj-sustainable-brend-dovodyt-shho-vidpovidalnist-cze-nova-rozkish-u-sferi-profesijnoyi-kosmetyky/",
             "link_image": "shopify://shop_images/11.png",
             "link_text": ""
           }
@@ -846,6 +722,76 @@
         "navigation_link_QM74cR",
         "navigation_link_kKUGKF",
         "navigation_link_7GJAPM"
+      ],
+      "name": "t:sections.visual-navigation-banner.presets.name",
+      "settings": {
+        "title": "",
+        "image_style": "circle"
+      }
+    },
+    "visual_navigation_banner_qgUMVt": {
+      "type": "visual-navigation-banner",
+      "blocks": {
+        "navigation_link_Tw9cAJ": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://estportal.com/resens-pershij-ukrainskij-100-sustainable-brend-na-rinku-profesijnoi-kosmetiki/",
+            "link_image": "shopify://shop_images/estportal.svg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_FPP8de": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://ursamedia.com.ua/trend/pokrashhuye-imunitet-ta-yakist-shkiry-v-ukrayini-zyavyvsya-novyy-brend-profesiynoyi-kosmetyky/",
+            "link_image": "shopify://shop_images/ursa.svg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_m9QydX": {
+          "type": "navigation_link",
+          "disabled": true,
+          "settings": {
+            "link_url": "https://karavan.ua/krasota/re-sens-ukrainskyj-sustainable-brend-shcho-vidkryvaie-novu-biolohiiu-krasy/",
+            "link_image": "shopify://shop_images/13.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_ggpyqC": {
+          "type": "navigation_link",
+          "disabled": true,
+          "settings": {
+            "link_url": "https://insider.ua/11-zasobiv-yaki-varto-dodati-do-osinnoi-byuti-rutini/",
+            "link_image": "shopify://shop_images/10.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_QbenPJ": {
+          "type": "navigation_link",
+          "disabled": true,
+          "settings": {
+            "link_url": "https://www.village.com.ua/village/service-shopping/style-guide/357787-10-rizdvyanih-b-rsquo-yuti-podarunkiv-pidbirka-dlya-zhinok-nbsp",
+            "link_image": "shopify://shop_images/14.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_4eyGJN": {
+          "type": "navigation_link",
+          "disabled": true,
+          "settings": {
+            "link_url": "https://officiel-online.com/uk/sobytiya/reSens-unveiled-a-new-biology-of-beauty-at-a-press-brunch-at-the-kanapa-restaurant/",
+            "link_image": "shopify://shop_images/12.png",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_Tw9cAJ",
+        "navigation_link_FPP8de",
+        "navigation_link_m9QydX",
+        "navigation_link_ggpyqC",
+        "navigation_link_QbenPJ",
+        "navigation_link_4eyGJN"
       ],
       "name": "t:sections.visual-navigation-banner.presets.name",
       "settings": {
@@ -957,9 +903,9 @@
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
     "12a25ae5-a869-4fec-9751-deb411052883",
     "reviews_xJVeCd",
-    "image_logo_list_kEhdQi",
     "visual_navigation_banner_xaGJ8f",
     "visual_navigation_banner_HXieeP",
+    "visual_navigation_banner_qgUMVt",
     "content_on_image_background_zcRVa3",
     "17047069040e4a9d4f",
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949",
