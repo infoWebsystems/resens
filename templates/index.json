@@ -634,6 +634,7 @@
         },
         "navigation_link_NUeFH4": {
           "type": "navigation_link",
+          "disabled": true,
           "settings": {
             "link_url": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/",
             "link_image": "shopify://shop_images/6.png",
@@ -676,6 +677,7 @@
         },
         "navigation_link_DPUx8q": {
           "type": "navigation_link",
+          "disabled": true,
           "settings": {
             "link_url": "https://womo.ua/resens-ta-400-derev-ukrayinskyj-sustainable-brend-dovodyt-shho-vidpovidalnist-cze-nova-rozkish-u-sferi-profesijnoyi-kosmetyky/",
             "link_image": "shopify://shop_images/11.png",
@@ -750,19 +752,17 @@
         },
         "navigation_link_m9QydX": {
           "type": "navigation_link",
-          "disabled": true,
           "settings": {
-            "link_url": "https://karavan.ua/krasota/re-sens-ukrainskyj-sustainable-brend-shcho-vidkryvaie-novu-biolohiiu-krasy/",
-            "link_image": "shopify://shop_images/13.png",
+            "link_url": "https://womo.ua/resens-ta-400-derev-ukrayinskyj-sustainable-brend-dovodyt-shho-vidpovidalnist-cze-nova-rozkish-u-sferi-profesijnoyi-kosmetyky/",
+            "link_image": "shopify://shop_images/11.png",
             "link_text": ""
           }
         },
         "navigation_link_ggpyqC": {
           "type": "navigation_link",
-          "disabled": true,
           "settings": {
-            "link_url": "https://insider.ua/11-zasobiv-yaki-varto-dodati-do-osinnoi-byuti-rutini/",
-            "link_image": "shopify://shop_images/10.png",
+            "link_url": "https://bhub.com.ua/uk/re-sens-zustrichayemo-pershij-ukrayinskij-profesijnij-sustainable-brend-yakij-povnistyu-vidmovlyayetsya-vid-plastiku/",
+            "link_image": "shopify://shop_images/beautyhub.svg",
             "link_text": ""
           }
         },
