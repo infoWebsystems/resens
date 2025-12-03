@@ -29,7 +29,7 @@
             "first_button_link": "shopify://pages/blog",
             "second_button_label": "",
             "second_button_link": "",
-            "image": "shopify://shop_images/20251121_Blog_eng.jpg",
+            "image": "shopify://shop_images/New_20251121_Blog_2.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
@@ -51,7 +51,7 @@
       ],
       "name": "t:sections.image--slideshow.presets.name",
       "settings": {
-        "desktop_height": "extra_large",
+        "desktop_height": "full_screen",
         "mobile_height": "full_screen",
         "slide_navigation_style": "none",
         "slide_transition_delay": 7
