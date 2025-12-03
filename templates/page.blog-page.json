@@ -51,7 +51,7 @@
       ],
       "name": "t:sections.image--slideshow.presets.name",
       "settings": {
-        "desktop_height": "full_screen",
+        "desktop_height": "extra_large",
         "mobile_height": "full_screen",
         "slide_navigation_style": "none",
         "slide_transition_delay": 7
