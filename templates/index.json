@@ -715,6 +715,9 @@
         "logo_image_xdz3Gw",
         "logo_image_kHke7P"
       ],
+      "custom_css": [
+        ".grid {display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; /* або інше значення */}"
+      ],
       "settings": {
         "colors": "white",
         "title": "We are in media"
