@@ -721,6 +721,138 @@
         "title": "We are in media"
       }
     },
+    "visual_navigation_banner_xaGJ8f": {
+      "type": "visual-navigation-banner",
+      "blocks": {
+        "navigation_link_FfWDaU": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://vogue.ua/article/beauty/kozha/noviy-ukrajinskiy-beauty-brend-analogiv-yakomu-nemaye-v-sviti-56175.html",
+            "link_image": "shopify://shop_images/9.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_MeVLxN": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://playboy.ua/playboy-recommend/-2024-07-11",
+            "link_image": "shopify://shop_images/7.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_cQN9nQ": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/5.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_ndd3Lt": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/8.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_NUeFH4": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/6.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_gKYxxm": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/3_de566b8a-e7f5-4071-9a73-d357c528fb81.png",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_FfWDaU",
+        "navigation_link_MeVLxN",
+        "navigation_link_cQN9nQ",
+        "navigation_link_ndd3Lt",
+        "navigation_link_NUeFH4",
+        "navigation_link_gKYxxm"
+      ],
+      "name": "t:sections.visual-navigation-banner.presets.name",
+      "settings": {
+        "title": "We are in media",
+        "image_style": "circle"
+      }
+    },
+    "visual_navigation_banner_HXieeP": {
+      "type": "visual-navigation-banner",
+      "blocks": {
+        "navigation_link_VXcBhX": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/bazaar.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_DPUx8q": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/11.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_LpdpBT": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/13.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_QM74cR": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/10.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_kKUGKF": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/14.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_7GJAPM": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://officiel-online.com/uk/sobytiya/reSens-unveiled-a-new-biology-of-beauty-at-a-press-brunch-at-the-kanapa-restaurant/",
+            "link_image": "shopify://shop_images/12.png",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_VXcBhX",
+        "navigation_link_DPUx8q",
+        "navigation_link_LpdpBT",
+        "navigation_link_QM74cR",
+        "navigation_link_kKUGKF",
+        "navigation_link_7GJAPM"
+      ],
+      "name": "t:sections.visual-navigation-banner.presets.name",
+      "settings": {
+        "title": "",
+        "image_style": "circle"
+      }
+    },
     "content_on_image_background_zcRVa3": {
       "type": "content-on-image-background",
       "settings": {
@@ -826,6 +958,8 @@
     "12a25ae5-a869-4fec-9751-deb411052883",
     "reviews_xJVeCd",
     "image_logo_list_kEhdQi",
+    "visual_navigation_banner_xaGJ8f",
+    "visual_navigation_banner_HXieeP",
     "content_on_image_background_zcRVa3",
     "17047069040e4a9d4f",
     "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949",
