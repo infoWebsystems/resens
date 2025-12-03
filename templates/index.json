@@ -716,7 +716,7 @@
         "logo_image_kHke7P"
       ],
       "custom_css": [
-        ".grid {display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; /* або інше значення */}"
+        ".logo-list {display: grid !important; grid-template-columns: repeat(6, 1fr); gap: 20px;}"
       ],
       "settings": {
         "colors": "white",
