@@ -716,7 +716,7 @@
         "logo_image_kHke7P"
       ],
       "custom_css": [
-        ".logo-list__list {display: grid !important; grid-template-columns: repeat(6, 1fr) !important; gap: 24px !important;}"
+        ".featured-logos ul {display: grid !important; grid-template-columns: repeat(6, 1fr) !important; gap: 24px !important;}"
       ],
       "settings": {
         "colors": "white",
