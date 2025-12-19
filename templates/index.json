@@ -566,6 +566,24 @@
     "reviews_xJVeCd": {
       "type": "reviews",
       "blocks": {
+        "review_LYg83X": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/ziablova_olena.png",
+            "review_name": "Zyablova Olena",
+            "review_about": "relax cosmetologist, owner of the beauty bar •cocoon",
+            "review_text": "My clients are delighted with Re[Sens]. Textures, aromas, unusual packaging - the first thing that catches the eye.And then - the philosophy of slow beauty, the cumulative effect for the skin, love for nature! It all inspires and makes you fall in love! I am proud that we have such a brand, originally from Ukraine! ♥️"
+          }
+        },
+        "review_UJXrJj": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/bila_zhanna.png",
+            "review_name": "Zhanna Bila",
+            "review_about": "Cosmetologist-aesthetician, owner of the online store misocosmetics.com.ua",
+            "review_text": "Re[Sens] is a brand that pleasantly surprises with its quality and well-thought-out formulas that really work. Its products have pleasant textures and give a tangible effect from the first applications. This is modern Ukrainian cosmetics, absolutely unique, which our customers trust and return for again and again."
+          }
+        },
         "review_6YgrpD": {
           "type": "review",
           "settings": {
@@ -613,6 +631,8 @@
         }
       },
       "block_order": [
+        "review_LYg83X",
+        "review_UJXrJj",
         "review_6YgrpD",
         "review_WqjhUV",
         "review_ihwrhy",
