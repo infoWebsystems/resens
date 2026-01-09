@@ -82,6 +82,15 @@
             "margin_bottom": 40
           }
         },
+        "text_with_icon_NQp3dA": {
+          "type": "text-with-icon",
+          "settings": {
+            "icon": "clock",
+            "text": "Pre-order. Shipping from January 22–24.",
+            "link": "",
+            "margin_bottom": 20
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -170,6 +179,7 @@
         "quantity",
         "a7717974-ed85-4cde-80ef-4751178acf57",
         "2f3ddc8d-6514-403d-a884-88c9a0294300",
+        "text_with_icon_NQp3dA",
         "buy_buttons",
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
         "b0c19132-8e54-4664-b8ce-0a8c7f1f7737",
@@ -223,7 +233,12 @@
       "blocks": {
         "93d54964-54a7-4c03-ad9a-d54a135eb461": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
