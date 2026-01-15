@@ -85,8 +85,8 @@
         "text_with_icon_NQp3dA": {
           "type": "text-with-icon",
           "settings": {
-            "icon": "clock",
-            "text": "Pre-order. Shipping from January 22–24.",
+            "icon": "none",
+            "text": "{{ product.metafields.custom.preorder_text.value }}",
             "link": "",
             "margin_bottom": 20
           }
