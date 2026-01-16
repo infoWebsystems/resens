@@ -686,94 +686,125 @@
 {%- endfor -%}
 
 <script>
-
-function waitForPriceBlock(selector) {
-      return new Promise((resolve) => {
-        const observer = new MutationObserver((mutations, me) => {
-            const button = document.querySelector(selector);
-            if (button) {
-                me.disconnect();
-                resolve(button);
-            }
-        });
-
-        observer.observe(document, {
-            childList: true,
-            subtree: true
-        });
+  function waitForPriceBlock(selector) {
+    return new Promise((resolve) => {
+      const observer = new MutationObserver((mutations, me) => {
+        const el = document.querySelector(selector);
+        if (el) {
+          me.disconnect();
+          resolve(el);
+        }
       });
-    }
 
-    waitForPriceBlock('#ProductPrice').then((button) => {
-      setTimeout(() => {
-				const productPriceWrapper = document.querySelector('#ProductPrice');
-				const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-				const productSpan = document.querySelector('#ProductPrice .money-resens');
-
-				{% assign is_discounted = false %}
-
-				{% assign discounted_products_ids = '' %}
-
-				{% for product in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
-					{% assign discounted_products_ids = discounted_products_ids | append: product.id | append: ',' %}
-				{% endfor %}
-
-				{% assign discounted_products_ids = discounted_products_ids | remove_last: ',' %}
-
-				{% if discounted_products_ids contains product.id %}
-					{% assign is_discounted = true %}
-				{% endif %}
-
-				{% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-					{% if is_discounted == false %}
-						if (currentLanguage == 'en') {
-							productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
-						} else {
-							productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-						}
-					{% else %}
-						if (currentLanguage == 'en') {
-							{% assign product_price = product.metafields.elasty.price | default: 0 %}
-							{% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-					
-							{% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-							{% assign discounted_price = product.metafields.elasty.price | minus: discount_value | round %}
-					
-							productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-							<span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>`;
-						} else {
-							{% assign product_price = product.price | default: 0 %}
-							{% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-					
-							{% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-							{% assign discounted_price = product.price | minus: discount_value %}
-
-							{% assign price_parts = discounted_price | money | split: '.' %}
-
-							productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.price | money }}</span>
-							<span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>`;
-						}
-					{% endif %}
-				{% else %}
-					if (currentLanguage == 'en') {
-						productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
-					} else {
-						productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-					}
-				{% endif %}
-
-        // const productPriceWrapper = document.querySelector('#ProductPrice');
-        // const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-        // const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
-        // const productSpan = document.querySelector('#ProductPrice .money-resens');
-
-
-        // if (currentLanguage == 'en') {
-        //   productSpan.textContent = eurPrice + "€";
-        // }
-			}, 500);
+      observer.observe(document, {
+        childList: true,
+        subtree: true
+      });
     });
+  }
+
+  waitForPriceBlock('#ProductPrice').then(() => {
+    setTimeout(() => {
+      const productPriceWrapper = document.querySelector('#ProductPrice');
+      if (!productPriceWrapper) return;
+
+      const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+      const productSpan = document.querySelector('#ProductPrice .money-resens');
+      if (!productSpan) return;
+
+      {% comment %}
+        -----------------------------
+        DISPLAY DISCOUNT LOGIC (FIXED)
+        -----------------------------
+        Goals:
+        - No hardcoded metaobject ID
+        - No shadowing "product" variable
+        - Safe membership check (array instead of string contains)
+        - Pick first matching ACTIVE display_discount entry that contains this product
+        Notes:
+        - This is ONLY for VISUAL display; Shopify discount engine still controls cart/checkout.
+      {% endcomment %}
+
+      {% assign dd_entry = nil %}
+
+      {%- for dd in shop.metaobjects.display_discount.values -%}
+        {%- if dd.is_active and dd.Products and dd.Products.value and dd.Products.value.products -%}
+          {%- assign _found = false -%}
+          {%- for p in dd.Products.value.products -%}
+            {%- if p.id == product.id -%}
+              {%- assign dd_entry = dd -%}
+              {%- assign _found = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if _found -%}{%- break -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {% assign is_discounted = false %}
+      {% assign discount_percentage = 0 %}
+      {% assign discounted_ids = '' | split: ',' %}
+
+      {% if dd_entry %}
+        {% assign discount_percentage = dd_entry.percentage_discount | default: 0 | plus: 0 %}
+
+        {% for p in dd_entry.Products.value.products %}
+          {% assign discounted_ids = discounted_ids | push: p.id %}
+        {% endfor %}
+
+        {% if discounted_ids contains product.id %}
+          {% assign is_discounted = true %}
+        {% endif %}
+      {% endif %}
+
+      // ---- Rendering (same behavior as your original) ----
+      if (!dd_entry || discount_percentage <= 0) {
+        // No active display discount rule found for this product
+        if (currentLanguage == 'en') {
+          productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
+        } else {
+          productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
+        }
+        return;
+      }
+
+      if (!is_discounted) {
+        // Active rule exists, but product isn't in its collection
+        if (currentLanguage == 'en') {
+          productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
+        } else {
+          productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
+        }
+        return;
+      }
+
+      // Product is discounted visually
+      if (currentLanguage == 'en') {
+        {% assign product_price_eur = product.metafields.elasty.price | default: 0 %}
+        {% assign discount_value_eur = product_price_eur | times: discount_percentage | divided_by: 100 %}
+        {% assign discounted_price_eur = product_price_eur | minus: discount_value_eur | round %}
+
+        productSpan.innerHTML = `
+          <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
+          <span class="money money-resens" style="font-weight: 700;">{{ discounted_price_eur }}€</span>
+        `;
+      } else {
+        {% assign product_price_uah = product.price | default: 0 %}
+        {% assign discount_value_uah = product_price_uah | times: discount_percentage | divided_by: 100 %}
+        {% assign discounted_price_uah = product_price_uah | minus: discount_value_uah %}
+
+        {% assign price_parts = discounted_price_uah | money | split: '.' %}
+
+        productSpan.innerHTML = `
+          <span class="money-resens discount--line-through">{{ product.price | money }}</span>
+          <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
+        `;
+      }
+
+    }, 500);
+  });
 </script>
+
 
 
 
