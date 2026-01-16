@@ -196,7 +196,55 @@
                               <span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
                             </p>
 
-                            {% render 'product-pricing', current_variant: current_variant %}
+                            {%- comment -%} ===== Display Discount (METAOBJECT) - ONLY VISUAL ===== {%- endcomment -%}
+{%- assign dd_entry = nil -%}
+
+{%- for dd in shop.metaobjects.display_discount.values -%}
+  {%- if dd.is_active and dd.products and dd.products.value -%}
+    {%- for p in dd.products.value.products -%}
+      {%- if p.id == product.id -%}
+        {%- assign dd_entry = dd -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if dd_entry -%}{%- break -%}{%- endif -%}
+{%- endfor -%}
+
+{%- assign dd_percent = 0 -%}
+{%- if dd_entry -%}
+  {%- assign dd_percent = dd_entry.percentage_discount.value | default: dd_entry.percentage_discount | default: 0 | plus: 0 -%}
+{%- endif -%}
+
+{%- if dd_entry and dd_percent > 0 -%}
+
+  {%- if localization.language.iso_code == 'en' -%}
+    {%- assign base_eur = product.metafields.elasty.price | default: 0 | plus: 0 -%}
+    {%- assign discount_value = base_eur | times: dd_percent | divided_by: 100 -%}
+    {%- assign discounted_eur = base_eur | minus: discount_value | round -%}
+
+    <p class="product-price">
+      <span class="money-resens discount--line-through">{{ base_eur }}€</span>
+      <span class="money money-resens" style="font-weight:700;">{{ discounted_eur }}€</span>
+    </p>
+
+  {%- else -%}
+    {%- assign base_uah = current_variant.price | default: 0 -%}
+    {%- assign discount_value = base_uah | times: dd_percent | divided_by: 100 -%}
+    {%- assign discounted_uah = base_uah | minus: discount_value -%}
+
+    <p class="product-price">
+      <span class="money-resens discount--line-through">{{ base_uah | money }}</span>
+      <span class="money money-resens" style="font-weight:700;">{{ discounted_uah | money }}</span>
+    </p>
+
+  {%- endif -%}
+
+{%- else -%}
+  {%- comment -%} Default theme price output {%- endcomment -%}
+  {% render 'product-pricing', current_variant: current_variant %}
+{%- endif -%}
+
                             {% render 'unit-price-measurement-variant', variant: current_variant %}
                           </div>
 
@@ -684,101 +732,6 @@
 
   {%- endcase -%}
 {%- endfor -%}
-
-<script>
-  function waitForPriceBlock(selector) {
-    return new Promise((resolve) => {
-      const observer = new MutationObserver((mutations, me) => {
-        const el = document.querySelector(selector);
-        if (el) {
-          me.disconnect();
-          resolve(el);
-        }
-      });
-
-      observer.observe(document, {
-        childList: true,
-        subtree: true
-      });
-    });
-  }
-
-  waitForPriceBlock('#ProductPrice').then(() => {
-    setTimeout(() => {
-      const productPriceWrapper = document.querySelector('#ProductPrice');
-      if (!productPriceWrapper) return;
-
-      const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-      const productSpan = document.querySelector('#ProductPrice .money-resens');
-      if (!productSpan) return;
-
-      {% assign dd_entry = nil %}
-
-      {%- for dd in shop.metaobjects.display_discount.values -%}
-        {%- if dd.is_active and dd.products and dd.products.value -%}
-          {%- assign _found = false -%}
-          {%- for p in dd.products.value.products -%}
-            {%- if p.id == product.id -%}
-              {%- assign dd_entry = dd -%}
-              {%- assign _found = true -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
-          {%- if _found -%}{%- break -%}{%- endif -%}
-        {%- endif -%}
-      {%- endfor -%}
-
-      {% assign is_discounted = false %}
-      {% assign discount_percentage = 0 %}
-      {% assign discounted_ids = '' | split: ',' %}
-
-      {% if dd_entry %}
-        {% assign discount_percentage = dd_entry.percentage_discount.value | default: 0 | plus: 0 %}
-
-        {% for p in dd_entry.products.value.products %}
-          {% assign discounted_ids = discounted_ids | push: p.id %}
-        {% endfor %}
-
-        {% if discounted_ids contains product.id %}
-          {% assign is_discounted = true %}
-        {% endif %}
-      {% endif %}
-
-      // Якщо правило не знайдено / не активне / % = 0 → показуємо звичайну ціну
-      if (!dd_entry || discount_percentage <= 0 || !is_discounted) {
-        if (currentLanguage == 'en') {
-          productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
-        } else {
-          productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-        }
-        return;
-      }
-
-      // Візуальна знижка
-      if (currentLanguage == 'en') {
-        {% assign product_price_eur = product.metafields.elasty.price | default: 0 %}
-        {% assign discount_value_eur = product_price_eur | times: discount_percentage | divided_by: 100 %}
-        {% assign discounted_price_eur = product_price_eur | minus: discount_value_eur | round %}
-
-        productSpan.innerHTML = `
-          <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-          <span class="money money-resens" style="font-weight: 700;">{{ discounted_price_eur }}€</span>
-        `;
-      } else {
-        {% assign product_price_uah = product.price | default: 0 %}
-        {% assign discount_value_uah = product_price_uah | times: discount_percentage | divided_by: 100 %}
-        {% assign discounted_price_uah = product_price_uah | minus: discount_value_uah %}
-        {% assign price_parts = discounted_price_uah | money | split: '.' %}
-
-        productSpan.innerHTML = `
-          <span class="money-resens discount--line-through">{{ product.price | money }}</span>
-          <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
-        `;
-      }
-    }, 500);
-  });
-</script>
-
 
 {% schema %}
 {
