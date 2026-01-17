@@ -38,59 +38,63 @@
       {{ 'products.general.from_text' | t }} <span class="money money-resens">{{ product.price | money }}</span>
     {% else %}
 
-    {% assign current_language = shop.locale | split: "-" | first %}
-    {% assign is_discounted = false %}
+      {% assign current_language = shop.locale | split: "-" | first %}
+      {% assign is_discounted = false %}
 
-    {% assign discounted_products_ids = '' %}
+      {%- assign discounted_products_ids = ',' -%}
 
-    {% for product in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
-      {% assign discounted_products_ids = discounted_products_ids | append: product.id | append: ',' %}
-    {% endfor %}
+      {%- assign dd = shop.metaobjects.display_discount['display-discount-w3aqcrlo'] -%}
 
-    {% assign discounted_products_ids = discounted_products_ids | remove_last: ',' %}
+      {% if dd and dd.products.value and dd.products.value.products %}
+        {% for p in dd.products.value.products %}
+          {%- assign discounted_products_ids = discounted_products_ids | append: p.id | append: ',' -%}
+        {% endfor %}
+      {% endif %}
 
-    {% if discounted_products_ids contains product.id %}
-      {% assign is_discounted = true %}
-    {% endif %}
+      {%- assign product_id_str = product.id | append: '' -%}
+      {% if discounted_products_ids contains ',' | append: product_id_str | append: ',' %}
+        {% assign is_discounted = true %}
+      {% endif %}
 
-    {% if current_language == 'en' %}
-      {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-        {% if is_discounted == false %}
+      {% if current_language == 'en' %}
+        {% if dd and dd.is_active %}
+          {% if is_discounted == false %}
+            <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
+          {% else %}
+            <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
+
+            {% assign product_price = product.metafields.elasty.price | default: 0 %}
+            {% assign discount_percentage = dd.percentage_discount | default: 0 %}
+
+            {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+            {% assign discounted_price = product.metafields.elasty.price | minus: discount_value | round %}
+
+            <span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>
+          {% endif %}
+        {% else %}
           <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
-        {% else %}
-          <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-
-          {% assign product_price = product.metafields.elasty.price | default: 0 %}
-          {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-      
-          {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-          {% assign discounted_price = product.metafields.elasty.price | minus: discount_value | round %}
-      
-          <span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>
         {% endif %}
       {% else %}
-        <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
-      {% endif %}
-    {% else %}
-      {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-        {% if is_discounted == false %}
+        {% if dd and dd.is_active %}
+          {% if is_discounted == false %}
+            <span class="money money-resens">{{ product.price | money }}</span>
+          {% else %}
+            <span class="money-resens discount--line-through">{{ product.price | money }}</span>
+
+            {% assign product_price = product.price | default: 0 %}
+            {% assign discount_percentage = dd.percentage_discount | default: 0 %}
+
+            {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+            {% assign discounted_price = product.price | minus: discount_value %}
+
+            {% assign price_parts = discounted_price | money | split: '.' %}
+            <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
+          {% endif %}
+        {% else %}
           <span class="money money-resens">{{ product.price | money }}</span>
-        {% else %}
-          <span class="money-resens discount--line-through">{{ product.price | money }}</span>
-
-          {% assign product_price = product.price | default: 0 %}
-          {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-      
-          {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-          {% assign discounted_price = product.price | minus: discount_value %}
-
-          {% assign price_parts = discounted_price | money | split: '.' %}
-          <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
         {% endif %}
-      {% else %}
-        <span class="money money-resens">{{ product.price | money }}</span>
       {% endif %}
-    {% endif %}
+
     {% endif %}
 
   {% endif %}
