@@ -14,7 +14,7 @@
       "type": "image--image-with-text-overlay",
       "settings": {
         "image": "shopify://shop_images/IMG_5927.jpg",
-        "image_height": "30vw",
+        "image_height": "40vw",
         "bg_image_overlay_opacity": 40,
         "parallax": false,
         "title": "{{ collection.title }}",
