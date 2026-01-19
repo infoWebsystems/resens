@@ -28,6 +28,15 @@
             "margin_bottom": 20
           }
         },
+        "text_with_icon_9iibMK": {
+          "type": "text-with-icon",
+          "settings": {
+            "icon": "none",
+            "text": "{{ product.metafields.custom.best_before.value }}",
+            "link": "",
+            "margin_bottom": 20
+          }
+        },
         "12634054-1617-44bd-a7fc-a2a4eccc599f": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -173,6 +182,7 @@
       "block_order": [
         "title",
         "price",
+        "text_with_icon_9iibMK",
         "12634054-1617-44bd-a7fc-a2a4eccc599f",
         "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
         "options",
