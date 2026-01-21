@@ -52,6 +52,13 @@
         "logo_image_hhqbdb": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260116-03-Vogur.jpg",
+            "link": "https://vogue.ua/article/beauty/kozha/vogue-ua-to-do-list-punkt-2-yak-pokrashchiti-stan-shkiri-62193.html?fbclid=PAdGRleAPW6FhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad8XQF5lM3PkPAjw6bT96XAusc-Dy-4rG10Jg6DaJotC9QVkGBA3aF8gZXVmQ_aem_Ju7xo313pY3VoRFVfuhfkA"
+          }
+        },
+        "logo_image_RkaVWE": {
+          "type": "logo_image",
+          "settings": {
             "image": "shopify://shop_images/banner_500x500_20260113-01-bhub.png",
             "link": "https://bhub.com.ua/uk/beauty-check-nejrokosmetika-novogo-pokolinnya-vid-re-sens/"
           }
@@ -80,6 +87,7 @@
       },
       "block_order": [
         "logo_image_hhqbdb",
+        "logo_image_RkaVWE",
         "logo_image_wECGtr",
         "logo_image_Y3miVQ",
         "logo_image_CK3b96"
