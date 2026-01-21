@@ -503,8 +503,8 @@
       "settings": {
         "image_position": "row",
         "title": "TREES PLANTING",
-        "main_image": "shopify://shop_images/IMG_1956.jpg",
-        "main_text": "<p><strong>\"Mama, plant a tree\" - is the first tree planting project in Ukraine supported by the United Nations. Founded by a group of Ukrainian mothers, the project aims to reduce CO2 emissions and support environmental initiatives.</strong></p><p>Every year, the average person on the planet produces 6 tons of CO2, so to offset this impact and preserve nature for future generations, one person needs to plant 73 trees annually. \"Mama, plant a tree\" has made this process easy and affordable.</p>",
+        "main_image": "shopify://shop_images/1-60.jpg",
+        "main_text": "<p><strong>Mama, plant a tree is the first tree-planting initiative in Ukraine supported by the United Nations. </strong>Founded by a group of Ukrainian mothers, the project aims to reduce CO₂ emissions and support ecological and humanitarian initiatives.</p><p>On average, each person on the planet produces around 6 tons of CO₂ per year. To offset this impact and preserve nature for future generations, <strong>a single person would need to plant approximately 73 trees annually. </strong>Mama, plant a tree makes this process simple, transparent, and accessible.</p>",
         "btn_label": "read more",
         "btn_url": "shopify://blogs/articles/trees-planting"
       }
