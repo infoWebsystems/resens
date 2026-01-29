@@ -118,40 +118,13 @@
                         <div class="product-price-group-container">
                           <div class="product-price-size--{{ section.settings.price_font }} product-price-group">
                             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                          {% assign current_language = shop.locale | split: "-" | first %}
+                            <p id="ComparePrice" class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}" v-bind:class="{ 'on-sale' : isSale }" v-if="isSale" v-money="variant.compare_at_price">
+                              <span class="money">{{ current_variant.compare_at_price | money }}</span>
+                            </p>
 
-							{% assign en_price = 0 %}
-							{% assign en_compare = 0 %}
-							{% if product.metafields.custom.foreign_currency_price != blank %}
-							{% assign en_price = product.metafields.custom.foreign_currency_price.value | plus: 0 %}
-							{% endif %}
-							{% if product.metafields.custom.foreign_currency_compare_price != blank %}
-							{% assign en_compare = product.metafields.custom.foreign_currency_compare_price.value | plus: 0 %}
-							{% endif %}
-
-							{%- comment -%}
-							Compare price:
-							- EN: use custom foreign_currency_compare_price only if > foreign_currency_price
-							- Others: keep Vue compare_at_price
-							{%- endcomment -%}
-
-							{% if current_language == 'en' and en_price > 0 and en_compare > en_price %}
-							<p id="ComparePrice" class="compare-at-price sale-price on-sale">
-								<span class="money money-resens">{{ en_compare }}€</span>
-							</p>
-							{% else %}
-							<p id="ComparePrice"
-								class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}"
-								v-bind:class="{ 'on-sale' : isSale }"
-								v-if="isSale"
-								v-money="variant.compare_at_price">
-								<span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
-							</p>
-							{% endif %}
-
-							{% render 'product-pricing', current_variant: current_variant %}
-							{% render 'unit-price-measurement-variant', variant: current_variant %}
-
+                            {% render 'product-pricing', current_variant: current_variant %}
+                            {% render 'unit-price-measurement-variant', variant: current_variant %}
+                          </div>
 
                           {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
                             <div class="product-page__policies rte text-link-animated">
@@ -252,7 +225,7 @@
                 {% else %}
                   {% comment %} Show placeholder product info {% endcomment %}
                   <div class="product-price-size--{{ section.settings.price_font }} product-price-group">
-                    <span id="ProductPrice"><span class="money money-resens">{{ 1699 | money }}</span></span>
+                    <span id="ProductPrice"><span class="money">{{ 1699 | money }}</span></span>
                   </div>
                   {% if section.settings.show_add_to_cart %}
                     <div class="onboarding--sold-out">
