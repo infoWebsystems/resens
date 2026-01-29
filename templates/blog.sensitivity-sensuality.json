@@ -253,25 +253,19 @@
         "post_limit": 4
       }
     },
-    "blog_dynamic_posts": {
-      "type": "blog-dynamic-posts",
-      "settings": {}
-    },
     "text_rich_text_DJdAyH": {
       "type": "text--rich-text",
       "blocks": {
-        "richtext_crUGGb": {
-          "type": "richtext",
+        "heading_qpfjdh": {
+          "type": "heading",
           "settings": {
-            "text": "<p>Something exciting is coming soon! Stay tuned.</p>",
-            "text_size": 20
+            "heading": "Don’t miss new videos"
           }
         }
       },
       "block_order": [
-        "richtext_crUGGb"
+        "heading_qpfjdh"
       ],
-      "disabled": true,
       "name": "t:sections.text--rich-text.presets.name",
       "settings": {
         "background_color": "",
@@ -280,6 +274,10 @@
         "text_alignment_desktop": "center",
         "text_alignment_mobile": "center"
       }
+    },
+    "blog_dynamic_posts": {
+      "type": "blog-dynamic-posts",
+      "settings": {}
     },
     "advanced_layout_custom_liquid_iEefMQ": {
       "type": "advanced-layout--custom-liquid",
@@ -306,8 +304,8 @@
     "accordion_9iFDNN",
     "template_product_info_columns_wF49mL",
     "blog_blog_posts_PrbVdi",
-    "blog_dynamic_posts",
     "text_rich_text_DJdAyH",
+    "blog_dynamic_posts",
     "advanced_layout_custom_liquid_iEefMQ",
     "1646004249db2dcfc2"
   ]
