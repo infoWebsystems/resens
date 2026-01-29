@@ -189,66 +189,88 @@
                         </div>
 
                       {%- when 'price' -%}
-					<div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px" {{ block.shopify_attributes }}>
-						<div class="product-price-size--{{ block.settings.price_font }} product-price-group">
-						<span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                        <div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px" {{ block.shopify_attributes }}>
+                          <div class="product-price-size--{{ block.settings.price_font }} product-price-group">
+                            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                            <p id="ComparePrice" class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}" v-bind:class="{ 'on-sale' : isSale }" v-if="isSale" v-money="variant.compare_at_price">
+                              <span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
+                            </p>
 
-						{%- assign current_language = shop.locale | split: "-" | first -%}
-						{%- assign fc_price = product.metafields.custom.foreign_currency_price.value | default: 0 | plus: 0 -%}
-						{%- assign fc_compare = product.metafields.custom.foreign_currency_compare_price.value | default: 0 | plus: 0 -%}
+                            {%- comment -%} ===== Display Discount (METAOBJECT) - ONLY VISUAL ===== {%- endcomment -%}
+{%- assign dd_entry = nil -%}
 
-						{%- comment -%}
-							ComparePrice:
-							- EN: показуємо foreign_currency_compare_price тільки якщо > foreign_currency_price
-							- інші мови: стандартний Shopify/Vue compare_at_price
-						{%- endcomment -%}
+{%- for dd in shop.metaobjects.display_discount.values -%}
+  {%- if dd.is_active and dd.products and dd.products.value -%}
+    {%- for p in dd.products.value.products -%}
+      {%- if p.id == product.id -%}
+        {%- assign dd_entry = dd -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if dd_entry -%}{%- break -%}{%- endif -%}
+{%- endfor -%}
 
-						{% if current_language == 'en' and fc_price > 0 %}
-							{% if fc_compare > fc_price %}
-							<p id="ComparePrice" class="compare-at-price sale-price on-sale">
-								<span class="money money-resens">{{ fc_compare }}€</span>
-							</p>
-							{% else %}
-							<p id="ComparePrice" class="compare-at-price sale-price js" style="display:none;"></p>
-							{% endif %}
-						{% else %}
-							<p id="ComparePrice"
-							class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}"
-							v-bind:class="{ 'on-sale' : isSale }"
-							v-if="isSale"
-							v-money="variant.compare_at_price">
-							<span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
-							</p>
-						{% endif %}
+{%- assign dd_percent = 0 -%}
+{%- if dd_entry -%}
+  {%- assign dd_percent = dd_entry.percentage_discount.value | default: dd_entry.percentage_discount | default: 0 | plus: 0 -%}
+{%- endif -%}
 
-						{% render 'price-with-foreign-and-display-discount', product: product %}
-						{% render 'unit-price-measurement-variant', variant: current_variant %}
-						</div>
+{%- if dd_entry and dd_percent > 0 -%}
 
-						{%- liquid
-						if cart.taxes_included and block.settings.tax_included
-							assign show_tax_included = true
-						endif
-						if shop.shipping_policy.body != blank and block.settings.shipping_policy
-							assign show_shipping_policy = true
-						endif
-						-%}
-						{%- if show_tax_included or show_shipping_policy -%}
-						<div class="product-page__policies rte text-link-animated">
-							{%- if show_tax_included -%}
-							{{ 'products.product.include_taxes' | t }}
-							{%- endif -%}
-							{%- if show_shipping_policy -%}
-							{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-							{%- endif -%}
-						</div>
-						{%- endif -%}
+  {%- if localization.language.iso_code == 'en' -%}
+    {%- assign base_eur = product.metafields.elasty.price | default: 0 | plus: 0 -%}
+    {%- assign discount_value = base_eur | times: dd_percent | divided_by: 100 -%}
+    {%- assign discounted_eur = base_eur | minus: discount_value | round -%}
 
-						<div class="shopify-payment-terms__container">
-						{{ form | payment_terms }}
-						</div>
-					</div>
+    <p class="product-price">
+      <span class="money-resens discount--line-through">{{ base_eur }}€</span>
+      <span class="money money-resens" style="font-weight:700;">{{ discounted_eur }}€</span>
+    </p>
 
+  {%- else -%}
+    {%- assign base_uah = current_variant.price | default: 0 -%}
+    {%- assign discount_value = base_uah | times: dd_percent | divided_by: 100 -%}
+    {%- assign discounted_uah = base_uah | minus: discount_value -%}
+
+    <p class="product-price">
+      <span class="money-resens discount--line-through">{{ base_uah | money }}</span>
+      <span class="money money-resens" style="font-weight:700;">{{ discounted_uah | money }}</span>
+    </p>
+
+  {%- endif -%}
+
+{%- else -%}
+  {%- comment -%} Default theme price output {%- endcomment -%}
+  {% render 'product-pricing', current_variant: current_variant %}
+{%- endif -%}
+
+                            {% render 'unit-price-measurement-variant', variant: current_variant %}
+                          </div>
+
+                          {%- liquid
+                            if cart.taxes_included and block.settings.tax_included
+                              assign show_tax_included = true
+                            endif
+                            if shop.shipping_policy.body != blank and block.settings.shipping_policy
+                              assign show_shipping_policy = true
+                            endif
+                          -%}
+                          {%- if show_tax_included or show_shipping_policy -%}
+                            <div class="product-page__policies rte text-link-animated">
+                              {%- if show_tax_included -%}
+                                {{ 'products.product.include_taxes' | t }}
+                              {%- endif -%}
+                              {%- if show_shipping_policy -%}
+                                {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                              {%- endif -%}
+                            </div>
+                          {%- endif -%}
+
+                          <div class="shopify-payment-terms__container">
+                            {{ form | payment_terms }}
+                          </div>
+                        </div>
 
                       {%- when 'vendor' -%}
                         {% if product.vendor != "" %}
@@ -710,7 +732,6 @@
 
   {%- endcase -%}
 {%- endfor -%}
-
 
 {% schema %}
 {
