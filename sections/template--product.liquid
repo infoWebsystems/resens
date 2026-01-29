@@ -189,40 +189,66 @@
                         </div>
 
                       {%- when 'price' -%}
-                        <div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px" {{ block.shopify_attributes }}>
-                          <div class="product-price-size--{{ block.settings.price_font }} product-price-group">
-                            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                            <p id="ComparePrice" class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}" v-bind:class="{ 'on-sale' : isSale }" v-if="isSale" v-money="variant.compare_at_price">
-                              <span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
-                            </p>
+					<div class="{{ spacing_classes }}" style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px" {{ block.shopify_attributes }}>
+						<div class="product-price-size--{{ block.settings.price_font }} product-price-group">
+						<span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
 
-                            {% render 'product-pricing', current_variant: current_variant %}
-                            {% render 'unit-price-measurement-variant', variant: current_variant %}
-                          </div>
+						{%- assign current_language = shop.locale | split: "-" | first -%}
+						{%- assign fc_price = product.metafields.custom.foreign_currency_price.value | default: 0 | plus: 0 -%}
+						{%- assign fc_compare = product.metafields.custom.foreign_currency_compare_price.value | default: 0 | plus: 0 -%}
 
-                          {%- liquid
-                            if cart.taxes_included and block.settings.tax_included
-                              assign show_tax_included = true
-                            endif
-                            if shop.shipping_policy.body != blank and block.settings.shipping_policy
-                              assign show_shipping_policy = true
-                            endif
-                          -%}
-                          {%- if show_tax_included or show_shipping_policy -%}
-                            <div class="product-page__policies rte text-link-animated">
-                              {%- if show_tax_included -%}
-                                {{ 'products.product.include_taxes' | t }}
-                              {%- endif -%}
-                              {%- if show_shipping_policy -%}
-                                {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                              {%- endif -%}
-                            </div>
-                          {%- endif -%}
+						{%- comment -%}
+							ComparePrice:
+							- EN: показуємо foreign_currency_compare_price тільки якщо > foreign_currency_price
+							- інші мови: стандартний Shopify/Vue compare_at_price
+						{%- endcomment -%}
 
-                          <div class="shopify-payment-terms__container">
-                            {{ form | payment_terms }}
-                          </div>
-                        </div>
+						{% if current_language == 'en' and fc_price > 0 %}
+							{% if fc_compare > fc_price %}
+							<p id="ComparePrice" class="compare-at-price sale-price on-sale">
+								<span class="money money-resens">{{ fc_compare }}€</span>
+							</p>
+							{% else %}
+							<p id="ComparePrice" class="compare-at-price sale-price js" style="display:none;"></p>
+							{% endif %}
+						{% else %}
+							<p id="ComparePrice"
+							class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}"
+							v-bind:class="{ 'on-sale' : isSale }"
+							v-if="isSale"
+							v-money="variant.compare_at_price">
+							<span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
+							</p>
+						{% endif %}
+
+						{% render 'product-pricing', current_variant: current_variant %}
+						{% render 'unit-price-measurement-variant', variant: current_variant %}
+						</div>
+
+						{%- liquid
+						if cart.taxes_included and block.settings.tax_included
+							assign show_tax_included = true
+						endif
+						if shop.shipping_policy.body != blank and block.settings.shipping_policy
+							assign show_shipping_policy = true
+						endif
+						-%}
+						{%- if show_tax_included or show_shipping_policy -%}
+						<div class="product-page__policies rte text-link-animated">
+							{%- if show_tax_included -%}
+							{{ 'products.product.include_taxes' | t }}
+							{%- endif -%}
+							{%- if show_shipping_policy -%}
+							{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+							{%- endif -%}
+						</div>
+						{%- endif -%}
+
+						<div class="shopify-payment-terms__container">
+						{{ form | payment_terms }}
+						</div>
+					</div>
+
 
                       {%- when 'vendor' -%}
                         {% if product.vendor != "" %}
@@ -686,93 +712,113 @@
 {%- endfor -%}
 
 <script>
-
-function waitForPriceBlock(selector) {
-      return new Promise((resolve) => {
-        const observer = new MutationObserver((mutations, me) => {
-            const button = document.querySelector(selector);
-            if (button) {
-                me.disconnect();
-                resolve(button);
-            }
-        });
-
-        observer.observe(document, {
-            childList: true,
-            subtree: true
-        });
+  function waitForPriceBlock(selector) {
+    return new Promise((resolve) => {
+      const observer = new MutationObserver((mutations, me) => {
+        const el = document.querySelector(selector);
+        if (el) {
+          me.disconnect();
+          resolve(el);
+        }
       });
-    }
 
-    waitForPriceBlock('#ProductPrice').then((button) => {
-      setTimeout(() => {
-				const productPriceWrapper = document.querySelector('#ProductPrice');
-				const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-				const productSpan = document.querySelector('#ProductPrice .money-resens');
-
-				{% assign is_discounted = false %}
-
-				{% assign discounted_products_ids = '' %}
-
-				{% for product in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
-					{% assign discounted_products_ids = discounted_products_ids | append: product.id | append: ',' %}
-				{% endfor %}
-
-				{% assign discounted_products_ids = discounted_products_ids | remove_last: ',' %}
-
-				{% if discounted_products_ids contains product.id %}
-					{% assign is_discounted = true %}
-				{% endif %}
-
-				{% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-					{% if is_discounted == false %}
-						if (currentLanguage == 'en') {
-							productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
-						} else {
-							productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-						}
-					{% else %}
-						if (currentLanguage == 'en') {
-							{% assign product_price = product.metafields.elasty.price | default: 0 %}
-							{% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-					
-							{% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-							{% assign discounted_price = product.metafields.elasty.price | minus: discount_value | round %}
-					
-							productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
-							<span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>`;
-						} else {
-							{% assign product_price = product.price | default: 0 %}
-							{% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-					
-							{% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-							{% assign discounted_price = product.price | minus: discount_value %}
-
-							{% assign price_parts = discounted_price | money | split: '.' %}
-
-							productSpan.innerHTML = `<span class="money-resens discount--line-through">{{ product.price | money }}</span>
-							<span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>`;
-						}
-					{% endif %}
-				{% else %}
-					if (currentLanguage == 'en') {
-						productSpan.innerHTML = `<span class="money money-resens">{{ product.metafields.elasty.price }}€</span>`;
-					} else {
-						productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-					}
-				{% endif %}
-
-        // const productPriceWrapper = document.querySelector('#ProductPrice');
-        // const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
-        // const eurPrice = productPriceWrapper.getAttribute('data-eur-price');
-        // const productSpan = document.querySelector('#ProductPrice .money-resens');
-
-
-        // if (currentLanguage == 'en') {
-        //   productSpan.textContent = eurPrice + "€";
-        // }
-			}, 500);
+      observer.observe(document, { childList: true, subtree: true });
     });
+  }
+
+  waitForPriceBlock('#ProductPrice').then(() => {
+    setTimeout(() => {
+      const productPriceWrapper = document.querySelector('#ProductPrice');
+      const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
+      const productSpan = document.querySelector('#ProductPrice .money-resens');
+      const compareEl = document.querySelector('#ComparePrice');
+
+      // Liquid значення для EN метафілдів
+      const fcPrice = {{ product.metafields.custom.foreign_currency_price.value | default: 0 | plus: 0 }};
+      const fcCompare = {{ product.metafields.custom.foreign_currency_compare_price.value | default: 0 | plus: 0 }};
+
+      {% assign is_discounted = false %}
+      {% assign discounted_products_ids = '' %}
+      {% for product in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
+        {% assign discounted_products_ids = discounted_products_ids | append: product.id | append: ',' %}
+      {% endfor %}
+      {% assign discounted_products_ids = discounted_products_ids | remove_last: ',' %}
+      {% if discounted_products_ids contains product.id %}
+        {% assign is_discounted = true %}
+      {% endif %}
+
+      function setCompareHtml(html) {
+        if (!compareEl) return;
+        if (!html) {
+          compareEl.style.display = 'none';
+          compareEl.innerHTML = '';
+          return;
+        }
+        compareEl.style.display = '';
+        compareEl.innerHTML = html;
+      }
+
+      // ===== ЛОГІКА =====
+      // 1) Якщо display_discount активний — показуємо як у тебе, але для EN використовуємо fcPrice
+      // 2) Якщо display_discount не активний — EN показує fcPrice, а compare (якщо fcCompare > fcPrice) показуємо в #ComparePrice
+      // 3) Для не-EN — лишаємо твою логіку з product.price
+
+      {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
+        {% if is_discounted == false %}
+          // discount active, product NOT discounted
+          if (currentLanguage == 'en') {
+            productSpan.innerHTML = `<span class="money money-resens">${fcPrice}€</span>`;
+            if (fcCompare > fcPrice) {
+              setCompareHtml(`<span class="money money-resens">${fcCompare}€</span>`);
+            } else {
+              setCompareHtml('');
+            }
+          } else {
+            productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
+            // compare для не-EN хай керує Vue/Shopify
+          }
+        {% else %}
+          // discount active, product IS discounted
+          if (currentLanguage == 'en') {
+            const discountPercentage = {{ shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 | plus: 0 }};
+            const discountValue = (fcPrice * discountPercentage) / 100;
+            const discountedPrice = Math.round(fcPrice - discountValue);
+
+            productSpan.innerHTML = `
+              <span class="money-resens discount--line-through">${fcPrice}€</span>
+              <span class="money money-resens" style="font-weight: 700;">${discountedPrice}€</span>
+            `;
+            // Для discounted-режиму compare не показуємо окремо
+            setCompareHtml('');
+          } else {
+            {% assign product_price = product.price | default: 0 %}
+            {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
+            {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+            {% assign discounted_price = product.price | minus: discount_value %}
+            {% assign price_parts = discounted_price | money | split: '.' %}
+
+            productSpan.innerHTML = `
+              <span class="money-resens discount--line-through">{{ product.price | money }}</span>
+              <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
+            `;
+          }
+        {% endif %}
+      {% else %}
+        // discount NOT active
+        if (currentLanguage == 'en') {
+          productSpan.innerHTML = `<span class="money money-resens">${fcPrice}€</span>`;
+          if (fcCompare > fcPrice) {
+            setCompareHtml(`<span class="money money-resens">${fcCompare}€</span>`);
+          } else {
+            setCompareHtml('');
+          }
+        } else {
+          productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
+        }
+      {% endif %}
+
+    }, 500);
+  });
 </script>
 
 
