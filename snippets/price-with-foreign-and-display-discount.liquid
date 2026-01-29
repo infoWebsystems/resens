@@ -1,0 +1,55 @@
+{%- liquid
+  assign lang = request.locale.iso_code | default: localization.language.iso_code
+
+  assign eur_price = product.metafields.custom.foreign_currency_price.value | default: blank
+  assign eur_compare = product.metafields.custom.foreign_currency_compare_at.value | default: blank
+
+  assign dd = blank
+  for d in shop.metaobjects.display_discount.values
+    if d.is_active == true
+      assign dd = d
+      break
+    endif
+  endfor
+
+  assign is_discounted_product = false
+  if dd != blank and dd.products != blank and dd.products.value != blank and dd.products.value.products != blank
+    assign discounted_ids = ''
+    for p in dd.products.value.products
+      assign discounted_ids = discounted_ids | append: p.id | append: ','
+    endfor
+    if discounted_ids contains product.id
+      assign is_discounted_product = true
+    endif
+  endif
+
+  assign discount_pct = 0
+  if dd != blank and dd.percentage_discount != blank
+    assign discount_pct = dd.percentage_discount | plus: 0
+  endif
+-%}
+
+{%- if lang == 'en' and eur_price != blank -%}
+  {%- assign eur_price_num = eur_price | plus: 0 -%}
+  {%- assign eur_compare_num = eur_compare | default: 0 | plus: 0 -%}
+
+  {%- if dd != blank and is_discounted_product and discount_pct > 0 -%}
+    {%- assign eur_discount_value = eur_price_num | times: discount_pct | divided_by: 100 -%}
+    {%- assign eur_discounted = eur_price_num | minus: eur_discount_value | round -%}
+
+    <span class="money money-resens" style="text-decoration: line-through; margin-right: 10px;">{{ eur_price_num }}€</span>
+    <span class="money money-resens" style="font-weight: 700;">{{ eur_discounted }}€</span>
+
+  {%- else -%}
+    {%- if eur_compare_num > eur_price_num -%}
+      <span class="money money-resens" style="text-decoration: line-through; margin-right: 10px;">{{ eur_compare_num }}€</span>
+    {%- endif -%}
+    <span class="money money-resens">{{ eur_price_num }}€</span>
+  {%- endif -%}
+
+{%- else -%}
+  {%- if product.compare_at_price > product.price -%}
+    <span class="money money-resens" style="text-decoration: line-through; margin-right: 10px;">{{ product.compare_at_price | money }}</span>
+  {%- endif -%}
+  <span class="money money-resens">{{ product.price | money }}</span>
+{%- endif -%}
