@@ -1,0 +1,12 @@
+{%- liquid
+  assign active_discount = blank
+
+  for d in shop.metaobjects.display_discount.values
+    if d.is_active == true
+      assign active_discount = d
+      break
+    endif
+  endfor
+-%}
+
+{{ active_discount | json }}
