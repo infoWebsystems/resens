@@ -118,9 +118,30 @@
                         <div class="product-price-group-container">
                           <div class="product-price-size--{{ section.settings.price_font }} product-price-group">
                             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                            <p id="ComparePrice" class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}" v-bind:class="{ 'on-sale' : isSale }" v-if="isSale" v-money="variant.compare_at_price">
-                              <span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
-                            </p>
+
+							{%- assign fc_price = product.metafields.custom.foreign_currency_price.value | default: blank -%}
+							{%- assign fc_compare = product.metafields.custom.foreign_currency_compare_price.value | default: blank -%}
+
+							{%- if fc_price != blank -%}
+							{%- assign fc_price_num = fc_price | plus: 0 -%}
+							{%- assign fc_compare_num = fc_compare | plus: 0 -%}
+
+							{%- if fc_compare != blank and fc_compare_num > fc_price_num -%}
+								<p class="compare-at-price sale-price on-sale">
+								<span class="money money-resens">{{ fc_compare_num | money_with_currency }}</span>
+								</p>
+							{%- endif -%}
+
+							{%- else -%}
+							<p id="ComparePrice"
+								class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}"
+								v-bind:class="{ 'on-sale' : isSale }"
+								v-if="isSale"
+								v-money="variant.compare_at_price">
+								<span class="money money-resens">{{ current_variant.compare_at_price | money }}</span>
+							</p>
+							{%- endif -%}
+
 
                             {% render 'product-pricing', current_variant: current_variant %}
                             {% render 'unit-price-measurement-variant', variant: current_variant %}
