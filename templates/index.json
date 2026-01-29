@@ -563,6 +563,72 @@
         "menu_item_size": 32
       }
     },
+    "visual_navigation_banner_HDrWqQ": {
+      "type": "visual-navigation-banner",
+      "blocks": {
+        "navigation_link_QNR9HL": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/resens-mycelium-packaging-wins-green-award-in-paris",
+            "link_image": "shopify://shop_images/1_Edition_Speciale_by_Luxe_Pack_2025.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_tegjMx": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/brightening-peel-hpa-finalist-of-cosmoprof-india-cosmopack-india-awards-2025",
+            "link_image": "shopify://shop_images/2Edition_Speciale_by_Luxe_Pack_2025.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_EiikhV": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/resens-winner-of-the-ukrainian-prime-award-2025-in-the-category-the-best-sustainable-cosmetic-brand",
+            "link_image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_8QpbJE": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/brightening-peel-hpa-nominated-for-the-prestigious-uk-award-the-aesthetics-awards-2025",
+            "link_image": "shopify://shop_images/6_Best_New_Innovative_Product___The_Aesthetics_Awards_2025.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_7ChG7X": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/resens-wins-bronze-award-at-the-world-brand-design-society-awards-in-the-category-packaging-design-sustainable-development-in-house-design-awards-2025-26",
+            "link_image": "shopify://shop_images/5_World_Brand_Design_Society_Awards.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_YJtrEW": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/resens-winner-of-the-sustainability-beauty-fashion-awards-by-marie-claire-ukraine",
+            "link_image": "shopify://shop_images/3_Marie_Claire_Sustainability_Fashion___Beauty_Award_2025.jpg",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_QNR9HL",
+        "navigation_link_tegjMx",
+        "navigation_link_EiikhV",
+        "navigation_link_8QpbJE",
+        "navigation_link_7ChG7X",
+        "navigation_link_YJtrEW"
+      ],
+      "name": "t:sections.visual-navigation-banner.presets.name",
+      "settings": {
+        "title": "Awards",
+        "image_style": "circle"
+      }
+    },
     "reviews_xJVeCd": {
       "type": "reviews",
       "blocks": {
@@ -948,6 +1014,7 @@
     "cf965c26-6ea8-499a-8a05-a4e350ede58a",
     "8e9e36da-191e-4c8c-ba3a-8a307b84bae9",
     "12a25ae5-a869-4fec-9751-deb411052883",
+    "visual_navigation_banner_HDrWqQ",
     "reviews_xJVeCd",
     "visual_navigation_banner_xaGJ8f",
     "visual_navigation_banner_HXieeP",
