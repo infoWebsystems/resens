@@ -721,7 +721,6 @@
           resolve(el);
         }
       });
-
       observer.observe(document, { childList: true, subtree: true });
     });
   }
@@ -729,97 +728,73 @@
   waitForPriceBlock('#ProductPrice').then(() => {
     setTimeout(() => {
       const productPriceWrapper = document.querySelector('#ProductPrice');
+      if (!productPriceWrapper) return;
+
       const currentLanguage = productPriceWrapper.getAttribute('data-current-language');
       const productSpan = document.querySelector('#ProductPrice .money-resens');
-      const compareEl = document.querySelector('#ComparePrice');
+      if (!productSpan) return;
 
-      // Liquid значення для EN метафілдів
-      const fcPrice = {{ product.metafields.custom.foreign_currency_price.value | default: 0 | plus: 0 }};
-      const fcCompare = {{ product.metafields.custom.foreign_currency_compare_price.value | default: 0 | plus: 0 }};
+      // NEW metafields (numbers / decimals)
+      const enPrice = {{ product.metafields.custom.foreign_currency_price.value | default: 0 }};
+      const enCompare = {{ product.metafields.custom.foreign_currency_compare_at.value | default: 0 }};
 
+      // Keep your display_discount logic
       {% assign is_discounted = false %}
       {% assign discounted_products_ids = '' %}
-      {% for product in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
-        {% assign discounted_products_ids = discounted_products_ids | append: product.id | append: ',' %}
+
+      {% for p in shop.metaobjects.display_discount['display-discount-w3aqcrlo'].products.value.products %}
+        {% assign discounted_products_ids = discounted_products_ids | append: p.id | append: ',' %}
       {% endfor %}
       {% assign discounted_products_ids = discounted_products_ids | remove_last: ',' %}
+
       {% if discounted_products_ids contains product.id %}
         {% assign is_discounted = true %}
       {% endif %}
 
-      function setCompareHtml(html) {
-        if (!compareEl) return;
-        if (!html) {
-          compareEl.style.display = 'none';
-          compareEl.innerHTML = '';
-          return;
+      {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
+
+      function renderEN(price, compare, discounted) {
+        // safety fallback: if metafield пустий — не показуємо 0€, а падаємо назад на Shopify money
+        if (!price || price <= 0) return null;
+
+        if (discounted && compare > price) {
+          return `
+            <span class="money-resens discount--line-through">${compare}€</span>
+            <span class="money money-resens" style="font-weight: 700;">${price}€</span>
+          `;
         }
-        compareEl.style.display = '';
-        compareEl.innerHTML = html;
+        return `<span class="money money-resens">${price}€</span>`;
       }
 
-      // ===== ЛОГІКА =====
-      // 1) Якщо display_discount активний — показуємо як у тебе, але для EN використовуємо fcPrice
-      // 2) Якщо display_discount не активний — EN показує fcPrice, а compare (якщо fcCompare > fcPrice) показуємо в #ComparePrice
-      // 3) Для не-EN — лишаємо твою логіку з product.price
+      if (currentLanguage === 'en') {
+        let finalPrice = enPrice;
+        let finalCompare = enCompare;
 
-      {% if shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active %}
-        {% if is_discounted == false %}
-          // discount active, product NOT discounted
-          if (currentLanguage == 'en') {
-            productSpan.innerHTML = `<span class="money money-resens">${fcPrice}€</span>`;
-            if (fcCompare > fcPrice) {
-              setCompareHtml(`<span class="money money-resens">${fcCompare}€</span>`);
-            } else {
-              setCompareHtml('');
-            }
-          } else {
-            productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
-            // compare для не-EN хай керує Vue/Shopify
-          }
-        {% else %}
-          // discount active, product IS discounted
-          if (currentLanguage == 'en') {
-            const discountPercentage = {{ shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 | plus: 0 }};
-            const discountValue = (fcPrice * discountPercentage) / 100;
-            const discountedPrice = Math.round(fcPrice - discountValue);
+        const isActive = {{ shop.metaobjects.display_discount['display-discount-w3aqcrlo'].is_active | json }};
+        const isDiscounted = {{ is_discounted | json }};
+        const discountPct = {{ discount_percentage | plus: 0 }};
 
-            productSpan.innerHTML = `
-              <span class="money-resens discount--line-through">${fcPrice}€</span>
-              <span class="money money-resens" style="font-weight: 700;">${discountedPrice}€</span>
-            `;
-            // Для discounted-режиму compare не показуємо окремо
-            setCompareHtml('');
-          } else {
-            {% assign product_price = product.price | default: 0 %}
-            {% assign discount_percentage = shop.metaobjects.display_discount['display-discount-w3aqcrlo'].percentage_discount | default: 0 %}
-            {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
-            {% assign discounted_price = product.price | minus: discount_value %}
-            {% assign price_parts = discounted_price | money | split: '.' %}
-
-            productSpan.innerHTML = `
-              <span class="money-resens discount--line-through">{{ product.price | money }}</span>
-              <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
-            `;
-          }
-        {% endif %}
-      {% else %}
-        // discount NOT active
-        if (currentLanguage == 'en') {
-          productSpan.innerHTML = `<span class="money money-resens">${fcPrice}€</span>`;
-          if (fcCompare > fcPrice) {
-            setCompareHtml(`<span class="money money-resens">${fcCompare}€</span>`);
-          } else {
-            setCompareHtml('');
-          }
-        } else {
-          productSpan.innerHTML = `<span class="money money-resens">{{ product.price | money }}</span>`;
+        if (isActive && isDiscounted && enPrice > 0) {
+          // show compare as original, price as discounted
+          finalCompare = enCompare > 0 ? enCompare : enPrice;
+          finalPrice = Math.round(enPrice - (enPrice * discountPct / 100));
         }
-      {% endif %}
+
+        const html = renderEN(finalPrice, finalCompare, (isActive && isDiscounted));
+        if (html) {
+          productSpan.innerHTML = html;
+        } else {
+          // fallback: don't force 0€
+          // залишаємо те, що вже відрендерив Liquid
+        }
+      } else {
+        // non-en: нічого не переписуємо (щоб не ламати гроші Shopify/Vue)
+      }
 
     }, 500);
   });
 </script>
+
 
 
 
