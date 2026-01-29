@@ -1,73 +1,20 @@
 {% comment %}
-  PRICE SNIPPET (FULL REWRITE)
-  - Fixes "0€" issue (uses correct metafields)
-  - Fixes broken logic (does NOT override `product` in loops)
-  - Works for UAH (default) + EUR for EN locale
-  - Supports Display Discount metaobject (any active entry)
-  - Supports classic Shopify compare_at_price sale
+  Check if the product is on sale and set a variable to be used below.
 {% endcomment %}
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+  {% assign on_sale = true %}
+{% endif %}
 
-{%- assign current_language = request.locale.iso_code | split: "-" | first -%}
-
-{%- assign sold_out = true -%}
-{%- if product.available -%}{%- assign sold_out = false -%}{%- endif -%}
-
-{%- comment -%} Detect on_sale (using product-level prices) {%- endcomment -%}
-{%- assign on_sale = false -%}
-{%- if product.compare_at_price > product.price -%}
-  {%- assign on_sale = true -%}
-{%- endif -%}
-
-{%- comment -%} Get ACTIVE Display Discount metaobject (first active) {%- endcomment -%}
-{%- assign dd = blank -%}
-{%- for d in shop.metaobjects.display_discount.values -%}
-  {%- if d.is_active == true -%}
-    {%- assign dd = d -%}
-    {%- break -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{%- comment -%} Build list of discounted product ids from metaobject {%- endcomment -%}
-{%- assign is_discounted = false -%}
-{%- assign discounted_products_ids = '' -%}
-
-{%- if dd != blank and dd.products != blank and dd.products.value != blank and dd.products.value.products != blank -%}
-  {%- for p in dd.products.value.products -%}
-    {%- assign discounted_products_ids = discounted_products_ids | append: p.id | append: ',' -%}
-  {%- endfor -%}
-  {%- if discounted_products_ids contains product.id -%}
-    {%- assign is_discounted = true -%}
-  {%- endif -%}
-{%- endif -%}
-
-{%- assign discount_percentage = 0 -%}
-{%- if dd != blank and dd.percentage_discount != blank -%}
-  {%- assign discount_percentage = dd.percentage_discount | plus: 0 -%}
-{%- endif -%}
-
-{%- comment -%} EUR metafields (change namespaces/keys ONLY if yours differ) {%- endcomment -%}
-{%- assign eur_price_raw   = product.metafields.custom.foreign_currency_price.value | default: blank -%}
-{%- assign eur_compare_raw = product.metafields.custom.foreign_currency_compare_at.value | default: blank -%}
-
-{%- comment -%} Normalize EUR values to numbers when present {%- endcomment -%}
-{%- if eur_price_raw != blank -%}
-  {%- assign eur_price = eur_price_raw | plus: 0 -%}
-{%- else -%}
-  {%- assign eur_price = blank -%}
-{%- endif -%}
-
-{%- if eur_compare_raw != blank -%}
-  {%- assign eur_compare = eur_compare_raw | plus: 0 -%}
-{%- else -%}
-  {%- assign eur_compare = blank -%}
-{%- endif -%}
+{% comment %}
+  Check if the product is sold out and set a variable to be used below.
+{% endcomment %}
+{% assign sold_out = true %}
+{% if product.available %}
+  {% assign sold_out = false %}
+{% endif %}
 
 <a href="{{ product.url | within: collection }}" data-product-id="{{ product.id }}" tabindex="-1">
-
-  {%- comment -%}
-    CASE A) Shopify sale (compare_at_price > price) — show classic UAH sale
-    (This is what your theme expects for normal sales)
-  {%- endcomment -%}
   {% if on_sale %}
 
     {% if product.price_varies %}
@@ -76,76 +23,78 @@
 
     <span class="money price-line-through sale-price">
       <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-      <span class="money-resens">{{ product.compare_at_price | money }}</span>
+      <span class="money-resens">{{- product.compare_at_price | money -}}</span>
     </span>
 
     <span class="money money-resens">{{ product.price | money }}</span>
 
   {% else %}
 
-    {%- comment -%}
-      CASE B) Not Shopify sale
-      - If price varies: show from + UAH (standard)
-      - Else: show EN as EUR (from metafields), other languages as UAH
-        and apply Display Discount if active + product included
-    {%- endcomment -%}
-
     {% if product.price_varies %}
       {{ 'products.general.from_text' | t }}
       <span class="money money-resens">{{ product.price | money }}</span>
-
     {% else %}
 
+      {% assign current_language = shop.locale | split: "-" | first %}
+      {% assign is_discounted = false %}
+
+      {%- assign dd = shop.metaobjects.display_discount['display-discount-w3aqcrlo'] -%}
+
+      {%- assign discounted_products_ids = ',' -%}
+      {% if dd and dd.products.value and dd.products.value.products %}
+        {% for p in dd.products.value.products %}
+          {%- assign discounted_products_ids = discounted_products_ids | append: p.id | append: ',' -%}
+        {% endfor %}
+      {% endif %}
+
+      {%- assign product_id_str = product.id | append: '' -%}
+      {%- assign needle = ',' | append: product_id_str | append: ',' -%}
+
+      {% if discounted_products_ids contains needle %}
+        {% assign is_discounted = true %}
+      {% endif %}
+
       {% if current_language == 'en' %}
+        {% if dd and dd.is_active %}
+          {% if is_discounted == false %}
+            <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
+          {% else %}
+            <span class="money-resens discount--line-through">{{ product.metafields.elasty.price }}€</span>
 
-        {%- if eur_price == blank -%}
-          {%- comment -%} Fallback if EUR not set {%- endcomment -%}
-          <span class="money money-resens">{{ product.price | money }}</span>
-        {%- else -%}
+            {% assign product_price = product.metafields.elasty.price | default: 0 %}
+            {% assign discount_percentage = dd.percentage_discount | default: 0 %}
+            {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+            {% assign discounted_price = product.metafields.elasty.price | minus: discount_value | round %}
 
-          {%- if dd != blank and is_discounted and discount_percentage > 0 -%}
-            {%- assign discount_value_eur = eur_price | times: discount_percentage | divided_by: 100 -%}
-            {%- assign discounted_eur = eur_price | minus: discount_value_eur | round -%}
-
-            <span class="money-resens discount--line-through">{{ eur_price }}€</span>
-            <span class="money money-resens" style="font-weight: 700;">{{ discounted_eur }}€</span>
-
-          {%- else -%}
-
-            {%- comment -%} If compare EUR exists and is higher, show strikethrough {%- endcomment -%}
-            {%- if eur_compare != blank and eur_compare > eur_price -%}
-              <span class="money-resens discount--line-through">{{ eur_compare }}€</span>
-            {%- endif -%}
-
-            <span class="money money-resens">{{ eur_price }}€</span>
-
-          {%- endif -%}
-
-        {%- endif -%}
-
+            <span class="money money-resens" style="font-weight: 700;">{{ discounted_price }}€</span>
+          {% endif %}
+        {% else %}
+          <span class="money money-resens">{{ product.metafields.elasty.price }}€</span>
+        {% endif %}
       {% else %}
+        {% if dd and dd.is_active %}
+          {% if is_discounted == false %}
+            <span class="money money-resens">{{ product.price | money }}</span>
+          {% else %}
+            <span class="money-resens discount--line-through">{{ product.price | money }}</span>
 
-        {%- if dd != blank and is_discounted and discount_percentage > 0 -%}
-          <span class="money-resens discount--line-through">{{ product.price | money }}</span>
+            {% assign product_price = product.price | default: 0 %}
+            {% assign discount_percentage = dd.percentage_discount | default: 0 %}
+            {% assign discount_value = product_price | times: discount_percentage | divided_by: 100 %}
+            {% assign discounted_price = product.price | minus: discount_value %}
 
-          {%- assign product_price_uah = product.price | default: 0 -%}
-          {%- assign discount_value_uah = product_price_uah | times: discount_percentage | divided_by: 100 -%}
-          {%- assign discounted_uah = product.price | minus: discount_value_uah -%}
-
-          {%- assign price_parts = discounted_uah | money | split: '.' -%}
-          <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
-
-        {%- else -%}
+            {% assign price_parts = discounted_price | money | split: '.' %}
+            <span class="money money-resens" style="font-weight: 700;">{{ price_parts[0] }}</span>
+          {% endif %}
+        {% else %}
           <span class="money money-resens">{{ product.price | money }}</span>
-        {%- endif -%}
-
+        {% endif %}
       {% endif %}
 
     {% endif %}
 
   {% endif %}
 
-  {%- assign first_variant = product.variants.first -%}
+  {% assign first_variant = product.variants[0] %}
   {% render 'unit-price-measurement-variant', variant: first_variant %}
-
 </a>
