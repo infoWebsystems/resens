@@ -624,7 +624,7 @@
         "navigation_link_YJtrEW"
       ],
       "custom_css": [
-        "iframe, img {max-width: 180%;}"
+        "iframe,img {max-width: 300%;}"
       ],
       "name": "t:sections.visual-navigation-banner.presets.name",
       "settings": {
