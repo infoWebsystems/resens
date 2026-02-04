@@ -56,7 +56,7 @@
           "settings": {
             "vacancy_name": "SMM Manager (Kyiv, Darnytsia metro station)",
             "vacancy_description": "",
-            "vacancy_url": "#"
+            "vacancy_url": "shopify://pages/smm-manager-kyiv-darnytsia-metro-station"
           }
         },
         "vacancy_bgA7jm": {
@@ -64,7 +64,7 @@
           "settings": {
             "vacancy_name": "Partnership Manager / Sales Development Manager",
             "vacancy_description": "",
-            "vacancy_url": "#"
+            "vacancy_url": "shopify://pages/partnership-manager-sales-development-manager"
           }
         }
       },
