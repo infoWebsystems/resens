@@ -89,7 +89,7 @@
       ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "accent",
+        "colors": "light",
         "image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
         "text_overlapping_image": false,
         "section-width": "full",
@@ -121,8 +121,8 @@
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "accent",
-        "image": "shopify://shop_images/6_Best_New_Innovative_Product___The_Aesthetics_Awards_2025.jpg",
+        "colors": "light",
+        "image": "shopify://shop_images/3_84afd8f8-a81c-49b2-b038-997be56d1776.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -153,8 +153,8 @@
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "accent",
-        "image": "shopify://shop_images/1_Edition_Speciale_by_Luxe_Pack_2025.jpg",
+        "colors": "light",
+        "image": "shopify://shop_images/2_61766b97-eba7-4367-adee-958e65f6fef0.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
