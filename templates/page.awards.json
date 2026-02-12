@@ -95,8 +95,8 @@
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "",
-        "text": "<h2>Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand</h2>",
+        "title": "Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand",
+        "text": "",
         "button_label": "Read More",
         "button_link": "https://resenss.com/en/blogs/news/resens-winner-of-the-ukrainian-prime-award-2025-in-the-category-the-best-sustainable-cosmetic-brand"
       }
@@ -111,8 +111,8 @@
         "section-width": "full",
         "layout": "right",
         "text_alignment": "center",
-        "title": "",
-        "text": "<h2>BRIGHTENING PEEL HPA — FINALIST OF COSMOPROF INDIA & COSMOPACK INDIA AWARDS 2025</h2>",
+        "title": "BRIGHTENING PEEL HPA — FINALIST OF COSMOPROF INDIA & COSMOPACK INDIA AWARDS 2025",
+        "text": "",
         "button_label": "read more",
         "button_link": "https://resenss.com/en/blogs/news/brightening-peel-hpa-finalist-of-cosmoprof-india-cosmopack-india-awards-2025"
       }
@@ -127,8 +127,8 @@
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
-        "title": "",
-        "text": "<h2>BRIGHTENING PEEL HPA — NOMINATED FOR THE PRESTIGIOUS UK AWARD THE AESTHETICS AWARDS 2025!</h2>",
+        "title": "BRIGHTENING PEEL HPA — NOMINATED FOR THE PRESTIGIOUS UK AWARD THE AESTHETICS AWARDS 2025!",
+        "text": "",
         "button_label": "read more",
         "button_link": "https://resenss.com/en/blogs/news/brightening-peel-hpa-nominated-for-the-prestigious-uk-award-the-aesthetics-awards-2025"
       }
@@ -140,8 +140,8 @@
         "colors": "white",
         "image": "shopify://shop_images/5_World_Brand_Design_Society_Awards.jpg",
         "text_overlapping_image": false,
-        "section-width": "content",
-        "layout": "right",
+        "section-width": "full",
+        "layout": "left",
         "text_alignment": "center",
         "title": "Re[Sens] wins Bronze Award at the World Brand Design Society Awards in the category Packaging Design: Sustainable Development (In-House Design Awards 2025/26)",
         "text": "",
@@ -156,7 +156,7 @@
         "colors": "accent",
         "image": "shopify://shop_images/1_Edition_Speciale_by_Luxe_Pack_2025.jpg",
         "text_overlapping_image": false,
-        "section-width": "content",
+        "section-width": "full",
         "layout": "right",
         "text_alignment": "center",
         "title": "Re[Sens] Mycelium Packaging Wins Green Award in Paris!",
@@ -172,11 +172,11 @@
         "colors": "white",
         "image": "shopify://shop_images/3_Marie_Claire_Sustainability_Fashion___Beauty_Award_2025.jpg",
         "text_overlapping_image": false,
-        "section-width": "content",
-        "layout": "right",
+        "section-width": "full",
+        "layout": "left",
         "text_alignment": "center",
-        "title": "",
-        "text": "<h2>Re[Sens] — winner of the Sustainability Beauty & Fashion Awards by Marie Claire Ukraine</h2>",
+        "title": "Re[Sens] — winner of the Sustainability Beauty & Fashion Awards by Marie Claire Ukraine",
+        "text": "",
         "button_label": "read more",
         "button_link": "https://resenss.com/en/blogs/news/resens-winner-of-the-sustainability-beauty-fashion-awards-by-marie-claire-ukraine"
       }
