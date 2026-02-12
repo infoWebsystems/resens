@@ -105,7 +105,7 @@
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "image": "shopify://shop_images/2Edition_Speciale_by_Luxe_Pack_2025.png",
         "text_overlapping_image": false,
         "section-width": "full",
@@ -137,7 +137,7 @@
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "image": "shopify://shop_images/5_World_Brand_Design_Society_Awards.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
@@ -169,7 +169,7 @@
       "type": "image--image-with-text",
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "image": "shopify://shop_images/3_Marie_Claire_Sustainability_Fashion___Beauty_Award_2025.jpg",
         "text_overlapping_image": false,
         "section-width": "full",
