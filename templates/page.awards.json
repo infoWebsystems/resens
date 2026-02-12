@@ -156,7 +156,7 @@
         "colors": "accent",
         "image": "shopify://shop_images/1_Edition_Speciale_by_Luxe_Pack_2025.jpg",
         "text_overlapping_image": false,
-        "section-width": "full",
+        "section-width": "content",
         "layout": "right",
         "text_alignment": "center",
         "title": "",
