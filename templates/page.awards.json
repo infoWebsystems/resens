@@ -15,9 +15,181 @@
         "page_title_enabled": true,
         "page_width": "full-width"
       }
+    },
+    "visual_navigation_banner_7GwJ8P": {
+      "type": "visual-navigation-banner",
+      "blocks": {
+        "navigation_link_qH4C4j": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_dpDGjV": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/2Edition_Speciale_by_Luxe_Pack_2025.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_FmhFDi": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/6_Best_New_Innovative_Product___The_Aesthetics_Awards_2025.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_mDiRWY": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/5_World_Brand_Design_Society_Awards.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_AgpFFX": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/1_Edition_Speciale_by_Luxe_Pack_2025.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_RAdMDe": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "",
+            "link_image": "shopify://shop_images/3_Marie_Claire_Sustainability_Fashion___Beauty_Award_2025.jpg",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qH4C4j",
+        "navigation_link_dpDGjV",
+        "navigation_link_FmhFDi",
+        "navigation_link_mDiRWY",
+        "navigation_link_AgpFFX",
+        "navigation_link_RAdMDe"
+      ],
+      "name": "t:sections.visual-navigation-banner.presets.name",
+      "settings": {
+        "title": "",
+        "image_style": "circle"
+      }
+    },
+    "image_image_with_text_yx44HF": {
+      "type": "image--image-with-text",
+      "custom_css": [
+        "h2 {}"
+      ],
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "accent",
+        "image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand",
+        "text": "",
+        "button_label": "Read More",
+        "button_link": "https://resenss.com/en/blogs/news/resens-winner-of-the-ukrainian-prime-award-2025-in-the-category-the-best-sustainable-cosmetic-brand"
+      }
+    },
+    "image_image_with_text_hPTNpm": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/2Edition_Speciale_by_Luxe_Pack_2025.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "image_image_with_text_XWY6MD": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "accent",
+        "image": "shopify://shop_images/6_Best_New_Innovative_Product___The_Aesthetics_Awards_2025.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "image_image_with_text_8wzkqH": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/5_World_Brand_Design_Society_Awards.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "image_image_with_text_T7nHcM": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "accent",
+        "image": "shopify://shop_images/1_Edition_Speciale_by_Luxe_Pack_2025.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "image_image_with_text_7YNP4U": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/3_Marie_Claire_Sustainability_Fashion___Beauty_Award_2025.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "Share brand or product details",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "visual_navigation_banner_7GwJ8P",
+    "image_image_with_text_yx44HF",
+    "image_image_with_text_hPTNpm",
+    "image_image_with_text_XWY6MD",
+    "image_image_with_text_8wzkqH",
+    "image_image_with_text_T7nHcM",
+    "image_image_with_text_7YNP4U"
   ]
 }
