@@ -82,11 +82,20 @@
         "image_style": "circle"
       }
     },
-    "advanced_layout_custom_liquid_gcUbPp": {
-      "type": "advanced-layout--custom-liquid",
-      "name": "t:all.Custom_Liquid",
+    "image_image_with_text_YATGyb": {
+      "type": "image--image-with-text",
+      "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
-        "custom_liquid": "<div style='text-align:center; padding: 30px 0;'><div class=\"wrapper-padded\"><h2 class=\"homepage-sections--title\">Custom Liquid</h2><p>Add app snippets or other Liquid code to create advanced customizations.</p></div></div>"
+        "colors": "light",
+        "image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<h5>Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand</h5>",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "image_image_with_text_yx44HF": {
@@ -192,7 +201,7 @@
   "order": [
     "main",
     "visual_navigation_banner_7GwJ8P",
-    "advanced_layout_custom_liquid_gcUbPp",
+    "image_image_with_text_YATGyb",
     "image_image_with_text_yx44HF",
     "image_image_with_text_hPTNpm",
     "image_image_with_text_XWY6MD",
