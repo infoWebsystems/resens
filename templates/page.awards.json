@@ -85,7 +85,7 @@
     "image_image_with_text_yx44HF": {
       "type": "image--image-with-text",
       "custom_css": [
-        "h2 {}"
+        "/* Зменшити зображення в image-with-text вдвічі */.image-with-text__media img {max-width: 50% !important; margin: 0 auto; display: block;}"
       ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
