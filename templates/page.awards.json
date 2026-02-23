@@ -104,7 +104,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/2Edition_Speciale_by_Luxe_Pack_2025.png",
+        "image": "shopify://shop_images/2_3ca14264-644c-4ce7-89e0-ae03a6fc43e1.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
@@ -120,7 +120,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/3_84afd8f8-a81c-49b2-b038-997be56d1776.png",
+        "image": "shopify://shop_images/6_f74a51d5-f2b4-4693-9af7-226d94a60d87.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -136,7 +136,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/5_World_Brand_Design_Society_Awards.jpg",
+        "image": "shopify://shop_images/5_12d03bf3-bd31-47de-987c-c3aee825bd78.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -152,7 +152,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/2_61766b97-eba7-4367-adee-958e65f6fef0.png",
+        "image": "shopify://shop_images/1_fb7dfb80-3199-4ce0-beed-c38a248b924c.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
@@ -168,7 +168,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/3_Marie_Claire_Sustainability_Fashion___Beauty_Award_2025.jpg",
+        "image": "shopify://shop_images/3_03df3b26-0ccf-4942-8150-528971ed61ab.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
