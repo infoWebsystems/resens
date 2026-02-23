@@ -90,13 +90,13 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/4_25c74ca3-af65-4c3a-9adf-d12f975b072d.png",
+        "image": "shopify://shop_images/4_93061eee-e3cd-4eca-9f89-7c2594bea643.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
         "text_alignment": "center",
         "title": "",
-        "text": "<h4>Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand</h4>",
+        "text": "<h3>Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand</h3>",
         "button_label": "Read More",
         "button_link": "https://resenss.com/en/blogs/news/resens-winner-of-the-ukrainian-prime-award-2025-in-the-category-the-best-sustainable-cosmetic-brand"
       }
@@ -109,7 +109,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/2_3ca14264-644c-4ce7-89e0-ae03a6fc43e1.png",
+        "image": "shopify://shop_images/2_893cf9e0-7fa8-4b97-9e37-7534e83587e2.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
@@ -128,7 +128,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/6_f74a51d5-f2b4-4693-9af7-226d94a60d87.png",
+        "image": "shopify://shop_images/6_a448e030-7c1a-4bbb-9cb1-7bdcdaf34de4.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -147,7 +147,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/5_12d03bf3-bd31-47de-987c-c3aee825bd78.png",
+        "image": "shopify://shop_images/5_c9a86e0a-f03c-4148-8fc7-540e78d9d7fb.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
@@ -166,7 +166,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/1_fb7dfb80-3199-4ce0-beed-c38a248b924c.png",
+        "image": "shopify://shop_images/1_666163a4-46e9-4eef-a4d3-96176ed271cc.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "left",
@@ -185,7 +185,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
-        "image": "shopify://shop_images/3_03df3b26-0ccf-4942-8150-528971ed61ab.png",
+        "image": "shopify://shop_images/3_6e410494-9d9f-4e44-9ffe-a28ec877db81.png",
         "text_overlapping_image": false,
         "section-width": "full",
         "layout": "right",
