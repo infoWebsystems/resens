@@ -87,7 +87,7 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
+        "image": "shopify://shop_images/4_Ukrainian_Prime_Award_c9024e49-6106-48a2-bde3-8861b10bc6d8.png",
         "text_overlapping_image": false,
         "section-width": "content",
         "layout": "left",
