@@ -191,6 +191,17 @@
     "template_product_info_columns_zM874e": {
       "type": "template--product--info-columns",
       "blocks": {
+        "image_and_text_7QjdDV": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/imgi_45_1000x1000_ReSens_map_BNL.jpg",
+            "grid_image_size": "square",
+            "heading": "Benelux",
+            "text": "<p><strong>SKINLIST</strong></p><p>Max Woiskistraat 15, 3069 ZN, Rotterdam, The Netherlands</p><p>email: info@skinlist.nl</p><p>phone: +36 38 663 699</p>",
+            "button_text": "Go to site",
+            "button_link": "https://skinlist.nl"
+          }
+        },
         "image_and_text_zDLcLt": {
           "type": "image_and_text",
           "settings": {
@@ -260,6 +271,7 @@
         }
       },
       "block_order": [
+        "image_and_text_7QjdDV",
         "image_and_text_zDLcLt",
         "image_and_text_bX9Gxe",
         "image_and_text_U3qmym",
