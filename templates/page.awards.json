@@ -84,7 +84,9 @@
     },
     "image_image_with_text_yx44HF": {
       "type": "image--image-with-text",
-      "custom_css": [],
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
