@@ -89,7 +89,7 @@
         "colors": "light",
         "image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
         "text_overlapping_image": false,
-        "section-width": "full",
+        "section-width": "content",
         "layout": "left",
         "text_alignment": "center",
         "title": "",
