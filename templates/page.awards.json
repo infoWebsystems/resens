@@ -87,13 +87,13 @@
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
-        "image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
+        "image": "shopify://shop_images/4_Ukrainian_Prime_Award_c9024e49-6106-48a2-bde3-8861b10bc6d8.png",
         "text_overlapping_image": false,
         "section-width": "content",
         "layout": "left",
         "text_alignment": "center",
-        "title": "Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand",
-        "text": "",
+        "title": "",
+        "text": "<h3>Re[Sens] — winner of the Ukrainian Prime Award 2025 in the category The Best Sustainable Cosmetic Brand</h3>",
         "button_label": "",
         "button_link": ""
       }
