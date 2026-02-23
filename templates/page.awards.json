@@ -103,6 +103,9 @@
     },
     "image_image_with_text_hPTNpm": {
       "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
@@ -119,6 +122,9 @@
     },
     "image_image_with_text_XWY6MD": {
       "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
@@ -135,6 +141,9 @@
     },
     "image_image_with_text_8wzkqH": {
       "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
@@ -151,6 +160,9 @@
     },
     "image_image_with_text_T7nHcM": {
       "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
@@ -167,6 +179,9 @@
     },
     "image_image_with_text_7YNP4U": {
       "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "white",
