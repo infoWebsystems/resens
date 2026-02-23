@@ -84,9 +84,7 @@
     },
     "image_image_with_text_yx44HF": {
       "type": "image--image-with-text",
-      "custom_css": [
-        "@media (max-width: 768px) {.image-with-text__media img {max-width: 50%; }}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image--image-with-text.presets.name",
       "settings": {
         "colors": "light",
