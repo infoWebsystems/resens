@@ -64,6 +64,20 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     applyDiscountToCartDrawer(isCartPage);
   }
+
+  // Закриття drawer — делегування на document.
+  // Вішається ОДИН РАЗ і не губиться після перемальовки drawer'а.
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.js-drawer-close')) {
+      closeCartDrawer();
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('#DrawerOverlay')) {
+      closeCartDrawer();
+    }
+  });
 });
 
 function addCartDrawerListeners() {
@@ -115,15 +129,7 @@ function addCartDrawerListeners() {
     });
   }
 
-  // Close button — клонуємо щоб скинути старі listeners
-  const closeBtn = document.querySelector('.js-drawer-close button');
-if (closeBtn) {
-  const newCloseBtn = closeBtn.cloneNode(true);
-  closeBtn.parentNode.replaceChild(newCloseBtn, closeBtn);
-  newCloseBtn.addEventListener('click', () => closeCartDrawer());
-}
-
-  // Overlay
+  // Overlay — клонуємо щоб скинути старі listeners
   const overlay = document.querySelector('#DrawerOverlay');
   if (overlay) {
     const newOverlay = overlay.cloneNode(true);
