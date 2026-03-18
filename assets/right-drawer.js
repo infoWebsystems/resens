@@ -46,32 +46,43 @@ async function updateCartAJAX(key, qty = 0) {
 
 // Тема сама додає товар і відкриває drawer.
 // Ми лише чекаємо і оновлюємо вміст drawer'а.
-document.addEventListener("DOMContentLoaded", function() {
-  let isCartPage = document.querySelector('.template-cart') !== null;
+// Захист від повторної ініціалізації при SPA-навігації
+if (!window._rightDrawerInit) {
+  window._rightDrawerInit = true;
 
-  if (!isCartPage) {
-    document.addEventListener('click', async e => {
-      const btn = e.target.closest('button[name="add"], [data-add-to-cart], button[type="submit"]');
-      if (!btn) return;
+  document.addEventListener("DOMContentLoaded", function() {
+    let isCartPage = document.querySelector('.template-cart') !== null;
 
-      const form = btn.closest('form[action*="/cart/add"]');
-      if (!form) return;
+    if (!isCartPage) {
+      document.addEventListener('click', async e => {
+        const btn = e.target.closest('button[name="add"], [data-add-to-cart], button[type="submit"]');
+        if (!btn) return;
 
-      await new Promise(resolve => setTimeout(resolve, 800));
-      await applyDiscountToCartDrawer();
-      await updateCartDrawer();
-    });
-  } else {
-    applyDiscountToCartDrawer(isCartPage);
-  }
+        const form = btn.closest('form[action*="/cart/add"]');
+        if (!form) return;
 
-  // Закриття drawer — делегування на document.
-  // Вішається ОДИН РАЗ і не губиться після перемальовки drawer'а.
-  document.addEventListener('click', function(e) {
-    if (e.target.closest('.js-drawer-close')) {
-      closeCartDrawer();
+        await new Promise(resolve => setTimeout(resolve, 800));
+        await applyDiscountToCartDrawer();
+        await updateCartDrawer();
+      });
+    } else {
+      applyDiscountToCartDrawer(isCartPage);
     }
+
+    // Закриття drawer
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.js-drawer-close')) {
+        closeCartDrawer();
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('#DrawerOverlay')) {
+        closeCartDrawer();
+      }
+    });
   });
+}
 
   document.addEventListener('click', function(e) {
     if (e.target.closest('#DrawerOverlay')) {
