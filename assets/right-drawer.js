@@ -168,9 +168,9 @@ function addCartDrawerListeners() {
     closeCartDrawer();
   });*/
 
-  document.querySelector('.js-drawer-close')
-  .addEventListener('click', () => {
-    closeCartDrawer();
+  document.querySelectorAll('.js-drawer-close, [data-drawer-close], .drawer__close button')
+  .forEach(el => {
+    el.addEventListener('click', () => closeCartDrawer());
   });
 
   document.querySelector('#DrawerOverlay').addEventListener('click', () => {
