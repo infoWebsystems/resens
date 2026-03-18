@@ -116,12 +116,12 @@ function addCartDrawerListeners() {
   }
 
   // Close button — клонуємо щоб скинути старі listeners
-  const closeBtn = document.querySelector('.js-drawer-close');
-  if (closeBtn) {
-    const newCloseBtn = closeBtn.cloneNode(true);
-    closeBtn.parentNode.replaceChild(newCloseBtn, closeBtn);
-    newCloseBtn.addEventListener('click', () => closeCartDrawer());
-  }
+  const closeBtn = document.querySelector('.js-drawer-close button');
+if (closeBtn) {
+  const newCloseBtn = closeBtn.cloneNode(true);
+  closeBtn.parentNode.replaceChild(newCloseBtn, closeBtn);
+  newCloseBtn.addEventListener('click', () => closeCartDrawer());
+}
 
   // Overlay
   const overlay = document.querySelector('#DrawerOverlay');
