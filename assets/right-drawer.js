@@ -75,32 +75,23 @@ async function updateCartAJAX(key, qty = 0) {
 // НОВИЙ КОД — виправлено подвійний запит cart/add
 document.addEventListener("DOMContentLoaded", function() {
   let isCartPage = document.querySelector('.template-cart') !== null;
-  let isAdding = false;
 
   if (!isCartPage) {
-    window.addEventListener('submit', async e => {
-      if (!e.target.getAttribute('action')?.includes('/cart/add')) return;
+    // Тема сама додає товар через click listener
+    // Ми лише чекаємо завершення і оновлюємо drawer
+    document.addEventListener('click', async e => {
+      const btn = e.target.closest('button[name="add"], [data-add-to-cart], button[type="submit"]');
+      if (!btn) return;
+      
+      const form = btn.closest('form[action*="/cart/add"]');
+      if (!form) return;
 
-      if (isAdding) {
-        e.preventDefault();
-        return;
-      }
-
-      isAdding = true;
-      e.preventDefault();
-
-      const form = e.target;
-
-      await fetch('/cart/add', {
-        method: 'post',
-        body: new FormData(form)
-      });
+      // Чекаємо поки тема зробить свій запит
+      await new Promise(resolve => setTimeout(resolve, 800));
 
       await applyDiscountToCartDrawer();
       await updateCartDrawer();
       openCartDrawer();
-
-      isAdding = false;
     });
   } else {
     applyDiscountToCartDrawer(isCartPage);
