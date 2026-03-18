@@ -163,7 +163,12 @@ function addCartDrawerListeners() {
     });
   }
 
-  document.querySelector('.js-drawer-close .icon-fallback-text')
+  /*document.querySelector('.js-drawer-close .icon-fallback-text')
+  .addEventListener('click', () => {
+    closeCartDrawer();
+  });*/
+
+  document.querySelector('.js-drawer-close')
   .addEventListener('click', () => {
     closeCartDrawer();
   });
