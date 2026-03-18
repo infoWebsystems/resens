@@ -44,54 +44,22 @@ async function updateCartAJAX(key, qty = 0) {
   });
 }
 
-/*document.addEventListener("DOMContentLoaded", function() {
-  let isCartPage = document.querySelector('.template-cart') !== null;
-
-  if (!isCartPage) {
-    window.addEventListener('submit', async e => {
-      e.preventDefault();
-    
-      if (e.target.getAttribute('action').includes('/cart/add')) {
-        const form = e.target;
-    
-        // Open cart drawer
-        // openCartDrawer();
-    
-        await fetch('/cart/add', {
-          method: 'post',
-          body: new FormData(form)
-        });
-    
-        // // // Update Cart
-        await applyDiscountToCartDrawer();
-        await updateCartDrawer();
-      }
-    });
-  } else {
-    applyDiscountToCartDrawer(isCartPage);
-  }
-});*/
-
-// НОВИЙ КОД — виправлено подвійний запит cart/add
+// Тема сама додає товар і відкриває drawer.
+// Ми лише чекаємо і оновлюємо вміст drawer'а.
 document.addEventListener("DOMContentLoaded", function() {
   let isCartPage = document.querySelector('.template-cart') !== null;
 
   if (!isCartPage) {
-    // Тема сама додає товар через click listener
-    // Ми лише чекаємо завершення і оновлюємо drawer
     document.addEventListener('click', async e => {
       const btn = e.target.closest('button[name="add"], [data-add-to-cart], button[type="submit"]');
       if (!btn) return;
-      
+
       const form = btn.closest('form[action*="/cart/add"]');
       if (!form) return;
 
-      // Чекаємо поки тема зробить свій запит
       await new Promise(resolve => setTimeout(resolve, 800));
-
       await applyDiscountToCartDrawer();
       await updateCartDrawer();
-      openCartDrawer();
     });
   } else {
     applyDiscountToCartDrawer(isCartPage);
@@ -105,29 +73,17 @@ function addCartDrawerListeners() {
       e.preventDefault();
 
       const closestButtonParent = button.closest('.ajaxcart__product');
-      // Get line item key
       const key = closestButtonParent.getAttribute('data-line-item-key');
-
-      // Get new quantity
-      const quantity = closestButtonParent.querySelector(
-        'input.ajaxcart__qty-num'
-      ).value;
+      const quantity = closestButtonParent.querySelector('input.ajaxcart__qty-num').value;
 
       let newQuantity;
-
       switch (button.dataset.action) {
-        case '+':
-          newQuantity = +quantity + 1;
-          break;
-        case '-':
-          newQuantity = +quantity - 1;
-          break;
+        case '+': newQuantity = +quantity + 1; break;
+        case '-': newQuantity = +quantity - 1; break;
       }
 
-      // AJAX update
       await updateCartAJAX(key, newQuantity);
 
-      // Update cart
       const index = closestButtonParent.dataset.index;
       await applyDiscountToCartDrawer();
       await updateCartDrawer(index);
@@ -140,21 +96,17 @@ function addCartDrawerListeners() {
       e.preventDefault();
 
       const itemClosestParent = item.closest('.ajaxcart__product');
-
-      // Get line item key
       const key = itemClosestParent.getAttribute('data-line-item-key');
 
-      // AJAX update
       await updateCartAJAX(key);
 
-      // Update cart
       const index = itemClosestParent.dataset.index;
       await applyDiscountToCartDrawer();
       await updateCartDrawer(index);
     });
   });
 
-  // Redirect to checkout Page
+  // Checkout
   const checkoutBtn = document.querySelector('.js-right_drawer_cart_checkout');
   if (checkoutBtn) {
     checkoutBtn.addEventListener('click', function(event) {
@@ -163,36 +115,37 @@ function addCartDrawerListeners() {
     });
   }
 
-  /*document.querySelector('.js-drawer-close .icon-fallback-text')
-  .addEventListener('click', () => {
-    closeCartDrawer();
-  });*/
+  // Close button — клонуємо щоб скинути старі listeners
+  const closeBtn = document.querySelector('.js-drawer-close');
+  if (closeBtn) {
+    const newCloseBtn = closeBtn.cloneNode(true);
+    closeBtn.parentNode.replaceChild(newCloseBtn, closeBtn);
+    newCloseBtn.addEventListener('click', () => closeCartDrawer());
+  }
 
-  document.querySelectorAll('.js-drawer-close, [data-drawer-close], .drawer__close button')
-  .forEach(el => {
-    el.addEventListener('click', () => closeCartDrawer());
-  });
-
-  document.querySelector('#DrawerOverlay').addEventListener('click', () => {
-    closeCartDrawer();
-  });
+  // Overlay
+  const overlay = document.querySelector('#DrawerOverlay');
+  if (overlay) {
+    const newOverlay = overlay.cloneNode(true);
+    overlay.parentNode.replaceChild(newOverlay, overlay);
+    newOverlay.addEventListener('click', () => closeCartDrawer());
+  }
 }
 
 addCartDrawerListeners();
 
-// Open cart drawer
-// document.querySelectorAll('.js-drawer-open-right-link').forEach(item => {
+// Open cart drawer via custom links
 document.querySelectorAll('.js-drawer-open-right-link-custom').forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
     openCartDrawer();
   });
-})
+});
 
 // Discount Applying START
 const stringToBoolean = str => str.toLowerCase() === 'true';
 
-async function applyDiscountToCartDrawer (isCartPage) {
+async function applyDiscountToCartDrawer(isCartPage) {
   const wrapper = document.querySelector('#PageContainer');
 
   const is_minimum_quantity_of_items = wrapper.getAttribute('data-buy_x_get_y_is_minimum_quantity_of_items');
@@ -222,81 +175,58 @@ async function applyDiscountToCartDrawer (isCartPage) {
 
           let eligibleCount = 0;
           let isGiftInTheCart = false;
-
           let totalPrice = 0;
 
           cart.items.forEach(item => {
             if (eligibleProducts.includes(item.product_id.toString())) {
               eligibleCount += item.quantity;
-              totalPrice += (item.price / 100) * item.quantity
+              totalPrice += (item.price / 100) * item.quantity;
             }
-
             if (item.product_id.toString() == product_gift_id) {
               isGiftInTheCart = true;
             }
-          })
+          });
 
           let formData;
 
           if (stringToBoolean(is_minimum_quantity_of_items)) {
             if (eligibleCount >= Number(minimum_quantity_of_items) && !isGiftInTheCart) {
               formData = {
-              'items': [{
-                'id': freeProductId,
-                'quantity': Number(product_gift_product_quantity)
-                }]
+                'items': [{ 'id': freeProductId, 'quantity': Number(product_gift_product_quantity) }]
               };
-
               fetch(window.Shopify.routes.root + 'cart/add.js', {
                 method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
               })
               .then(response => {
-                if (isCartPage) {
-                  window.location.reload();
-                }
+                if (isCartPage) window.location.reload();
                 updateCartDrawer();
                 return response.json();
               })
-              .catch((error) => {
-                console.error('Error:', error);
-              });
+              .catch(error => console.error('Error:', error));
             }
           }
 
           if (stringToBoolean(is_minimum_purchase_amount)) {
             if (totalPrice >= Number(minimum_purchase_amount) && !isGiftInTheCart) {
               formData = {
-              'items': [{
-                'id': freeProductId,
-                'quantity': Number(product_gift_product_quantity)
-                }]
+                'items': [{ 'id': freeProductId, 'quantity': Number(product_gift_product_quantity) }]
               };
-
               fetch(window.Shopify.routes.root + 'cart/add.js', {
                 method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
               })
               .then(response => {
-                if (isCartPage) {
-                  window.location.reload();
-                }
+                if (isCartPage) window.location.reload();
                 updateCartDrawer();
-
                 return response.json();
               })
-              .catch((error) => {
-                console.error('Error:', error);
-              });
+              .catch(error => console.error('Error:', error));
             }
           }
-      });
+        });
     }
 
     checkAndApplyDiscount();
