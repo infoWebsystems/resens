@@ -44,7 +44,7 @@ async function updateCartAJAX(key, qty = 0) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
   let isCartPage = document.querySelector('.template-cart') !== null;
 
   if (!isCartPage) {
@@ -66,6 +66,41 @@ document.addEventListener("DOMContentLoaded", function() {
         await applyDiscountToCartDrawer();
         await updateCartDrawer();
       }
+    });
+  } else {
+    applyDiscountToCartDrawer(isCartPage);
+  }
+});*/
+
+// НОВИЙ КОД — виправлено подвійний запит cart/add
+document.addEventListener("DOMContentLoaded", function() {
+  let isCartPage = document.querySelector('.template-cart') !== null;
+  let isAdding = false;
+
+  if (!isCartPage) {
+    window.addEventListener('submit', async e => {
+      if (!e.target.getAttribute('action')?.includes('/cart/add')) return;
+
+      if (isAdding) {
+        e.preventDefault();
+        return;
+      }
+
+      isAdding = true;
+      e.preventDefault();
+
+      const form = e.target;
+
+      await fetch('/cart/add', {
+        method: 'post',
+        body: new FormData(form)
+      });
+
+      await applyDiscountToCartDrawer();
+      await updateCartDrawer();
+      openCartDrawer();
+
+      isAdding = false;
     });
   } else {
     applyDiscountToCartDrawer(isCartPage);
