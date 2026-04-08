@@ -588,70 +588,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <style>
   /* ── Re[Sens] — KeyCRM chat widget override ── */
 
-  /* Кнопка-тригер (bubble) */
-  #keycrm-chat-widget-button,
-  .keycrm-widget-button,
-  [id*="keycrm"] button,
-  keycrm-widget::part(button) {
+  /* Кнопка-тригер — центр правого краю */
+  .KeyCRM-toggleButtonContainer {
+    bottom: auto !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  /* Квадратна форма, колір бренду */
+  .KeyCRM-toggleButton {
     background-color: #3a3a30 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    width: 52px !important;
-    height: 52px !important;
-    bottom: 24px !important;
-    right: 24px !important;
     transition: background-color 0.3s ease !important;
   }
 
-  #keycrm-chat-widget-button:hover,
-  .keycrm-widget-button:hover {
+  .KeyCRM-toggleButton:hover {
     background-color: #5c5c4a !important;
   }
 
-  /* Іконка всередині кнопки */
-  #keycrm-chat-widget-button svg,
-  .keycrm-widget-button svg,
-  keycrm-widget::part(button-icon) {
+  .KeyCRM-toggleButton svg {
     color: #ffffff !important;
     fill: #ffffff !important;
   }
 
-  /* Popup вікно чату */
-  #keycrm-chat-widget-popup,
-  .keycrm-widget-popup,
-  keycrm-widget::part(popup) {
+  /* Вікно чату — відкривається поруч із кнопкою */
+  .KeyCRM-chatWindowContainer {
+    bottom: auto !important;
+    right: 52px !important; /* ширина кнопки */
+    top: 50% !important;
+    transform: translateY(-50%) !important;
     border-radius: 0 !important;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
-    font-family: inherit !important;
-  }
-
-  /* Заголовок чату */
-  #keycrm-chat-widget-popup .header,
-  .keycrm-widget-popup .header,
-  keycrm-widget::part(header) {
-    background-color: #3a3a30 !important;
-    border-radius: 0 !important;
-    color: #ffffff !important;
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-    font-size: 12px !important;
-  }
-
-  /* Кнопка відправки повідомлення */
-  #keycrm-chat-widget-popup .send-btn,
-  .keycrm-widget-popup .send-btn,
-  keycrm-widget::part(send-button) {
-    background-color: #3a3a30 !important;
-    border-radius: 0 !important;
-    color: #ffffff !important;
-  }
-
-  /* Бейдж з кількістю непрочитаних */
-  #keycrm-chat-widget-button .badge,
-  .keycrm-widget-button .badge {
-    background-color: #c8a96e !important;
-    border-radius: 0 !important;
-    color: #ffffff !important;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.12) !important;
+    font-family: CeraPro, sans-serif !important;
   }
 </style>
 <!-- KeyCRM online chat widget end -->
