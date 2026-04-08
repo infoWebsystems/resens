@@ -584,6 +584,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var s=d.createElement(t),j=d.getElementsByTagName(t)[0];s.src=u;s["async"]=true;s.defer=true;s.onload=function(){KeyCRM.render(c);};j.parentNode.insertBefore(s,j)
 })(window, document, "script","https://chat.key.live/bundles/widget.min.js",{token:"63b35f84-8f0f-4467-a6c9-53b05750ff18"});
 </script>
+
+<style>
+  /* ── Re[Sens] — KeyCRM chat widget override ── */
+
+  /* Кнопка-тригер (bubble) */
+  #keycrm-chat-widget-button,
+  .keycrm-widget-button,
+  [id*="keycrm"] button,
+  keycrm-widget::part(button) {
+    background-color: #3a3a30 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 52px !important;
+    height: 52px !important;
+    bottom: 24px !important;
+    right: 24px !important;
+    transition: background-color 0.3s ease !important;
+  }
+
+  #keycrm-chat-widget-button:hover,
+  .keycrm-widget-button:hover {
+    background-color: #5c5c4a !important;
+  }
+
+  /* Іконка всередині кнопки */
+  #keycrm-chat-widget-button svg,
+  .keycrm-widget-button svg,
+  keycrm-widget::part(button-icon) {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
+
+  /* Popup вікно чату */
+  #keycrm-chat-widget-popup,
+  .keycrm-widget-popup,
+  keycrm-widget::part(popup) {
+    border-radius: 0 !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+    font-family: inherit !important;
+  }
+
+  /* Заголовок чату */
+  #keycrm-chat-widget-popup .header,
+  .keycrm-widget-popup .header,
+  keycrm-widget::part(header) {
+    background-color: #3a3a30 !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+  }
+
+  /* Кнопка відправки повідомлення */
+  #keycrm-chat-widget-popup .send-btn,
+  .keycrm-widget-popup .send-btn,
+  keycrm-widget::part(send-button) {
+    background-color: #3a3a30 !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+  }
+
+  /* Бейдж з кількістю непрочитаних */
+  #keycrm-chat-widget-button .badge,
+  .keycrm-widget-button .badge {
+    background-color: #c8a96e !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+  }
+</style>
 <!-- KeyCRM online chat widget end -->
 
 </body>
