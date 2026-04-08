@@ -588,6 +588,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <style>
   /* ── Re[Sens] — KeyCRM chat widget override ── */
 
+  /* Кнопка-тригер */
   .KeyCRM-toggleButton {
     background-color: #3a3a30 !important;
     border-radius: 0 !important;
@@ -602,86 +603,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     fill: #ffffff !important;
   }
 
-  /* Десктоп: вікно чату без тіні збоку */
+  /* Вікно чату */
+  .KeyCRM-chatWindowContainer {
+    border-radius: 0 !important;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.12) !important;
+    font-family: CeraPro, sans-serif !important;
+  }
+
+  /* ДЕСКТОП: центр правого краю */
   @media (min-width: 768px) {
+    .KeyCRM-toggleButtonContainer {
+      bottom: auto !important;
+      top: 50% !important;
+      right: 0 !important;
+    }
     .KeyCRM-chatWindowContainer {
-      border-radius: 0 !important;
-      box-shadow: -4px 0 24px rgba(0,0,0,0.12) !important;
-      font-family: CeraPro, sans-serif !important;
+      bottom: auto !important;
+      top: 50% !important;
+      right: 52px !important;
+      transform: translateY(-50%) !important;
     }
   }
 
-  /* Мобільний: вікно на весь екран через CSS (резервно) */
+  /* МОБІЛЬНИЙ: стандартна позиція внизу, але не перекриває кошик */
   @media (max-width: 767px) {
+    .KeyCRM-toggleButtonContainer {
+      bottom: 16px !important;
+      right: 16px !important;
+    }
     .KeyCRM-chatWindowContainer {
-      top: 0 !important;
-      bottom: 0 !important;
-      left: 0 !important;
+      bottom: 80px !important;
       right: 0 !important;
+      left: 0 !important;
       width: 100% !important;
       max-width: 100% !important;
-      height: 100% !important;
-      max-height: 100% !important;
-      min-height: 100% !important;
-      border-radius: 0 !important;
-      font-family: CeraPro, sans-serif !important;
     }
   }
 </style>
 
 <script>
-(function() {
-  var isMobile = function() { return window.innerWidth < 768; };
+  /* JS-overrider: перекриває inline стилі які KeyCRM вставляє динамічно */
+  (function() {
+    function applyKeyCRMPositioning() {
+      var isMobile = window.innerWidth < 768;
+      var btn = document.querySelector('.KeyCRM-toggleButtonContainer');
+      var iframe = document.querySelector('iframe[class*="KeyCRM"]');
 
-  function fixPositions() {
-    var btn = document.querySelector('.KeyCRM-toggleButtonContainer');
-    var iframe = document.querySelector('iframe[class*="KeyCRM"]');
+      if (btn) {
+        if (isMobile) {
+          btn.style.setProperty('bottom', '16px', 'important');
+          btn.style.setProperty('right', '16px', 'important');
+          btn.style.setProperty('top', 'auto', 'important');
+          btn.style.setProperty('left', 'auto', 'important');
+        } else {
+          btn.style.setProperty('bottom', 'auto', 'important');
+          btn.style.setProperty('top', '50%', 'important');
+          btn.style.setProperty('right', '0px', 'important');
+          btn.style.setProperty('left', 'auto', 'important');
+          btn.style.setProperty('transform', 'translateY(-50%)', 'important');
+        }
+      }
 
-    if (btn) {
-      if (isMobile()) {
-        btn.style.cssText += ';bottom:16px!important;right:16px!important;top:auto!important;left:auto!important;';
-      } else {
-        btn.style.cssText += ';bottom:auto!important;top:50%!important;right:0!important;left:auto!important;transform:translateY(-50%)!important;';
+      if (iframe) {
+        if (isMobile) {
+          iframe.style.setProperty('bottom', '80px', 'important');
+          iframe.style.setProperty('right', '0', 'important');
+          iframe.style.setProperty('left', '0', 'important');
+          iframe.style.setProperty('width', '100%', 'important');
+          iframe.style.setProperty('max-width', '100%', 'important');
+          iframe.style.setProperty('top', 'auto', 'important');
+        } else {
+          iframe.style.setProperty('bottom', 'auto', 'important');
+          iframe.style.setProperty('top', '50%', 'important');
+          iframe.style.setProperty('right', '52px', 'important');
+          iframe.style.setProperty('transform', 'translateY(-50%)', 'important');
+        }
       }
     }
 
-    if (iframe) {
-      if (isMobile()) {
-        // На мобільному — повний екран
-        iframe.style.setProperty('top', '0', 'important');
-        iframe.style.setProperty('bottom', '0', 'important');
-        iframe.style.setProperty('left', '0', 'important');
-        iframe.style.setProperty('right', '0', 'important');
-        iframe.style.setProperty('width', '100%', 'important');
-        iframe.style.setProperty('max-width', '100%', 'important');
-        iframe.style.setProperty('height', '100%', 'important');
-        iframe.style.setProperty('max-height', '100%', 'important');
-        iframe.style.setProperty('min-height', '100%', 'important');
-        iframe.style.setProperty('border-radius', '0', 'important');
-      } else {
-        // Десктоп — центр правого краю, зліва від кнопки
-        iframe.style.setProperty('top', '50%', 'important');
-        iframe.style.setProperty('bottom', 'auto', 'important');
-        iframe.style.setProperty('right', '52px', 'important');
-        iframe.style.setProperty('left', 'auto', 'important');
-        iframe.style.setProperty('transform', 'translateY(-50%)', 'important');
-        iframe.style.setProperty('max-height', '600px', 'important');
-        iframe.style.setProperty('border-radius', '0', 'important');
-      }
-    }
-  }
+    // Спостерігаємо за появою елементів KeyCRM у DOM
+    var observer = new MutationObserver(function() {
+      applyKeyCRMPositioning();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
 
-  // Спостерігаємо за змінами в DOM і стилях
-  var observer = new MutationObserver(fixPositions);
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true,
-    attributes: true,
-    attributeFilter: ['style']
-  });
-
-  window.addEventListener('resize', fixPositions);
-})();
+    // Також при ресайзі
+    window.addEventListener('resize', applyKeyCRMPositioning);
+  })();
 </script>
 <!-- KeyCRM online chat widget end -->
 
