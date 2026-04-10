@@ -18,7 +18,7 @@
         "bg_image_overlay_opacity": 40,
         "parallax": false,
         "title": "{{ collection.title }}",
-        "text": "Additional discount -30% to the price indicated in the product card (price is automatically calculated with discount when adding the product to the cart)",
+        "text": "Additional discount -50% to the price indicated in the product card (price is automatically calculated with discount when adding the product to the cart)",
         "colors": "light",
         "textPosition": "center",
         "textAlignment": "center",
