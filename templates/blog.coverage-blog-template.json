@@ -49,6 +49,13 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_MnWTPe": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260417-01-vogue.jpg",
+            "link": "https://vogue.ua/article/beauty/spa/perevireno-redakciyeyu-vogue-ua-b-yuti-favoriti-vesni-2026-63259.html"
+          }
+        },
         "logo_image_hhqbdb": {
           "type": "logo_image",
           "settings": {
@@ -86,6 +93,7 @@
         }
       },
       "block_order": [
+        "logo_image_MnWTPe",
         "logo_image_hhqbdb",
         "logo_image_RkaVWE",
         "logo_image_wECGtr",
