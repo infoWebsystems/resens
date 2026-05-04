@@ -14,19 +14,18 @@
       "blocks": {
         "image_4yPGQE": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
             "first_button_label": "SHOP NOW",
-            "first_button_link": "shopify://collections",
+            "first_button_link": "shopify://products/ceramide-fluid-endorphin-50-ml",
             "second_button_label": "SUSTAINABILITY",
             "second_button_link": "shopify://collections/skincare-collection",
-            "image": "shopify://shop_images/1_1_Womans_day_eng_web.jpg",
+            "image": "shopify://shop_images/SiteEnderfin_20260501_en.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/engl_mobile_1.jpg",
+            "mobile_image": "shopify://shop_images/SiteEnderfin_mob_20260501_en..jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
