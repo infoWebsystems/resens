@@ -191,7 +191,40 @@
     "template_product_info_columns_zM874e": {
       "type": "template--product--info-columns",
       "blocks": {
-        "image_and_text_7QjdDV": {
+        "image_and_text_JQT6Jh": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_USA.jpg",
+            "grid_image_size": "square",
+            "heading": "USA",
+            "text": "<p><strong>LAGODA PRO BEAUTY L.L.C.</strong></p><p>4908 Key Lime Dr, Jacksonville FL</p><p>email: info@lagodaprobeauty.com</p><p>phone: +19548091859</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "image_and_text_AXtPpd": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_CZE.jpg",
+            "grid_image_size": "square",
+            "heading": "Czech Republic",
+            "text": "<p><strong>UNIC CLINIC</strong></p><p>Lidická 743/16 Prague, Czech republic</p><p>email: office.uniqclinic@gmail.com</p><p>phone: +420735117710</p>",
+            "button_text": "Go to site",
+            "button_link": "https://www.uniqclinic.cz/cs"
+          }
+        },
+        "image_and_text_C6dkWb": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_FIN.jpg",
+            "grid_image_size": "square",
+            "heading": "Finland",
+            "text": "<p><strong>ELIEN STUDIO</strong></p><p>Ellien Studio & Showroom<br/>Ellien Oy<br/>Hallituskatu 20, 28100 Pori</p><p>email: info@ellien.fi</p><p>phone: 0409116682</p>",
+            "button_text": "Go to site",
+            "button_link": "https://www.ellien.fi"
+          }
+        },
+        "image_and_text_AfJPrW": {
           "type": "image_and_text",
           "settings": {
             "image": "shopify://shop_images/imgi_45_1000x1000_ReSens_map_BNL.jpg",
@@ -271,7 +304,10 @@
         }
       },
       "block_order": [
-        "image_and_text_7QjdDV",
+        "image_and_text_JQT6Jh",
+        "image_and_text_AXtPpd",
+        "image_and_text_C6dkWb",
+        "image_and_text_AfJPrW",
         "image_and_text_zDLcLt",
         "image_and_text_bX9Gxe",
         "image_and_text_U3qmym",
