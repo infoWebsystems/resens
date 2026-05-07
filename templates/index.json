@@ -12,6 +12,30 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
+        "image_JYdKVJ": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "Shop now",
+            "first_button_link": "shopify://collections/all",
+            "second_button_label": "SUSTAINABILITY",
+            "second_button_link": "shopify://pages/sustainability",
+            "image": "shopify://shop_images/1_2_4_web_eng.jpg",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9f9f9f"
+          }
+        },
         "image_4yPGQE": {
           "type": "image",
           "settings": {
@@ -20,7 +44,7 @@
             "first_button_label": "SHOP NOW",
             "first_button_link": "shopify://products/ceramide-fluid-endorphin-50-ml",
             "second_button_label": "SUSTAINABILITY",
-            "second_button_link": "shopify://collections/skincare-collection",
+            "second_button_link": "shopify://pages/sustainability",
             "image": "shopify://shop_images/SiteEnderfin_20260501_en.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
@@ -89,6 +113,7 @@
         }
       },
       "block_order": [
+        "image_JYdKVJ",
         "image_4yPGQE",
         "image_fYHLgh",
         "image_iQ7EqU"
