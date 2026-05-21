@@ -239,8 +239,8 @@
         "founder_1_3bPzEc": {
           "type": "founder_1",
           "settings": {
-            "role": "BRAND FORMULA DEVELOPER",
-            "name": "YULIA HAHARINA",
+            "role": "YULIA HAHARINA",
+            "name": "BRAND FORMULA DEVELOPER",
             "about": "R&D DEPARTMENT",
             "mobile_about": "<p>R&D DEPARTMENT</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-1.jpg"
@@ -249,8 +249,8 @@
         "founder_2_Wdbr8q": {
           "type": "founder_2",
           "settings": {
-            "role": "CO-FOUNDER AND BRAND DEVELOPER",
-            "name": "OLGA HUZHYK",
+            "role": "OLGA HUZHYK",
+            "name": "CO-FOUNDER AND BRAND DEVELOPER",
             "about": "FINANCE AND BUSINESS DEVELOPMENT",
             "mobile_about": "<p>FINANCE AND BUSINESS DEVELOPMENT</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-3.jpg"
@@ -259,8 +259,8 @@
         "founder_3_PgwK6E": {
           "type": "founder_3",
           "settings": {
-            "role": "CO-FOUNDER AND BRAND DEVELOPER",
-            "name": "YULIA POLIAKOVA",
+            "role": "YULIA POLIAKOVA",
+            "name": "CO-FOUNDER AND BRAND DEVELOPER",
             "about": "MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP",
             "mobile_about": "<p>MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-2.jpg"
