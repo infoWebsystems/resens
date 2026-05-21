@@ -239,30 +239,30 @@
         "founder_1_3bPzEc": {
           "type": "founder_1",
           "settings": {
-            "role": "BRAND FORMULA DEVELOPERR&D DEPARTMENT",
+            "role": "BRAND FORMULA DEVELOPER",
             "name": "YULIA HAHARINA",
-            "about": "Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology 'without chemophobia'",
-            "mobile_about": "<p>Chemist-technologist with 20+ years of experience developing cosmetic formulas for various brands. Speaker at numerous conferences, where she he popularizes science and cosmetology \"without chemophobia\"</p>",
+            "about": "R&D DEPARTMENT",
+            "mobile_about": "<p>R&D DEPARTMENT</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-1.jpg"
           }
         },
         "founder_2_Wdbr8q": {
           "type": "founder_2",
           "settings": {
-            "role": "CO-FOUNDER AND BRAND DEVELOPER\nFINANCE AND BUSINESS DEVELOPMENT",
+            "role": "CO-FOUNDER AND BRAND DEVELOPER",
             "name": "OLGA HUZHYK",
-            "about": "Eco-activist, lecturer, organizer of recycling stations in residential complexes",
-            "mobile_about": "<p>Co-founder of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)</p><p>Graduate of the University of Cambridge (Institute of Sustainability Leadership) 2023</p><p>Eco-activist, lecturer, organizer of recycling stations in residential complexes</p>",
+            "about": "FINANCE AND BUSINESS DEVELOPMENT",
+            "mobile_about": "<p>FINANCE AND BUSINESS DEVELOPMENT</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-3.jpg"
           }
         },
         "founder_3_PgwK6E": {
           "type": "founder_3",
           "settings": {
-            "role": "CO-FOUNDER AND BRAND DEVELOPERMARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP",
+            "role": "CO-FOUNDER AND BRAND DEVELOPER",
             "name": "YULIA POLIAKOVA",
-            "about": "Mentor in «Misto Dobra»",
-            "mobile_about": "<p>Co-founder of G&P Group and We are from Ukraine (a human rights project that helps Ukrainians affected by the aggression of the Russian Federation to obtain protection at the European Court of Human Rights)</p><p>Graduate of the University of Cambridge (Institute of Sustainability Leadership) 2023</p><p>Mentor in «Misto Dobra»</p>",
+            "about": "MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP",
+            "mobile_about": "<p>MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-2.jpg"
           }
         },
