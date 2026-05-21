@@ -240,8 +240,8 @@
           "type": "founder_1",
           "settings": {
             "role": "YULIA HAHARINA",
-            "name": "BRAND FORMULA DEVELOPER",
-            "about": "R&D DEPARTMENT",
+            "name": "R&D DEPARTMENT",
+            "about": "",
             "mobile_about": "<p>R&D DEPARTMENT</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-1.jpg"
           }
@@ -250,8 +250,8 @@
           "type": "founder_2",
           "settings": {
             "role": "OLGA HUZHYK",
-            "name": "CO-FOUNDER AND BRAND DEVELOPER",
-            "about": "FINANCE AND BUSINESS DEVELOPMENT",
+            "name": "FINANCE AND BUSINESS DEVELOPMENT",
+            "about": "",
             "mobile_about": "<p>FINANCE AND BUSINESS DEVELOPMENT</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-3.jpg"
           }
@@ -260,8 +260,8 @@
           "type": "founder_3",
           "settings": {
             "role": "YULIA POLIAKOVA",
-            "name": "CO-FOUNDER AND BRAND DEVELOPER",
-            "about": "MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP",
+            "name": "MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP",
+            "about": "",
             "mobile_about": "<p>MARKETING DEVELOPMENT INTERNATIONAL PARTNERSHIP</p>",
             "image_developer_on_mobile": "shopify://shop_images/resized-2.jpg"
           }
