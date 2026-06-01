@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "title": "SUN-KISSED. NOT SUN-STAINED.",
-            "text": "Free Brightening Peel HPA on orders over ₴3,000",
+            "text": "",
             "first_button_label": "Shop now",
             "first_button_link": "shopify://collections/all",
             "second_button_label": "SUSTAINABILITY",
@@ -25,7 +25,7 @@
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/mobileeng.jpg",
+            "mobile_image": "shopify://shop_images/20260601Gift_mobile.png",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
