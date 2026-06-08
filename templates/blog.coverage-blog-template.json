@@ -56,6 +56,13 @@
             "link": "https://bhub.com.ua/uk/doglyad-za-shkiroyu-vlitku-10-produktiv-na-spekotniy-sezon"
           }
         },
+        "logo_image_XdrzkC": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260505-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/flyuyid-iz-ceramidami-vid-re[sens]-stvoreniy-dlya-aktivaciyi-cirkadnih-ritmiv-shkiri"
+          }
+        },
         "logo_image_MnWTPe": {
           "type": "logo_image",
           "settings": {
@@ -101,6 +108,7 @@
       },
       "block_order": [
         "logo_image_VDw8Q9",
+        "logo_image_XdrzkC",
         "logo_image_MnWTPe",
         "logo_image_hhqbdb",
         "logo_image_RkaVWE",
