@@ -49,6 +49,13 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_VDw8Q9": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260601-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/doglyad-za-shkiroyu-vlitku-10-produktiv-na-spekotniy-sezon"
+          }
+        },
         "logo_image_MnWTPe": {
           "type": "logo_image",
           "settings": {
@@ -93,6 +100,7 @@
         }
       },
       "block_order": [
+        "logo_image_VDw8Q9",
         "logo_image_MnWTPe",
         "logo_image_hhqbdb",
         "logo_image_RkaVWE",
