@@ -96,7 +96,7 @@
 </style>
 
 <div class="resens-widget" id="resensChatWidget">
-  <div class="resens-panel" id="resensChatPanel">
+  <div class="resens-panel resens-hidden" id="resensChatPanel">
 
     <!-- Viber -->
     <a class="resens-link resens-link-viber" href="viber://chat?number=%2B380639748245" target="_blank" rel="noopener" aria-label="Написати у Viber">
@@ -142,15 +142,15 @@
     var panel  = document.getElementById('resensChatPanel');
     var toggle = document.getElementById('resensToggle');
     var icon   = document.getElementById('resensIcon');
-    var open   = true;
+    var open   = false;
 
-    var iconOpen  = '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>';
+    var iconChat  = '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>';
     var iconClose = '<path d="M18 6L6 18M6 6l12 12"/>';
 
     toggle.addEventListener('click', function() {
       open = !open;
       panel.classList.toggle('resens-hidden', !open);
-      icon.innerHTML = open ? iconOpen : iconClose;
+      icon.innerHTML = open ? iconClose : iconChat;
     });
   })();
 </script>
