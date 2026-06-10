@@ -3,13 +3,13 @@
 <style>
   .resens-widget {
     position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
     z-index: 9999;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 8px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
@@ -17,10 +17,11 @@
   .resens-panel {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     transition: opacity 0.2s ease, transform 0.2s ease;
-    transform-origin: bottom center;
+    transform-origin: bottom right;
   }
 
   .resens-panel.resens-hidden {
@@ -58,9 +59,29 @@
   }
   .resens-link-facebook { background: #1877F2; }
 
+  .resens-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resens-label {
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding: 9px 15px;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+
   .resens-toggle {
-    width: 35px;
-    height: 35px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     background: #1a1a1a;
     border: none;
@@ -71,6 +92,7 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.18);
     transition: background 0.2s, transform 0.15s;
     outline: none;
+    flex-shrink: 0;
   }
 
   .resens-toggle:hover {
@@ -79,8 +101,8 @@
   }
 
   .resens-toggle svg {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: none;
     stroke: #fff;
     stroke-width: 2;
@@ -89,9 +111,10 @@
   }
 
   @media (max-width: 480px) {
-    .resens-widget { right: 12px; }
+    .resens-widget { bottom: 12px; }
+    .resens-toggle { width: 48px; height: 48px; }
+    .resens-label  { font-size: 13px; padding: 8px 12px; }
     .resens-link   { width: 32px; height: 32px; }
-    .resens-toggle { width: 32px; height: 32px; }
   }
 </style>
 
@@ -130,27 +153,34 @@
 
   </div>
 
-  <button class="resens-toggle" id="resensToggle" aria-label="Відкрити/закрити месенджери">
-    <svg id="resensIcon" viewBox="0 0 24 24">
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-    </svg>
-  </button>
+  <div class="resens-bar">
+    <span class="resens-label" id="resensLabel">Потрібна консультація? Напиши нам</span>
+    <button class="resens-toggle" id="resensToggle" aria-label="Відкрити/закрити месенджери">
+      <svg id="resensIcon" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </button>
+  </div>
 </div>
 
 <script>
   (function() {
     var panel  = document.getElementById('resensChatPanel');
     var toggle = document.getElementById('resensToggle');
+    var label  = document.getElementById('resensLabel');
     var icon   = document.getElementById('resensIcon');
     var open   = false;
 
     var iconChat  = '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>';
     var iconClose = '<path d="M18 6L6 18M6 6l12 12"/>';
 
-    toggle.addEventListener('click', function() {
+    function togglePanel() {
       open = !open;
       panel.classList.toggle('resens-hidden', !open);
       icon.innerHTML = open ? iconClose : iconChat;
-    });
+    }
+
+    toggle.addEventListener('click', togglePanel);
+    label.addEventListener('click', togglePanel);
   })();
 </script>
