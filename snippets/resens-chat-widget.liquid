@@ -3,9 +3,9 @@
 <style>
   .resens-widget {
     position: fixed;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 9999;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
 
   .resens-panel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
     margin-bottom: 10px;
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -30,8 +30,8 @@
   }
 
   .resens-link {
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -47,8 +47,8 @@
   }
 
   .resens-link svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
   }
 
   .resens-link-viber    { background: #7360F2; }
@@ -59,8 +59,8 @@
   .resens-link-facebook { background: #1877F2; }
 
   .resens-toggle {
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: #1a1a1a;
     border: none;
@@ -79,8 +79,8 @@
   }
 
   .resens-toggle svg {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     fill: none;
     stroke: #fff;
     stroke-width: 2;
@@ -89,9 +89,9 @@
   }
 
   @media (max-width: 480px) {
-    .resens-widget { bottom: 12px; }
-    .resens-link   { width: 40px; height: 40px; }
-    .resens-toggle { width: 40px; height: 40px; }
+    .resens-widget { left: 12px; }
+    .resens-link   { width: 32px; height: 32px; }
+    .resens-toggle { width: 32px; height: 32px; }
   }
 </style>
 
