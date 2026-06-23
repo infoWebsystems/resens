@@ -17,7 +17,7 @@
           "settings": {
             "desktop_image": "shopify://shop_images/DSC0362411.jpg",
             "show_overlay": false,
-            "heading": "Resens in the world",
+            "heading": "Contacts",
             "heading_size": 40,
             "h-margin": 1,
             "button_label": "",
@@ -59,6 +59,7 @@
     },
     "advanced_layout_hero_dzkRrU": {
       "type": "advanced-layout--hero",
+      "disabled": true,
       "name": "t:sections.advanced-layout--hero.presets.name",
       "settings": {
         "homepage-hero-featured-content": "homepage-hero-image-selection",
@@ -105,6 +106,7 @@
         "image_and_text_JQT6Jh",
         "image_and_text_AXtPpd"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -144,6 +146,7 @@
         "image_and_text_nqywkW",
         "image_and_text_XBFiKV"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -183,6 +186,7 @@
         "image_and_text_GhKgVX",
         "image_and_text_wL4r3g"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -223,6 +227,7 @@
         "image_and_text_apnkt9",
         "image_and_text_yDX8Cr"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -262,6 +267,7 @@
         "image_and_text_6RkmAg",
         "image_and_text_CcziQj"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -389,14 +395,12 @@
       "block_order": [
         "instafeed_app_block_48Utax"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "1645634969fb497783": {
       "type": "newsletter--newsletter",
-      "disabled": true,
       "settings": {
         "colors": "light",
         "newsletter_heading": "Re[Sens] - your leading partner in the world of sustainable professional cosmetics.",
@@ -405,7 +409,6 @@
     },
     "f9008be2-cc52-4777-becc-c975f680a054": {
       "type": "store-information--map",
-      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "Re[sens]",
