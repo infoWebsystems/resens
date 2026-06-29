@@ -38,7 +38,7 @@
         "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1"
       ],
       "custom_css": [
-        ".collage-builder__text-container--template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1 {background-color: transparent !important;}"
+        ".collage-builder__overlay {display: none !important;}"
       ],
       "settings": {
         "color_scheme": "white",
