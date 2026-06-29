@@ -202,7 +202,6 @@
       "blocks": {
         "image_and_text_apnkt9": {
           "type": "image_and_text",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1000x1000_ReSens_map_ARE.jpg",
             "grid_image_size": "square",
