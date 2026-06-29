@@ -12,10 +12,10 @@
 {% if request.page_type == 'product' %}
   {%- assign og_title = product.title | strip_html -%}
   {%- assign og_type = 'product' -%}
-  {% if product.media.size > 0 %}
-    {%- capture og_image_alt_tags -%}{% for media in product.media limit:3 -%}<meta property="og:image:alt" content="{{ media.alt }}">{% endfor -%}{%- endcapture -%}
-    {%- capture og_image_tags -%}{% for media in product.media limit:3 -%}<meta property="og:image" content="http:{{ media | image_url }}">{% endfor -%}{% endcapture -%}
-    {%- capture og_image_secure_url_tags -%}{% for media in product.media limit:3 -%}<meta property="og:image:secure_url" content="https:{{ media | image_url }}">{% endfor -%}{% endcapture -%}
+  {% if product.featured_image %}
+    {%- capture og_image_alt_tags -%}<meta property="og:image:alt" content="{{ product.featured_image.alt | default: product.title | escape }}">{%- endcapture -%}
+    {%- capture og_image_tags -%}<meta property="og:image" content="http:{{ product.featured_image | image_url: width: 1200 }}">{%- endcapture -%}
+    {%- capture og_image_secure_url_tags -%}<meta property="og:image:secure_url" content="https:{{ product.featured_image | image_url: width: 1200 }}">{%- endcapture -%}
   {% endif %}
 
 {% elsif request.page_type == 'article' %}
