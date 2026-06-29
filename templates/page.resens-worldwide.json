@@ -15,9 +15,10 @@
         "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/DSC0362411.jpg",
+            "desktop_image": "shopify://shop_images/SiteReSens_Map_20260622.jpg",
             "show_overlay": false,
-            "heading": "resens worldwide",
+            "mobile_image": "shopify://shop_images/SiteReSens_Map_mob_20260622.jpg",
+            "heading": "",
             "heading_size": 40,
             "h-margin": 1,
             "button_label": "",
@@ -29,14 +30,13 @@
             "button_background_color": "#262428",
             "button_hover_color": "#d4d3d4",
             "button_hover_background_color": "#494949",
-            "overlay_color": "#494949"
+            "overlay_color": "#545454"
           }
         }
       },
       "block_order": [
         "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "title": "",
@@ -44,7 +44,7 @@
         "remove_spacing": false,
         "section_width": "full",
         "width_1": "1",
-        "height_1": "6",
+        "height_1": "2",
         "width_2": "3",
         "height_2": "3",
         "width_3": "3",
@@ -60,6 +60,7 @@
     },
     "advanced_layout_hero_dzkRrU": {
       "type": "advanced-layout--hero",
+      "disabled": true,
       "name": "t:sections.advanced-layout--hero.presets.name",
       "settings": {
         "homepage-hero-featured-content": "homepage-hero-image-selection",
