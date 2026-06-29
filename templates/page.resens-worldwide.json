@@ -1,0 +1,444 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "af74e87e-1556-4a47-b50d-86b13100ed8a": {
+      "type": "collage-builder",
+      "blocks": {
+        "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/DSC0362411.jpg",
+            "show_overlay": false,
+            "heading": "Contacts",
+            "heading_size": 40,
+            "h-margin": 1,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#fefefe",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "#494949"
+          }
+        }
+      },
+      "block_order": [
+        "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "full",
+        "width_1": "1",
+        "height_1": "6",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
+    "advanced_layout_hero_dzkRrU": {
+      "type": "advanced-layout--hero",
+      "disabled": true,
+      "name": "t:sections.advanced-layout--hero.presets.name",
+      "settings": {
+        "homepage-hero-featured-content": "homepage-hero-image-selection",
+        "home-page-hero-image": "shopify://shop_images/2_6041804.png",
+        "image_overlay_opacity": 0,
+        "homepage-hero-image-heading": "",
+        "homepage-hero-image-description": "",
+        "text-color": "#fff",
+        "homepage-hero-image-button-label": "",
+        "homepage-hero-image-link": "",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "homepage-hero-video-autoplay": true,
+        "homepage-hero-video-loop": true,
+        "homepage-hero-video-mute": false
+      }
+    },
+    "template_product_info_columns_zM874e": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_JQT6Jh": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_USA.jpg",
+            "grid_image_size": "square",
+            "heading": "USA",
+            "text": "<p><strong>LAGODA PRO BEAUTY L.L.C.</strong></p><p>4908 Key Lime Dr, Jacksonville FL</p><p>email: info@lagodaprobeauty.com</p><p>phone: +19548091859</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "image_and_text_AXtPpd": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_CZE.jpg",
+            "grid_image_size": "square",
+            "heading": "Czech Republic",
+            "text": "<p><strong>UNIC CLINIC</strong></p><p>Lidická 743/16 Prague, Czech republic</p><p>email: office.uniqclinic@gmail.com</p><p>phone: +420735117710</p>",
+            "button_text": "Go to site",
+            "button_link": "https://www.uniqclinic.cz/cs"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_JQT6Jh",
+        "image_and_text_AXtPpd"
+      ],
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "template_product_info_columns_t3VtzC": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_nqywkW": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_FIN.jpg",
+            "grid_image_size": "square",
+            "heading": "Finland",
+            "text": "<p><strong>ELIEN STUDIO</strong></p><p>Ellien Studio & Showroom<br/>Ellien Oy<br/>Hallituskatu 20, 28100 Pori</p><p>email: info@ellien.fi</p><p>phone: 0409116682</p>",
+            "button_text": "Go to site",
+            "button_link": "https://www.ellien.fi"
+          }
+        },
+        "image_and_text_XBFiKV": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/imgi_45_1000x1000_ReSens_map_BNL.jpg",
+            "grid_image_size": "square",
+            "heading": "Benelux",
+            "text": "<p><strong>SKINLIST</strong></p><p>Max Woiskistraat 15, 3069 ZN, Rotterdam, The Netherlands</p><p>email: info@skinlist.nl</p><p>phone: +36 38 663 699</p>",
+            "button_text": "Go to site",
+            "button_link": "https://skinlist.nl"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_nqywkW",
+        "image_and_text_XBFiKV"
+      ],
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "template_product_info_columns_LemUJt": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_GhKgVX": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_ESP.jpg",
+            "grid_image_size": "square",
+            "heading": "Spain",
+            "text": "<p><strong>BEAUTY CARTEL DISTRIBUTION SOCIEDAD LIMITADA</strong></p><p>Guadalmina Baja, San Pedro Alcántara, Marbella, 29670, Málaga</p><p>email: manager@beautycartel.es</p><p>phone: +34 650 473 012</p>",
+            "button_text": "Go to site",
+            "button_link": "https://resens.es"
+          }
+        },
+        "image_and_text_wL4r3g": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_GBR.jpg",
+            "grid_image_size": "square",
+            "heading": "Great Britain",
+            "text": "<p><strong>AESTHETIC ART ACADEMY LTD</strong></p><p>368 Forest Road, London, E17 5JF</p><p>email: info@imagine-you.co.uk</p><p>phone: +44 7799 140911</p>",
+            "button_text": "Go to site",
+            "button_link": "https://Imagine-you.co.uk"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_GhKgVX",
+        "image_and_text_wL4r3g"
+      ],
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "template_product_info_columns_KYwAWK": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_apnkt9": {
+          "type": "image_and_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_ARE.jpg",
+            "grid_image_size": "square",
+            "heading": "UNITED ARAB EMIRATES",
+            "text": "<p><strong>ETAIL LLC</strong><br/>Shams Business Center, Sharjah Media City, Sharjah, PO Box 515000</p><p>email: riyas@etail.ae</p><p>phone: +971 52 685 1349, +971 55 345 9669</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "image_and_text_yDX8Cr": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_LVA.jpg",
+            "grid_image_size": "square",
+            "heading": "LATVIA",
+            "text": "<p><strong>REMEDICA</strong><br/>Kleistu str. 24<br/>Riga, LV-1067<br/><br/>email: info@remedica.lv</p><p>Phone No. +37125775885</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_apnkt9",
+        "image_and_text_yDX8Cr"
+      ],
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "template_product_info_columns_mVj3EL": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_6RkmAg": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_LTU_1.jpg",
+            "grid_image_size": "square",
+            "heading": "Lithuania",
+            "text": "<p><strong>MB VIOLET AMBER</strong><br/>Partizanų g 18-18, Kaunas 50214<br/><br/>email: manotavolt@gmail.com</p><p>Phone No. +34611 225 147</p>",
+            "button_text": "Go to site",
+            "button_link": "https://www.manotavo.com"
+          }
+        },
+        "image_and_text_CcziQj": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_HUN.jpg",
+            "grid_image_size": "square",
+            "heading": "Hungary",
+            "text": "<p><strong>Leader by Druzhinina Kft.</strong><br/>1064 Budapest, Podmaniczky utca 69. 2. em. 19.</p><p>Phone +36202436083</p>",
+            "button_text": "",
+            "button_link": "https://www.manotavo.com"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_6RkmAg",
+        "image_and_text_CcziQj"
+      ],
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
+    "164563343647211871": {
+      "type": "text--rich-text",
+      "blocks": {
+        "6a2f6ce0-606a-4133-b01a-ee3926268a9e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Still got Q's?"
+          }
+        },
+        "9f90cfb3-0430-4b6c-90df-8309138e865a": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Direct your customers towards an FAQs page or somewhere they can find out more information</p>",
+            "text_size": 14
+          }
+        },
+        "c1f278da-fb1a-46ad-9d1f-1e169afa696c": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/all",
+            "button_text": "See FAQs"
+          }
+        }
+      },
+      "block_order": [
+        "6a2f6ce0-606a-4133-b01a-ee3926268a9e",
+        "9f90cfb3-0430-4b6c-90df-8309138e865a",
+        "c1f278da-fb1a-46ad-9d1f-1e169afa696c"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "",
+        "colors": "light",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a": {
+      "type": "section--contact-form",
+      "blocks": {
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-0": {
+          "type": "name_input",
+          "settings": {
+            "required": true,
+            "input_width": "full"
+          }
+        },
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-1": {
+          "type": "email_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "f03adfd7-1474-4f7a-a28a-c0c1430bd42d": {
+          "type": "tel_input",
+          "settings": {
+            "required": false,
+            "input_width": "partial"
+          }
+        },
+        "fbb2a872-0770-4f56-913c-b7853e33a9c0": {
+          "type": "custom_input",
+          "settings": {
+            "placeholder": "Order number",
+            "required": false,
+            "input_width": "full"
+          }
+        },
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-3": {
+          "type": "message_input",
+          "settings": {
+            "required": false,
+            "input_width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-0",
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-1",
+        "f03adfd7-1474-4f7a-a28a-c0c1430bd42d",
+        "fbb2a872-0770-4f56-913c-b7853e33a9c0",
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-3"
+      ],
+      "settings": {
+        "section_color_scheme": "white",
+        "form_width": "narrow",
+        "form_title": "",
+        "form_description": "<h4>Have a question, or want a product recommendation? Get in touch.</h4>"
+      }
+    },
+    "171895764357c44b9c": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_48Utax": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
+          "settings": {
+            "title": "FOLLOW US ON INSTAGRAM",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_48Utax"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1645634969fb497783": {
+      "type": "newsletter--newsletter",
+      "settings": {
+        "colors": "light",
+        "newsletter_heading": "Re[Sens] - your leading partner in the world of sustainable professional cosmetics.",
+        "newsletter_description": "<p>Join us to stay informed about the best offers.</p>"
+      }
+    },
+    "f9008be2-cc52-4777-becc-c975f680a054": {
+      "type": "store-information--map",
+      "settings": {
+        "colors": "white",
+        "heading": "Re[sens]",
+        "address": "<p>7 Krakivska, office 2, Kyiv, Ukraine</p><p>Mon-Fri from 09:00 to 18:00</p><p><a href=\"mailto:hello@resenss.com\"><span style=\"text-decoration:underline\">hello@resenss.com</span></a></p><p><a href=\"tel:%20+38%20068%20472%2050%2068\"><span style=\"text-decoration:underline\">+38 068 472 50 68</span></a></p><p><a href=\"tel:%20+38%20050%20625%2038%2003\"><span style=\"text-decoration:underline\">+38 050 625 38 03</span></a></p>",
+        "map_address": "Krakivska St, 7, Kyiv, 02000",
+        "api_key": "AIzaSyAsz9sf-e6WcGJpHWZ9d7PqSpNpSUzCCHI",
+        "button_text": "Get directions",
+        "layout": "right"
+      }
+    },
+    "1723819763e95abae5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "af74e87e-1556-4a47-b50d-86b13100ed8a",
+    "advanced_layout_hero_dzkRrU",
+    "template_product_info_columns_zM874e",
+    "template_product_info_columns_t3VtzC",
+    "template_product_info_columns_LemUJt",
+    "template_product_info_columns_KYwAWK",
+    "template_product_info_columns_mVj3EL",
+    "164563343647211871",
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a",
+    "171895764357c44b9c",
+    "1645634969fb497783",
+    "f9008be2-cc52-4777-becc-c975f680a054",
+    "1723819763e95abae5"
+  ]
+}
