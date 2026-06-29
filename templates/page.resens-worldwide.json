@@ -59,7 +59,6 @@
     },
     "advanced_layout_hero_dzkRrU": {
       "type": "advanced-layout--hero",
-      "disabled": true,
       "name": "t:sections.advanced-layout--hero.presets.name",
       "settings": {
         "homepage-hero-featured-content": "homepage-hero-image-selection",
@@ -106,7 +105,6 @@
         "image_and_text_JQT6Jh",
         "image_and_text_AXtPpd"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -146,7 +144,6 @@
         "image_and_text_nqywkW",
         "image_and_text_XBFiKV"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -186,7 +183,6 @@
         "image_and_text_GhKgVX",
         "image_and_text_wL4r3g"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -227,7 +223,6 @@
         "image_and_text_apnkt9",
         "image_and_text_yDX8Cr"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -267,7 +262,6 @@
         "image_and_text_6RkmAg",
         "image_and_text_CcziQj"
       ],
-      "disabled": true,
       "settings": {
         "colors": "white",
         "heading": "",
@@ -306,7 +300,6 @@
         "9f90cfb3-0430-4b6c-90df-8309138e865a",
         "c1f278da-fb1a-46ad-9d1f-1e169afa696c"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "",
         "colors": "light",
