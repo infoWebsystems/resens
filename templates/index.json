@@ -122,7 +122,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "desktop_height": "full_screen",
+        "desktop_height": "original",
         "mobile_height": "full_screen",
         "slide_navigation_style": "bars",
         "slide_transition_delay": 5
