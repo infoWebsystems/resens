@@ -21,6 +21,31 @@
             "first_button_link": "shopify://collections/all",
             "second_button_label": "PLASTIC FREE JULY",
             "second_button_link": "shopify://blogs/news/plastic-free-july",
+            "image": "shopify://shop_images/web_Birthday_20260703.jpg",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile_image": "shopify://shop_images/mobile_Birthday_20260703.jpg",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9f9f9f"
+          }
+        },
+        "image_JPdCGw": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "Shop now",
+            "first_button_link": "shopify://collections/all",
+            "second_button_label": "PLASTIC FREE JULY",
+            "second_button_link": "shopify://blogs/news/plastic-free-july",
             "image": "shopify://shop_images/20260701_PLASTIC_FREE_JULY_web_eng.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
@@ -116,6 +141,7 @@
       },
       "block_order": [
         "image_8BjRLk",
+        "image_JPdCGw",
         "image_4yPGQE",
         "image_fYHLgh",
         "image_iQ7EqU"
