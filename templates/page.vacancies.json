@@ -44,6 +44,7 @@
         },
         "vacancy_GADmPm": {
           "type": "vacancy",
+          "disabled": true,
           "settings": {
             "vacancy_name": "Accountant–Cashier (Kyiv, Darnytsia metro station)",
             "vacancy_description": "",
@@ -52,6 +53,7 @@
         },
         "vacancy_FfVBYj": {
           "type": "vacancy",
+          "disabled": true,
           "settings": {
             "vacancy_name": "SMM Manager (Kyiv, Darnytsia metro station)",
             "vacancy_description": "",
@@ -60,6 +62,7 @@
         },
         "vacancy_bgA7jm": {
           "type": "vacancy",
+          "disabled": true,
           "settings": {
             "vacancy_name": "Partnership Manager / Sales Development Manager",
             "vacancy_description": "",
