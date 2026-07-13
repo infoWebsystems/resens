@@ -52,7 +52,6 @@
         },
         "vacancy_FfVBYj": {
           "type": "vacancy",
-          "disabled": true,
           "settings": {
             "vacancy_name": "1C Operator (Kyiv, Darnytsia metro station)",
             "vacancy_description": "<p>We're looking for a detail-oriented 1C operator to keep our product and counterparty data clean and accurate. You'll set up contractors and contracts, apply discounts, process supplier delivery notes, handle warehouse transfers and inventory counts, and support regional sales managers. 2+ years as an operator, solid 1C and basic Excel.</p>",
@@ -63,9 +62,9 @@
           "type": "vacancy",
           "disabled": true,
           "settings": {
-            "vacancy_name": "Partnership Manager / Sales Development Manager",
-            "vacancy_description": "",
-            "vacancy_url": "shopify://pages/partnership-manager-sales-development-manager"
+            "vacancy_name": "B2B Sales Manager (Kyiv, Darnytsia metro station)",
+            "vacancy_description": "<p>We're looking for a B2B sales manager to grow our salon and professional client base. You'll bring in new clients (salons, cosmetology centres, spas, independent professionals), nurture existing ones, run presentations and training seminars with a certified brand trainer, and own your deals end-to-end in CRM. Proven B2B sales growth, goal-driven, hybrid schedule possible.</p>",
+            "vacancy_url": "shopify://pages/accountant-cashier-kyiv-darnytsia-metro-station"
           }
         }
       },
