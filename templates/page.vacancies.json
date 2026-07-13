@@ -44,7 +44,6 @@
         },
         "vacancy_GADmPm": {
           "type": "vacancy",
-          "disabled": true,
           "settings": {
             "vacancy_name": "Chief Accountant (Kyiv, Darnytsia metro station)",
             "vacancy_description": "<p>We're hiring a chief accountant to take full ownership of accounting and tax reporting for two LLCs (manufacturing, wholesale, import/export). The role covers 1C accounting and management accounting, currency operations, payroll and the FOP cash desk. 3+ years as a sole or chief accountant, strong knowledge of manufacturing accounting (incl. tolling) and 1C/Excel.</p>",
@@ -55,9 +54,9 @@
           "type": "vacancy",
           "disabled": true,
           "settings": {
-            "vacancy_name": "SMM Manager (Kyiv, Darnytsia metro station)",
-            "vacancy_description": "",
-            "vacancy_url": "shopify://pages/smm-manager-kyiv-darnytsia-metro-station"
+            "vacancy_name": "1C Operator (Kyiv, Darnytsia metro station)",
+            "vacancy_description": "<p>We're looking for a detail-oriented 1C operator to keep our product and counterparty data clean and accurate. You'll set up contractors and contracts, apply discounts, process supplier delivery notes, handle warehouse transfers and inventory counts, and support regional sales managers. 2+ years as an operator, solid 1C and basic Excel.</p>",
+            "vacancy_url": "shopify://pages/partnership-manager-sales-development-manager"
           }
         },
         "vacancy_bgA7jm": {
