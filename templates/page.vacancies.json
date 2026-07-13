@@ -36,10 +36,9 @@
       "blocks": {
         "vacancy_fgeNeC": {
           "type": "vacancy",
-          "disabled": true,
           "settings": {
-            "vacancy_name": "Сosmetologist Сoach",
-            "vacancy_description": "<p>We are looking for a specialist who is in love with his job, with a desire to develop, who is ready to learn and improve his skills.</p>",
+            "vacancy_name": "Office Manager (Kyiv, Darnytsia metro station)",
+            "vacancy_description": "<p>We're looking for a sincere office manager who loves their work — someone who will create a warm, welcoming atmosphere and take care of colleagues.</p>",
             "vacancy_url": "shopify://pages/customer-service-advisor"
           }
         },
