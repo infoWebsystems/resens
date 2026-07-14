@@ -47,10 +47,7 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.22);
   }
 
-  .resens-link svg {
-    width: 18px;
-    height: 18px;
-  }
+  .resens-link svg { width: 18px; height: 18px; }
 
   .resens-link-viber    { background: #7360F2; }
   .resens-link-telegram { background: #2AABEE; }
@@ -95,10 +92,7 @@
     flex-shrink: 0;
   }
 
-  .resens-toggle:hover {
-    background: #333;
-    transform: scale(1.08);
-  }
+  .resens-toggle:hover { background: #333; transform: scale(1.08); }
 
   .resens-toggle svg {
     width: 24px;
@@ -110,11 +104,23 @@
     stroke-linejoin: round;
   }
 
-  @media (max-width: 480px) {
-    .resens-widget { bottom: 12px; }
-    .resens-toggle { width: 48px; height: 48px; }
-    .resens-label  { font-size: 13px; padding: 8px 12px; }
-    .resens-link   { width: 32px; height: 32px; }
+  /* ===== МОБІЛЬНА ВЕРСІЯ ===== */
+  @media (max-width: 749px) {
+    .resens-widget {
+      left: auto;                 /* більше не по центру */
+      right: 12px;
+      transform: none;
+      align-items: flex-end;
+      /* --resens-offset ставить скрипт = висота липкої панелі */
+      bottom: calc(16px + var(--resens-offset, 0px) + env(safe-area-inset-bottom, 0px));
+      transition: bottom 0.2s ease;
+    }
+    .resens-panel  { align-items: flex-end; }
+    .resens-label  { display: none; }   /* прибираємо широку плашку з текстом */
+    .resens-toggle { width: 46px; height: 46px; }
+    .resens-toggle svg { width: 21px; height: 21px; }
+    .resens-link   { width: 40px; height: 40px; }
+    .resens-link svg { width: 20px; height: 20px; }
   }
 </style>
 
@@ -165,6 +171,7 @@
 
 <script>
   (function() {
+    var widget = document.getElementById('resensChatWidget');
     var panel  = document.getElementById('resensChatPanel');
     var toggle = document.getElementById('resensToggle');
     var label  = document.getElementById('resensLabel');
@@ -182,5 +189,44 @@
 
     toggle.addEventListener('click', togglePanel);
     label.addEventListener('click', togglePanel);
+
+    /* Автопідйом над липкою панеллю "Оформити замовлення" */
+    function stickyBarHeight() {
+      if (!document.elementsFromPoint) return 0;
+      var els = document.elementsFromPoint(window.innerWidth / 2, window.innerHeight - 4) || [];
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (el === widget || widget.contains(el)) continue;
+        if (el === document.body || el === document.documentElement) continue;
+        var pos = window.getComputedStyle(el).position;
+        if (pos === 'fixed' || pos === 'sticky') {
+          var r = el.getBoundingClientRect();
+          if (r.height > 20 && r.height < window.innerHeight * 0.4) return Math.round(r.height);
+        }
+      }
+      return 0;
+    }
+
+    function updateOffset() {
+      if (window.innerWidth > 749) {
+        widget.style.setProperty('--resens-offset', '0px');
+        return;
+      }
+      widget.style.setProperty('--resens-offset', stickyBarHeight() + 'px');
+    }
+
+    var ticking = false;
+    function onChange() {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function() { updateOffset(); ticking = false; });
+    }
+
+    window.addEventListener('load', updateOffset);
+    window.addEventListener('scroll', onChange, { passive: true });
+    window.addEventListener('resize', onChange);
+    setTimeout(updateOffset, 300);
+    setTimeout(updateOffset, 1200);
+    updateOffset();
   })();
 </script>
