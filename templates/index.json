@@ -664,6 +664,15 @@
         "review_LYg83X": {
           "type": "review",
           "settings": {
+            "review_photo": "shopify://shop_images/IMG_5062.jpg",
+            "review_name": "Alina Onopa",
+            "review_about": "TSN journalist",
+            "review_text": "I really like the 3Action Exosome Boost Eye Cream; it has a great texture, moisturizes beautifully, and truly makes me look fresher and reduces puffiness after application. It’s an amazing product, especially after nights without enough sleep. Thank you so much! 🤍"
+          }
+        },
+        "review_bmjYpd": {
+          "type": "review",
+          "settings": {
             "review_photo": "shopify://shop_images/ziablova_olena.png",
             "review_name": "Zyablova Olena",
             "review_about": "Relax cosmetologist, owner of the beauty bar •cocoon",
@@ -727,6 +736,7 @@
       },
       "block_order": [
         "review_LYg83X",
+        "review_bmjYpd",
         "review_UJXrJj",
         "review_6YgrpD",
         "review_WqjhUV",
