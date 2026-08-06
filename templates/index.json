@@ -670,6 +670,15 @@
     "reviews_xJVeCd": {
       "type": "reviews",
       "blocks": {
+        "review_VTQCTX": {
+          "type": "review",
+          "settings": {
+            "review_photo": "shopify://shop_images/IMG_5387.jpg",
+            "review_name": "Yanina Sokolova",
+            "review_about": "Ukrainian journalist, activist, blogger and actress. A volunteer with the Joint Forces Operation, media ambassador for the HeForShe women's rights movement in Ukraine, and founder of the \"Varto Zhyty\" (\"Worth Living\") foundation and the \"Ya, Nina\" (\"I, Nina\") project supporting people with cancer.",
+            "review_text": "Ukrainian neurocosmetics are simply WOW! I've been using Re[Sens] for six months, and it's probably the best thing that's happened to me in a long time. Starting with the packaging — it's made from natural materials, mycelium, which biodegrades and doesn't pollute the environment. It's remarkable that in the middle of a war, Ukrainians are not only creating cosmetics but also thinking about the future of the planet.I have very sensitive skin with rosacea, so it matters to me that my skincare genuinely works. I'd especially like to mention the Hydroceramide Cream — a wonderful cream I use at night, after which my skin looks fuller and more radiant, and fine expression lines become less noticeable. I love this cream — it seems to sink right into the skin, giving that feeling of proper professional care.For sensitive skin I'd also recommend the A-Redensity Matt Cream — it works beautifully on redness. And a special love of mine — the 3Action Exosome Boost Eye Cream for the eye area.Support Ukrainian brands. Buy Re[Sens]."
+          }
+        },
         "review_LYg83X": {
           "type": "review",
           "settings": {
@@ -744,6 +753,7 @@
         }
       },
       "block_order": [
+        "review_VTQCTX",
         "review_LYg83X",
         "review_bmjYpd",
         "review_UJXrJj",
