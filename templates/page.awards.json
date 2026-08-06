@@ -22,6 +22,14 @@
         "navigation_link_qH4C4j": {
           "type": "navigation_link",
           "settings": {
+            "link_url": "https://resenss.com/en/blogs/news/resens-a-finalist-at-the-london-packaging-week-innovation-awards-2026",
+            "link_image": "shopify://shop_images/LPW26_Awards_Finalist_Sticker.png",
+            "link_text": ""
+          }
+        },
+        "navigation_link_iayRVF": {
+          "type": "navigation_link",
+          "settings": {
             "link_url": "https://resenss.com/blogs/news/resens-winner-of-the-ukrainian-prime-award-2025-in-the-category-the-best-sustainable-cosmetic-brand",
             "link_image": "shopify://shop_images/4_Ukrainian_Prime_Award.png",
             "link_text": ""
@@ -70,6 +78,7 @@
       },
       "block_order": [
         "navigation_link_qH4C4j",
+        "navigation_link_iayRVF",
         "navigation_link_dpDGjV",
         "navigation_link_FmhFDi",
         "navigation_link_mDiRWY",
