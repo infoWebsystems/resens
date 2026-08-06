@@ -91,6 +91,25 @@
         "image_style": "circle"
       }
     },
+    "image_image_with_text_hPTNpm": {
+      "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "white",
+        "image": "shopify://shop_images/LPW26_Awards_Finalist_Sticker.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "right",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<h3>BRIGHTENING PEEL HPA — FINALIST OF COSMOPROF INDIA & COSMOPACK INDIA AWARDS 2025</h3>",
+        "button_label": "read more",
+        "button_link": "https://resenss.com/en/blogs/news/brightening-peel-hpa-finalist-of-cosmoprof-india-cosmopack-india-awards-2025"
+      }
+    },
     "image_image_with_text_yx44HF": {
       "type": "image--image-with-text",
       "custom_css": [
@@ -110,7 +129,7 @@
         "button_link": "https://resenss.com/en/blogs/news/resens-winner-of-the-ukrainian-prime-award-2025-in-the-category-the-best-sustainable-cosmetic-brand"
       }
     },
-    "image_image_with_text_hPTNpm": {
+    "image_image_with_text_rcPmRw": {
       "type": "image--image-with-text",
       "custom_css": [
         "h3 {text-align: center;}"
@@ -209,8 +228,9 @@
   "order": [
     "main",
     "visual_navigation_banner_7GwJ8P",
-    "image_image_with_text_yx44HF",
     "image_image_with_text_hPTNpm",
+    "image_image_with_text_yx44HF",
+    "image_image_with_text_rcPmRw",
     "image_image_with_text_XWY6MD",
     "image_image_with_text_8wzkqH",
     "image_image_with_text_T7nHcM",
