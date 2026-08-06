@@ -9,6 +9,7 @@
   {% endif %}
   {% if section.blocks.size > 0 %}
     <ul class="visual-navigation__list">
+
       {% for block in section.blocks %}
         <li 
           class="visual-navigation__list-item{% if section.settings.image_style == 'circle' %} visual-navigation__list-item--circle{% endif %}" 
@@ -88,7 +89,7 @@
 		{
 			"type": "navigation_link",
 			"name": "t:sections.visual-navigation-banner.blocks.navigation_link.name",
-			"limit": 6,
+			"limit": 8,
 			"settings": [
 				{
 					"type": "url",
