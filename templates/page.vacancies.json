@@ -34,7 +34,47 @@
     "vacansies_iaCEw9": {
       "type": "vacansies",
       "blocks": {
+        "vacancy_krdeMC": {
+          "type": "vacancy",
+          "settings": {
+            "vacancy_name": "Accountant — Sole Proprietorships (FOP) & Primary Documentation (hybrid), Kyiv",
+            "vacancy_description": "<p>If you enjoy working with people, building partnerships and representing a product you can sincerely believe in — we'd love to meet you. Send your CV to <a href=\"mailto:ivaschenko.viktoria@esthederm.org\">ivaschenko.viktoria@esthederm.org</a></p>",
+            "vacancy_url": "shopify://pages/accountant-sole-proprietorships-fop-primary-documentation-hybrid-kyiv"
+          }
+        },
+        "vacancy_HiXn3Y": {
+          "type": "vacancy",
+          "settings": {
+            "vacancy_name": "Regional B2B Sales Manager, Professional Cosmetics — Ivano-Frankivsk, Ternopil, Khmelnytskyi, Chernivtsi",
+            "vacancy_description": "<p>If you enjoy working with people, building partnerships and representing a product you can sincerely believe in — we'd love to meet you. Send your CV to <a href=\"mailto:ivaschenko.viktoria@esthederm.org\">ivaschenko.viktoria@esthederm.org</a></p>",
+            "vacancy_url": "shopify://pages/regional-b2b-sales-manager-professional-cosmetics-ivano-frankivsk-ternopil-khmelnytskyi-chernivtsi"
+          }
+        },
+        "vacancy_BqLQYw": {
+          "type": "vacancy",
+          "settings": {
+            "vacancy_name": "Regional B2B Sales Manager, Professional Cosmetics — Odesa",
+            "vacancy_description": "<p>If you enjoy working with people, building partnerships and representing a product you can sincerely believe in — we'd love to meet you. Send your CV to <a href=\"mailto:ivaschenko.viktoria@esthederm.org\">ivaschenko.viktoria@esthederm.org</a></p>",
+            "vacancy_url": "shopify://pages/regional-b2b-sales-manager-professional-cosmetics-odesa"
+          }
+        },
+        "vacancy_X8WKcr": {
+          "type": "vacancy",
+          "settings": {
+            "vacancy_name": "Regional B2B Sales Manager, Professional Cosmetics — Uzhhorod & Zakarpattia",
+            "vacancy_description": "<p>If you enjoy working with people, building partnerships and representing a product you can sincerely believe in — we'd love to meet you. Send your CV to <a href=\"mailto:ivaschenko.viktoria@esthederm.org\">ivaschenko.viktoria@esthederm.org</a></p>",
+            "vacancy_url": "shopify://pages/regional-b2b-sales-manager-professional-cosmetics-uzhhorod-zakarpattia"
+          }
+        },
         "vacancy_fgeNeC": {
+          "type": "vacancy",
+          "settings": {
+            "vacancy_name": "Office Manager (Kyiv, Darnytsia metro station)",
+            "vacancy_description": "<p>We're looking for an office manager who keeps everything running smoothly and makes the office a place people enjoy coming to. You'll handle daily office operations, supplies, guests and seminar logistics — and you'll be the person who fixes things before anyone notices they're broken. 1+ year in a similar role, confident Excel and AI user, higher education, fluent Ukrainian.</p>",
+            "vacancy_url": "shopify://pages/customer-service-advisor"
+          }
+        },
+        "vacancy_3Y4Lfq": {
           "type": "vacancy",
           "settings": {
             "vacancy_name": "Office Manager (Kyiv, Darnytsia metro station)",
@@ -44,6 +84,7 @@
         },
         "vacancy_GADmPm": {
           "type": "vacancy",
+          "disabled": true,
           "settings": {
             "vacancy_name": "Chief Accountant (Kyiv, Darnytsia metro station)",
             "vacancy_description": "<p>We're hiring a chief accountant to take full ownership of accounting and tax reporting for two LLCs (manufacturing, wholesale, import/export). The role covers 1C accounting and management accounting, currency operations, payroll and the FOP cash desk. 3+ years as a sole or chief accountant, strong knowledge of manufacturing accounting (incl. tolling) and 1C/Excel.</p>",
@@ -77,7 +118,12 @@
         }
       },
       "block_order": [
+        "vacancy_krdeMC",
+        "vacancy_HiXn3Y",
+        "vacancy_BqLQYw",
+        "vacancy_X8WKcr",
         "vacancy_fgeNeC",
+        "vacancy_3Y4Lfq",
         "vacancy_GADmPm",
         "vacancy_FfVBYj",
         "vacancy_bgA7jm",
