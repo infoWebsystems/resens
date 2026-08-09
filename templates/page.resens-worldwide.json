@@ -248,6 +248,33 @@
         "vertical_alignment": "top"
       }
     },
+    "template_product_info_columns_x8ynjw": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_mxBeEn": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_GBR.jpg",
+            "grid_image_size": "square",
+            "heading": "Great Britain",
+            "text": "<p><strong>AESTHETIC ART ACADEMY LTD</strong></p><p>368 Forest Road, London, E17 5JF</p><p>email: info@imagine-you.co.uk</p><p>phone: +44 7799 140911</p>",
+            "button_text": "Go to site",
+            "button_link": "https://Imagine-you.co.uk"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_mxBeEn"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 1,
+        "text_alignment": "center",
+        "vertical_alignment": "top"
+      }
+    },
     "164563343647211871": {
       "type": "text--rich-text",
       "blocks": {
@@ -404,6 +431,7 @@
     "template_product_info_columns_t3VtzC",
     "template_product_info_columns_LemUJt",
     "template_product_info_columns_mVj3EL",
+    "template_product_info_columns_x8ynjw",
     "164563343647211871",
     "057a50d5-3fee-4ea2-a832-2d38f47b959a",
     "171895764357c44b9c",
