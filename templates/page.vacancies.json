@@ -61,13 +61,14 @@
         "vacancy_bgA7jm": {
           "type": "vacancy",
           "settings": {
-            "vacancy_name": "B2B Sales Manager (Kyiv, Darnytsia metro station)",
+            "vacancy_name": "B2B Sales Manager, Professional Cosmetics (hybrid) — Kyiv",
             "vacancy_description": "<p>We're looking for a B2B sales manager to grow our salon and professional client base. You'll bring in new clients (salons, cosmetology centres, spas, independent professionals), nurture existing ones, run presentations and training seminars with a certified brand trainer, and own your deals end-to-end in CRM. Proven B2B sales growth, goal-driven, hybrid schedule possible.</p>",
             "vacancy_url": "shopify://pages/accountant-cashier-kyiv-darnytsia-metro-station"
           }
         },
         "vacancy_t9y9hE": {
           "type": "vacancy",
+          "disabled": true,
           "settings": {
             "vacancy_name": "B2C Sales Manager — Remote!",
             "vacancy_description": "<p>We're hiring a remote B2C sales manager to turn inbound interest into loyal customers. You'll handle enquiries from the website, Instagram, messengers and calls, sell promos and new arrivals, support orders from placement to delivery, and reactivate inactive customers — all in KeyCRM / 1C. Work from any city, hit your personal sales plan and KPIs.</p>",
