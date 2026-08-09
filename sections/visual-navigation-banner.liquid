@@ -1,36 +1,7 @@
 <link rel="preload" href="{{ 'section-visual-navigation-banner.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript>{{ 'section-visual-navigation-banner.min.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- if section.settings.mobile_layout == 'stacked' -%}
-  {%- style -%}
-    @media screen and (max-width: {{ section.settings.mobile_breakpoint }}px) {
-      #shopify-section-{{ section.id }} .visual-navigation__list {
-        display: grid !important;
-        grid-template-columns: repeat({{ section.settings.mobile_columns }}, minmax(0, 1fr)) !important;
-        gap: {{ section.settings.mobile_gap }}px !important;
-        overflow: visible !important;
-        overflow-x: visible !important;
-        scroll-snap-type: none !important;
-        transform: none !important;
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-      #shopify-section-{{ section.id }} .visual-navigation__list-item {
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: 100% !important;
-        flex: 0 0 auto !important;
-        margin: 0 !important;
-        scroll-snap-align: none !important;
-      }
-    }
-  {%- endstyle -%}
-{%- endif -%}
-
-<div class="visual-navigation__wrapper visual-navigation__wrapper--{{ section.settings.mobile_layout }} wow fadeInUp">
+<div class="visual-navigation__wrapper wow fadeInUp">
   {% if section.settings.title != blank %}
     <div class="sitewide--title-wrapper">
       <h2 class="homepage-sections--title">{{ section.settings.title | escape }}</h2>
@@ -110,82 +81,6 @@
 				{
 					"value": "square",
 					"label": "t:all.Square"
-				}
-			]
-		},
-		{
-			"type": "header",
-			"content": "Мобільний вигляд"
-		},
-		{
-			"type": "select",
-			"id": "mobile_layout",
-			"label": "Відображення на мобільних",
-			"default": "slider",
-			"options": [
-				{
-					"value": "slider",
-					"label": "Слайдер (горизонтальний скрол)"
-				},
-				{
-					"value": "stacked",
-					"label": "Блоки один під одним"
-				}
-			]
-		},
-		{
-			"type": "select",
-			"id": "mobile_columns",
-			"label": "Колонок на мобільних",
-			"default": "1",
-			"info": "Працює лише в режимі «Блоки один під одним»",
-			"options": [
-				{
-					"value": "1",
-					"label": "1"
-				},
-				{
-					"value": "2",
-					"label": "2"
-				}
-			]
-		},
-		{
-			"type": "range",
-			"id": "mobile_gap",
-			"label": "Відступ між блоками",
-			"min": 0,
-			"max": 40,
-			"step": 2,
-			"unit": "px",
-			"default": 16
-		},
-		{
-			"type": "select",
-			"id": "mobile_breakpoint",
-			"label": "Ширина екрана для мобільного вигляду",
-			"default": "767",
-			"info": "У більшості тем — 749 або 767px. Перевірте, на якій ширині секція перемикається на скрол.",
-			"options": [
-				{
-					"value": "574",
-					"label": "до 574px"
-				},
-				{
-					"value": "749",
-					"label": "до 749px"
-				},
-				{
-					"value": "767",
-					"label": "до 767px"
-				},
-				{
-					"value": "989",
-					"label": "до 989px"
-				},
-				{
-					"value": "1024",
-					"label": "до 1024px"
 				}
 			]
 		}
