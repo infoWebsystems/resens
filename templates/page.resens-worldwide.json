@@ -116,7 +116,11 @@
         "description": "",
         "columns_per_row": 2,
         "text_alignment": "center",
-        "vertical_alignment": "top"
+        "vertical_alignment": "top",
+        "mobile_layout": "stacked",
+        "mobile_columns": "1",
+        "mobile_gap": 32,
+        "mobile_breakpoint": "767"
       }
     },
     "template_product_info_columns_t3VtzC": {
@@ -155,7 +159,11 @@
         "description": "",
         "columns_per_row": 2,
         "text_alignment": "center",
-        "vertical_alignment": "top"
+        "vertical_alignment": "top",
+        "mobile_layout": "slider",
+        "mobile_columns": "1",
+        "mobile_gap": 32,
+        "mobile_breakpoint": "767"
       }
     },
     "template_product_info_columns_LemUJt": {
@@ -194,7 +202,11 @@
         "description": "",
         "columns_per_row": 2,
         "text_alignment": "center",
-        "vertical_alignment": "top"
+        "vertical_alignment": "top",
+        "mobile_layout": "slider",
+        "mobile_columns": "1",
+        "mobile_gap": 32,
+        "mobile_breakpoint": "767"
       }
     },
     "template_product_info_columns_mVj3EL": {
@@ -233,7 +245,11 @@
         "description": "",
         "columns_per_row": 2,
         "text_alignment": "center",
-        "vertical_alignment": "top"
+        "vertical_alignment": "top",
+        "mobile_layout": "slider",
+        "mobile_columns": "1",
+        "mobile_gap": 32,
+        "mobile_breakpoint": "767"
       }
     },
     "template_product_info_columns_x8ynjw": {
@@ -260,7 +276,11 @@
         "description": "",
         "columns_per_row": 1,
         "text_alignment": "center",
-        "vertical_alignment": "top"
+        "vertical_alignment": "top",
+        "mobile_layout": "slider",
+        "mobile_columns": "1",
+        "mobile_gap": 32,
+        "mobile_breakpoint": "767"
       }
     },
     "164563343647211871": {
