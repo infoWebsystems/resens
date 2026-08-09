@@ -49,7 +49,83 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_E9KYND": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-10-TCH.jpg",
+            "link": "https://tsn.ua/lady/krasota/kosmetologiya/podorozi-bez-stresu-dlia-shkiry-iak-zminyty-dohliad-pid-chas-vidpustky-3133982.html"
+          }
+        },
+        "logo_image_UDDYTP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-09-estportal.jpg",
+            "link": "https://estportal.com/happiness-for-skin-resens-predstavyv-novyi-ceramide-fluid-endorphin/"
+          }
+        },
+        "logo_image_xp6UXY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-08-ua-news.jpg",
+            "link": "https://ua.news/ua/sport/zhinoche-zdorovia-krasa-ta-wellness-iak-proishov-zakritii-women-wellness-event-vid-leo-beauty-club"
+          }
+        },
+        "logo_image_XnQrMN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-07-karavan.jpg",
+            "link": "https://karavan.ua/krasota/innovatsii-molodosti-nejrokosmetyka-botoks-efekt-ta-hlyboke-nichne-vidnovlennia/"
+          }
+        },
+        "logo_image_YarQcp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-06-talksss.jpg",
+            "link": "https://www.fashiontalksss.com/single-post/%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D0%B1%D1%80%D0%B5%D0%BD%D0%B4-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BA%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B8-re-sens-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%B8%D0%B9-ceramide-fluid-endorphin"
+          }
+        },
+        "logo_image_hyAEeN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-05-TCH.jpg",
+            "link": "https://tsn.ua/lady/krasota/kosmetologiya/do-speky-hotovi-shcho-potribno-shkiri-vlitku-krim-spf-3110081.html"
+          }
+        },
+        "logo_image_QFBqDz": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_mxdchP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-04-marieclaire.jpg",
+            "link": "https://marieclaire.ua/beauty/b-yuti-dajdzhest-novynky-kosmetyky-cherven-2026/"
+          }
+        },
+        "logo_image_MrA4FJ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-3-Viva.jpg",
+            "link": "https://viva.ua/fashion-beauty/19971-shkira-pislya-stresu-u-sferi-neyrokosmetiki-zyavilas-novinka-z-aktsentom-na-vidnovlennya-shkiri"
+          }
+        },
+        "logo_image_Npa8L7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-02-Womo.jpg",
+            "link": "https://womo.ua/chym-onovyty-kosmetychku-czogo-lita-gid-po-najkrashhyh-zasobah-vid-svitovyh-ta-ukrayinskyh-brendiv/"
+          }
+        },
         "logo_image_VDw8Q9": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-01-But.jpg",
+            "link": "https://www.but.in.ua/happiness-for-skin-resens-predstavyv-novyj-ceramide-fluid-endorphin/"
+          }
+        },
+        "logo_image_hxg6dm": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20260601-bhub.jpg",
@@ -107,7 +183,18 @@
         }
       },
       "block_order": [
+        "logo_image_E9KYND",
+        "logo_image_UDDYTP",
+        "logo_image_xp6UXY",
+        "logo_image_XnQrMN",
+        "logo_image_YarQcp",
+        "logo_image_hyAEeN",
+        "logo_image_QFBqDz",
+        "logo_image_mxdchP",
+        "logo_image_MrA4FJ",
+        "logo_image_Npa8L7",
         "logo_image_VDw8Q9",
+        "logo_image_hxg6dm",
         "logo_image_XdrzkC",
         "logo_image_MnWTPe",
         "logo_image_hhqbdb",
