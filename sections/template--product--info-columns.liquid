@@ -1,5 +1,33 @@
 {{ 'section-product-info-columns.min.css' | asset_url | stylesheet_tag }}
 
+{%- if section.settings.mobile_layout == 'stacked' -%}
+	{%- style -%}
+		@media screen and (max-width: {{ section.settings.mobile_breakpoint }}px) {
+			[data-wetheme-section-id="{{ section.id }}"] .info-cols--static {
+				overflow: visible !important;
+			}
+			[data-wetheme-section-id="{{ section.id }}"] .info-cols--static-wrapper {
+				display: grid !important;
+				grid-template-columns: repeat({{ section.settings.mobile_columns }}, minmax(0, 1fr)) !important;
+				gap: {{ section.settings.mobile_gap }}px !important;
+				transform: none !important;
+				width: 100% !important;
+			}
+			[data-wetheme-section-id="{{ section.id }}"] .info-cols--static-slide {
+				width: 100% !important;
+				max-width: 100% !important;
+				min-width: 0 !important;
+				margin: 0 !important;
+				flex: none !important;
+			}
+			[data-wetheme-section-id="{{ section.id }}"] .swiper-pagination,
+			[data-wetheme-section-id="{{ section.id }}"] .swiper-navigation {
+				display: none !important;
+			}
+		}
+	{%- endstyle -%}
+{%- endif -%}
+
 <section
 	data-wetheme-section-type="template--product--info-columns"
 	data-wetheme-section-id="{{ section.id }}"
@@ -171,6 +199,65 @@
 	</div>
 </section>
 
+{%- if section.settings.mobile_layout == 'stacked' -%}
+	<script>
+		(function () {
+			var sectionEl = document.querySelector('[data-wetheme-section-id="{{ section.id }}"]');
+			if (!sectionEl) return;
+
+			var mq = window.matchMedia('(max-width: {{ section.settings.mobile_breakpoint }}px)');
+			var wasStacked = false;
+
+			function stack() {
+				var container = sectionEl.querySelector('.swiper-container');
+				if (container) {
+					if (container.swiper && typeof container.swiper.destroy === 'function') {
+						try { container.swiper.destroy(true, true); } catch (e) {}
+					}
+					container.classList.remove('swiper-container');
+					container.classList.add('info-cols--static');
+					container.removeAttribute('style');
+				}
+
+				var wrapper = sectionEl.querySelector('.swiper-wrapper');
+				if (wrapper) {
+					wrapper.classList.remove('swiper-wrapper');
+					wrapper.classList.add('info-cols--static-wrapper');
+					wrapper.removeAttribute('style');
+				}
+
+				Array.prototype.forEach.call(sectionEl.querySelectorAll('.swiper-slide'), function (slide) {
+					slide.classList.remove('swiper-slide');
+					slide.classList.add('info-cols--static-slide');
+					slide.removeAttribute('style');
+				});
+
+				wasStacked = true;
+			}
+
+			if (mq.matches) {
+				stack();
+				document.addEventListener('DOMContentLoaded', stack);
+				window.addEventListener('load', stack);
+			}
+
+			function onChange() {
+				if (mq.matches) {
+					stack();
+				} else if (wasStacked) {
+					window.location.reload();
+				}
+			}
+
+			if (mq.addEventListener) {
+				mq.addEventListener('change', onChange);
+			} else if (mq.addListener) {
+				mq.addListener(onChange);
+			}
+		})();
+	</script>
+{%- endif -%}
+
 {% schema %}
 {
 	"name": "t:sections.template--product--info-columns.name",
@@ -260,6 +347,81 @@
 				}
 			],
 			"default": "top"
+		},
+		{
+			"type": "header",
+			"content": "Мобільний вигляд"
+		},
+		{
+			"type": "select",
+			"id": "mobile_layout",
+			"label": "Відображення на мобільних",
+			"default": "slider",
+			"options": [
+				{
+					"value": "slider",
+					"label": "Слайдер (горизонтальний скрол)"
+				},
+				{
+					"value": "stacked",
+					"label": "Блоки один під одним"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "mobile_columns",
+			"label": "Колонок на мобільних",
+			"default": "1",
+			"info": "Працює лише в режимі «Блоки один під одним»",
+			"options": [
+				{
+					"value": "1",
+					"label": "1"
+				},
+				{
+					"value": "2",
+					"label": "2"
+				}
+			]
+		},
+		{
+			"type": "range",
+			"id": "mobile_gap",
+			"label": "Відступ між блоками",
+			"min": 0,
+			"max": 60,
+			"step": 4,
+			"unit": "px",
+			"default": 32
+		},
+		{
+			"type": "select",
+			"id": "mobile_breakpoint",
+			"label": "Ширина екрана для мобільного вигляду",
+			"default": "767",
+			"options": [
+				{
+					"value": "574",
+					"label": "до 574px"
+				},
+				{
+					"value": "749",
+					"label": "до 749px"
+				},
+				{
+					"value": "767",
+					"label": "до 767px"
+				},
+				{
+					"value": "989",
+					"label": "до 989px"
+				},
+				{
+					"value": "1024",
+					"label": "до 1024px"
+				}
+			]
 		}
 	],
 	"blocks": [
