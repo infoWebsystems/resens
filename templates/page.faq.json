@@ -115,7 +115,7 @@
           "type": "tab_content",
           "settings": {
             "question": "What is the cost of delivery?",
-            "text": "<p>Delivery by courier in Kyiv is free. Delivery by Nova Poshta - at the<br/>carrier's rates.</p>"
+            "text": "<p>Delivery by courier in Kyiv is 150 UAH. Delivery by Nova Poshta - is free if your order is more 1250 UAH.</p>"
           }
         },
         "tab_content_pM778L": {
