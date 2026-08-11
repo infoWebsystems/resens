@@ -1,204 +1,257 @@
-{% assign activee_ingredients = product.metafields.custom.activee_ingredients %}
-{% assign how_to_use = product.metafields.custom.how_to_use %}
-{% assign result = product.metafields.custom.result %}
-{% assign ingredients = product.metafields.custom.ingredients %}
-{% assign packaging = product.metafields.custom.packaging %}
+{%- comment -%}
+  Product Tabs
+  Заголовки беруться з метаоб'єкта custom.tabs_titles.
+  Якщо поле порожнє — фолбек на спільний запис метаоб'єкта,
+  далі на рядки з locales (перекладаються в Translate & Adapt).
+{%- endcomment -%}
 
-{% assign metaobject_tabs_titles = product.metafields.custom.tabs_titles.value  %}
+{%- assign activee_ingredients = product.metafields.custom.activee_ingredients -%}
+{%- assign how_to_use = product.metafields.custom.how_to_use -%}
+{%- assign result = product.metafields.custom.result -%}
+{%- assign ingredients = product.metafields.custom.ingredients -%}
+{%- assign packaging = product.metafields.custom.packaging -%}
 
-{% if activee_ingredients or how_to_use or result or ingredients or packaging %}
+{%- comment -%} Підтримка обох типів метаполя: одиночного і списку {%- endcomment -%}
+{%- assign tabs_titles_raw = product.metafields.custom.tabs_titles.value -%}
+{%- if tabs_titles_raw.first != blank -%}
+  {%- assign tabs_titles = tabs_titles_raw.first -%}
+{%- elsif tabs_titles_raw != blank -%}
+  {%- assign tabs_titles = tabs_titles_raw -%}
+{%- else -%}
+  {%- comment -%}
+    Спільний запис за замовчуванням.
+    tabs_titles — handle ТИПУ метаоб'єкта, default — handle самого ЗАПИСУ.
+    Замініть на свої, якщо вони інші.
+  {%- endcomment -%}
+  {%- assign tabs_titles = shop.metaobjects.tabs_titles.default -%}
+{%- endif -%}
+
+{%- if tabs_titles.active_ingredients != blank -%}
+  {%- assign title_active_ingredients = tabs_titles.active_ingredients -%}
+{%- else -%}
+  {%- assign title_active_ingredients = 'products.product.tabs.active_ingredients' | t -%}
+{%- endif -%}
+
+{%- if tabs_titles.how_to_use != blank -%}
+  {%- assign title_how_to_use = tabs_titles.how_to_use -%}
+{%- else -%}
+  {%- assign title_how_to_use = 'products.product.tabs.how_to_use' | t -%}
+{%- endif -%}
+
+{%- if tabs_titles.result != blank -%}
+  {%- assign title_result = tabs_titles.result -%}
+{%- else -%}
+  {%- assign title_result = 'products.product.tabs.result' | t -%}
+{%- endif -%}
+
+{%- if tabs_titles.ingredients != blank -%}
+  {%- assign title_ingredients = tabs_titles.ingredients -%}
+{%- else -%}
+  {%- assign title_ingredients = 'products.product.tabs.ingredients' | t -%}
+{%- endif -%}
+
+{%- if tabs_titles.packaging != blank -%}
+  {%- assign title_packaging = tabs_titles.packaging -%}
+{%- else -%}
+  {%- assign title_packaging = 'products.product.tabs.packaging' | t -%}
+{%- endif -%}
+
+{%- capture tab_icon -%}
+<svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="currentColor"/></svg>
+{%- endcapture -%}
+
+{%- if activee_ingredients != blank or how_to_use != blank or result != blank or ingredients != blank or packaging != blank -%}
+
+  {%- assign is_first_tab = true -%}
 
   <div class="tabs" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
-    {% if activee_ingredients != blank %}
-      <input type="radio" name="tabs" id="tabone" checked="checked">
-      <label class="label" for="tabone">
-        <span>
-          {% if metaobject_tabs_titles.active_ingredients != blank %}
-            {{ metaobject_tabs_titles.active_ingredients }}
-          {% else %}
-            Active Ingredients
-          {% endif %}
-        </span>
-        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+
+    {%- if activee_ingredients != blank -%}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab-ingredients-active-{{ section.id }}"{% if is_first_tab %} checked="checked"{% endif %}>
+      <label class="label" for="tab-ingredients-active-{{ section.id }}">
+        <span>{{ title_active_ingredients }}</span>
+        {{ tab_icon }}
       </label>
       <div class="tab">
         {{ activee_ingredients | metafield_tag }}
       </div>
-    {% endif %}
-    
-    {% if how_to_use != blank %}
-      <input type="radio" name="tabs" id="tabtwo">
-      <label class="label" for="tabtwo">
-        <span>
-          {% if metaobject_tabs_titles.how_to_use != blank %}
-            {{ metaobject_tabs_titles.how_to_use }}
-          {% else %}
-            How to use
-          {% endif %}
-        </span>
-        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      {%- assign is_first_tab = false -%}
+    {%- endif -%}
+
+    {%- if how_to_use != blank -%}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab-how-to-use-{{ section.id }}"{% if is_first_tab %} checked="checked"{% endif %}>
+      <label class="label" for="tab-how-to-use-{{ section.id }}">
+        <span>{{ title_how_to_use }}</span>
+        {{ tab_icon }}
       </label>
       <div class="tab">
         {{ how_to_use | metafield_tag }}
       </div>
-    {% endif %}
-    
-    {% if result != blank %}
-      <input type="radio" name="tabs" id="tabthree">
-      <label class="label" for="tabthree">
-        <span>
-          {% if metaobject_tabs_titles.result != blank %}
-            {{ metaobject_tabs_titles.result }}
-          {% else %}
-            Result
-          {% endif %}
-        </span>
-        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+      {%- assign is_first_tab = false -%}
+    {%- endif -%}
+
+    {%- if result != blank -%}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab-result-{{ section.id }}"{% if is_first_tab %} checked="checked"{% endif %}>
+      <label class="label" for="tab-result-{{ section.id }}">
+        <span>{{ title_result }}</span>
+        {{ tab_icon }}
       </label>
       <div class="tab">
         {{ result | metafield_tag }}
       </div>
-    {% endif %}
+      {%- assign is_first_tab = false -%}
+    {%- endif -%}
 
-    {% if ingredients != blank %}
-      <input type="radio" name="tabs" id="tabfour">
-      <label class="label" for="tabfour">
-        <span>
-          {% if metaobject_tabs_titles.ingredients != blank %}
-            {{ metaobject_tabs_titles.ingredients }}
-          {% else %}
-            Ingredients
-          {% endif %}
-        </span>
-        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+    {%- if ingredients != blank -%}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab-ingredients-{{ section.id }}"{% if is_first_tab %} checked="checked"{% endif %}>
+      <label class="label" for="tab-ingredients-{{ section.id }}">
+        <span>{{ title_ingredients }}</span>
+        {{ tab_icon }}
       </label>
       <div class="tab">
         {{ ingredients | metafield_tag }}
       </div>
-    {% endif %}
+      {%- assign is_first_tab = false -%}
+    {%- endif -%}
 
-    {% if packaging != blank %}
-      <input type="radio" name="tabs" id="tabfive">
-      <label class="label" for="tabfive">
-        <span>
-          {% if metaobject_tabs_titles.packaging != blank %}
-            {{ metaobject_tabs_titles.packaging }}
-          {% else %}
-            Packaging
-          {% endif %}
-        </span>
-        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#515151"/></svg>
+    {%- if packaging != blank -%}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab-packaging-{{ section.id }}"{% if is_first_tab %} checked="checked"{% endif %}>
+      <label class="label" for="tab-packaging-{{ section.id }}">
+        <span>{{ title_packaging }}</span>
+        {{ tab_icon }}
       </label>
       <div class="tab">
         {{ packaging | metafield_tag }}
       </div>
-    {% endif %}
+      {%- assign is_first_tab = false -%}
+    {%- endif -%}
+
   </div>
-{% endif %}
+{%- endif -%}
 
 <style>
-.tabs {
-	display: flex;
-  justify-content: center;
-	flex-wrap: wrap; // make sure it wraps
-  gap: 72px;
-}
-.tabs label {
-  border-bottom: 0px solid rgba(0, 0, 0, 0);
-	order: 1; // Put the labels first
-	display: block;
-	padding-bottom: 1rem;
-	cursor: pointer;
-  transition: border-bottom ease 0.8s;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  text-transform: uppercase;
-}
-.tabs label:not(:last-of-type) {
-  margin-right: 72px;
-}
-.tabs label svg { 
-  transition: all 0.4s;
-  transform: rotate(-180deg);
-  display: none;
-}
-.tabs .tab {
-  order: 99; // Put the tabs last
-  flex-grow: 1;
-	width: 100%;
-	display: none;
-  padding: 64px 0;
-  background: {{ section.settings.content_background }};
-  margin-top: 32px;
-}
-.tabs .tab > * { 
-  max-width: 794px;
-  margin: 0 auto;
-  text-align: center;
-}
-.tabs input[type="radio"] {
-	display: none;
-}
-.tabs input[type="radio"]:checked + label {
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
-  font-weight: 700;
-}
-.tabs input[type="radio"]:checked + label svg {
-  transform: rotate(0);
-}
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
-}
-
-@media only screen and (max-width: 989px) {
-  .tabs label:not(:last-of-type) {
-    margin-right: 40px;
+  #shopify-section-{{ section.id }} .tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* заголовки в один рядок, вміст переноситься нижче */
   }
-}
 
-@media (max-width: 767px) {
-  .tabs .tab,
-  .tabs label {
-    order: initial;
+  #shopify-section-{{ section.id }} .tabs label {
+    order: 1; /* заголовки завжди перед вмістом */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 0 solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: border-bottom ease 0.8s;
   }
-  .tabs label {
+
+  #shopify-section-{{ section.id }} .tabs label:not(:last-of-type) {
+    margin-right: 72px;
+  }
+
+  #shopify-section-{{ section.id }} .tabs label svg {
+    display: none;
+    color: #515151;
+    transform: rotate(-180deg);
+    transition: all 0.4s;
+  }
+
+  #shopify-section-{{ section.id }} .tabs .tab {
+    order: 99; /* вміст завжди після заголовків */
+    flex-grow: 1;
     width: 100%;
-    margin-right: 0;
-    margin-top: 0.2rem;
-    margin: 0 2rem 24px 2rem;
-    border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 24px;
+    display: none;
+    padding: 64px 0;
+    margin-top: 32px;
+    background: {{ section.settings.content_background }};
   }
-  .tabs label:not(:last-of-type) {
-    margin-right: 2rem;
+
+  #shopify-section-{{ section.id }} .tabs .tab > * {
+    max-width: 794px;
+    margin: 0 auto;
+    text-align: center;
   }
-  .tabs label svg { 
+
+  #shopify-section-{{ section.id }} .tabs input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #shopify-section-{{ section.id }} .tabs input[type="radio"]:checked + label {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    font-weight: 700;
+  }
+
+  #shopify-section-{{ section.id }} .tabs input[type="radio"]:focus-visible + label {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  #shopify-section-{{ section.id }} .tabs input[type="radio"]:checked + label svg {
+    transform: rotate(0);
+  }
+
+  #shopify-section-{{ section.id }} .tabs input[type="radio"]:checked + label + .tab {
     display: block;
   }
-  .tabs input[type="radio"]:checked + label {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 16px;
+
+  @media only screen and (max-width: 989px) {
+    #shopify-section-{{ section.id }} .tabs label:not(:last-of-type) {
+      margin-right: 40px;
+    }
   }
-  .tabs .tab {
-    margin-top: 0;
-    margin: 0 32px 24px 32px;
-    padding: 0;
-    padding-bottom: 16px;
-    background-color: #fff;
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .tabs .tab,
+    #shopify-section-{{ section.id }} .tabs label {
+      order: initial;
+    }
+
+    #shopify-section-{{ section.id }} .tabs label {
+      width: 100%;
+      margin: 0 2rem 24px 2rem;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #d8d8d8;
+    }
+
+    #shopify-section-{{ section.id }} .tabs label:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+
+    #shopify-section-{{ section.id }} .tabs label svg {
+      display: block;
+    }
+
+    #shopify-section-{{ section.id }} .tabs input[type="radio"]:checked + label {
+      margin-bottom: 0;
+      padding-bottom: 16px;
+      border-bottom: none;
+    }
+
+    #shopify-section-{{ section.id }} .tabs .tab {
+      margin: 0 32px 24px 32px;
+      padding: 0 0 16px 0;
+      background-color: #fff;
+    }
+
+    #shopify-section-{{ section.id }} .tabs input[type="radio"]:checked + label + .tab {
+      border-bottom: 1px solid #d8d8d8;
+    }
+
+    #shopify-section-{{ section.id }} .tabs .tab > * {
+      text-align: left;
+      font-weight: 400;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 1px;
+    }
   }
-  .tabs input[type="radio"]:checked + label + .tab {
-    border-bottom: 1px solid #d8d8d8;
-  }
-  .tabs .tab > * { 
-    text-align: left;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 1px;
-  }
-}
 </style>
 
 {% schema %}
