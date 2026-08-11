@@ -49,6 +49,13 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_QFBqDz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260811-1-officiel.jpg",
+            "link": "https://officiel-online.com/uk/lifestyle-2/style-life/born-in-ukraine-august-2026/"
+          }
+        },
         "logo_image_E9KYND": {
           "type": "logo_image",
           "settings": {
@@ -89,12 +96,6 @@
           "settings": {
             "image": "shopify://shop_images/banner_500x500_20260807-05-TCH.jpg",
             "link": "https://tsn.ua/lady/krasota/kosmetologiya/do-speky-hotovi-shcho-potribno-shkiri-vlitku-krim-spf-3110081.html"
-          }
-        },
-        "logo_image_QFBqDz": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
           }
         },
         "logo_image_mxdchP": {
@@ -183,13 +184,13 @@
         }
       },
       "block_order": [
+        "logo_image_QFBqDz",
         "logo_image_E9KYND",
         "logo_image_UDDYTP",
         "logo_image_xp6UXY",
         "logo_image_XnQrMN",
         "logo_image_YarQcp",
         "logo_image_hyAEeN",
-        "logo_image_QFBqDz",
         "logo_image_mxdchP",
         "logo_image_MrA4FJ",
         "logo_image_Npa8L7",
