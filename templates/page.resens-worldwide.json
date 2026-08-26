@@ -265,10 +265,22 @@
             "button_text": "Go to site",
             "button_link": "https://Imagine-you.co.uk"
           }
+        },
+        "image_and_text_YdqPay": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5106.jpg",
+            "grid_image_size": "square",
+            "heading": "CANADA",
+            "text": "<p><strong>International Beauty</strong></p><p>11348 142 Street NW</p><p>Edmonton, Alberta </p><p>T5M 1T9</p><p>email: Orders@internationalbeauty.ca (email)</p><p>phone: 1 800 642 3818 or 780 454 3388</p>",
+            "button_text": "Go to site",
+            "button_link": "https://www.internationalbeauty.ca"
+          }
         }
       },
       "block_order": [
-        "image_and_text_mxBeEn"
+        "image_and_text_mxBeEn",
+        "image_and_text_YdqPay"
       ],
       "settings": {
         "colors": "white",
