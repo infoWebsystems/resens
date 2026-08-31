@@ -14,6 +14,7 @@
       "blocks": {
         "image_JPdCGw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
@@ -44,13 +45,13 @@
             "text": "",
             "first_button_label": "Shop now",
             "first_button_link": "shopify://collections/all",
-            "second_button_label": "Birthday Gift",
-            "second_button_link": "shopify://products/3action-exosome-boost-eye-cream",
-            "image": "shopify://shop_images/Gift_20260801_web_eng.jpg",
+            "second_button_label": "",
+            "second_button_link": "",
+            "image": "shopify://shop_images/Gift_20260901_web_eng.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/Gift_20260801_mobile_eng.jpg",
+            "mobile_image": "shopify://shop_images/Gift_20260901_mobile_eng.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
@@ -64,6 +65,7 @@
         },
         "image_fYHLgh": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
