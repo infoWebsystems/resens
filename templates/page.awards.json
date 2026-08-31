@@ -100,6 +100,25 @@
         "image_style": "circle"
       }
     },
+    "image_image_with_text_yx44HF": {
+      "type": "image--image-with-text",
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
+      "name": "t:sections.image--image-with-text.presets.name",
+      "settings": {
+        "colors": "light",
+        "image": "shopify://shop_images/logo20260828.png",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<h3>Re[Sens] is among the finalists of the Global Green Beauty Awards 2026.</h3>",
+        "button_label": "Read More",
+        "button_link": "https://resenss.com/en/blogs/news/were-a-finalist-%F0%9F%8C%BF"
+      }
+    },
     "image_image_with_text_hPTNpm": {
       "type": "image--image-with-text",
       "custom_css": [
@@ -119,7 +138,7 @@
         "button_link": "https://resenss.com/en/blogs/news/resens-a-finalist-at-the-london-packaging-week-innovation-awards-2026"
       }
     },
-    "image_image_with_text_yx44HF": {
+    "image_image_with_text_84UKXa": {
       "type": "image--image-with-text",
       "custom_css": [
         "h3 {text-align: center;}"
@@ -237,8 +256,9 @@
   "order": [
     "main",
     "visual_navigation_banner_7GwJ8P",
-    "image_image_with_text_hPTNpm",
     "image_image_with_text_yx44HF",
+    "image_image_with_text_hPTNpm",
+    "image_image_with_text_84UKXa",
     "image_image_with_text_rcPmRw",
     "image_image_with_text_XWY6MD",
     "image_image_with_text_8wzkqH",
