@@ -592,6 +592,14 @@
     "visual_navigation_banner_HDrWqQ": {
       "type": "visual-navigation-banner",
       "blocks": {
+        "navigation_link_VtR3zD": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "https://resenss.com/blogs/news/were-a-finalist-%F0%9F%8C%BF",
+            "link_image": "shopify://shop_images/logo20260828.png",
+            "link_text": ""
+          }
+        },
         "navigation_link_tb4qnc": {
           "type": "navigation_link",
           "settings": {
@@ -650,6 +658,7 @@
         }
       },
       "block_order": [
+        "navigation_link_VtR3zD",
         "navigation_link_tb4qnc",
         "navigation_link_QNR9HL",
         "navigation_link_tegjMx",
