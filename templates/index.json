@@ -14,19 +14,18 @@
       "blocks": {
         "image_JPdCGw": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
             "first_button_label": "Shop now",
             "first_button_link": "shopify://collections/all",
-            "second_button_label": "AWARDS",
-            "second_button_link": "shopify://blogs/news/resens-a-finalist-at-the-london-packaging-week-innovation-awards-2026",
-            "image": "shopify://shop_images/nagoroda_20260805_web.jpg",
+            "second_button_label": "Brightening Peel HPA",
+            "second_button_link": "shopify://products/brightening-peel-hpa",
+            "image": "shopify://shop_images/Sale20_peel_20260901_web.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/nagoroda_20260805_mobile.jpg",
+            "mobile_image": "shopify://shop_images/Sale20_peel_20260901_mobile.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
