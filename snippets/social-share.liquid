@@ -30,7 +30,7 @@
   {% if settings.share_facebook %}
   <a href="//www.facebook.com/sharer.php?u={{ permalinkURL }}" target="_blank" rel="noopener" aria-label="Share on Facebook">
     <div class="sharing-button"><div aria-hidden="true" class="sharing-button__icon">
-      {% render 'theme-icon' with icon: 'facebook' %}
+      {% render 'theme-icon' with icon, icon: 'facebook' %}
       </div>
     </div>
   </a>
@@ -39,7 +39,7 @@
   {% if settings.share_twitter %}
   <a href="//twitter.com/share?url={{ permalinkURL }}&amp;text={{ shareTitle | escape }}" target="_blank" rel="noopener" aria-label="Share on Twitter">
     <div class="sharing-button"><div aria-hidden="true" class="sharing-button__icon">
-      {% render 'theme-icon' with icon: 'twitter' %}
+      {% render 'theme-icon' with icon, icon: 'twitter' %}
       </div>
     </div>
   </a>
@@ -48,9 +48,25 @@
   {% if settings.share_pinterest and shareImage %}
   <a href="//pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media={{ shareImage | escape }}&amp;description={{ product.title | escape }}" target="_blank" rel="noopener" aria-label="Share on Pinterest">
     <div class="sharing-button"><div aria-hidden="true" class="sharing-button__icon">
-      {% render 'theme-icon' with icon: 'pinterest' %}
+      {% render 'theme-icon' with icon, icon: 'pinterest' %}
       </div>
     </div>
   </a>
   {% endif %}
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'facebook' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'facebook' %}"
+  position: 1434..1487
+- from: "{% render 'theme-icon' with icon: 'twitter' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'twitter' %}"
+  position: 1812..1864
+- from: "{% render 'theme-icon' with icon: 'pinterest' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'pinterest' %}"
+  position: 2269..2323
+{% endcomment %}

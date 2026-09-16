@@ -17,8 +17,8 @@
                   {{ block.settings.accordion_header }}
                     <span>
                         {% if section.settings.faq_icon == "plus_minus" %}
-                            {% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full' %}
-                            {% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full' %}
+                            {% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full' %}
+                            {% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full' %}
                         {% elsif section.settings.faq_icon == "caret" %}
                             {% render 'theme-icon', icon: 'chevron_down', iconClasses: 'chevron-down flex-full' %}
                         {% endif %}
@@ -43,8 +43,8 @@
                     {{ block.settings.accordion_header }}
                     <span>
                       {% if section.settings.faq_icon == "plus_minus" %}
-                        {% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full' %}
-                        {% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full' %}
+                        {% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full' %}
+                        {% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full' %}
                       {% elsif section.settings.faq_icon == "caret" %}
                         {% render 'theme-icon', icon: 'chevron_up', iconClasses: 'chevron-up flex-full' %}
                         {% render 'theme-icon', icon: 'chevron_down', iconClasses: 'chevron-down flex-full' %}
@@ -412,3 +412,30 @@
 	}
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full'
+    %}"
+  position: 1195..1280
+- from: "{% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full'
+    %}"
+  position: 1309..1396
+- from: "{% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full'
+    %}"
+  position: 2493..2578
+- from: "{% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full'
+    %}"
+  position: 2603..2690
+{% endcomment %}

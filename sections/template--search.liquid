@@ -1,9 +1,9 @@
 {% capture icon_caret %}
-  {% render 'theme-icon' with icon: 'chevron_down', iconSize: settings.typography-body-font-size, iconClasses: 'icon icon-caret' %}
+  {% render 'theme-icon' with icon, icon: 'chevron_down', iconSize: settings.typography-body-font-size, iconClasses: 'icon icon-caret' %}
 {% endcapture %}
 
 {% capture icon_close %}
-  {% render 'theme-icon' with icon: 'close', iconSize: 12, iconClasses: 'icon icon-close-small' %}
+  {% render 'theme-icon' with icon, icon: 'close', iconSize: 12, iconClasses: 'icon icon-close-small' %}
 {% endcapture %}
 
 <style>
@@ -1233,7 +1233,7 @@
                   <div class="drawer__close js-drawer-close">
                     <button type="button" aria-label="{{ 'cart.general.close_cart' | t }}" class="mobile-menu--close-btn icon-fallback-text" data-drawer-close-btn>
                       <span class="fallback-text">{{ 'cart.general.close_cart' | t }}</span>
-                      {% render 'theme-icon' with icon: 'close', iconSize: 35 %}
+                      {% render 'theme-icon' with icon, icon: 'close', iconSize: 35 %}
                     </button>
                   </div>
         
@@ -1299,7 +1299,7 @@
                                             <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                           </svg>
           
-                                          {% render 'theme-icon' with icon: 'checkmark', iconSize: 14, iconClasses: 'icon icon-checkmark', iconAttributes: 'aria-hidden="true" focusable="false"' %}
+                                          {% render 'theme-icon' with icon, icon: 'checkmark', iconSize: 14, iconClasses: 'icon icon-checkmark', iconAttributes: 'aria-hidden="true" focusable="false"' %}
                                         {% else %}
                                           <div
                                             aria-hidden="true" 
@@ -1509,7 +1509,7 @@
                                 <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                               </svg>
       
-                              {% render 'theme-icon' with icon: 'checkmark', iconSize: 14, iconClasses: 'icon icon-checkmark', iconAttributes: 'aria-hidden="true" focusable="false"' %}
+                              {% render 'theme-icon' with icon, icon: 'checkmark', iconSize: 14, iconClasses: 'icon icon-checkmark', iconAttributes: 'aria-hidden="true" focusable="false"' %}
                             {{ type | capitalize }} ({{ count }})</label>
                           </li>
                         {% endfor %}
@@ -1795,4 +1795,37 @@
 		}
 	]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'chevron_down', iconSize: settings.typography-body-font-size,
+    iconClasses: 'icon icon-caret' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'chevron_down', iconSize: settings.typography-body-font-size,
+    iconClasses: 'icon icon-caret' %}"
+  position: 27..162
+- from: "{% render 'theme-icon' with icon: 'close', iconSize: 12, iconClasses: 'icon
+    icon-close-small' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'close', iconSize: 12, iconClasses:
+    'icon icon-close-small' %}"
+  position: 208..310
+- from: "{% render 'theme-icon' with icon: 'close', iconSize: 35 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'close', iconSize: 35 %}"
+  position: 30137..30201
+- from: '{% render ''theme-icon'' with icon: ''checkmark'', iconSize: 14, iconClasses:
+    ''icon icon-checkmark'', iconAttributes: ''aria-hidden="true" focusable="false"''
+    %}'
+  to: '{% render ''theme-icon'' with icon, icon: ''checkmark'', iconSize: 14, iconClasses:
+    ''icon icon-checkmark'', iconAttributes: ''aria-hidden="true" focusable="false"''
+    %}'
+  position: 34846..35006
+- from: '{% render ''theme-icon'' with icon: ''checkmark'', iconSize: 14, iconClasses:
+    ''icon icon-checkmark'', iconAttributes: ''aria-hidden="true" focusable="false"''
+    %}'
+  to: '{% render ''theme-icon'' with icon, icon: ''checkmark'', iconSize: 14, iconClasses:
+    ''icon icon-checkmark'', iconAttributes: ''aria-hidden="true" focusable="false"''
+    %}'
+  position: 48678..48838
+{%- endcomment -%}
