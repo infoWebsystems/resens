@@ -39,7 +39,7 @@
 									{% assign show_overlay_button = false %}
 									{% assign show_overlay = false %}
 							{% endunless %}
-							{% render 'native-video' with video: section.settings.video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id, class: "desktop-video" %}
+							{% render 'native-video' with video, video: section.settings.video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id, class: "desktop-video" %}
 					{% elsif section.settings.url %}
 							<wetheme-video
 							section-id="{{ section.id }}"
@@ -63,7 +63,7 @@
 								{% assign show_overlay_button = false %}
 								{% assign show_overlay = false %}
 						{% endunless %}
-						{% render 'native-video' with video: section.settings.mobile_video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id, class: "mobile-video" %}
+						{% render 'native-video' with video, video: section.settings.mobile_video, autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute, overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id: section.id, class: "mobile-video" %}
 					{% elsif section.settings.url_mobile %}
 						<wetheme-video
 						section-id="{{ section.id }}"
@@ -255,3 +255,28 @@
 	}
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% render ''native-video'' with video: section.settings.video, autoplay:
+    section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute,
+    overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id:
+    section.id, class: "desktop-video" %}'
+  to: '{% render ''native-video'' with video, video: section.settings.video, autoplay:
+    section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute,
+    overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id:
+    section.id, class: "desktop-video" %}'
+  position: 1758..2045
+- from: '{% render ''native-video'' with video: section.settings.mobile_video, autoplay:
+    section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute,
+    overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id:
+    section.id, class: "mobile-video" %}'
+  to: '{% render ''native-video'' with video, video: section.settings.mobile_video,
+    autoplay: section.settings.autoplay, loop: section.settings.loop, muted: section.settings.mute,
+    overlay: show_overlay, overlay_button: show_overlay_button, controls: true, scope_id:
+    section.id, class: "mobile-video" %}'
+  position: 2928..3221
+{% endcomment %}

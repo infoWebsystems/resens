@@ -37,7 +37,7 @@
   		{% if article.image %}
   			<div class="article--image-wrapper">
             {% capture article_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
-            {% render 'responsive-image' with article.image, img_tag: article.title, alt: article_alt | escape, sizes: '100vw' %}
+            {% render 'responsive-image' with article.image, img_tag: article.title, alt: article_alt, sizes: '100vw' %}
   		  </div>
   		{% endif %}
 
@@ -224,7 +224,7 @@
       {% endif %}
 
       {% capture article_sidebar_alt %}{{ section.settings.blog-sidebar-image.alt | default: shop.name }}{% endcapture %}
-      {% render 'responsive-image' with section.settings.blog-sidebar-image, class: 'blog-sidebar-image', alt: article_sidebar_alt | escape %}
+      {% render 'responsive-image' with section.settings.blog-sidebar-image, class: 'blog-sidebar-image', alt: article_sidebar_alt %}
 
       {% if section.settings.blog-sidebar-link %}
         </a>
@@ -307,3 +307,20 @@
 	]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'responsive-image' with article.image, img_tag: article.title,
+    alt: article_alt | escape, sizes: '100vw' %}"
+  to: "{% render 'responsive-image' with article.image, img_tag: article.title, alt:
+    article_alt, sizes: '100vw' %}"
+  position: 1520..1628
+- from: "{% render 'responsive-image' with section.settings.blog-sidebar-image, class:
+    'blog-sidebar-image', alt: article_sidebar_alt | escape %}"
+  to: "{% render 'responsive-image' with section.settings.blog-sidebar-image, class:
+    'blog-sidebar-image', alt: article_sidebar_alt %}"
+  position: 9073..9200
+{% endcomment %}

@@ -41,8 +41,8 @@
             {% render 'text-with-icon', icon: icon, custom_icon: custom_icon, text: title, text_classes: 'label-font' %}
             <span>
               {% if open_close_icon == "plus_minus" %}
-                {% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full' %}
-                {% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full' %}
+                {% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full' %}
+                {% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full' %}
               {% elsif open_close_icon == "caret" %}
                 {% render 'theme-icon', icon: 'chevron_down', iconClasses: 'chevron-down flex-full' %}
               {% endif %}
@@ -53,13 +53,13 @@
         <div class="collapsible-content">
           <div class="content rte">
               {% assign recommended_products = recommendations.products | map: 'handle' %}
-              {% render 'cross-sells' with title: blank, cross_sells_products: recommended_products, id: id %}
+              {% render 'cross-sells' with title, title: "", cross_sells_products: recommended_products, id: id %}
           </div>
         </div>
       </div>
     {%- else -%}
       {% assign recommended_products = recommendations.products | map: 'handle' %}
-      {% render 'cross-sells' with title: title, cross_sells_products: recommended_products, id: id %}
+      {% render 'cross-sells' with title, title: title, cross_sells_products: recommended_products, id: id %}
     {%- endif -%}
   {%- endif -%}
 
@@ -74,3 +74,30 @@
 <safe-load-scripts class="hidden">
   <script src="{{ 'component-complementary-products.js' | asset_url }}" defer="defer" type="module" data-flow-load-key="component-complementary-products"></script>
 </safe-load-scripts>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full'
+    %}"
+  position: 1987..2072
+- from: "{% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full'
+    %}"
+  position: 2089..2176
+- from: "{% render 'cross-sells' with title: blank, cross_sells_products: recommended_products,
+    id: id %}"
+  to: '{% render ''cross-sells'' with title, title: "", cross_sells_products: recommended_products,
+    id: id %}'
+  position: 2610..2710
+- from: "{% render 'cross-sells' with title: title, cross_sells_products: recommended_products,
+    id: id %}"
+  to: "{% render 'cross-sells' with title, title: title, cross_sells_products: recommended_products,
+    id: id %}"
+  position: 2862..2965
+{% endcomment %}

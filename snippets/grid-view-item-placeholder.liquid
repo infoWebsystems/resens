@@ -54,7 +54,7 @@
               <div class="quick-add-wrapper">
                 <a class="quick-add-button-onboarding quick-add-button-onboarding-desktop" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.add_to_cart' | t }}</a>
                 {% unless quick_shop_mobile_disabled %}
-                  <a class="quick-add-button-onboarding quick-add-button-onboarding-mobile" tabindex="0" href="{{ product.url | within: collection }}"><span>{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon', iconSize: 16 %}</span></a>
+                  <a class="quick-add-button-onboarding quick-add-button-onboarding-mobile" tabindex="0" href="{{ product.url | within: collection }}"><span>{% render 'theme-icon' with icon, icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon', iconSize: 16 %}</span></a>
                 {% endunless %}
               </div>
             </div>
@@ -84,4 +84,15 @@
 
     {%- endcase -%}
   {%- endfor -%}
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon',
+    iconSize: 16 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'shopping-bag', iconClasses: 'quick-view-mobile-icon',
+    iconSize: 16 %}"
+  position: 2549..2659
+{%- endcomment -%}
