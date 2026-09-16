@@ -46,7 +46,7 @@
 									</div>
 								{% else %}
                   {% assign hero_alt = section.settings.home-page-hero-image.alt | default: shop.name %}
-									{% render 'responsive-image' with section.settings.home-page-hero-image, alt: hero_alt | escape %}
+									{% render 'responsive-image' with section.settings.home-page-hero-image, alt: hero_alt %}
 								{% endif %}
 							</div>
 
@@ -138,7 +138,7 @@
                       <div class="homepage-hero-menu-indiv-image">
                         {% capture styles %}max-height: {{ height }}px; max-width: {{ block.settings.featured_image.width }}px;{% endcapture %}
                         {% assign menu_item_alt = block.settings.featured_image.alt | default: shop.name %}
-                        {% render 'responsive-image' with block.settings.featured_image, alt: menu_item_alt | escape, props: props, allow_stretch: true, styles: styles %}
+                        {% render 'responsive-image' with block.settings.featured_image, alt: menu_item_alt, props: props, allow_stretch: true, styles: styles %}
                       </div>
                     {% endif %}
                     <div class="homepage-hero-menu--indiv-text">
@@ -380,3 +380,20 @@
 	}
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'responsive-image' with section.settings.home-page-hero-image,
+    alt: hero_alt | escape %}"
+  to: "{% render 'responsive-image' with section.settings.home-page-hero-image, alt:
+    hero_alt %}"
+  position: 2709..2798
+- from: "{% render 'responsive-image' with block.settings.featured_image, alt: menu_item_alt
+    | escape, props: props, allow_stretch: true, styles: styles %}"
+  to: "{% render 'responsive-image' with block.settings.featured_image, alt: menu_item_alt,
+    props: props, allow_stretch: true, styles: styles %}"
+  position: 7289..7426
+{% endcomment %}

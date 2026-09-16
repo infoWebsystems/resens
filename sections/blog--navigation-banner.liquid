@@ -23,7 +23,7 @@
         {% endfor %}
         
         <li>
-          <a class="nav-expand" href="#">See more <span>{% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full', iconSize: 24 %}</span></a>
+          <a class="nav-expand" href="#">See more <span>{% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full', iconSize: 24 %}</span></a>
         </li>
 
       </ul>
@@ -35,7 +35,7 @@
         {% endfor %}
 
         <li>
-          <a class="nav-collapse" href="#">See less <span>{% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full', iconSize: 24 %}</span></a>
+          <a class="nav-collapse" href="#">See less <span>{% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full', iconSize: 24 %}</span></a>
         </li>
 
       </ul>
@@ -160,3 +160,20 @@
 	}
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'plus', iconClasses: 'plus-icon flex-full',
+    iconSize: 24 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'plus', iconClasses: 'plus-icon flex-full',
+    iconSize: 24 %}"
+  position: 1373..1472
+- from: "{% render 'theme-icon' with icon: 'minus', iconClasses: 'minus-icon flex-full',
+    iconSize: 24 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'minus', iconClasses: 'minus-icon flex-full',
+    iconSize: 24 %}"
+  position: 1881..1982
+{% endcomment %}

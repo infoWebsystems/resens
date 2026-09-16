@@ -24,7 +24,7 @@
 
         <h1 class="page--title">{{ blog.title }}
           <a href="{{ shop.url }}{{ blog.url }}.atom">
-            {% render 'theme-icon' with icon: 'rss', iconAttributes: 'aria-hidden="true"', iconClasses: 'fa-rss' %}
+            {% render 'theme-icon' with icon, icon: 'rss', iconAttributes: 'aria-hidden="true"', iconClasses: 'fa-rss' %}
           </a>
         </h1>
       {% endif %}
@@ -80,7 +80,7 @@
             <div class="article__featured-image-wrap">
               <a class="article__featured-image{% if settings.ken_burns_enabled %} kb-enabled{% endif %}" href="{{ article.url }}">
                 {% capture article_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
-                {% render 'responsive-image' with article.image, alt: article_alt | escape %}
+                {% render 'responsive-image' with article.image, alt: article_alt %}
               </a>
             </div>
             {% endif %}
@@ -117,7 +117,7 @@
         {% endif %}
 
         {% capture blog_sidebar_alt %}{{ section.settings.blog-sidebar-image.alt | default: shop.name }}{% endcapture %}
-        {% render 'responsive-image' with section.settings.blog-sidebar-image, alt: article.title, class: 'blog-sidebar-image', alt: blog_sidebar_alt | escape %}
+        {% render 'responsive-image' with section.settings.blog-sidebar-image, alt: blog_sidebar_alt, class: 'blog-sidebar-image' %}
 
         {% if section.settings.blog-sidebar-link %}
           </a>
@@ -254,3 +254,24 @@
 	]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% render ''theme-icon'' with icon: ''rss'', iconAttributes: ''aria-hidden="true"'',
+    iconClasses: ''fa-rss'' %}'
+  to: '{% render ''theme-icon'' with icon, icon: ''rss'', iconAttributes: ''aria-hidden="true"'',
+    iconClasses: ''fa-rss'' %}'
+  position: 798..907
+- from: "{% render 'responsive-image' with article.image, alt: article_alt | escape
+    %}"
+  to: "{% render 'responsive-image' with article.image, alt: article_alt %}"
+  position: 2938..3006
+- from: "{% render 'responsive-image' with section.settings.blog-sidebar-image, alt:
+    article.title, class: 'blog-sidebar-image', alt: blog_sidebar_alt | escape %}"
+  to: "{% render 'responsive-image' with section.settings.blog-sidebar-image, alt:
+    blog_sidebar_alt, class: 'blog-sidebar-image' %}"
+  position: 4302..4426
+{% endcomment %}

@@ -18,8 +18,8 @@
       data-loading="{{ 'products.product.loading' | t }}" 
       data-added="{{ 'products.product.added' | t }}"
       data-products-regular-price="{{ 'products.general.regular_price' | t}}"
-      data-shopping-bag-icon='{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'fa-lg' %}' 
-      data-dropdown-chevron='{% render 'theme-icon' with icon: 'chevron_down', iconClasses: 'fa-lg chevron' %}'
+      data-shopping-bag-icon='{% render 'theme-icon' with icon, icon: 'shopping-bag', iconClasses: 'fa-lg' %}' 
+      data-dropdown-chevron='{% render 'theme-icon' with icon, icon: 'chevron_down', iconClasses: 'fa-lg chevron' %}'
     >
       <noscript>
         {% comment %} Fallback html when JS is disabled. {% endcomment %}
@@ -47,4 +47,19 @@
     </product-cross-sell>
 
   {%- endif -%}
-{%- endif -%}
+{%- endif -%}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'shopping-bag', iconClasses: 'fa-lg' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'shopping-bag', iconClasses: 'fa-lg'
+    %}"
+  position: 1174..1253
+- from: "{% render 'theme-icon' with icon: 'chevron_down', iconClasses: 'fa-lg chevron'
+    %}"
+  to: "{% render 'theme-icon' with icon, icon: 'chevron_down', iconClasses: 'fa-lg
+    chevron' %}"
+  position: 1285..1372
+{%- endcomment -%}

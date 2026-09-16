@@ -113,7 +113,7 @@
                                 <div class="article-image">
                                   <a href="{{ current_post.url }}" class="{% if settings.ken_burns_enabled %} kb-enabled{% endif %}" tabindex="-1">
                                     {% capture post_alt %}{{ current_post.image.alt | default: current_post.title }}{% endcapture %}
-                                    {% render 'responsive-image' with current_post.image, alt: post_alt | escape, crop: 'center', blur: false %}{% comment %}FIXME: add section height option{% endcomment %}
+                                    {% render 'responsive-image' with current_post.image, alt: post_alt, crop: 'center', blur: false %}{% comment %}FIXME: add section height option{% endcomment %}
                                   </a>
                                 </div>
                               </div>
@@ -176,7 +176,7 @@
                                     <div class="article-image">
                                       <a href="{{ mobile_current_post.url }}" tabindex="-1">
                                         {% capture post_alt %}{{ mobile_current_post.image.alt | default: mobile_current_post.title }}{% endcapture %}
-                                        {% render 'responsive-image' with mobile_current_post.image, alt: post_alt | escape, blur: false %}
+                                        {% render 'responsive-image' with mobile_current_post.image, alt: post_alt, blur: false %}
                                       </a>
                                     </div>
                                   {% endif %}
@@ -248,7 +248,7 @@
                             <div class="article-image">
                               <a href="{{ article.url }}" class="{% if settings.ken_burns_enabled %} kb-enabled{% endif %}" tabindex="-1">
                                 {% capture post_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
-                                {% render 'responsive-image' with article.image, alt: post_alt | escape, crop: 'center', blur: false %}{% comment %}FIXME: add section height option{% endcomment %}
+                                {% render 'responsive-image' with article.image, alt: post_alt, crop: 'center', blur: false %}{% comment %}FIXME: add section height option{% endcomment %}
                               </a>
                             </div>
                           </div>
@@ -306,7 +306,7 @@
                           <div class="article-image">
                             <a href="{{ article.url }}" >
                               {% capture post_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
-                              {% render 'responsive-image' with article.image, alt: post_alt | escape, blur: false %}
+                              {% render 'responsive-image' with article.image, alt: post_alt, blur: false %}
                             </a>
                           </div>
                         {% endif %}
@@ -503,3 +503,30 @@
 	}
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'responsive-image' with current_post.image, alt: post_alt | escape,
+    crop: 'center', blur: false %}"
+  to: "{% render 'responsive-image' with current_post.image, alt: post_alt, crop:
+    'center', blur: false %}"
+  position: 5238..5337
+- from: "{% render 'responsive-image' with mobile_current_post.image, alt: post_alt
+    | escape, blur: false %}"
+  to: "{% render 'responsive-image' with mobile_current_post.image, alt: post_alt,
+    blur: false %}"
+  position: 8579..8669
+- from: "{% render 'responsive-image' with article.image, alt: post_alt | escape,
+    crop: 'center', blur: false %}"
+  to: "{% render 'responsive-image' with article.image, alt: post_alt, crop: 'center',
+    blur: false %}"
+  position: 12187..12281
+- from: "{% render 'responsive-image' with article.image, alt: post_alt | escape,
+    blur: false %}"
+  to: "{% render 'responsive-image' with article.image, alt: post_alt, blur: false
+    %}"
+  position: 15088..15166
+{% endcomment %}

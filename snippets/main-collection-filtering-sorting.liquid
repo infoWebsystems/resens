@@ -16,11 +16,11 @@ Accepts:
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
 {% capture icon_caret %}
-  {% render 'theme-icon' with icon: 'chevron_down', iconSize: settings.typography-body-font-size, iconClasses: 'icon icon-caret' %}
+  {% render 'theme-icon' with icon, icon: 'chevron_down', iconSize: settings.typography-body-font-size, iconClasses: 'icon icon-caret' %}
 {% endcapture %}
 
 {% capture icon_close %}
-  {% render 'theme-icon' with icon: 'close', iconSize: 12, iconClasses: 'icon icon-close-small' %}
+  {% render 'theme-icon' with icon, icon: 'close', iconSize: 12, iconClasses: 'icon icon-close-small' %}
 {% endcapture %}
 
 {%-liquid
@@ -68,7 +68,7 @@ Accepts:
           <div class="drawer__close js-drawer-close">
             <button type="button" aria-label="{{ 'cart.general.close_cart' | t }}" class="mobile-menu--close-btn icon-fallback-text" data-drawer-close-btn>
               <span class="fallback-text">{{ 'cart.general.close_cart' | t }}</span>
-              {% render 'theme-icon' with icon: 'close', iconSize: 35 %}
+              {% render 'theme-icon' with icon, icon: 'close', iconSize: 35 %}
             </button>
           </div>
 
@@ -126,7 +126,7 @@ Accepts:
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
 
-                                  {% render 'theme-icon' with icon: 'checkmark', iconSize: 14, iconClasses: 'icon icon-checkmark', iconAttributes: 'aria-hidden="true" focusable="false"' %}
+                                  {% render 'theme-icon' with icon, icon: 'checkmark', iconSize: 14, iconClasses: 'icon icon-checkmark', iconAttributes: 'aria-hidden="true" focusable="false"' %}
                                 {% else %}
                                   <div
                                     aria-hidden="true" 
@@ -1198,4 +1198,30 @@ summary .icon-caret,
     border-radius: 50%;
     border: 1px solid var(--border-color);
   }
-</style>
+</style>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'theme-icon' with icon: 'chevron_down', iconSize: settings.typography-body-font-size,
+    iconClasses: 'icon icon-caret' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'chevron_down', iconSize: settings.typography-body-font-size,
+    iconClasses: 'icon icon-caret' %}"
+  position: 560..695
+- from: "{% render 'theme-icon' with icon: 'close', iconSize: 12, iconClasses: 'icon
+    icon-close-small' %}"
+  to: "{% render 'theme-icon' with icon, icon: 'close', iconSize: 12, iconClasses:
+    'icon icon-close-small' %}"
+  position: 741..843
+- from: "{% render 'theme-icon' with icon: 'close', iconSize: 35 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'close', iconSize: 35 %}"
+  position: 2580..2644
+- from: '{% render ''theme-icon'' with icon: ''checkmark'', iconSize: 14, iconClasses:
+    ''icon icon-checkmark'', iconAttributes: ''aria-hidden="true" focusable="false"''
+    %}'
+  to: '{% render ''theme-icon'' with icon, icon: ''checkmark'', iconSize: 14, iconClasses:
+    ''icon icon-checkmark'', iconAttributes: ''aria-hidden="true" focusable="false"''
+    %}'
+  position: 6158..6318
+{%- endcomment -%}

@@ -227,7 +227,7 @@
       {% endif %}
 
       {% capture article_sidebar_alt %}{{ section.settings.blog-sidebar-image.alt | default: shop.name }}{% endcapture %}
-      {% render 'responsive-image' with section.settings.blog-sidebar-image, class: 'blog-sidebar-image', alt: article_sidebar_alt | escape %}
+      {% render 'responsive-image' with section.settings.blog-sidebar-image, class: 'blog-sidebar-image', alt: article_sidebar_alt %}
 
       {% if section.settings.blog-sidebar-link %}
         </a>
@@ -310,3 +310,15 @@
 	]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'responsive-image' with section.settings.blog-sidebar-image, class:
+    'blog-sidebar-image', alt: article_sidebar_alt | escape %}"
+  to: "{% render 'responsive-image' with section.settings.blog-sidebar-image, class:
+    'blog-sidebar-image', alt: article_sidebar_alt %}"
+  position: 9089..9216
+{% endcomment %}

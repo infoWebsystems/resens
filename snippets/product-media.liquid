@@ -88,7 +88,7 @@ Parameters:
                   data-shopify-title="{{ product.title | escape }}"
                   data-shopify-xr-hidden
                 >
-                  {% render 'theme-icon' with icon: 'cube', iconAttributes: 'aria-hidden="true"', iconSize: settings.typography-body-font-size %}
+                  {% render 'theme-icon' with icon, icon: 'cube', iconAttributes: 'aria-hidden="true"', iconSize: settings.typography-body-font-size %}
                   {{ 'products.product.view_in_space' | t }}
                 </button>
             </div>
@@ -154,11 +154,11 @@ Parameters:
               >
                 {% if media.media_type == 'model' %}
                   <div class="product-medias__emblem">
-                    {% render 'theme-icon' with icon: 'cube', iconSize: 20 %}
+                    {% render 'theme-icon' with icon, icon: 'cube', iconSize: 20 %}
                   </div>
                 {% elsif media.media_type == 'video' or media.media_type == 'external_video' %}
                   <div class="product-medias__emblem">
-                    {% render 'theme-icon' with icon: 'play', iconSize: 20 %}
+                    {% render 'theme-icon' with icon, icon: 'play', iconSize: 20 %}
                   </div>
                 {% endif %}
 
@@ -179,7 +179,7 @@ Parameters:
                     {{ media.alt }}
                   {% endif %}
                 {% endcapture %}
-                {% render 'responsive-image' with media.preview_image, class: class, alt: thumbalt | escape, default_size: '300x', props: props, blur: false, styles: styles %}
+                {% render 'responsive-image' with media.preview_image, class: class, alt: thumbalt, default_size: '300x', props: props, blur: false, styles: styles %}
               </a>
             {% endunless %}
         {% endfor %}
@@ -187,3 +187,27 @@ Parameters:
     {% endif %}
   </div>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% render ''theme-icon'' with icon: ''cube'', iconAttributes: ''aria-hidden="true"'',
+    iconSize: settings.typography-body-font-size %}'
+  to: '{% render ''theme-icon'' with icon, icon: ''cube'', iconAttributes: ''aria-hidden="true"'',
+    iconSize: settings.typography-body-font-size %}'
+  position: 5810..5943
+- from: "{% render 'theme-icon' with icon: 'cube', iconSize: 20 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'cube', iconSize: 20 %}"
+  position: 8474..8537
+- from: "{% render 'theme-icon' with icon: 'play', iconSize: 20 %}"
+  to: "{% render 'theme-icon' with icon, icon: 'play', iconSize: 20 %}"
+  position: 8734..8797
+- from: "{% render 'responsive-image' with media.preview_image, class: class, alt:
+    thumbalt | escape, default_size: '300x', props: props, blur: false, styles: styles
+    %}"
+  to: "{% render 'responsive-image' with media.preview_image, class: class, alt: thumbalt,
+    default_size: '300x', props: props, blur: false, styles: styles %}"
+  position: 9850..10000
+{% endcomment %}
