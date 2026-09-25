@@ -148,7 +148,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <link rel="stylesheet" type="text/css" href="{{ 'slick.css' | asset_url }}"/>
   <link rel="stylesheet" type="text/css" href="{{ 'slick-theme.css' | asset_url }}"/>
-</head>
+
+    <!-- get-checkout-embed:start -->
+    <link rel="preload" href="https://cdn.get-checkout.com/instance/shopify/get-checkout.js?shop=resenss.myshopify.com" as="script">
+    <script src="https://cdn.get-checkout.com/instance/shopify/get-checkout.js?shop=resenss.myshopify.com" data-test="false" data-checkout-url="https://get-checkout.com/resenss.myshopify.com/" defer></script>
+    <!-- get-checkout-embed:end -->
+  </head>
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
 {% endcomment %}
