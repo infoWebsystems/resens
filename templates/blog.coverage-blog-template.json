@@ -49,165 +49,29 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
-        "logo_image_39Grmw": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260928-Insider.jpg",
-            "link": "https://insider.ua/u-poshukah-tishi-yak-minula-prezentacziya-novinok-resens-ta-institut-esthederm/"
-          }
-        },
-        "logo_image_QFBqDz": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260811-1-officiel.jpg",
-            "link": "https://officiel-online.com/uk/lifestyle-2/style-life/born-in-ukraine-august-2026/"
-          }
-        },
-        "logo_image_E9KYND": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-10-TCH.jpg",
-            "link": "https://tsn.ua/lady/krasota/kosmetologiya/podorozi-bez-stresu-dlia-shkiry-iak-zminyty-dohliad-pid-chas-vidpustky-3133982.html"
-          }
-        },
-        "logo_image_UDDYTP": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-09-estportal.jpg",
-            "link": "https://estportal.com/happiness-for-skin-resens-predstavyv-novyi-ceramide-fluid-endorphin/"
-          }
-        },
-        "logo_image_xp6UXY": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-08-ua-news.jpg",
-            "link": "https://ua.news/ua/sport/zhinoche-zdorovia-krasa-ta-wellness-iak-proishov-zakritii-women-wellness-event-vid-leo-beauty-club"
-          }
-        },
-        "logo_image_XnQrMN": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-07-karavan.jpg",
-            "link": "https://karavan.ua/krasota/innovatsii-molodosti-nejrokosmetyka-botoks-efekt-ta-hlyboke-nichne-vidnovlennia/"
-          }
-        },
-        "logo_image_YarQcp": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-06-talksss.jpg",
-            "link": "https://www.fashiontalksss.com/single-post/%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D0%B1%D1%80%D0%B5%D0%BD%D0%B4-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BA%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B8-re-sens-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%B8%D0%B9-ceramide-fluid-endorphin"
-          }
-        },
-        "logo_image_hyAEeN": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-05-TCH.jpg",
-            "link": "https://tsn.ua/lady/krasota/kosmetologiya/do-speky-hotovi-shcho-potribno-shkiri-vlitku-krim-spf-3110081.html"
-          }
-        },
-        "logo_image_mxdchP": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-04-marieclaire.jpg",
-            "link": "https://marieclaire.ua/beauty/b-yuti-dajdzhest-novynky-kosmetyky-cherven-2026/"
-          }
-        },
-        "logo_image_MrA4FJ": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-3-Viva.jpg",
-            "link": "https://viva.ua/fashion-beauty/19971-shkira-pislya-stresu-u-sferi-neyrokosmetiki-zyavilas-novinka-z-aktsentom-na-vidnovlennya-shkiri"
-          }
-        },
-        "logo_image_Npa8L7": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-02-Womo.jpg",
-            "link": "https://womo.ua/chym-onovyty-kosmetychku-czogo-lita-gid-po-najkrashhyh-zasobah-vid-svitovyh-ta-ukrayinskyh-brendiv/"
-          }
-        },
-        "logo_image_VDw8Q9": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260807-01-But.jpg",
-            "link": "https://www.but.in.ua/happiness-for-skin-resens-predstavyv-novyj-ceramide-fluid-endorphin/"
-          }
-        },
-        "logo_image_hxg6dm": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260601-bhub.jpg",
-            "link": "https://bhub.com.ua/uk/doglyad-za-shkiroyu-vlitku-10-produktiv-na-spekotniy-sezon"
-          }
-        },
-        "logo_image_XdrzkC": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260505-bhub.jpg",
-            "link": "https://bhub.com.ua/uk/flyuyid-iz-ceramidami-vid-re[sens]-stvoreniy-dlya-aktivaciyi-cirkadnih-ritmiv-shkiri"
-          }
-        },
-        "logo_image_MnWTPe": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260417-01-vogue.jpg",
-            "link": "https://vogue.ua/article/beauty/spa/perevireno-redakciyeyu-vogue-ua-b-yuti-favoriti-vesni-2026-63259.html"
-          }
-        },
-        "logo_image_hhqbdb": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260116-03-Vogur.jpg",
-            "link": "https://vogue.ua/article/beauty/kozha/vogue-ua-to-do-list-punkt-2-yak-pokrashchiti-stan-shkiri-62193.html?fbclid=PAdGRleAPW6FhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad8XQF5lM3PkPAjw6bT96XAusc-Dy-4rG10Jg6DaJotC9QVkGBA3aF8gZXVmQ_aem_Ju7xo313pY3VoRFVfuhfkA"
-          }
-        },
-        "logo_image_RkaVWE": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260113-01-bhub.png",
-            "link": "https://bhub.com.ua/uk/beauty-check-nejrokosmetika-novogo-pokolinnya-vid-re-sens/"
-          }
-        },
         "logo_image_wECGtr": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/banner_500x500_20251104-22-marieclaire.jpg",
-            "link": "https://marieclaire.ua/beauty/b-yuti-novynky-kosmetyky-dlya-gub-i-ochej-osin-2025/"
+            "image": "shopify://shop_images/banner_500x500_20260930-But.jpg",
+            "link": "https://www.but.in.ua/the-art-of-rest-yak-zminyuyetsya-pidhid-do-vidnovlennya-shkiry/"
           }
         },
         "logo_image_Y3miVQ": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/banner_500x500_20250929-21-bhub.jpg",
-            "link": "https://bhub.com.ua/uk/efekt-liftingu-12-zasobiv-dlya-omolodzhennya-shkiri-oblichchya/"
+            "image": "shopify://shop_images/banner_500x500_20260930-estportal.jpg",
+            "link": "https://estportal.com/the-art-of-rest-yak-zminiuietsia-pidkhid-do-vidnovlennia-shkiry/"
           }
         },
         "logo_image_CK3b96": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/banner_500x500_20250929-20-vogue.jpg",
-            "link": "https://vogue.ua/article/beauty/kozha/neyrokosmetika-noviy-trend-u-doglyadi-za-shkiroyu-yakiy-shvalyuyut-dermatologi-60827.html"
+            "image": "shopify://shop_images/banner_500x500_20260928-playboy.jpg",
+            "link": "https://playboy.ua/playboy-recommend/the-art-of-rest-yak-zminyuyetsya-pidhid-do-vidnovlennya-shkiri-2026-09-26"
           }
         }
       },
       "block_order": [
-        "logo_image_39Grmw",
-        "logo_image_QFBqDz",
-        "logo_image_E9KYND",
-        "logo_image_UDDYTP",
-        "logo_image_xp6UXY",
-        "logo_image_XnQrMN",
-        "logo_image_YarQcp",
-        "logo_image_hyAEeN",
-        "logo_image_mxdchP",
-        "logo_image_MrA4FJ",
-        "logo_image_Npa8L7",
-        "logo_image_VDw8Q9",
-        "logo_image_hxg6dm",
-        "logo_image_XdrzkC",
-        "logo_image_MnWTPe",
-        "logo_image_hhqbdb",
-        "logo_image_RkaVWE",
         "logo_image_wECGtr",
         "logo_image_Y3miVQ",
         "logo_image_CK3b96"
@@ -216,6 +80,178 @@
       "settings": {
         "colors": "white",
         "title": "Media about us"
+      }
+    },
+    "image_logo_list_cUML9L": {
+      "type": "image--logo-list",
+      "blocks": {
+        "logo_image_Tp4Tmt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260928-Insider.jpg",
+            "link": "https://insider.ua/u-poshukah-tishi-yak-minula-prezentacziya-novinok-resens-ta-institut-esthederm/"
+          }
+        },
+        "logo_image_CKERYX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260811-1-officiel.jpg",
+            "link": "https://officiel-online.com/uk/lifestyle-2/style-life/born-in-ukraine-august-2026/"
+          }
+        },
+        "logo_image_8hrWYX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-10-TCH.jpg",
+            "link": "https://tsn.ua/lady/krasota/kosmetologiya/podorozi-bez-stresu-dlia-shkiry-iak-zminyty-dohliad-pid-chas-vidpustky-3133982.html"
+          }
+        },
+        "logo_image_eLPhVC": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-09-estportal.jpg",
+            "link": "https://estportal.com/happiness-for-skin-resens-predstavyv-novyi-ceramide-fluid-endorphin/"
+          }
+        },
+        "logo_image_b4paUM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-08-ua-news.jpg",
+            "link": "https://ua.news/ua/sport/zhinoche-zdorovia-krasa-ta-wellness-iak-proishov-zakritii-women-wellness-event-vid-leo-beauty-club"
+          }
+        },
+        "logo_image_mzEnqP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-07-karavan.jpg",
+            "link": "https://karavan.ua/krasota/innovatsii-molodosti-nejrokosmetyka-botoks-efekt-ta-hlyboke-nichne-vidnovlennia/"
+          }
+        },
+        "logo_image_9aNKAX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-06-talksss.jpg",
+            "link": "https://www.fashiontalksss.com/single-post/%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D0%B1%D1%80%D0%B5%D0%BD%D0%B4-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BA%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B8-re-sens-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%B8%D0%B9-ceramide-fluid-endorphin"
+          }
+        },
+        "logo_image_g8RiHN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-05-TCH.jpg",
+            "link": "https://tsn.ua/lady/krasota/kosmetologiya/do-speky-hotovi-shcho-potribno-shkiri-vlitku-krim-spf-3110081.html"
+          }
+        },
+        "logo_image_C66qVJ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-04-marieclaire.jpg",
+            "link": "https://marieclaire.ua/beauty/b-yuti-dajdzhest-novynky-kosmetyky-cherven-2026/"
+          }
+        },
+        "logo_image_pfjxnh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-3-Viva.jpg",
+            "link": "https://viva.ua/fashion-beauty/19971-shkira-pislya-stresu-u-sferi-neyrokosmetiki-zyavilas-novinka-z-aktsentom-na-vidnovlennya-shkiri"
+          }
+        },
+        "logo_image_JJPxgi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-02-Womo.jpg",
+            "link": "https://womo.ua/chym-onovyty-kosmetychku-czogo-lita-gid-po-najkrashhyh-zasobah-vid-svitovyh-ta-ukrayinskyh-brendiv/"
+          }
+        },
+        "logo_image_4hJ4cd": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260807-01-But.jpg",
+            "link": "https://www.but.in.ua/happiness-for-skin-resens-predstavyv-novyj-ceramide-fluid-endorphin/"
+          }
+        },
+        "logo_image_BtnqgX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260601-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/doglyad-za-shkiroyu-vlitku-10-produktiv-na-spekotniy-sezon"
+          }
+        },
+        "logo_image_zjYYwz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260505-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/flyuyid-iz-ceramidami-vid-re[sens]-stvoreniy-dlya-aktivaciyi-cirkadnih-ritmiv-shkiri"
+          }
+        },
+        "logo_image_e8TaRD": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260417-01-vogue.jpg",
+            "link": "https://vogue.ua/article/beauty/spa/perevireno-redakciyeyu-vogue-ua-b-yuti-favoriti-vesni-2026-63259.html"
+          }
+        },
+        "logo_image_LCAQKN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260116-03-Vogur.jpg",
+            "link": "https://vogue.ua/article/beauty/kozha/vogue-ua-to-do-list-punkt-2-yak-pokrashchiti-stan-shkiri-62193.html?fbclid=PAdGRleAPW6FhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad8XQF5lM3PkPAjw6bT96XAusc-Dy-4rG10Jg6DaJotC9QVkGBA3aF8gZXVmQ_aem_Ju7xo313pY3VoRFVfuhfkA"
+          }
+        },
+        "logo_image_PCf3Rg": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260113-01-bhub.png",
+            "link": "https://bhub.com.ua/uk/beauty-check-nejrokosmetika-novogo-pokolinnya-vid-re-sens/"
+          }
+        },
+        "logo_image_MwGkDy": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20251104-22-marieclaire.jpg",
+            "link": "https://marieclaire.ua/beauty/b-yuti-novynky-kosmetyky-dlya-gub-i-ochej-osin-2025/"
+          }
+        },
+        "logo_image_6deYdz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-21-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/efekt-liftingu-12-zasobiv-dlya-omolodzhennya-shkiri-oblichchya/"
+          }
+        },
+        "logo_image_YNKEgz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20250929-20-vogue.jpg",
+            "link": "https://vogue.ua/article/beauty/kozha/neyrokosmetika-noviy-trend-u-doglyadi-za-shkiroyu-yakiy-shvalyuyut-dermatologi-60827.html"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_Tp4Tmt",
+        "logo_image_CKERYX",
+        "logo_image_8hrWYX",
+        "logo_image_eLPhVC",
+        "logo_image_b4paUM",
+        "logo_image_mzEnqP",
+        "logo_image_9aNKAX",
+        "logo_image_g8RiHN",
+        "logo_image_C66qVJ",
+        "logo_image_pfjxnh",
+        "logo_image_JJPxgi",
+        "logo_image_4hJ4cd",
+        "logo_image_BtnqgX",
+        "logo_image_zjYYwz",
+        "logo_image_e8TaRD",
+        "logo_image_LCAQKN",
+        "logo_image_PCf3Rg",
+        "logo_image_MwGkDy",
+        "logo_image_6deYdz",
+        "logo_image_YNKEgz"
+      ],
+      "name": "t:sections.image--logo-list.presets.name",
+      "settings": {
+        "colors": "white",
+        "title": ""
       }
     },
     "image_logo_list_9kwTaY": {
@@ -555,6 +591,7 @@
     "blog_navigation_banner_CHT9dU",
     "advanced_layout_custom_liquid_hD76rq",
     "image_logo_list_gQX8ky",
+    "image_logo_list_cUML9L",
     "image_logo_list_9kwTaY",
     "image_logo_list_LBQpED",
     "blog_blog_posts_gxQ3Tz",
