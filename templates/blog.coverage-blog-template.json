@@ -49,6 +49,13 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_39Grmw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260928-Insider.jpg",
+            "link": "https://insider.ua/u-poshukah-tishi-yak-minula-prezentacziya-novinok-resens-ta-institut-esthederm/"
+          }
+        },
         "logo_image_QFBqDz": {
           "type": "logo_image",
           "settings": {
@@ -184,6 +191,7 @@
         }
       },
       "block_order": [
+        "logo_image_39Grmw",
         "logo_image_QFBqDz",
         "logo_image_E9KYND",
         "logo_image_UDDYTP",
