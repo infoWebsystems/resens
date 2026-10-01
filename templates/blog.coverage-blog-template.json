@@ -76,13 +76,29 @@
             "image": "shopify://shop_images/banner_500x500_20260928-playboy.jpg",
             "link": "https://playboy.ua/playboy-recommend/the-art-of-rest-yak-zminyuyetsya-pidhid-do-vidnovlennya-shkiri-2026-09-26"
           }
+        },
+        "logo_image_K9QiRg": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260928-Insider.jpg",
+            "link": "https://insider.ua/u-poshukah-tishi-yak-minula-prezentacziya-novinok-resens-ta-institut-esthederm/"
+          }
+        },
+        "logo_image_3ERpdp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20260811-1-officiel.jpg",
+            "link": "https://officiel-online.com/uk/lifestyle-2/style-life/born-in-ukraine-august-2026/"
+          }
         }
       },
       "block_order": [
         "logo_image_ttHANz",
         "logo_image_wECGtr",
         "logo_image_Y3miVQ",
-        "logo_image_CK3b96"
+        "logo_image_CK3b96",
+        "logo_image_K9QiRg",
+        "logo_image_3ERpdp"
       ],
       "name": "t:sections.image--logo-list.presets.name",
       "settings": {
@@ -93,20 +109,6 @@
     "image_logo_list_cUML9L": {
       "type": "image--logo-list",
       "blocks": {
-        "logo_image_Tp4Tmt": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260928-Insider.jpg",
-            "link": "https://insider.ua/u-poshukah-tishi-yak-minula-prezentacziya-novinok-resens-ta-institut-esthederm/"
-          }
-        },
-        "logo_image_CKERYX": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/banner_500x500_20260811-1-officiel.jpg",
-            "link": "https://officiel-online.com/uk/lifestyle-2/style-life/born-in-ukraine-august-2026/"
-          }
-        },
         "logo_image_8hrWYX": {
           "type": "logo_image",
           "settings": {
@@ -235,8 +237,6 @@
         }
       },
       "block_order": [
-        "logo_image_Tp4Tmt",
-        "logo_image_CKERYX",
         "logo_image_8hrWYX",
         "logo_image_eLPhVC",
         "logo_image_b4paUM",
