@@ -12,6 +12,31 @@
     "660cda54-421a-4cdc-8a22-ae5c8c753ad5": {
       "type": "image--slideshow",
       "blocks": {
+        "image_8BjRLk": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "first_button_label": "Shop now",
+            "first_button_link": "shopify://collections/selected-products",
+            "second_button_label": "",
+            "second_button_link": "",
+            "image": "shopify://shop_images/20261001_1_1_web_eng.jpg",
+            "desktop-caption-heading-size": 80,
+            "desktop-caption-body-text-size": 24,
+            "text_position": "center_left",
+            "mobile_image": "shopify://shop_images/20261001_1_1_mobile_eng.jpg",
+            "mobile-caption-heading-size": 36,
+            "mobile-caption-body-text-size": 16,
+            "mobile_text_position": "center_left",
+            "image_overlay": "#262428",
+            "image_overlay_opacity": 0,
+            "caption-text": "#242424",
+            "button-text": "#ffffff",
+            "button-background": "#242424",
+            "hover-button-background": "#9f9f9f"
+          }
+        },
         "image_JPdCGw": {
           "type": "image",
           "settings": {
@@ -26,31 +51,6 @@
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
             "mobile_image": "shopify://shop_images/Sale20_peel_20260901_mobile.jpg",
-            "mobile-caption-heading-size": 36,
-            "mobile-caption-body-text-size": 16,
-            "mobile_text_position": "center_left",
-            "image_overlay": "#262428",
-            "image_overlay_opacity": 0,
-            "caption-text": "#242424",
-            "button-text": "#ffffff",
-            "button-background": "#242424",
-            "hover-button-background": "#9f9f9f"
-          }
-        },
-        "image_8BjRLk": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "text": "",
-            "first_button_label": "Shop now",
-            "first_button_link": "shopify://collections/all",
-            "second_button_label": "",
-            "second_button_link": "",
-            "image": "shopify://shop_images/Gift_20260901_web_eng.jpg",
-            "desktop-caption-heading-size": 80,
-            "desktop-caption-body-text-size": 24,
-            "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/Gift_20260901_mobile_eng.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
@@ -115,8 +115,8 @@
         }
       },
       "block_order": [
-        "image_JPdCGw",
         "image_8BjRLk",
+        "image_JPdCGw",
         "image_fYHLgh",
         "image_iQ7EqU"
       ],
