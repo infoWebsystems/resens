@@ -49,6 +49,20 @@
     "image_logo_list_gQX8ky": {
       "type": "image--logo-list",
       "blocks": {
+        "logo_image_PCQcEc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20261005-bhub.jpg",
+            "link": "https://bhub.com.ua/uk/re[sens]-ta-institut-esthederm-obgovorili-yak-zminyuyetsya-pidhid-do-vidnovlennya-shkiri/"
+          }
+        },
+        "logo_image_twTBdQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20261005-officiel.jpg",
+            "link": "https://officiel-online.com/uk/krasota/beauty-revisor/the-art-of-rest/"
+          }
+        },
         "logo_image_ttHANz": {
           "type": "logo_image",
           "settings": {
@@ -93,6 +107,8 @@
         }
       },
       "block_order": [
+        "logo_image_PCQcEc",
+        "logo_image_twTBdQ",
         "logo_image_ttHANz",
         "logo_image_wECGtr",
         "logo_image_Y3miVQ",
