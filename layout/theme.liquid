@@ -149,9 +149,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" type="text/css" href="{{ 'slick.css' | asset_url }}"/>
   <link rel="stylesheet" type="text/css" href="{{ 'slick-theme.css' | asset_url }}"/>
 
+  
     <!-- get-checkout-embed:start -->
     <link rel="preload" href="https://cdn.get-checkout.com/instance/shopify/get-checkout.js?shop=resenss.myshopify.com" as="script">
-    <script src="https://cdn.get-checkout.com/instance/shopify/get-checkout.js?shop=resenss.myshopify.com" data-test="false" data-checkout-url="https://get-checkout.com/resenss.myshopify.com/" defer></script>
+    <script src="https://cdn.get-checkout.com/instance/shopify/get-checkout.js?shop=resenss.myshopify.com" data-test="false" defer></script>
     <!-- get-checkout-embed:end -->
   </head>
 {% comment %}
@@ -209,7 +210,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="form-modal-field hidden">
             <input type="text" name="contact[form_topic]" value="Resume Form"/>
           </div>
-
 
           <div class="form-modal-field name">
             <label for="name">{{ form_fields.name_label }}</label>
@@ -290,7 +290,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="form-modal-field hidden">
             <input type="text" name="contact[form_topic]" value="Partnership Form"/>
           </div>
-
 
           <div class="form-modal-field subject">
             <label for="subject">{{ form_fields.topic_label }}</label>
@@ -390,9 +389,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>This store requires javascript to be enabled for some features to work correctly.</p>
     </div>
 
-
         {% sections 'header-group' %}
-
 
     {% if settings.enable_breadcrumbs %}
       {% unless template == 'index' or template == 'cart' or template == 'search' %}
