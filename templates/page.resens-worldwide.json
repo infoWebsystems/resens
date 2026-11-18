@@ -272,7 +272,7 @@
             "image": "shopify://shop_images/IMG_5106.jpg",
             "grid_image_size": "square",
             "heading": "CANADA",
-            "text": "<p><strong>INTERNATIONAL BEAUTY</strong></p><p>11348 142 Street NW</p><p>Edmonton, Alberta </p><p>T5M 1T9</p><p>email: Orders@internationalbeauty.ca (email)</p><p>phone: 1 800 642 3818 or 780 454 3388</p>",
+            "text": "<p><strong>INTERNATIONAL BEAUTY</strong></p><p>11348 142 Street NW</p><p>Edmonton, Alberta&nbsp;</p><p>T5M 1T9</p><p>email: Orders@internationalbeauty.ca (email)</p><p>phone: 1 800 642 3818 or 780 454 3388</p>",
             "button_text": "Go to site",
             "button_link": "https://www.internationalbeauty.ca"
           }
@@ -287,6 +287,37 @@
         "heading": "",
         "description": "",
         "columns_per_row": 2,
+        "text_alignment": "center",
+        "vertical_alignment": "top",
+        "mobile_layout": "stacked",
+        "mobile_columns": "1",
+        "mobile_gap": 32,
+        "mobile_breakpoint": "767"
+      }
+    },
+    "template_product_info_columns_BLXiKk": {
+      "type": "template--product--info-columns",
+      "blocks": {
+        "image_and_text_TT9fWL": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify://shop_images/1000x1000_ReSens_map_Romania.jpg",
+            "grid_image_size": "square",
+            "heading": "ROMANIA",
+            "text": "<p><strong>BEST LO&FI CONSULTING SRL</strong><br/>Strada DRUMUL POTCOAVEI, Nr. 2A, Vila 3, Voluntari, Jud. Ilfov, Romania<br/>office@resenss.ro<br/>+40 758 306 975<br/>https://resenss.ro/</p>",
+            "button_text": "Go to site",
+            "button_link": "https://resenss.ro/"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_TT9fWL"
+      ],
+      "settings": {
+        "colors": "white",
+        "heading": "",
+        "description": "",
+        "columns_per_row": 1,
         "text_alignment": "center",
         "vertical_alignment": "top",
         "mobile_layout": "stacked",
@@ -452,6 +483,7 @@
     "template_product_info_columns_LemUJt",
     "template_product_info_columns_mVj3EL",
     "template_product_info_columns_x8ynjw",
+    "template_product_info_columns_BLXiKk",
     "164563343647211871",
     "057a50d5-3fee-4ea2-a832-2d38f47b959a",
     "171895764357c44b9c",
