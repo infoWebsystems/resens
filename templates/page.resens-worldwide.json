@@ -308,10 +308,21 @@
             "button_text": "Go to site",
             "button_link": "https://resenss.ro/"
           }
+        },
+        "image_and_text_Hxnax7": {
+          "type": "image_and_text",
+          "settings": {
+            "grid_image_size": "square",
+            "heading": "Heading",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
+            "button_text": "Learn more",
+            "button_link": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
-        "image_and_text_TT9fWL"
+        "image_and_text_TT9fWL",
+        "image_and_text_Hxnax7"
       ],
       "settings": {
         "colors": "white",
