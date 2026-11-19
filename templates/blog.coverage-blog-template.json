@@ -56,6 +56,13 @@
             "link": "https://marieclaire.ua/beauty/antyvikovyj-doglyad-za-shkiroyu-kremy-syrovatky-dobirka/"
           }
         },
+        "logo_image_BVMHQM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/banner_500x500_20261026-01-TCH.jpg",
+            "link": "https://tsn.ua/lady/krasota/salon-krasoty/20-ukrayinskykh-biutibrendiv-iaki-varto-znaty-i-sprobuvaty-3198207.html"
+          }
+        },
         "logo_image_mkHTHA": {
           "type": "logo_image",
           "settings": {
@@ -122,6 +129,7 @@
       },
       "block_order": [
         "logo_image_B7wdXq",
+        "logo_image_BVMHQM",
         "logo_image_mkHTHA",
         "logo_image_PCQcEc",
         "logo_image_twTBdQ",
