@@ -66,7 +66,6 @@
         },
         "image_fYHLgh": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
@@ -74,11 +73,11 @@
             "first_button_link": "https://resenss.com/en/blogs/news/brightening-peel-hpa-finalist-of-cosmoprof-india-cosmopack-india-awards-2025",
             "second_button_label": "SUSTAINABILITY",
             "second_button_link": "shopify://collections/skincare-collection",
-            "image": "shopify://shop_images/b2c_202511280_web.jpg",
+            "image": "shopify://shop_images/20261123_BlackWeek_web.jpg",
             "desktop-caption-heading-size": 80,
             "desktop-caption-body-text-size": 24,
             "text_position": "center_left",
-            "mobile_image": "shopify://shop_images/b2c_202511280-mob.jpg",
+            "mobile_image": "shopify://shop_images/20261123_BlackWeek_mobile.jpg",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
             "mobile_text_position": "center_left",
